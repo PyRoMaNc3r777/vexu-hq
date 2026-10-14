@@ -7,11 +7,13 @@ h2{margin:0 0 10px;font-size:1.15em;color:#00f0ff;text-shadow:0 0 8px #00f0ff88}
 .cd b{display:block;font-size:1.8em;color:#ff2bd6;text-shadow:0 0 10px #ff2bd6}.cd span{font-size:.7em;color:#aaa}.st{text-align:center;font-weight:700;margin:6px 0 10px;color:#ffd400}
 .g{display:grid;grid-template-columns:1fr 1fr;gap:10px}.n{font-size:1.7em;font-weight:800;color:#39ff88;text-shadow:0 0 10px #39ff8888}.sm{font-size:.78em;color:#9a8fb5}
 .t{border-left:3px solid #ff2bd6;padding:8px 10px;margin:8px 0;background:#0006;border-radius:6px}.t b{color:#fff}.strip{display:flex;gap:6px;overflow-x:auto}.d{flex:1;min-width:62px;text-align:center;border-radius:10px;padding:8px 2px;font-size:.8em;background:#0008;border:1px solid #333}
-.Zi{border-color:#ffd400;color:#ffd400}.Noapte{border-color:#7b5cff;color:#b9a8ff}.Liber{border-color:#39ff88;color:#39ff88}.big{font-size:1.5em;font-weight:800;text-align:center}.today{box-shadow:0 0 12px currentColor}
+.Zi{border-color:#ffd400;color:#ffd400}.Noapte{border-color:#7b5cff;color:#b9a8ff}.Liber{border-color:#39ff88;color:#39ff88}.big{font-size:1.5em;font-weight:800;text-align:center}.li{margin:5px 0;font-size:.92em}.today{box-shadow:0 0 12px currentColor}
 </style></head><body><div class="w"><h1>⚡ VEXU HQ ⚡</h1><div style="text-align:center;margin:6px 0"><a href="blog.html" style="color:#00f0ff;font-weight:700;text-decoration:none">📰 Știri &amp; Blog →</a></div><div class="sub">Centrul de comandă VEXU Online · <span id="now"></span> (ora României)</div>
 <div class="c"><h2>🎃 Halloween Dimension · Steal An Egg</h2><div class="st" id="evst">Se încarcă…</div><div class="cd" id="cd"></div><div class="sm" id="evinfo" style="text-align:center;margin-top:8px"></div></div>
 <div class="c"><h2>🔴 Live · Steal An Egg</h2><div class="g"><div><div class="sm">Jucători acum</div><div class="n" id="pl">—</div></div><div><div class="sm">Vizite totale</div><div class="n" id="vi">—</div></div></div><div class="sm" id="upd" style="margin-top:8px"></div></div>
-<div class="c"><h2>👥 Echipa</h2><div id="team"></div></div>
+<div class="c"><h2>🎥 Următorul live</h2><div class="st" id="lvst">Se calculează…</div><div class="cd" id="lvcd"></div><div class="sm" id="lvinfo" style="text-align:center;margin-top:8px"></div></div>
+<div class="c"><h2>🎬 Ideea de Short a zilei</h2><div class="big" id="shT" style="color:#ff2bd6;text-shadow:0 0 12px #ff2bd6">—</div><div id="shL" style="margin-top:8px"></div></div>
+<div class="c"><h2>🔍 Ce știm / ce NU știm · Halloween</h2><div class="g"><div><div style="color:#39ff88;font-weight:800">✅ Confirmat</div><div id="hwC"></div></div><div><div style="color:#ffd400;font-weight:800">❓ Neanunțat</div><div id="hwN"></div></div></div></div>
 <div class="c"><h2>📅 Programul lui Andrei</h2><div class="big" id="azi"></div><div class="sm" id="azi2" style="text-align:center;margin-bottom:10px"></div><div class="strip" id="strip"></div></div>
 <div class="sub">Datele live vin de la Roblox · actualizare automată</div></div>
 <script>
@@ -30,8 +32,7 @@ document.getElementById('evinfo').textContent=`Start: ${fmt(EV.start,o)} · Fina
 function showGame(g,src){if(!g)return;document.getElementById('pl').textContent=nf(g.playing);document.getElementById('vi').textContent=nf(g.visits);
 document.getElementById('upd').textContent=`actualizat la ${hm(new Date(g.fetched||Date.now()))} (${src})`}
 async function load(){try{D=await (await fetch('data.json?'+Date.now())).json();
-if(D.event){EV={start:new Date(D.event.start),end:new Date(D.event.end),src:D.event.source}}showEv();showGame(D.game,'server');
-document.getElementById('team').innerHTML=(D.team||[]).map(t=>`<div class="t"><b>${t.name}</b> <span class="sm">· ${t.rol}</span><div>${t.task}</div>${t.time?`<div class="sm">${fmt(new Date(t.time),{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</div>`:''}</div>`).join('')}catch(e){showEv()}
+if(D.event){EV={start:new Date(D.event.start),end:new Date(D.event.end),src:D.event.source}}showEv();showGame(D.game,'server');}catch(e){showEv()}
 try{const r=await fetch('https://games.roblox.com/v1/games?universeIds=10563114921');const j=await r.json();const g=j.data[0];showGame({playing:g.playing,visits:g.visits,fetched:new Date().toISOString()},'direct')}catch(e){}}
 // program: ciclu 12 zile, ancoră 14 oct 2026 = Liber zi 1
 const CYC=['Liber','Liber','Liber','Noapte','Noapte','Noapte','Liber','Liber','Liber','Zi','Zi','Zi'];
@@ -43,5 +44,17 @@ let i=1;while(stateFor(k+i*864e5)===s)i++;const nx=stateFor(k+i*864e5);
 document.getElementById('azi2').textContent=`Următorul: ${LBL[nx]} din ${fmt(new Date(k+i*864e5+12*36e5),{weekday:'long',day:'numeric',month:'long'})}`;
 let h='';for(let j=0;j<7;j++){const kk=k+j*864e5,st=stateFor(kk),dt=new Date(kk+12*36e5);h+=`<div class="d ${st} ${j?'':'today'}"><b>${j?fmt(dt,{weekday:'short'}):'Azi'}</b><br>${fmt(dt,{day:'numeric',month:'short'})}<br>${st}</div>`}
 document.getElementById('strip').innerHTML=h}
+// live: serile zilelor Libere 17:00–21:00 (ora României)
+function tzOff(d){const p=new Intl.DateTimeFormat('en-US',{timeZone:TZ,hourCycle:'h23',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',second:'2-digit'}).formatToParts(d).reduce((a,x)=>(a[x.type]=x.value,a),{});return Date.UTC(+p.year,+p.month-1,+p.day,+p.hour,+p.minute,+p.second)-Math.floor(d/1000)*1000}
+function roAt(k,h){const g=new Date(k+h*36e5);return new Date(+g-tzOff(new Date(+g-tzOff(g))))}
+function cdHtml(ms){let s=Math.max(0,Math.floor(ms/1000));return [[Math.floor(s/86400),'zile'],[Math.floor(s%86400/3600),'ore'],[Math.floor(s%3600/60),'min'],[s%60,'sec']].map(([v,l])=>`<div><b>${String(v).padStart(2,'0')}</b><span>${l}</span></div>`).join('')}
+function live(){const now=new Date(),k=dayKey(now);for(let j=0;j<14;j++){const kk=k+j*864e5;if(stateFor(kk)!=='Liber')continue;const a=roAt(kk,17),b=roAt(kk,21);if(now>=b)continue;
+const on=now>=a;document.getElementById('lvst').innerHTML=on?'<span style="color:#ff3b3b;text-shadow:0 0 12px #ff3b3b">🔴 LIVE ACUM! Se termină în</span>':'⏳ Începe în';
+document.getElementById('lvcd').innerHTML=cdHtml((on?b:a)-now);document.getElementById('lvinfo').textContent=`${fmt(a,{weekday:'long',day:'numeric',month:'long'})} · ${hm(a)}–${hm(b)} (ora României)`;return}}
+let SH=null;function shTick(){if(!SH)return;const t=new Date(SH.countdown_pana),ms=t-new Date();const e=document.getElementById('shCd');if(e)e.innerHTML=ms>0?cdHtml(ms):'<b style="color:#39ff88">🚪 Portalul e deschis!</b>'}
+fetch('extra.json?'+Date.now()).then(r=>r.json()).then(x=>{SH=x.short;document.getElementById('shT').textContent='„'+SH.titlu+'”';
+document.getElementById('shL').innerHTML=`<div class="li">⏱️ Durată: <b>${SH.durata}</b></div><div class="li">⏳ ${SH.countdown_text}</div><div class="cd" id="shCd" style="margin:8px 0"></div><div class="li">🐎 ${SH.broll}</div><div class="li">🚫 ${SH.regula}</div>`;shTick();
+document.getElementById('hwC').innerHTML=x.halloween.confirmat.map(i=>`<div class="li">✔️ ${i}</div>`).join('');document.getElementById('hwN').innerHTML=x.halloween.neanuntat.map(i=>`<div class="li">✖️ ${i}</div>`).join('')}).catch(e=>{});
+setInterval(()=>{live();shTick()},1000);live();
 load();sched();tick();setInterval(tick,1000);setInterval(load,90000);setInterval(sched,60000);
 </script></body></html>
