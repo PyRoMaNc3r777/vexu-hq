@@ -23,23 +23,41 @@ nav{text-align:center;margin:8px 0}nav a,.btn{color:#00f0ff;margin:0 8px;font-we
 .p{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;margin:14px 0;overflow:hidden;box-shadow:0 0 18px #ff2bd622}a.p{display:block;color:inherit;text-decoration:none}a.p:hover{border-color:#ff2bd6;box-shadow:0 0 24px #ff2bd666}
 .p img{width:100%;height:190px;object-fit:cover;display:block}.hero img{height:auto;max-height:420px}.b{padding:14px}h2{margin:6px 0;font-size:1.15em}.l{display:inline-block;padding:3px 9px;border-radius:20px;font-size:.72em;font-weight:800}
 .dt{color:#9a8fb5;font-size:.8em;margin-left:6px}.txt{font-size:1.05em;line-height:1.55;margin:10px 0}.more{color:#ff7be6;font-weight:700;font-size:.85em;margin-top:8px}
-.CONFIRMAT{background:#39ff8822;color:#39ff88;border:1px solid #39ff88}.ZVON{background:#ffd40022;color:#ffd400;border:1px solid #ffd400}.s a{color:#ff7be6;font-size:.8em;word-break:break-all;display:block;margin-top:4px}"""
+.CONFIRMAT{background:#39ff8822;color:#39ff88;border:1px solid #39ff88}.VEXU-LIVE{background:#ff2bd622;color:#ff2bd6;border:1px solid #ff2bd6;box-shadow:0 0 10px #ff2bd6aa;text-shadow:0 0 6px #ff2bd6}.txt ul{margin:8px 0;padding-left:22px}.txt li{margin:4px 0}.txt a{color:#00f0ff;word-break:break-all}.ZVON{background:#ffd40022;color:#ffd400;border:1px solid #ffd400}.s a{color:#ff7be6;font-size:.8em;word-break:break-all;display:block;margin-top:4px}"""
 def page(title, body):
     return f'<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{html.escape(title)}</title><style>\n{CSS}\n</style></head><body><div class="w">{body}</div></body></html>\n'
 e = html.escape
+def cls(l): return re.sub(r'[^A-Za-z0-9]+', '-', l).strip('-')
+def chips(p):
+    ls = p['eticheta'] if isinstance(p['eticheta'], list) else [p['eticheta']]
+    return ' '.join(f'<span class="l {cls(l)}">{e(l)}</span>' for l in ls)
+URL = re.compile(r'https?://[^\s()<>]+[^\s()<>.,;:!?]')
+def link(t): return URL.sub(lambda m: f'<a href="{m.group(0)}" target="_blank" rel="noopener">{m.group(0)}</a>', e(t))
+def rich(t):
+    out, ul = [], False
+    for ln in t.split('\n'):
+        if ln.startswith('- '):
+            if not ul: out.append('<ul>'); ul = True
+            out.append(f'<li>{link(ln[2:])}</li>')
+        else:
+            if ul: out.append('</ul>'); ul = False
+            out.append(f'<p style="margin:6px 0">{link(ln)}</p>')
+    if ul: out.append('</ul>')
+    return ''.join(out)
 order = sorted(range(len(posts)), key=lambda i: (posts[i]['date'], -i), reverse=True)
 os.makedirs(os.path.join(D, 'posts'), exist_ok=True)
 cards = []
 for i in order:
     p = posts[i]; s = slug(p['titlu'])
-    lab = f'<span class="l {e(p["eticheta"])}">{e(p["eticheta"])}</span><span class="dt">📅 {ro_date(p["date"])}</span>'
+    lab = f'{chips(p)}<span class="dt">📅 {ro_date(p["date"])}</span>'
     src = ''.join(f'<a href="{e(u)}" target="_blank" rel="noopener">{e(u)}</a>' for u in p.get('surse', []))
     body = (f'<nav><a href="../blog.html">← Înapoi la blog</a><a href="../index.html">⚡ Dashboard</a></nav>'
             f'<div class="p hero"><img src="../{e(p["img"])}" alt=""><div class="b">{lab}<h1 style="text-align:left;font-size:1.6em">{e(p["titlu"])}</h1>'
-            f'<div class="txt">{e(p["text"])}</div><div class="s">Surse:{src}</div></div></div>'
+            f'<div class="txt">{rich(p["text"])}</div><div class="s">Surse:{src}</div></div></div>'
             f'<a class="btn" href="../blog.html">← Înapoi la blog</a>')
     open(os.path.join(D, 'posts', s + '.html'), 'w', encoding='utf-8').write(page(p['titlu'] + ' · VEXU HQ', body))
-    short = p['text'] if len(p['text']) < 140 else p['text'][:137].rsplit(' ', 1)[0] + '…'
+    flat = ' '.join(p['text'].replace('\n- ', ' • ').split())
+    short = flat if len(flat) < 140 else flat[:137].rsplit(' ', 1)[0] + '…'
     cards.append(f'<a class="p" href="posts/{s}.html"><img src="{e(p["img"])}" alt=""><div class="b">{lab}<h2>{e(p["titlu"])}</h2><div>{e(short)}</div><div class="more">Citește tot →</div></div></a>')
     print('posts/' + s + '.html')
 open(os.path.join(D, 'blog.html'), 'w', encoding='utf-8').write(page('VEXU HQ · Știri', '<h1>📰 VEXU HQ · Știri</h1><nav><a href="index.html">← Înapoi la dashboard</a></nav>' + ''.join(cards)))
