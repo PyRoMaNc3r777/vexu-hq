@@ -21,17 +21,34 @@
   "date": "2026-10-14"
  },
  {
-  "titlu": "❓ Roblox anunță ceva misterios pe 22 octombrie",
+  "titlu": "❓ The Hollow: eventul de Halloween al Roblox vine pe 22 octombrie",
   "img": "generic-neon.png",
-  "text": "Data e confirmată de @Roblox („you've met them before. but not like this.”, 10.22.26). Numele „The Hollow” și jocurile implicate (Piggy, 99 Nights) sunt zvonuri de la fani.",
+  "text": "Teaserul oficial @Roblox din 10 oct, cu textul „you've met them before. but not like this.” și logo-ul THE HOLLOW cu data 10.22.26 în video.",
   "eticheta": [
    "CONFIRMAT",
    "ZVON"
   ],
   "surse": [
+   "https://x.com/Roblox/status/2108961492187918378",
+   "https://progameguides.com/roblox/the-hollow-roblox-halloween-event-2026-games-list/"
+  ],
+  "date": "2026-10-14",
+  "old_slugs": [
+   "roblox-anunta-ceva-misterios-pe-22-octombrie"
+  ],
+  "confirmat": "Teaserul oficial @Roblox din 10 oct, cu textul „you've met them before. but not like this.” și logo-ul THE HOLLOW cu data 10.22.26 în video.",
+  "confirmat_surse": [
    "https://x.com/Roblox/status/2108961492187918378"
   ],
-  "date": "2026-10-14"
+  "zvon": [
+   "Ora de start: se vorbește de 11:00 PDT, adică 21:00 ora României.",
+   "Data de final: 5 sau 9 noiembrie.",
+   "Jocurile: 99 Nights, Piggy, Dandy's World, DOORS, +1 Speed Keyboard Escape. Niciunul nu e confirmat.",
+   "Premiile: probabil iteme UGC."
+  ],
+  "zvon_surse": [
+   "https://progameguides.com/roblox/the-hollow-roblox-halloween-event-2026-games-list/"
+  ]
  },
  {
   "titlu": "🍬 DOORS lansează The Candy Vault pe 22 octombrie",
