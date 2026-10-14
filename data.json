@@ -1,0 +1,48 @@
+{
+ "updated": "2026-10-14T10:32:49.103193+00:00",
+ "game": {
+  "name": "Steal An Egg",
+  "playing": 1393477,
+  "visits": 8038998650,
+  "source": "roblox_api",
+  "fetched": "2026-10-14T10:32:49.103193+00:00"
+ },
+ "event": {
+  "title": "Halloween Dimension🎃",
+  "start": "2026-10-17T15:00:50.13+00:00",
+  "end": "2026-10-24T14:00:50.13+00:00",
+  "source": "roblox_api"
+ },
+ "team": [
+  {
+   "name": "Regele",
+   "rol": "Boss / coordonare",
+   "task": "Coordonează echipa pentru Halloween Dimension și a pornit Repi STIRI.",
+   "time": "14 oct, 13:11"
+  },
+  {
+   "name": "MDS",
+   "rol": "Twitter / X",
+   "task": "Urmărește pe Twitter ce e confirmat și ce e zvon despre Halloween; îi scrie direct lui Andrei.",
+   "time": "14 oct, 13:11"
+  },
+  {
+   "name": "Spionul",
+   "rol": "Shorts / TikTok (48h)",
+   "task": "Formule de Shorts de Halloween din ultimele 48h (nimeni nu trece de 20K).",
+   "time": "14 oct, 13:11"
+  },
+  {
+   "name": "Terra Live",
+   "rol": "Producătoare live",
+   "task": "Spec pentru Short-ul teaser „PORTALUL SE DESCHIDE SÂMBĂTĂ” și rundown-urile de live pentru Liber 14–16.",
+   "time": "14 oct, 13:11"
+  },
+  {
+   "name": "Repi STIRI",
+   "rol": "Surse oficiale",
+   "task": "Raportul din surse oficiale despre Halloween e gata, plus știrea de pe DevForum.",
+   "time": "14 oct, 13:11"
+  }
+ ]
+}

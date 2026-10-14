@@ -1,0 +1,47 @@
+<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VEXU HQ</title><style>
+*{box-sizing:border-box}body{margin:0;background:#07040f;color:#eee;font-family:system-ui,sans-serif;background-image:radial-gradient(circle at 20% 0,#3b0a5c 0,transparent 50%),radial-gradient(circle at 100% 100%,#002f3d 0,transparent 50%);min-height:100vh}
+.w{max-width:900px;margin:auto;padding:16px}h1{font-size:2.2em;margin:8px 0;text-align:center;background:linear-gradient(90deg,#ff2bd6,#00f0ff);-webkit-background-clip:text;color:transparent;text-shadow:0 0 30px #ff2bd655;letter-spacing:2px}
+.sub{text-align:center;color:#9a8fb5;font-size:.9em}.c{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;padding:16px;margin:14px 0;box-shadow:0 0 18px #ff2bd622}
+h2{margin:0 0 10px;font-size:1.15em;color:#00f0ff;text-shadow:0 0 8px #00f0ff88}.cd{display:flex;gap:8px;justify-content:center}.cd div{background:#000a;border:1px solid #00f0ff66;border-radius:10px;padding:10px 4px;min-width:66px;text-align:center}
+.cd b{display:block;font-size:1.8em;color:#ff2bd6;text-shadow:0 0 10px #ff2bd6}.cd span{font-size:.7em;color:#aaa}.st{text-align:center;font-weight:700;margin:6px 0 10px;color:#ffd400}
+.g{display:grid;grid-template-columns:1fr 1fr;gap:10px}.n{font-size:1.7em;font-weight:800;color:#39ff88;text-shadow:0 0 10px #39ff8888}.sm{font-size:.78em;color:#9a8fb5}
+.t{border-left:3px solid #ff2bd6;padding:8px 10px;margin:8px 0;background:#0006;border-radius:6px}.t b{color:#fff}.strip{display:flex;gap:6px;overflow-x:auto}.d{flex:1;min-width:62px;text-align:center;border-radius:10px;padding:8px 2px;font-size:.8em;background:#0008;border:1px solid #333}
+.Zi{border-color:#ffd400;color:#ffd400}.Noapte{border-color:#7b5cff;color:#b9a8ff}.Liber{border-color:#39ff88;color:#39ff88}.big{font-size:1.5em;font-weight:800;text-align:center}.today{box-shadow:0 0 12px currentColor}
+</style></head><body><div class="w"><h1>⚡ VEXU HQ ⚡</h1><div style="text-align:center;margin:6px 0"><a href="blog.html" style="color:#00f0ff;font-weight:700;text-decoration:none">📰 Știri &amp; Blog →</a></div><div class="sub">Centrul de comandă VEXU Online · <span id="now"></span> (ora României)</div>
+<div class="c"><h2>🎃 Halloween Dimension · Steal An Egg</h2><div class="st" id="evst">Se încarcă…</div><div class="cd" id="cd"></div><div class="sm" id="evinfo" style="text-align:center;margin-top:8px"></div></div>
+<div class="c"><h2>🔴 Live · Steal An Egg</h2><div class="g"><div><div class="sm">Jucători acum</div><div class="n" id="pl">—</div></div><div><div class="sm">Vizite totale</div><div class="n" id="vi">—</div></div></div><div class="sm" id="upd" style="margin-top:8px"></div></div>
+<div class="c"><h2>👥 Echipa</h2><div id="team"></div></div>
+<div class="c"><h2>📅 Programul lui Andrei</h2><div class="big" id="azi"></div><div class="sm" id="azi2" style="text-align:center;margin-bottom:10px"></div><div class="strip" id="strip"></div></div>
+<div class="sub">Datele live vin de la Roblox · actualizare automată</div></div>
+<script>
+const TZ='Europe/Bucharest';let D=null;
+const fmt=(d,o)=>new Intl.DateTimeFormat('ro-RO',Object.assign({timeZone:TZ},o)).format(d);
+const hm=d=>fmt(d,{hour:'2-digit',minute:'2-digit'});
+const nf=n=>n.toLocaleString('ro-RO');
+let EV={start:new Date('2026-10-17T15:00:00Z'),end:new Date('2026-10-24T14:00:00Z'),src:'fallback'};
+function tick(){const now=new Date();document.getElementById('now').textContent=fmt(now,{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',second:'2-digit'});
+let tgt,st;if(now<EV.start){tgt=EV.start;st='⏳ Începe în'}else if(now<EV.end){tgt=EV.end;st='🔥 LIVE ACUM! Se termină în'}else{st='🏁 Terminat';tgt=null}
+document.getElementById('evst').textContent=st;const cd=document.getElementById('cd');
+if(!tgt){cd.innerHTML='';return}let s=Math.floor((tgt-now)/1000);const p=[[Math.floor(s/86400),'zile'],[Math.floor(s%86400/3600),'ore'],[Math.floor(s%3600/60),'min'],[s%60,'sec']];
+cd.innerHTML=p.map(([v,l])=>`<div><b>${String(v).padStart(2,'0')}</b><span>${l}</span></div>`).join('')}
+function showEv(){const o={weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'};
+document.getElementById('evinfo').textContent=`Start: ${fmt(EV.start,o)} · Final: ${fmt(EV.end,o)} · ${EV.src==='roblox_api'?'ore oficiale Roblox':'ore estimate'}`}
+function showGame(g,src){if(!g)return;document.getElementById('pl').textContent=nf(g.playing);document.getElementById('vi').textContent=nf(g.visits);
+document.getElementById('upd').textContent=`actualizat la ${hm(new Date(g.fetched||Date.now()))} (${src})`}
+async function load(){try{D=await (await fetch('data.json?'+Date.now())).json();
+if(D.event){EV={start:new Date(D.event.start),end:new Date(D.event.end),src:D.event.source}}showEv();showGame(D.game,'server');
+document.getElementById('team').innerHTML=(D.team||[]).map(t=>`<div class="t"><b>${t.name}</b> <span class="sm">· ${t.rol}</span><div>${t.task}</div>${t.time?`<div class="sm">${fmt(new Date(t.time),{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</div>`:''}</div>`).join('')}catch(e){showEv()}
+try{const r=await fetch('https://games.roblox.com/v1/games?universeIds=10563114921');const j=await r.json();const g=j.data[0];showGame({playing:g.playing,visits:g.visits,fetched:new Date().toISOString()},'direct')}catch(e){}}
+// program: ciclu 12 zile, ancoră 14 oct 2026 = Liber zi 1
+const CYC=['Liber','Liber','Liber','Noapte','Noapte','Noapte','Liber','Liber','Liber','Zi','Zi','Zi'];
+const LBL={Zi:'☀️ Zi · 07:00–19:00',Noapte:'🌙 Noapte · 19:00–07:00',Liber:'🎮 Liber'};
+function dayKey(d){const [y,m,dd]=fmt(d,{year:'numeric',month:'2-digit',day:'2-digit'}).split('.').reverse();return Date.UTC(+y,+m-1,+dd)}
+function stateFor(k){const i=Math.round((k-Date.UTC(2026,9,14))/864e5);return CYC[((i%12)+12)%12]}
+function sched(){const k=dayKey(new Date()),s=stateFor(k);document.getElementById('azi').innerHTML=`Azi: <span class="${s}">${LBL[s]}</span>`;
+let i=1;while(stateFor(k+i*864e5)===s)i++;const nx=stateFor(k+i*864e5);
+document.getElementById('azi2').textContent=`Următorul: ${LBL[nx]} din ${fmt(new Date(k+i*864e5+12*36e5),{weekday:'long',day:'numeric',month:'long'})}`;
+let h='';for(let j=0;j<7;j++){const kk=k+j*864e5,st=stateFor(kk),dt=new Date(kk+12*36e5);h+=`<div class="d ${st} ${j?'':'today'}"><b>${j?fmt(dt,{weekday:'short'}):'Azi'}</b><br>${fmt(dt,{day:'numeric',month:'short'})}<br>${st}</div>`}
+document.getElementById('strip').innerHTML=h}
+load();sched();tick();setInterval(tick,1000);setInterval(load,90000);setInterval(sched,60000);
+</script></body></html>
