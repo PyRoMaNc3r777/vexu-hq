@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T17:46:31+03:00",
+ "generated": "2026-10-15T17:48:54+03:00",
  "events": [
   {
    "name": "Halloween World",
@@ -9,6 +9,32 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Dead of Night",
+   "game": "Dead Rails",
+   "start": "2026-10-17T23:00:00+03:00",
+   "end": "2026-11-07T23:00:00+02:00",
+   "slug": "dead-rails-dead-of-night-pe-17-octombrie",
+   "img": "game-dead-rails.png",
+   "post_title": "🚂 Dead Rails: Dead of Night pe 17 octombrie"
+  },
+  {
+   "name": "Helperbot în roster",
+   "game": "Forsaken",
+   "start_date": "2026-10-16",
+   "slug": "forsaken-helperbot-pe-16-oct-event-halloween",
+   "img": "game-forsaken.png",
+   "post_title": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween"
+  },
+  {
+   "name": "Event Halloween",
+   "game": "Forsaken",
+   "start": "2026-10-17T02:00:00+03:00",
+   "end": "2026-10-24T02:00:00+03:00",
+   "slug": "forsaken-helperbot-pe-16-oct-event-halloween",
+   "img": "game-forsaken.png",
+   "post_title": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween"
   },
   {
    "name": "Creator Showdown (São Paulo)",
@@ -59,18 +85,18 @@
    "game": "Pet Simulator 99",
    "start": "2026-10-17T19:00:00+03:00",
    "end": "2026-10-24T19:00:00+03:00",
-   "slug": "pet-simulator-99-diamond-mountain-vine-sambata",
+   "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
    "img": "game-pet-sim-99.png",
-   "post_title": "💎 Pet Simulator 99: Diamond Mountain vine sâmbătă"
+   "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă"
   },
   {
    "name": "Hatch Wars + Season Pass (final)",
    "game": "Pet Simulator 99",
    "end": "2026-10-17T19:00:00+03:00",
    "end_only": true,
-   "slug": "pet-simulator-99-diamond-mountain-vine-sambata",
+   "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
    "img": "game-pet-sim-99.png",
-   "post_title": "💎 Pet Simulator 99: Diamond Mountain vine sâmbătă"
+   "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă"
   },
   {
    "name": "Fright Night Season 9",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T17:46:31+03:00",
+ "generated": "2026-10-15T17:48:54+03:00",
  "posts": [
   {
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
@@ -13,6 +13,48 @@
    "img": "game-keyboard-escape.png",
    "excerpt": "Halloween World e deschisă de pe 17 oct, ora 21:00, până pe 24 oct, ora 21:00 RO; pe 10 oct a fost evenimentul pregătitor „Halloween AA +…",
    "featured": true,
+   "section": null
+  },
+  {
+   "slug": "steal-an-egg-actualizare-azi-la-16-10",
+   "title": "🥚 Steal An Egg: actualizare azi la 16:10",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-15",
+   "dateRo": "15 octombrie 2026",
+   "published": "2026-10-15T17:55:00+03:00",
+   "img": "game-steal-an-egg.png",
+   "excerpt": "Pe 15 octombrie, la 16:10 (ora României), Steal An Egg a primit o actualizare. Nu există note oficiale despre ce s-a schimbat — confirmată…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "dead-rails-dead-of-night-pe-17-octombrie",
+   "title": "🚂 Dead Rails: Dead of Night pe 17 octombrie",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-15",
+   "dateRo": "15 octombrie 2026",
+   "published": "2026-10-15T17:54:00+03:00",
+   "img": "game-dead-rails.png",
+   "excerpt": "Evenimentul „Dead of Night” în Dead Rails rulează din 17 octombrie, 23:00, până pe 7 noiembrie, 23:00 (ora României).",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "forsaken-helperbot-pe-16-oct-event-halloween",
+   "title": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-15",
+   "dateRo": "15 octombrie 2026",
+   "published": "2026-10-15T17:53:00+03:00",
+   "img": "game-forsaken.png",
+   "excerpt": "Helperbot intră în roster pe 16 octombrie. Eventul rulează din 17 octombrie, 02:00, până pe 24 octombrie, 02:00 (ora României).",
+   "featured": false,
    "section": null
   },
   {
@@ -166,7 +208,7 @@
    "dateRo": "15 octombrie 2026",
    "published": "2026-10-15T14:24:00+03:00",
    "img": "devforum1.svg",
-   "excerpt": "Umbre pentru text, inset, knockout și cu gradient pe elementele de interfață.",
+   "excerpt": "Umbre pentru text, inset, knockout și cu gradient pe elementele de interfață. E o funcție în beta în Roblox Studio (UIShadow).",
    "featured": false,
    "section": null
   },
@@ -255,8 +297,8 @@
    "section": null
   },
   {
-   "slug": "pet-simulator-99-diamond-mountain-vine-sambata",
-   "title": "💎 Pet Simulator 99: Diamond Mountain vine sâmbătă",
+   "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
+   "title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă",
    "labels": [
     "CONFIRMAT"
    ],
@@ -264,7 +306,7 @@
    "dateRo": "15 octombrie 2026",
    "published": "2026-10-15T14:15:00+03:00",
    "img": "game-pet-sim-99.png",
-   "excerpt": "Ține din 17 oct, 19:00 până pe 24 oct, 19:00 RO. Tot pe 17 oct la 19:00 se termină Hatch Wars de Halloween și Season Pass-ul cu HUGE…",
+   "excerpt": "Jocul apare acum cu titlul [BLOOD MOON]. Ține din 17 oct, 19:00 până pe 24 oct, 19:00 RO. Tot pe 17 oct la 19:00 se termină Hatch Wars de…",
    "featured": false,
    "section": null
   },
