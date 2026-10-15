@@ -68,11 +68,11 @@ nav{text-align:center;margin:8px 0;display:flex;flex-wrap:wrap;gap:8px;justify-c
 .filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 6px}.chip{border:1px solid #ff2bd655;background:#120a22cc;color:#eee;border-radius:999px;padding:7px 12px;font-size:.85em;font-weight:700;cursor:pointer}.chip.on{border-color:#00f0ff;color:#00f0ff;box-shadow:0 0 12px #00f0ff55}.chip .n{opacity:.7;margin-left:4px}.dayh{margin:22px 0 8px;font-size:1.25em;color:#ff7be6;text-shadow:0 0 10px #ff2bd655}.dayh:first-child{margin-top:8px}#moreWrap{text-align:center;margin:18px 0}#featSlot .p{margin-top:8px}.empty{text-align:center;color:#9a8fb5;padding:24px}.shorts-entry{text-align:center;margin:10px 0 4px}.shorts-entry button{border:1px solid #00f0ff;background:#00f0ff18;color:#00f0ff;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;box-shadow:0 0 12px #00f0ff44}
 .cal .row{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start;margin:14px 0}.cal .ico{width:72px;height:72px;border-radius:14px;object-fit:cover;border:1px solid #ff2bd655;background:#000a}.cal .card{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;padding:14px;box-shadow:0 0 18px #ff2bd622}.cal .st{font-weight:800;margin:6px 0;color:#ffd400}.cal .st.live{color:#39ff88;text-shadow:0 0 10px #39ff88}.cal .st.done{color:#9a8fb5}.cal .cd{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.cal .cd div{background:#000a;border:1px solid #00f0ff66;border-radius:10px;padding:8px 6px;min-width:58px;text-align:center}.cal .cd b{display:block;font-size:1.3em;color:#ff2bd6}.cal .cd span{font-size:.65em;color:#aaa}.cal .meta{color:#9a8fb5;font-size:.85em}.cal a.golink{color:#00f0ff;font-weight:700;text-decoration:none}.note{font-size:.8em;color:#ffd400;margin-top:6px}@media(max-width:520px){.cal .row{grid-template-columns:56px 1fr}.cal .ico{width:56px;height:56px}}"""
 
-def page(title, body, extra_head=''):
+def page(title, body, extra_js=''):
     return (f'<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{html.escape(title)}</title><style>\n{CSS}\n</style>{extra_head}</head><body>'
+            f'<title>{html.escape(title)}</title><style>\n{CSS}\n</style></head><body>'
             f'<div class="fx" aria-hidden="true"><span>🎃</span><span>🦇</span><span>👻</span><span>🦇</span><span>🎃</span><span>🕸️</span></div>'
-            f'<div class="w">{body}</div></body></html>\n')
+            f'<div class="w">{body}</div>{extra_js}</body></html>\n')
 
 e = html.escape
 def cls(l): return re.sub(r'[^A-Za-z0-9]+', '-', l).strip('-')
