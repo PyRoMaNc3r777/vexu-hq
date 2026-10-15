@@ -278,7 +278,7 @@ def build_post_pages(posts):
         def sl(us):
             return '<div class="s">Sursă:' + ''.join(f'<a href="{e(u)}" target="_blank" rel="noopener">{e(u)}</a>' for u in us) + '</div>'
         if 'confirmat' in p or 'zvon' in p:
-            txt = ''
+            txt = rich(p['text']) if p.get('text') else ''
             if 'confirmat' in p:
                 txt += f'<div class="bx bxC"><h3>✅ CONFIRMAT</h3><div>{link(p["confirmat"])}</div>{sl(p.get("confirmat_surse", []))}</div>'
             if 'zvon' in p:
