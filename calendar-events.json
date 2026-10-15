@@ -1,0 +1,159 @@
+{
+ "generated": "2026-10-15T14:17:37+03:00",
+ "events": [
+  {
+   "name": "Halloween World",
+   "game": "+1 Speed Keyboard Escape",
+   "start": "2026-10-17T21:00:00+03:00",
+   "end": "2026-10-24T21:00:00+03:00",
+   "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
+   "img": "game-keyboard-escape.png",
+   "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Creator Showdown (São Paulo)",
+   "game": "Roblox",
+   "start": "2026-10-15T23:00:00+03:00",
+   "slug": "creator-showdown-in-sao-paulo-lupta-pentru-coroana-e-diseara",
+   "img": "generic-neon.png",
+   "post_title": "🏆 Creator Showdown în São Paulo: lupta pentru coroană e diseară!"
+  },
+  {
+   "name": "Ghoul Garden",
+   "game": "Grow a Garden",
+   "start": "2026-10-17T23:30:00+03:00",
+   "end": "2026-10-24T23:00:00+03:00",
+   "slug": "grow-a-garden-vine-ghoul-garden-evenimentul-de-halloween",
+   "img": "game-grow-a-garden.png",
+   "post_title": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween"
+  },
+  {
+   "name": "Fairy Event (final)",
+   "game": "Grow a Garden",
+   "end": "2026-10-17T23:00:00+03:00",
+   "end_only": true,
+   "slug": "grow-a-garden-vine-ghoul-garden-evenimentul-de-halloween",
+   "img": "game-grow-a-garden.png",
+   "post_title": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween"
+  },
+  {
+   "name": "Welcome to the Spa",
+   "game": "Brookhaven",
+   "start": "2026-10-16T21:00:00+03:00",
+   "end": "2026-10-22T19:44:00+03:00",
+   "slug": "brookhaven-spa-nou-pe-16-oct-halloween-din-23-oct",
+   "img": "game-brookhaven.png",
+   "post_title": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct"
+  },
+  {
+   "name": "Halloween",
+   "game": "Brookhaven",
+   "start": "2026-10-23T21:00:00+03:00",
+   "end": "2026-11-06T19:44:00+02:00",
+   "slug": "brookhaven-spa-nou-pe-16-oct-halloween-din-23-oct",
+   "img": "game-brookhaven.png",
+   "post_title": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct"
+  },
+  {
+   "name": "Diamond Mountain",
+   "game": "Pet Simulator 99",
+   "start": "2026-10-17T19:00:00+03:00",
+   "end": "2026-10-24T19:00:00+03:00",
+   "slug": "pet-simulator-99-diamond-mountain-vine-sambata",
+   "img": "game-pet-sim-99.png",
+   "post_title": "💎 Pet Simulator 99: Diamond Mountain vine sâmbătă"
+  },
+  {
+   "name": "Hatch Wars + Season Pass (final)",
+   "game": "Pet Simulator 99",
+   "end": "2026-10-17T19:00:00+03:00",
+   "end_only": true,
+   "slug": "pet-simulator-99-diamond-mountain-vine-sambata",
+   "img": "game-pet-sim-99.png",
+   "post_title": "💎 Pet Simulator 99: Diamond Mountain vine sâmbătă"
+  },
+  {
+   "name": "Fright Night Season 9",
+   "game": "Piggy",
+   "start": "2026-10-01T20:00:00+03:00",
+   "end": "2026-11-01T20:00:00+02:00",
+   "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
+   "img": "piggy.png",
+   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie"
+  },
+  {
+   "name": "Fright Night Part II",
+   "game": "Piggy",
+   "start": "2026-10-17T20:00:00+03:00",
+   "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
+   "img": "piggy.png",
+   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie"
+  },
+  {
+   "name": "Forest — secret Survivor",
+   "game": "Piggy",
+   "start_date": "2026-10-10",
+   "end_date": "2026-11-08",
+   "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
+   "img": "piggy.png",
+   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie"
+  },
+  {
+   "name": "The Hollow",
+   "game": "Roblox",
+   "start_date": "2026-10-22",
+   "date_only": true,
+   "zvon_note": "Ora de start e ZVON (se vorbește de 21:00 RO) — neconfirmată",
+   "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+   "img": "generic-neon.png",
+   "post_title": "❓ The Hollow: eventul de Halloween al Roblox vine pe 22 octombrie"
+  },
+  {
+   "name": "The Candy Vault",
+   "game": "DOORS",
+   "start": "2026-10-22T21:00:00+03:00",
+   "end_date": "2026-11-09",
+   "end_time_unknown": true,
+   "slug": "doors-lanseaza-the-candy-vault-pe-22-octombrie",
+   "img": "game-doors.png",
+   "post_title": "🍬 DOORS lansează The Candy Vault pe 22 octombrie"
+  },
+  {
+   "name": "Hauntlet Returns",
+   "game": "Adopt Me",
+   "start_date": "2026-10-03",
+   "no_end": true,
+   "end_note": "fără dată de final anunțată",
+   "slug": "adopt-me-hauntlet-returns-halloween-ghost-gallery",
+   "img": "game-adopt-me.png",
+   "post_title": "👻 Adopt Me: Hauntlet Returns + Halloween Ghost Gallery"
+  },
+  {
+   "name": "HALLOWEEN",
+   "game": "Dress to Impress",
+   "start": "2026-10-17T18:00:00+03:00",
+   "end": "2026-11-07T18:00:00+02:00",
+   "slug": "dress-to-impress-halloween-incepe-pe-17-octombrie",
+   "img": "game-dress-to-impress.png",
+   "post_title": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie"
+  },
+  {
+   "name": "Trick or Treat",
+   "game": "99 Nights in the Forest",
+   "start": "2026-10-17T20:00:00+03:00",
+   "end": "2026-10-24T15:00:00+03:00",
+   "slug": "99-nights-in-the-forest-vine-trick-or-treat",
+   "img": "game-99-nights.png",
+   "post_title": "🌲 99 Nights in the Forest: vine Trick or Treat"
+  },
+  {
+   "name": "Halloween Dimension",
+   "game": "Steal An Egg",
+   "start": "2026-10-17T18:00:00+03:00",
+   "end": "2026-10-24T17:00:00+03:00",
+   "slug": "halloween-dimension-vine-in-steal-an-egg",
+   "img": "icon.png",
+   "post_title": "🎃 Halloween Dimension vine în Steal An Egg!"
+  }
+ ]
+}

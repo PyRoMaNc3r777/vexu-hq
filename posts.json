@@ -8,7 +8,168 @@
    "https://www.roblox.com/events/3409681533051732591"
   ],
   "date": "2026-10-14",
-  "featured": true
+  "featured": true,
+  "published": "2026-10-14T20:00:00+03:00",
+  "events": [
+   {
+    "name": "Halloween World",
+    "game": "+1 Speed Keyboard Escape",
+    "start": "2026-10-17T21:00:00+03:00",
+    "end": "2026-10-24T21:00:00+03:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween",
+  "img": "game-grow-a-garden.png",
+  "text": "Ține din 17 oct, 23:30 până pe 24 oct, 23:00 RO. Developerii anunță o grădină de Halloween, o monedă nouă, plante, pet-uri, gear și recompense, dar nu au spus încă care sunt. Fairy Event mai rulează până pe 17 oct la 23:00.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/7142378063286895261"
+  ],
+  "date": "2026-10-15",
+  "published": "2026-10-15T14:17:00+03:00",
+  "events": [
+   {
+    "name": "Ghoul Garden",
+    "game": "Grow a Garden",
+    "start": "2026-10-17T23:30:00+03:00",
+    "end": "2026-10-24T23:00:00+03:00"
+   },
+   {
+    "name": "Fairy Event (final)",
+    "game": "Grow a Garden",
+    "end": "2026-10-17T23:00:00+03:00",
+    "end_only": true
+   }
+  ]
+ },
+ {
+  "titlu": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct",
+  "img": "game-brookhaven.png",
+  "text": "Welcome to the Spa aduce o proprietate spa, o casă, props și unelte gratuite. Ține din 16 oct, 21:00 până pe 22 oct, 19:44 RO. Halloween-ul începe pe 23 oct la 21:00 și ține până pe 6 nov la 19:44.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/7455882052353786528"
+  ],
+  "date": "2026-10-15",
+  "published": "2026-10-15T14:16:00+03:00",
+  "events": [
+   {
+    "name": "Welcome to the Spa",
+    "game": "Brookhaven",
+    "start": "2026-10-16T21:00:00+03:00",
+    "end": "2026-10-22T19:44:00+03:00"
+   },
+   {
+    "name": "Halloween",
+    "game": "Brookhaven",
+    "start": "2026-10-23T21:00:00+03:00",
+    "end": "2026-11-06T19:44:00+02:00"
+   }
+  ]
+ },
+ {
+  "titlu": "💎 Pet Simulator 99: Diamond Mountain vine sâmbătă",
+  "img": "game-pet-sim-99.png",
+  "text": "Ține din 17 oct, 19:00 până pe 24 oct, 19:00 RO. Tot pe 17 oct la 19:00 se termină Hatch Wars de Halloween și Season Pass-ul cu HUGE Hippokin gratuit.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/8645848830534877834"
+  ],
+  "date": "2026-10-15",
+  "published": "2026-10-15T14:15:00+03:00",
+  "events": [
+   {
+    "name": "Diamond Mountain",
+    "game": "Pet Simulator 99",
+    "start": "2026-10-17T19:00:00+03:00",
+    "end": "2026-10-24T19:00:00+03:00"
+   },
+   {
+    "name": "Hatch Wars + Season Pass (final)",
+    "game": "Pet Simulator 99",
+    "end": "2026-10-17T19:00:00+03:00",
+    "end_only": true
+   }
+  ]
+ },
+ {
+  "titlu": "🏆 Creator Showdown în São Paulo: lupta pentru coroană e diseară!",
+  "img": "generic-neon.png",
+  "text": "Roblox dă live Creator Showdown azi 15 oct la 23:00 RO pe YouTube, TikTok și Twitch; prezentare în portugheză, plus stream în engleză.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/Roblox/status/2110070140574265652"
+  ],
+  "date": "2026-10-15",
+  "published": "2026-10-15T14:25:00+03:00",
+  "events": [
+   {
+    "name": "Creator Showdown (São Paulo)",
+    "game": "Roblox",
+    "start": "2026-10-15T23:00:00+03:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🌑 Umbre noi pentru UI în Roblox Studio",
+  "img": "devforum1.svg",
+  "text": "Umbre pentru text, inset, knockout și cu gradient pe elementele de interfață.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/Bloxy_News/status/2110490184227975405"
+  ],
+  "date": "2026-10-15",
+  "published": "2026-10-15T14:24:00+03:00"
+ },
+ {
+  "titlu": "💬 Quick Words personalizate",
+  "img": "devforum2.svg",
+  "text": "Jocurile pot avea până la 3 categorii de replici rapide, cu 3–10 cuvinte fiecare.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/Bloxy_News/status/2110047452372009164"
+  ],
+  "date": "2026-10-15",
+  "published": "2026-10-15T14:23:00+03:00"
+ },
+ {
+  "titlu": "Diseară pe live: curse, mount-uri și haos înainte de portal 🚀",
+  "img": "short-uTMRuCM7RTs.jpg",
+  "text": "Pet vs pet votat de chat, cel mai LENT mount 🐌, așteptarea nopții și a stelelor, teorii despre portal. Follow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online.",
+  "eticheta": "VEXU LIVE",
+  "surse": [
+   "https://www.youtube.com/shorts/uTMRuCM7RTs",
+   "https://www.youtube.com/@VexuOnline"
+  ],
+  "date": "2026-10-15",
+  "published": "2026-10-15T14:22:00+03:00"
+ },
+ {
+  "titlu": "5 challenge-uri pe care le puteți da pe live 🔥",
+  "img": "short-FcpxAj7tH08.jpg",
+  "text": "1. Doar ouă mari. 2. Pet vs pet, câștigătorul rămâne. 3. Cel mai mare pet călare. 4. Noob vs maxat. 5. Ce e dincolo de portal? Teoria cea mai bună se citește pe live.",
+  "eticheta": "VEXU LIVE",
+  "surse": [
+   "https://www.youtube.com/shorts/FcpxAj7tH08"
+  ],
+  "date": "2026-10-15",
+  "published": "2026-10-15T14:21:00+03:00"
+ },
+ {
+  "titlu": "Mai sunt 2 zile până la Halloween Dimension 👻",
+  "img": "short-eo3XMGl1mAI.jpg",
+  "text": "Sâmbătă, 17 oct, la 18:00 RO, până sâmbătă, 24 oct. Portal, boși, monștri, ouă secrete, două părți, fără leak-uri. Shorts VEXU: https://www.youtube.com/shorts/uTMRuCM7RTs , https://www.youtube.com/shorts/FcpxAj7tH08 , https://www.youtube.com/shorts/eo3XMGl1mAI . VOD Mounts: https://www.youtube.com/watch?v=d27OmKHuOaw",
+  "eticheta": "VEXU LIVE",
+  "surse": [
+   "https://www.youtube.com/shorts/uTMRuCM7RTs",
+   "https://www.youtube.com/shorts/FcpxAj7tH08",
+   "https://www.youtube.com/shorts/eo3XMGl1mAI",
+   "https://www.youtube.com/watch?v=d27OmKHuOaw"
+  ],
+  "date": "2026-10-15",
+  "published": "2026-10-15T14:20:00+03:00"
  },
  {
   "titlu": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
@@ -20,7 +181,27 @@
    "https://www.roblox.com/events/731438655679365701",
    "https://www.roblox.com/events/4226380795390067313"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T19:50:00+03:00",
+  "events": [
+   {
+    "name": "Fright Night Season 9",
+    "game": "Piggy",
+    "start": "2026-10-01T20:00:00+03:00",
+    "end": "2026-11-01T20:00:00+02:00"
+   },
+   {
+    "name": "Fright Night Part II",
+    "game": "Piggy",
+    "start": "2026-10-17T20:00:00+03:00"
+   },
+   {
+    "name": "Forest — secret Survivor",
+    "game": "Piggy",
+    "start_date": "2026-10-10",
+    "end_date": "2026-11-08"
+   }
+  ]
  },
  {
   "titlu": "🐎 Update-ul cu Mounts a ajuns în Steal An Egg",
@@ -30,7 +211,8 @@
   "surse": [
    "https://www.roblox.com/events/752499920631628450"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T19:40:00+03:00"
  },
  {
   "titlu": "❓ The Hollow: eventul de Halloween al Roblox vine pe 22 octombrie",
@@ -41,6 +223,7 @@
    "ZVON"
   ],
   "surse": [
+   "https://x.com/Roblox/status/2110409528051453961",
    "https://x.com/Roblox/status/2108961492187918378",
    "https://progameguides.com/roblox/the-hollow-roblox-halloween-event-2026-games-list/"
   ],
@@ -48,8 +231,9 @@
   "old_slugs": [
    "roblox-anunta-ceva-misterios-pe-22-octombrie"
   ],
-  "confirmat": "Teaserul oficial @Roblox din 10 oct, cu textul „you've met them before. but not like this.” și logo-ul THE HOLLOW cu data 10.22.26 în video.",
+  "confirmat": "Pe 14 oct @Roblox a postat „nine names. nine nights… you already know some of them. The Hollow · October 22.” Numele The Hollow și data 22 octombrie sunt confirmate. Teaserul din 10 oct: „you've met them before. but not like this.” cu logo-ul THE HOLLOW și data 10.22.26 în video.",
   "confirmat_surse": [
+   "https://x.com/Roblox/status/2110409528051453961",
    "https://x.com/Roblox/status/2108961492187918378"
   ],
   "zvon": [
@@ -60,6 +244,16 @@
   ],
   "zvon_surse": [
    "https://progameguides.com/roblox/the-hollow-roblox-halloween-event-2026-games-list/"
+  ],
+  "published": "2026-10-14T19:30:00+03:00",
+  "events": [
+   {
+    "name": "The Hollow",
+    "game": "Roblox",
+    "start_date": "2026-10-22",
+    "date_only": true,
+    "zvon_note": "Ora de start e ZVON (se vorbește de 21:00 RO) — neconfirmată"
+   }
   ]
  },
  {
@@ -73,7 +267,17 @@
   "surse": [
    "https://www.roblox.com/events/1798388131439968912"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T19:20:00+03:00",
+  "events": [
+   {
+    "name": "The Candy Vault",
+    "game": "DOORS",
+    "start": "2026-10-22T21:00:00+03:00",
+    "end_date": "2026-11-09",
+    "end_time_unknown": true
+   }
+  ]
  },
  {
   "titlu": "👻 Adopt Me: Hauntlet Returns + Halloween Ghost Gallery",
@@ -84,7 +288,17 @@
    "https://www.roblox.com/games/920587237",
    "https://x.com/PlayAdoptMe/status/2106406587245957526"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T19:10:00+03:00",
+  "events": [
+   {
+    "name": "Hauntlet Returns",
+    "game": "Adopt Me",
+    "start_date": "2026-10-03",
+    "no_end": true,
+    "end_note": "fără dată de final anunțată"
+   }
+  ]
  },
  {
   "titlu": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie",
@@ -97,7 +311,16 @@
   "surse": [
    "https://www.roblox.com/events/1473396042098672211"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T19:00:00+03:00",
+  "events": [
+   {
+    "name": "HALLOWEEN",
+    "game": "Dress to Impress",
+    "start": "2026-10-17T18:00:00+03:00",
+    "end": "2026-11-07T18:00:00+02:00"
+   }
+  ]
  },
  {
   "titlu": "🌲 99 Nights in the Forest: vine Trick or Treat",
@@ -107,7 +330,16 @@
   "surse": [
    "https://www.roblox.com/events/6179710618371752545"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T18:50:00+03:00",
+  "events": [
+   {
+    "name": "Trick or Treat",
+    "game": "99 Nights in the Forest",
+    "start": "2026-10-17T20:00:00+03:00",
+    "end": "2026-10-24T15:00:00+03:00"
+   }
+  ]
  },
  {
   "titlu": "Portalul se deschide sâmbătă! Ce urmează pe live-urile VEXU 👻",
@@ -117,7 +349,8 @@
   "surse": [
    "https://www.youtube.com/@VexuOnline"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T18:40:00+03:00"
  },
  {
   "titlu": "Cele mai tari momente de pe live-urile VEXU: am călărit pet-urile! 🚀",
@@ -128,7 +361,8 @@
    "https://www.youtube.com/watch?v=d27OmKHuOaw",
    "https://www.youtube.com/watch?v=b6ZpRrCVydg"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T18:30:00+03:00"
  },
  {
   "titlu": "🎃 Halloween Dimension vine în Steal An Egg!",
@@ -140,7 +374,16 @@
    "https://stealegg.com/en/updates/halloween-dimension-preview/",
    "https://www.roblox.com/events/2469722483213861487"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T18:20:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Dimension",
+    "game": "Steal An Egg",
+    "start": "2026-10-17T18:00:00+03:00",
+    "end": "2026-10-24T17:00:00+03:00"
+   }
+  ]
  },
  {
   "titlu": "🚫 Nu există coduri de Halloween",
@@ -150,7 +393,8 @@
   "surse": [
    "https://stealanegg-roblox.wiki/halloween-dimension/"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T18:10:00+03:00"
  },
  {
   "titlu": "🚀 Roblox simplifică publicarea jocurilor",
@@ -160,7 +404,8 @@
   "surse": [
    "https://devforum.roblox.com/t/a-simpler-path-to-publish-plus-invite-early-testers/4930524"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T18:00:00+03:00"
  },
  {
   "titlu": "🛍️ Licențe pe IP-uri oficiale pentru iteme UGC",
@@ -170,7 +415,8 @@
   "surse": [
    "https://devforum.roblox.com/t/create-ip-based-avatar-items-with-marketplace-licenses/4921794"
   ],
-  "date": "2026-10-14"
+  "date": "2026-10-14",
+  "published": "2026-10-14T17:50:00+03:00"
  },
  {
   "titlu": "NU face asta în update-ul de Halloween: 7 secunde, aproape 600K",
@@ -181,7 +427,8 @@
    "https://youtube.com/shorts/KdVx8Fbb63I"
   ],
   "date": "2026-10-14",
-  "section": "shorts"
+  "section": "shorts",
+  "published": "2026-10-14T17:40:00+03:00"
  },
  {
   "titlu": "Lore de Halloween: poveștile scurte încă prind",
@@ -192,7 +439,8 @@
    "https://youtube.com/shorts/-he1EWx3i94"
   ],
   "date": "2026-10-14",
-  "section": "shorts"
+  "section": "shorts",
+  "published": "2026-10-14T17:30:00+03:00"
  },
  {
   "titlu": "Steal an Egg Halloween: valul a pornit",
@@ -209,6 +457,7 @@
   "section": "shorts",
   "old_slugs": [
    "steal-an-egg-halloween-nimeni-n-a-prins-inca-valul"
-  ]
+  ],
+  "published": "2026-10-14T17:20:00+03:00"
  }
 ]
