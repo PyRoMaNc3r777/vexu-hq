@@ -630,5 +630,66 @@
   ],
   "date": "2026-10-15",
   "published": "2026-10-15T15:24:00+03:00"
+ },
+ {
+  "titlu": "🐟 Fisch: FischFright 3, ediția anuală de Halloween",
+  "img": "game-fisch.png",
+  "text": "Evenimentul limitat anual, a treia ediție — „bigger and spookier”. Rulează din sâmbătă 17 oct, 19:00, până luni 9 nov, 19:00 (ora României). Peștii, uneltele și codurile încă nu au fost anunțate.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/2306862479306785401"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T00:07:00+03:00",
+  "events": [
+   {
+    "name": "FischFright 3",
+    "game": "Fisch",
+    "start": "2026-10-17T19:00:00+03:00",
+    "end": "2026-11-09T19:00:00+02:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
+  "img": "game-dandys-world.png",
+  "text": "Gourdy Shop aduce skin-uri noi din vineri 16 oct, 22:00, până pe 23 oct, 22:00 RO. Pe 17 oct apare melodia „Queens of Mischief”, iar din 18 oct skin-ul Soulvester (Calendar Reward). Evenimentul mare de Halloween din joc e deja live.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/1672892735373312668"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T00:07:00+03:00",
+  "events": [
+   {
+    "name": "Gourdy Shop",
+    "game": "Dandy's World",
+    "start": "2026-10-16T22:00:00+03:00",
+    "end": "2026-10-23T22:00:00+03:00"
+   },
+   {
+    "name": "Queens of Mischief",
+    "game": "Dandy's World",
+    "start_date": "2026-10-17",
+    "date_only": true
+   },
+   {
+    "name": "Soulvester (Calendar Reward)",
+    "game": "Dandy's World",
+    "start_date": "2026-10-18",
+    "date_only": true
+   }
+  ]
+ },
+ {
+  "titlu": "⚔️ RIVALS: RIVALSWEEN pe pagina oficială",
+  "img": "game-rivals.png",
+  "text": "Eventul de Halloween e pe pagina oficială, ține până pe ~7 nov.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/8627987553812480558"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T00:07:00+03:00"
  }
 ]

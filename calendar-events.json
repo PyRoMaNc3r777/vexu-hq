@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T17:48:54+03:00",
+ "generated": "2026-10-16T00:16:50+03:00",
  "events": [
   {
    "name": "Halloween World",
@@ -9,6 +9,42 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "FischFright 3",
+   "game": "Fisch",
+   "start": "2026-10-17T19:00:00+03:00",
+   "end": "2026-11-09T19:00:00+02:00",
+   "slug": "fisch-fischfright-3-editia-anuala-de-halloween",
+   "img": "game-fisch.png",
+   "post_title": "🐟 Fisch: FischFright 3, ediția anuală de Halloween"
+  },
+  {
+   "name": "Gourdy Shop",
+   "game": "Dandy's World",
+   "start": "2026-10-16T22:00:00+03:00",
+   "end": "2026-10-23T22:00:00+03:00",
+   "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
+   "img": "game-dandys-world.png",
+   "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi"
+  },
+  {
+   "name": "Queens of Mischief",
+   "game": "Dandy's World",
+   "start_date": "2026-10-17",
+   "date_only": true,
+   "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
+   "img": "game-dandys-world.png",
+   "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi"
+  },
+  {
+   "name": "Soulvester (Calendar Reward)",
+   "game": "Dandy's World",
+   "start_date": "2026-10-18",
+   "date_only": true,
+   "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
+   "img": "game-dandys-world.png",
+   "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi"
   },
   {
    "name": "Dead of Night",

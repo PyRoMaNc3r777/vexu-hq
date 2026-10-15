@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-15T17:48:54+03:00",
+ "generated": "2026-10-16T00:16:50+03:00",
  "posts": [
   {
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
@@ -13,6 +13,48 @@
    "img": "game-keyboard-escape.png",
    "excerpt": "Halloween World e deschisă de pe 17 oct, ora 21:00, până pe 24 oct, ora 21:00 RO; pe 10 oct a fost evenimentul pregătitor „Halloween AA +…",
    "featured": true,
+   "section": null
+  },
+  {
+   "slug": "fisch-fischfright-3-editia-anuala-de-halloween",
+   "title": "🐟 Fisch: FischFright 3, ediția anuală de Halloween",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T00:07:00+03:00",
+   "img": "game-fisch.png",
+   "excerpt": "Evenimentul limitat anual, a treia ediție — „bigger and spookier”. Rulează din sâmbătă 17 oct, 19:00, până luni 9 nov, 19:00 (ora…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
+   "title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T00:07:00+03:00",
+   "img": "game-dandys-world.png",
+   "excerpt": "Gourdy Shop aduce skin-uri noi din vineri 16 oct, 22:00, până pe 23 oct, 22:00 RO. Pe 17 oct apare melodia „Queens of Mischief”, iar din…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "rivals-rivalsween-pe-pagina-oficiala",
+   "title": "⚔️ RIVALS: RIVALSWEEN pe pagina oficială",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T00:07:00+03:00",
+   "img": "game-rivals.png",
+   "excerpt": "Eventul de Halloween e pe pagina oficială, ține până pe ~7 nov.",
+   "featured": false,
    "section": null
   },
   {
