@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T14:23:58+03:00",
+ "generated": "2026-10-16T14:25:35+03:00",
  "posts": [
   {
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
@@ -13,6 +13,48 @@
    "img": "game-keyboard-escape.png",
    "excerpt": "Halloween World e deschisă de pe 17 oct, ora 21:00, până pe 24 oct, ora 21:00 RO; pe 10 oct a fost evenimentul pregătitor „Halloween AA +…",
    "featured": true,
+   "section": null
+  },
+  {
+   "slug": "grand-piece-online-ultima-sansa-la-halloween-part-1",
+   "title": "🏴‍☠️ Grand Piece Online: ultima șansă la Halloween Part 1",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T14:42:00+03:00",
+   "img": "event-gpo-halloween-part1.png",
+   "excerpt": "Halloween Part 1 din Grand Piece Online se termină pe 18 octombrie, la 05:00 (ora României). Până atunci mai prinzi Trick or Treat în…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "ride-a-pet-update-secret-sambata-la-16-00",
+   "title": "🐾 Ride A Pet: update secret „???” sâmbătă la 16:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T14:41:00+03:00",
+   "img": "event-ride-a-pet-secret.png",
+   "excerpt": "Ride A Pet primește un update secret, „???”, sâmbătă, 17 octombrie, la 16:00 (ora României), până pe 24 octombrie, cu Admin Abuse și bani…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "roblox-machiaj-creat-direct-in-joc",
+   "title": "💄 Roblox: machiaj creat direct în joc",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T14:40:00+03:00",
+   "img": "generic-neon.png",
+   "excerpt": "Roblox a anunțat pe 16 octombrie machiajul creat direct în joc. Jucătorii își fac machiaj, gene și sprâncene și le salvează în inventar,…",
+   "featured": false,
    "section": null
   },
   {

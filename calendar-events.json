@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T14:23:58+03:00",
+ "generated": "2026-10-16T14:25:35+03:00",
  "events": [
   {
    "name": "Halloween World",
@@ -9,6 +9,23 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Halloween Part 1 (final)",
+   "game": "Grand Piece Online",
+   "end": "2026-10-18T05:00:00+03:00",
+   "end_only": true,
+   "slug": "grand-piece-online-ultima-sansa-la-halloween-part-1",
+   "img": "event-gpo-halloween-part1.png",
+   "post_title": "🏴‍☠️ Grand Piece Online: ultima șansă la Halloween Part 1"
+  },
+  {
+   "name": "Update secret „???” (Admin Abuse, bani x2)",
+   "game": "Ride A Pet",
+   "start": "2026-10-17T16:00:00+03:00",
+   "slug": "ride-a-pet-update-secret-sambata-la-16-00",
+   "img": "event-ride-a-pet-secret.png",
+   "post_title": "🐾 Ride A Pet: update secret „???” sâmbătă la 16:00"
   },
   {
    "name": "Halloween Dimension",
