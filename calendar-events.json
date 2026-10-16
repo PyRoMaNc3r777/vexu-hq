@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T07:21:03+03:00",
+ "generated": "2026-10-16T09:26:51+03:00",
  "events": [
   {
    "name": "Halloween World",
@@ -9,6 +9,24 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "HALLOWEEN UPDATE",
+   "game": "Jujutsu Shenanigans",
+   "start": "2026-10-24T00:00:00+03:00",
+   "end": "2026-11-24T00:00:00+02:00",
+   "slug": "jujutsu-shenanigans-halloween-update-din-24-oct",
+   "img": "event-jjs-halloween.png",
+   "post_title": "🎃 Jujutsu Shenanigans: HALLOWEEN UPDATE din 24 oct"
+  },
+  {
+   "name": "Halloween Week 2",
+   "game": "Creatures of Sonaria",
+   "start": "2026-10-16T23:30:00+03:00",
+   "end": "2026-10-19T23:30:00+03:00",
+   "slug": "creatures-of-sonaria-halloween-week-2-din-16-oct-23-30",
+   "img": "event-sonaria-halloween-week2.png",
+   "post_title": "🦖 Creatures of Sonaria: Halloween Week 2 din 16 oct, 23:30"
   },
   {
    "name": "Halloween Part 1",

@@ -802,5 +802,54 @@
     "date_only": true
    }
   ]
+ },
+ {
+  "titlu": "🦖 Creatures of Sonaria: Halloween Week 2 din 16 oct, 23:30",
+  "img": "event-sonaria-halloween-week2.png",
+  "text": "Creatures of Sonaria intră în Halloween Week 2: din 16 oct, 23:30, până pe 19 oct, 23:30 RO. Vine subspecia Faraway Felifaux, cu quest-uri. Atenție: limited-urile dispar la finalul evenimentului.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/5572318619653374572"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T09:27:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Week 2",
+    "game": "Creatures of Sonaria",
+    "start": "2026-10-16T23:30:00+03:00",
+    "end": "2026-10-19T23:30:00+03:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🎃 Jujutsu Shenanigans: HALLOWEEN UPDATE din 24 oct",
+  "img": "event-jjs-halloween.png",
+  "text": "Jujutsu Shenanigans are anunțat HALLOWEEN UPDATE: din 24 oct, 00:00, până pe 24 nov, 00:00 RO. Deocamdată avem doar titlul și fereastra evenimentului.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/5460822494376231562"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T09:28:00+03:00",
+  "events": [
+   {
+    "name": "HALLOWEEN UPDATE",
+    "game": "Jujutsu Shenanigans",
+    "start": "2026-10-24T00:00:00+03:00",
+    "end": "2026-11-24T00:00:00+02:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🌙 Tower Defense Simulator 2.14.0: Solar Requiem Night I + cod 2MILLION",
+  "img": "game-tds.png",
+  "text": "Tower Defense Simulator a primit update-ul 2.14.0:\n- Solar Requiem Night I\n- Sun and Moon Crate\n- Battlepass nou\nCodul 2MILLION îți dă gratis skin-ul Mercenary Pursuit.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/games/3260590327"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T09:29:00+03:00"
  }
 ]
