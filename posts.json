@@ -851,5 +851,32 @@
   ],
   "date": "2026-10-16",
   "published": "2026-10-16T09:29:00+03:00"
+ },
+ {
+  "titlu": "🤝 ZVON: TDS și DoBig, parteneriat?",
+  "img": "news-tds-dobig.png",
+  "text": "Conturi de știri spun că Tower Defense Simulator a confirmat un parteneriat cu DoBig, studioul din spatele Steal An Egg.",
+  "eticheta": "ZVON",
+  "zvon": [
+   "Fanii zic că Paradoxum rămâne la joc, deci nu ar fi o vânzare.",
+   "DoBig a răspuns doar cu „🫢”.",
+   "Nu am găsit încă un anunț oficial de la TDS sau DoBig, așa că tratează-l ca zvon până la confirmare."
+  ],
+  "surse": [
+   "https://x.com/isALTEREGOout/status/2110511898232041772"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T11:24:00+03:00"
+ },
+ {
+  "titlu": "🍈 Blox Fruits: Magnet și Sea 1 refăcut, level cap 3000",
+  "img": "game-blox-fruits.png",
+  "text": "Blox Fruits are update-ul „OUT NOW” (din ~11 oct):\n- fructul Magnet\n- Sea 1 refăcut\n- level cap urcat la 3000",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/games/2753915549"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T11:25:00+03:00"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T09:26:51+03:00",
+ "generated": "2026-10-16T11:24:47+03:00",
  "posts": [
   {
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
@@ -13,6 +13,34 @@
    "img": "game-keyboard-escape.png",
    "excerpt": "Halloween World e deschisă de pe 17 oct, ora 21:00, până pe 24 oct, ora 21:00 RO; pe 10 oct a fost evenimentul pregătitor „Halloween AA +…",
    "featured": true,
+   "section": null
+  },
+  {
+   "slug": "blox-fruits-magnet-si-sea-1-refacut-level-cap-3000",
+   "title": "🍈 Blox Fruits: Magnet și Sea 1 refăcut, level cap 3000",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T11:25:00+03:00",
+   "img": "game-blox-fruits.png",
+   "excerpt": "Blox Fruits are update-ul „OUT NOW” (din ~11 oct): • fructul Magnet • Sea 1 refăcut • level cap urcat la 3000",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "zvon-tds-si-dobig-parteneriat",
+   "title": "🤝 ZVON: TDS și DoBig, parteneriat?",
+   "labels": [
+    "ZVON"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T11:24:00+03:00",
+   "img": "news-tds-dobig.png",
+   "excerpt": "Conturi de știri spun că Tower Defense Simulator a confirmat un parteneriat cu DoBig, studioul din spatele Steal An Egg.",
+   "featured": false,
    "section": null
   },
   {
