@@ -653,10 +653,11 @@
  {
   "titlu": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
   "img": "game-dandys-world.png",
-  "text": "Gourdy Shop aduce skin-uri noi din vineri 16 oct, 22:00, până pe 23 oct, 22:00 RO. Pe 17 oct apare melodia „Queens of Mischief”, iar din 18 oct skin-ul Soulvester (Calendar Reward). Evenimentul mare de Halloween din joc e deja live.",
+  "text": "Gourdy Shop aduce skin-uri noi din vineri 16 oct, 22:00, până pe 23 oct, 22:00 RO. Update 0.29.7 aduce 2 etaje limitate de Halloween, evenimentul „Haunted Gala Floor” și bundle-ul Queens of Mischief. Pe 17 oct apare melodia „Queens of Mischief”, iar din 18 oct skin-ul Soulvester (Calendar Reward). Evenimentul mare de Halloween din joc e deja live.",
   "eticheta": "CONFIRMAT",
   "surse": [
-   "https://www.roblox.com/events/1672892735373312668"
+   "https://www.roblox.com/events/1672892735373312668",
+   "https://www.roblox.com/games/16116270224"
   ],
   "date": "2026-10-16",
   "published": "2026-10-16T00:07:00+03:00",
@@ -668,7 +669,7 @@
     "end": "2026-10-23T22:00:00+03:00"
    },
    {
-    "name": "Queens of Mischief",
+    "name": "Queens of Mischief (melodie + bundle)",
     "game": "Dandy's World",
     "start_date": "2026-10-17",
     "date_only": true
@@ -727,5 +728,79 @@
   "date": "2026-10-16",
   "published": "2026-10-16T00:20:00+03:00",
   "section": "shorts"
+ },
+ {
+  "titlu": "🏡 Bloxburg: Gothic Items, iteme gotice de Halloween",
+  "img": "event-bloxburg-gothic-items.png",
+  "text": "Bloxburg are „Gothic Items”: iteme gotice. Se poate juca din 15 oct până pe 22 oct, 14:55 RO.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/2023913712099918423"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T07:13:00+03:00",
+  "events": [
+   {
+    "name": "Gothic Items",
+    "game": "Bloxburg",
+    "start": "2026-10-15T00:00:00+03:00",
+    "end": "2026-10-22T14:55:00+03:00"
+   }
+  ]
+ },
+ {
+  "titlu": "👻 Evade: Halloween Event din 17 oct, 04:00",
+  "img": "event-evade-halloween.png",
+  "text": "Halloween Event în Evade din 17 oct, 04:00 RO: hărți de Halloween, 40+ cosmetice și emote-uri, quest-uri, Wisps pentru battle pass, Spellbooks și UI nou de magazin. Setul Glorp Cat e limitat până pe 20 nov.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/5447495051187978812"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T07:14:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Event",
+    "game": "Evade",
+    "start": "2026-10-17T04:00:00+03:00"
+   },
+   {
+    "name": "Set Glorp Cat (limitat)",
+    "game": "Evade",
+    "end": "2026-11-20T23:59:59+02:00",
+    "end_only": true
+   }
+  ]
+ },
+ {
+  "titlu": "⚔️ BedWars Halloween Part 1 din 17 oct",
+  "img": "event-bedwars-halloween-part1.png",
+  "text": "BedWars Halloween Part 1: din 17 oct, 01:00, până pe 24 oct, 00:00 RO. Part 2 pe 24 oct, Part 3 pe 31 oct. Descrierea oficială e goală — doar titlu și ore.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/1859514229527282442"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T07:15:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Part 1",
+    "game": "BedWars",
+    "start": "2026-10-17T01:00:00+03:00",
+    "end": "2026-10-24T00:00:00+03:00"
+   },
+   {
+    "name": "Halloween Part 2",
+    "game": "BedWars",
+    "start_date": "2026-10-24",
+    "date_only": true
+   },
+   {
+    "name": "Halloween Part 3",
+    "game": "BedWars",
+    "start_date": "2026-10-31",
+    "date_only": true
+   }
+  ]
  }
 ]

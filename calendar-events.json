@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T00:22:18+03:00",
+ "generated": "2026-10-16T07:21:03+03:00",
  "events": [
   {
    "name": "Halloween World",
@@ -9,6 +9,59 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Halloween Part 1",
+   "game": "BedWars",
+   "start": "2026-10-17T01:00:00+03:00",
+   "end": "2026-10-24T00:00:00+03:00",
+   "slug": "bedwars-halloween-part-1-din-17-oct",
+   "img": "event-bedwars-halloween-part1.png",
+   "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct"
+  },
+  {
+   "name": "Halloween Part 2",
+   "game": "BedWars",
+   "start_date": "2026-10-24",
+   "date_only": true,
+   "slug": "bedwars-halloween-part-1-din-17-oct",
+   "img": "event-bedwars-halloween-part1.png",
+   "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct"
+  },
+  {
+   "name": "Halloween Part 3",
+   "game": "BedWars",
+   "start_date": "2026-10-31",
+   "date_only": true,
+   "slug": "bedwars-halloween-part-1-din-17-oct",
+   "img": "event-bedwars-halloween-part1.png",
+   "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct"
+  },
+  {
+   "name": "Halloween Event",
+   "game": "Evade",
+   "start": "2026-10-17T04:00:00+03:00",
+   "slug": "evade-halloween-event-din-17-oct-04-00",
+   "img": "event-evade-halloween.png",
+   "post_title": "👻 Evade: Halloween Event din 17 oct, 04:00"
+  },
+  {
+   "name": "Set Glorp Cat (limitat)",
+   "game": "Evade",
+   "end": "2026-11-20T23:59:59+02:00",
+   "end_only": true,
+   "slug": "evade-halloween-event-din-17-oct-04-00",
+   "img": "event-evade-halloween.png",
+   "post_title": "👻 Evade: Halloween Event din 17 oct, 04:00"
+  },
+  {
+   "name": "Gothic Items",
+   "game": "Bloxburg",
+   "start": "2026-10-15T00:00:00+03:00",
+   "end": "2026-10-22T14:55:00+03:00",
+   "slug": "bloxburg-gothic-items-iteme-gotice-de-halloween",
+   "img": "event-bloxburg-gothic-items.png",
+   "post_title": "🏡 Bloxburg: Gothic Items, iteme gotice de Halloween"
   },
   {
    "name": "FischFright 3",
@@ -29,7 +82,7 @@
    "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi"
   },
   {
-   "name": "Queens of Mischief",
+   "name": "Queens of Mischief (melodie + bundle)",
    "game": "Dandy's World",
    "start_date": "2026-10-17",
    "date_only": true,

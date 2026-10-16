@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T00:22:18+03:00",
+ "generated": "2026-10-16T07:21:03+03:00",
  "posts": [
   {
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
@@ -13,6 +13,48 @@
    "img": "game-keyboard-escape.png",
    "excerpt": "Halloween World e deschisă de pe 17 oct, ora 21:00, până pe 24 oct, ora 21:00 RO; pe 10 oct a fost evenimentul pregătitor „Halloween AA +…",
    "featured": true,
+   "section": null
+  },
+  {
+   "slug": "bedwars-halloween-part-1-din-17-oct",
+   "title": "⚔️ BedWars Halloween Part 1 din 17 oct",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T07:15:00+03:00",
+   "img": "event-bedwars-halloween-part1.png",
+   "excerpt": "BedWars Halloween Part 1: din 17 oct, 01:00, până pe 24 oct, 00:00 RO. Part 2 pe 24 oct, Part 3 pe 31 oct. Descrierea oficială e goală —…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "evade-halloween-event-din-17-oct-04-00",
+   "title": "👻 Evade: Halloween Event din 17 oct, 04:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T07:14:00+03:00",
+   "img": "event-evade-halloween.png",
+   "excerpt": "Halloween Event în Evade din 17 oct, 04:00 RO: hărți de Halloween, 40+ cosmetice și emote-uri, quest-uri, Wisps pentru battle pass,…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "bloxburg-gothic-items-iteme-gotice-de-halloween",
+   "title": "🏡 Bloxburg: Gothic Items, iteme gotice de Halloween",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T07:13:00+03:00",
+   "img": "event-bloxburg-gothic-items.png",
+   "excerpt": "Bloxburg are „Gothic Items”: iteme gotice. Se poate juca din 15 oct până pe 22 oct, 14:55 RO.",
+   "featured": false,
    "section": null
   },
   {
@@ -81,7 +123,7 @@
    "dateRo": "16 octombrie 2026",
    "published": "2026-10-16T00:07:00+03:00",
    "img": "game-dandys-world.png",
-   "excerpt": "Gourdy Shop aduce skin-uri noi din vineri 16 oct, 22:00, până pe 23 oct, 22:00 RO. Pe 17 oct apare melodia „Queens of Mischief”, iar din…",
+   "excerpt": "Gourdy Shop aduce skin-uri noi din vineri 16 oct, 22:00, până pe 23 oct, 22:00 RO. Update 0.29.7 aduce 2 etaje limitate de Halloween,…",
    "featured": false,
    "section": null
   },
