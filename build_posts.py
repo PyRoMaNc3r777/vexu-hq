@@ -352,6 +352,28 @@ def append_batch(path):
         f.write('\n')
     print(f'Appended {len(batch)} posts from {path}')
 
+def localize_images(posts):
+    """Descarcă local orice imagine remote (ex. tr.rbxcdn 180DAY expiră) în img/; păstrează URL-ul dacă eșuează."""
+    import hashlib, urllib.request
+    changed = False
+    os.makedirs(os.path.join(D, 'img'), exist_ok=True)
+    for p in posts:
+        u = p.get('img', '')
+        if not re.match(r'https?://', u):
+            continue
+        ext = '.' + (re.search(r'\.(png|jpe?g|webp|gif)', u.lower()) or re.search(r'/(png|jpe?g|webp|gif)/', u.lower()) or [None, 'png'])[1]
+        rel = 'img/' + hashlib.sha1(u.encode()).hexdigest()[:12] + ext
+        try:
+            req = urllib.request.Request(u, headers={'User-Agent': 'Mozilla/5.0'})
+            data = urllib.request.urlopen(req, timeout=30).read()
+            if len(data) < 100: raise ValueError('empty')
+            open(os.path.join(D, rel), 'wb').write(data)
+            p['img'] = rel; changed = True
+            print('Imagine localizată:', u, '->', rel)
+        except Exception as ex:
+            print('EROARE descărcare imagine (păstrez URL):', u, ex)
+    return changed
+
 def main():
     ap = argparse.ArgumentParser(description='Build VEXU HQ blog/calendar')
     ap.add_argument('--append', metavar='FILE', help='JSON array of posts to append to posts.json')
@@ -359,7 +381,8 @@ def main():
     if args.append:
         append_batch(args.append)
     posts = json.load(open(P, encoding='utf-8'))
-    if ensure_meta(posts):
+    loc = localize_images(posts)
+    if ensure_meta(posts) or loc:
         with open(P, 'w', encoding='utf-8') as f:
             json.dump(posts, f, ensure_ascii=False, indent=1)
             f.write('\n')
