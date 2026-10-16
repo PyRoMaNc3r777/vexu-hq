@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T11:24:47+03:00",
+ "generated": "2026-10-16T14:23:58+03:00",
  "posts": [
   {
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
@@ -13,6 +13,48 @@
    "img": "game-keyboard-escape.png",
    "excerpt": "Halloween World e deschisă de pe 17 oct, ora 21:00, până pe 24 oct, ora 21:00 RO; pe 10 oct a fost evenimentul pregătitor „Halloween AA +…",
    "featured": true,
+   "section": null
+  },
+  {
+   "slug": "ce-ai-ratat-pe-canal",
+   "title": "🥚 Ce-ai ratat pe canal",
+   "labels": [
+    "VEXU LIVE"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T14:32:00+03:00",
+   "img": "vod-G2FW1n4aAdk.jpg",
+   "excerpt": "Shorts: https://www.youtube.com/shorts/L2owAFJ6uPY , https://www.youtube.com/shorts/uTMRuCM7RTs . Live-ul întreg (VOD):…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "live-ul-de-diseara-incalzirea-inainte-de-halloween",
+   "title": "🔥 Live-ul de diseară: încălzirea înainte de Halloween",
+   "labels": [
+    "VEXU LIVE"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T14:31:00+03:00",
+   "img": "short-uTMRuCM7RTs.jpg",
+   "excerpt": "Diseară, dacă intrăm live, facem încălzirea înainte de Halloween Dimension. Challenge-ul: chat-ul alege pe cine furăm, iar dacă nu…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "maine-se-deschide-halloween-dimension-pe-steal-an-egg",
+   "title": "🎃 MÂINE se deschide Halloween Dimension pe Steal An Egg!",
+   "labels": [
+    "VEXU LIVE"
+   ],
+   "date": "2026-10-16",
+   "dateRo": "16 octombrie 2026",
+   "published": "2026-10-16T14:30:00+03:00",
+   "img": "thumb-uTMRuCM7RTs.jpg",
+   "excerpt": "Sâmbătă, 17 octombrie, pe la 18:00 (ora României), se deschide Halloween Dimension pe Steal An Egg. Eventul ține până pe 24 octombrie și…",
+   "featured": false,
    "section": null
   },
   {
@@ -30,16 +72,16 @@
    "section": null
   },
   {
-   "slug": "zvon-tds-si-dobig-parteneriat",
-   "title": "🤝 ZVON: TDS și DoBig, parteneriat?",
+   "slug": "dobig-intra-in-povestea-tower-defense-simulator",
+   "title": "DoBig intră în povestea Tower Defense Simulator",
    "labels": [
-    "ZVON"
+    "CONFIRMAT"
    ],
    "date": "2026-10-16",
    "dateRo": "16 octombrie 2026",
    "published": "2026-10-16T11:24:00+03:00",
    "img": "news-tds-dobig.png",
-   "excerpt": "Conturi de știri spun că Tower Defense Simulator a confirmat un parteneriat cu DoBig, studioul din spatele Steal An Egg.",
+   "excerpt": "E oficial: pe 15 octombrie, pe la 21:12 (ora României), DoBig (@do_bigR), studioul din spatele Steal An Egg, a scris: „We're honored to be…",
    "featured": false,
    "section": null
   },

@@ -853,20 +853,19 @@
   "published": "2026-10-16T09:29:00+03:00"
  },
  {
-  "titlu": "🤝 ZVON: TDS și DoBig, parteneriat?",
+  "titlu": "DoBig intră în povestea Tower Defense Simulator",
   "img": "news-tds-dobig.png",
-  "text": "Conturi de știri spun că Tower Defense Simulator a confirmat un parteneriat cu DoBig, studioul din spatele Steal An Egg.",
-  "eticheta": "ZVON",
-  "zvon": [
-   "Fanii zic că Paradoxum rămâne la joc, deci nu ar fi o vânzare.",
-   "DoBig a răspuns doar cu „🫢”.",
-   "Nu am găsit încă un anunț oficial de la TDS sau DoBig, așa că tratează-l ca zvon până la confirmare."
-  ],
+  "text": "E oficial: pe 15 octombrie, pe la 21:12 (ora României), DoBig (@do_bigR), studioul din spatele Steal An Egg, a scris: „We're honored to be a part of the Tower Defense Simulator legacy… Excited to keep supporting their vision…”. E vorba de un parteneriat și de susținere pentru Tower Defense Simulator, nu de o vânzare a jocului.",
+  "eticheta": "CONFIRMAT",
   "surse": [
+   "https://x.com/do_bigR/status/2110795983093137906",
    "https://x.com/isALTEREGOout/status/2110511898232041772"
   ],
   "date": "2026-10-16",
-  "published": "2026-10-16T11:24:00+03:00"
+  "published": "2026-10-16T11:24:00+03:00",
+  "old_slugs": [
+   "zvon-tds-si-dobig-parteneriat"
+  ]
  },
  {
   "titlu": "🍈 Blox Fruits: Magnet și Sea 1 refăcut, level cap 3000",
@@ -878,5 +877,49 @@
   ],
   "date": "2026-10-16",
   "published": "2026-10-16T11:25:00+03:00"
+ },
+ {
+  "titlu": "🎃 MÂINE se deschide Halloween Dimension pe Steal An Egg!",
+  "img": "thumb-uTMRuCM7RTs.jpg",
+  "text": "Sâmbătă, 17 octombrie, pe la 18:00 (ora României), se deschide Halloween Dimension pe Steal An Egg. Eventul ține până pe 24 octombrie și vine în două părți. Boss-ii, monștrii și ouăle secrete sunt confirmate oficial. Follow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online.",
+  "eticheta": "VEXU LIVE",
+  "surse": [
+   "https://www.youtube.com/shorts/uTMRuCM7RTs",
+   "https://www.youtube.com/@VexuOnline"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T14:30:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Dimension",
+    "game": "Steal An Egg",
+    "start": "2026-10-17T18:00:00+03:00",
+    "end": "2026-10-24T17:00:00+03:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🔥 Live-ul de diseară: încălzirea înainte de Halloween",
+  "img": "short-uTMRuCM7RTs.jpg",
+  "text": "Diseară, dacă intrăm live, facem încălzirea înainte de Halloween Dimension. Challenge-ul: chat-ul alege pe cine furăm, iar dacă nu reușește, Andrei face o pedeapsă votată. Follow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online.",
+  "eticheta": "VEXU LIVE",
+  "surse": [
+   "https://www.youtube.com/@VexuOnline"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T14:31:00+03:00"
+ },
+ {
+  "titlu": "🥚 Ce-ai ratat pe canal",
+  "img": "vod-G2FW1n4aAdk.jpg",
+  "text": "Shorts: https://www.youtube.com/shorts/L2owAFJ6uPY , https://www.youtube.com/shorts/uTMRuCM7RTs . Live-ul întreg (VOD): https://www.youtube.com/watch?v=G2FW1n4aAdk . Follow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online.",
+  "eticheta": "VEXU LIVE",
+  "surse": [
+   "https://www.youtube.com/shorts/L2owAFJ6uPY",
+   "https://www.youtube.com/shorts/uTMRuCM7RTs",
+   "https://www.youtube.com/watch?v=G2FW1n4aAdk"
+  ],
+  "date": "2026-10-16",
+  "published": "2026-10-16T14:32:00+03:00"
  }
 ]
