@@ -1054,13 +1054,22 @@
  {
   "titlu": "🛠️ Itemele de avatar stricate pot fi reparate după lansare",
   "img": "img/x-bloxy-item-update.jpg",
-  "text": "Creatorii pot urca acum o versiune nouă pentru accesoriile 3D și hainele deja publicate. ID-ul, istoricul vânzărilor și owner-ii rămân aceleași, iar cine are itemul primește automat versiunea reparată. Opțiunea e doar pentru fix-uri.",
+  "text": "Creatorii pot urca acum o versiune nouă pentru accesoriile 3D și hainele deja publicate. ID-ul, istoricul vânzărilor și owner-ii rămân aceleași, iar cine are itemul primește automat versiunea reparată. Opțiunea e doar pentru fix-uri.\n\nRoblox a confirmat oficial pe DevForum: actualizarea merge pentru accesoriile 3D și hainele layered, iar fiecare update trece prin moderare. În Creator Dashboard au apărut și Folders (foldere pentru itemele de avatar și bundle-uri) și Recents, o listă cu ultimele 50 de iteme încărcate.",
   "eticheta": "CONFIRMAT",
   "surse": [
-   "https://x.com/Bloxy_News/status/2110838589487722793"
+   "https://x.com/Bloxy_News/status/2110838589487722793",
+   "https://devforum.roblox.com/t/fix-published-avatar-items-and-organize-your-creations-in-creator-dashboard/4936487"
   ],
   "date": "2026-10-17",
-  "published": "2026-10-17T10:20:00+03:00"
+  "published": "2026-10-17T10:20:00+03:00",
+  "events": [
+   {
+    "name": "Item Versioning + Folders și Recents în Creator Dashboard (anunț)",
+    "game": "Roblox",
+    "start": "2026-10-15T23:56:00+03:00",
+    "announced": true
+   }
+  ]
  },
  {
   "titlu": "🚗 Package Overrides a intrat în Studio Beta",
@@ -1143,5 +1152,80 @@
   "date": "2026-10-17",
   "published": "2026-10-17T14:02:00+03:00",
   "section": "shorts"
+ },
+ {
+  "titlu": "🥚 Break and Steal an Egg: Halloween + Admin Abuse duminică",
+  "img": "img/e463ba202c38.png",
+  "text": "Break and Steal an Egg are Halloween + Admin Abuse de duminică, 18 octombrie, 15:00, până luni, 19 octombrie, 15:00 (ora României). Rivalul din nișa ouălor are acum ~125K jucători.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/8851788773407719989"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T15:44:00+03:00",
+  "events": [
+   {
+    "name": "Halloween + Admin Abuse",
+    "game": "Break and Steal an Egg",
+    "start": "2026-10-18T15:00:00+03:00",
+    "end": "2026-10-19T15:00:00+03:00"
+   }
+  ]
+ },
+ {
+  "titlu": "⚔️ The Strongest Battlegrounds: vine „The Arsenal”",
+  "img": "img/c32ffc9ceaa1.png",
+  "text": "The Strongest Battlegrounds a anunțat „The Arsenal”, cu mesajul „Undying Hero's arsenal keeps growing”. Data e „Coming Soon”, deci ora și ziua nu sunt anunțate încă.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/5816701325882294922"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T15:45:00+03:00",
+  "events": [
+   {
+    "name": "The Arsenal",
+    "game": "The Strongest Battlegrounds",
+    "coming_soon": true
+   }
+  ]
+ },
+ {
+  "titlu": "🎃 Huss Valley: Halloween Event din seara asta",
+  "img": "img/9cb5793476c5.png",
+  "text": "Huss Valley are Halloween Event de sâmbătă, 17 octombrie, 20:00, până sâmbătă, 7 noiembrie, 20:00 (ora României). Conținutul nu e anunțat încă.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/8893392042118480490"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T15:46:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Event",
+    "game": "Huss Valley",
+    "start": "2026-10-17T20:00:00+03:00",
+    "end": "2026-11-07T20:00:00+02:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🍟 Sell Fries!: Halloween cu Free Admin Gifts",
+  "img": "img/77fb34486340.png",
+  "text": "Sell Fries! are Halloween Event de sâmbătă, 17 octombrie, 21:00, până duminică, 18 octombrie, 21:00 (ora României), cu Free Admin Gifts și Weekend Gem Boost.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/1598195694726939280"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T15:47:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Event (Free Admin Gifts + Weekend Gem Boost)",
+    "game": "Sell Fries!",
+    "start": "2026-10-17T21:00:00+03:00",
+    "end": "2026-10-18T21:00:00+03:00"
+   }
+  ]
  }
 ]

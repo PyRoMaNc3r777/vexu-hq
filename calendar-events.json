@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T14:22:43+03:00",
+ "generated": "2026-10-17T15:43:39+03:00",
  "events": [
   {
    "name": "Halloween World",
@@ -9,6 +9,50 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Halloween Event (Free Admin Gifts + Weekend Gem Boost)",
+   "game": "Sell Fries!",
+   "start": "2026-10-17T21:00:00+03:00",
+   "end": "2026-10-18T21:00:00+03:00",
+   "slug": "sell-fries-halloween-cu-free-admin-gifts",
+   "img": "img/77fb34486340.png",
+   "post_title": "🍟 Sell Fries!: Halloween cu Free Admin Gifts"
+  },
+  {
+   "name": "Halloween Event",
+   "game": "Huss Valley",
+   "start": "2026-10-17T20:00:00+03:00",
+   "end": "2026-11-07T20:00:00+02:00",
+   "slug": "huss-valley-halloween-event-din-seara-asta",
+   "img": "img/9cb5793476c5.png",
+   "post_title": "🎃 Huss Valley: Halloween Event din seara asta"
+  },
+  {
+   "name": "The Arsenal",
+   "game": "The Strongest Battlegrounds",
+   "coming_soon": true,
+   "slug": "the-strongest-battlegrounds-vine-the-arsenal",
+   "img": "img/c32ffc9ceaa1.png",
+   "post_title": "⚔️ The Strongest Battlegrounds: vine „The Arsenal”"
+  },
+  {
+   "name": "Halloween + Admin Abuse",
+   "game": "Break and Steal an Egg",
+   "start": "2026-10-18T15:00:00+03:00",
+   "end": "2026-10-19T15:00:00+03:00",
+   "slug": "break-and-steal-an-egg-halloween-admin-abuse-duminica",
+   "img": "img/e463ba202c38.png",
+   "post_title": "🥚 Break and Steal an Egg: Halloween + Admin Abuse duminică"
+  },
+  {
+   "name": "Item Versioning + Folders și Recents în Creator Dashboard (anunț)",
+   "game": "Roblox",
+   "start": "2026-10-15T23:56:00+03:00",
+   "announced": true,
+   "slug": "itemele-de-avatar-stricate-pot-fi-reparate-dupa-lansare",
+   "img": "img/x-bloxy-item-update.jpg",
+   "post_title": "🛠️ Itemele de avatar stricate pot fi reparate după lansare"
   },
   {
    "name": "Halloween",

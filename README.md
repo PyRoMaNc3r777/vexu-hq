@@ -34,7 +34,7 @@ Câmpuri:
 - **date** — `YYYY-MM-DD` (ziua din feed); dacă lipsește, se ia din `published`
 - **featured** — opțional, un singur post
 - **section**: `"shorts"` pentru TREND SHORTS
-- **events** — opțional, pentru Calendar Halloween (`start`/`end` ISO, sau `start_date`/`end_date`, `date_only`, `no_end`, `end_time_unknown`, `end_only`, `zvon_note`)
+- **events** — opțional, pentru Calendar Halloween (`start`/`end` ISO, sau `start_date`/`end_date`, `date_only`, `no_end`, `end_time_unknown`, `end_only`, `zvon_note`, `coming_soon` pentru dată neanunțată, `announced` + `start` pentru anunțuri oficiale)
 - **old_slugs** — redirect de la slug-uri vechi
 - **confirmat** / **zvon** — blocuri separate pe pagina postării
 
