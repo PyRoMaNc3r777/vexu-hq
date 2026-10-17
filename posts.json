@@ -1033,5 +1033,64 @@
   "date": "2026-10-17",
   "published": "2026-10-17T09:27:00+03:00",
   "section": "shorts"
+ },
+ {
+  "titlu": "🎁 ZVON: Roblox lucrează la cadouri cu iteme de avatar",
+  "img": "img/x-valra-gifting.png",
+  "text": "Valra a găsit în codul Roblox o funcție de cadouri care pare să permită oferirea aproape oricărui item de avatar.",
+  "eticheta": "ZVON",
+  "zvon": [
+   "Funcția a fost găsită în cod, nu e lansată și se poate schimba până (sau dacă) apare oficial."
+  ],
+  "surse": [
+   "https://x.com/ValraSwag/status/2110689401231507811"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T10:19:00+03:00"
+ },
+ {
+  "titlu": "🛠️ Itemele de avatar stricate pot fi reparate după lansare",
+  "img": "img/x-bloxy-item-update.jpg",
+  "text": "Creatorii pot urca acum o versiune nouă pentru accesoriile 3D și hainele deja publicate. ID-ul, istoricul vânzărilor și owner-ii rămân aceleași, iar cine are itemul primește automat versiunea reparată. Opțiunea e doar pentru fix-uri.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/Bloxy_News/status/2110838589487722793"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T10:20:00+03:00"
+ },
+ {
+  "titlu": "🚗 Package Overrides a intrat în Studio Beta",
+  "img": "img/x-package-overrides.jpg",
+  "text": "Funcția arătată la RDC e acum în Studio Beta: poți modifica un package direct în place-ul tău (de exemplu, să revopsești o mașină) și rămâne legat de sursă, deci update-urile la package-ul original tot vin.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/RobloxCreators/status/2110868509039444267"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T10:21:00+03:00"
+ },
+ {
+  "titlu": "💙 DoBig lansează Do Big Do Good",
+  "img": "game-steal-an-egg.png",
+  "text": "Do Big Studios, studioul din spatele Steal An Egg, a lansat Do Big Do Good, o inițiativă caritabilă formată mai devreme anul acesta.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/do_bigR/status/2110897200993599748"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T10:22:00+03:00"
+ },
+ {
+  "titlu": "👻 Ce vrei să vezi primul în dimensiune?",
+  "img": "img/steal-an-egg-halloween-dimension.png",
+  "text": "Boss-i, monștri sau ouă secrete? Lasă un comentariu, iar cele mai votate intră primele pe live.\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile!",
+  "eticheta": "VEXU LIVE",
+  "featured": true,
+  "surse": [
+   "https://www.youtube.com/@VexuOnline"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T10:23:00+03:00"
  }
 ]
