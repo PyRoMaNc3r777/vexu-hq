@@ -1227,5 +1227,30 @@
     "end": "2026-10-18T21:00:00+03:00"
    }
   ]
+ },
+ {
+  "titlu": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2 începe azi la 19:00",
+  "img": "img/e096eff00955.png",
+  "text": "Halloween Part 2 rulează de azi, 17 octombrie, 19:00, până sâmbătă, 24 octombrie, 21:00 (ora României). Vin Halloween Season Pass, Luminant Egg cu Global Egg Luck, super enchant-uri noi și OG Sinister Lord 2.0 pentru Top 25 zilnic pe leaderboard-ul Halloween Rebirth. Bonus: Shadow Admin Abuse azi, 23:00–23:45.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/4496096908883919533"
+  ],
+  "date": "2026-10-17",
+  "published": "2026-10-17T16:32:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Part 2",
+    "game": "Bubble Gum Simulator INFINITY",
+    "start": "2026-10-17T19:00:00+03:00",
+    "end": "2026-10-24T21:00:00+03:00"
+   },
+   {
+    "name": "Shadow Admin Abuse",
+    "game": "Bubble Gum Simulator INFINITY",
+    "start": "2026-10-17T23:00:00+03:00",
+    "end": "2026-10-17T23:45:00+03:00"
+   }
+  ]
  }
 ]
