@@ -970,5 +970,44 @@
     "end_only": true
    }
   ]
+ },
+ {
+  "titlu": "🔪 Murder Duels: Halloween începe diseară la 21:00",
+  "img": "img/ffb65ef3e8fa.png",
+  "text": "Evenimentul de Halloween din Murder Duels pornește azi, 17 octombrie, la 21:00 (ora României) și ține până pe 1 noiembrie, la 14:00. Detaliile despre ce aduce nu sunt publice încă.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/8432112593786765976"
+  ],
+  "date": "2026-10-17",
+  "events": [
+   {
+    "name": "Halloween",
+    "game": "Murder Duels",
+    "start": "2026-10-17T21:00:00+03:00",
+    "end": "2026-11-01T14:00:00+02:00"
+   }
+  ],
+  "published": "2026-10-17T07:15:37+03:00"
+ },
+ {
+  "titlu": "🩸 Violence District: The Butcher X Halloween din 24 octombrie",
+  "img": "img/d0f25a8958ec.png",
+  "text": "Violence District primește evenimentul de Halloween „The Butcher X Halloween” pe 24 octombrie, la 15:00 (ora României), și ține până pe 21 noiembrie. Vine cu:\n- mod Ranked\n- hartă nouă\n- UI refăcut\n- perk-uri și skin-uri noi",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/8461601818890338985"
+  ],
+  "date": "2026-10-17",
+  "events": [
+   {
+    "name": "The Butcher X Halloween",
+    "game": "Violence District",
+    "start": "2026-10-24T15:00:00+03:00",
+    "end_date": "2026-11-21",
+    "end_time_unknown": true
+   }
+  ],
+  "published": "2026-10-17T07:15:37+03:00"
  }
 ]

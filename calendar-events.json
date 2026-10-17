@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-16T17:43:45+03:00",
+ "generated": "2026-10-17T07:15:37+03:00",
  "events": [
   {
    "name": "Halloween World",
@@ -9,6 +9,25 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Halloween",
+   "game": "Murder Duels",
+   "start": "2026-10-17T21:00:00+03:00",
+   "end": "2026-11-01T14:00:00+02:00",
+   "slug": "murder-duels-halloween-incepe-diseara-la-21-00",
+   "img": "img/ffb65ef3e8fa.png",
+   "post_title": "🔪 Murder Duels: Halloween începe diseară la 21:00"
+  },
+  {
+   "name": "The Butcher X Halloween",
+   "game": "Violence District",
+   "start": "2026-10-24T15:00:00+03:00",
+   "end_date": "2026-11-21",
+   "end_time_unknown": true,
+   "slug": "violence-district-the-butcher-x-halloween-din-24-octombrie",
+   "img": "img/d0f25a8958ec.png",
+   "post_title": "🩸 Violence District: The Butcher X Halloween din 24 octombrie"
   },
   {
    "name": "Halloween Part 1 (final)",
