@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T07:15:20+03:00",
+ "generated": "2026-10-18T07:22:10+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -19,6 +19,15 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Tornado Halloween",
+   "game": "Plants vs Brainrots",
+   "start": "2026-10-18T01:00:00+03:00",
+   "end": "2026-10-25T00:45:00+03:00",
+   "slug": "plants-vs-brainrots-revine-tornado-cu-eveniment-de-halloween",
+   "img": "img/f6345339c477.png",
+   "post_title": "🌪️ Plants vs Brainrots: revine Tornado, cu eveniment de Halloween"
   },
   {
    "name": "Spookye Zombies Part 1",
@@ -246,11 +255,11 @@
   {
    "name": "Dead of Night",
    "game": "Dead Rails",
-   "start": "2026-10-17T23:00:00+03:00",
+   "start": "2026-10-20T23:00:00+03:00",
    "end": "2026-11-07T23:00:00+02:00",
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
    "img": "game-dead-rails.png",
-   "post_title": "🚂 Dead Rails: Dead of Night pe 17 octombrie"
+   "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie"
   },
   {
    "name": "Helperbot în roster",

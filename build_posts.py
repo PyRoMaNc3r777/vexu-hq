@@ -6,7 +6,7 @@ Utilizare:
   python3 build_posts.py --append batch.json   # adaugă postări din fișier (array JSON) apoi rebuild
 
 Fiecare post: titlu, text, eticheta (sau listă), img, surse[], date (YYYY-MM-DD).
-Opțional: published (ISO +03/+02), featured, section ("shorts"), old_slugs[], events[],
+Opțional: published (ISO +03/+02), featured, section ("shorts"), slug (fixează URL-ul), old_slugs[], events[],
           confirmat/zvon (blocuri separate).
 Dacă lipsește published → se completează automat cu ora curentă Europe/Bucharest.
 Dacă lipsește date → se ia din published (sau azi).
@@ -278,7 +278,7 @@ def build_post_pages(posts):
     order = sorted(range(len(posts)), key=lambda i: (bool(posts[i].get('featured')), pub_key(posts[i]), -i), reverse=True)
     for i in order:
         p = posts[i]
-        s = slug(p['titlu'])
+        s = p.get('slug') or slug(p['titlu'])
         lab = f'{chips(p)}<span class="dt">📅 {ro_date(p["date"])}</span>'
         src = ''.join(f'<a href="{e(u)}" target="_blank" rel="noopener">{e(u)}</a>' for u in p.get('surse', []))
         def sl(us):

@@ -31,11 +31,12 @@
   "published": "2026-10-15T17:55:00+03:00"
  },
  {
-  "titlu": "🚂 Dead Rails: Dead of Night pe 17 octombrie",
+  "titlu": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
   "img": "game-dead-rails.png",
-  "text": "Evenimentul „Dead of Night” în Dead Rails rulează din 17 octombrie, 23:00, până pe 7 noiembrie, 23:00 (ora României).",
+  "text": "ACTUALIZARE: s-a amânat pe 20 oct.\n\nEvenimentul „Dead of Night” în Dead Rails nu mai pornește pe 17 octombrie. Noua fereastră: de marți, 20 octombrie, la 23:00, până sâmbătă, 7 noiembrie, la 23:00 (ora României).\n\nPe pagina oficială a evenimentului descrierea e încă „Coming soon”, deci detaliile despre ce aduce nu sunt anunțate.",
   "eticheta": "CONFIRMAT",
   "surse": [
+   "https://www.roblox.com/events/1797162836242334297",
    "https://www.roblox.com/games/116495829188952/Dead-Rails"
   ],
   "date": "2026-10-15",
@@ -44,10 +45,11 @@
    {
     "name": "Dead of Night",
     "game": "Dead Rails",
-    "start": "2026-10-17T23:00:00+03:00",
+    "start": "2026-10-20T23:00:00+03:00",
     "end": "2026-11-07T23:00:00+02:00"
    }
-  ]
+  ],
+  "slug": "dead-rails-dead-of-night-pe-17-octombrie"
  },
  {
   "titlu": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween",
@@ -1310,5 +1312,24 @@
     "end_note": "fără dată de final anunțată (doar start 24 oct 18:00)"
    }
   ]
+ },
+ {
+  "titlu": "🌪️ Plants vs Brainrots: revine Tornado, cu eveniment de Halloween",
+  "img": "img/f6345339c477.png",
+  "text": "Tornado revine în Plants vs Brainrots, de data asta cu eveniment de Halloween. Rulează de duminică, 18 octombrie, ora 01:00, până pe 25 octombrie, ora 00:45 (ora României).\n\nCe aduce:\n- Recompense OG\n- O mutație nouă\n- Un biom nou\n- Plante și brainrots noi\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile!",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/7939789730969944689"
+  ],
+  "date": "2026-10-18",
+  "events": [
+   {
+    "name": "Tornado Halloween",
+    "game": "Plants vs Brainrots",
+    "start": "2026-10-18T01:00:00+03:00",
+    "end": "2026-10-25T00:45:00+03:00"
+   }
+  ],
+  "published": "2026-10-18T07:22:10+03:00"
  }
 ]

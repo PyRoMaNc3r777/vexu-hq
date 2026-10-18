@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T07:15:20+03:00",
+ "generated": "2026-10-18T07:22:10+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -41,6 +41,20 @@
    "img": "game-keyboard-escape.png",
    "excerpt": "Halloween World e deschisă de pe 17 oct, ora 21:00, până pe 24 oct, ora 21:00 RO; pe 10 oct a fost evenimentul pregătitor „Halloween AA +…",
    "featured": true,
+   "section": null
+  },
+  {
+   "slug": "plants-vs-brainrots-revine-tornado-cu-eveniment-de-halloween",
+   "title": "🌪️ Plants vs Brainrots: revine Tornado, cu eveniment de Halloween",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-18",
+   "dateRo": "18 octombrie 2026",
+   "published": "2026-10-18T07:22:10+03:00",
+   "img": "img/f6345339c477.png",
+   "excerpt": "Tornado revine în Plants vs Brainrots, de data asta cu eveniment de Halloween. Rulează de duminică, 18 octombrie, ora 01:00, până pe 25…",
+   "featured": false,
    "section": null
   },
   {
@@ -605,7 +619,7 @@
   },
   {
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
-   "title": "🚂 Dead Rails: Dead of Night pe 17 octombrie",
+   "title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
    "labels": [
     "CONFIRMAT"
    ],
@@ -613,7 +627,7 @@
    "dateRo": "15 octombrie 2026",
    "published": "2026-10-15T17:54:00+03:00",
    "img": "game-dead-rails.png",
-   "excerpt": "Evenimentul „Dead of Night” în Dead Rails rulează din 17 octombrie, 23:00, până pe 7 noiembrie, 23:00 (ora României).",
+   "excerpt": "ACTUALIZARE: s-a amânat pe 20 oct. Evenimentul „Dead of Night” în Dead Rails nu mai pornește pe 17 octombrie. Noua fereastră: de marți, 20…",
    "featured": false,
    "section": null
   },
