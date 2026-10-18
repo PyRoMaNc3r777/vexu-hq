@@ -330,7 +330,7 @@
  {
   "titlu": "❓ The Hollow: eventul de Halloween al Roblox vine pe 22 octombrie",
   "img": "generic-neon.png",
-  "text": "Teaserul oficial @Roblox din 10 oct, cu textul „you've met them before. but not like this.” și logo-ul THE HOLLOW cu data 10.22.26 în video.",
+  "text": "🔄 ZVON nou: Forsaken s-ar putea să NU fie în listă — https://x.com/Xh0PlUgc/status/2111389292228427837\n\nTeaserul oficial @Roblox din 10 oct, cu textul „you've met them before. but not like this.” și logo-ul THE HOLLOW cu data 10.22.26 în video.",
   "eticheta": [
    "CONFIRMAT",
    "ZVON"
@@ -350,13 +350,15 @@
    "https://x.com/Roblox/status/2108961492187918378"
   ],
   "zvon": [
+   "ZVON nou: Forsaken s-ar putea să NU fie în listă (https://x.com/Xh0PlUgc/status/2111389292228427837)",
    "Ora de start: se vorbește de 11:00 PDT, adică 21:00 ora României.",
    "Data de final: 5 sau 9 noiembrie.",
    "Jocurile: 99 Nights, Piggy, Dandy's World, DOORS, +1 Speed Keyboard Escape. Niciunul nu e confirmat.",
    "Premiile: probabil iteme UGC."
   ],
   "zvon_surse": [
-   "https://progameguides.com/roblox/the-hollow-roblox-halloween-event-2026-games-list/"
+   "https://progameguides.com/roblox/the-hollow-roblox-halloween-event-2026-games-list/",
+   "https://x.com/Xh0PlUgc/status/2111389292228427837"
   ],
   "published": "2026-10-14T19:30:00+03:00",
   "events": [
@@ -881,7 +883,7 @@
  {
   "titlu": "🎃 AZI la 18:00 se deschide Halloween Dimension pe Steal An Egg!",
   "img": "img/steal-an-egg-halloween-dimension.png",
-  "text": "AZI, sâmbătă, 17 octombrie, la 18:00 (ora României), se deschide Halloween Dimension pe Steal An Egg. Eventul ține până sâmbătă, 24 octombrie, la 17:00 (ora României), și vine în două părți — descrierea oficială: „our massive two-part Halloween event begins!”\n\nDin descrierea oficială: „Monster roars echo from within, powerful bosses await, and secret eggs are waiting to be discovered...”\n\nCe NU se știe încă: data Părții 2 nu a fost anunțată, iar numele pet-urilor și ale boss-ilor nu au fost dezvăluite.\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online.",
+  "text": "UPDATE A început, vezi postarea nouă: https://pyromanc3r777.github.io/vexu-hq/posts/halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct.html\n\nAZI, sâmbătă, 17 octombrie, la 18:00 (ora României), se deschide Halloween Dimension pe Steal An Egg. Eventul ține până sâmbătă, 24 octombrie, la 17:00 (ora României), și vine în două părți — descrierea oficială: „our massive two-part Halloween event begins!”\n\nDin descrierea oficială: „Monster roars echo from within, powerful bosses await, and secret eggs are waiting to be discovered...”\n\nCe NU se știe încă: data Părții 2 nu a fost anunțată, iar numele pet-urilor și ale boss-ilor nu au fost dezvăluite.\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online.",
   "eticheta": "VEXU LIVE",
   "surse": [
    "https://www.youtube.com/shorts/uTMRuCM7RTs",
@@ -1281,6 +1283,31 @@
     "game": "Hunty Zombie",
     "start": "2026-10-17T21:00:00+03:00",
     "end": "2026-10-19T21:00:00+03:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🎃 Halloween Dimension e LIVE în Steal An Egg: 3 biomuri, Echo, Phantom Express + Part 2 pe 24 oct",
+  "img": "img/steal-an-egg-halloween-part-2.png",
+  "text": "Halloween Dimension e LIVE pe Steal An Egg. A pornit la timp sâmbătă, 17 octombrie, la 18:00 (ora României) și rulează până sâmbătă, 24 octombrie, la 17:00 RO. În seara lansării, jocul a trecut de 10,7M jucători simultan (Roblox API) — probabil un record nou (nu e anunțat oficial).\n\nUpdate 9 — patch notes oficiale (CONFIRMAT):\n- Intri prin portalul de la spawn în 3 biomuri noi: Graveyard, Haunted Swamp, Abandoned Manor.\n- Fiecare biom are 6 pets noi (18 în total).\n- Echo the Ghost Dog: îl ajuți să-și recupereze amintirile (4 obiecte pierdute).\n- Phantom Express vine la fiecare oră fixă și la jumătate; ca să urci îți trebuie Phantom Express Ticket; trenul te duce într-o zonă nouă care deblochează Spectral Mutation.\n- Candy Corn: strângi returnând ouă și învingând monștri. Evenimente Blood Moon (x2 Candy Corn) și Pumpkin Collection.\n- În store a apărut un Halloween Egg nou.\n\nHalloween PART 2 (CONFIRMAT):\n- Dincolo de porțile Abandoned Manor a apărut un portal misterios, dar e sigilat.\n- Part 2 începe sâmbătă, 24 octombrie, la 18:00 RO, imediat după ce se termină Dimension (24 oct, 17:00).\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile!",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.sportskeeda.com/roblox-news/steal-an-egg-update-9-patch-notes-halloween-dimension",
+   "https://www.roblox.com/events/2469722483213861487",
+   "https://www.roblox.com/events/3079544932537598621",
+   "https://www.youtube.com/shorts/cizIBiLWFkE",
+   "https://www.youtube.com/shorts/o_2pM5fnnXY"
+  ],
+  "date": "2026-10-18",
+  "published": "2026-10-18T07:14:54+03:00",
+  "featured": true,
+  "events": [
+   {
+    "name": "SAE Halloween Part 2",
+    "game": "Steal An Egg",
+    "start": "2026-10-24T18:00:00+03:00",
+    "no_end": true,
+    "end_note": "fără dată de final anunțată (doar start 24 oct 18:00)"
    }
   ]
  }

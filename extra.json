@@ -1,14 +1,25 @@
 {
- "short": {
-  "titlu": "PORTALUL SE DESCHIDE SÂMBĂTĂ",
-  "durata": "15–20s",
-  "countdown_pana": "2026-10-17T18:00:00+03:00",
-  "countdown_text": "Countdown până pe 17 oct la 18:00",
-  "broll": "B-roll cu Mounts",
-  "regula": "Fără leak-uri"
- },
- "halloween": {
-  "confirmat": ["Portal", "Boss-i", "Monștri", "Ouă noi și secrete", "Eveniment în două părți"],
-  "neanuntat": ["Pets", "Rates", "Numele boss-ilor", "Data Părții 2"]
- }
+  "short": {
+    "titlu": "PORTALUL SE DESCHIDE SÂMBĂTĂ",
+    "durata": "15–20s",
+    "countdown_pana": "2026-10-17T18:00:00+03:00",
+    "countdown_text": "Countdown până pe 17 oct la 18:00",
+    "broll": "B-roll cu Mounts",
+    "regula": "Fără leak-uri"
+  },
+  "halloween": {
+    "confirmat": [
+      "Portal",
+      "Boss-i",
+      "Monștri",
+      "Ouă noi și secrete",
+      "Eveniment în două părți",
+      "SAE Halloween Part 2: 24 oct 18:00"
+    ],
+    "neanuntat": [
+      "Pets",
+      "Rates",
+      "Numele boss-ilor"
+    ]
+  }
 }
