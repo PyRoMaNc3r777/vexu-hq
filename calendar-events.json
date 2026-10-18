@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T08:24:13+03:00",
+ "generated": "2026-10-18T08:48:20+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -19,6 +19,24 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Halloween Event",
+   "game": "Prospecting",
+   "start": "2026-10-17T17:00:00+03:00",
+   "end": "2026-11-07T17:00:00+02:00",
+   "slug": "prospecting-halloween-event-e-live-the-graveyard-returns-pana-pe-7-noiembrie",
+   "img": "img/25da364b4d38.png",
+   "post_title": "💎 Prospecting: Halloween Event e live — „The Graveyard returns…”, până pe 7 noiembrie"
+  },
+  {
+   "name": "HALLOWEEN UPDATE",
+   "game": "Fish It",
+   "start": "2026-10-18T04:00:00+03:00",
+   "end": "2026-10-22T04:00:00+03:00",
+   "slug": "fish-it-halloween-update-cu-insula-noua-live-pana-joi-22-octombrie",
+   "img": "img/d6cb4af167e8.jpeg",
+   "post_title": "🐟 Fish It: HALLOWEEN UPDATE cu insulă nouă, live până joi 22 octombrie"
   },
   {
    "name": "Tornado Halloween",

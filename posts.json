@@ -1368,5 +1368,43 @@
   ],
   "date": "2026-10-18",
   "published": "2026-10-18T08:25:00+03:00"
+ },
+ {
+  "titlu": "💎 Prospecting: Halloween Event e live — „The Graveyard returns…”, până pe 7 noiembrie",
+  "img": "img/25da364b4d38.png",
+  "text": "Prospecting! are Halloween Event, cu mesajul „The Graveyard returns…”. Evenimentul a început sâmbătă, 17 octombrie, la 17:00 (ora României) și ține până sâmbătă, 7 noiembrie, la 17:00. Detaliile sunt pe pagina oficială a evenimentului de pe Roblox.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/7841439992185488145"
+  ],
+  "date": "2026-10-18",
+  "published": "2026-10-18T08:50:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Event",
+    "game": "Prospecting",
+    "start": "2026-10-17T17:00:00+03:00",
+    "end": "2026-11-07T17:00:00+02:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🐟 Fish It: HALLOWEEN UPDATE cu insulă nouă, live până joi 22 octombrie",
+  "img": "img/d6cb4af167e8.jpeg",
+  "text": "Fish It! a primit HALLOWEEN UPDATE, cu o insulă nouă de Halloween. Evenimentul a început duminică, 18 octombrie, la 04:00 (ora României) și ține până joi, 22 octombrie, la 04:00. Pagina oficială a evenimentului mai amintește de pești noi, misiuni de Halloween, Trick or Treat zilnic prin satul de Halloween, o mutație nouă și un Battle Pass de Halloween — detaliile complete sunt pe pagina evenimentului de pe Roblox.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/8174015307124048435"
+  ],
+  "date": "2026-10-18",
+  "published": "2026-10-18T08:50:00+03:00",
+  "events": [
+   {
+    "name": "HALLOWEEN UPDATE",
+    "game": "Fish It",
+    "start": "2026-10-18T04:00:00+03:00",
+    "end": "2026-10-22T04:00:00+03:00"
+   }
+  ]
  }
 ]
