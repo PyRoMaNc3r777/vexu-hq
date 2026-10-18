@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T14:22:54+03:00",
+ "generated": "2026-10-18T14:27:14+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -146,6 +146,15 @@
    "post_title": "🔪 Murder Duels: Halloween începe diseară la 21:00"
   },
   {
+   "name": "Halloween 2026",
+   "game": "Murder Mystery 2",
+   "start": "2026-10-18T22:00:00+03:00",
+   "end": "2026-11-16T20:00:00+02:00",
+   "slug": "murder-duels-halloween-incepe-diseara-la-21-00",
+   "img": "img/ffb65ef3e8fa.png",
+   "post_title": "🔪 Murder Duels: Halloween începe diseară la 21:00"
+  },
+  {
    "name": "The Butcher X Halloween",
    "game": "Violence District",
    "start": "2026-10-24T15:00:00+03:00",
@@ -211,8 +220,8 @@
   {
    "name": "Halloween Part 2",
    "game": "BedWars",
-   "start_date": "2026-10-24",
-   "date_only": true,
+   "start": "2026-10-24T01:00:00+03:00",
+   "end": "2026-10-30T23:00:00+02:00",
    "slug": "bedwars-halloween-part-1-din-17-oct",
    "img": "event-bedwars-halloween-part1.png",
    "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct"
@@ -377,6 +386,15 @@
    "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă"
   },
   {
+   "name": "Season Pass Week 2",
+   "game": "Pet Simulator 99",
+   "start": "2026-10-18T07:00:00+03:00",
+   "end": "2026-10-24T19:00:00+03:00",
+   "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
+   "img": "game-pet-sim-99.png",
+   "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă"
+  },
+  {
    "name": "Fright Night Season 9",
    "game": "Piggy",
    "start": "2026-10-01T20:00:00+03:00",
@@ -437,6 +455,15 @@
    "game": "Dress to Impress",
    "start": "2026-10-17T18:00:00+03:00",
    "end": "2026-11-07T18:00:00+02:00",
+   "slug": "dress-to-impress-halloween-incepe-pe-17-octombrie",
+   "img": "game-dress-to-impress.png",
+   "post_title": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie"
+  },
+  {
+   "name": "Tales of the Dark King",
+   "game": "Dress to Impress",
+   "start": "2026-10-24T18:00:00+03:00",
+   "end": "2026-11-14T06:00:00+02:00",
    "slug": "dress-to-impress-halloween-incepe-pe-17-octombrie",
    "img": "game-dress-to-impress.png",
    "post_title": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie"

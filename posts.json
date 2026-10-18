@@ -186,7 +186,8 @@
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/events/8645848830534877834",
-   "https://www.roblox.com/games/8737899170/Pet-Simulator-99"
+   "https://www.roblox.com/games/8737899170/Pet-Simulator-99",
+   "https://www.roblox.com/events/7915528625254957692"
   ],
   "date": "2026-10-15",
   "published": "2026-10-15T14:15:00+03:00",
@@ -202,6 +203,12 @@
     "game": "Pet Simulator 99",
     "end": "2026-10-17T19:00:00+03:00",
     "end_only": true
+   },
+   {
+    "name": "Season Pass Week 2",
+    "game": "Pet Simulator 99",
+    "start": "2026-10-18T07:00:00+03:00",
+    "end": "2026-10-24T19:00:00+03:00"
    }
   ],
   "old_slugs": [
@@ -426,7 +433,8 @@
    "ZVON"
   ],
   "surse": [
-   "https://www.roblox.com/events/1473396042098672211"
+   "https://www.roblox.com/events/1473396042098672211",
+   "https://www.roblox.com/events/5802987007558943505"
   ],
   "date": "2026-10-14",
   "published": "2026-10-14T19:00:00+03:00",
@@ -436,6 +444,12 @@
     "game": "Dress to Impress",
     "start": "2026-10-17T18:00:00+03:00",
     "end": "2026-11-07T18:00:00+02:00"
+   },
+   {
+    "name": "Tales of the Dark King",
+    "game": "Dress to Impress",
+    "start": "2026-10-24T18:00:00+03:00",
+    "end": "2026-11-14T06:00:00+02:00"
    }
   ]
  },
@@ -782,7 +796,8 @@
   "text": "BedWars Halloween Part 1: din 17 oct, 01:00, până pe 24 oct, 00:00 RO. Part 2 pe 24 oct, Part 3 pe 31 oct. Descrierea oficială e goală — doar titlu și ore.",
   "eticheta": "CONFIRMAT",
   "surse": [
-   "https://www.roblox.com/events/1859514229527282442"
+   "https://www.roblox.com/events/1859514229527282442",
+   "https://www.roblox.com/events/1991075056398238314"
   ],
   "date": "2026-10-16",
   "published": "2026-10-16T07:15:00+03:00",
@@ -796,8 +811,8 @@
    {
     "name": "Halloween Part 2",
     "game": "BedWars",
-    "start_date": "2026-10-24",
-    "date_only": true
+    "start": "2026-10-24T01:00:00+03:00",
+    "end": "2026-10-30T23:00:00+02:00"
    },
    {
     "name": "Halloween Part 3",
@@ -984,7 +999,8 @@
   "text": "Evenimentul de Halloween din Murder Duels pornește azi, 17 octombrie, la 21:00 (ora României) și ține până pe 1 noiembrie, la 14:00. Detaliile despre ce aduce nu sunt publice încă.",
   "eticheta": "CONFIRMAT",
   "surse": [
-   "https://www.roblox.com/events/8432112593786765976"
+   "https://www.roblox.com/events/8432112593786765976",
+   "https://www.roblox.com/events/7505344944098378506"
   ],
   "date": "2026-10-17",
   "events": [
@@ -993,6 +1009,12 @@
     "game": "Murder Duels",
     "start": "2026-10-17T21:00:00+03:00",
     "end": "2026-11-01T14:00:00+02:00"
+   },
+   {
+    "name": "Halloween 2026",
+    "game": "Murder Mystery 2",
+    "start": "2026-10-18T22:00:00+03:00",
+    "end": "2026-11-16T20:00:00+02:00"
    }
   ],
   "published": "2026-10-17T07:15:37+03:00"
