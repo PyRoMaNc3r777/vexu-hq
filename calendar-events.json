@@ -1,12 +1,11 @@
 {
- "generated": "2026-10-18T16:37:50+03:00",
+ "generated": "2026-10-18T17:51:53+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
    "game": "Steal An Egg",
    "start": "2026-10-24T18:00:00+03:00",
-   "no_end": true,
-   "end_note": "fără dată de final anunțată (doar start 24 oct 18:00)",
+   "end": "2026-10-25T18:34:00+02:00",
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
    "img": "img/steal-an-egg-halloween-part-2.png",
    "post_title": "🎃 Halloween Dimension e LIVE în Steal An Egg: 3 biomuri, Echo, Phantom Express + Part 2 pe 24 oct"
