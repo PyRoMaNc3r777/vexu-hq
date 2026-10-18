@@ -58,4 +58,4 @@ Hash linkabile: `blog.html#f=confirmat`, `#f=zvon`, `#f=trend-shorts`, `#f=vexu-
 
 ## Istoric jucători (dashboard)
 
-`fetch_data.py` (rulat de `.github/workflows/refresh-data.yml` la ~10 min) adaugă în `history.json` câte un punct real per rulare, doar când API-ul Roblox a răspuns: `{"t":"<ISO UTC>","p":<jucători>,"v":<vizite>}`. Punctele mai vechi de 48h se șterg automat; fișierul e JSON compact. Dashboard-ul desenează ultimele 24h (SVG inline, ora României); cu mai puțin de 3 puncte afișează „Se adună date…”. Golurile de peste 35 min nu se unesc cu linie.
+`fetch_data.py` (rulat de `.github/workflows/refresh-data.yml` la ~10 min) adaugă în `history.json` câte un punct real per rulare, doar când API-ul Roblox a răspuns: `{"t":"<ISO UTC>","p":<jucători>,"v":<vizite>}`. Punctele mai vechi de 48h se șterg automat; fișierul e JSON compact. Dashboard-ul desenează ultimele 24h (SVG inline, ora României); cu mai puțin de 3 puncte afișează „Se adună date…”. Fiecare măsurătoare reală e marcată cu punct; golurile de peste 5h nu se unesc cu linie. Notă: GitHub rulează cron-ul de 10 min cu întârzieri mari (de obicei la 2–4h), deci istoricul poate fi rar.
