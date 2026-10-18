@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T11:21:08+03:00",
+ "generated": "2026-10-18T12:19:15+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -19,6 +19,15 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Eveniment de Halloween",
+   "game": "Tales of Tanorio",
+   "start_date": "2026-10-30",
+   "date_only": true,
+   "slug": "tales-of-tanorio-eveniment-de-halloween-pe-30-octombrie-cu-reskin-uri-si-tanorieni-noi",
+   "img": "img/0f40f223edda.jpg",
+   "post_title": "🎃 Tales of Tanorio: eveniment de Halloween pe 30 octombrie, cu reskin-uri și Tanorieni noi"
   },
   {
    "name": "Lansare joc nou de dodgeball (asimo3089)",

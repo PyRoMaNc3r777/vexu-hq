@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T11:21:08+03:00",
+ "generated": "2026-10-18T12:19:15+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -41,6 +41,34 @@
    "img": "game-keyboard-escape.png",
    "excerpt": "Halloween World e deschisă de pe 17 oct, ora 21:00, până pe 24 oct, ora 21:00 RO; pe 10 oct a fost evenimentul pregătitor „Halloween AA +…",
    "featured": true,
+   "section": null
+  },
+  {
+   "slug": "tales-of-tanorio-eveniment-de-halloween-pe-30-octombrie-cu-reskin-uri-si-tanorieni-noi",
+   "title": "🎃 Tales of Tanorio: eveniment de Halloween pe 30 octombrie, cu reskin-uri și Tanorieni noi",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-18",
+   "dateRo": "18 octombrie 2026",
+   "published": "2026-10-18T12:19:15+03:00",
+   "img": "img/0f40f223edda.jpg",
+   "excerpt": "CONFIRMAT de contul oficial Tales of Tanorio: evenimentul de Halloween vine pe 30 octombrie. Aduce reskin-uri noi, Tanorieni noi și „mult…",
+   "featured": false,
+   "section": null
+  },
+  {
+   "slug": "zvon-forsaken-patch-5-3-0-new-beginnings",
+   "title": "🤖 ZVON: Forsaken Patch 5.3.0 „New Beginnings” — x2 EXP, -40% la skin-uri, Helperbot, lobby nou",
+   "labels": [
+    "ZVON"
+   ],
+   "date": "2026-10-18",
+   "dateRo": "18 octombrie 2026",
+   "published": "2026-10-18T12:19:15+03:00",
+   "img": "img/ee1cd5d58a94.jpg",
+   "excerpt": "ZVON — sursa e Forsaken_News, un cont de fani (nu contul oficial al jocului), care spune că informația vine de pe serverul oficial de…",
+   "featured": false,
    "section": null
   },
   {
@@ -795,7 +823,7 @@
    "dateRo": "15 octombrie 2026",
    "published": "2026-10-15T17:53:00+03:00",
    "img": "game-forsaken.png",
-   "excerpt": "Helperbot intră în roster pe 16 octombrie. Eventul rulează din 17 octombrie, 02:00, până pe 24 octombrie, 02:00 (ora României).",
+   "excerpt": "Helperbot intră în roster pe 16 octombrie. Eventul rulează din 17 octombrie, 02:00, până pe 24 octombrie, 02:00 (ora României). Update 18…",
    "featured": false,
    "section": null
   },

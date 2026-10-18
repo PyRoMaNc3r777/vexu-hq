@@ -54,7 +54,7 @@
  {
   "titlu": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween",
   "img": "game-forsaken.png",
-  "text": "Helperbot intră în roster pe 16 octombrie. Eventul rulează din 17 octombrie, 02:00, până pe 24 octombrie, 02:00 (ora României).",
+  "text": "Helperbot intră în roster pe 16 octombrie. Eventul rulează din 17 octombrie, 02:00, până pe 24 octombrie, 02:00 (ora României).\n\nUpdate 18 oct: Patch 5.3.0 „New Beginnings” (ZVON, cu Helperbot ca supraviețuitor) — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/zvon-forsaken-patch-5-3-0-new-beginnings.html",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/games/18687417158/Forsaken",
@@ -1483,5 +1483,36 @@
   ],
   "date": "2026-10-18",
   "published": "2026-10-18T11:23:00+03:00"
+ },
+ {
+  "titlu": "🎃 Tales of Tanorio: eveniment de Halloween pe 30 octombrie, cu reskin-uri și Tanorieni noi",
+  "img": "img/0f40f223edda.jpg",
+  "text": "CONFIRMAT de contul oficial Tales of Tanorio: evenimentul de Halloween vine pe 30 octombrie. Aduce reskin-uri noi, Tanorieni noi și „mult mai multe”, cum zic chiar dezvoltatorii. Ora de start nu a fost anunțată încă.\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile!",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/TalesOfTanorio/status/2111173377763246377"
+  ],
+  "date": "2026-10-18",
+  "events": [
+   {
+    "name": "Eveniment de Halloween",
+    "game": "Tales of Tanorio",
+    "start_date": "2026-10-30",
+    "date_only": true
+   }
+  ],
+  "published": "2026-10-18T12:19:15+03:00"
+ },
+ {
+  "titlu": "🤖 ZVON: Forsaken Patch 5.3.0 „New Beginnings” — x2 EXP, -40% la skin-uri, Helperbot, lobby nou",
+  "slug": "zvon-forsaken-patch-5-3-0-new-beginnings",
+  "img": "img/ee1cd5d58a94.jpg",
+  "text": "ZVON — sursa e Forsaken_News, un cont de fani (nu contul oficial al jocului), care spune că informația vine de pe serverul oficial de Discord Forsaken și postează capturi cu patch notes.\n\nCe ar aduce Patch 5.3.0 „New Beginnings”:\n- Eveniment x2 EXP\n- 40% reducere la toate skin-urile și emote-urile\n- Helperbot intră ca supraviețuitor (personaj de Support)\n- Un lobby complet nou, cu mai mult de explorat, lore și secrete\n- 3 puzzle-uri noi la generatoare: Pop the Lock, Wires și Gear\n- Pariuri pe Last Man Standing: cât ești spectator, votezi cine crezi că va câștiga\n\nAm mai scris despre Helperbot aici: https://pyromanc3r777.github.io/vexu-hq/posts/forsaken-helperbot-pe-16-oct-event-halloween.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile!",
+  "eticheta": "ZVON",
+  "surse": [
+   "https://x.com/Forsaken_News/status/2111232045150261267"
+  ],
+  "date": "2026-10-18",
+  "published": "2026-10-18T12:19:15+03:00"
  }
 ]
