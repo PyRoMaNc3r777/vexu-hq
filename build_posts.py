@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generează posts/<slug>.html, posts-index.json, calendar-events.json, blog.html, calendar.html din posts.json.
+"""Generează posts/<slug>.html, posts-index.json, posts-search.json, calendar-events.json, blog.html, calendar.html din posts.json.
 
 Utilizare:
   python3 build_posts.py              # rebuild complet
@@ -41,6 +41,14 @@ def excerpt_of(p, n=140):
     flat = ' '.join(t.replace('\n- ', ' • ').split())
     return flat if len(flat) < n else flat[: n - 1].rsplit(' ', 1)[0] + '…'
 
+def search_text(p):
+    """Text pentru căutarea din blog (posts-search.json): titlu + text + confirmat + zvon, fără diacritice/URL-uri, lowercase."""
+    z = p.get('zvon') or []
+    raw = ' '.join([p.get('titlu', ''), p.get('text', ''), p.get('confirmat', ''), ' '.join(z if isinstance(z, list) else [z])])
+    raw = URL.sub(' ', raw)
+    raw = ''.join(c for c in unicodedata.normalize('NFD', raw) if unicodedata.category(c) != 'Mn').lower()
+    return ' '.join(raw.split())
+
 def pub_key(p):
     return p.get('published') or (p.get('date', '1970-01-01') + 'T12:00:00+03:00')
 
@@ -65,7 +73,7 @@ nav{text-align:center;margin:8px 0;display:flex;flex-wrap:wrap;gap:8px;justify-c
 .dt{color:#9a8fb5;font-size:.8em;margin-left:6px}.txt{font-size:1.05em;line-height:1.55;margin:10px 0}.more{color:#ff7be6;font-weight:700;font-size:.85em;margin-top:8px}
 .CONFIRMAT{background:#39ff8822;color:#39ff88;border:1px solid #39ff88}.VEXU-LIVE{background:#ff2bd622;color:#ff2bd6;border:1px solid #ff2bd6;box-shadow:0 0 10px #ff2bd6aa;text-shadow:0 0 6px #ff2bd6}.txt ul{margin:8px 0;padding-left:22px}.txt li{margin:4px 0}.txt a{color:#00f0ff;word-break:break-all}.TREND-SHORTS{background:#00f0ff22;color:#00f0ff;border:1px solid #00f0ff;box-shadow:0 0 10px #00f0ffaa;text-shadow:0 0 6px #00f0ff}.sec{margin:28px 0 6px;font-size:1.5em;color:#00f0ff;text-shadow:0 0 10px #00f0ff}.bx{border-radius:12px;padding:12px 14px;margin:12px 0}.bx h3{margin:0 0 6px;font-size:1em}.bxC{background:#39ff8814;border:1px solid #39ff88;box-shadow:0 0 12px #39ff8833}.bxC h3{color:#39ff88}.bxZ{background:#ffd40014;border:1px solid #ffd400;box-shadow:0 0 12px #ffd40033}.bxZ h3{color:#ffd400}.ZVON{background:#ffd40022;color:#ffd400;border:1px solid #ffd400}.s a{color:#ff7be6;font-size:.8em;word-break:break-all;display:block;margin-top:4px}
 .fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.fx span{position:absolute;bottom:-60px;font-size:22px;opacity:0;filter:drop-shadow(0 0 8px #ff7a00);animation:fl 18s linear infinite}.fx span:nth-child(1){left:6%;animation-delay:0s}.fx span:nth-child(2){left:22%;animation-delay:6s;font-size:16px}.fx span:nth-child(3){left:41%;animation-delay:11s}.fx span:nth-child(4){left:63%;animation-delay:3s;font-size:18px}.fx span:nth-child(5){left:80%;animation-delay:9s}.fx span:nth-child(6){left:93%;animation-delay:14s;font-size:15px}@keyframes fl{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.55}50%{transform:translate(18px,-55vh) rotate(12deg)}90%{opacity:.4}100%{transform:translate(-12px,-110vh) rotate(-10deg);opacity:0}}.w{position:relative;z-index:1}@media(prefers-reduced-motion:reduce){.fx{display:none}*{animation:none!important}}a.p{transition:transform .2s,border-color .2s,box-shadow .2s}a.p:hover{transform:translateY(-3px)}a.p:active{transform:scale(.98)}
-.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 6px}.chip{border:1px solid #ff2bd655;background:#120a22cc;color:#eee;border-radius:999px;padding:7px 12px;font-size:.85em;font-weight:700;cursor:pointer}.chip.on{border-color:#00f0ff;color:#00f0ff;box-shadow:0 0 12px #00f0ff55}.chip .n{opacity:.7;margin-left:4px}.dayh{margin:22px 0 8px;font-size:1.25em;color:#ff7be6;text-shadow:0 0 10px #ff2bd655}.dayh:first-child{margin-top:8px}#moreWrap{text-align:center;margin:18px 0}#featSlot .p{margin-top:8px}.empty{text-align:center;color:#9a8fb5;padding:24px}.shorts-entry{text-align:center;margin:10px 0 4px}.shorts-entry button{border:1px solid #00f0ff;background:#00f0ff18;color:#00f0ff;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;box-shadow:0 0 12px #00f0ff44}
+.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 6px}.chip{border:1px solid #ff2bd655;background:#120a22cc;color:#eee;border-radius:999px;padding:7px 12px;font-size:.85em;font-weight:700;cursor:pointer}.chip.on{border-color:#00f0ff;color:#00f0ff;box-shadow:0 0 12px #00f0ff55}.chip .n{opacity:.7;margin-left:4px}.srch{display:flex;max-width:560px;margin:12px auto 0;position:relative}.srch input{flex:1;width:100%;font:inherit;font-size:16px;color:#eee;background:#120a22cc;border:1px solid #ff2bd655;border-radius:999px;padding:10px 42px 10px 16px;outline:none;-webkit-appearance:none;appearance:none}.srch input:focus{border-color:#00f0ff;box-shadow:0 0 14px #00f0ff55}.srch input::placeholder{color:#9a8fb5}.srch input::-webkit-search-cancel-button{display:none}.srch button{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;color:#ff7be6;font-size:1.05em;padding:6px 10px;cursor:pointer;visibility:hidden}.qinfo{text-align:center;color:#9a8fb5;font-size:.82em;min-height:1em;margin:4px 0 0}.dayh{margin:22px 0 8px;font-size:1.25em;color:#ff7be6;text-shadow:0 0 10px #ff2bd655}.dayh:first-child{margin-top:8px}#moreWrap{text-align:center;margin:18px 0}#featSlot .p{margin-top:8px}.empty{text-align:center;color:#9a8fb5;padding:24px}.shorts-entry{text-align:center;margin:10px 0 4px}.shorts-entry button{border:1px solid #00f0ff;background:#00f0ff18;color:#00f0ff;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;box-shadow:0 0 12px #00f0ff44}
 .cal .row{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start;margin:14px 0}.cal .ico{width:72px;height:72px;border-radius:14px;object-fit:cover;border:1px solid #ff2bd655;background:#000a}.cal .card{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;padding:14px;box-shadow:0 0 18px #ff2bd622}.cal .st{font-weight:800;margin:6px 0;color:#ffd400}.cal .st.live{color:#39ff88;text-shadow:0 0 10px #39ff88}.cal .st.done{color:#9a8fb5}.cal .cd{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.cal .cd div{background:#000a;border:1px solid #00f0ff66;border-radius:10px;padding:8px 6px;min-width:58px;text-align:center}.cal .cd b{display:block;font-size:1.3em;color:#ff2bd6}.cal .cd span{font-size:.65em;color:#aaa}.cal .meta{color:#9a8fb5;font-size:.85em}.cal a.golink{color:#00f0ff;font-weight:700;text-decoration:none}.note{font-size:.8em;color:#ffd400;margin-top:6px}@media(max-width:520px){.cal .row{grid-template-columns:56px 1fr}.cal .ico{width:56px;height:56px}}"""
 
 def page(title, body, extra_js=''):
@@ -100,14 +108,13 @@ NAV_POST = ('<nav><a href="../blog.html">← Blog</a><a href="../calendar.html">
 BLOG_JS = r"""
 <script>
 const TZ='Europe/Bucharest', PAGE=12;
-const FILTERS=[{id:'toate',label:'Toate'},{id:'confirmat',label:'CONFIRMAT'},{id:'zvon',label:'ZVON'},{id:'trend-shorts',label:'TREND SHORTS'},{id:'vexu-live',label:'VEXU LIVE'}];
 const es=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cls=l=>l.replace(/[^A-Za-z0-9]+/g,'-');
-const fid=l=>l.toLowerCase().replace(/[^a-z0-9]+/g,'-');
+const fid=l=>l.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
+const norm=s=>String(s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
 function dayKey(iso){
   const d=new Date(iso.includes('T')?iso:iso+'T12:00:00+03:00');
-  const p=new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(d);
-  return p; // YYYY-MM-DD
+  return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(d); // YYYY-MM-DD
 }
 function todayKey(){return new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
 function yesterdayKey(){const t=new Date(); const p=new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(t).reduce((a,x)=>(a[x.type]=x.value,a),{});
@@ -117,64 +124,74 @@ function dayLabel(key){
   if(key===t) return 'Azi';
   if(key===y) return 'Ieri';
   const [Y,M,D]=key.split('-').map(Number);
-  const dt=new Date(Date.UTC(Y,M-1,D,12));
-  return new Intl.DateTimeFormat('ro-RO',{timeZone:'UTC',weekday:'long',day:'numeric',month:'long'}).format(dt);
+  return new Intl.DateTimeFormat('ro-RO',{timeZone:'UTC',weekday:'long',day:'numeric',month:'long'}).format(new Date(Date.UTC(Y,M-1,D,12)));
 }
-function parseHash(){const m=(location.hash||'').match(/[#&]f=([\w-]+)/); return m?m[1]:'toate'}
-function setHash(f){const h=f&&f!=='toate'?'#f='+f:'#'; if(location.hash!==h) history.replaceState(null,'',h||location.pathname+location.search)}
-let ALL=[], shown=0, filter='toate';
-function match(p){if(filter==='toate')return true; return (p.labels||[]).some(l=>fid(l)===filter)}
+// hash: #f=<eticheta>&q=<căutare>
+function parseHash(){const h=(location.hash||'').replace(/^#/,''); const o={f:'toate',q:''};
+  h.split('&').forEach(kv=>{const i=kv.indexOf('='); if(i<0)return; const k=kv.slice(0,i); let v=kv.slice(i+1); try{v=decodeURIComponent(v.replace(/\+/g,' '))}catch(e){}
+    if(k==='f'&&/^[\w-]+$/.test(v)) o.f=v; if(k==='q') o.q=v;}); return o}
+function setHash(){const parts=[]; if(filter!=='toate') parts.push('f='+filter); if(q.trim()) parts.push('q='+encodeURIComponent(q.trim()));
+  const h=parts.length?'#'+parts.join('&'):''; if((location.hash||'')!==h) history.replaceState(null,'',h||location.pathname+location.search)}
+let ALL=[], FILTERS=[{id:'toate',label:'Toate'}], shown=0, filter='toate', q='', SEARCH=null, sLoading=false;
+// lista de etichete derivată din date (posts-index.json ← posts.json), ordonată după numărul de postări
+function buildFilters(){const m=new Map(); ALL.forEach(p=>(p.labels||[]).forEach(l=>{const id=fid(l); if(!id)return; const x=m.get(id)||{id,label:l,n:0}; x.n++; m.set(id,x)}));
+  FILTERS=[{id:'toate',label:'Toate'}].concat([...m.values()].sort((a,b)=>b.n-a.n||a.label.localeCompare(b.label,'ro')))}
+function validFilter(){if(!FILTERS.some(f=>f.id===filter)) filter='toate'}
+function terms(){return norm(q).split(/\s+/).filter(Boolean)}
+function hay(p){if(p._h===undefined||(SEARCH&&!p._full)){p._full=!!SEARCH; p._h=norm(p.title+' '+(p.excerpt||'')+' '+(p.labels||[]).join(' ')+' '+((SEARCH&&SEARCH[p.slug])||''))} return p._h}
+function qmatch(p,t){return !t.length||t.every(w=>hay(p).includes(w))}
+function fmatch(p,f){return f==='toate'||(p.labels||[]).some(l=>fid(l)===f)}
+function loadSearch(){if(SEARCH||sLoading)return; sLoading=true;
+  fetch('posts-search.json?'+Date.now()).then(r=>r.json()).then(d=>{SEARCH=d; if(q.trim()) paint()}).catch(()=>{sLoading=false})}
 function chipsHtml(labels,date){return labels.map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')+`<span class="dt">📅 ${es(date)}</span>`}
 function cardHtml(p, feat){
   return `<a class="p${feat?' feat':''}" href="posts/${es(p.slug)}.html"><img src="${es(p.img)}" alt="" loading="lazy"><div class="b">${chipsHtml(p.labels,p.dateRo)}<h2>${es(p.title)}</h2><div>${es(p.excerpt)}</div><div class="more">Citește tot →</div></div></a>`;
 }
-function renderFilters(){
-  const counts={toate:ALL.length};
-  FILTERS.slice(1).forEach(f=>{counts[f.id]=ALL.filter(p=>(p.labels||[]).some(l=>fid(l)===f.id)).length});
-  document.getElementById('filters').innerHTML=FILTERS.map(f=>`<button type="button" class="chip${filter===f.id?' on':''}" data-f="${f.id}">${f.label}<span class="n">(${counts[f.id]||0})</span></button>`).join('');
-  document.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{filter=b.dataset.f; setHash(filter); shown=0; paint()});
+function renderFilters(t){
+  const base=ALL.filter(p=>qmatch(p,t));
+  document.getElementById('filters').innerHTML=FILTERS.map(f=>`<button type="button" class="chip${filter===f.id?' on':''}" data-f="${es(f.id)}" aria-pressed="${filter===f.id}">${es(f.label)}<span class="n">(${base.filter(p=>fmatch(p,f.id)).length})</span></button>`).join('');
+  document.querySelectorAll('#filters .chip').forEach(b=>b.onclick=()=>{filter=b.dataset.f; setHash(); shown=0; paint()});
 }
 function paint(){
-  renderFilters();
-  const feat=ALL.find(p=>p.featured && match(p));
-  const rest=ALL.filter(p=>!p.featured && match(p));
-  // newest first already in ALL
-  const featEl=document.getElementById('featSlot');
-  featEl.innerHTML=feat?cardHtml(feat,true):'';
+  const t=terms();
+  renderFilters(t);
+  const ok=p=>fmatch(p,filter)&&qmatch(p,t);
+  // un singur post evidențiat sus; celelalte marcate featured rămân în feed (cronologic), nu dispar
+  const feat=ALL.find(p=>p.featured && ok(p));
+  const rest=ALL.filter(p=>p!==feat && ok(p)).sort((a,b)=>(Date.parse(b.published)||0)-(Date.parse(a.published)||0));
+  document.getElementById('featSlot').innerHTML=feat?cardHtml(feat,true):'';
   const slice=rest.slice(0, Math.max(shown, PAGE));
   shown=slice.length;
-  // group by day
-  let html='', last='';
-  for(const p of slice){
-    const k=dayKey(p.published||p.date);
-    if(k!==last){html+=`<h2 class="dayh">${es(dayLabel(k))}</h2><div class="grid" data-day="${k}">`; last=k;}
-    else if(!html.includes(`data-day="${k}"`)){/*noop*/}
-    // close/open grids simply: append into flowing structure
-  }
-  // rebuild with proper grid closing
-  html=''; last=''; let open=false;
+  let html='', last='', open=false;
   for(const p of slice){
     const k=dayKey(p.published||p.date);
     if(k!==last){ if(open) html+='</div>'; html+=`<h2 class="dayh">${es(dayLabel(k))}</h2><div class="grid">`; open=true; last=k; }
     html+=cardHtml(p,false);
   }
   if(open) html+='</div>';
-  if(!feat && !slice.length) html='<div class="empty">Nicio postare pe filtrul ăsta.</div>';
+  if(!feat && !slice.length) html=t.length?`<div class="empty">Nicio știre găsită pentru „${es(q.trim())}”${filter!=='toate'?' pe filtrul ăsta':''}.</div>`:'<div class="empty">Nicio postare pe filtrul ăsta.</div>';
   document.getElementById('feed').innerHTML=html;
+  const n=rest.length+(feat?1:0);
+  document.getElementById('qinfo').textContent=t.length?(n===1?'1 rezultat':`${n} rezultate`)+(SEARCH?'':' (se încarcă textul complet…)'):'';
+  document.getElementById('qx').style.visibility=q?'visible':'hidden';
   const more=document.getElementById('moreBtn');
   const left=rest.length-shown;
   more.style.display=left>0?'inline-block':'none';
   more.textContent=left>0?`Vezi mai multe (${left})`:'';
 }
+const qi=document.getElementById('q');
+qi.addEventListener('focus',loadSearch);
+qi.addEventListener('input',()=>{q=qi.value; loadSearch(); shown=0; setHash(); if(ALL.length) paint()});
+qi.addEventListener('keydown',e=>{if(e.key==='Escape'){qi.value=q=''; setHash(); shown=0; paint()}});
+document.getElementById('qform').onsubmit=e=>{e.preventDefault(); qi.blur()};
+document.getElementById('qx').onclick=()=>{qi.value=q=''; setHash(); shown=0; paint(); qi.focus()};
 document.getElementById('moreBtn').onclick=()=>{shown+=PAGE; paint()};
-document.getElementById('shortsBtn').onclick=()=>{filter='trend-shorts'; setHash(filter); shown=0; paint(); document.getElementById('feed').scrollIntoView({behavior:'smooth'})};
-filter=parseHash();
-if(!FILTERS.some(f=>f.id===filter)) filter='toate';
+document.getElementById('shortsBtn').onclick=()=>{filter=FILTERS.some(f=>f.id==='trend-shorts')?'trend-shorts':'toate'; setHash(); shown=0; paint(); document.getElementById('filters').scrollIntoView({behavior:'smooth'})};
+({f:filter,q}=parseHash()); qi.value=q; if(q) loadSearch();
 fetch('posts-index.json?'+Date.now()).then(r=>r.json()).then(data=>{
-  ALL=data.posts||data;
-  paint();
+  ALL=data.posts||data; buildFilters(); validFilter(); paint();
 }).catch(err=>{document.getElementById('feed').innerHTML='<div class="empty">Nu pot încărca indexul.</div>'});
-window.addEventListener('hashchange',()=>{filter=parseHash(); if(!FILTERS.some(f=>f.id===filter)) filter='toate'; shown=0; paint()});
+window.addEventListener('hashchange',()=>{({f:filter,q}=parseHash()); qi.value=q; if(q) loadSearch(); validFilter(); shown=0; paint()});
 </script>
 """
 
@@ -275,6 +292,7 @@ def build_post_pages(posts):
     os.makedirs(os.path.join(D, 'posts'), exist_ok=True)
     index_items = []
     cal_events = []
+    search = {}
     order = sorted(range(len(posts)), key=lambda i: (bool(posts[i].get('featured')), pub_key(posts[i]), -i), reverse=True)
     for i in order:
         p = posts[i]
@@ -315,6 +333,7 @@ def build_post_pages(posts):
             'section': p.get('section'),
         }
         index_items.append(item)
+        search[s] = search_text(p)
         for ev in p.get('events', []):
             ce = dict(ev)
             ce['slug'] = s
@@ -327,6 +346,8 @@ def build_post_pages(posts):
 
     open(os.path.join(D, 'posts-index.json'), 'w', encoding='utf-8').write(
         json.dumps({'generated': now_ro().isoformat(timespec='seconds'), 'posts': index_items}, ensure_ascii=False, indent=1) + '\n')
+    open(os.path.join(D, 'posts-search.json'), 'w', encoding='utf-8').write(
+        json.dumps(search, ensure_ascii=False, separators=(',', ':')) + '\n')
     open(os.path.join(D, 'calendar-events.json'), 'w', encoding='utf-8').write(
         json.dumps({'generated': now_ro().isoformat(timespec='seconds'), 'events': cal_events}, ensure_ascii=False, indent=1) + '\n')
     return index_items
@@ -335,6 +356,8 @@ def build_blog():
     noscript = '<noscript><p style="text-align:center;color:#9a8fb5">Activează JavaScript pentru feed-ul grupat pe zile. Postările individuale rămân în <code>posts/</code>.</p></noscript>'
     body = (f'<h1>📰 VEXU HQ · Știri</h1>{NAV_BLOG}'
             f'<div class="shorts-entry"><button type="button" id="shortsBtn">🔥 Ce merge în Shorts</button></div>'
+            f'<form class="srch" id="qform" role="search"><input type="search" id="q" placeholder="Caută în știri…" aria-label="Caută în știri" autocomplete="off" enterkeyhint="search"><button type="button" id="qx" aria-label="Șterge căutarea">✕</button></form>'
+            f'<div class="qinfo" id="qinfo" aria-live="polite"></div>'
             f'<div class="filters" id="filters"></div>'
             f'<div id="featSlot"></div><div id="feed"></div>'
             f'<div id="moreWrap"><button type="button" class="btn" id="moreBtn" style="display:none">Vezi mai multe</button></div>'
