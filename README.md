@@ -49,6 +49,13 @@ python3 build_posts.py
 
 4. Commit + push pe `main` (fără force-push). Pages publică automat.
 
-## Filtre blog
+## Filtre și căutare blog
 
-Hash linkabile: `blog.html#f=confirmat`, `#f=zvon`, `#f=trend-shorts`, `#f=vexu-live`.
+Chip-urile de filtrare se generează din etichetele reale din `posts-index.json` (`Toate` + fiecare `eticheta` folosită), cu numărul de postări.
+Căutarea („Caută în știri…”) filtrează pe loc după titlu și text, fără diacritice; textul complet vine din `posts-search.json` (generat de `build_posts.py`, încărcat doar la prima căutare).
+
+Hash linkabile: `blog.html#f=confirmat`, `#f=zvon`, `#f=trend-shorts`, `#f=vexu-live`, plus căutare: `#q=halloween` sau combinat `#f=zvon&q=forsaken`.
+
+## Istoric jucători (dashboard)
+
+`fetch_data.py` (rulat de `.github/workflows/refresh-data.yml` la ~10 min) adaugă în `history.json` câte un punct real per rulare, doar când API-ul Roblox a răspuns: `{"t":"<ISO UTC>","p":<jucători>,"v":<vizite>}`. Punctele mai vechi de 48h se șterg automat; fișierul e JSON compact. Dashboard-ul desenează ultimele 24h (SVG inline, ora României); cu mai puțin de 3 puncte afișează „Se adună date…”. Golurile de peste 35 min nu se unesc cu linie.

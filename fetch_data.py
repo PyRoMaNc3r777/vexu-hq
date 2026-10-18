@@ -20,3 +20,20 @@ except Exception as e:
 d["event"]=ev
 d["team"]=json.load(open("team.json")) if os.path.exists("team.json") else []
 json.dump(d,open("data.json.tmp","w"),ensure_ascii=False,indent=1);os.replace("data.json.tmp","data.json")
+
+# history.json: un punct real per rulare (doar dacă API-ul Roblox a răspuns acum), păstrăm ultimele 48h, JSON compact
+# format: {"v":1,"points":[{"t":"<ISO UTC>","p":<jucători>,"v":<vizite>}, ...]}
+H="history.json";KEEP=48*3600
+try: h=json.load(open(H))
+except Exception: h={}
+pts=[x for x in h.get("points",[]) if isinstance(x,dict) and "t" in x and "p" in x]
+if "gameError" not in d and d.get("game"):
+    pt={"t":d["updated"][:19]+"Z","p":d["game"]["playing"]}
+    if isinstance(d["game"].get("visits"),int): pt["v"]=d["game"]["visits"]
+    pts.append(pt)
+now=datetime.datetime.now(datetime.timezone.utc)
+def age(x):
+    try: return (now-datetime.datetime.fromisoformat(x["t"].replace("Z","+00:00"))).total_seconds()
+    except Exception: return KEEP+1
+pts=sorted([x for x in pts if age(x)<=KEEP],key=lambda x:x["t"])
+json.dump({"v":1,"points":pts},open(H+".tmp","w"),separators=(",",":"));os.replace(H+".tmp",H)
