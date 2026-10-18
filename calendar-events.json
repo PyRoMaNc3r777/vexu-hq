@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T08:48:20+03:00",
+ "generated": "2026-10-18T09:13:43+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -19,6 +19,15 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Lansare joc nou de dodgeball (asimo3089)",
+   "game": "Roblox",
+   "start_date": "2026-10-20",
+   "date_only": true,
+   "slug": "asimo3089-jailbreak-lanseaza-un-joc-nou-de-dodgeball-marti-20-octombrie",
+   "img": "img/0e6f842e620a.jpg",
+   "post_title": "🏐 asimo3089 (Jailbreak) lansează un joc nou de dodgeball marți, 20 octombrie"
   },
   {
    "name": "Halloween Event",
