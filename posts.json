@@ -999,8 +999,7 @@
   "text": "Evenimentul de Halloween din Murder Duels pornește azi, 17 octombrie, la 21:00 (ora României) și ține până pe 1 noiembrie, la 14:00. Detaliile despre ce aduce nu sunt publice încă.",
   "eticheta": "CONFIRMAT",
   "surse": [
-   "https://www.roblox.com/events/8432112593786765976",
-   "https://www.roblox.com/events/7505344944098378506"
+   "https://www.roblox.com/events/8432112593786765976"
   ],
   "date": "2026-10-17",
   "events": [
@@ -1009,12 +1008,6 @@
     "game": "Murder Duels",
     "start": "2026-10-17T21:00:00+03:00",
     "end": "2026-11-01T14:00:00+02:00"
-   },
-   {
-    "name": "Halloween 2026",
-    "game": "Murder Mystery 2",
-    "start": "2026-10-18T22:00:00+03:00",
-    "end": "2026-11-16T20:00:00+02:00"
    }
   ],
   "published": "2026-10-17T07:15:37+03:00"
@@ -1600,5 +1593,62 @@
   "date": "2026-10-18",
   "slug": "diseara-vanam-prin-halloween-dimension-chat-ul-alege-zona-si-numele",
   "published": "2026-10-18T16:37:50+03:00"
+ },
+ {
+  "titlu": "⚖️ Arizona cere în instanță ca Roblox să predea date pentru ancheta despre siguranța copiilor",
+  "img": "generic-neon.png",
+  "text": "Procurorul general din Arizona, Kris Mayes, cere unei instanțe să oblige Roblox Corp. să predea documente și date în ancheta despre promisiunile companiei privind siguranța copiilor, potrivit Bloomberg Law (postare din 17 octombrie, ora României).\n\nDeocamdată nu sunt publice alte detalii: nu știm ce date anume cere Arizona și nici ce răspunde Roblox.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/BLaw/status/2111205251504132337"
+  ],
+  "date": "2026-10-19",
+  "published": "2026-10-19T07:34:32+03:00"
+ },
+ {
+  "titlu": "🔪 Murder Mystery 2: Halloween 2026 a început aseară la 22:00, ține până pe 16 noiembrie",
+  "img": "img/c15b0de55ed6.png",
+  "text": "Evenimentul oficial „Halloween 2026” din Murder Mystery 2, cu descrierea „A retro Halloween 🎃”, a pornit duminică, 18 octombrie, la 22:00 (ora României) și ține până pe 16 noiembrie, la 20:00. Update-ul „Retro Halloween 2026” a venit cu un tab oficial de eveniment în joc.\n\nÎn afară de asta, nu s-a anunțat oficial niciun alt conținut.",
+  "confirmat": "Halloween 2026 în MM2: 18 oct, 22:00 → 16 nov, 20:00 (ora României), „A retro Halloween 🎃”, cu tab oficial de eveniment în joc.",
+  "confirmat_surse": [
+   "https://www.roblox.com/events/7505344944098378506",
+   "https://x.com/MM2WorldWide/status/2111709602970845368"
+  ],
+  "zvon": [
+   "Teaser neconfirmat postat de @Colbemo înainte de lansare („Retro Halloween Update”): arată o hartă decorată de Halloween, dar nu confirmă ce conține update-ul.",
+   "Înainte de lansare, contul de leak-uri @MM2LeakZone a susținut că Nikilis a fost văzut pe serverul de test. Neconfirmat."
+  ],
+  "zvon_surse": [
+   "https://x.com/Colbemo/status/2111615124436107518",
+   "https://x.com/MM2LeakZone/status/2111227859364716903"
+  ],
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/7505344944098378506",
+   "https://x.com/MM2WorldWide/status/2111709602970845368",
+   "https://x.com/Colbemo/status/2111615124436107518",
+   "https://x.com/MM2LeakZone/status/2111227859364716903"
+  ],
+  "date": "2026-10-19",
+  "events": [
+   {
+    "name": "Halloween 2026",
+    "game": "Murder Mystery 2",
+    "start": "2026-10-18T22:00:00+03:00",
+    "end": "2026-11-16T20:00:00+02:00"
+   }
+  ],
+  "published": "2026-10-19T07:34:32+03:00"
+ },
+ {
+  "titlu": "🎃 ZVON: Arsenal Halloween Part 1 aduce hărți noi în rotație",
+  "img": "img/550b75f7c165.jpg",
+  "text": "Contul de fani Roblox Arsenal News scrie că Arsenal a primit Halloween Update Part 1, cu hărți noi în rotație: Spooky Tuscan, Spooky Aircraft, Spooky Villa, Spooky Hillside, Spooky Frights, Day of the Dizzy, Mighty Manor și Monastery. Tot ei spun că mai vine conținut curând.\n\nNu e un anunț oficial al dezvoltatorilor, așa că tratează lista ca zvon până o vezi în joc.",
+  "eticheta": "ZVON",
+  "surse": [
+   "https://x.com/RBX_ArsenalNews/status/2111160395046252876"
+  ],
+  "date": "2026-10-19",
+  "published": "2026-10-19T07:34:32+03:00"
  }
 ]
