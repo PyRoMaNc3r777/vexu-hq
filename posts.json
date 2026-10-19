@@ -1698,5 +1698,50 @@
   ],
   "date": "2026-10-19",
   "published": "2026-10-19T10:08:49+03:00"
+ },
+ {
+  "titlu": "🎃 Car Dealership Tycoon: Halloween vine în două părți",
+  "img": "img/a2464c11519e.png",
+  "text": "Car Dealership Tycoon are evenimentul de Halloween împărțit în două părți.\n\nPartea 1 a început sâmbătă, 17 octombrie, la 16:00 ora României, și ține până pe 24 octombrie, la 16:00. Deci e deja live, poți intra acum.\n\nPartea 2 vine imediat după: de pe 24 octombrie, ora 16:00, până pe 31 octombrie, ora 16:00 RO.\n\nDetaliile despre ce aduce fiecare parte nu au fost anunțate încă, pe paginile oficiale scrie doar „Coming soon”. Revenim când apar.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/200140055573037617",
+   "https://www.roblox.com/events/6998302480647979600"
+  ],
+  "date": "2026-10-19",
+  "published": "2026-10-19T11:40:00+03:00",
+  "events": [
+   {
+    "name": "Halloween Part 1",
+    "game": "Car Dealership Tycoon",
+    "start": "2026-10-17T16:00:00+03:00",
+    "end": "2026-10-24T16:00:00+03:00"
+   },
+   {
+    "name": "Halloween Part 2",
+    "game": "Car Dealership Tycoon",
+    "start": "2026-10-24T16:00:00+03:00",
+    "end": "2026-10-31T16:00:00+02:00"
+   }
+  ]
+ },
+ {
+  "titlu": "🏐 Volleyball Legends: stilul nou Mamori, cu Parry",
+  "img": "img/ac285a12b10c.png",
+  "text": "Volleyball Legends a adăugat un stil nou: Mamori. Abilitatea lui principală e PARRY: dacă blochezi exact la timp, trimiți mingea înapoi.\n\nMai are două lucruri: Perfect Parry, care se deblochează la Mastery 1, și Charge, cu un cooldown de 3,5 secunde.\n\nPagina evenimentului e live de pe 17 octombrie, ora 18:30, până pe 23 octombrie, ora 23:00 ora României.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://www.roblox.com/events/1340276927860179601"
+  ],
+  "date": "2026-10-19",
+  "published": "2026-10-19T11:40:00+03:00",
+  "events": [
+   {
+    "name": "Stilul nou Mamori (Parry)",
+    "game": "Volleyball Legends",
+    "start": "2026-10-17T18:30:00+03:00",
+    "end": "2026-10-23T23:00:00+03:00"
+   }
+  ]
  }
 ]
