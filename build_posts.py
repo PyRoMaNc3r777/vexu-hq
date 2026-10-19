@@ -82,13 +82,19 @@ def emo_h1(body):
     # emoji din <h1> primesc span.em ca să nu fie colorate de gradient (altfel apar ca pătrate)
     return re.sub(r'(<h1[^>]*>)(.*?)(</h1>)', lambda m: m.group(1) + EMO.sub(r'<span class="em">\1</span>', m.group(2)) + m.group(3), body, flags=re.S)
 
+# PWA: manifest + service worker (sw.js), căi absolute sub /vexu-hq/
+PWA_HEAD = ('<link rel="manifest" href="/vexu-hq/manifest.webmanifest"><meta name="theme-color" content="#07040f">'
+            '<link rel="apple-touch-icon" href="/vexu-hq/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes">'
+            '<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="VEXU HQ">')
+PWA_JS = "<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/vexu-hq/sw.js',{scope:'/vexu-hq/'}).catch(()=>{}))</script>"
+
 def page(title, body, extra_js=''):
     body = emo_h1(body)
     return (f'<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{html.escape(title)}</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png"><style>\n{CSS}\n{CSS_FX}\n</style></head><body>'
+            f'<title>{html.escape(title)}</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png">{PWA_HEAD}<style>\n{CSS}\n{CSS_FX}\n</style></head><body>'
             f'<div class="moon" aria-hidden="true"></div>'
             f'<div class="fx" aria-hidden="true"><span>🎃</span><span>🦇</span><span>👻</span><span>🦇</span><span>🎃</span><span>🕸️</span></div>'
-            f'<div class="w">{body}</div>{extra_js}</body></html>\n')
+            f'<div class="w">{body}</div>{extra_js}{PWA_JS}</body></html>\n')
 
 e = html.escape
 def cls(l): return re.sub(r'[^A-Za-z0-9]+', '-', l).strip('-')

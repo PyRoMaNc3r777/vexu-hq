@@ -37,3 +37,27 @@ def age(x):
     except Exception: return KEEP+1
 pts=sorted([x for x in pts if age(x)<=KEEP],key=lambda x:x["t"])
 json.dump({"v":1,"points":pts},open(H+".tmp","w"),separators=(",",":"));os.replace(H+".tmp",H)
+
+# player-history.json: vârful zilnic de jucători Steal An Egg (zi = Europe/Bucharest), DOAR din măsurătorile noastre
+# (rularea curentă + punctele noastre din history.json), păstrăm ~30 de zile. Nu se completează nimic din alte surse.
+# format: {"v":1,"tz":"Europe/Bucharest","updated":"<ISO UTC>","days":{"YYYY-MM-DD":{"peak":<jucători>,"t":"<ISO UTC al vârfului>","n":<măsurători>}}}
+from zoneinfo import ZoneInfo
+PH="player-history.json";RO=ZoneInfo("Europe/Bucharest");KEEPD=30
+try: ph=json.load(open(PH))
+except Exception: ph={}
+days={k:v for k,v in (ph.get("days") or {}).items() if isinstance(v,dict) and isinstance(v.get("peak"),int)}
+seen=set(ph.get("_seen") or [])
+def rday(t): return datetime.datetime.fromisoformat(t.replace("Z","+00:00")).astimezone(RO).date().isoformat()
+for x in pts:
+    if not isinstance(x.get("p"),int) or x["t"] in seen: continue
+    seen.add(x["t"]); k=rday(x["t"]); e=days.get(k)
+    if e is None: days[k]={"peak":x["p"],"t":x["t"],"n":1}
+    else:
+        e["n"]=e.get("n",0)+1
+        if x["p"]>e["peak"]: e["peak"]=x["p"];e["t"]=x["t"]
+today=now.astimezone(RO).date()
+cut=(today-datetime.timedelta(days=KEEPD-1)).isoformat()
+days={k:days[k] for k in sorted(days) if k>=cut}
+seen={t for t in seen if age({"t":t})<=KEEP}  # doar ca să nu numărăm de 2 ori punctele din fereastra de 48h
+json.dump({"v":1,"tz":"Europe/Bucharest","updated":now.isoformat(timespec="seconds").replace("+00:00","Z"),"days":days,"_seen":sorted(seen)},
+          open(PH+".tmp","w"),separators=(",",":"));os.replace(PH+".tmp",PH)
