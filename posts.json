@@ -33,7 +33,7 @@
  {
   "titlu": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
   "img": "game-dead-rails.png",
-  "text": "ACTUALIZARE: s-a amânat pe 20 oct.\n\nEvenimentul „Dead of Night” în Dead Rails nu mai pornește pe 17 octombrie. Noua fereastră: de marți, 20 octombrie, la 23:00, până sâmbătă, 7 noiembrie, la 23:00 (ora României).\n\nPe pagina oficială a evenimentului descrierea e încă „Coming soon”, deci detaliile despre ce aduce nu sunt anunțate.",
+  "text": "ACTUALIZARE: s-a amânat pe 20 oct.\n\nEvenimentul „Dead of Night” în Dead Rails nu mai pornește pe 17 octombrie. Noua fereastră: de marți, 20 octombrie, la 23:00, până sâmbătă, 7 noiembrie, la 23:00 (ora României).\n\nPe pagina oficială a evenimentului descrierea e încă „Coming soon”, deci detaliile despre ce aduce nu sunt anunțate.\n\nUpdate 19 oct: Dead Rails primește și plușuri oficiale Youtooz pe 23 octombrie — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/dead-rails-plusuri-oficiale-youtooz-pe-23-octombrie.html",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/events/1797162836242334297",
@@ -1744,5 +1744,25 @@
     "end": "2026-10-23T23:00:00+03:00"
    }
   ]
+ },
+ {
+  "titlu": "🧸 Dead Rails: plușuri oficiale Youtooz pe 23 octombrie",
+  "img": "img/114a302bfe33.jpg",
+  "text": "Dead Rails primește o colecție oficială de plușuri Youtooz, care apare pe 23 octombrie. Anunțul vine de pe contul oficial al jocului: „Official Dead Rails YOUTOOZ Collection, October 23rd”.\n\nÎn colecție sunt trei plușuri:\n- zombie-ul\n- cowboy-ul cu bandană roșie\n- lupul cu ochi roșii\n\nPrețul și ora exactă de lansare nu au fost anunțate.\n\nTot în Dead Rails: evenimentul Dead of Night pornește pe 20 octombrie, la 23:00 — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/dead-rails-dead-of-night-pe-17-octombrie.html",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/DeadRailsRBLX/status/2111209045298168314"
+  ],
+  "date": "2026-10-19",
+  "slug": "dead-rails-plusuri-oficiale-youtooz-pe-23-octombrie",
+  "events": [
+   {
+    "name": "Plușuri oficiale Youtooz",
+    "game": "Dead Rails",
+    "start_date": "2026-10-23",
+    "date_only": true
+   }
+  ],
+  "published": "2026-10-19T12:21:58+03:00"
  }
 ]
