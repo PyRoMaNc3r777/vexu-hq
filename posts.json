@@ -182,7 +182,7 @@
  {
   "titlu": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă",
   "img": "game-pet-sim-99.png",
-  "text": "Jocul apare acum cu titlul [BLOOD MOON]. Ține din 17 oct, 19:00 până pe 24 oct, 19:00 RO. Tot pe 17 oct la 19:00 se termină Hatch Wars de Halloween și Season Pass-ul cu HUGE Hippokin gratuit.",
+  "text": "Jocul apare acum cu titlul [BLOOD MOON]. Ține din 17 oct, 19:00 până pe 24 oct, 19:00 RO. Tot pe 17 oct la 19:00 se termină Hatch Wars de Halloween și Season Pass-ul cu HUGE Hippokin gratuit.\n\nUpdate 19 oct: Diamond Mountain e LIVE, cu Yeti boss și pet Gargantuan — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/pet-simulator-99-diamond-mountain-e-live-cu-yeti-boss-si-gargantuan.html",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/events/8645848830534877834",
@@ -703,10 +703,11 @@
  {
   "titlu": "⚔️ RIVALS: RIVALSWEEN pe pagina oficială",
   "img": "game-rivals.png",
-  "text": "Eventul de Halloween e pe pagina oficială, ține până pe ~7 nov.",
+  "text": "Eventul de Halloween e pe pagina oficială, ține până pe ~7 nov.\n\nUpdate 19 oct: pe X s-a dat codul COMMUNITY27, care îți dă un wrap gratis (sursa: https://x.com/NosniyGames/status/2111262009123901747).",
   "eticheta": "CONFIRMAT",
   "surse": [
-   "https://www.roblox.com/events/8627987553812480558"
+   "https://www.roblox.com/events/8627987553812480558",
+   "https://x.com/NosniyGames/status/2111262009123901747"
   ],
   "date": "2026-10-16",
   "published": "2026-10-16T00:07:00+03:00"
@@ -1650,5 +1651,17 @@
   ],
   "date": "2026-10-19",
   "published": "2026-10-19T07:34:32+03:00"
+ },
+ {
+  "titlu": "💎 Pet Simulator 99: Diamond Mountain e LIVE, cu Yeti boss și Gargantuan",
+  "img": "img/445971a0820f.jpg",
+  "text": "BIG Games a lansat update-ul Diamond Mountain în Pet Simulator 99 (anunțul a venit pe 17 octombrie, la 19:06, ora României). Ce aduce:\n- Spargi ziduri ca să faci diamante.\n- Te bați cu un YETI și iei un pet GARGANTUAN.\n- Trasee secrete de explorat.\n- Expediții pe care îți trimiți peții.\n- Un HUGE gratis în Season Pass.\n- Leaderboard de Yeti.\n\n🎟️ Season Pass Week 2 (CONFIRMAT)\nSăptămâna 2 din Season Pass e live de pe 18 oct, 07:00, până sâmbătă, 24 oct, 19:00 (ora României). Are quest-uri pentru un Huge Hiker Raccoon gratis, plus un booth nou, un hoverboard nou și diamante. Premiile sunt doar pentru săptămâna asta.\n\nTeaser-ul de dinainte de lansare (15 oct): https://pyromanc3r777.github.io/vexu-hq/posts/pet-simulator-99-blood-moon-diamond-mountain-vine-sambata.html",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/BuildIntoGames/status/2111488956793557109",
+   "https://www.roblox.com/events/7915528625254957692"
+  ],
+  "date": "2026-10-19",
+  "published": "2026-10-19T08:29:58+03:00"
  }
 ]
