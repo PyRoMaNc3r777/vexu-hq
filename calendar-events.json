@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T17:45:37+03:00",
+ "generated": "2026-10-19T23:55:56+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -83,10 +83,9 @@
    "post_title": "🎃 Tales of Tanorio: eveniment de Halloween pe 30 octombrie, cu reskin-uri și Tanorieni noi"
   },
   {
-   "name": "Lansare joc nou de dodgeball (asimo3089)",
-   "game": "Roblox",
-   "start_date": "2026-10-20",
-   "date_only": true,
+   "name": "Lansare joc dodgeball (asimo3089)",
+   "game": "Asimo's Dodgeball",
+   "start": "2026-10-21T00:00:00+03:00",
    "slug": "asimo3089-jailbreak-lanseaza-un-joc-nou-de-dodgeball-marti-20-octombrie",
    "img": "img/0e6f842e620a.jpg",
    "post_title": "🏐 asimo3089 (Jailbreak) lansează un joc nou de dodgeball marți, 20 octombrie"

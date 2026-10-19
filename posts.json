@@ -1425,20 +1425,20 @@
  {
   "titlu": "🏐 asimo3089 (Jailbreak) lansează un joc nou de dodgeball marți, 20 octombrie",
   "img": "img/0e6f842e620a.jpg",
-  "text": "asimo3089, unul dintre creatorii Jailbreak, a confirmat că noul lui joc de dodgeball pe Roblox iese marți, 20 octombrie. Cine intră în săptămâna de lansare primește iteme exclusive, iar jocul vine cu 23 de badge-uri de obținut — unele mai grele decât altele. Gameplay-ul îl arată luni, cu o zi înainte de lansare.",
+  "text": "⚡ UPDATE (19 oct): asimo3089 a publicat un trailer de 38s: „Out Tomorrow! Oct 20 2026 @ 2pm PST” — adică ~00:00 ora României, în noaptea de marți 20 spre miercuri 21 octombrie. CONFIRMAT.\n\nasimo3089, unul dintre creatorii Jailbreak, a confirmat că noul lui joc de dodgeball pe Roblox iese marți, 20 octombrie. Cine intră în săptămâna de lansare primește iteme exclusive, iar jocul vine cu 23 de badge-uri de obținut — unele mai grele decât altele. Gameplay-ul îl arată luni, cu o zi înainte de lansare.",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://x.com/asimo3089/status/2111142869365092424",
-   "https://x.com/asimo3089/status/2111323474828595329"
+   "https://x.com/asimo3089/status/2111323474828595329",
+   "https://x.com/asimo3089/status/2112238330729713727"
   ],
   "date": "2026-10-18",
   "published": "2026-10-18T09:14:00+03:00",
   "events": [
    {
-    "name": "Lansare joc nou de dodgeball (asimo3089)",
-    "game": "Roblox",
-    "start_date": "2026-10-20",
-    "date_only": true
+    "name": "Lansare joc dodgeball (asimo3089)",
+    "game": "Asimo's Dodgeball",
+    "start": "2026-10-21T00:00:00+03:00"
    }
   ]
  },
@@ -1609,7 +1609,7 @@
  {
   "titlu": "🔪 Murder Mystery 2: Halloween 2026 a început aseară la 22:00, ține până pe 16 noiembrie",
   "img": "img/c15b0de55ed6.png",
-  "text": "Evenimentul oficial „Halloween 2026” din Murder Mystery 2, cu descrierea „A retro Halloween 🎃”, a pornit duminică, 18 octombrie, la 22:00 (ora României) și ține până pe 16 noiembrie, la 20:00. Update-ul „Retro Halloween 2026” a venit cu un tab oficial de eveniment în joc.\n\nÎn afară de asta, nu s-a anunțat oficial niciun alt conținut.",
+  "text": "⚡ UPDATE (19 oct): MM2 e pe locul 2 pe Roblox — 518K jucători la 19:00 RO, după Steal An Egg și înaintea Brookhaven; API-ul arăta 538.648 la 20:45 RO (CONFIRMAT, cifre de jucători). ZVON: un Cauldron în care combini două godly — neconfirmat oficial.\n\nEvenimentul oficial „Halloween 2026” din Murder Mystery 2, cu descrierea „A retro Halloween 🎃”, a pornit duminică, 18 octombrie, la 22:00 (ora României) și ține până pe 16 noiembrie, la 20:00. Update-ul „Retro Halloween 2026” a venit cu un tab oficial de eveniment în joc.\n\nÎn afară de asta, nu s-a anunțat oficial niciun alt conținut.",
   "confirmat": "Halloween 2026 în MM2: 18 oct, 22:00 → 16 nov, 20:00 (ora României), „A retro Halloween 🎃”, cu tab oficial de eveniment în joc.",
   "confirmat_surse": [
    "https://www.roblox.com/events/7505344944098378506",
@@ -1628,7 +1628,8 @@
    "https://www.roblox.com/events/7505344944098378506",
    "https://x.com/MM2WorldWide/status/2111709602970845368",
    "https://x.com/Colbemo/status/2111615124436107518",
-   "https://x.com/MM2LeakZone/status/2111227859364716903"
+   "https://x.com/MM2LeakZone/status/2111227859364716903",
+   "https://x.com/RobloxGameStats/status/2112212410195140979"
   ],
   "date": "2026-10-19",
   "events": [
