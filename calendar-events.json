@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-19T17:08:27+03:00",
+ "generated": "2026-10-19T17:45:37+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -18,6 +18,15 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Intră în vigoare noii Termeni Roblox",
+   "game": "Roblox",
+   "start_date": "2026-11-01",
+   "date_only": true,
+   "slug": "roblox-isi-schimba-termenii-pe-1-noiembrie-merchant-of-record",
+   "img": "img/e949435d9972.png",
+   "post_title": "📜 Roblox își schimbă Termenii pe 1 noiembrie: cumperi de la Roblox, nu de la creator"
   },
   {
    "name": "Plușuri oficiale Youtooz",
