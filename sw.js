@@ -1,7 +1,7 @@
 // VEXU HQ service worker
 // HTML + JSON: NETWORK-FIRST (online vezi mereu ultimul deploy/date), fallback la cache offline.
 // Imagini/CSS/icon-uri: CACHE-FIRST. Mărește VERSION când schimbi imagini cu același nume.
-const VERSION = 'v1-2026-10-19';
+const VERSION = 'v2-2026-10-19';
 const CACHE = 'vexu-hq-' + VERSION;
 const BASE = '/vexu-hq/';
 const CORE = ['', 'index.html', 'blog.html', 'calendar.html', 'data.json', 'extra.json', 'posts.json',

@@ -59,5 +59,9 @@ today=now.astimezone(RO).date()
 cut=(today-datetime.timedelta(days=KEEPD-1)).isoformat()
 days={k:days[k] for k in sorted(days) if k>=cut}
 seen={t for t in seen if age({"t":t})<=KEEP}  # doar ca să nu numărăm de 2 ori punctele din fereastra de 48h
-json.dump({"v":1,"tz":"Europe/Bucharest","updated":now.isoformat(timespec="seconds").replace("+00:00","Z"),"days":days,"_seen":sorted(seen)},
+# puncte manuale (player-history-manual.json, sursa de adevăr) — copiate ca atare, niciodată tăiate/suprascrise
+man=[]
+try: man=[m for m in json.load(open("player-history-manual.json")).get("manual",[]) if isinstance(m,dict) and isinstance(m.get("p"),int) and "t" in m]
+except Exception: man=[m for m in (ph.get("manual") or []) if isinstance(m,dict)]  # dacă fișierul lipsește, păstrăm ce era
+json.dump({"v":1,"tz":"Europe/Bucharest","updated":now.isoformat(timespec="seconds").replace("+00:00","Z"),"days":days,"manual":man,"_seen":sorted(seen)},
           open(PH+".tmp","w"),separators=(",",":"));os.replace(PH+".tmp",PH)

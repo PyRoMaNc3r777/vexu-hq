@@ -1,0 +1,6 @@
+{
+ "_info": "Puncte adăugate manual (source: manual). fetch_data.py doar le copiază în player-history.json, nu le modifică și nu le șterge. Nu adăuga cifre ZVON (ex. 11,1M RoTerminal).",
+ "manual": [
+  {"t": "2026-10-17T15:12:00Z", "ro": "2026-10-17 18:12", "p": 10730000, "source": "manual", "note": "citire API, Regele"}
+ ]
+}
