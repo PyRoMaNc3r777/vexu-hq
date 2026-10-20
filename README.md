@@ -37,6 +37,9 @@ Câmpuri:
 - **events** — opțional, pentru Calendar Halloween (`start`/`end` ISO, sau `start_date`/`end_date`, `date_only`, `no_end`, `end_time_unknown`, `end_only`, `zvon_note`, `coming_soon` pentru dată neanunțată, `announced` + `start` pentru anunțuri oficiale)
 - **old_slugs** — redirect de la slug-uri vechi
 - **confirmat** / **zvon** — blocuri separate pe pagina postării
+- **joc** — opțional, numele jocului (ex. `"Steal An Egg"`, `"Break and Steal an Egg"`, `"Roblox (platformă)"` pentru știri de platformă/Studio/politici). Dacă lipsește, `build_posts.py` îl detectează automat (`joc_detect.py`, conservator: `""` dacă e ambiguu) și îl scrie în `posts.json`. Fiecare joc cu ≥1 postare primește pagina `joc/<slug>.html`; blogul are filtre pe joc (`blog.html#g=<slug>`).
+
+Evenimente de calendar fără postare: `calendar-extra.json` (`name`, `game`, `start`, `end`, `link`). Sunt sărite automat când o postare are în `events` același `game`+`name` (sau linkul eventului în `surse`) — deci nu se dublează.
 
 2. Descarcă imaginile în rădăcina repo-ului (numele din `img`).
 3. Rulează:

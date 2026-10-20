@@ -7,13 +7,17 @@ Utilizare:
 
 Fiecare post: titlu, text, eticheta (sau listă), img, surse[], date (YYYY-MM-DD).
 Opțional: published (ISO +03/+02), featured, section ("shorts"), slug (fixează URL-ul), old_slugs[], events[],
-          confirmat/zvon (blocuri separate).
+          confirmat/zvon (blocuri separate), joc (numele jocului; "Roblox (platformă)" pentru știri de platformă).
+Dacă lipsește joc → se detectează automat (joc_detect.py) și se scrie în posts.json ("" = ambiguu / fără joc).
+Pagini per joc: joc/<slug-joc>.html. Evenimente de calendar fără postare: calendar-extra.json.
 Dacă lipsește published → se completează automat cu ora curentă Europe/Bucharest.
 Dacă lipsește date → se ia din published (sau azi).
 """
 import json, re, unicodedata, html, os, sys, argparse
 from datetime import datetime
 from zoneinfo import ZoneInfo
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from joc_detect import detect as detect_joc, canon as canon_joc
 
 D = os.path.dirname(os.path.abspath(__file__))
 P = os.path.join(D, 'posts.json')
@@ -62,7 +66,16 @@ def ensure_meta(posts):
         if 'date' not in p:
             p['date'] = p['published'][:10]
             changed = True
+        if 'joc' not in p:
+            p['joc'] = detect_joc(p)
+            changed = True
     return changed
+
+def joc_of(p):
+    return (p.get('joc') or '').strip()
+
+def joc_slug(j):
+    return slug(j)
 
 CSS = """@media(min-width:768px){.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid .p{margin:0}a.p.feat{display:grid;grid-template-columns:1.3fr 1fr}.feat img{height:100%;min-height:320px}.feat h2{font-size:1.7em}.hero{max-width:1100px;margin:14px auto}.hero .b{max-width:760px;margin:auto;padding:24px}.hero .txt{font-size:1.15em}}@media(min-width:1200px){.grid{grid-template-columns:repeat(3,1fr)}.hero{display:grid;grid-template-columns:1fr 1fr}.hero .hi{padding:16px}.hero img{border-radius:12px}}
 *{box-sizing:border-box}body{margin:0;background:#07040f;color:#eee;font-family:system-ui,sans-serif;background-image:radial-gradient(circle at 20% 0,#3b0a5c 0,transparent 50%),radial-gradient(circle at 100% 100%,#002f3d 0,transparent 50%);min-height:100vh}
@@ -75,7 +88,12 @@ nav{text-align:center;margin:8px 0;display:flex;flex-wrap:wrap;gap:8px;justify-c
 .fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.fx span{position:absolute;bottom:-60px;font-size:22px;opacity:0;filter:drop-shadow(0 0 8px #ff7a00);animation:fl 18s linear infinite}.fx span:nth-child(1){left:6%;animation-delay:0s}.fx span:nth-child(2){left:22%;animation-delay:6s;font-size:16px}.fx span:nth-child(3){left:41%;animation-delay:11s}.fx span:nth-child(4){left:63%;animation-delay:3s;font-size:18px}.fx span:nth-child(5){left:80%;animation-delay:9s}.fx span:nth-child(6){left:93%;animation-delay:14s;font-size:15px}@keyframes fl{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.55}50%{transform:translate(18px,-55vh) rotate(12deg)}90%{opacity:.4}100%{transform:translate(-12px,-110vh) rotate(-10deg);opacity:0}}.w{position:relative;z-index:1}@media(prefers-reduced-motion:reduce){.fx{display:none}*{animation:none!important}}a.p{transition:transform .2s,border-color .2s,box-shadow .2s}a.p:hover{transform:translateY(-3px)}a.p:active{transform:scale(.98)}
 .filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 6px}.chip{border:1px solid #ff2bd655;background:#120a22cc;color:#eee;border-radius:999px;padding:7px 12px;font-size:.85em;font-weight:700;cursor:pointer}.chip.on{border-color:#00f0ff;color:#00f0ff;box-shadow:0 0 12px #00f0ff55}.chip .n{opacity:.7;margin-left:4px}.srch{display:flex;max-width:560px;margin:12px auto 0;position:relative}.srch input{flex:1;width:100%;font:inherit;font-size:16px;color:#eee;background:#120a22cc;border:1px solid #ff2bd655;border-radius:999px;padding:10px 42px 10px 16px;outline:none;-webkit-appearance:none;appearance:none}.srch input:focus{border-color:#00f0ff;box-shadow:0 0 14px #00f0ff55}.srch input::placeholder{color:#9a8fb5}.srch input::-webkit-search-cancel-button{display:none}.srch button{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;color:#ff7be6;font-size:1.05em;padding:6px 10px;cursor:pointer;visibility:hidden}.qinfo{text-align:center;color:#9a8fb5;font-size:.82em;min-height:1em;margin:4px 0 0}.dayh{margin:22px 0 8px;font-size:1.25em;color:#ff7be6;text-shadow:0 0 10px #ff2bd655}.dayh:first-child{margin-top:8px}#moreWrap{text-align:center;margin:18px 0}#featSlot .p{margin-top:8px}.empty{text-align:center;color:#9a8fb5;padding:24px}.shorts-entry{text-align:center;margin:10px 0 4px}.shorts-entry button{border:1px solid #00f0ff;background:#00f0ff18;color:#00f0ff;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;box-shadow:0 0 12px #00f0ff44}
 .cal .row{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start;margin:14px 0}.cal .ico{width:72px;height:72px;border-radius:14px;object-fit:cover;border:1px solid #ff2bd655;background:#000a}.cal .card{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;padding:14px;box-shadow:0 0 18px #ff2bd622}.cal .st{font-weight:800;margin:6px 0;color:#ffd400}.cal .st.live{color:#39ff88;text-shadow:0 0 10px #39ff88}.cal .st.done{color:#9a8fb5}.cal .cd{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.cal .cd div{background:#000a;border:1px solid #00f0ff66;border-radius:10px;padding:8px 6px;min-width:58px;text-align:center}.cal .cd b{display:block;font-size:1.3em;color:#ff2bd6}.cal .cd span{font-size:.65em;color:#aaa}.cal .meta{color:#9a8fb5;font-size:.85em}.cal a.golink{color:#00f0ff;font-weight:700;text-decoration:none}.note{font-size:.8em;color:#ffd400;margin-top:6px}@media(max-width:520px){.cal .row{grid-template-columns:56px 1fr}.cal .ico{width:56px;height:56px}}
-.rp{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#ff7a00,#ff2bd6,#00f0ff);box-shadow:0 0 10px #ff2bd6,0 0 18px #ff7a0088;z-index:50;pointer-events:none}.acts{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.acts .btn{margin:14px 0}.shr{border-color:#ff7a00;color:#ffb066;box-shadow:0 0 12px #ff7a0055}.shr.ok{border-color:#39ff88;color:#39ff88;box-shadow:0 0 14px #39ff8877}.rel{margin:10px 0 24px}.rel h2{color:#ff7be6;text-shadow:0 0 10px #ff2bd655;font-size:1.25em;margin:8px 0}.rel .grid{display:grid;grid-template-columns:1fr;gap:12px}.rel a.p{margin:0;display:grid;grid-template-columns:110px 1fr}.rel a.p img{height:100%;min-height:86px}.rel .b{padding:10px 12px}.rel .dt{display:block;margin:4px 0 0}.rel h3{margin:6px 0 0;font-size:.95em;line-height:1.3}@media(min-width:768px){.rel .grid{grid-template-columns:repeat(3,1fr)}.rel a.p{display:block}.rel a.p img{height:150px}}"""
+.rp{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#ff7a00,#ff2bd6,#00f0ff);box-shadow:0 0 10px #ff2bd6,0 0 18px #ff7a0088;z-index:50;pointer-events:none}.acts{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.acts .btn{margin:14px 0}.shr{border-color:#ff7a00;color:#ffb066;box-shadow:0 0 12px #ff7a0055}.shr.ok{border-color:#39ff88;color:#39ff88;box-shadow:0 0 14px #39ff8877}.rel{margin:10px 0 24px}.rel h2{color:#ff7be6;text-shadow:0 0 10px #ff2bd655;font-size:1.25em;margin:8px 0}.rel .grid{display:grid;grid-template-columns:1fr;gap:12px}.rel a.p{margin:0;display:grid;grid-template-columns:110px 1fr}.rel a.p img{height:100%;min-height:86px}.rel .b{padding:10px 12px}.rel .dt{display:block;margin:4px 0 0}.rel h3{margin:6px 0 0;font-size:.95em;line-height:1.3}@media(min-width:768px){.rel .grid{grid-template-columns:repeat(3,1fr)}.rel a.p{display:block}.rel a.p img{height:150px}}
+.jl{display:inline-block;margin:8px 0 2px;padding:4px 11px;border-radius:999px;border:1px solid #ff7a00;color:#ffb066;background:#ff7a0018;font-weight:800;font-size:.85em;text-decoration:none;box-shadow:0 0 10px #ff7a0044}.jl:hover{background:#ff7a0033}.jg{display:block;color:#ffb066;font-size:.78em;font-weight:700;margin-top:6px}
+.ftitle{text-align:center;color:#9a8fb5;font-size:.78em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin:12px 0 0}#gfilters{margin-top:6px}#gfilters .chip.on{border-color:#ff7a00;color:#ffb066;box-shadow:0 0 12px #ff7a0055}.gpage{text-align:center;margin:6px 0 0;min-height:1em}.gpage a{color:#ffb066;font-weight:800;text-decoration:none}
+@media(max-width:767px){#gfilters{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 16px 8px;margin-left:-16px;margin-right:-16px}#gfilters::-webkit-scrollbar{display:none}#gfilters .chip{flex:0 0 auto;white-space:nowrap}}
+.cta{text-align:center;margin:26px 0 10px;padding:16px;border-radius:16px;border:1px solid #ff2bd6;background:#120a22cc;box-shadow:0 0 18px #ff2bd644}.cta b{display:block;font-size:1.2em;margin-bottom:8px;color:#ff7be6;text-shadow:0 0 10px #ff2bd655}.cta a{display:inline-block;margin:6px;padding:10px 16px;border-radius:12px;font-weight:800;text-decoration:none;border:1px solid #00f0ff;color:#00f0ff;background:#000a;box-shadow:0 0 12px #00f0ff55}.cta a.yt{border-color:#ff3b3b;color:#ff7070;box-shadow:0 0 12px #ff3b3b55}
+.gcount{text-align:center;color:#9a8fb5;margin:4px 0 0}"""
 
 CSS_FX = 'h1{background-image:linear-gradient(90deg,#ff2bd6,#00f0ff,#ff7a00,#ff2bd6);background-size:300% auto;-webkit-background-clip:text;background-clip:text;animation:shm 8s linear infinite}h1 .em{color:#fff;-webkit-text-fill-color:#fff;filter:drop-shadow(0 0 8px #ff7a00aa)}@keyframes shm{to{background-position:300% center}}.moon{position:fixed;top:-46px;right:-46px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 38% 38%,#fff8de,#ffd27a 42%,#ff8a1f 70%,#ff7a0000 72%);box-shadow:0 0 70px 24px #ff7a0033;opacity:.28;pointer-events:none;z-index:0;animation:mn 6s ease-in-out infinite}@keyframes mn{50%{opacity:.45}}@media(min-width:768px){.moon{top:-30px;right:-30px;width:220px;height:220px}}@media(prefers-reduced-motion:reduce){h1,.moon{animation:none}}'
 EMO = re.compile('([\U0001F000-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\u2300-\u23FF][\uFE0F\u200D\U0001F000-\U0001FAFF\u2600-\u27BF]*)')
@@ -120,6 +138,12 @@ NAV_BLOG = ('<nav><a href="index.html">⚡ Dashboard</a><a href="blog.html">📰
 NAV_POST = ('<nav><a href="../blog.html">← Blog</a><a href="../calendar.html">📅 Calendar</a>'
             '<a href="../index.html">⚡ Dashboard</a></nav>')
 
+NAV_JOC = ('<nav><a href="../blog.html">← Blog</a><a href="../calendar.html">📅 Calendar</a>'
+           '<a href="../index.html">⚡ Dashboard</a></nav>')
+CTA = ('<div class="cta"><b>Follow = Au ce bile! 💥</b>'
+       '<a href="https://www.tiktok.com/@vexu_online" target="_blank" rel="noopener">🎵 TikTok @vexu_online</a>'
+       '<a class="yt" href="https://www.youtube.com/@VexuOnline" target="_blank" rel="noopener">▶️ YouTube VEXU Online</a></div>')
+
 BLOG_JS = r"""
 <script>
 const TZ='Europe/Bucharest', PAGE=12;
@@ -141,36 +165,47 @@ function dayLabel(key){
   const [Y,M,D]=key.split('-').map(Number);
   return new Intl.DateTimeFormat('ro-RO',{timeZone:'UTC',weekday:'long',day:'numeric',month:'long'}).format(new Date(Date.UTC(Y,M-1,D,12)));
 }
-// hash: #f=<eticheta>&q=<căutare>
-function parseHash(){const h=(location.hash||'').replace(/^#/,''); const o={f:'toate',q:''};
+// hash: #f=<eticheta>&g=<joc>&q=<căutare>
+function parseHash(){const h=(location.hash||'').replace(/^#/,''); const o={f:'toate',g:'toate',q:''};
   h.split('&').forEach(kv=>{const i=kv.indexOf('='); if(i<0)return; const k=kv.slice(0,i); let v=kv.slice(i+1); try{v=decodeURIComponent(v.replace(/\+/g,' '))}catch(e){}
-    if(k==='f'&&/^[\w-]+$/.test(v)) o.f=v; if(k==='q') o.q=v;}); return o}
-function setHash(){const parts=[]; if(filter!=='toate') parts.push('f='+filter); if(q.trim()) parts.push('q='+encodeURIComponent(q.trim()));
+    if(k==='f'&&/^[\w-]+$/.test(v)) o.f=v; if(k==='g'&&/^[\w-]+$/.test(v)) o.g=v; if(k==='q') o.q=v;}); return o}
+function setHash(){const parts=[]; if(filter!=='toate') parts.push('f='+filter); if(game!=='toate') parts.push('g='+game); if(q.trim()) parts.push('q='+encodeURIComponent(q.trim()));
   const h=parts.length?'#'+parts.join('&'):''; if((location.hash||'')!==h) history.replaceState(null,'',h||location.pathname+location.search)}
-let ALL=[], FILTERS=[{id:'toate',label:'Toate'}], shown=0, filter='toate', q='', SEARCH=null, sLoading=false;
+let ALL=[], FILTERS=[{id:'toate',label:'Toate'}], GAMES=[{id:'toate',label:'Toate'}], shown=0, filter='toate', game='toate', q='', SEARCH=null, sLoading=false;
 // lista de etichete derivată din date (posts-index.json ← posts.json), ordonată după numărul de postări
 function buildFilters(){const m=new Map(); ALL.forEach(p=>(p.labels||[]).forEach(l=>{const id=fid(l); if(!id)return; const x=m.get(id)||{id,label:l,n:0}; x.n++; m.set(id,x)}));
   FILTERS=[{id:'toate',label:'Toate'}].concat([...m.values()].sort((a,b)=>b.n-a.n||a.label.localeCompare(b.label,'ro')))}
-function validFilter(){if(!FILTERS.some(f=>f.id===filter)) filter='toate'}
+// jocuri (câmpul joc din posts.json), ordonate după numărul de postări
+function buildGames(){const m=new Map(); ALL.forEach(p=>{if(!p.joc||!p.jocSlug)return; const x=m.get(p.jocSlug)||{id:p.jocSlug,label:p.joc,n:0}; x.n++; m.set(p.jocSlug,x)});
+  GAMES=[{id:'toate',label:'Toate'}].concat([...m.values()].sort((a,b)=>b.n-a.n||a.label.localeCompare(b.label,'ro')))}
+function validFilter(){if(!FILTERS.some(f=>f.id===filter)) filter='toate'; if(!GAMES.some(g=>g.id===game)) game='toate'}
+function gmatch(p,g){return g==='toate'||p.jocSlug===g}
 function terms(){return norm(q).split(/\s+/).filter(Boolean)}
-function hay(p){if(p._h===undefined||(SEARCH&&!p._full)){p._full=!!SEARCH; p._h=norm(p.title+' '+(p.excerpt||'')+' '+(p.labels||[]).join(' ')+' '+((SEARCH&&SEARCH[p.slug])||''))} return p._h}
+function hay(p){if(p._h===undefined||(SEARCH&&!p._full)){p._full=!!SEARCH; p._h=norm(p.title+' '+(p.excerpt||'')+' '+(p.labels||[]).join(' ')+' '+(p.joc||'')+' '+((SEARCH&&SEARCH[p.slug])||''))} return p._h}
 function qmatch(p,t){return !t.length||t.every(w=>hay(p).includes(w))}
 function fmatch(p,f){return f==='toate'||(p.labels||[]).some(l=>fid(l)===f)}
 function loadSearch(){if(SEARCH||sLoading)return; sLoading=true;
   fetch('posts-search.json?'+Date.now()).then(r=>r.json()).then(d=>{SEARCH=d; if(q.trim()) paint()}).catch(()=>{sLoading=false})}
 function chipsHtml(labels,date){return labels.map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')+`<span class="dt">📅 ${es(date)}</span>`}
 function cardHtml(p, feat){
-  return `<a class="p${feat?' feat':''}" href="posts/${es(p.slug)}.html"><img src="${es(p.img)}" alt="" loading="lazy"><div class="b">${chipsHtml(p.labels,p.dateRo)}<h2>${es(p.title)}</h2><div>${es(p.excerpt)}</div><div class="more">Citește tot →</div></div></a>`;
+  return `<a class="p${feat?' feat':''}" href="posts/${es(p.slug)}.html"><img src="${es(p.img)}" alt="" loading="lazy"><div class="b">${chipsHtml(p.labels,p.dateRo)}<h2>${es(p.title)}</h2><div>${es(p.excerpt)}</div>${p.joc?`<span class="jg">🎮 ${es(p.joc)}</span>`:''}<div class="more">Citește tot →</div></div></a>`;
 }
 function renderFilters(t){
   const base=ALL.filter(p=>qmatch(p,t));
-  document.getElementById('filters').innerHTML=FILTERS.map(f=>`<button type="button" class="chip${filter===f.id?' on':''}" data-f="${es(f.id)}" aria-pressed="${filter===f.id}">${es(f.label)}<span class="n">(${base.filter(p=>fmatch(p,f.id)).length})</span></button>`).join('');
+  document.getElementById('filters').innerHTML=FILTERS.map(f=>`<button type="button" class="chip${filter===f.id?' on':''}" data-f="${es(f.id)}" aria-pressed="${filter===f.id}">${es(f.label)}<span class="n">(${base.filter(p=>gmatch(p,game)&&fmatch(p,f.id)).length})</span></button>`).join('');
   document.querySelectorAll('#filters .chip').forEach(b=>b.onclick=()=>{filter=b.dataset.f; setHash(); shown=0; paint()});
+  const gb=base.filter(p=>fmatch(p,filter));
+  const gf=document.getElementById('gfilters');
+  gf.innerHTML=GAMES.map(g=>`<button type="button" class="chip${game===g.id?' on':''}" data-g="${es(g.id)}" aria-pressed="${game===g.id}">${g.id==='toate'?'🎮 ':''}${es(g.label)}<span class="n">(${gb.filter(p=>gmatch(p,g.id)).length})</span></button>`).join('');
+  gf.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{game=b.dataset.g; setHash(); shown=0; paint()});
+  const on=gf.querySelector('.chip.on'); if(on&&game!=='toate'&&gf.scrollWidth>gf.clientWidth) gf.scrollLeft=on.offsetLeft-gf.clientWidth/2+on.offsetWidth/2;
+  const cur=GAMES.find(g=>g.id===game);
+  document.getElementById('gpage').innerHTML=game!=='toate'&&cur?`<a href="joc/${es(cur.id)}.html">🎮 Pagina jocului ${es(cur.label)} →</a>`:'';
 }
 function paint(){
   const t=terms();
   renderFilters(t);
-  const ok=p=>fmatch(p,filter)&&qmatch(p,t);
+  const ok=p=>fmatch(p,filter)&&gmatch(p,game)&&qmatch(p,t);
   // un singur post evidențiat sus; celelalte marcate featured rămân în feed (cronologic), nu dispar
   const feat=ALL.find(p=>p.featured && ok(p));
   const rest=ALL.filter(p=>p!==feat && ok(p)).sort((a,b)=>(Date.parse(b.published)||0)-(Date.parse(a.published)||0));
@@ -184,7 +219,7 @@ function paint(){
     html+=cardHtml(p,false);
   }
   if(open) html+='</div>';
-  if(!feat && !slice.length) html=t.length?`<div class="empty">Nicio știre găsită pentru „${es(q.trim())}”${filter!=='toate'?' pe filtrul ăsta':''}.</div>`:'<div class="empty">Nicio postare pe filtrul ăsta.</div>';
+  if(!feat && !slice.length) html=t.length?`<div class="empty">Nicio știre găsită pentru „${es(q.trim())}”${filter!=='toate'?' pe filtrele astea':''}.</div>`:'<div class="empty">Nicio postare pe filtrele astea.</div>';
   document.getElementById('feed').innerHTML=html;
   const n=rest.length+(feat?1:0);
   document.getElementById('qinfo').textContent=t.length?(n===1?'1 rezultat':`${n} rezultate`)+(SEARCH?'':' (se încarcă textul complet…)'):'';
@@ -202,11 +237,11 @@ document.getElementById('qform').onsubmit=e=>{e.preventDefault(); qi.blur()};
 document.getElementById('qx').onclick=()=>{qi.value=q=''; setHash(); shown=0; paint(); qi.focus()};
 document.getElementById('moreBtn').onclick=()=>{shown+=PAGE; paint()};
 document.getElementById('shortsBtn').onclick=()=>{filter=FILTERS.some(f=>f.id==='trend-shorts')?'trend-shorts':'toate'; setHash(); shown=0; paint(); document.getElementById('filters').scrollIntoView({behavior:'smooth'})};
-({f:filter,q}=parseHash()); qi.value=q; if(q) loadSearch();
+({f:filter,g:game,q}=parseHash()); qi.value=q; if(q) loadSearch();
 fetch('posts-index.json?'+Date.now()).then(r=>r.json()).then(data=>{
-  ALL=data.posts||data; buildFilters(); validFilter(); paint();
+  ALL=data.posts||data; buildFilters(); buildGames(); validFilter(); paint();
 }).catch(err=>{document.getElementById('feed').innerHTML='<div class="empty">Nu pot încărca indexul.</div>'});
-window.addEventListener('hashchange',()=>{({f:filter,q}=parseHash()); qi.value=q; if(q) loadSearch(); validFilter(); shown=0; paint()});
+window.addEventListener('hashchange',()=>{({f:filter,g:game,q}=parseHash()); qi.value=q; if(q) loadSearch(); validFilter(); shown=0; paint()});
 </script>
 """
 
@@ -295,7 +330,7 @@ function paint(){
       ${cd}
       <div class="meta">${es(windowText(ev))}</div>
       ${note}
-      <div style="margin-top:8px"><a class="golink" href="posts/${es(ev.slug)}.html">Vezi postarea →</a></div>
+      <div style="margin-top:8px">${ev.slug?`<a class="golink" href="posts/${es(ev.slug)}.html">Vezi postarea →</a>`:ev.link?`<a class="golink" href="${es(ev.link)}" target="_blank" rel="noopener">Pagina oficială a eventului →</a>`:''}</div>
     </div></div>`;
   }).join('');
 }
@@ -355,6 +390,7 @@ def build_post_pages(posts):
                 f'<link rel="canonical" href="{s}.html"><a href="{s}.html">Mutat aici →</a>\n')
         body = (NAV_POST +
                 f'<div class="p hero"><div class="hi"><img src="../{e(p["img"])}" alt=""></div><div class="b">{lab}'
+                + (f'<a class="jl" href="../joc/{e(joc_slug(joc_of(p)))}.html">🎮 {e(joc_of(p))}</a>' if joc_of(p) else '') +
                 f'<h1 style="text-align:left;font-size:1.6em">{e(p["titlu"])}</h1>'
                 f'<div class="txt">{txt}</div><div class="s">Surse:{src}</div></div></div>'
                 f'<div class="acts"><a class="btn" href="../blog.html">← Înapoi la blog</a>'
@@ -374,6 +410,8 @@ def build_post_pages(posts):
             'excerpt': excerpt_of(p),
             'featured': bool(p.get('featured')),
             'section': p.get('section'),
+            'joc': joc_of(p) or None,
+            'jocSlug': joc_slug(joc_of(p)) if joc_of(p) else None,
         }
         index_items.append(item)
         search[s] = search_text(p)
@@ -382,6 +420,19 @@ def build_post_pages(posts):
             ce['slug'] = s
             ce['img'] = p['img']
             ce['post_title'] = p['titlu']
+            cal_events.append(ce)
+    # evenimente fără postare (calendar-extra.json); se sar automat când o postare are events[] cu același joc+nume sau același link (în surse/events)
+    xp = os.path.join(D, 'calendar-extra.json')
+    if os.path.exists(xp):
+        ex = json.load(open(xp, encoding='utf-8'))
+        ex = ex.get('events', []) if isinstance(ex, dict) else ex
+        links = {u for p in posts if p.get('events') for u in p.get('surse', [])} | {ev.get('link') for ev in cal_events if ev.get('link')}
+        keys = {((ev.get('game') or '').lower(), (ev.get('name') or '').lower()) for ev in cal_events}
+        for ev in ex:
+            if ev.get('link') in links or ((ev.get('game') or '').lower(), (ev.get('name') or '').lower()) in keys:
+                print('calendar-extra: sărit (există deja într-o postare):', ev.get('game'), ev.get('name'))
+                continue
+            ce = dict(ev); ce.setdefault('img', 'generic-neon.png'); ce['standalone'] = True
             cal_events.append(ce)
     feat = [x for x in index_items if x['featured']]
     rest = sorted([x for x in index_items if not x['featured']], key=lambda x: x['published'], reverse=True)
@@ -395,6 +446,38 @@ def build_post_pages(posts):
         json.dumps({'generated': now_ro().isoformat(timespec='seconds'), 'events': cal_events}, ensure_ascii=False, indent=1) + '\n')
     return index_items
 
+def build_game_pages(posts):
+    """joc/<slug>.html: toate postările unui joc, cele mai noi primele. Doar jocuri cu ≥1 postare; paginile rămase fără postări se șterg."""
+    jd = os.path.join(D, 'joc')
+    os.makedirs(jd, exist_ok=True)
+    groups = {}
+    for p in posts:
+        j = joc_of(p)
+        if j:
+            groups.setdefault(joc_slug(j), (j, []))[1].append(p)
+    made = set()
+    for js, (j, ps) in sorted(groups.items()):
+        ps = sorted(ps, key=pub_key, reverse=True)
+        cards = ''
+        for q in ps:
+            qs = q.get('slug') or slug(q['titlu'])
+            cards += (f'<a class="p" href="../posts/{e(qs)}.html"><img src="../{e(q["img"])}" alt="" loading="lazy"><div class="b">{chips(q)}'
+                      f'<span class="dt">📅 {ro_date(q["date"])}</span><h2>{e(q["titlu"])}</h2><div>{e(excerpt_of(q))}</div>'
+                      f'<div class="more">Citește tot →</div></div></a>')
+        n = len(ps)
+        body = (f'<h1>🎮 {e(j)}</h1>{NAV_JOC}'
+                f'<p class="gcount">{n} {"postare" if n == 1 else "postări"} · cele mai noi primele · '
+                f'<a href="../blog.html#g={e(js)}" style="color:#00f0ff">vezi în blog cu filtre</a></p>'
+                f'<div class="grid">{cards}</div>{CTA}'
+                f'<div style="text-align:center"><a class="btn" href="../blog.html">← Toate știrile</a></div>')
+        open(os.path.join(jd, js + '.html'), 'w', encoding='utf-8').write(page(f'{j} · VEXU HQ', body))
+        made.add(js + '.html')
+    for f in os.listdir(jd):
+        if f.endswith('.html') and f not in made:
+            os.remove(os.path.join(jd, f))
+    print(f'joc/: {len(made)} pagini de joc')
+    return groups
+
 def build_blog():
     noscript = '<noscript><p style="text-align:center;color:#9a8fb5">Activează JavaScript pentru feed-ul grupat pe zile. Postările individuale rămân în <code>posts/</code>.</p></noscript>'
     body = (f'<h1>📰 VEXU HQ · Știri</h1>{NAV_BLOG}'
@@ -402,9 +485,11 @@ def build_blog():
             f'<form class="srch" id="qform" role="search"><input type="search" id="q" placeholder="Caută în știri…" aria-label="Caută în știri" autocomplete="off" enterkeyhint="search"><button type="button" id="qx" aria-label="Șterge căutarea">✕</button></form>'
             f'<div class="qinfo" id="qinfo" aria-live="polite"></div>'
             f'<div class="filters" id="filters"></div>'
+            f'<div class="ftitle">Jocuri</div><div class="filters" id="gfilters" role="toolbar" aria-label="Filtru după joc"></div>'
+            f'<div class="gpage" id="gpage"></div>'
             f'<div id="featSlot"></div><div id="feed"></div>'
             f'<div id="moreWrap"><button type="button" class="btn" id="moreBtn" style="display:none">Vezi mai multe</button></div>'
-            f'{noscript}')
+            f'{noscript}{CTA}')
     open(os.path.join(D, 'blog.html'), 'w', encoding='utf-8').write(page('VEXU HQ · Știri', body, BLOG_JS))
 
 def build_calendar():
@@ -417,6 +502,9 @@ def append_batch(path):
     batch = json.load(open(path, encoding='utf-8'))
     if isinstance(batch, dict):
         batch = [batch]
+    for b in batch:  # joc: dacă e dat, se normalizează la numele canonic; dacă lipsește, ensure_meta îl detectează
+        if b.get('joc'):
+            b['joc'] = canon_joc(b['joc'])
     posts = json.load(open(P, encoding='utf-8'))
     posts.extend(batch)
     with open(P, 'w', encoding='utf-8') as f:
@@ -460,6 +548,7 @@ def main():
             f.write('\n')
         print('Auto-filled published/date on some posts')
     build_post_pages(posts)
+    build_game_pages(posts)
     build_blog()
     build_calendar()
     print('blog.html / calendar.html / posts-index.json / calendar-events.json OK')

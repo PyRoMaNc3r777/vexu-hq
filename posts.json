@@ -17,7 +17,8 @@
     "start": "2026-10-17T21:00:00+03:00",
     "end": "2026-10-24T21:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "+1 Speed Keyboard Escape"
  },
  {
   "titlu": "🥚 Steal An Egg: actualizare azi la 16:10",
@@ -28,7 +29,8 @@
    "https://www.roblox.com/games/107778070777162/Steal-An-Egg"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T17:55:00+03:00"
+  "published": "2026-10-15T17:55:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
@@ -49,7 +51,8 @@
     "end": "2026-11-07T23:00:00+02:00"
    }
   ],
-  "slug": "dead-rails-dead-of-night-pe-17-octombrie"
+  "slug": "dead-rails-dead-of-night-pe-17-octombrie",
+  "joc": "Dead Rails"
  },
  {
   "titlu": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween",
@@ -74,7 +77,8 @@
     "start": "2026-10-17T02:00:00+03:00",
     "end": "2026-10-24T02:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Forsaken"
  },
  {
   "titlu": "Doar ouă mari, o rundă întreagă: challenge-ul din seara asta 🥚",
@@ -86,7 +90,8 @@
    "https://www.youtube.com/shorts/uTMRuCM7RTs"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T17:46:00+03:00"
+  "published": "2026-10-15T17:46:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "Pet de noob vs pet maxat: cine câștigă cursa? 🏁",
@@ -97,7 +102,8 @@
    "https://www.youtube.com/watch?v=d27OmKHuOaw"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T17:45:00+03:00"
+  "published": "2026-10-15T17:45:00+03:00",
+  "joc": ""
  },
  {
   "titlu": "Un „glitch” în Steal an Egg strânge ~8.300 views pe oră 🥚⚡",
@@ -115,7 +121,8 @@
   ],
   "date": "2026-10-15",
   "published": "2026-10-15T14:31:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "8 secunde, ~6.500 views pe oră: meme-ul cu „toate personajele” 😂",
@@ -127,7 +134,8 @@
   ],
   "date": "2026-10-15",
   "published": "2026-10-15T14:30:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": ""
  },
  {
   "titlu": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween",
@@ -152,7 +160,8 @@
     "end": "2026-10-17T23:00:00+03:00",
     "end_only": true
    }
-  ]
+  ],
+  "joc": "Grow a Garden"
  },
  {
   "titlu": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct",
@@ -177,7 +186,8 @@
     "start": "2026-10-23T21:00:00+03:00",
     "end": "2026-11-06T19:44:00+02:00"
    }
-  ]
+  ],
+  "joc": "Brookhaven"
  },
  {
   "titlu": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă",
@@ -213,7 +223,8 @@
   ],
   "old_slugs": [
    "pet-simulator-99-diamond-mountain-vine-sambata"
-  ]
+  ],
+  "joc": "Pet Simulator 99"
  },
  {
   "titlu": "🏆 Creator Showdown în São Paulo: lupta pentru coroană e diseară!",
@@ -231,7 +242,8 @@
     "game": "Roblox",
     "start": "2026-10-15T23:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🌑 Umbre noi pentru UI în Roblox Studio",
@@ -243,7 +255,8 @@
    "https://devforum.roblox.com/t/studio-beta-upgraded-uishadow-capabilities/4934553"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T14:24:00+03:00"
+  "published": "2026-10-15T14:24:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "💬 Quick Words personalizate",
@@ -254,7 +267,8 @@
    "https://x.com/Bloxy_News/status/2110047452372009164"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T14:23:00+03:00"
+  "published": "2026-10-15T14:23:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "Diseară pe live: curse, mount-uri și haos înainte de portal 🚀",
@@ -266,7 +280,8 @@
    "https://www.youtube.com/@VexuOnline"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T14:22:00+03:00"
+  "published": "2026-10-15T14:22:00+03:00",
+  "joc": ""
  },
  {
   "titlu": "5 challenge-uri pe care le puteți da pe live 🔥",
@@ -277,7 +292,8 @@
    "https://www.youtube.com/shorts/FcpxAj7tH08"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T14:21:00+03:00"
+  "published": "2026-10-15T14:21:00+03:00",
+  "joc": ""
  },
  {
   "titlu": "Mai sunt 2 zile până la Halloween Dimension 👻",
@@ -291,7 +307,8 @@
    "https://www.youtube.com/watch?v=d27OmKHuOaw"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T14:20:00+03:00"
+  "published": "2026-10-15T14:20:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
@@ -323,7 +340,8 @@
     "start_date": "2026-10-10",
     "end_date": "2026-11-08"
    }
-  ]
+  ],
+  "joc": "Piggy"
  },
  {
   "titlu": "🐎 Update-ul cu Mounts a ajuns în Steal An Egg",
@@ -334,7 +352,8 @@
    "https://www.roblox.com/events/752499920631628450"
   ],
   "date": "2026-10-14",
-  "published": "2026-10-14T19:40:00+03:00"
+  "published": "2026-10-14T19:40:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "❓ The Hollow: eventul de Halloween al Roblox vine pe 22 octombrie",
@@ -378,7 +397,8 @@
     "date_only": true,
     "zvon_note": "Ora de start e ZVON (se vorbește de 21:00 RO) — neconfirmată"
    }
-  ]
+  ],
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🍬 DOORS lansează The Candy Vault pe 22 octombrie",
@@ -401,7 +421,8 @@
     "end_date": "2026-11-09",
     "end_time_unknown": true
    }
-  ]
+  ],
+  "joc": "DOORS"
  },
  {
   "titlu": "👻 Adopt Me: Hauntlet Returns + Halloween Ghost Gallery",
@@ -422,7 +443,8 @@
     "no_end": true,
     "end_note": "fără dată de final anunțată"
    }
-  ]
+  ],
+  "joc": "Adopt Me"
  },
  {
   "titlu": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie",
@@ -451,7 +473,8 @@
     "start": "2026-10-24T18:00:00+03:00",
     "end": "2026-11-14T06:00:00+02:00"
    }
-  ]
+  ],
+  "joc": "Dress to Impress"
  },
  {
   "titlu": "🌲 99 Nights in the Forest: vine Trick or Treat",
@@ -470,7 +493,8 @@
     "start": "2026-10-17T20:00:00+03:00",
     "end": "2026-10-24T15:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "99 Nights in the Forest"
  },
  {
   "titlu": "Portalul se deschide sâmbătă! Ce urmează pe live-urile VEXU 👻",
@@ -481,7 +505,8 @@
    "https://www.youtube.com/@VexuOnline"
   ],
   "date": "2026-10-14",
-  "published": "2026-10-14T18:40:00+03:00"
+  "published": "2026-10-14T18:40:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "Cele mai tari momente de pe live-urile VEXU: am călărit pet-urile! 🚀",
@@ -493,7 +518,8 @@
    "https://www.youtube.com/watch?v=b6ZpRrCVydg"
   ],
   "date": "2026-10-14",
-  "published": "2026-10-14T18:30:00+03:00"
+  "published": "2026-10-14T18:30:00+03:00",
+  "joc": ""
  },
  {
   "titlu": "🎃 Halloween Dimension vine în Steal An Egg!",
@@ -514,7 +540,8 @@
     "start": "2026-10-17T18:00:00+03:00",
     "end": "2026-10-24T17:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🚫 Nu există coduri de Halloween",
@@ -525,7 +552,8 @@
    "https://stealanegg-roblox.wiki/halloween-dimension/"
   ],
   "date": "2026-10-14",
-  "published": "2026-10-14T18:10:00+03:00"
+  "published": "2026-10-14T18:10:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🚀 Roblox simplifică publicarea jocurilor",
@@ -536,7 +564,8 @@
    "https://devforum.roblox.com/t/a-simpler-path-to-publish-plus-invite-early-testers/4930524"
   ],
   "date": "2026-10-14",
-  "published": "2026-10-14T18:00:00+03:00"
+  "published": "2026-10-14T18:00:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🛍️ Licențe pe IP-uri oficiale pentru iteme UGC",
@@ -547,7 +576,8 @@
    "https://devforum.roblox.com/t/create-ip-based-avatar-items-with-marketplace-licenses/4921794"
   ],
   "date": "2026-10-14",
-  "published": "2026-10-14T17:50:00+03:00"
+  "published": "2026-10-14T17:50:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "NU face asta în update-ul de Halloween: 7 secunde, aproape 600K",
@@ -559,7 +589,8 @@
   ],
   "date": "2026-10-14",
   "section": "shorts",
-  "published": "2026-10-14T17:40:00+03:00"
+  "published": "2026-10-14T17:40:00+03:00",
+  "joc": "Dandy's World"
  },
  {
   "titlu": "Lore de Halloween: poveștile scurte încă prind",
@@ -571,7 +602,8 @@
   ],
   "date": "2026-10-14",
   "section": "shorts",
-  "published": "2026-10-14T17:30:00+03:00"
+  "published": "2026-10-14T17:30:00+03:00",
+  "joc": "99 Nights in the Forest"
  },
  {
   "titlu": "Steal an Egg Halloween: valul a pornit",
@@ -589,7 +621,8 @@
   "old_slugs": [
    "steal-an-egg-halloween-nimeni-n-a-prins-inca-valul"
   ],
-  "published": "2026-10-14T17:20:00+03:00"
+  "published": "2026-10-14T17:20:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "Steal An Egg „GAME VS REAL”: ~6.000 views pe oră în 25s 🥚😂",
@@ -601,7 +634,8 @@
   ],
   "date": "2026-10-15",
   "published": "2026-10-15T15:28:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "„Your Trail If You…” pe Steal An Egg: ~2.000 views pe oră 🔥",
@@ -613,7 +647,8 @@
   ],
   "date": "2026-10-15",
   "published": "2026-10-15T15:27:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "📊 Creator Analytics: măsurarea Discovery s-a schimbat pe 12 oct",
@@ -624,7 +659,8 @@
    "https://devforum.roblox.com/t/improved-discovery-measurement-in-creator-analytics/4930122"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T15:26:00+03:00"
+  "published": "2026-10-15T15:26:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "⚠️ Rate limit-uri API mai stricte după 19 octombrie",
@@ -635,7 +671,8 @@
    "https://devforum.roblox.com/t/api-update-api-rate-limit-tuning/4906160"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T15:25:00+03:00"
+  "published": "2026-10-15T15:25:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "SAE acum ~1,44M jucători. Halloween Dimension sâmbătă 18:00 RO 🎃",
@@ -647,7 +684,8 @@
    "https://www.roblox.com/events/2469722483213861487"
   ],
   "date": "2026-10-15",
-  "published": "2026-10-15T15:24:00+03:00"
+  "published": "2026-10-15T15:24:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🐟 Fisch: FischFright 3, ediția anuală de Halloween",
@@ -666,7 +704,8 @@
     "start": "2026-10-17T19:00:00+03:00",
     "end": "2026-11-09T19:00:00+02:00"
    }
-  ]
+  ],
+  "joc": "Fisch"
  },
  {
   "titlu": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
@@ -698,7 +737,8 @@
     "start_date": "2026-10-18",
     "date_only": true
    }
-  ]
+  ],
+  "joc": "Dandy's World"
  },
  {
   "titlu": "⚔️ RIVALS: RIVALSWEEN pe pagina oficială",
@@ -710,7 +750,8 @@
    "https://x.com/NosniyGames/status/2111262009123901747"
   ],
   "date": "2026-10-16",
-  "published": "2026-10-16T00:07:00+03:00"
+  "published": "2026-10-16T00:07:00+03:00",
+  "joc": "RIVALS"
  },
  {
   "titlu": "„Căderea e mortală” face 1,5M într-o zi",
@@ -722,7 +763,8 @@
   ],
   "date": "2026-10-16",
   "published": "2026-10-16T00:22:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": ""
  },
  {
   "titlu": "POV: de la 0 la bogat în Steal An Egg",
@@ -734,7 +776,8 @@
   ],
   "date": "2026-10-16",
   "published": "2026-10-16T00:21:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "Animația secretă de LIKE din Steal an Egg",
@@ -746,7 +789,8 @@
   ],
   "date": "2026-10-16",
   "published": "2026-10-16T00:20:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🏡 Bloxburg: Gothic Items, iteme gotice de Halloween",
@@ -765,7 +809,8 @@
     "start": "2026-10-15T00:00:00+03:00",
     "end": "2026-10-22T14:55:00+03:00"
    }
-  ]
+  ],
+  "joc": "Bloxburg"
  },
  {
   "titlu": "👻 Evade: Halloween Event din 17 oct, 04:00",
@@ -789,7 +834,8 @@
     "end": "2026-11-20T23:59:59+02:00",
     "end_only": true
    }
-  ]
+  ],
+  "joc": "Evade"
  },
  {
   "titlu": "⚔️ BedWars Halloween Part 1 din 17 oct",
@@ -821,7 +867,8 @@
     "start_date": "2026-10-31",
     "date_only": true
    }
-  ]
+  ],
+  "joc": "BedWars"
  },
  {
   "titlu": "🦖 Creatures of Sonaria: Halloween Week 2 din 16 oct, 23:30",
@@ -840,7 +887,8 @@
     "start": "2026-10-16T23:30:00+03:00",
     "end": "2026-10-19T23:30:00+03:00"
    }
-  ]
+  ],
+  "joc": "Creatures of Sonaria"
  },
  {
   "titlu": "🎃 Jujutsu Shenanigans: HALLOWEEN UPDATE din 24 oct",
@@ -859,7 +907,8 @@
     "start": "2026-10-24T00:00:00+03:00",
     "end": "2026-11-24T00:00:00+02:00"
    }
-  ]
+  ],
+  "joc": "Jujutsu Shenanigans"
  },
  {
   "titlu": "🌙 Tower Defense Simulator 2.14.0: Solar Requiem Night I + cod 2MILLION",
@@ -870,7 +919,8 @@
    "https://www.roblox.com/games/3260590327"
   ],
   "date": "2026-10-16",
-  "published": "2026-10-16T09:29:00+03:00"
+  "published": "2026-10-16T09:29:00+03:00",
+  "joc": "Tower Defense Simulator"
  },
  {
   "titlu": "DoBig intră în povestea Tower Defense Simulator",
@@ -885,7 +935,8 @@
   "published": "2026-10-16T11:24:00+03:00",
   "old_slugs": [
    "zvon-tds-si-dobig-parteneriat"
-  ]
+  ],
+  "joc": "Tower Defense Simulator"
  },
  {
   "titlu": "🍈 Blox Fruits: Magnet și Sea 1 refăcut, level cap 3000",
@@ -896,7 +947,8 @@
    "https://www.roblox.com/games/2753915549"
   ],
   "date": "2026-10-16",
-  "published": "2026-10-16T11:25:00+03:00"
+  "published": "2026-10-16T11:25:00+03:00",
+  "joc": "Blox Fruits"
  },
  {
   "titlu": "🎃 AZI la 18:00 se deschide Halloween Dimension pe Steal An Egg!",
@@ -920,7 +972,8 @@
   ],
   "old_slugs": [
    "maine-se-deschide-halloween-dimension-pe-steal-an-egg"
-  ]
+  ],
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🔥 Live-ul de diseară: încălzirea înainte de Halloween",
@@ -931,7 +984,8 @@
    "https://www.youtube.com/@VexuOnline"
   ],
   "date": "2026-10-16",
-  "published": "2026-10-16T14:31:00+03:00"
+  "published": "2026-10-16T14:31:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🥚 Ce-ai ratat pe canal",
@@ -944,7 +998,8 @@
    "https://www.youtube.com/watch?v=G2FW1n4aAdk"
   ],
   "date": "2026-10-16",
-  "published": "2026-10-16T14:32:00+03:00"
+  "published": "2026-10-16T14:32:00+03:00",
+  "joc": ""
  },
  {
   "titlu": "💄 Roblox: machiaj creat direct în joc",
@@ -955,7 +1010,8 @@
    "https://devforum.roblox.com/t/makeup-now-available-for-in-experience-creation/4936543"
   ],
   "date": "2026-10-16",
-  "published": "2026-10-16T14:40:00+03:00"
+  "published": "2026-10-16T14:40:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🐾 Ride A Pet: update secret „???” sâmbătă la 16:00",
@@ -973,7 +1029,8 @@
     "game": "Ride A Pet",
     "start": "2026-10-17T16:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Ride A Pet"
  },
  {
   "titlu": "🏴‍☠️ Grand Piece Online: ultima șansă la Halloween Part 1",
@@ -992,7 +1049,8 @@
     "end": "2026-10-18T05:00:00+03:00",
     "end_only": true
    }
-  ]
+  ],
+  "joc": "Grand Piece Online"
  },
  {
   "titlu": "🔪 Murder Duels: Halloween începe diseară la 21:00",
@@ -1011,7 +1069,8 @@
     "end": "2026-11-01T14:00:00+02:00"
    }
   ],
-  "published": "2026-10-17T07:15:37+03:00"
+  "published": "2026-10-17T07:15:37+03:00",
+  "joc": "Murder Duels"
  },
  {
   "titlu": "🩸 Violence District: The Butcher X Halloween din 24 octombrie",
@@ -1031,7 +1090,8 @@
     "end_time_unknown": true
    }
   ],
-  "published": "2026-10-17T07:15:37+03:00"
+  "published": "2026-10-17T07:15:37+03:00",
+  "joc": "Violence District"
  },
  {
   "titlu": "Cel mai scump pet din Steal An Egg rupe acum Shorts-ul",
@@ -1043,7 +1103,8 @@
   ],
   "date": "2026-10-17",
   "published": "2026-10-17T09:26:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "‚Cheating In Steal an Egg’: gag scurt, views stabile",
@@ -1055,7 +1116,8 @@
   ],
   "date": "2026-10-17",
   "published": "2026-10-17T09:27:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🎁 ZVON: Roblox lucrează la cadouri cu iteme de avatar",
@@ -1069,7 +1131,8 @@
    "https://x.com/ValraSwag/status/2110689401231507811"
   ],
   "date": "2026-10-17",
-  "published": "2026-10-17T10:19:00+03:00"
+  "published": "2026-10-17T10:19:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🛠️ Itemele de avatar stricate pot fi reparate după lansare",
@@ -1089,7 +1152,8 @@
     "start": "2026-10-15T23:56:00+03:00",
     "announced": true
    }
-  ]
+  ],
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🚗 Package Overrides a intrat în Studio Beta",
@@ -1100,7 +1164,8 @@
    "https://x.com/RobloxCreators/status/2110868509039444267"
   ],
   "date": "2026-10-17",
-  "published": "2026-10-17T10:21:00+03:00"
+  "published": "2026-10-17T10:21:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "💙 DoBig lansează Do Big Do Good",
@@ -1111,7 +1176,8 @@
    "https://x.com/do_bigR/status/2110897200993599748"
   ],
   "date": "2026-10-17",
-  "published": "2026-10-17T10:22:00+03:00"
+  "published": "2026-10-17T10:22:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "👻 Ce vrei să vezi primul în dimensiune?",
@@ -1123,7 +1189,8 @@
    "https://www.youtube.com/@VexuOnline"
   ],
   "date": "2026-10-17",
-  "published": "2026-10-17T10:23:00+03:00"
+  "published": "2026-10-17T10:23:00+03:00",
+  "joc": ""
  },
  {
   "titlu": "Cum strângi cele mai multe bomboane de Halloween pe Roblox (versiunea sinceră)",
@@ -1135,7 +1202,8 @@
   ],
   "date": "2026-10-17",
   "published": "2026-10-17T13:33:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": ""
  },
  {
   "titlu": "Dandy's World duce Halloween-ul în viața reală",
@@ -1147,7 +1215,8 @@
   ],
   "date": "2026-10-17",
   "published": "2026-10-17T13:34:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": "Dandy's World"
  },
  {
   "titlu": "Trollul care a rupt Steal an Egg peste noapte",
@@ -1159,7 +1228,8 @@
   ],
   "date": "2026-10-17",
   "published": "2026-10-17T14:01:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "Halloween-ul prietenului vechi vs al crush-ului",
@@ -1171,7 +1241,8 @@
   ],
   "date": "2026-10-17",
   "published": "2026-10-17T14:02:00+03:00",
-  "section": "shorts"
+  "section": "shorts",
+  "joc": ""
  },
  {
   "titlu": "🥚 Break and Steal an Egg: Halloween + Admin Abuse duminică",
@@ -1190,7 +1261,8 @@
     "start": "2026-10-18T15:00:00+03:00",
     "end": "2026-10-19T15:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Break and Steal an Egg"
  },
  {
   "titlu": "⚔️ The Strongest Battlegrounds: vine „The Arsenal”",
@@ -1208,7 +1280,8 @@
     "game": "The Strongest Battlegrounds",
     "coming_soon": true
    }
-  ]
+  ],
+  "joc": "The Strongest Battlegrounds"
  },
  {
   "titlu": "🎃 Huss Valley: Halloween Event din seara asta",
@@ -1227,7 +1300,8 @@
     "start": "2026-10-17T20:00:00+03:00",
     "end": "2026-11-07T20:00:00+02:00"
    }
-  ]
+  ],
+  "joc": "Huss Valley"
  },
  {
   "titlu": "🍟 Sell Fries!: Halloween cu Free Admin Gifts",
@@ -1246,7 +1320,8 @@
     "start": "2026-10-17T21:00:00+03:00",
     "end": "2026-10-18T21:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Sell Fries!"
  },
  {
   "titlu": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2 începe azi la 19:00",
@@ -1271,7 +1346,8 @@
     "start": "2026-10-17T23:00:00+03:00",
     "end": "2026-10-17T23:45:00+03:00"
    }
-  ]
+  ],
+  "joc": "Bubble Gum Simulator INFINITY"
  },
  {
   "titlu": "👻 Primul pas în portal, LIVE",
@@ -1283,7 +1359,8 @@
    "https://www.youtube.com/@VexuOnline"
   ],
   "date": "2026-10-17",
-  "published": "2026-10-17T16:45:00+03:00"
+  "published": "2026-10-17T16:45:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🧟 Hunty Zombie: Spookye Zombies Part 1 începe azi la 21:00",
@@ -1302,7 +1379,8 @@
     "start": "2026-10-17T21:00:00+03:00",
     "end": "2026-10-19T21:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Hunty Zombie"
  },
  {
   "titlu": "🎃 Halloween Dimension e LIVE în Steal An Egg: 3 biomuri, Echo, Phantom Express + Part 2 pe 24 oct",
@@ -1326,7 +1404,8 @@
     "start": "2026-10-24T18:00:00+03:00",
     "end": "2026-10-25T18:34:00+02:00"
    }
-  ]
+  ],
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🌪️ Plants vs Brainrots: revine Tornado, cu eveniment de Halloween",
@@ -1345,7 +1424,8 @@
     "end": "2026-10-25T00:45:00+03:00"
    }
   ],
-  "published": "2026-10-18T07:22:10+03:00"
+  "published": "2026-10-18T07:22:10+03:00",
+  "joc": "Plants vs Brainrots"
  },
  {
   "titlu": "🎃 Roblox scoate plicuri cu Robux la Target, de Halloween (SUA)",
@@ -1356,7 +1436,8 @@
    "https://x.com/Roblox/status/2111139748890697923"
   ],
   "date": "2026-10-18",
-  "published": "2026-10-18T08:25:00+03:00"
+  "published": "2026-10-18T08:25:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "📱 ZVON (RTC): pe iPhone, căutarea Roblox arată jocurile jucate recent",
@@ -1370,7 +1451,8 @@
    "https://x.com/Roblox_RTC/status/2111114046359625882"
   ],
   "date": "2026-10-18",
-  "published": "2026-10-18T08:25:00+03:00"
+  "published": "2026-10-18T08:25:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🧰 În Studio, inventarul din Toolbox va fi scos — înlocuit de Asset Manager",
@@ -1382,7 +1464,8 @@
    "https://devforum.roblox.com/t/beta-revamped-asset-manager/3609301"
   ],
   "date": "2026-10-18",
-  "published": "2026-10-18T08:25:00+03:00"
+  "published": "2026-10-18T08:25:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "💎 Prospecting: Halloween Event e live — „The Graveyard returns…”, până pe 7 noiembrie",
@@ -1401,7 +1484,8 @@
     "start": "2026-10-17T17:00:00+03:00",
     "end": "2026-11-07T17:00:00+02:00"
    }
-  ]
+  ],
+  "joc": "Prospecting"
  },
  {
   "titlu": "🐟 Fish It: HALLOWEEN UPDATE cu insulă nouă, live până joi 22 octombrie",
@@ -1420,7 +1504,8 @@
     "start": "2026-10-18T04:00:00+03:00",
     "end": "2026-10-22T04:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Fish It"
  },
  {
   "titlu": "🏐 asimo3089 (Jailbreak) lansează un joc nou de dodgeball marți, 20 octombrie",
@@ -1440,7 +1525,8 @@
     "game": "Asimo's Dodgeball",
     "start": "2026-10-21T00:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Asimo's Dodgeball"
  },
  {
   "titlu": "🎃 Adopt Me: Stitches' Spotlight, minijoc de Halloween la Carnaval",
@@ -1451,7 +1537,8 @@
    "https://x.com/PlayAdoptMe/status/2111112444806385719"
   ],
   "date": "2026-10-18",
-  "published": "2026-10-18T09:15:00+03:00"
+  "published": "2026-10-18T09:15:00+03:00",
+  "joc": "Adopt Me"
  },
  {
   "titlu": "🎃 ZVON: Roblox pregătește „Squashbuckler”, un Headless Horseman nou",
@@ -1462,7 +1549,8 @@
    "https://x.com/LukasThePickle/status/2111216737794625699"
   ],
   "date": "2026-10-18",
-  "published": "2026-10-18T09:16:00+03:00"
+  "published": "2026-10-18T09:16:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "Antrenament pentru ouăle secrete 🥚💀",
@@ -1475,7 +1563,8 @@
    "https://www.tiktok.com/@vexu_online"
   ],
   "date": "2026-10-18",
-  "published": "2026-10-18T10:37:00+03:00"
+  "published": "2026-10-18T10:37:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🎃 ZVON: listă scăpată cu 10 jocuri pentru The Hollow (eventul Roblox de Halloween)",
@@ -1486,7 +1575,8 @@
    "https://x.com/FalconDelete/status/2110703993009672332"
   ],
   "date": "2026-10-18",
-  "published": "2026-10-18T11:22:00+03:00"
+  "published": "2026-10-18T11:22:00+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🐈 Restaurant Tycoon 3: Halloween update e live — acum poți avea pisici (dar s-ar putea să-ți aducă ghinion)",
@@ -1497,7 +1587,8 @@
    "https://x.com/UltrawRBX/status/2111081645918876085"
   ],
   "date": "2026-10-18",
-  "published": "2026-10-18T11:23:00+03:00"
+  "published": "2026-10-18T11:23:00+03:00",
+  "joc": "Restaurant Tycoon 3"
  },
  {
   "titlu": "🎃 Tales of Tanorio: eveniment de Halloween pe 30 octombrie, cu reskin-uri și Tanorieni noi",
@@ -1516,7 +1607,8 @@
     "date_only": true
    }
   ],
-  "published": "2026-10-18T12:19:15+03:00"
+  "published": "2026-10-18T12:19:15+03:00",
+  "joc": "Tales of Tanorio"
  },
  {
   "titlu": "🤖 ZVON: Forsaken Patch 5.3.0 „New Beginnings” — x2 EXP, -40% la skin-uri, Helperbot, lobby nou",
@@ -1528,7 +1620,8 @@
    "https://x.com/Forsaken_News/status/2111232045150261267"
   ],
   "date": "2026-10-18",
-  "published": "2026-10-18T12:19:15+03:00"
+  "published": "2026-10-18T12:19:15+03:00",
+  "joc": "Forsaken"
  },
  {
   "titlu": "Noobified a mai dat lovitura: ‚Being Alone is DEADLY’",
@@ -1541,7 +1634,8 @@
   ],
   "section": "shorts",
   "published": "2026-10-18T12:50:12+03:00",
-  "date": "2026-10-18"
+  "date": "2026-10-18",
+  "joc": ""
  },
  {
   "titlu": "Mâini reale în Roblox: ‚THIS PRO TRIED TO STEAL MY EGG’",
@@ -1554,7 +1648,8 @@
   ],
   "section": "shorts",
   "published": "2026-10-18T12:50:12+03:00",
-  "date": "2026-10-18"
+  "date": "2026-10-18",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "Un «stick USB» l-a făcut Sheriff în viața reală: 1,77M în 12 ore",
@@ -1567,7 +1662,8 @@
   ],
   "section": "shorts",
   "date": "2026-10-18",
-  "published": "2026-10-18T13:40:19+03:00"
+  "published": "2026-10-18T13:40:19+03:00",
+  "joc": ""
  },
  {
   "titlu": "Zoomy face din Steal An Egg un serial cu răsplată în titlu",
@@ -1579,7 +1675,8 @@
   ],
   "section": "shorts",
   "date": "2026-10-18",
-  "published": "2026-10-18T14:35:27+03:00"
+  "published": "2026-10-18T14:35:27+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🎃 Diseară vânăm prin Halloween Dimension: chat-ul alege ZONA și NUMELE",
@@ -1593,7 +1690,8 @@
   ],
   "date": "2026-10-18",
   "slug": "diseara-vanam-prin-halloween-dimension-chat-ul-alege-zona-si-numele",
-  "published": "2026-10-18T16:37:50+03:00"
+  "published": "2026-10-18T16:37:50+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "⚖️ Arizona cere în instanță ca Roblox să predea date pentru ancheta despre siguranța copiilor",
@@ -1604,7 +1702,8 @@
    "https://x.com/BLaw/status/2111205251504132337"
   ],
   "date": "2026-10-19",
-  "published": "2026-10-19T07:34:32+03:00"
+  "published": "2026-10-19T07:34:32+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🔪 Murder Mystery 2: Halloween 2026 a început aseară la 22:00, ține până pe 16 noiembrie",
@@ -1640,7 +1739,8 @@
     "end": "2026-11-16T20:00:00+02:00"
    }
   ],
-  "published": "2026-10-19T07:34:32+03:00"
+  "published": "2026-10-19T07:34:32+03:00",
+  "joc": "Murder Mystery 2"
  },
  {
   "titlu": "🎃 ZVON: Arsenal Halloween Part 1 aduce hărți noi în rotație",
@@ -1651,7 +1751,8 @@
    "https://x.com/RBX_ArsenalNews/status/2111160395046252876"
   ],
   "date": "2026-10-19",
-  "published": "2026-10-19T07:34:32+03:00"
+  "published": "2026-10-19T07:34:32+03:00",
+  "joc": "Arsenal"
  },
  {
   "titlu": "💎 Pet Simulator 99: Diamond Mountain e LIVE, cu Yeti boss și Gargantuan",
@@ -1663,7 +1764,8 @@
    "https://www.roblox.com/events/7915528625254957692"
   ],
   "date": "2026-10-19",
-  "published": "2026-10-19T08:29:58+03:00"
+  "published": "2026-10-19T08:29:58+03:00",
+  "joc": "Pet Simulator 99"
  },
  {
   "titlu": "🌙 Tower Defense Simulator: Solar Requiem Night II e LIVE",
@@ -1675,7 +1777,8 @@
    "https://x.com/paradoxum_games/status/2111184223122145719"
   ],
   "date": "2026-10-19",
-  "published": "2026-10-19T09:13:06+03:00"
+  "published": "2026-10-19T09:13:06+03:00",
+  "joc": "Tower Defense Simulator"
  },
  {
   "titlu": "ZVON: val de banuri false, jucătorii îi cer ajutor lui KreekCraft",
@@ -1688,7 +1791,8 @@
   ],
   "date": "2026-10-19",
   "published": "2026-10-19T10:08:49+03:00",
-  "slug": "zvon-valul-de-banuri-false-ajunge-si-la-kreekcraft"
+  "slug": "zvon-valul-de-banuri-false-ajunge-si-la-kreekcraft",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🎃 Vista Springs: update-ul de Halloween cu Murder Mystery a ieșit",
@@ -1699,7 +1803,8 @@
    "https://x.com/FRI_RBLX/status/2111307517615808696"
   ],
   "date": "2026-10-19",
-  "published": "2026-10-19T10:08:49+03:00"
+  "published": "2026-10-19T10:08:49+03:00",
+  "joc": "Vista Springs"
  },
  {
   "titlu": "🎃 Car Dealership Tycoon: Halloween vine în două părți",
@@ -1725,7 +1830,8 @@
     "start": "2026-10-24T16:00:00+03:00",
     "end": "2026-10-31T16:00:00+02:00"
    }
-  ]
+  ],
+  "joc": "Car Dealership Tycoon"
  },
  {
   "titlu": "🏐 Volleyball Legends: stilul nou Mamori, cu Parry",
@@ -1744,7 +1850,8 @@
     "start": "2026-10-17T18:30:00+03:00",
     "end": "2026-10-23T23:00:00+03:00"
    }
-  ]
+  ],
+  "joc": "Volleyball Legends"
  },
  {
   "titlu": "🧸 Dead Rails: plușuri oficiale Youtooz pe 23 octombrie",
@@ -1764,7 +1871,8 @@
     "date_only": true
    }
   ],
-  "published": "2026-10-19T12:21:58+03:00"
+  "published": "2026-10-19T12:21:58+03:00",
+  "joc": "Dead Rails"
  },
  {
   "titlu": "🎃 VEXU & Ale în Dimensiunea de Halloween: tu alegi biomul",
@@ -1778,7 +1886,8 @@
   ],
   "date": "2026-10-19",
   "published": "2026-10-19T13:08:51+03:00",
-  "slug": "vexu-ale-in-dimensiunea-de-halloween-tu-alegi-biomul"
+  "slug": "vexu-ale-in-dimensiunea-de-halloween-tu-alegi-biomul",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🏆 Clasamentul care nu moare: cel mai puternic pet Divine",
@@ -1790,7 +1899,8 @@
   ],
   "section": "shorts",
   "date": "2026-10-19",
-  "published": "2026-10-19T13:43:15+03:00"
+  "published": "2026-10-19T13:43:15+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "👊 „Postezi un teaser și în câteva ore ai clona pe Roblox”",
@@ -1802,7 +1912,8 @@
    "https://x.com/Pirat_Nation/status/2111215357037858927"
   ],
   "date": "2026-10-19",
-  "published": "2026-10-19T14:29:47+03:00"
+  "published": "2026-10-19T14:29:47+03:00",
+  "joc": ""
  },
  {
   "titlu": "🎃 Halloween Roblox vs Roblox normal: care e mai tare?",
@@ -1814,7 +1925,8 @@
   ],
   "section": "shorts",
   "date": "2026-10-19",
-  "published": "2026-10-19T14:54:14+03:00"
+  "published": "2026-10-19T14:54:14+03:00",
+  "joc": ""
  },
  {
   "titlu": "👁️ Un ochi pe cer alege un singur om, și Roblox-ul se uită ca la serial",
@@ -1826,7 +1938,8 @@
   ],
   "section": "shorts",
   "date": "2026-10-19",
-  "published": "2026-10-19T15:33:00+03:00"
+  "published": "2026-10-19T15:33:00+03:00",
+  "joc": ""
  },
  {
   "titlu": "🥚 Au vrut să-l păcălească pe admin… DAR",
@@ -1838,7 +1951,8 @@
   ],
   "section": "shorts",
   "date": "2026-10-19",
-  "published": "2026-10-19T17:08:00+03:00"
+  "published": "2026-10-19T17:08:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🤖 Creatorul MM2: „Nu mai există jocuri Roblox fără cod scris cu AI”",
@@ -1851,7 +1965,8 @@
   "date": "2026-10-19",
   "published": "2026-10-19T17:46:00+03:00",
   "slug": "creatorul-mm2-nu-mai-exista-jocuri-roblox-fara-cod-ai",
-  "featured": false
+  "featured": false,
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "📜 Roblox își schimbă Termenii pe 1 noiembrie: cumperi de la Roblox, nu de la creator",
@@ -1873,7 +1988,8 @@
     "start_date": "2026-11-01",
     "date_only": true
    }
-  ]
+  ],
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "🦇 Regretevator: a venit Fangsworth, iar fanii cer #keepfangsworth",
@@ -1887,7 +2003,8 @@
   "date": "2026-10-19",
   "published": "2026-10-19T17:52:00+03:00",
   "slug": "regretevator-fangsworth-keepfangsworth",
-  "featured": false
+  "featured": false,
+  "joc": "Regretevator"
  },
  {
   "titlu": "🗼 Tower Blitz 2: nu în 2026, alt nume și nu va fi tower defense?",
@@ -1903,7 +2020,8 @@
   "date": "2026-10-19",
   "published": "2026-10-19T17:55:00+03:00",
   "slug": "tower-blitz-2-nu-in-2026-alt-nume-nu-tower-defense",
-  "featured": false
+  "featured": false,
+  "joc": "Tower Blitz"
  },
  {
   "titlu": "🍬 Candy Corn în Steal An Egg: cât candy îți trebuie?",
@@ -1915,7 +2033,8 @@
   ],
   "section": "shorts",
   "date": "2026-10-20",
-  "published": "2026-10-20T07:12:00+03:00"
+  "published": "2026-10-20T07:12:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "🔥 Toate secretele din Steal An Egg într-un singur clip",
@@ -1929,7 +2048,8 @@
    "https://www.tiktok.com/@vexu_online"
   ],
   "date": "2026-10-20",
-  "published": "2026-10-20T07:45:00+03:00"
+  "published": "2026-10-20T07:45:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "Blox Fruits: a ieșit Blox Bulletin #25, cel de Halloween",
@@ -1942,7 +2062,8 @@
    "https://gamerrobot.com/blogs/news/the-blox-bulletin-025"
   ],
   "date": "2026-10-20",
-  "published": "2026-10-20T08:25:00+03:00"
+  "published": "2026-10-20T08:25:00+03:00",
+  "joc": "Blox Fruits"
  },
  {
   "titlu": "Break and Steal an Egg a atins ~1,3 milioane de jucători simultan, pentru câteva ore",
@@ -1961,7 +2082,8 @@
     "start": "2026-10-25T15:00:00+02:00"
    }
   ],
-  "published": "2026-10-20T08:54:18+03:00"
+  "published": "2026-10-20T08:54:18+03:00",
+  "joc": "Break and Steal an Egg"
  },
  {
   "titlu": "Roblox Studio: texturi 4K generate cu AI (Quality mode, beta)",
@@ -1973,7 +2095,8 @@
    "https://devforum.roblox.com/t/beta-introducing-quality-mode-for-texture-generation/4938282"
   ],
   "date": "2026-10-20",
-  "published": "2026-10-20T09:32:25+03:00"
+  "published": "2026-10-20T09:32:25+03:00",
+  "joc": "Roblox (platformă)"
  },
  {
   "titlu": "👻 Echo, câinele-fantomă: contorul 2/4 te ține până la final",
@@ -1985,7 +2108,8 @@
   ],
   "section": "shorts",
   "date": "2026-10-20",
-  "published": "2026-10-20T09:54:00+03:00"
+  "published": "2026-10-20T09:54:00+03:00",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "😴 Frate-tu somnambul la 1 noaptea a strâns aproape 4 milioane",
@@ -1997,7 +2121,8 @@
   ],
   "section": "shorts",
   "date": "2026-10-20",
-  "published": "2026-10-20T10:28:00+03:00"
+  "published": "2026-10-20T10:28:00+03:00",
+  "joc": ""
  },
  {
   "titlu": "⚔️ BedWars: Halloween Part 2 vine sâmbătă cu un kit nou și Battle Pass",
@@ -2010,7 +2135,8 @@
    "https://www.roblox.com/events/6661866971644166780"
   ],
   "date": "2026-10-20",
-  "published": "2026-10-20T11:10:00+03:00"
+  "published": "2026-10-20T11:10:00+03:00",
+  "joc": "BedWars"
  },
  {
   "titlu": "🚂 Phantom Express și Spectral: reveal-ul care crește cel mai repede",
@@ -2023,7 +2149,8 @@
   "section": "shorts",
   "date": "2026-10-20",
   "published": "2026-10-20T11:48:00+03:00",
-  "slug": "phantom-express-si-spectral-reveal-ul-care-creste-cel-mai-repede"
+  "slug": "phantom-express-si-spectral-reveal-ul-care-creste-cel-mai-repede",
+  "joc": "Steal An Egg"
  },
  {
   "titlu": "Animal Hospital (Anomaly) a intrat în eventul de Halloween, cu skin-uri limitate",
@@ -2036,7 +2163,8 @@
    "https://www.roblox.com/games/78515283254292"
   ],
   "date": "2026-10-20",
-  "published": "2026-10-20T12:15:00+03:00"
+  "published": "2026-10-20T12:15:00+03:00",
+  "joc": "Animal Hospital"
  },
  {
   "titlu": "Dark Deception: Hunted a pornit eventul de Halloween",
@@ -2059,7 +2187,8 @@
     "end": "2026-11-14T17:00:00+02:00"
    }
   ],
-  "published": "2026-10-20T12:42:15+03:00"
+  "published": "2026-10-20T12:42:15+03:00",
+  "joc": "Dark Deception: Hunted"
  },
  {
   "titlu": "Dress to Impress: „Tales of the Dark King”, quest de Halloween în lumea subterană grecească",
@@ -2071,7 +2200,8 @@
    "https://www.roblox.com/events/5802987007558943505"
   ],
   "date": "2026-10-20",
-  "published": "2026-10-20T13:24:27+03:00"
+  "published": "2026-10-20T13:24:27+03:00",
+  "joc": "Dress to Impress"
  },
  {
   "titlu": "🎃 Oul Halloween Dimension: cercul roșu pe cel mai rar pet",
@@ -2084,6 +2214,7 @@
   "section": "shorts",
   "date": "2026-10-20",
   "published": "2026-10-20T14:13:00+03:00",
-  "slug": "oul-halloween-dimension-cercul-rosu-pe-cel-mai-rar-pet"
+  "slug": "oul-halloween-dimension-cercul-rosu-pe-cel-mai-rar-pet",
+  "joc": "Steal An Egg"
  }
 ]

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-20T14:17:35+03:00",
+ "generated": "2026-10-20T14:22:03+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -13,7 +13,9 @@
    "img": "img/steal-an-egg-halloween-part-2.png",
    "excerpt": "⚡ UPDATE (19 oct, Terra): planul pentru PART 2 rămâne valabil. Portalul sigilat de lângă porțile Abandoned Manor se deschide sâmbătă, 24…",
    "featured": true,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "ce-vrei-sa-vezi-primul-in-dimensiune",
@@ -27,7 +29,9 @@
    "img": "img/steal-an-egg-halloween-dimension.png",
    "excerpt": "Boss-i, monștri sau ouă secrete? Lasă un comentariu, iar cele mai votate intră primele pe live. Follow pe TikTok @vexu_online și abonare…",
    "featured": true,
-   "section": null
+   "section": null,
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
@@ -41,7 +45,9 @@
    "img": "game-keyboard-escape.png",
    "excerpt": "Halloween World e deschisă de pe 17 oct, ora 21:00, până pe 24 oct, ora 21:00 RO; pe 10 oct a fost evenimentul pregătitor „Halloween AA +…",
    "featured": true,
-   "section": null
+   "section": null,
+   "joc": "+1 Speed Keyboard Escape",
+   "jocSlug": "1-speed-keyboard-escape"
   },
   {
    "slug": "oul-halloween-dimension-cercul-rosu-pe-cel-mai-rar-pet",
@@ -55,7 +61,9 @@
    "img": "img/yt-3BxboyPVbvw.jpg",
    "excerpt": "Tuan Anh are un short de 47 de secunde care deschide direct pe fereastra oficială „HALLOWEEN DIMENSION EGG – Limited Time!” și a ajuns la…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "dress-to-impress-tales-of-the-dark-king-quest-halloween",
@@ -69,7 +77,9 @@
    "img": "img/f904c8a94a88.png",
    "excerpt": "Dress to Impress are un quest nou de Halloween: „Tales of the Dark King”, care te duce în lumea subterană din mitologia grecească. Ce e…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Dress to Impress",
+   "jocSlug": "dress-to-impress"
   },
   {
    "slug": "dark-deception-hunted-a-pornit-eventul-de-halloween",
@@ -83,7 +93,9 @@
    "img": "img/3c9c04e5c470.jpg",
    "excerpt": "HUNTED, jocul oficial Dark Deception de pe Roblox, a intrat în modul Halloween. Contul oficial Dark Deception a anunțat: „The Hunted…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Dark Deception: Hunted",
+   "jocSlug": "dark-deception-hunted"
   },
   {
    "slug": "animal-hospital-anomaly-eventul-de-halloween-skin-uri-limitate",
@@ -97,7 +109,9 @@
    "img": "img/a5a93b3e5178.jpg",
    "excerpt": "Animal Hospital (Anomaly) e oficial în modul Halloween. Titlul jocului pe Roblox e acum „[🎃 EVENT] Animal Hospital (Anomaly) 🧪”. Update-ul…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Animal Hospital",
+   "jocSlug": "animal-hospital"
   },
   {
    "slug": "phantom-express-si-spectral-reveal-ul-care-creste-cel-mai-repede",
@@ -111,7 +125,9 @@
    "img": "img/yt-MxSAX4eiGvI.jpg",
    "excerpt": "Noob Bacon Real are un short de 56 de secunde cu Phantom Express care a ajuns la ~75K vizualizări (citite pe 18 oct) și creștea cu ~15–23K…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "bedwars-halloween-part-2-vine-sambata-cu-un-kit-nou-si-battle-pass",
@@ -125,7 +141,9 @@
    "img": "img/66228fef1c54.png",
    "excerpt": "BedWars Halloween Part 2 aduce un kit nou și Battle Pass — subtitlul oficial al eventului e „New Kit + Battle Pass”. Ține de sâmbătă, 24…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "BedWars",
+   "jocSlug": "bedwars"
   },
   {
    "slug": "frate-tu-somnambul-la-1-noaptea-a-strans-aproape-4-milioane",
@@ -139,7 +157,9 @@
    "img": "img/6a6c6db60b8b.jpg",
    "excerpt": "Mashles are un short de 39 de secunde, „When your lil bro sleepwalking at 1 AM😭”, care a ajuns la ~3,93M vizualizări în ~15 ore, adică…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "echo-cainele-fantoma-contorul-2-4-te-tine-pana-la-final",
@@ -153,7 +173,9 @@
    "img": "img/fhbSBIZHTmM.jpg",
    "excerpt": "Yeklii are ~88K vizualizări (citite pe 18 oct) cu un short de 35 de secunde despre Echo, câinele-fantomă din Steal An Egg. Pe ecran se…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "roblox-studio-texturi-4k-generate-cu-ai-quality-mode",
@@ -167,7 +189,9 @@
    "img": "img/226e6615c666.jpeg",
    "excerpt": "Roblox a adus în Studio un mod nou pentru texturile generate cu AI: Quality. E în beta. 🎨 Ce alegi când generezi o textură: • Quality:…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "break-and-steal-an-egg-a-atins-1-3-milioane-de-jucatori",
@@ -181,7 +205,9 @@
    "img": "img/a5a00fd40503.png",
    "excerpt": "Break and Steal an Egg a avut un vârf uriaș duminică, 18 octombrie, în timpul Admin Abuse-ului. 🥚👻 Atenție: e un vârf temporar, de câteva…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Break and Steal an Egg",
+   "jocSlug": "break-and-steal-an-egg"
   },
   {
    "slug": "blox-fruits-blox-bulletin-25-halloween",
@@ -195,7 +221,9 @@
    "img": "img/293b17632355.png",
    "excerpt": "Uzoth a publicat Blox Bulletin #25 (ediția din 17 octombrie), cu tot ce vine la Halloween în Blox Fruits. 🎃 Ce scrie în buletin: • Trick…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Blox Fruits",
+   "jocSlug": "blox-fruits"
   },
   {
    "slug": "toate-secretele-din-steal-an-egg-intr-un-singur-clip",
@@ -209,7 +237,9 @@
    "img": "img/d563f7b324dd.jpg",
    "excerpt": "În clipul lung ai 5 secrete din Steal An Egg, pas cu pas: • oul secret • portalul din copac • calea spre fuziune • portalul secret •…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "candy-corn-in-steal-an-egg-cat-candy-iti-trebuie",
@@ -223,7 +253,9 @@
    "img": "img/83c91f89c7fe.jpg",
    "excerpt": "Talayn are ~18,8K vizualizări (citite pe 18 oct) cu un short de 22 de secunde despre Candy Corn în Steal An Egg. Clipul intră direct pe…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "tower-blitz-2-nu-in-2026-alt-nume-nu-tower-defense",
@@ -237,7 +269,9 @@
    "img": "img/03ec143d9f3f.png",
    "excerpt": "Tower Blitz News, un cont NEOFICIAL de fani, a postat pe X un mini-thread cu ce ar fi spus OsterDog, dev-ul Tower Blitz, despre Tower…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Tower Blitz",
+   "jocSlug": "tower-blitz"
   },
   {
    "slug": "regretevator-fangsworth-keepfangsworth",
@@ -251,7 +285,9 @@
    "img": "img/4733fd39abb4.png",
    "excerpt": "Fangsworth a ajuns în Regretevator! yeucc, lead dev-ul jocului (contul @TheAxolotlSun), a anunțat sâmbătă, 17 octombrie, la 21:58 (ora…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Regretevator",
+   "jocSlug": "regretevator"
   },
   {
    "slug": "roblox-isi-schimba-termenii-pe-1-noiembrie-merchant-of-record",
@@ -265,7 +301,9 @@
    "img": "img/e949435d9972.png",
    "excerpt": "De duminică, 1 noiembrie 2026, intră în vigoare noii Termeni de utilizare Roblox („Effective Date: November 1, 2026”). Ce se schimbă: •…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "creatorul-mm2-nu-mai-exista-jocuri-roblox-fara-cod-ai",
@@ -279,7 +317,9 @@
    "img": "img/a4f5b4046ae4.png",
    "excerpt": "Nikilis, creatorul Murder Mystery 2 (MM2), a scris pe X că „nu mai există jocuri Roblox fără cod AI” („there are no more Roblox games…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "au-vrut-sa-l-pacaleasca-pe-admin-dar",
@@ -293,7 +333,9 @@
    "img": "img/a09019f43463.jpg",
    "excerpt": "Robler are ~121K views (~33K pe oră) cu „POV They Wanted to Deceive the Admin, BUT.. | Steal an Egg”, un short de 28 de secunde. Nu are…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "un-ochi-pe-cer-alege-un-singur-om-si-roblox-ul-se-uita-ca-la-serial",
@@ -307,7 +349,9 @@
    "img": "img/89e356f8f5d2.jpg",
    "excerpt": "Noobified are ~5,79M views (~334K pe oră) cu „The EYE Chooses ONE Person...”, un short de 127 de secunde. Povestea e narată din prima…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "halloween-roblox-vs-roblox-normal-care-e-mai-tare",
@@ -321,7 +365,9 @@
    "img": "img/4db76c14b824.jpg",
    "excerpt": "Pinky are ~381K views cu „Halloween Roblox VS Normal Roblox… Which Is Better?”. Short-ul pune față în față versiunile normale și cele de…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "postezi-un-teaser-si-in-cateva-ore-ai-clona-pe-roblox",
@@ -335,7 +381,9 @@
    "img": "img/3c08273001c9.jpg",
    "excerpt": "Un dev indie (@pandorioltd) ar fi arătat pe X un teaser cu „Escape the Walls”, un joc incremental în care spargi pereți cu pumnii ca să…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "clasamentul-care-nu-moare-cel-mai-puternic-pet-divine",
@@ -349,7 +397,9 @@
    "img": "img/4f796f2eac43.jpg",
    "excerpt": "Veyar ENG are ~78K views cu „WHAT IS THE STRONGEST DIVINE PET IN STEAL AN EGG?!”. Formatul e simplu și merge: o întrebare de clasament…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "vexu-ale-in-dimensiunea-de-halloween-tu-alegi-biomul",
@@ -363,7 +413,9 @@
    "img": "img/vexu-vot-biom-halloween.png",
    "excerpt": "⚡ UPDATE (19 oct): pe live, chat-ul alege zona (Graveyard / Haunted Swamp / Abandoned Manor) și ce face Andrei primul. Lasă în comentarii,…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "dead-rails-plusuri-oficiale-youtooz-pe-23-octombrie",
@@ -377,7 +429,9 @@
    "img": "img/114a302bfe33.jpg",
    "excerpt": "Dead Rails primește o colecție oficială de plușuri Youtooz, care apare pe 23 octombrie. Anunțul vine de pe contul oficial al jocului:…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Dead Rails",
+   "jocSlug": "dead-rails"
   },
   {
    "slug": "car-dealership-tycoon-halloween-vine-in-doua-parti",
@@ -391,7 +445,9 @@
    "img": "img/a2464c11519e.png",
    "excerpt": "Car Dealership Tycoon are evenimentul de Halloween împărțit în două părți. Partea 1 a început sâmbătă, 17 octombrie, la 16:00 ora…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Car Dealership Tycoon",
+   "jocSlug": "car-dealership-tycoon"
   },
   {
    "slug": "volleyball-legends-stilul-nou-mamori-cu-parry",
@@ -405,7 +461,9 @@
    "img": "img/ac285a12b10c.png",
    "excerpt": "Volleyball Legends a adăugat un stil nou: Mamori. Abilitatea lui principală e PARRY: dacă blochezi exact la timp, trimiți mingea înapoi.…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Volleyball Legends",
+   "jocSlug": "volleyball-legends"
   },
   {
    "slug": "zvon-valul-de-banuri-false-ajunge-si-la-kreekcraft",
@@ -419,7 +477,9 @@
    "img": "img/201b20dcb80f.jpg",
    "excerpt": "Tot mai mulți jucători Roblox spun că au primit ban pe nedrept: contul lor ar fi „legat” de un alt cont banat, pe care zic că nu l-au…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "vista-springs-update-ul-de-halloween-cu-murder-mystery-a-iesit",
@@ -433,7 +493,9 @@
    "img": "img/dc3fc61af7ef.jpg",
    "excerpt": "Vista Springs a lansat update-ul de Halloween pe 18 octombrie, la 20:00 ora României. Vine cu un mod Murder Mystery și alte noutăți („&…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Vista Springs",
+   "jocSlug": "vista-springs"
   },
   {
    "slug": "tower-defense-simulator-solar-requiem-night-ii-e-live",
@@ -447,7 +509,9 @@
    "img": "game-tds.png",
    "excerpt": "Paradoxum Games a lansat Solar Requiem Night II în Tower Defense Simulator (anunț pe X, 16 octombrie). Ce aduce, conform anunțului…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Tower Defense Simulator",
+   "jocSlug": "tower-defense-simulator"
   },
   {
    "slug": "pet-simulator-99-diamond-mountain-e-live-cu-yeti-boss-si-gargantuan",
@@ -461,7 +525,9 @@
    "img": "img/445971a0820f.jpg",
    "excerpt": "BIG Games a lansat update-ul Diamond Mountain în Pet Simulator 99 (anunțul a venit pe 17 octombrie, la 19:06, ora României). Ce aduce: •…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Pet Simulator 99",
+   "jocSlug": "pet-simulator-99"
   },
   {
    "slug": "arizona-cere-in-instanta-ca-roblox-sa-predea-date-pentru-ancheta-despre-siguranta-copiilor",
@@ -475,7 +541,9 @@
    "img": "generic-neon.png",
    "excerpt": "Procurorul general din Arizona, Kris Mayes, cere unei instanțe să oblige Roblox Corp. să predea documente și date în ancheta despre…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "murder-mystery-2-halloween-2026-a-inceput-aseara-la-22-00-tine-pana-pe-16-noiembrie",
@@ -489,7 +557,9 @@
    "img": "img/c15b0de55ed6.png",
    "excerpt": "⚡ UPDATE (19 oct): MM2 e pe locul 2 pe Roblox — 518K jucători la 19:00 RO, după Steal An Egg și înaintea Brookhaven; API-ul arăta 538.648…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Murder Mystery 2",
+   "jocSlug": "murder-mystery-2"
   },
   {
    "slug": "zvon-arsenal-halloween-part-1-aduce-harti-noi-in-rotatie",
@@ -503,7 +573,9 @@
    "img": "img/550b75f7c165.jpg",
    "excerpt": "Contul de fani Roblox Arsenal News scrie că Arsenal a primit Halloween Update Part 1, cu hărți noi în rotație: Spooky Tuscan, Spooky…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Arsenal",
+   "jocSlug": "arsenal"
   },
   {
    "slug": "diseara-vanam-prin-halloween-dimension-chat-ul-alege-zona-si-numele",
@@ -517,7 +589,9 @@
    "img": "img/vexu-live-halloween-dimension-vot-zona.png",
    "excerpt": "Halloween Dimension e deschisă până sâmbătă, 24 octombrie, și are trei zone noi: Graveyard, Haunted Swamp și Abandoned Manor. • La…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "zoomy-face-din-steal-an-egg-un-serial-cu-rasplata-in-titlu",
@@ -531,7 +605,9 @@
    "img": "img/083ad2518e32.jpg",
    "excerpt": "Zoomy are ~121K views cu „ARCHANGEL has 3 HEADS and whoever helps him will be ADMIN!”, un short de 60 de secunde, iar continuarea „GUESS…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "stick-usb-sheriff-in-viata-reala-1-77m-in-12-ore",
@@ -545,7 +621,9 @@
    "img": "img/eeb983c3422d.jpg",
    "excerpt": "nobrainjames are ~1,77M views în ~12 ore (~138K/h) cu „SHERIFF ONLY PRANK 😂”, un short de 47 de secunde. Formula: prank IRL, creatorul…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "noobified-being-alone-is-deadly",
@@ -559,7 +637,9 @@
    "img": "img/7884b230af4d.jpg",
    "excerpt": "Noobified are ~1,05M views și ~92K/h cu „Being Alone is DEADLY”. E aceeași serie ca „Falling is DEADLY”, deci formula a mers de două ori…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "maini-reale-in-roblox-this-pro-tried-to-steal-my-egg",
@@ -573,7 +653,9 @@
    "img": "img/566541405908.jpg",
    "excerpt": "Games IRL are ~477K views și ~25K/h cu un short de 25 de secunde, în Steal An Egg. Formula: POV cu mâini reale peste joc, plus un plan…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "tales-of-tanorio-eveniment-de-halloween-pe-30-octombrie-cu-reskin-uri-si-tanorieni-noi",
@@ -587,7 +669,9 @@
    "img": "img/0f40f223edda.jpg",
    "excerpt": "CONFIRMAT de contul oficial Tales of Tanorio: evenimentul de Halloween vine pe 30 octombrie. Aduce reskin-uri noi, Tanorieni noi și „mult…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Tales of Tanorio",
+   "jocSlug": "tales-of-tanorio"
   },
   {
    "slug": "zvon-forsaken-patch-5-3-0-new-beginnings",
@@ -601,7 +685,9 @@
    "img": "img/ee1cd5d58a94.jpg",
    "excerpt": "ZVON — sursa e Forsaken_News, un cont de fani (nu contul oficial al jocului), care spune că informația vine de pe serverul oficial de…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Forsaken",
+   "jocSlug": "forsaken"
   },
   {
    "slug": "restaurant-tycoon-3-halloween-update-e-live-acum-poti-avea-pisici-dar-s-ar-putea-sa-ti-aduca-ghinion",
@@ -615,7 +701,9 @@
    "img": "img/a329dacb8029.png",
    "excerpt": "CONFIRMAT de dezvoltator: update-ul de Halloween pentru Restaurant Tycoon 3 a ieșit. Vestea bună: în sfârșit poți avea pisici în joc.…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Restaurant Tycoon 3",
+   "jocSlug": "restaurant-tycoon-3"
   },
   {
    "slug": "zvon-lista-scapata-cu-10-jocuri-pentru-the-hollow-eventul-roblox-de-halloween",
@@ -629,7 +717,9 @@
    "img": "img/cd1ab0409336.jpg",
    "excerpt": "ZVON — neconfirmat de Roblox. Pe X circulă o imagine cu jocurile care ar putea participa la The Hollow, eventul de Halloween al Roblox.…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "antrenament-pentru-ouale-secrete",
@@ -643,7 +733,9 @@
    "img": "img/0ef62dc1ece9.jpg",
    "excerpt": "🆕 UPDATE (20 oct): toate cele 5 secrete din Steal An Egg sunt acum într-un singur clip:…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "zvon-roblox-pregateste-squashbuckler-un-headless-horseman-nou",
@@ -657,7 +749,9 @@
    "img": "img/02c6e9c25754.jpg",
    "excerpt": "Se pare că Roblox lucrează la un bundle nou de tip Headless Horseman numit „Squashbuckler”, cu cap de dovleac în flăcări și vibe de pirat.…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "adopt-me-stitches-spotlight-minijoc-de-halloween-la-carnaval",
@@ -671,7 +765,9 @@
    "img": "img/5167fff2dace.jpg",
    "excerpt": "Adopt Me are un minijoc nou de Halloween la Carnaval, Stitches' Spotlight: strângi Candy Corn și te ferești de reflectorul lui Stitches.…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Adopt Me",
+   "jocSlug": "adopt-me"
   },
   {
    "slug": "asimo3089-jailbreak-lanseaza-un-joc-nou-de-dodgeball-marti-20-octombrie",
@@ -685,7 +781,9 @@
    "img": "img/0e6f842e620a.jpg",
    "excerpt": "⚡ UPDATE (19 oct): asimo3089 a publicat un trailer de 38s: „Out Tomorrow! Oct 20 2026 @ 2pm PST” — adică ~00:00 ora României, în noaptea…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Asimo's Dodgeball",
+   "jocSlug": "asimo-s-dodgeball"
   },
   {
    "slug": "prospecting-halloween-event-e-live-the-graveyard-returns-pana-pe-7-noiembrie",
@@ -699,7 +797,9 @@
    "img": "img/25da364b4d38.png",
    "excerpt": "Prospecting! are Halloween Event, cu mesajul „The Graveyard returns…”. Evenimentul a început sâmbătă, 17 octombrie, la 17:00 (ora…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Prospecting",
+   "jocSlug": "prospecting"
   },
   {
    "slug": "fish-it-halloween-update-cu-insula-noua-live-pana-joi-22-octombrie",
@@ -713,7 +813,9 @@
    "img": "img/d6cb4af167e8.jpeg",
    "excerpt": "Fish It! a primit HALLOWEEN UPDATE, cu o insulă nouă de Halloween. Evenimentul a început duminică, 18 octombrie, la 04:00 (ora României)…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Fish It",
+   "jocSlug": "fish-it"
   },
   {
    "slug": "roblox-scoate-plicuri-cu-robux-la-target-de-halloween-sua",
@@ -727,7 +829,9 @@
    "img": "img/1557a21908ed.jpg",
    "excerpt": "Roblox a anunțat oficial campania de Halloween la Target în SUA: „ghost the candy. get robux” — mini packs cu Robux disponibile acum la…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "zvon-rtc-pe-iphone-cautarea-roblox-arata-jocurile-jucate-recent",
@@ -741,7 +845,9 @@
    "img": "img/ce43cb002a49.jpg",
    "excerpt": "Conform Roblox_RTC, pe iOS căutarea pentru Roblox arată jocurile jucate recent, iar poți căuta direct jocuri Roblox pe care le-ai jucat,…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "in-studio-inventarul-din-toolbox-va-fi-scos-inlocuit-de-asset-manager",
@@ -755,7 +861,9 @@
    "img": "img/6967b476bfb8.jpg",
    "excerpt": "Conform anunțului de pe DevForum (beta Asset Manager) și raportării Blox_Feed, inventarul din Toolbox din Roblox Studio va fi scos și…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "plants-vs-brainrots-revine-tornado-cu-eveniment-de-halloween",
@@ -769,7 +877,9 @@
    "img": "img/f6345339c477.png",
    "excerpt": "Tornado revine în Plants vs Brainrots, de data asta cu eveniment de Halloween. Rulează de duminică, 18 octombrie, ora 01:00, până pe 25…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Plants vs Brainrots",
+   "jocSlug": "plants-vs-brainrots"
   },
   {
    "slug": "hunty-zombie-spookye-zombies-part-1-incepe-azi-la-21-00",
@@ -783,7 +893,9 @@
    "img": "img/9740faf2d1f0.png",
    "excerpt": "Spookye Zombies Part 1 rulează de azi, sâmbătă, 17 octombrie, 21:00, până luni, 19 octombrie, 21:00 (ora României). Vin o armă nouă, un…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Hunty Zombie",
+   "jocSlug": "hunty-zombie"
   },
   {
    "slug": "primul-pas-in-portal-live",
@@ -797,7 +909,9 @@
    "img": "img/steal-an-egg-halloween-dimension.png",
    "excerpt": "Andrei vrea să intre în Halloween Dimension în direct, cu reacția lui pe bune. Vino să vezi cu el ce e dincolo. Follow pe TikTok…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "bubble-gum-simulator-infinity-halloween-part-2-incepe-azi-la-19-00",
@@ -811,7 +925,9 @@
    "img": "img/e096eff00955.png",
    "excerpt": "Halloween Part 2 rulează de azi, 17 octombrie, 19:00, până sâmbătă, 24 octombrie, 21:00 (ora României). Vin Halloween Season Pass,…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Bubble Gum Simulator INFINITY",
+   "jocSlug": "bubble-gum-simulator-infinity"
   },
   {
    "slug": "sell-fries-halloween-cu-free-admin-gifts",
@@ -825,7 +941,9 @@
    "img": "img/77fb34486340.png",
    "excerpt": "Sell Fries! are Halloween Event de sâmbătă, 17 octombrie, 21:00, până duminică, 18 octombrie, 21:00 (ora României), cu Free Admin Gifts și…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Sell Fries!",
+   "jocSlug": "sell-fries"
   },
   {
    "slug": "huss-valley-halloween-event-din-seara-asta",
@@ -839,7 +957,9 @@
    "img": "img/9cb5793476c5.png",
    "excerpt": "Huss Valley are Halloween Event de sâmbătă, 17 octombrie, 20:00, până sâmbătă, 7 noiembrie, 20:00 (ora României). Conținutul nu e anunțat…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Huss Valley",
+   "jocSlug": "huss-valley"
   },
   {
    "slug": "the-strongest-battlegrounds-vine-the-arsenal",
@@ -853,7 +973,9 @@
    "img": "img/c32ffc9ceaa1.png",
    "excerpt": "The Strongest Battlegrounds a anunțat „The Arsenal”, cu mesajul „Undying Hero's arsenal keeps growing”. Data e „Coming Soon”, deci ora și…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "The Strongest Battlegrounds",
+   "jocSlug": "the-strongest-battlegrounds"
   },
   {
    "slug": "break-and-steal-an-egg-halloween-admin-abuse-duminica",
@@ -867,7 +989,9 @@
    "img": "img/e463ba202c38.png",
    "excerpt": "Break and Steal an Egg are Halloween + Admin Abuse de duminică, 18 octombrie, 15:00, până luni, 19 octombrie, 15:00 (ora României).…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Break and Steal an Egg",
+   "jocSlug": "break-and-steal-an-egg"
   },
   {
    "slug": "halloween-ul-prietenului-vechi-vs-al-crush-ului",
@@ -881,7 +1005,9 @@
    "img": "img/853af354443b.jpg",
    "excerpt": "Rg are ~159K și încă urcă cu „What Old friend and crush Do on Halloween”. E o animație de 16s cu pașii „Customize:” și „Summon:” pe ecran.…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "trollul-care-a-rupt-steal-an-egg-peste-noapte",
@@ -895,7 +1021,9 @@
    "img": "img/40669ce67dee.jpg",
    "excerpt": "Luzy Boy are ~881K în ~15h cu „This Kid Got TROLLED in Steal An Egg 😭”. E o capcană de 29s: oul blocat între blocuri, un „RUN!!” mare pe…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "dandy-s-world-duce-halloween-ul-in-viata-reala",
@@ -909,7 +1037,9 @@
    "img": "img/53e8a31acce7.jpg",
    "excerpt": "Clapsy are ~257K și crește cu ~36K/h, cu un Halloween IRL în decor real. Ideea VEXU: Halloween-ul din joc, dar în camera lui Andrei, apoi…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Dandy's World",
+   "jocSlug": "dandy-s-world"
   },
   {
    "slug": "cum-strangi-cele-mai-multe-bomboane-de-halloween-pe-roblox-versiunea-sincera",
@@ -923,7 +1053,9 @@
    "img": "img/ec14d8c00711.jpg",
    "excerpt": "Short-ul animat al lui RID ! are ~505K și crește cu ~27K/h: o tactică de trick-or-treat „perfectă” care se termină prost. Ideea VEXU: „Cum…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "dobig-lanseaza-do-big-do-good",
@@ -937,7 +1069,9 @@
    "img": "game-steal-an-egg.png",
    "excerpt": "Do Big Studios, studioul din spatele Steal An Egg, a lansat Do Big Do Good, o inițiativă caritabilă formată mai devreme anul acesta.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "package-overrides-a-intrat-in-studio-beta",
@@ -951,7 +1085,9 @@
    "img": "img/x-package-overrides.jpg",
    "excerpt": "Funcția arătată la RDC e acum în Studio Beta: poți modifica un package direct în place-ul tău (de exemplu, să revopsești o mașină) și…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "itemele-de-avatar-stricate-pot-fi-reparate-dupa-lansare",
@@ -965,7 +1101,9 @@
    "img": "img/x-bloxy-item-update.jpg",
    "excerpt": "Creatorii pot urca acum o versiune nouă pentru accesoriile 3D și hainele deja publicate. ID-ul, istoricul vânzărilor și owner-ii rămân…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "zvon-roblox-lucreaza-la-cadouri-cu-iteme-de-avatar",
@@ -979,7 +1117,9 @@
    "img": "img/x-valra-gifting.png",
    "excerpt": "Valra a găsit în codul Roblox o funcție de cadouri care pare să permită oferirea aproape oricărui item de avatar.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "cheating-in-steal-an-egg-gag-scurt-views-stabile",
@@ -993,7 +1133,9 @@
    "img": "short-1yM7olDjpf4.jpg",
    "excerpt": "Clipul lui VoiceBlox are ~153K views și 41 de secunde. Formula: setup → momentul „interzis” → punchline. Ideea VEXU: un skit cu un cheat…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "cel-mai-scump-pet-din-steal-an-egg-rupe-acum-shorts-ul",
@@ -1007,7 +1149,9 @@
    "img": "short-mH9jAAspaKA.jpg",
    "excerpt": "Clipul lui xLORSI are ~315K views și crește cu ~47,5K pe oră. Formula: hook-ul cu valoarea în primele 2 secunde („cel mai scump pet”),…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "murder-duels-halloween-incepe-diseara-la-21-00",
@@ -1021,7 +1165,9 @@
    "img": "img/ffb65ef3e8fa.png",
    "excerpt": "Evenimentul de Halloween din Murder Duels pornește azi, 17 octombrie, la 21:00 (ora României) și ține până pe 1 noiembrie, la 14:00.…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Murder Duels",
+   "jocSlug": "murder-duels"
   },
   {
    "slug": "violence-district-the-butcher-x-halloween-din-24-octombrie",
@@ -1035,7 +1181,9 @@
    "img": "img/d0f25a8958ec.png",
    "excerpt": "Violence District primește evenimentul de Halloween „The Butcher X Halloween” pe 24 octombrie, la 15:00 (ora României), și ține până pe 21…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Violence District",
+   "jocSlug": "violence-district"
   },
   {
    "slug": "grand-piece-online-ultima-sansa-la-halloween-part-1",
@@ -1049,7 +1197,9 @@
    "img": "event-gpo-halloween-part1.png",
    "excerpt": "Halloween Part 1 din Grand Piece Online se termină pe 18 octombrie, la 05:00 (ora României). Până atunci mai prinzi Trick or Treat în…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Grand Piece Online",
+   "jocSlug": "grand-piece-online"
   },
   {
    "slug": "ride-a-pet-update-secret-sambata-la-16-00",
@@ -1063,7 +1213,9 @@
    "img": "event-ride-a-pet-secret.png",
    "excerpt": "Ride A Pet primește un update secret, „???”, sâmbătă, 17 octombrie, la 16:00 (ora României), până pe 24 octombrie, cu Admin Abuse și bani…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Ride A Pet",
+   "jocSlug": "ride-a-pet"
   },
   {
    "slug": "roblox-machiaj-creat-direct-in-joc",
@@ -1077,7 +1229,9 @@
    "img": "generic-neon.png",
    "excerpt": "Roblox a anunțat pe 16 octombrie machiajul creat direct în joc. Jucătorii își fac machiaj, gene și sprâncene și le salvează în inventar,…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "ce-ai-ratat-pe-canal",
@@ -1091,7 +1245,9 @@
    "img": "vod-G2FW1n4aAdk.jpg",
    "excerpt": "Shorts: https://www.youtube.com/shorts/L2owAFJ6uPY , https://www.youtube.com/shorts/uTMRuCM7RTs . Live-ul întreg (VOD):…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "live-ul-de-diseara-incalzirea-inainte-de-halloween",
@@ -1105,7 +1261,9 @@
    "img": "short-uTMRuCM7RTs.jpg",
    "excerpt": "Diseară, dacă intrăm live, facem încălzirea înainte de Halloween Dimension. Challenge-ul: chat-ul alege pe cine furăm, iar dacă nu…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "azi-la-18-00-se-deschide-halloween-dimension-pe-steal-an-egg",
@@ -1119,7 +1277,9 @@
    "img": "img/steal-an-egg-halloween-dimension.png",
    "excerpt": "UPDATE A început, vezi postarea nouă:…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "blox-fruits-magnet-si-sea-1-refacut-level-cap-3000",
@@ -1133,7 +1293,9 @@
    "img": "game-blox-fruits.png",
    "excerpt": "Blox Fruits are update-ul „OUT NOW” (din ~11 oct): • fructul Magnet • Sea 1 refăcut • level cap urcat la 3000",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Blox Fruits",
+   "jocSlug": "blox-fruits"
   },
   {
    "slug": "dobig-intra-in-povestea-tower-defense-simulator",
@@ -1147,7 +1309,9 @@
    "img": "news-tds-dobig.png",
    "excerpt": "E oficial: pe 15 octombrie, pe la 21:12 (ora României), DoBig (@do_bigR), studioul din spatele Steal An Egg, a scris: „We're honored to be…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Tower Defense Simulator",
+   "jocSlug": "tower-defense-simulator"
   },
   {
    "slug": "tower-defense-simulator-2-14-0-solar-requiem-night-i-cod-2million",
@@ -1161,7 +1325,9 @@
    "img": "game-tds.png",
    "excerpt": "Tower Defense Simulator a primit update-ul 2.14.0: • Solar Requiem Night I • Sun and Moon Crate • Battlepass nou Codul 2MILLION îți dă…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Tower Defense Simulator",
+   "jocSlug": "tower-defense-simulator"
   },
   {
    "slug": "jujutsu-shenanigans-halloween-update-din-24-oct",
@@ -1175,7 +1341,9 @@
    "img": "event-jjs-halloween.png",
    "excerpt": "Jujutsu Shenanigans are anunțat HALLOWEEN UPDATE: din 24 oct, 00:00, până pe 24 nov, 00:00 RO. Deocamdată avem doar titlul și fereastra…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Jujutsu Shenanigans",
+   "jocSlug": "jujutsu-shenanigans"
   },
   {
    "slug": "creatures-of-sonaria-halloween-week-2-din-16-oct-23-30",
@@ -1189,7 +1357,9 @@
    "img": "event-sonaria-halloween-week2.png",
    "excerpt": "Creatures of Sonaria intră în Halloween Week 2: din 16 oct, 23:30, până pe 19 oct, 23:30 RO. Vine subspecia Faraway Felifaux, cu…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Creatures of Sonaria",
+   "jocSlug": "creatures-of-sonaria"
   },
   {
    "slug": "bedwars-halloween-part-1-din-17-oct",
@@ -1203,7 +1373,9 @@
    "img": "event-bedwars-halloween-part1.png",
    "excerpt": "BedWars Halloween Part 1: din 17 oct, 01:00, până pe 24 oct, 00:00 RO. Part 2 pe 24 oct, Part 3 pe 31 oct. Descrierea oficială e goală —…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "BedWars",
+   "jocSlug": "bedwars"
   },
   {
    "slug": "evade-halloween-event-din-17-oct-04-00",
@@ -1217,7 +1389,9 @@
    "img": "event-evade-halloween.png",
    "excerpt": "Halloween Event în Evade din 17 oct, 04:00 RO: hărți de Halloween, 40+ cosmetice și emote-uri, quest-uri, Wisps pentru battle pass,…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Evade",
+   "jocSlug": "evade"
   },
   {
    "slug": "bloxburg-gothic-items-iteme-gotice-de-halloween",
@@ -1231,7 +1405,9 @@
    "img": "event-bloxburg-gothic-items.png",
    "excerpt": "Bloxburg are „Gothic Items”: iteme gotice. Se poate juca din 15 oct până pe 22 oct, 14:55 RO.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Bloxburg",
+   "jocSlug": "bloxburg"
   },
   {
    "slug": "caderea-e-mortala-face-1-5m-intr-o-zi",
@@ -1245,7 +1421,9 @@
    "img": "short-Mds60ioVhqw.jpg",
    "excerpt": "Noobified, ~1,53M views într-o zi (~112K/oră). Formula: premisă „într-o lume în care X e mortal” spusă de narator, text galben cuvânt cu…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "pov-de-la-0-la-bogat-in-steal-an-egg",
@@ -1259,7 +1437,9 @@
    "img": "short-GiR7qxH65CQ.jpg",
    "excerpt": "Robler, ~161,6K views (~44,5K/oră). Formula: contrast 0 bani vs 6B + twist la Fuse Machine. Pe TikTok: „steal an egg rags to riches”,…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "animatia-secreta-de-like-din-steal-an-egg",
@@ -1273,7 +1453,9 @@
    "img": "short-RuIEmwCP8ZU.jpg",
    "excerpt": "BeeYT, ~150K views în mai puțin de o zi, Short ~31s („HE SHOWED ME NEW LIKE ANIMATION IN STEAL AN EGG..”). Formula: „un jucător mi-a…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "fisch-fischfright-3-editia-anuala-de-halloween",
@@ -1287,7 +1469,9 @@
    "img": "game-fisch.png",
    "excerpt": "Evenimentul limitat anual, a treia ediție — „bigger and spookier”. Rulează din sâmbătă 17 oct, 19:00, până luni 9 nov, 19:00 (ora…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Fisch",
+   "jocSlug": "fisch"
   },
   {
    "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
@@ -1301,7 +1485,9 @@
    "img": "game-dandys-world.png",
    "excerpt": "Gourdy Shop aduce skin-uri noi din vineri 16 oct, 22:00, până pe 23 oct, 22:00 RO. Update 0.29.7 aduce 2 etaje limitate de Halloween,…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Dandy's World",
+   "jocSlug": "dandy-s-world"
   },
   {
    "slug": "rivals-rivalsween-pe-pagina-oficiala",
@@ -1315,7 +1501,9 @@
    "img": "game-rivals.png",
    "excerpt": "Eventul de Halloween e pe pagina oficială, ține până pe ~7 nov. Update 19 oct: pe X s-a dat codul COMMUNITY27, care îți dă un wrap gratis…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "RIVALS",
+   "jocSlug": "rivals"
   },
   {
    "slug": "steal-an-egg-actualizare-azi-la-16-10",
@@ -1329,7 +1517,9 @@
    "img": "game-steal-an-egg.png",
    "excerpt": "Pe 15 octombrie, la 16:10 (ora României), Steal An Egg a primit o actualizare. Nu există note oficiale despre ce s-a schimbat — confirmată…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
@@ -1343,7 +1533,9 @@
    "img": "game-dead-rails.png",
    "excerpt": "ACTUALIZARE: s-a amânat pe 20 oct. Evenimentul „Dead of Night” în Dead Rails nu mai pornește pe 17 octombrie. Noua fereastră: de marți, 20…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Dead Rails",
+   "jocSlug": "dead-rails"
   },
   {
    "slug": "forsaken-helperbot-pe-16-oct-event-halloween",
@@ -1357,7 +1549,9 @@
    "img": "game-forsaken.png",
    "excerpt": "Helperbot intră în roster pe 16 octombrie. Eventul rulează din 17 octombrie, 02:00, până pe 24 octombrie, 02:00 (ora României). Update 18…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Forsaken",
+   "jocSlug": "forsaken"
   },
   {
    "slug": "doar-oua-mari-o-runda-intreaga-challenge-ul-din-seara-asta",
@@ -1371,7 +1565,9 @@
    "img": "short-uTMRuCM7RTs.jpg",
    "excerpt": "Chat-ul decide: o rundă întreagă de Steal An Egg în care am voie să iau DOAR ouă mari. După aia vine cursa pe mount, noob vs cel mai bun…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "pet-de-noob-vs-pet-maxat-cine-castiga-cursa",
@@ -1385,7 +1581,9 @@
    "img": "vod-d27OmKHuOaw.jpg",
    "excerpt": "Mount-urile au rămas în joc după Update 8. Pe live, cursa e între cel mai slab pet de început și cel mai tare pet maxat. Live-ul cu…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "steal-an-egg-game-vs-real-6-000-views-pe-ora-in-25s",
@@ -1399,7 +1597,9 @@
    "img": "short-jkceXPbVo_Y.jpg",
    "excerpt": "ImAleeBlox, ~39K views în ~6,5h (~6K/oră), 25s. Formula: comparație joc vs viață reală, punchline rapid, fără intro. Pe TikTok: „steal an…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "your-trail-if-you-pe-steal-an-egg-2-000-views-pe-ora",
@@ -1413,7 +1613,9 @@
    "img": "short-FONq15__V_U.jpg",
    "excerpt": "Keron, ~33K views în ~17h (~2K/oră), 12s. Formula: template „your trail if you…”, acțiune din prima secundă, buclă. Pe TikTok: „steal an…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "creator-analytics-masurarea-discovery-s-a-schimbat-pe-12-oct",
@@ -1427,7 +1629,9 @@
    "img": "generic-neon.png",
    "excerpt": "De pe 12 octombrie 2026, Roblox înregistrează altfel impressions, clicks și plays din Home, Search și Charts. Poți vedea numere mai mari…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "rate-limit-uri-api-mai-stricte-dupa-19-octombrie",
@@ -1441,7 +1645,9 @@
    "img": "generic-neon.png",
    "excerpt": "După 19 octombrie 2026, Roblox coboară rate limit-urile pe cookie și IP neautentificat pentru șase servicii web API (inclusiv badges,…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "sae-acum-1-44m-jucatori-halloween-dimension-sambata-18-00-ro",
@@ -1455,7 +1661,9 @@
    "img": "icon.png",
    "excerpt": "Steal An Egg stă acum la ~1,44 milioane jucători simultan (~8,15 miliarde vizite). Halloween Dimension rămâne sâmbătă 17 oct ~18:00 RO →…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "un-glitch-in-steal-an-egg-strange-8-300-views-pe-ora",
@@ -1470,7 +1678,9 @@
    "img": "short-_TH4elSxcNk.jpg",
    "excerpt": "BeauBerryBiscuit, ~21,7K views în ~9,5h (~8,3K/oră), 64s. Formula: arată „secretul” direct, fără intro. Pe TikTok: „steal an egg glitch”.…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "8-secunde-6-500-views-pe-ora-meme-ul-cu-toate-personajele",
@@ -1484,7 +1694,9 @@
    "img": "short-w6Li3KKgOAQ.jpg",
    "excerpt": "Craft.ZONE.5, ~4K views în ~2,3h, 8s. Formula: toată gașca apare din prima secundă, bucla se reia singură. Pe TikTok: „tarbo challenge…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "creator-showdown-in-sao-paulo-lupta-pentru-coroana-e-diseara",
@@ -1498,7 +1710,9 @@
    "img": "generic-neon.png",
    "excerpt": "Roblox dă live Creator Showdown azi 15 oct la 23:00 RO pe YouTube, TikTok și Twitch; prezentare în portugheză, plus stream în engleză.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "umbre-noi-pentru-ui-in-roblox-studio",
@@ -1512,7 +1726,9 @@
    "img": "devforum1.svg",
    "excerpt": "Umbre pentru text, inset, knockout și cu gradient pe elementele de interfață. E o funcție în beta în Roblox Studio (UIShadow).",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "quick-words-personalizate",
@@ -1526,7 +1742,9 @@
    "img": "devforum2.svg",
    "excerpt": "Jocurile pot avea până la 3 categorii de replici rapide, cu 3–10 cuvinte fiecare.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "diseara-pe-live-curse-mount-uri-si-haos-inainte-de-portal",
@@ -1540,7 +1758,9 @@
    "img": "short-uTMRuCM7RTs.jpg",
    "excerpt": "Pet vs pet votat de chat, cel mai LENT mount 🐌, așteptarea nopții și a stelelor, teorii despre portal. Follow pe TikTok @vexu_online și…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "5-challenge-uri-pe-care-le-puteti-da-pe-live",
@@ -1554,7 +1774,9 @@
    "img": "short-FcpxAj7tH08.jpg",
    "excerpt": "1. Doar ouă mari. 2. Pet vs pet, câștigătorul rămâne. 3. Cel mai mare pet călare. 4. Noob vs maxat. 5. Ce e dincolo de portal? Teoria cea…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "mai-sunt-2-zile-pana-la-halloween-dimension",
@@ -1568,7 +1790,9 @@
    "img": "short-eo3XMGl1mAI.jpg",
    "excerpt": "Sâmbătă, 17 oct, la 18:00 RO, până sâmbătă, 24 oct. Portal, boși, monștri, ouă secrete, două părți, fără leak-uri. Shorts VEXU:…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "grow-a-garden-vine-ghoul-garden-evenimentul-de-halloween",
@@ -1582,7 +1806,9 @@
    "img": "game-grow-a-garden.png",
    "excerpt": "Ține din 17 oct, 23:30 până pe 24 oct, 23:00 RO. Developerii anunță o grădină de Halloween, o monedă nouă, plante, pet-uri, gear și…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Grow a Garden",
+   "jocSlug": "grow-a-garden"
   },
   {
    "slug": "brookhaven-spa-nou-pe-16-oct-halloween-din-23-oct",
@@ -1596,7 +1822,9 @@
    "img": "game-brookhaven.png",
    "excerpt": "Welcome to the Spa aduce o proprietate spa, o casă, props și unelte gratuite. Ține din 16 oct, 21:00 până pe 22 oct, 19:44 RO.…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Brookhaven",
+   "jocSlug": "brookhaven"
   },
   {
    "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
@@ -1610,7 +1838,9 @@
    "img": "game-pet-sim-99.png",
    "excerpt": "Jocul apare acum cu titlul [BLOOD MOON]. Ține din 17 oct, 19:00 până pe 24 oct, 19:00 RO. Tot pe 17 oct la 19:00 se termină Hatch Wars de…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Pet Simulator 99",
+   "jocSlug": "pet-simulator-99"
   },
   {
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
@@ -1624,7 +1854,9 @@
    "img": "piggy.png",
    "excerpt": "Fright Night Season 9 rulează din 1 oct, 20:00 până pe 1 nov, 20:00 RO. Part II, cu recompensele finale, începe pe 17 oct la 20:00…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Piggy",
+   "jocSlug": "piggy"
   },
   {
    "slug": "update-ul-cu-mounts-a-ajuns-in-steal-an-egg",
@@ -1638,7 +1870,9 @@
    "img": "icon.png",
    "excerpt": "Din 10 oct îți călărești pet-urile; eventul de lansare a fost 10 oct 18:00 → 11 oct 22:00 RO, iar mount-urile au rămas în joc.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
@@ -1653,7 +1887,9 @@
    "img": "generic-neon.png",
    "excerpt": "🔄 ZVON nou: Forsaken s-ar putea să NU fie în listă — https://x.com/Xh0PlUgc/status/2111389292228427837 Teaserul oficial @Roblox din 10…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "doors-lanseaza-the-candy-vault-pe-22-octombrie",
@@ -1668,7 +1904,9 @@
    "img": "game-doors.png",
    "excerpt": "Confirmat: joi, 22 oct, 21:00 RO → 9 nov. Legătura cu teaserul Roblox e zvon. MORE INFO SOON — conținutul încă nu e anunțat.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "DOORS",
+   "jocSlug": "doors"
   },
   {
    "slug": "adopt-me-hauntlet-returns-halloween-ghost-gallery",
@@ -1682,7 +1920,9 @@
    "img": "game-adopt-me.png",
    "excerpt": "Din 3 oct e live Hauntlet Returns: îl adopți pe Bolt, Poltergeist Box, pet-urile pe Candy Corn. Plus Ghost Gallery: îl învingi și îl…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Adopt Me",
+   "jocSlug": "adopt-me"
   },
   {
    "slug": "dress-to-impress-halloween-incepe-pe-17-octombrie",
@@ -1697,7 +1937,9 @@
    "img": "game-dress-to-impress.png",
    "excerpt": "Confirmat: 17 oct 18:00 → 7 nov 18:00 RO. Quest-ul „Tales of the Dark King” apare doar în presă, deci e zvon.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Dress to Impress",
+   "jocSlug": "dress-to-impress"
   },
   {
    "slug": "99-nights-in-the-forest-vine-trick-or-treat",
@@ -1711,7 +1953,9 @@
    "img": "game-99-nights.png",
    "excerpt": "17 oct 20:00 → 24 oct 15:00 RO.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "99 Nights in the Forest",
+   "jocSlug": "99-nights-in-the-forest"
   },
   {
    "slug": "portalul-se-deschide-sambata-ce-urmeaza-pe-live-urile-vexu",
@@ -1725,7 +1969,9 @@
    "img": "icon.png",
    "excerpt": "Urmează câteva seri de live pe Steal An Egg. Sâmbătă, 17 octombrie, la 18:00 (ora României), se deschide Halloween Dimension, eventul…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "cele-mai-tari-momente-de-pe-live-urile-vexu-am-calarit-pet-urile",
@@ -1739,7 +1985,9 @@
    "img": "vod-d27OmKHuOaw.jpg",
    "excerpt": "Update 8 a adus Mounts în Steal An Egg, iar jocul a bătut recordul all-time, cu aproape 12 milioane de jucători în același timp. Pe…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": null,
+   "jocSlug": null
   },
   {
    "slug": "halloween-dimension-vine-in-steal-an-egg",
@@ -1753,7 +2001,9 @@
    "img": "icon.png",
    "excerpt": "Eventul pornește sâmbătă, 17 octombrie, la 18:00 (ora României) și ține până sâmbătă, 24 octombrie, la 17:00. Portal, boși, monștri, ouă…",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "nu-exista-coduri-de-halloween",
@@ -1767,7 +2017,9 @@
    "img": "icon.png",
    "excerpt": "Atenție la țepe: Steal An Egg nu are sistem de redeem, deci nu există coduri de Halloween.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   },
   {
    "slug": "roblox-simplifica-publicarea-jocurilor",
@@ -1781,7 +2033,9 @@
    "img": "devforum1.svg",
    "excerpt": "Roblox face mai simplu drumul spre publicare, iar creatorii pot invita până la 10 testeri înainte de lansare.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "licente-pe-ip-uri-oficiale-pentru-iteme-ugc",
@@ -1795,7 +2049,9 @@
    "img": "devforum2.svg",
    "excerpt": "Creatorii pot face iteme de avatar bazate pe IP-uri oficiale, prin licențe din Marketplace.",
    "featured": false,
-   "section": null
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma"
   },
   {
    "slug": "nu-face-asta-in-update-ul-de-halloween-7-secunde-aproape-600k",
@@ -1809,7 +2065,9 @@
    "img": "short-KdVx8Fbb63I.jpg",
    "excerpt": "Short Dandy's World de la Salmon Bucket, ~588K în mai puțin de 2 zile, 7s, fără voce. Formula: avertisment în titlu, acțiune în prima…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Dandy's World",
+   "jocSlug": "dandy-s-world"
   },
   {
    "slug": "lore-de-halloween-povestile-scurte-inca-prind",
@@ -1823,7 +2081,9 @@
    "img": "short--he1EWx3i94.jpg",
    "excerpt": "Poveste de 28s în 99 Nights de la MioPotBack, ~71K. Formula: „Aceasta e povestea de Halloween a…”, cu twist la final. Pe TikTok caută „99…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "99 Nights in the Forest",
+   "jocSlug": "99-nights-in-the-forest"
   },
   {
    "slug": "steal-an-egg-halloween-valul-a-pornit",
@@ -1837,7 +2097,9 @@
    "img": "short-KmygLhOTaes.jpg",
    "excerpt": "Golul s-a închis pe 14 octombrie, în jurul orei 18:00 (ora României): Short-urile Steal an Egg de Halloween au prins în sfârșit valul.…",
    "featured": false,
-   "section": "shorts"
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg"
   }
  ]
 }
