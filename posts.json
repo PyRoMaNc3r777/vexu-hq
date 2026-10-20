@@ -1943,5 +1943,24 @@
   ],
   "date": "2026-10-20",
   "published": "2026-10-20T08:25:00+03:00"
+ },
+ {
+  "titlu": "Break and Steal an Egg a atins ~1,3 milioane de jucători simultan, pentru câteva ore",
+  "slug": "break-and-steal-an-egg-a-atins-1-3-milioane-de-jucatori",
+  "img": "img/a5a00fd40503.png",
+  "text": "Break and Steal an Egg a avut un vârf uriaș duminică, 18 octombrie, în timpul Admin Abuse-ului. 🥚👻\n\nAtenție: e un vârf temporar, de câteva ore. Nu înseamnă că jocul „are” 1,3M jucători.\n\nCe a arătat developerul:\n- @monkisrok a postat o captură din Creator Analytics cu 1.338.753 de jucători simultan (CCU)\n- Din aceștia, 1.013.340 erau pe telefon\n- „1.33M CCU TODAY!! … TYSM FOR JOINING OUR ADMIN ABUSE👻”\n\nCe arată trackerele (Rolimon's, RBLXSTAT, RoVitals):\n- Vârful a fost ~1,31M, în jurul orei 15:00 (ora României), pe 18 octombrie\n- Până la 17:48 scăzuse deja la ~160K\n- Într-o zi normală, jocul are ~210–245K jucători\n\nDespre joc:\n- Creat pe 5 septembrie de ILGames x Eggs\n- E alt joc decât Steal An Egg, nu le confundați!\n\nCe urmează: pe 25 octombrie, la 15:00 (ora României), vine evenimentul „Something creepy is coming...”. 🎃\n\nNotă: contul @monkisrok e mic și nu e verificat, dar handle-ul se potrivește cu owner-ul grupului jocului.\n\nPostarea developerului: https://x.com/monkisrok/status/2111811993569304878\n\nFollow pe TikTok @vexu_online + Subscribe pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://x.com/monkisrok/status/2111811993569304878"
+  ],
+  "date": "2026-10-20",
+  "events": [
+   {
+    "name": "Break and Steal an Egg: Something creepy is coming...",
+    "game": "Break and Steal an Egg",
+    "start": "2026-10-25T15:00:00+02:00"
+   }
+  ],
+  "published": "2026-10-20T08:54:18+03:00"
  }
 ]
