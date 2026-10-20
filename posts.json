@@ -1962,5 +1962,17 @@
    }
   ],
   "published": "2026-10-20T08:54:18+03:00"
+ },
+ {
+  "titlu": "Roblox Studio: texturi 4K generate cu AI (Quality mode, beta)",
+  "slug": "roblox-studio-texturi-4k-generate-cu-ai-quality-mode",
+  "img": "img/226e6615c666.jpeg",
+  "text": "Roblox a adus în Studio un mod nou pentru texturile generate cu AI: Quality. E în beta. 🎨\n\nCe alegi când generezi o textură:\n- Quality: texturi PBR la 4K, cu culoare, roughness și metalness, deci materialele arată mai realist. Durează cam 2 minute.\n- Fast: texturi la 1K, doar culoare. Durează cam 30 de secunde.\n\nUnde îl găsești:\n- Model > Texture, cu modelul selectat\n- Click dreapta pe obiect > Generate > Texture\n- Sau scrii /generate_texture în Assistant, cu mesh-ul selectat\n\nPont de la Roblox: încearcă mai întâi prompturi pe Fast, iar când găsești unul care îți place, rulează-l din nou pe Quality.",
+  "eticheta": "CONFIRMAT",
+  "surse": [
+   "https://devforum.roblox.com/t/beta-introducing-quality-mode-for-texture-generation/4938282"
+  ],
+  "date": "2026-10-20",
+  "published": "2026-10-20T09:32:25+03:00"
  }
 ]
