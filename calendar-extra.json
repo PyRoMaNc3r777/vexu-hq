@@ -1,12 +1,4 @@
 {
  "_info": "Evenimente de calendar fără postare. build_posts.py le sare automat dacă o postare din posts.json are același link în surse/events sau același game+name în events. Când apare postarea, poți șterge intrarea de aici.",
- "events": [
-  {
-   "name": "Halloween + Guilds",
-   "game": "The Forge",
-   "start": "2026-10-20T21:00:00+03:00",
-   "end": "2026-11-07T22:55:00+02:00",
-   "link": "https://www.roblox.com/events/8555452768813449897"
-  }
- ]
+ "events": []
 }
