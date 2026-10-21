@@ -109,6 +109,8 @@ PWA_JS = "<script>if('serviceWorker' in navigator)addEventListener('load',()=>na
 
 CSS_TOP = '.totop{position:fixed;right:14px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:20;width:46px;height:46px;border-radius:50%;border:1px solid #ff7a00;background:#1a0b05e6;color:#ffb066;font-size:20px;line-height:44px;text-align:center;cursor:pointer;box-shadow:0 0 16px #ff7a0066,inset 0 0 10px #ff7a0033;opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:opacity .25s,transform .25s}.totop.on{opacity:1;transform:none;pointer-events:auto;animation:tg 2.6s ease-in-out infinite}.totop:active{transform:scale(.9)}@keyframes tg{50%{box-shadow:0 0 26px #ff7a00aa,0 0 40px #ff2bd644,inset 0 0 10px #ff7a0033}}.spd{position:fixed;top:0;left:18px;z-index:0;pointer-events:none;width:2px;height:70px;background:linear-gradient(#fff0,#ffffff55);transform-origin:top center;animation:sw 5s ease-in-out infinite,dr 9s ease-in-out infinite}.spd:after{content:"🕷️";position:absolute;bottom:-18px;left:-10px;font-size:20px;filter:drop-shadow(0 0 6px #ff2bd6)}@keyframes sw{0%,100%{transform:rotate(6deg)}50%{transform:rotate(-6deg)}}@keyframes dr{0%,100%{height:60px}50%{height:120px}}@media(prefers-reduced-motion:reduce){.totop.on{animation:none}.spd{animation:none}}'
 TOP_HTML = '<div class="spd" aria-hidden="true"></div><button class="totop" id="totop" type="button" aria-label="Înapoi sus" title="Înapoi sus">🎃</button>'
+# Vânătoarea de dovleci (Halloween 2026): oprire din pumpkin-hunt.js (ON / END) sau golește HUNT_JS.
+HUNT_JS = '<script src="/vexu-hq/pumpkin-hunt.js" defer></script>'
 TOP_JS = "<script>(function(){var b=document.getElementById('totop');if(!b)return;function u(){b.classList.toggle('on',scrollY>600)}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}})()</script>"
 def page(title, body, extra_js=''):
     body = emo_h1(body)
@@ -116,7 +118,7 @@ def page(title, body, extra_js=''):
             f'<title>{html.escape(title)}</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png">{PWA_HEAD}<style>\n{CSS}\n{CSS_FX}{CSS_TOP}\n</style></head><body>'
             f'<div class="moon" aria-hidden="true"></div>'
             f'<div class="fx" aria-hidden="true"><span>🎃</span><span>🦇</span><span>👻</span><span>🦇</span><span>🎃</span><span>🕸️</span></div>'
-            f'<div class="w">{body}</div>{TOP_HTML}{extra_js}{TOP_JS}{PWA_JS}</body></html>\n')
+            f'<div class="w">{body}</div>{TOP_HTML}{extra_js}{TOP_JS}{HUNT_JS}{PWA_JS}</body></html>\n')
 
 e = html.escape
 def cls(l): return re.sub(r'[^A-Za-z0-9]+', '-', l).strip('-')
