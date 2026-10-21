@@ -313,7 +313,7 @@
  {
   "titlu": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
   "img": "piggy.png",
-  "text": "Fright Night Season 9 rulează din 1 oct, 20:00 până pe 1 nov, 20:00 RO. Part II, cu recompensele finale, începe pe 17 oct la 20:00 („haunts are just beginning”). Harta Forest are look de Halloween și un secret care deblochează un efect de Survivor, între 10 oct și 8 nov.",
+  "text": "Fright Night Season 9 rulează din 1 oct, 20:00 până pe 1 nov, 20:00 RO. Part II, cu recompensele finale, începe pe 17 oct la 20:00 („haunts are just beginning”). Harta Forest are look de Halloween și un secret care deblochează un efect de Survivor, între 10 oct și 8 nov.\n\nUpdate 21 oct: Piggy e în The Hollow, iar Chapter 13 are loc acolo (eventul oficial Roblox, 23 oct – 2 nov) — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/events/6880194658371240570",
@@ -341,7 +341,8 @@
     "end_date": "2026-11-08"
    }
   ],
-  "joc": "Piggy"
+  "joc": "Piggy",
+  "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie"
  },
  {
   "titlu": "🐎 Update-ul cu Mounts a ajuns în Steal An Egg",
@@ -356,14 +357,13 @@
   "joc": "Steal An Egg"
  },
  {
-  "titlu": "❓ The Hollow: eventul de Halloween al Roblox vine pe 22 octombrie",
-  "img": "generic-neon.png",
-  "text": "🔄 ZVON nou: Forsaken s-ar putea să NU fie în listă — https://x.com/Xh0PlUgc/status/2111389292228427837\n\nTeaserul oficial @Roblox din 10 oct, cu textul „you've met them before. but not like this.” și logo-ul THE HOLLOW cu data 10.22.26 în video.",
-  "eticheta": [
-   "CONFIRMAT",
-   "ZVON"
-  ],
+  "titlu": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+  "img": "img/714817cca01f.jpg",
+  "text": "🔄 UPDATE 21 oct: The Hollow e OFICIAL! Roblox a publicat anunțul complet pe newsroom.\n\n🗓️ Orele (ora României):\n- Start: vineri, 23 oct, la 00:00\n- Abonații Roblox Plus intră mai devreme în hub: joi, 22 oct, la 22:00\n- Finala live: sâmbătă, 31 oct. Roblox zice doar că începe „dimineața”, fără o oră exactă anunțată\n- Final: luni, 2 nov, la 22:00 (până atunci mai poți strânge recompense)\n\n👹 9 monștri în 9 nopți: în fiecare zi intră un monstru nou în joc. Lista oficială:\n- The Deer din 99 Nights in the Forest\n- Seek din DOORS\n- Twisted Dandy din Dandy's World\n- Piggy din Piggy\n- The Inspector din Scary Shawarma Kiosk\n- Mimic din Animal Hospital\n- Biter din Demonology\n- Hiachi din The Mimic\n- The Overseer din Warden\n\n🎁 Cum merge: în fiecare zi ai un labirint nou în hub, cauți indicii și fugi de monștri. Faci quest-uri și primești UGC exclusiv și recompense. Eventul e pentru jucătorii de 9 ani și peste (în majoritatea regiunilor). În Marketplace apar și iteme de Halloween pe timp limitat, inclusiv Hollow Horseman.\n\n🐷 Piggy Chapter 13 e în The Hollow: un teaser Roblox (Instagram și TikTok), citat de @Piggy_News, spune „Ready for Chapter 13? Piggy is back, and this chapter takes place in The Hollow”.\n\n🔗 Jocurile din The Hollow pe VEXU HQ:\n- Dandy's World (Twisted Dandy): https://pyromanc3r777.github.io/vexu-hq/posts/dandys-world-halloween-update-showcase-194k.html\n- Animal Hospital (Mimic): https://pyromanc3r777.github.io/vexu-hq/posts/animal-hospital-anomaly-eventul-de-halloween-skin-uri-limitate.html\n- Piggy: https://pyromanc3r777.github.io/vexu-hq/posts/piggy-fright-night-part-ii-vine-pe-17-octombrie.html\n- DOORS (Seek): https://pyromanc3r777.github.io/vexu-hq/posts/doors-lanseaza-the-candy-vault-pe-22-octombrie.html\n- 99 Nights in the Forest (The Deer): https://pyromanc3r777.github.io/vexu-hq/posts/99-nights-in-the-forest-vine-trick-or-treat.html\n- Lista scăpată de dinainte (ZVON): https://pyromanc3r777.github.io/vexu-hq/posts/zvon-lista-scapata-cu-10-jocuri-pentru-the-hollow-eventul-roblox-de-halloween.html\n\nTu de care monstru te temi cel mai tare? 👹\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "eticheta": "CONFIRMAT",
   "surse": [
+   "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
+   "https://x.com/Piggy_News/status/2112888769506668727",
    "https://x.com/Roblox/status/2110409528051453961",
    "https://x.com/Roblox/status/2108961492187918378",
    "https://progameguides.com/roblox/the-hollow-roblox-halloween-event-2026-games-list/"
@@ -372,12 +372,15 @@
   "old_slugs": [
    "roblox-anunta-ceva-misterios-pe-22-octombrie"
   ],
-  "confirmat": "Pe 14 oct @Roblox a postat „nine names. nine nights… you already know some of them. The Hollow · October 22.” Numele The Hollow și data 22 octombrie sunt confirmate. Teaserul din 10 oct: „you've met them before. but not like this.” cu logo-ul THE HOLLOW și data 10.22.26 în video.",
+  "confirmat": "Anunț oficial Roblox (newsroom, 21 oct): The Hollow începe vineri, 23 oct, la 00:00 ora României și ține până luni, 2 nov, la 22:00. Abonații Roblox Plus intră mai devreme în hub, joi, 22 oct, la 22:00. 9 monștri din 9 jocuri horror, câte unul nou în fiecare zi. Quest-uri cu UGC exclusiv. Finala live e pe 31 oct, fără oră exactă anunțată. Piggy Chapter 13 are loc în The Hollow (teaser Roblox citat de @Piggy_News). Mai devreme: pe 14 oct @Roblox a postat „nine names. nine nights… you already know some of them. The Hollow · October 22.”, iar teaserul din 10 oct: „you've met them before. but not like this.”",
   "confirmat_surse": [
+   "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
+   "https://x.com/Piggy_News/status/2112888769506668727",
    "https://x.com/Roblox/status/2110409528051453961",
    "https://x.com/Roblox/status/2108961492187918378"
   ],
   "zvon": [
+   "⚠️ DEPĂȘIT: zvonurile de mai jos sunt de dinainte de anunțul oficial din 21 oct. Corect e ce scrie la CONFIRMAT.",
    "ZVON nou: Forsaken s-ar putea să NU fie în listă (https://x.com/Xh0PlUgc/status/2111389292228427837)",
    "Ora de start: se vorbește de 11:00 PDT, adică 21:00 ora României.",
    "Data de final: 5 sau 9 noiembrie.",
@@ -393,17 +396,32 @@
    {
     "name": "The Hollow",
     "game": "Roblox",
-    "start_date": "2026-10-22",
+    "start": "2026-10-23T00:00:00+03:00",
+    "end": "2026-11-02T22:00:00+02:00",
+    "link": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event"
+   },
+   {
+    "name": "The Hollow — acces mai devreme Roblox Plus",
+    "game": "Roblox",
+    "start": "2026-10-22T22:00:00+03:00",
+    "end": "2026-10-23T00:00:00+03:00",
+    "link": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event"
+   },
+   {
+    "name": "The Hollow — finala live (oră neanunțată)",
+    "game": "Roblox",
+    "start_date": "2026-10-31",
     "date_only": true,
-    "zvon_note": "Ora de start e ZVON (se vorbește de 21:00 RO) — neconfirmată"
+    "link": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event"
    }
   ],
-  "joc": "Roblox (platformă)"
+  "joc": "Roblox (platformă)",
+  "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie"
  },
  {
   "titlu": "🍬 DOORS lansează The Candy Vault pe 22 octombrie",
   "img": "game-doors.png",
-  "text": "Confirmat: joi, 22 oct, 21:00 RO → 9 nov. Legătura cu teaserul Roblox e zvon.\nMORE INFO SOON — conținutul încă nu e anunțat.",
+  "text": "Confirmat: joi, 22 oct, 21:00 RO → 9 nov. Legătura cu teaserul Roblox e zvon.\nMORE INFO SOON — conținutul încă nu e anunțat.\n\nUpdate 21 oct: Seek din DOORS e unul dintre cei 9 monștri din The Hollow (eventul oficial Roblox, 23 oct – 2 nov) — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html",
   "eticheta": [
    "CONFIRMAT",
    "ZVON"
@@ -422,7 +440,8 @@
     "end_time_unknown": true
    }
   ],
-  "joc": "DOORS"
+  "joc": "DOORS",
+  "slug": "doors-lanseaza-the-candy-vault-pe-22-octombrie"
  },
  {
   "titlu": "👻 Adopt Me: Hauntlet Returns + Halloween Ghost Gallery",
@@ -479,7 +498,7 @@
  {
   "titlu": "🌲 99 Nights in the Forest: vine Trick or Treat",
   "img": "game-99-nights.png",
-  "text": "17 oct 20:00 → 24 oct 15:00 RO.",
+  "text": "17 oct 20:00 → 24 oct 15:00 RO.\n\nUpdate 21 oct: The Deer din 99 Nights in the Forest e unul dintre cei 9 monștri din The Hollow (eventul oficial Roblox, 23 oct – 2 nov) — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/events/6179710618371752545"
@@ -494,7 +513,8 @@
     "end": "2026-10-24T15:00:00+03:00"
    }
   ],
-  "joc": "99 Nights in the Forest"
+  "joc": "99 Nights in the Forest",
+  "slug": "99-nights-in-the-forest-vine-trick-or-treat"
  },
  {
   "titlu": "Portalul se deschide sâmbătă! Ce urmează pe live-urile VEXU 👻",
@@ -710,7 +730,7 @@
  {
   "titlu": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
   "img": "game-dandys-world.png",
-  "text": "Gourdy Shop aduce skin-uri noi din vineri 16 oct, 22:00, până pe 23 oct, 22:00 RO. Update 0.29.7 aduce 2 etaje limitate de Halloween, evenimentul „Haunted Gala Floor” și bundle-ul Queens of Mischief. Pe 17 oct apare melodia „Queens of Mischief”, iar din 18 oct skin-ul Soulvester (Calendar Reward). Evenimentul mare de Halloween din joc e deja live.",
+  "text": "Gourdy Shop aduce skin-uri noi din vineri 16 oct, 22:00, până pe 23 oct, 22:00 RO. Update 0.29.7 aduce 2 etaje limitate de Halloween, evenimentul „Haunted Gala Floor” și bundle-ul Queens of Mischief. Pe 17 oct apare melodia „Queens of Mischief”, iar din 18 oct skin-ul Soulvester (Calendar Reward). Evenimentul mare de Halloween din joc e deja live.\n\nUpdate 21 oct: Twisted Dandy din Dandy's World e unul dintre cei 9 monștri din The Hollow (eventul oficial Roblox, 23 oct – 2 nov) — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/events/1672892735373312668",
@@ -738,7 +758,8 @@
     "date_only": true
    }
   ],
-  "joc": "Dandy's World"
+  "joc": "Dandy's World",
+  "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi"
  },
  {
   "titlu": "⚔️ RIVALS: RIVALSWEEN pe pagina oficială",
@@ -1570,10 +1591,14 @@
  {
   "titlu": "🎃 ZVON: listă scăpată cu 10 jocuri pentru The Hollow (eventul Roblox de Halloween)",
   "img": "img/cd1ab0409336.jpg",
-  "text": "ZVON — neconfirmat de Roblox. Pe X circulă o imagine cu jocurile care ar putea participa la The Hollow, eventul de Halloween al Roblox. Chiar postarea spune „Potential Event Games”, deci e o listă posibilă, nu oficială.\n\nCele 10 jocuri din imagine:\n- 99 Nights in the Forest\n- Animal Hospital\n- Dandy's World\n- DOORS\n- Evade\n- Forsaken\n- Piggy\n- RIVALS\n- Welcome to Bloxburg\n- Main Hub\n\nCând Roblox anunță lista oficială, revenim cu confirmarea. Follow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile!",
-  "eticheta": "ZVON",
+  "text": "🔄 UPDATE 21 oct: Acum e oficial — vezi postarea principală: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html\nDin lista scăpată, sursa oficială Roblox confirmă 5 jocuri: 99 Nights in the Forest, Animal Hospital, Dandy's World, DOORS și Piggy. Evade, Forsaken, RIVALS și Welcome to Bloxburg NU apar în lista oficială a monștrilor din The Hollow. În plus, lista oficială are 4 jocuri care nu erau în leak: Scary Shawarma Kiosk, Demonology, The Mimic și Warden.\n\nZVON — neconfirmat de Roblox. Pe X circulă o imagine cu jocurile care ar putea participa la The Hollow, eventul de Halloween al Roblox. Chiar postarea spune „Potential Event Games”, deci e o listă posibilă, nu oficială.\n\nCele 10 jocuri din imagine:\n- 99 Nights in the Forest\n- Animal Hospital\n- Dandy's World\n- DOORS\n- Evade\n- Forsaken\n- Piggy\n- RIVALS\n- Welcome to Bloxburg\n- Main Hub\n\nCând Roblox anunță lista oficială, revenim cu confirmarea. Follow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "eticheta": [
+   "ZVON",
+   "CONFIRMAT"
+  ],
   "surse": [
-   "https://x.com/FalconDelete/status/2110703993009672332"
+   "https://x.com/FalconDelete/status/2110703993009672332",
+   "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event"
   ],
   "date": "2026-10-18",
   "published": "2026-10-18T11:22:00+03:00",
@@ -2158,7 +2183,7 @@
   "titlu": "Animal Hospital (Anomaly) a intrat în eventul de Halloween, cu skin-uri limitate",
   "slug": "animal-hospital-anomaly-eventul-de-halloween-skin-uri-limitate",
   "img": "img/a5a93b3e5178.jpg",
-  "text": "Animal Hospital (Anomaly) e oficial în modul Halloween. Titlul jocului pe Roblox e acum „[🎃 EVENT] Animal Hospital (Anomaly) 🧪”.\n\nUpdate-ul a intrat sâmbătă, 17 octombrie, pe la 22:27 (ora României), după pagina jocului de pe Roblox.\n\nSkin-urile limitate de Halloween:\n- Informația vine de la contul de știri al comunității, @aha_newsupdates (nu de la dezvoltatori)\n- Postarea lor: „Halloween limited Skins for Animal Hospital are here”, cu imaginea skin-urilor\n- Fiind limitate, merită luate cât ține eventul\n\nCifrele jocului, citite marți, 20 oct, la prânz:\n- ~2,44 miliarde de vizite\n- ~19K jucători online în acel moment\n\nTu pe care skin îl iei primul? 🎃\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "text": "Animal Hospital (Anomaly) e oficial în modul Halloween. Titlul jocului pe Roblox e acum „[🎃 EVENT] Animal Hospital (Anomaly) 🧪”.\n\nUpdate-ul a intrat sâmbătă, 17 octombrie, pe la 22:27 (ora României), după pagina jocului de pe Roblox.\n\nSkin-urile limitate de Halloween:\n- Informația vine de la contul de știri al comunității, @aha_newsupdates (nu de la dezvoltatori)\n- Postarea lor: „Halloween limited Skins for Animal Hospital are here”, cu imaginea skin-urilor\n- Fiind limitate, merită luate cât ține eventul\n\nCifrele jocului, citite marți, 20 oct, la prânz:\n- ~2,44 miliarde de vizite\n- ~19K jucători online în acel moment\n\nTu pe care skin îl iei primul? 🎃\n\nUpdate 21 oct: Mimic din Animal Hospital e unul dintre cei 9 monștri din The Hollow (eventul oficial Roblox, 23 oct – 2 nov) — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://x.com/aha_newsupdates/status/2111519382652563532",
@@ -2600,7 +2625,7 @@
   "surse": [
    "https://www.youtube.com/shorts/dpAf5TALsu4"
   ],
-  "text": "Clapsy a postat un short cu update-ul de Halloween din Dandy's World care a strâns ~194K vizualizări în 24 de ore (citite pe 18 oct). Titlul e direct: „NEW Dandy's World Halloween UPDATE!”, adică exact ce caută lumea când iese un update nou.\n\nPe copertă se vede un personaj pixelat (ascuns intenționat, ca să nu dea spoiler), cu subtitrarea mare „everything” și un tag deasupra pe care scrie „Twisteds Fear Me”. Hook-ul e dedus din thumbnail, nu din clip: pare că promite să arate tot ce e nou, dar ține personajul secret până la final. Conținutul exact al update-ului nu îl listăm, pentru că nu l-am verificat noi.\n\nIdeea VEXU: „TOT CE E NOU 🎃 în 30 de secunde”. Intrăm în joc, filmăm doar ce vedem cu ochii noștri în update și le punem cap la cap rapid, cu un mic mister la început ca să rămână lumea până la final.\n\nTikTok, de căutat în aplicație: „dandys world halloween update”.\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥"
+  "text": "Clapsy a postat un short cu update-ul de Halloween din Dandy's World care a strâns ~194K vizualizări în 24 de ore (citite pe 18 oct). Titlul e direct: „NEW Dandy's World Halloween UPDATE!”, adică exact ce caută lumea când iese un update nou.\n\nPe copertă se vede un personaj pixelat (ascuns intenționat, ca să nu dea spoiler), cu subtitrarea mare „everything” și un tag deasupra pe care scrie „Twisteds Fear Me”. Hook-ul e dedus din thumbnail, nu din clip: pare că promite să arate tot ce e nou, dar ține personajul secret până la final. Conținutul exact al update-ului nu îl listăm, pentru că nu l-am verificat noi.\n\nIdeea VEXU: „TOT CE E NOU 🎃 în 30 de secunde”. Intrăm în joc, filmăm doar ce vedem cu ochii noștri în update și le punem cap la cap rapid, cu un mic mister la început ca să rămână lumea până la final.\n\nTikTok, de căutat în aplicație: „dandys world halloween update”.\n\nUpdate 21 oct: Twisted Dandy din Dandy's World e unul dintre cei 9 monștri din The Hollow (eventul oficial Roblox, 23 oct – 2 nov) — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥"
  },
  {
   "date": "2026-10-21",

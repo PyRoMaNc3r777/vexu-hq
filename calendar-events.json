@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-21T18:23:31+03:00",
+ "generated": "2026-10-21T20:26:49+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -543,12 +543,32 @@
   {
    "name": "The Hollow",
    "game": "Roblox",
-   "start_date": "2026-10-22",
-   "date_only": true,
-   "zvon_note": "Ora de start e ZVON (se vorbește de 21:00 RO) — neconfirmată",
+   "start": "2026-10-23T00:00:00+03:00",
+   "end": "2026-11-02T22:00:00+02:00",
+   "link": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
    "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
-   "img": "generic-neon.png",
-   "post_title": "❓ The Hollow: eventul de Halloween al Roblox vine pe 22 octombrie"
+   "img": "img/714817cca01f.jpg",
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct"
+  },
+  {
+   "name": "The Hollow — acces mai devreme Roblox Plus",
+   "game": "Roblox",
+   "start": "2026-10-22T22:00:00+03:00",
+   "end": "2026-10-23T00:00:00+03:00",
+   "link": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
+   "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+   "img": "img/714817cca01f.jpg",
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct"
+  },
+  {
+   "name": "The Hollow — finala live (oră neanunțată)",
+   "game": "Roblox",
+   "start_date": "2026-10-31",
+   "date_only": true,
+   "link": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
+   "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+   "img": "img/714817cca01f.jpg",
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct"
   },
   {
    "name": "The Candy Vault",
@@ -605,6 +625,33 @@
    "slug": "halloween-dimension-vine-in-steal-an-egg",
    "img": "icon.png",
    "post_title": "🎃 Halloween Dimension vine în Steal An Egg!"
+  },
+  {
+   "name": "Halloween Part 2 (Reaper)",
+   "game": "Cat Battles",
+   "start": "2026-10-24T19:00:00+03:00",
+   "end": "2026-10-31T18:00:00+02:00",
+   "link": "https://www.roblox.com/events/2565547896309154387",
+   "img": "generic-neon.png",
+   "standalone": true
+  },
+  {
+   "name": "Update 3",
+   "game": "Anime Legacy Simulator",
+   "start": "2026-10-23T21:00:00+03:00",
+   "end": "2026-10-29T20:00:00+02:00",
+   "link": "https://www.roblox.com/events/7225746666601710159",
+   "img": "generic-neon.png",
+   "standalone": true
+  },
+  {
+   "name": "Career Mode",
+   "game": "Highway Patrol",
+   "start": "2026-10-23T23:30:00+03:00",
+   "end": "2026-10-31T00:02:00+02:00",
+   "link": "https://www.roblox.com/events/6194828847804973716",
+   "img": "generic-neon.png",
+   "standalone": true
   }
  ]
 }
