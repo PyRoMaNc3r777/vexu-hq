@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T11:24:12+03:00",
+ "generated": "2026-10-22T11:25:29+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -15,7 +15,11 @@
    "featured": true,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "ce-vrei-sa-vezi-primul-in-dimensiune",
@@ -31,7 +35,11 @@
    "featured": true,
    "section": null,
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
@@ -47,7 +55,11 @@
    "featured": true,
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
-   "jocSlug": "1-speed-keyboard-escape"
+   "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "creatures-of-sonaria-halloween-week-3-clawed-spore",
@@ -63,7 +75,11 @@
    "featured": false,
    "section": null,
    "joc": "Creatures of Sonaria",
-   "jocSlug": "creatures-of-sonaria"
+   "jocSlug": "creatures-of-sonaria",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "break-and-steal-an-egg-eveniment-misterios-25-octombrie",
@@ -79,7 +95,11 @@
    "featured": false,
    "section": null,
    "joc": "Break and Steal an Egg",
-   "jocSlug": "break-and-steal-an-egg"
+   "jocSlug": "break-and-steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "tds-solar-requiem-night-iii-vine-pe-23-octombrie",
@@ -95,7 +115,11 @@
    "featured": false,
    "section": null,
    "joc": "Tower Defense Simulator",
-   "jocSlug": "tower-defense-simulator"
+   "jocSlug": "tower-defense-simulator",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "bgsi-halloween-part-2-5-bounties-dark-potion-market",
@@ -111,7 +135,11 @@
    "featured": false,
    "section": null,
    "joc": "Bubble Gum Simulator INFINITY",
-   "jocSlug": "bubble-gum-simulator-infinity"
+   "jocSlug": "bubble-gum-simulator-infinity",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "ps99-update-99-usa-de-la-spawn-se-deschide-sambata",
@@ -127,7 +155,11 @@
    "featured": false,
    "section": null,
    "joc": "Pet Simulator 99",
-   "jocSlug": "pet-simulator-99"
+   "jocSlug": "pet-simulator-99",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "shedletsky-sfoth-iv-merge-acum-in-browser",
@@ -143,7 +175,11 @@
    "featured": false,
    "section": null,
    "joc": "Sword Fights on the Heights IV",
-   "jocSlug": "sword-fights-on-the-heights-iv"
+   "jocSlug": "sword-fights-on-the-heights-iv",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "roblox-revine-in-algeria-dar-fara-chat",
@@ -159,7 +195,11 @@
    "featured": false,
    "section": null,
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "unde-te-duce-phantom-express-trend-divine-spawned",
@@ -175,7 +215,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "best-noob-portal-halloween-mutat-1-02m",
@@ -191,7 +235,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "vua-pro-ajuta-noob-fail-3-35m",
@@ -207,7 +255,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dandys-world-halloween-update-showcase-194k",
@@ -223,7 +275,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Dandy's World",
-   "jocSlug": "dandy-s-world"
+   "jocSlug": "dandy-s-world",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "etoh-halloween-2026-part-1-lobby-nou-3-turnuri-4-iteme",
@@ -239,7 +295,11 @@
    "featured": false,
    "section": null,
    "joc": "Eternal Towers of Hell",
-   "jocSlug": "eternal-towers-of-hell"
+   "jocSlug": "eternal-towers-of-hell",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "bloxburg-fantomele-de-halloween-dau-pana-la-230k-555-blockbux",
@@ -255,7 +315,11 @@
    "featured": false,
    "section": null,
    "joc": "Bloxburg",
-   "jocSlug": "bloxburg"
+   "jocSlug": "bloxburg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "voteaza-cu-like-ul-batalie-de-pet-uri-steal-an-egg",
@@ -271,7 +335,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "experiment-pe-pet-ul-fantoma-nou-din-steal-an-egg",
@@ -287,7 +355,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "forsaken-update-ul-care-a-omorat-jucatorii-de-pe-mobil",
@@ -303,7 +375,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Forsaken",
-   "jocSlug": "forsaken"
+   "jocSlug": "forsaken",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "deschid-oua-de-halloween-pana-iese-ceva",
@@ -319,7 +395,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "ghiceste-ce-iese-din-oul-de-2-250",
@@ -335,7 +415,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "street-soccer-pro-night-of-pumpkin-king-cu-manusi-si-ghete-gratis",
@@ -351,7 +435,11 @@
    "featured": false,
    "section": null,
    "joc": "Street Soccer Pro",
-   "jocSlug": "street-soccer-pro"
+   "jocSlug": "street-soccer-pro",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "yba-halloween-2026-a-venit-update-1-81",
@@ -367,7 +455,11 @@
    "featured": false,
    "section": null,
    "joc": "Your Bizarre Adventure",
-   "jocSlug": "your-bizarre-adventure"
+   "jocSlug": "your-bizarre-adventure",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "meleeniacs-npc-or-die-prima-colaborare",
@@ -383,7 +475,11 @@
    "featured": false,
    "section": null,
    "joc": "NPC or DIE",
-   "jocSlug": "npc-or-die"
+   "jocSlug": "npc-or-die",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "roblox-varf-de-26-9m-jucatori-simultan-sambata",
@@ -399,7 +495,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "bro-in-9-secunde-emote-ul-care-a-strans-670k",
@@ -415,7 +515,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Evade",
-   "jocSlug": "evade"
+   "jocSlug": "evade",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "vacuum-ul-de-fantome-din-steal-an-egg-bara-457-500",
@@ -431,7 +535,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "sol-s-rng-eon-1-30-radiant-forest-12-aure-noi-si-2-biomuri",
@@ -447,7 +555,11 @@
    "featured": false,
    "section": null,
    "joc": "Sol's RNG",
-   "jocSlug": "sol-s-rng"
+   "jocSlug": "sol-s-rng",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "gpo-halloween-part-2-pet-ul-verity-costume-noi-si-trick-or-treat-pe-spooksville-island",
@@ -463,7 +575,11 @@
    "featured": false,
    "section": null,
    "joc": "Grand Piece Online",
-   "jocSlug": "grand-piece-online"
+   "jocSlug": "grand-piece-online",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "blood-moon-x2-am-cronometrat",
@@ -479,7 +595,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "the-forge-halloween-guilds-a-pornit",
@@ -495,7 +615,11 @@
    "featured": false,
    "section": null,
    "joc": "The Forge",
-   "jocSlug": "the-forge"
+   "jocSlug": "the-forge",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "bbc-bitesize-joc-roblox-acuzat-partinire-politica",
@@ -511,7 +635,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "throwback-stiri-din-roblox-steal-an-egg",
@@ -527,7 +655,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": true
   },
   {
    "slug": "build-a-keyboard-big-update-23-oct",
@@ -543,7 +675,11 @@
    "featured": false,
    "section": null,
    "joc": "Build a Keyboard!",
-   "jocSlug": "build-a-keyboard"
+   "jocSlug": "build-a-keyboard",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "break-and-steal-an-egg-in-viata-reala",
@@ -559,7 +695,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Break and Steal an Egg",
-   "jocSlug": "break-and-steal-an-egg"
+   "jocSlug": "break-and-steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "cand-parintii-se-cearta-varianta-roblox",
@@ -575,7 +715,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "emergency-hamburg-v3-16-community-update",
@@ -591,7 +735,11 @@
    "featured": false,
    "section": null,
    "joc": "Emergency Hamburg",
-   "jocSlug": "emergency-hamburg"
+   "jocSlug": "emergency-hamburg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "admin-care-opreste-timpul-ca-sa-spawneze-ouale-in-steal-an-egg",
@@ -607,7 +755,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "oul-halloween-dimension-cercul-rosu-pe-cel-mai-rar-pet",
@@ -623,7 +775,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dress-to-impress-tales-of-the-dark-king-quest-halloween",
@@ -639,7 +795,11 @@
    "featured": false,
    "section": null,
    "joc": "Dress to Impress",
-   "jocSlug": "dress-to-impress"
+   "jocSlug": "dress-to-impress",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dark-deception-hunted-a-pornit-eventul-de-halloween",
@@ -655,7 +815,11 @@
    "featured": false,
    "section": null,
    "joc": "Dark Deception: Hunted",
-   "jocSlug": "dark-deception-hunted"
+   "jocSlug": "dark-deception-hunted",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "animal-hospital-anomaly-eventul-de-halloween-skin-uri-limitate",
@@ -671,7 +835,11 @@
    "featured": false,
    "section": null,
    "joc": "Animal Hospital",
-   "jocSlug": "animal-hospital"
+   "jocSlug": "animal-hospital",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "phantom-express-si-spectral-reveal-ul-care-creste-cel-mai-repede",
@@ -687,7 +855,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "bedwars-halloween-part-2-vine-sambata-cu-un-kit-nou-si-battle-pass",
@@ -703,7 +875,11 @@
    "featured": false,
    "section": null,
    "joc": "BedWars",
-   "jocSlug": "bedwars"
+   "jocSlug": "bedwars",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "frate-tu-somnambul-la-1-noaptea-a-strans-aproape-4-milioane",
@@ -719,7 +895,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "echo-cainele-fantoma-contorul-2-4-te-tine-pana-la-final",
@@ -735,7 +915,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "roblox-studio-texturi-4k-generate-cu-ai-quality-mode",
@@ -751,7 +935,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "break-and-steal-an-egg-a-atins-1-3-milioane-de-jucatori",
@@ -767,7 +955,11 @@
    "featured": false,
    "section": null,
    "joc": "Break and Steal an Egg",
-   "jocSlug": "break-and-steal-an-egg"
+   "jocSlug": "break-and-steal-an-egg",
+   "prio": 50,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "blox-fruits-blox-bulletin-25-halloween",
@@ -783,7 +975,11 @@
    "featured": false,
    "section": null,
    "joc": "Blox Fruits",
-   "jocSlug": "blox-fruits"
+   "jocSlug": "blox-fruits",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "toate-secretele-din-steal-an-egg-intr-un-singur-clip",
@@ -799,7 +995,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "candy-corn-in-steal-an-egg-cat-candy-iti-trebuie",
@@ -815,7 +1015,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "tower-blitz-2-nu-in-2026-alt-nume-nu-tower-defense",
@@ -831,7 +1035,11 @@
    "featured": false,
    "section": null,
    "joc": "Tower Blitz",
-   "jocSlug": "tower-blitz"
+   "jocSlug": "tower-blitz",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "regretevator-fangsworth-keepfangsworth",
@@ -847,7 +1055,11 @@
    "featured": false,
    "section": null,
    "joc": "Regretevator",
-   "jocSlug": "regretevator"
+   "jocSlug": "regretevator",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "roblox-isi-schimba-termenii-pe-1-noiembrie-merchant-of-record",
@@ -863,7 +1075,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "creatorul-mm2-nu-mai-exista-jocuri-roblox-fara-cod-ai",
@@ -879,7 +1095,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "au-vrut-sa-l-pacaleasca-pe-admin-dar",
@@ -895,7 +1115,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "un-ochi-pe-cer-alege-un-singur-om-si-roblox-ul-se-uita-ca-la-serial",
@@ -911,7 +1135,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "halloween-roblox-vs-roblox-normal-care-e-mai-tare",
@@ -927,7 +1155,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "postezi-un-teaser-si-in-cateva-ore-ai-clona-pe-roblox",
@@ -943,7 +1175,11 @@
    "featured": false,
    "section": null,
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "clasamentul-care-nu-moare-cel-mai-puternic-pet-divine",
@@ -959,7 +1195,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "vexu-ale-in-dimensiunea-de-halloween-tu-alegi-biomul",
@@ -975,7 +1215,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dead-rails-plusuri-oficiale-youtooz-pe-23-octombrie",
@@ -991,7 +1235,11 @@
    "featured": false,
    "section": null,
    "joc": "Dead Rails",
-   "jocSlug": "dead-rails"
+   "jocSlug": "dead-rails",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "car-dealership-tycoon-halloween-vine-in-doua-parti",
@@ -1007,7 +1255,11 @@
    "featured": false,
    "section": null,
    "joc": "Car Dealership Tycoon",
-   "jocSlug": "car-dealership-tycoon"
+   "jocSlug": "car-dealership-tycoon",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "volleyball-legends-stilul-nou-mamori-cu-parry",
@@ -1023,7 +1275,11 @@
    "featured": false,
    "section": null,
    "joc": "Volleyball Legends",
-   "jocSlug": "volleyball-legends"
+   "jocSlug": "volleyball-legends",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "zvon-valul-de-banuri-false-ajunge-si-la-kreekcraft",
@@ -1039,7 +1295,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "vista-springs-update-ul-de-halloween-cu-murder-mystery-a-iesit",
@@ -1055,7 +1315,11 @@
    "featured": false,
    "section": null,
    "joc": "Vista Springs",
-   "jocSlug": "vista-springs"
+   "jocSlug": "vista-springs",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "tower-defense-simulator-solar-requiem-night-ii-e-live",
@@ -1071,7 +1335,11 @@
    "featured": false,
    "section": null,
    "joc": "Tower Defense Simulator",
-   "jocSlug": "tower-defense-simulator"
+   "jocSlug": "tower-defense-simulator",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "pet-simulator-99-diamond-mountain-e-live-cu-yeti-boss-si-gargantuan",
@@ -1087,7 +1355,11 @@
    "featured": false,
    "section": null,
    "joc": "Pet Simulator 99",
-   "jocSlug": "pet-simulator-99"
+   "jocSlug": "pet-simulator-99",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "arizona-cere-in-instanta-ca-roblox-sa-predea-date-pentru-ancheta-despre-siguranta-copiilor",
@@ -1103,7 +1375,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "murder-mystery-2-halloween-2026-a-inceput-aseara-la-22-00-tine-pana-pe-16-noiembrie",
@@ -1119,7 +1395,11 @@
    "featured": false,
    "section": null,
    "joc": "Murder Mystery 2",
-   "jocSlug": "murder-mystery-2"
+   "jocSlug": "murder-mystery-2",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "zvon-arsenal-halloween-part-1-aduce-harti-noi-in-rotatie",
@@ -1135,7 +1415,11 @@
    "featured": false,
    "section": null,
    "joc": "Arsenal",
-   "jocSlug": "arsenal"
+   "jocSlug": "arsenal",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "diseara-vanam-prin-halloween-dimension-chat-ul-alege-zona-si-numele",
@@ -1151,7 +1435,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "zoomy-face-din-steal-an-egg-un-serial-cu-rasplata-in-titlu",
@@ -1167,7 +1455,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "stick-usb-sheriff-in-viata-reala-1-77m-in-12-ore",
@@ -1183,7 +1475,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "noobified-being-alone-is-deadly",
@@ -1199,7 +1495,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "maini-reale-in-roblox-this-pro-tried-to-steal-my-egg",
@@ -1215,7 +1515,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "tales-of-tanorio-eveniment-de-halloween-pe-30-octombrie-cu-reskin-uri-si-tanorieni-noi",
@@ -1231,7 +1535,11 @@
    "featured": false,
    "section": null,
    "joc": "Tales of Tanorio",
-   "jocSlug": "tales-of-tanorio"
+   "jocSlug": "tales-of-tanorio",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "zvon-forsaken-patch-5-3-0-new-beginnings",
@@ -1247,7 +1555,11 @@
    "featured": false,
    "section": null,
    "joc": "Forsaken",
-   "jocSlug": "forsaken"
+   "jocSlug": "forsaken",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "restaurant-tycoon-3-halloween-update-e-live-acum-poti-avea-pisici-dar-s-ar-putea-sa-ti-aduca-ghinion",
@@ -1263,7 +1575,11 @@
    "featured": false,
    "section": null,
    "joc": "Restaurant Tycoon 3",
-   "jocSlug": "restaurant-tycoon-3"
+   "jocSlug": "restaurant-tycoon-3",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "zvon-lista-scapata-cu-10-jocuri-pentru-the-hollow-eventul-roblox-de-halloween",
@@ -1280,7 +1596,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "antrenament-pentru-ouale-secrete",
@@ -1296,7 +1616,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "zvon-roblox-pregateste-squashbuckler-un-headless-horseman-nou",
@@ -1312,7 +1636,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "adopt-me-stitches-spotlight-minijoc-de-halloween-la-carnaval",
@@ -1328,7 +1656,11 @@
    "featured": false,
    "section": null,
    "joc": "Adopt Me",
-   "jocSlug": "adopt-me"
+   "jocSlug": "adopt-me",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "asimo3089-jailbreak-lanseaza-un-joc-nou-de-dodgeball-marti-20-octombrie",
@@ -1344,7 +1676,11 @@
    "featured": false,
    "section": null,
    "joc": "Asimo's Dodgeball",
-   "jocSlug": "asimo-s-dodgeball"
+   "jocSlug": "asimo-s-dodgeball",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "prospecting-halloween-event-e-live-the-graveyard-returns-pana-pe-7-noiembrie",
@@ -1360,7 +1696,11 @@
    "featured": false,
    "section": null,
    "joc": "Prospecting",
-   "jocSlug": "prospecting"
+   "jocSlug": "prospecting",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "fish-it-halloween-update-cu-insula-noua-live-pana-joi-22-octombrie",
@@ -1376,7 +1716,11 @@
    "featured": false,
    "section": null,
    "joc": "Fish It",
-   "jocSlug": "fish-it"
+   "jocSlug": "fish-it",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "roblox-scoate-plicuri-cu-robux-la-target-de-halloween-sua",
@@ -1392,7 +1736,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "zvon-rtc-pe-iphone-cautarea-roblox-arata-jocurile-jucate-recent",
@@ -1408,7 +1756,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "in-studio-inventarul-din-toolbox-va-fi-scos-inlocuit-de-asset-manager",
@@ -1424,7 +1776,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "plants-vs-brainrots-revine-tornado-cu-eveniment-de-halloween",
@@ -1440,7 +1796,11 @@
    "featured": false,
    "section": null,
    "joc": "Plants vs Brainrots",
-   "jocSlug": "plants-vs-brainrots"
+   "jocSlug": "plants-vs-brainrots",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "hunty-zombie-spookye-zombies-part-1-incepe-azi-la-21-00",
@@ -1456,7 +1816,11 @@
    "featured": false,
    "section": null,
    "joc": "Hunty Zombie",
-   "jocSlug": "hunty-zombie"
+   "jocSlug": "hunty-zombie",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "primul-pas-in-portal-live",
@@ -1472,7 +1836,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "bubble-gum-simulator-infinity-halloween-part-2-incepe-azi-la-19-00",
@@ -1488,7 +1856,11 @@
    "featured": false,
    "section": null,
    "joc": "Bubble Gum Simulator INFINITY",
-   "jocSlug": "bubble-gum-simulator-infinity"
+   "jocSlug": "bubble-gum-simulator-infinity",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "sell-fries-halloween-cu-free-admin-gifts",
@@ -1504,7 +1876,11 @@
    "featured": false,
    "section": null,
    "joc": "Sell Fries!",
-   "jocSlug": "sell-fries"
+   "jocSlug": "sell-fries",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "huss-valley-halloween-event-din-seara-asta",
@@ -1520,7 +1896,11 @@
    "featured": false,
    "section": null,
    "joc": "Huss Valley",
-   "jocSlug": "huss-valley"
+   "jocSlug": "huss-valley",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "the-strongest-battlegrounds-vine-the-arsenal",
@@ -1536,7 +1916,11 @@
    "featured": false,
    "section": null,
    "joc": "The Strongest Battlegrounds",
-   "jocSlug": "the-strongest-battlegrounds"
+   "jocSlug": "the-strongest-battlegrounds",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "break-and-steal-an-egg-halloween-admin-abuse-duminica",
@@ -1552,7 +1936,11 @@
    "featured": false,
    "section": null,
    "joc": "Break and Steal an Egg",
-   "jocSlug": "break-and-steal-an-egg"
+   "jocSlug": "break-and-steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "halloween-ul-prietenului-vechi-vs-al-crush-ului",
@@ -1568,7 +1956,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "trollul-care-a-rupt-steal-an-egg-peste-noapte",
@@ -1584,7 +1976,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dandy-s-world-duce-halloween-ul-in-viata-reala",
@@ -1600,7 +1996,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Dandy's World",
-   "jocSlug": "dandy-s-world"
+   "jocSlug": "dandy-s-world",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "cum-strangi-cele-mai-multe-bomboane-de-halloween-pe-roblox-versiunea-sincera",
@@ -1616,7 +2016,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dobig-lanseaza-do-big-do-good",
@@ -1632,7 +2036,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 60,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "package-overrides-a-intrat-in-studio-beta",
@@ -1648,7 +2056,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "itemele-de-avatar-stricate-pot-fi-reparate-dupa-lansare",
@@ -1664,7 +2076,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "zvon-roblox-lucreaza-la-cadouri-cu-iteme-de-avatar",
@@ -1680,7 +2096,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "cheating-in-steal-an-egg-gag-scurt-views-stabile",
@@ -1696,7 +2116,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "cel-mai-scump-pet-din-steal-an-egg-rupe-acum-shorts-ul",
@@ -1712,7 +2136,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "murder-duels-halloween-incepe-diseara-la-21-00",
@@ -1728,7 +2156,11 @@
    "featured": false,
    "section": null,
    "joc": "Murder Duels",
-   "jocSlug": "murder-duels"
+   "jocSlug": "murder-duels",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "violence-district-the-butcher-x-halloween-din-24-octombrie",
@@ -1744,7 +2176,11 @@
    "featured": false,
    "section": null,
    "joc": "Violence District",
-   "jocSlug": "violence-district"
+   "jocSlug": "violence-district",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "grand-piece-online-ultima-sansa-la-halloween-part-1",
@@ -1760,7 +2196,11 @@
    "featured": false,
    "section": null,
    "joc": "Grand Piece Online",
-   "jocSlug": "grand-piece-online"
+   "jocSlug": "grand-piece-online",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "ride-a-pet-update-secret-sambata-la-16-00",
@@ -1776,7 +2216,11 @@
    "featured": false,
    "section": null,
    "joc": "Ride A Pet",
-   "jocSlug": "ride-a-pet"
+   "jocSlug": "ride-a-pet",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "roblox-machiaj-creat-direct-in-joc",
@@ -1792,7 +2236,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "ce-ai-ratat-pe-canal",
@@ -1808,7 +2256,11 @@
    "featured": false,
    "section": null,
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "live-ul-de-diseara-incalzirea-inainte-de-halloween",
@@ -1824,7 +2276,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "azi-la-18-00-se-deschide-halloween-dimension-pe-steal-an-egg",
@@ -1840,7 +2296,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "blox-fruits-magnet-si-sea-1-refacut-level-cap-3000",
@@ -1856,7 +2316,11 @@
    "featured": false,
    "section": null,
    "joc": "Blox Fruits",
-   "jocSlug": "blox-fruits"
+   "jocSlug": "blox-fruits",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dobig-intra-in-povestea-tower-defense-simulator",
@@ -1872,7 +2336,11 @@
    "featured": false,
    "section": null,
    "joc": "Tower Defense Simulator",
-   "jocSlug": "tower-defense-simulator"
+   "jocSlug": "tower-defense-simulator",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "tower-defense-simulator-2-14-0-solar-requiem-night-i-cod-2million",
@@ -1888,7 +2356,11 @@
    "featured": false,
    "section": null,
    "joc": "Tower Defense Simulator",
-   "jocSlug": "tower-defense-simulator"
+   "jocSlug": "tower-defense-simulator",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "jujutsu-shenanigans-halloween-update-din-24-oct",
@@ -1904,7 +2376,11 @@
    "featured": false,
    "section": null,
    "joc": "Jujutsu Shenanigans",
-   "jocSlug": "jujutsu-shenanigans"
+   "jocSlug": "jujutsu-shenanigans",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "creatures-of-sonaria-halloween-week-2-din-16-oct-23-30",
@@ -1920,7 +2396,11 @@
    "featured": false,
    "section": null,
    "joc": "Creatures of Sonaria",
-   "jocSlug": "creatures-of-sonaria"
+   "jocSlug": "creatures-of-sonaria",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "bedwars-halloween-part-1-din-17-oct",
@@ -1936,7 +2416,11 @@
    "featured": false,
    "section": null,
    "joc": "BedWars",
-   "jocSlug": "bedwars"
+   "jocSlug": "bedwars",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "evade-halloween-event-din-17-oct-04-00",
@@ -1952,7 +2436,11 @@
    "featured": false,
    "section": null,
    "joc": "Evade",
-   "jocSlug": "evade"
+   "jocSlug": "evade",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "bloxburg-gothic-items-iteme-gotice-de-halloween",
@@ -1968,7 +2456,11 @@
    "featured": false,
    "section": null,
    "joc": "Bloxburg",
-   "jocSlug": "bloxburg"
+   "jocSlug": "bloxburg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "caderea-e-mortala-face-1-5m-intr-o-zi",
@@ -1984,7 +2476,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "pov-de-la-0-la-bogat-in-steal-an-egg",
@@ -2000,7 +2496,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "animatia-secreta-de-like-din-steal-an-egg",
@@ -2016,7 +2516,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "fisch-fischfright-3-editia-anuala-de-halloween",
@@ -2032,7 +2536,11 @@
    "featured": false,
    "section": null,
    "joc": "Fisch",
-   "jocSlug": "fisch"
+   "jocSlug": "fisch",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
@@ -2048,7 +2556,11 @@
    "featured": false,
    "section": null,
    "joc": "Dandy's World",
-   "jocSlug": "dandy-s-world"
+   "jocSlug": "dandy-s-world",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "rivals-rivalsween-pe-pagina-oficiala",
@@ -2064,7 +2576,11 @@
    "featured": false,
    "section": null,
    "joc": "RIVALS",
-   "jocSlug": "rivals"
+   "jocSlug": "rivals",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "steal-an-egg-actualizare-azi-la-16-10",
@@ -2080,7 +2596,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
@@ -2096,7 +2616,11 @@
    "featured": false,
    "section": null,
    "joc": "Dead Rails",
-   "jocSlug": "dead-rails"
+   "jocSlug": "dead-rails",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "forsaken-helperbot-pe-16-oct-event-halloween",
@@ -2112,7 +2636,11 @@
    "featured": false,
    "section": null,
    "joc": "Forsaken",
-   "jocSlug": "forsaken"
+   "jocSlug": "forsaken",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "doar-oua-mari-o-runda-intreaga-challenge-ul-din-seara-asta",
@@ -2128,7 +2656,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "pet-de-noob-vs-pet-maxat-cine-castiga-cursa",
@@ -2144,7 +2676,11 @@
    "featured": false,
    "section": null,
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "steal-an-egg-game-vs-real-6-000-views-pe-ora-in-25s",
@@ -2160,7 +2696,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "your-trail-if-you-pe-steal-an-egg-2-000-views-pe-ora",
@@ -2176,7 +2716,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "creator-analytics-masurarea-discovery-s-a-schimbat-pe-12-oct",
@@ -2192,7 +2736,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "rate-limit-uri-api-mai-stricte-dupa-19-octombrie",
@@ -2208,7 +2756,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "sae-acum-1-44m-jucatori-halloween-dimension-sambata-18-00-ro",
@@ -2224,7 +2776,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "un-glitch-in-steal-an-egg-strange-8-300-views-pe-ora",
@@ -2241,7 +2797,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "8-secunde-6-500-views-pe-ora-meme-ul-cu-toate-personajele",
@@ -2257,7 +2817,11 @@
    "featured": false,
    "section": "shorts",
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "creator-showdown-in-sao-paulo-lupta-pentru-coroana-e-diseara",
@@ -2273,7 +2837,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "umbre-noi-pentru-ui-in-roblox-studio",
@@ -2289,7 +2857,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "quick-words-personalizate",
@@ -2305,7 +2877,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "diseara-pe-live-curse-mount-uri-si-haos-inainte-de-portal",
@@ -2321,7 +2897,11 @@
    "featured": false,
    "section": null,
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "5-challenge-uri-pe-care-le-puteti-da-pe-live",
@@ -2337,7 +2917,11 @@
    "featured": false,
    "section": null,
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "mai-sunt-2-zile-pana-la-halloween-dimension",
@@ -2353,7 +2937,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "grow-a-garden-vine-ghoul-garden-evenimentul-de-halloween",
@@ -2369,7 +2957,11 @@
    "featured": false,
    "section": null,
    "joc": "Grow a Garden",
-   "jocSlug": "grow-a-garden"
+   "jocSlug": "grow-a-garden",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "brookhaven-spa-nou-pe-16-oct-halloween-din-23-oct",
@@ -2385,7 +2977,11 @@
    "featured": false,
    "section": null,
    "joc": "Brookhaven",
-   "jocSlug": "brookhaven"
+   "jocSlug": "brookhaven",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
@@ -2401,7 +2997,11 @@
    "featured": false,
    "section": null,
    "joc": "Pet Simulator 99",
-   "jocSlug": "pet-simulator-99"
+   "jocSlug": "pet-simulator-99",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
@@ -2417,7 +3017,11 @@
    "featured": false,
    "section": null,
    "joc": "Piggy",
-   "jocSlug": "piggy"
+   "jocSlug": "piggy",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "update-ul-cu-mounts-a-ajuns-in-steal-an-egg",
@@ -2433,7 +3037,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
@@ -2449,7 +3057,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 100,
+   "views": null,
+   "updated": "2026-10-22T11:14:47+03:00",
+   "republish": false
   },
   {
    "slug": "doors-lanseaza-the-candy-vault-pe-22-octombrie",
@@ -2466,7 +3078,11 @@
    "featured": false,
    "section": null,
    "joc": "DOORS",
-   "jocSlug": "doors"
+   "jocSlug": "doors",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "adopt-me-hauntlet-returns-halloween-ghost-gallery",
@@ -2482,7 +3098,11 @@
    "featured": false,
    "section": null,
    "joc": "Adopt Me",
-   "jocSlug": "adopt-me"
+   "jocSlug": "adopt-me",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "dress-to-impress-halloween-incepe-pe-17-octombrie",
@@ -2499,7 +3119,11 @@
    "featured": false,
    "section": null,
    "joc": "Dress to Impress",
-   "jocSlug": "dress-to-impress"
+   "jocSlug": "dress-to-impress",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "99-nights-in-the-forest-vine-trick-or-treat",
@@ -2515,7 +3139,11 @@
    "featured": false,
    "section": null,
    "joc": "99 Nights in the Forest",
-   "jocSlug": "99-nights-in-the-forest"
+   "jocSlug": "99-nights-in-the-forest",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "portalul-se-deschide-sambata-ce-urmeaza-pe-live-urile-vexu",
@@ -2531,7 +3159,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "cele-mai-tari-momente-de-pe-live-urile-vexu-am-calarit-pet-urile",
@@ -2547,7 +3179,11 @@
    "featured": false,
    "section": null,
    "joc": null,
-   "jocSlug": null
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "halloween-dimension-vine-in-steal-an-egg",
@@ -2563,7 +3199,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "nu-exista-coduri-de-halloween",
@@ -2579,7 +3219,11 @@
    "featured": false,
    "section": null,
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "roblox-simplifica-publicarea-jocurilor",
@@ -2595,7 +3239,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "licente-pe-ip-uri-oficiale-pentru-iteme-ugc",
@@ -2611,7 +3259,11 @@
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
-   "jocSlug": "roblox-platforma"
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "nu-face-asta-in-update-ul-de-halloween-7-secunde-aproape-600k",
@@ -2627,7 +3279,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Dandy's World",
-   "jocSlug": "dandy-s-world"
+   "jocSlug": "dandy-s-world",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "lore-de-halloween-povestile-scurte-inca-prind",
@@ -2643,7 +3299,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "99 Nights in the Forest",
-   "jocSlug": "99-nights-in-the-forest"
+   "jocSlug": "99-nights-in-the-forest",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   },
   {
    "slug": "steal-an-egg-halloween-valul-a-pornit",
@@ -2659,7 +3319,11 @@
    "featured": false,
    "section": "shorts",
    "joc": "Steal An Egg",
-   "jocSlug": "steal-an-egg"
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false
   }
  ]
 }

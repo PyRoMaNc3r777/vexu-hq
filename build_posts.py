@@ -71,6 +71,13 @@ def ensure_meta(posts):
             changed = True
     return changed
 
+def prio_of(p):
+    """Importanța pentru „Top știri” din Rezumat: prio (număr, mai mare = mai important) sau major: true (= 50)."""
+    v = p.get('prio')
+    if isinstance(v, (int, float)) and not isinstance(v, bool):
+        return v
+    return 50 if p.get('major') is True else 0
+
 def joc_of(p):
     return (p.get('joc') or '').strip()
 
@@ -417,6 +424,10 @@ def build_post_pages(posts):
             'section': p.get('section'),
             'joc': joc_of(p) or None,
             'jocSlug': joc_slug(joc_of(p)) if joc_of(p) else None,
+            'prio': prio_of(p),
+            'views': p['views'] if isinstance(p.get('views'), int) and p['views'] > 0 else None,
+            'updated': p.get('updated'),
+            'republish': bool(p.get('republish')),
         }
         index_items.append(item)
         search[s] = search_text(p)
@@ -512,24 +523,50 @@ RECAP_MAX_CONF = 10
 RECAP_MAX_OTHER = 6
 
 def recap_skip(p):
-    """Fără conținut Steal An Egg PART 2 în rezumat (regulă VEXU)."""
+    """Niciodată în rezumat: conținut Steal An Egg PART 2 și republicări SAE fără note noi (republish: true / Throwback)."""
     if (p.get('jocSlug') or '') != 'steal-an-egg':
         return False
     blob = (p.get('title', '') + ' ' + p.get('slug', '') + ' ' + (p.get('excerpt') or '')).lower()
-    return bool(re.search(r'part[\s-]*(2|ii)\b', blob))
+    return bool(re.search(r'part[\s-]*(2|ii)\b', blob)) or bool(p.get('republish')) or 'throwback' in blob
+
+NEWS_LABELS = ('CONFIRMAT', 'ZVON')
+def recap_score(x):
+    """Ordine: prio ↓, views reale ↓ (doar dacă postarea le are), CONFIRMAT > ZVON, apoi cele mai noi."""
+    lr = 2 if 'CONFIRMAT' in x['labels'] else 1 if 'ZVON' in x['labels'] else 0
+    ts = datetime.fromisoformat(x['published']).timestamp()
+    return (x.get('prio') or 0, 1 if x.get('views') else 0, x.get('views') or 0, lr, ts)
+
+def recap_top(cands, n):
+    """Clasament + maxim 1 postare per joc (postările fără joc contează fiecare separat)."""
+    out, seen = [], set()
+    for x in sorted(cands, key=recap_score, reverse=True):
+        g = x.get('jocSlug') or ('#' + x['slug'])
+        if g in seen:
+            continue
+        seen.add(g); out.append(x)
+        if len(out) >= n:
+            break
+    return out
 
 def recap_pick(items, keys):
-    wk = [x for x in items if x['published'][:10] and datetime.fromisoformat(x['published']).astimezone(TZ).date().isoformat() in keys and not recap_skip(x)]
+    rday = lambda iso: datetime.fromisoformat(iso).astimezone(TZ).date().isoformat()
+    wk = [x for x in items if rday(x['published']) in keys and not recap_skip(x)]
     wk.sort(key=lambda x: x['published'], reverse=True)
-    conf = [x for x in wk if 'CONFIRMAT' in x['labels']][:RECAP_MAX_CONF]
-    other = [x for x in wk if 'CONFIRMAT' not in x['labels'] and 'ZVON' in x['labels']][:RECAP_MAX_OTHER]
-    return wk, conf, other
+    # eligibile pentru top: publicate în ultimele 7 zile SAU cu prio și actualizate (updated) în ultimele 7 zile
+    el = [x for x in items if not recap_skip(x) and any(l in x['labels'] for l in NEWS_LABELS)
+          and (rday(x['published']) in keys or ((x.get('prio') or 0) > 0 and x.get('updated') and rday(x['updated']) in keys))]
+    top = recap_top(el, RECAP_MAX_CONF)
+    ids = {x['slug'] for x in top}
+    other = [x for x in wk if x['slug'] not in ids and 'CONFIRMAT' not in x['labels'] and 'ZVON' in x['labels']][:RECAP_MAX_OTHER]
+    return wk, top, other
 
 def recap_row(x):
     lab = ' '.join(f'<span class="l {cls(l)}">{e(l)}</span>' for l in x['labels'])
     d = datetime.fromisoformat(x['published']).astimezone(TZ)
+    u = datetime.fromisoformat(x['updated']).astimezone(TZ) if x.get('updated') else None
+    upd = f' · actualizat {u.day} {LUNI[u.month-1][:3]}' if u and u.date() != d.date() else ''
     return (f'<a class="rn" href="posts/{e(x["slug"])}.html">{lab}<b>{e(x["title"])}</b>'
-            f'<i>{"🎮 " + e(x["joc"]) + " · " if x.get("joc") else ""}{d.day} {LUNI[d.month-1][:3]}, {d:%H:%M}</i></a>')
+            f'<i>{"🎮 " + e(x["joc"]) + " · " if x.get("joc") else ""}{d.day} {LUNI[d.month-1][:3]}, {d:%H:%M}{upd}</i></a>')
 
 RECAP_CSS = ('.rc{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;padding:14px;margin:14px 0;box-shadow:0 0 18px #ff2bd622}'
  '.rc h2{margin:0 0 10px;color:#ff7be6;font-size:1.15em}.rsub{text-align:center;color:#9a8fb5;font-size:.9em;margin:4px 0 10px}'
@@ -552,16 +589,20 @@ const LUN=['ian','feb','mar','apr','mai','iun','iul','aug','sep','oct','nov','de
 const WD=['dum','lun','mar','mie','joi','vin','sâm'];
 const kd=k=>{const[y,m,d]=k.split('-').map(Number);return{y,m,d,w:new Date(Date.UTC(y,m-1,d,12)).getUTCDay()}};
 function keys(){const t=kd(dk(new Date()));const a=[];for(let i=DAYS-1;i>=0;i--)a.push(new Date(Date.UTC(t.y,t.m-1,t.d-i,12)).toISOString().slice(0,10));return a}
-const skip=p=>p.jocSlug==='steal-an-egg'&&/part[\s-]*(2|ii)\b/i.test((p.title||'')+' '+(p.slug||'')+' '+(p.excerpt||''));
+const skip=p=>p.jocSlug==='steal-an-egg'&&(/part[\s-]*(2|ii)\b|throwback/i.test((p.title||'')+' '+(p.slug||'')+' '+(p.excerpt||''))||!!p.republish);
+const lr=p=>(p.labels||[]).includes('CONFIRMAT')?2:(p.labels||[]).includes('ZVON')?1:0;
+const sc=(a,b)=>((b.prio||0)-(a.prio||0))||((b.views?1:0)-(a.views?1:0))||((b.views||0)-(a.views||0))||(lr(b)-lr(a))||(new Date(b.published)-new Date(a.published));
+function top(c,n){const o=[],seen=new Set();for(const p of [...c].sort(sc)){const g=p.jocSlug||('#'+p.slug);if(seen.has(g))continue;seen.add(g);o.push(p);if(o.length>=n)break}return o}
 const plain=s=>String(s).replace(/[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\uFE0F\u200D]/gu,'').replace(/\s+/g,' ').trim();
 let K=keys(),WK=[],CONF=[],OTH=[],PH=null,DATA=null;
 function rangeTxt(){const a=kd(K[0]),b=kd(K[K.length-1]);return a.m===b.m?`${a.d} – ${b.d} ${LUNL[b.m-1]} ${b.y}`:`${a.d} ${LUNL[a.m-1]} – ${b.d} ${LUNL[b.m-1]} ${b.y}`}
-function row(p){const d=new Date(p.published);return `<a class="rn" href="posts/${es(p.slug)}.html">${(p.labels||[]).map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')}<b>${es(p.title)}</b><i>${p.joc?'🎮 '+es(p.joc)+' · ':''}${kd(dk(d)).d} ${LUN[kd(dk(d)).m-1]}, ${hm(d)}</i></a>`}
+function row(p){const d=new Date(p.published);return `<a class="rn" href="posts/${es(p.slug)}.html">${(p.labels||[]).map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')}<b>${es(p.title)}</b><i>${p.joc?'🎮 '+es(p.joc)+' · ':''}${kd(dk(d)).d} ${LUN[kd(dk(d)).m-1]}, ${hm(d)}${p.updated&&dk(new Date(p.updated))!==dk(d)?` · actualizat ${kd(dk(new Date(p.updated))).d} ${LUN[kd(dk(new Date(p.updated))).m-1]}`:''}</i></a>`}
 function news(ix){K=keys();const ks=new Set(K);
   WK=(ix.posts||[]).filter(p=>p.published&&ks.has(dk(new Date(p.published)))&&!skip(p)).sort((a,b)=>new Date(b.published)-new Date(a.published));
-  CONF=WK.filter(p=>(p.labels||[]).includes('CONFIRMAT')).slice(0,MAXC);OTH=WK.filter(p=>!(p.labels||[]).includes('CONFIRMAT')&&(p.labels||[]).includes('ZVON')).slice(0,MAXO);
+  const EL=(ix.posts||[]).filter(p=>p.published&&!skip(p)&&lr(p)>0&&(ks.has(dk(new Date(p.published)))||((p.prio||0)>0&&p.updated&&ks.has(dk(new Date(p.updated))))));
+  CONF=top(EL,MAXC);const ids=new Set(CONF.map(p=>p.slug));OTH=WK.filter(p=>!ids.has(p.slug)&&lr(p)===1).slice(0,MAXO);
   document.getElementById('rrange').textContent=rangeTxt();
-  document.getElementById('rconf').innerHTML=CONF.length?CONF.map(row).join(''):'<div class="rmeta">Nicio știre CONFIRMAT în ultimele 7 zile.</div>';
+  document.getElementById('rconf').innerHTML=CONF.length?CONF.map(row).join(''):'<div class="rmeta">Nicio știre în ultimele 7 zile.</div>';
   document.getElementById('roth').innerHTML=OTH.length?OTH.map(row).join(''):'<div class="rmeta">Niciun zvon în ultimele 7 zile.</div>';
   const c=l=>WK.filter(p=>(p.labels||[]).includes(l)).length;
   document.getElementById('rnum').innerHTML=[[WK.length,'postări'],[c('CONFIRMAT'),'CONFIRMAT'],[c('ZVON'),'ZVON'],[c('TREND SHORTS'),'TREND SHORTS'],[c('VEXU LIVE'),'VEXU LIVE']].map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join('')}
@@ -595,9 +636,9 @@ function card(){const cv=document.createElement('canvas');cv.width=1080;cv.heigh
   c.font=`800 64px ${F}`;c.fillStyle='#fff';c.fillText('REZUMATUL SĂPTĂMÂNII',540,280);
   c.font=`600 40px ${F}`;c.fillStyle='#9a8fb5';c.fillText('🎃 '+rangeTxt()+' 🎃',540,345);
   // top știri
-  c.textAlign='left';c.font=`800 38px ${F}`;c.fillStyle='#39ff88';c.fillText('TOP ȘTIRI CONFIRMAT',70,412);
+  c.textAlign='left';c.font=`800 38px ${F}`;c.fillStyle='#39ff88';c.fillText('TOP ȘTIRILE SĂPTĂMÂNII',70,412);
   let y=436;const top=CONF.slice(0,5),LIM=1228;
-  if(!top.length){c.font=`600 36px ${F}`;c.fillStyle='#9a8fb5';c.fillText('Nicio știre CONFIRMAT săptămâna asta.',70,y+50)}
+  if(!top.length){c.font=`600 36px ${F}`;c.fillStyle='#9a8fb5';c.fillText('Nicio știre săptămâna asta.',70,y+50)}
   for(let i=0;i<top.length;i++){const p=top[i];c.font=`700 32px ${F}`;const ls=wrap(c,plain(p.title),850,2),h=30+ls.length*40+(p.joc?34:0);
     if(y+h>LIM)break;
     rr(c,60,y,960,h,24);c.fillStyle='#120a22e6';c.fill();c.strokeStyle='#ff2bd666';c.lineWidth=3;c.stroke();
@@ -650,7 +691,7 @@ def build_recap(index_items):
             f'<p class="rsub">Ultimele 7 zile · <span id="rrange">{rng}</span> · ora României · se actualizează singur</p>'
             f'<div class="rc"><h2>📈 Săptămâna în cifre</h2><div class="rnum" id="rnum">{nums}</div></div>'
             f'<div class="rgrid"><div>'
-            f'<div class="rc"><h2>✅ Top știri CONFIRMAT</h2><div id="rconf">{"".join(recap_row(x) for x in conf) or "<div class=rmeta>Nicio știre CONFIRMAT în ultimele 7 zile.</div>"}</div></div>'
+            f'<div class="rc"><h2>🏆 Top știri ale săptămânii</h2><div id="rconf">{"".join(recap_row(x) for x in conf) or "<div class=rmeta>Nicio știre în ultimele 7 zile.</div>"}</div></div>'
             f'<div class="rc"><h2>⚠️ Zvonuri de urmărit</h2><div id="roth">{"".join(recap_row(x) for x in other) or "<div class=rmeta>Niciun zvon în ultimele 7 zile.</div>"}</div></div>'
             f'</div><div>'
             f'<div class="rc"><h2>🥚 Steal An Egg · vârful zilnic de jucători</h2><div id="rchart"><div class="rmeta">Se încarcă graficul…</div></div>'
@@ -662,7 +703,7 @@ def build_recap(index_items):
             '<noscript><p style="text-align:center;color:#9a8fb5">Activează JavaScript pentru grafic și cardul 9:16.</p></noscript>')
     html_ = page('Rezumatul săptămânii · VEXU HQ', body, RECAP_JS).replace('</style>', RECAP_CSS + '\n</style>', 1)
     open(os.path.join(D, 'recap.html'), 'w', encoding='utf-8').write(html_)
-    print(f'recap.html: {len(wk)} postări în {keys[0]}…{keys[-1]} ({len(conf)} CONFIRMAT afișate)')
+    print(f'recap.html: {len(wk)} postări în {keys[0]}…{keys[-1]}; top: ' + ' | '.join(x['title'] for x in conf))
 
 def date_from(k):
     from datetime import date

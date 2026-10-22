@@ -36,6 +36,10 @@ Câmpuri:
 - **section**: `"shorts"` pentru TREND SHORTS
 - **events** — opțional, pentru Calendar Halloween (`start`/`end` ISO, sau `start_date`/`end_date`, `date_only`, `no_end`, `end_time_unknown`, `end_only`, `zvon_note`, `coming_soon` pentru dată neanunțată, `announced` + `start` pentru anunțuri oficiale)
 - **old_slugs** — redirect de la slug-uri vechi
+- **prio** — opțional, număr (mai mare = mai important) pentru „Top știri” din Rezumatul săptămânii; **major**: `true` = prio 50. Ex.: The Hollow OFICIAL are `100`
+- **updated** — opțional, ISO cu offset RO: ultima actualizare reală. O postare cu `prio` și `updated` în ultimele 7 zile intră în Top chiar dacă a fost publicată mai demult
+- **views** — opțional, întreg: vizualizări REALE citite din sursă (nu estimări, nu CCU). Dacă lipsește, nu se completează nimic
+- **republish** — opțional, `true` pentru republicări fără note noi; acestea (și orice conținut Steal An Egg PART 2) nu apar niciodată în Rezumat
 - **confirmat** / **zvon** — blocuri separate pe pagina postării
 - **joc** — opțional, numele jocului (ex. `"Steal An Egg"`, `"Break and Steal an Egg"`, `"Roblox (platformă)"` pentru știri de platformă/Studio/politici). Dacă lipsește, `build_posts.py` îl detectează automat (`joc_detect.py`, conservator: `""` dacă e ambiguu) și îl scrie în `posts.json`. Fiecare joc cu ≥1 postare primește pagina `joc/<slug>.html`; blogul are filtre pe joc (`blog.html#g=<slug>`).
 
@@ -66,6 +70,7 @@ Hash linkabile: `blog.html#f=confirmat`, `#f=zvon`, `#f=trend-shorts`, `#f=vexu-
 ## Rezumatul săptămânii (`recap.html`)
 
 Generat de `build_posts.py` (la fiecare rebuild) și recalculat în browser la fiecare deschidere (și la 5 min) din `posts-index.json`, `player-history.json` și `data.json` — fișierele pe care GitHub Action-ul le reîmprospătează, deci pagina e mereu la zi fără pas separat.
-- Știrile din ultimele 7 zile (ora României): CONFIRMAT primele (max 10), apoi ZVON (max 6), cu link la postare. Fără conținut Steal An Egg PART 2.
+- **Top știri** (max 10 pe pagină, primele 5 pe card): doar CONFIRMAT/ZVON, ordonate după `prio` ↓, apoi `views` reale ↓ (doar dacă există), apoi CONFIRMAT peste ZVON, apoi cele mai noi. Maxim 1 postare per `joc`. Eligibile: publicate în ultimele 7 zile (ora României) sau cu `prio` + `updated` în ultimele 7 zile. Apoi „Zvonuri de urmărit” (max 6 ZVON rămase).
+- Niciodată în rezumat: conținut Steal An Egg PART 2 și republicări SAE (`republish: true` sau Throwback).
 - Graficul (SVG, fără librării): vârful zilnic Steal An Egg măsurat de noi; zilele fără măsurători apar „fără date”, nu se completează nimic.
 - Cardul 9:16 (1080×1920 PNG) se desenează local în canvas, cu CTA TikTok @vexu_online + YouTube VEXU Online, și se descarcă din pagină.

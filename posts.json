@@ -434,7 +434,9 @@
    }
   ],
   "joc": "Roblox (platformă)",
-  "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie"
+  "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+  "prio": 100,
+  "updated": "2026-10-22T11:14:47+03:00"
  },
  {
   "titlu": "🍬 DOORS lansează The Candy Vault pe 22 octombrie",
@@ -1217,7 +1219,8 @@
   ],
   "date": "2026-10-17",
   "published": "2026-10-17T10:22:00+03:00",
-  "joc": "Steal An Egg"
+  "joc": "Steal An Egg",
+  "prio": 60
  },
  {
   "titlu": "👻 Ce vrei să vezi primul în dimensiune?",
@@ -2122,7 +2125,8 @@
   ],
   "date": "2026-10-20",
   "published": "2026-10-20T08:54:18+03:00",
-  "joc": "Break and Steal an Egg"
+  "joc": "Break and Steal an Egg",
+  "prio": 50
  },
  {
   "titlu": "Roblox Studio: texturi 4K generate cu AI (Quality mode, beta)",
@@ -2351,7 +2355,8 @@
    "https://www.tiktok.com/@vexu_online",
    "https://www.youtube.com/@VexuOnline"
   ],
-  "published": "2026-10-20T17:47:05+03:00"
+  "published": "2026-10-20T17:47:05+03:00",
+  "republish": true
  },
  {
   "titlu": "📚 Jocul Roblox al BBC Bitesize, acuzat de părtinire politică",
