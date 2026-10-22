@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T10:52:00+03:00",
+ "generated": "2026-10-22T11:09:45+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -48,6 +48,86 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape"
+  },
+  {
+   "slug": "creatures-of-sonaria-halloween-week-3-clawed-spore",
+   "title": "🦖 Creatures of Sonaria: Halloween Week 3 aduce Clawed Spore și subspecia Cursed",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T11:14:00+03:00",
+   "img": "img/sonaria-halloween-week3.png",
+   "excerpt": "Săptămâna 3 din evenimentul de Halloween 2026 în Creatures of Sonaria ține de vineri, 23 octombrie, 23:30, până luni, 26 octombrie, 14:00…",
+   "featured": false,
+   "section": null,
+   "joc": "Creatures of Sonaria",
+   "jocSlug": "creatures-of-sonaria"
+  },
+  {
+   "slug": "break-and-steal-an-egg-eveniment-misterios-25-octombrie",
+   "title": "🥚 Break and Steal an Egg: eveniment „???” duminică, 25 oct, la 15:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T11:13:00+03:00",
+   "img": "img/break-and-steal-an-egg-event-25-oct.png",
+   "excerpt": "Break and Steal an Egg are un eveniment cu numele „???”: de duminică, 25 octombrie, 15:00, până luni, 26 octombrie, 15:00 (ora României).…",
+   "featured": false,
+   "section": null,
+   "joc": "Break and Steal an Egg",
+   "jocSlug": "break-and-steal-an-egg"
+  },
+  {
+   "slug": "tds-solar-requiem-night-iii-vine-pe-23-octombrie",
+   "title": "🌙 Tower Defense Simulator: Solar Requiem Night III vine pe 23 octombrie",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T11:12:00+03:00",
+   "img": "img/tds-solar-requiem-night-iii.png",
+   "excerpt": "Solar Requiem Night III vine în Tower Defense Simulator: de vineri, 23 octombrie, 19:00, până vineri, 30 octombrie, 18:00 (ora României).…",
+   "featured": false,
+   "section": null,
+   "joc": "Tower Defense Simulator",
+   "jocSlug": "tower-defense-simulator"
+  },
+  {
+   "slug": "bgsi-halloween-part-2-5-bounties-dark-potion-market",
+   "title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2.5 vine pe 23 oct, la 21:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T11:11:00+03:00",
+   "img": "img/bgsi-halloween-part-2-5.png",
+   "excerpt": "Halloween Part 2.5 în Bubble Gum Simulator INFINITY rulează de vineri, 23 octombrie, 21:00, până sâmbătă, 31 octombrie, 20:00 (ora…",
+   "featured": false,
+   "section": null,
+   "joc": "Bubble Gum Simulator INFINITY",
+   "jocSlug": "bubble-gum-simulator-infinity"
+  },
+  {
+   "slug": "ps99-update-99-usa-de-la-spawn-se-deschide-sambata",
+   "title": "🔓 Pet Simulator 99 Update 99: ușa de la spawn se deschide sâmbătă",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T11:10:00+03:00",
+   "img": "img/ps99-update-99-usa-spawn.png",
+   "excerpt": "Ușa de la spawn din Pet Simulator 99, încuiată „since day one”, se deschide cu Update 99. 🔓 • 🗓️ Start: sâmbătă, 24 octombrie, ora 19:00…",
+   "featured": false,
+   "section": null,
+   "joc": "Pet Simulator 99",
+   "jocSlug": "pet-simulator-99"
   },
   {
    "slug": "shedletsky-sfoth-iv-merge-acum-in-browser",
