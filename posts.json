@@ -313,11 +313,8 @@
  {
   "titlu": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
   "img": "piggy.png",
-  "text": "Fright Night Season 9 rulează din 1 oct, 20:00 până pe 1 nov, 20:00 RO. Part II, cu recompensele finale, începe pe 17 oct la 20:00 („haunts are just beginning”). Harta Forest are look de Halloween și un secret care deblochează un efect de Survivor, între 10 oct și 8 nov.\n\nUpdate 21 oct: Piggy e în The Hollow, iar Chapter 13 are loc acolo (eventul oficial Roblox, 23 oct – 2 nov) — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html\n\n🔄 UPDATE 22 oct (ZVON): Frightful Carnival, sâmbătă 24 oct, la 20:00 (ora României) — detalii în caseta ZVON de mai jos.",
-  "eticheta": [
-   "CONFIRMAT",
-   "ZVON"
-  ],
+  "text": "Fright Night Season 9 rulează din 1 oct, 20:00 până pe 1 nov, 20:00 RO. Part II, cu recompensele finale, începe pe 17 oct la 20:00 („haunts are just beginning”). Harta Forest are look de Halloween și un secret care deblochează un efect de Survivor, între 10 oct și 8 nov.\n\nUpdate 21 oct: Piggy e în The Hollow, iar Chapter 13 are loc acolo (eventul oficial Roblox, 23 oct – 2 nov) — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html\n\n🔄 UPDATE 22 oct (CONFIRMAT): Frightful Carnival, de sâmbătă 24 oct, 20:00, până duminică 8 nov, 19:00 (ora României) — detalii în caseta CONFIRMAT de mai jos.",
+  "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/events/6880194658371240570",
    "https://www.roblox.com/events/731438655679365701",
@@ -350,20 +347,15 @@
     "game": "Piggy",
     "start": "2026-10-24T20:00:00+03:00",
     "end": "2026-11-08T19:00:00+02:00",
-    "link": "https://www.roblox.com/events/3418582994489836189",
-    "zvon_note": "ZVON: anunțat de @Piggy_News"
+    "link": "https://www.roblox.com/events/3418582994489836189"
    }
   ],
   "joc": "Piggy",
   "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
-  "zvon": [
-   "🎃 Frightful Carnival: sâmbătă, 24 oct, la 20:00 (ora României), harta Carnival primește un look nou, spooky. @Piggy_News scrie „1PM EST”, adică 13:00 ora de pe coasta de est a SUA = 20:00 la noi.",
-   "🎡 Pe lângă atracțiile înfricoșătoare („scary rides”) e ascuns un secret care îți dă un Kill Effect unic, pe timp limitat.",
-   "📅 Pagina eventului de pe Roblox (linkul din postarea @Piggy_News) arată 24 oct, 20:00 – 8 nov, 19:00 (ora României)."
-  ],
-  "zvon_surse": [
-   "https://x.com/Piggy_News/status/2112607564449878192",
-   "https://www.roblox.com/events/3418582994489836189"
+  "confirmat": "Frightful Carnival (pagina oficială a eventului pe Roblox, publicată de Piggy Dev Team): de sâmbătă, 24 oct, la 20:00, până duminică, 8 nov, la 19:00 (ora României). Harta Carnival primește un look nou, spooky, de sezon. Pe lângă atracțiile înfricoșătoare („scary rides”) e ascuns un secret care îți dă un Kill Effect unic, pe timp limitat — și asta scrie chiar pe pagina oficială. @Piggy_News a anunțat același lucru („1PM EST”, adică 13:00 pe coasta de est a SUA = 20:00 la noi).",
+  "confirmat_surse": [
+   "https://www.roblox.com/events/3418582994489836189",
+   "https://x.com/Piggy_News/status/2112607564449878192"
   ]
  },
  {
