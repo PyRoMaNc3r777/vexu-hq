@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T15:29:40+03:00",
+ "generated": "2026-10-22T15:42:37+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,27 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "zvon-roblox-pregateste-scoli-cu-item-gratis-pentru-membrii-fondatori",
+   "title": "🏫 ZVON: Roblox pregătește „Școli”, cu item gratis pentru membrii fondatori",
+   "labels": [
+    "ZVON"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T15:40:00+03:00",
+   "img": "img/a67f03dab1e0.jpg",
+   "excerpt": "Eli Cauvert, un cont mic de leak-uri Roblox, a postat un video de 75 de secunde cu un feature nou la care ar lucra Roblox: „Școli”. • 🏫…",
+   "featured": false,
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma",
    "prio": 0,
    "views": null,
    "updated": null,
