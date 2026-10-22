@@ -139,12 +139,12 @@ def rich(t):
     return ''.join(out)
 
 NAV_BLOG = ('<nav><a href="index.html">⚡ Dashboard</a><a href="blog.html">📰 Blog</a>'
-            '<a href="calendar.html">📅 Calendar Halloween</a></nav>')
+            '<a href="calendar.html">📅 Calendar Halloween</a><a href="recap.html">📊 Rezumatul săptămânii</a></nav>')
 NAV_POST = ('<nav><a href="../blog.html">← Blog</a><a href="../calendar.html">📅 Calendar</a>'
-            '<a href="../index.html">⚡ Dashboard</a></nav>')
+            '<a href="../recap.html">📊 Rezumat</a><a href="../index.html">⚡ Dashboard</a></nav>')
 
 NAV_JOC = ('<nav><a href="../blog.html">← Blog</a><a href="../calendar.html">📅 Calendar</a>'
-           '<a href="../index.html">⚡ Dashboard</a></nav>')
+           '<a href="../recap.html">📊 Rezumat</a><a href="../index.html">⚡ Dashboard</a></nav>')
 CTA = ('<div class="cta"><b>Follow = Au ce bile! 💥</b>'
        '<a href="https://www.tiktok.com/@vexu_online" target="_blank" rel="noopener">🎵 TikTok @vexu_online</a>'
        '<a class="yt" href="https://www.youtube.com/@VexuOnline" target="_blank" rel="noopener">▶️ YouTube VEXU Online</a></div>')
@@ -503,6 +503,171 @@ def build_calendar():
             f'<div class="cal" id="cal">Se încarcă…</div>')
     open(os.path.join(D, 'calendar.html'), 'w', encoding='utf-8').write(page('Calendar Halloween · VEXU HQ', body, CAL_JS))
 
+# ───────────── Rezumatul săptămânii (recap.html) ─────────────
+# Generat la build din posts.json (știrile din ultimele 7 zile, ora României), iar în browser se recalculează
+# din posts-index.json + player-history.json + data.json (ultimele date scrise de GitHub Action), deci e mereu la zi.
+# Doar date reale: zilele fără măsurători apar „fără date”, nimic nu se completează.
+RECAP_DAYS = 7
+RECAP_MAX_CONF = 10
+RECAP_MAX_OTHER = 6
+
+def recap_skip(p):
+    """Fără conținut Steal An Egg PART 2 în rezumat (regulă VEXU)."""
+    if (p.get('jocSlug') or '') != 'steal-an-egg':
+        return False
+    blob = (p.get('title', '') + ' ' + p.get('slug', '') + ' ' + (p.get('excerpt') or '')).lower()
+    return bool(re.search(r'part[\s-]*(2|ii)\b', blob))
+
+def recap_pick(items, keys):
+    wk = [x for x in items if x['published'][:10] and datetime.fromisoformat(x['published']).astimezone(TZ).date().isoformat() in keys and not recap_skip(x)]
+    wk.sort(key=lambda x: x['published'], reverse=True)
+    conf = [x for x in wk if 'CONFIRMAT' in x['labels']][:RECAP_MAX_CONF]
+    other = [x for x in wk if 'CONFIRMAT' not in x['labels'] and 'ZVON' in x['labels']][:RECAP_MAX_OTHER]
+    return wk, conf, other
+
+def recap_row(x):
+    lab = ' '.join(f'<span class="l {cls(l)}">{e(l)}</span>' for l in x['labels'])
+    d = datetime.fromisoformat(x['published']).astimezone(TZ)
+    return (f'<a class="rn" href="posts/{e(x["slug"])}.html">{lab}<b>{e(x["title"])}</b>'
+            f'<i>{"🎮 " + e(x["joc"]) + " · " if x.get("joc") else ""}{d.day} {LUNI[d.month-1][:3]}, {d:%H:%M}</i></a>')
+
+RECAP_CSS = ('.rc{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;padding:14px;margin:14px 0;box-shadow:0 0 18px #ff2bd622}'
+ '.rc h2{margin:0 0 10px;color:#ff7be6;font-size:1.15em}.rsub{text-align:center;color:#9a8fb5;font-size:.9em;margin:4px 0 10px}'
+ '.rn{display:block;padding:10px 0;border-top:1px solid #ffffff12;color:inherit;text-decoration:none}.rn:first-of-type{border-top:0}.rn b{display:block;margin:5px 0 3px;line-height:1.35}'
+ '.rn i{font-style:normal;color:#9a8fb5;font-size:.8em}.rn:hover b{color:#00f0ff}.rnum{display:flex;flex-wrap:wrap;gap:8px}.rnum div{flex:1 1 90px;background:#000a;border:1px solid #00f0ff55;border-radius:12px;padding:8px;text-align:center}'
+ '.rnum b{display:block;font-size:1.4em;color:#00f0ff}.rnum span{font-size:.75em;color:#9a8fb5}#rchart svg{width:100%;height:auto;display:block}#rchart text{fill:#bdb3d6;font:12px system-ui,sans-serif}'
+ '.rmeta{color:#9a8fb5;font-size:.82em;margin-top:8px;line-height:1.45}.rcard{display:flex;flex-direction:column;align-items:center;gap:10px}'
+ '.rcard img{width:min(100%,300px);aspect-ratio:9/16;border-radius:14px;border:1px solid #ff2bd666;box-shadow:0 0 24px #ff2bd644;background:#07040f}'
+ '.rcard .btn{margin:4px 0;font-weight:800}@media(min-width:900px){.rgrid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:start}.rgrid .rc{margin:0 0 16px}}')
+
+RECAP_JS = r"""<script>
+(()=>{const TZ='Europe/Bucharest',DAYS=7,MAXC=10,MAXO=6;
+const es=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const cls=l=>l.replace(/[^A-Za-z0-9]+/g,'-');
+const dk=d=>new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(d);
+const hm=d=>new Intl.DateTimeFormat('ro-RO',{timeZone:TZ,hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(d);
+const nf=n=>new Intl.NumberFormat('ro-RO').format(n);
+const cmp=n=>n>=1e6?(n/1e6).toFixed(2).replace('.',',')+'M':n>=1e4?Math.round(n/1e3)+'K':nf(n);
+const LUN=['ian','feb','mar','apr','mai','iun','iul','aug','sep','oct','nov','dec'],LUNL=['ianuarie','februarie','martie','aprilie','mai','iunie','iulie','august','septembrie','octombrie','noiembrie','decembrie'];
+const WD=['dum','lun','mar','mie','joi','vin','sâm'];
+const kd=k=>{const[y,m,d]=k.split('-').map(Number);return{y,m,d,w:new Date(Date.UTC(y,m-1,d,12)).getUTCDay()}};
+function keys(){const t=kd(dk(new Date()));const a=[];for(let i=DAYS-1;i>=0;i--)a.push(new Date(Date.UTC(t.y,t.m-1,t.d-i,12)).toISOString().slice(0,10));return a}
+const skip=p=>p.jocSlug==='steal-an-egg'&&/part[\s-]*(2|ii)\b/i.test((p.title||'')+' '+(p.slug||'')+' '+(p.excerpt||''));
+const plain=s=>String(s).replace(/[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\uFE0F\u200D]/gu,'').replace(/\s+/g,' ').trim();
+let K=keys(),WK=[],CONF=[],OTH=[],PH=null,DATA=null;
+function rangeTxt(){const a=kd(K[0]),b=kd(K[K.length-1]);return a.m===b.m?`${a.d} – ${b.d} ${LUNL[b.m-1]} ${b.y}`:`${a.d} ${LUNL[a.m-1]} – ${b.d} ${LUNL[b.m-1]} ${b.y}`}
+function row(p){const d=new Date(p.published);return `<a class="rn" href="posts/${es(p.slug)}.html">${(p.labels||[]).map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')}<b>${es(p.title)}</b><i>${p.joc?'🎮 '+es(p.joc)+' · ':''}${kd(dk(d)).d} ${LUN[kd(dk(d)).m-1]}, ${hm(d)}</i></a>`}
+function news(ix){K=keys();const ks=new Set(K);
+  WK=(ix.posts||[]).filter(p=>p.published&&ks.has(dk(new Date(p.published)))&&!skip(p)).sort((a,b)=>new Date(b.published)-new Date(a.published));
+  CONF=WK.filter(p=>(p.labels||[]).includes('CONFIRMAT')).slice(0,MAXC);OTH=WK.filter(p=>!(p.labels||[]).includes('CONFIRMAT')&&(p.labels||[]).includes('ZVON')).slice(0,MAXO);
+  document.getElementById('rrange').textContent=rangeTxt();
+  document.getElementById('rconf').innerHTML=CONF.length?CONF.map(row).join(''):'<div class="rmeta">Nicio știre CONFIRMAT în ultimele 7 zile.</div>';
+  document.getElementById('roth').innerHTML=OTH.length?OTH.map(row).join(''):'<div class="rmeta">Niciun zvon în ultimele 7 zile.</div>';
+  const c=l=>WK.filter(p=>(p.labels||[]).includes(l)).length;
+  document.getElementById('rnum').innerHTML=[[WK.length,'postări'],[c('CONFIRMAT'),'CONFIRMAT'],[c('ZVON'),'ZVON'],[c('TREND SHORTS'),'TREND SHORTS'],[c('VEXU LIVE'),'VEXU LIVE']].map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join('')}
+function peaks(){const ds=(PH&&PH.days)||{};return K.map(k=>({k,v:ds[k]&&typeof ds[k].peak==='number'?ds[k]:null}))}
+function manual(){const ks=new Set(K);return ((PH&&PH.manual)||[]).filter(m=>typeof m.p==='number'&&m.t&&ks.has(dk(new Date(m.t))))}
+function chart(){const el=document.getElementById('rchart'),meta=document.getElementById('rcmeta');if(!PH){el.innerHTML='<div class="rmeta">Nu pot încărca istoricul de jucători acum.</div>';return}
+  const P=peaks(),have=P.filter(x=>x.v);if(!have.length){el.innerHTML='<div class="rmeta">Încă nu avem măsurători în ultimele 7 zile.</div>';meta.textContent='';return}
+  const W=700,H=270,L=10,R=10,T=34,B=46,bw=(W-L-R)/P.length,mx=Math.max(...have.map(x=>x.v.peak))*1.08;let g='';
+  P.forEach((x,i)=>{const cx=L+bw*i+bw/2,w=bw*.62,d=kd(x.k),lab=x.k===K[K.length-1]?`azi (${d.d})`:`${WD[d.w]} ${d.d}`;
+    if(x.v){const h=(H-T-B)*x.v.peak/mx,y=H-B-h;g+=`<rect x="${(cx-w/2).toFixed(1)}" y="${y.toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="8" fill="url(#rg)"/><text x="${cx}" y="${(y-8).toFixed(1)}" text-anchor="middle" style="fill:#fff;font-weight:700">${cmp(x.v.peak)}</text>`}
+    else{g+=`<rect x="${(cx-w/2).toFixed(1)}" y="${T+40}" width="${w.toFixed(1)}" height="${H-B-T-40}" rx="8" fill="none" stroke="#ffffff33" stroke-dasharray="5 5"/><text x="${cx}" y="${(H-B-12)}" text-anchor="middle" style="fill:#9a8fb5;font-size:11px">fără date</text>`}
+    g+=`<text x="${cx}" y="${H-B+20}" text-anchor="middle">${lab}</text><text x="${cx}" y="${H-B+36}" text-anchor="middle" style="fill:#7d7399;font-size:10px">${x.v?x.v.n+' măs.':''}</text>`});
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Steal An Egg: vârful zilnic de jucători în ultimele 7 zile"><defs><linearGradient id="rg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00f0ff"/><stop offset="1" stop-color="#ff2bd6"/></linearGradient></defs>${g}</svg>`;
+  const best=have.reduce((a,x)=>x.v.peak>a.v.peak?x:a),m=manual();let t=`⬆️ Cel mai mare vârf măsurat: ${nf(best.v.peak)} jucători (${WD[kd(best.k).w]} ${kd(best.k).d} ${LUN[kd(best.k).m-1]}, ${hm(new Date(best.v.t))}). `;
+  t+=`Date din ${have.length} din ${P.length} zile`+(have.length<P.length?' (zilele fără măsurători apar „fără date”)':'')+'. ';
+  m.forEach(x=>{t+=`📌 Citire manuală: ${nf(x.p)} pe ${kd(dk(new Date(x.t))).d} ${LUN[kd(dk(new Date(x.t))).m-1]}, ${hm(new Date(x.t))}${x.note?' ('+x.note+')':''}. `});
+  if(DATA&&DATA.game&&typeof DATA.game.playing==='number')t+=`🟢 Ultima citire: ${nf(DATA.game.playing)} jucători (${hm(new Date(DATA.game.fetched||DATA.updated))}).`;
+  meta.textContent=t}
+// ── card 9:16 (1080×1920), desenat local în canvas ──
+function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
+function wrap(c,t,maxW,maxL){const w=t.split(' '),out=[];let cur='';for(const x of w){const n=cur?cur+' '+x:x;if(c.measureText(n).width>maxW&&cur){out.push(cur);cur=x}else cur=n}if(cur)out.push(cur);if(out.length>maxL){out.length=maxL;let l=out[maxL-1];while(c.measureText(l+'…').width>maxW&&l.length)l=l.slice(0,-1);out[maxL-1]=l.replace(/\s+\S*$/,'')+'…'}return out}
+const F='system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif';
+function card(){const cv=document.createElement('canvas');cv.width=1080;cv.height=1920;const c=cv.getContext('2d');
+  c.fillStyle='#07040f';c.fillRect(0,0,1080,1920);
+  let g=c.createRadialGradient(200,0,0,200,0,1100);g.addColorStop(0,'#3b0a5c');g.addColorStop(1,'#3b0a5c00');c.fillStyle=g;c.fillRect(0,0,1080,1920);
+  g=c.createRadialGradient(1080,1920,0,1080,1920,1100);g.addColorStop(0,'#002f3d');g.addColorStop(1,'#002f3d00');c.fillStyle=g;c.fillRect(0,0,1080,1920);
+  g=c.createLinearGradient(0,1700,0,1920);g.addColorStop(0,'#ff7a0000');g.addColorStop(1,'#ff7a0022');c.fillStyle=g;c.fillRect(0,1700,1080,220);
+  c.textAlign='center';c.textBaseline='alphabetic';
+  g=c.createLinearGradient(240,0,840,0);g.addColorStop(0,'#ff2bd6');g.addColorStop(.5,'#00f0ff');g.addColorStop(1,'#ff7a00');
+  c.font=`900 120px ${F}`;c.fillStyle=g;c.shadowColor='#ff2bd6';c.shadowBlur=30;c.fillText('VEXU HQ',540,180);c.shadowBlur=0;
+  c.font=`800 64px ${F}`;c.fillStyle='#fff';c.fillText('REZUMATUL SĂPTĂMÂNII',540,280);
+  c.font=`600 40px ${F}`;c.fillStyle='#9a8fb5';c.fillText('🎃 '+rangeTxt()+' 🎃',540,345);
+  // top știri
+  c.textAlign='left';c.font=`800 38px ${F}`;c.fillStyle='#39ff88';c.fillText('TOP ȘTIRI CONFIRMAT',70,412);
+  let y=436;const top=CONF.slice(0,5),LIM=1228;
+  if(!top.length){c.font=`600 36px ${F}`;c.fillStyle='#9a8fb5';c.fillText('Nicio știre CONFIRMAT săptămâna asta.',70,y+50)}
+  for(let i=0;i<top.length;i++){const p=top[i];c.font=`700 32px ${F}`;const ls=wrap(c,plain(p.title),850,2),h=30+ls.length*40+(p.joc?34:0);
+    if(y+h>LIM)break;
+    rr(c,60,y,960,h,24);c.fillStyle='#120a22e6';c.fill();c.strokeStyle='#ff2bd666';c.lineWidth=3;c.stroke();
+    c.fillStyle='#ff2bd6';c.font=`900 38px ${F}`;c.fillText(String(i+1),88,y+54);
+    c.fillStyle='#fff';c.font=`700 32px ${F}`;ls.forEach((l,j)=>c.fillText(l,135,y+50+j*40));
+    if(p.joc){c.font=`600 27px ${F}`;c.fillStyle='#ffb066';c.fillText(plain(p.joc),135,y+50+ls.length*40-2)}
+    y+=h+10}
+  // grafic Steal An Egg (doar zilele cu măsurători reale; restul „fără date”)
+  const P=peaks(),have=P.filter(x=>x.v);y=1268;
+  c.font=`800 36px ${F}`;c.fillStyle='#00f0ff';c.fillText('STEAL AN EGG · VÂRF ZILNIC DE JUCĂTORI',70,y);
+  const top0=y+24,ch=230;rr(c,60,top0,960,ch+66,24);c.fillStyle='#000a';c.fill();c.strokeStyle='#00f0ff55';c.lineWidth=3;c.stroke();
+  const base=top0+ch-6;
+  if(have.length){const mx=Math.max(...have.map(x=>x.v.peak)),bw=900/P.length,bh=ch-70;
+    const bg=c.createLinearGradient(0,base-bh,0,base);bg.addColorStop(0,'#00f0ff');bg.addColorStop(1,'#ff2bd6');
+    P.forEach((x,i)=>{const cx=90+bw*i+bw/2,w=bw*.6,d=kd(x.k);c.textAlign='center';
+      if(x.v){const h=Math.max(6,bh*x.v.peak/mx),by=base-h;rr(c,cx-w/2,by,w,h,10);c.fillStyle=bg;c.fill();c.fillStyle='#fff';c.font=`800 27px ${F}`;c.fillText(cmp(x.v.peak),cx,by-10)}
+      else{c.setLineDash([8,8]);rr(c,cx-w/2,base-bh*.55,w,bh*.55,10);c.strokeStyle='#ffffff44';c.lineWidth=2;c.stroke();c.setLineDash([]);c.fillStyle='#9a8fb5';c.font=`600 21px ${F}`;c.fillText('fără',cx,base-bh*.55+36);c.fillText('date',cx,base-bh*.55+60)}
+      c.fillStyle='#bdb3d6';c.font=`600 25px ${F}`;c.fillText(x.k===K[K.length-1]?'azi':`${WD[d.w]} ${d.d}`,cx,base+40)});c.textAlign='left'}
+  else{c.textAlign='center';c.font=`600 32px ${F}`;c.fillStyle='#9a8fb5';c.fillText('Încă nu avem măsurători săptămâna asta.',540,top0+ch/2);c.textAlign='left'}
+  c.font=`500 23px ${F}`;c.fillStyle='#7d7399';c.fillText('Vârful măsurat de VEXU HQ din API-ul Roblox (ora României).',70,top0+ch+104);
+  // CTA
+  c.textAlign='center';c.font=`900 58px ${F}`;c.fillStyle='#ff7be6';c.shadowColor='#ff2bd6';c.shadowBlur=24;c.fillText('Follow = Au ce bile! 💥',540,1700);c.shadowBlur=0;
+  rr(c,90,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#00f0ff';c.lineWidth=4;c.stroke();
+  rr(c,560,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#ff3b3b';c.stroke();
+  c.font=`800 34px ${F}`;c.fillStyle='#00f0ff';c.fillText('TikTok @vexu_online',305,1796);c.fillStyle='#ff7070';c.fillText('YouTube VEXU Online',775,1796);
+  c.font=`600 24px ${F}`;c.fillStyle='#9a8fb5';c.fillText('pyromanc3r777.github.io/vexu-hq',540,1885);
+  return cv}
+let URLC=null;
+function paintCard(){const cv=card();cv.toBlob(b=>{if(!b)return;if(URLC)URL.revokeObjectURL(URLC);URLC=URL.createObjectURL(b);const im=document.getElementById('rcimg');im.src=URLC;
+  const a=document.getElementById('rcdl');a.href=URLC;a.download=`vexu-rezumat-${K[K.length-1]}.png`;a.removeAttribute('aria-disabled')},'image/png')}
+function all(){chart();paintCard()}
+const j=u=>fetch(u+'?'+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).catch(()=>null);
+function load(){Promise.all([j('posts-index.json'),j('player-history.json'),j('data.json')]).then(([ix,ph,d])=>{if(ix)news(ix);PH=ph;DATA=d;all()})}
+const go=()=>{load();setInterval(load,300000)};(document.fonts&&document.fonts.ready?document.fonts.ready:Promise.resolve()).then(go);
+})();
+</script>"""
+
+def build_recap(index_items):
+    now = now_ro()
+    t = now.date()
+    from datetime import timedelta
+    keys = [(t - timedelta(days=i)).isoformat() for i in range(RECAP_DAYS - 1, -1, -1)]
+    wk, conf, other = recap_pick(index_items, set(keys))
+    a, b = date_from(keys[0]), date_from(keys[-1])
+    rng = (f'{a.day} – {b.day} {LUNI[b.month-1]} {b.year}' if a.month == b.month
+           else f'{a.day} {LUNI[a.month-1]} – {b.day} {LUNI[b.month-1]} {b.year}')
+    cnt = lambda l: sum(1 for x in wk if l in x['labels'])
+    nums = ''.join(f'<div><b>{n}</b><span>{l}</span></div>' for n, l in [(len(wk), 'postări'), (cnt('CONFIRMAT'), 'CONFIRMAT'), (cnt('ZVON'), 'ZVON'), (cnt('TREND SHORTS'), 'TREND SHORTS'), (cnt('VEXU LIVE'), 'VEXU LIVE')])
+    body = (f'<h1>📊 Rezumatul săptămânii</h1>{NAV_BLOG}'
+            f'<p class="rsub">Ultimele 7 zile · <span id="rrange">{rng}</span> · ora României · se actualizează singur</p>'
+            f'<div class="rc"><h2>📈 Săptămâna în cifre</h2><div class="rnum" id="rnum">{nums}</div></div>'
+            f'<div class="rgrid"><div>'
+            f'<div class="rc"><h2>✅ Top știri CONFIRMAT</h2><div id="rconf">{"".join(recap_row(x) for x in conf) or "<div class=rmeta>Nicio știre CONFIRMAT în ultimele 7 zile.</div>"}</div></div>'
+            f'<div class="rc"><h2>⚠️ Zvonuri de urmărit</h2><div id="roth">{"".join(recap_row(x) for x in other) or "<div class=rmeta>Niciun zvon în ultimele 7 zile.</div>"}</div></div>'
+            f'</div><div>'
+            f'<div class="rc"><h2>🥚 Steal An Egg · vârful zilnic de jucători</h2><div id="rchart"><div class="rmeta">Se încarcă graficul…</div></div>'
+            f'<div class="rmeta" id="rcmeta"></div><div class="rmeta">📏 Măsurat de noi din API-ul Roblox (GitHub Action, de obicei la câteva ore). Vârful zilei e cel mai mare număr pe care l-am prins noi, nu neapărat vârful real. Momentan urmărim doar Steal An Egg.</div></div>'
+            f'<div class="rc"><h2>📱 Card 9:16 pentru TikTok / Shorts</h2><div class="rcard"><img id="rcimg" alt="Previzualizare card 9:16 cu rezumatul săptămânii VEXU HQ" width="1080" height="1920">'
+            f'<a class="btn" id="rcdl" href="#" aria-disabled="true">⬇️ Descarcă PNG (1080×1920)</a><div class="rmeta" style="text-align:center">Cardul se generează pe telefonul tău, din datele de mai sus.</div></div></div>'
+            f'</div></div>'
+            f'<div style="text-align:center"><a class="btn" href="blog.html">📰 Toate știrile</a></div>{CTA}'
+            '<noscript><p style="text-align:center;color:#9a8fb5">Activează JavaScript pentru grafic și cardul 9:16.</p></noscript>')
+    html_ = page('Rezumatul săptămânii · VEXU HQ', body, RECAP_JS).replace('</style>', RECAP_CSS + '\n</style>', 1)
+    open(os.path.join(D, 'recap.html'), 'w', encoding='utf-8').write(html_)
+    print(f'recap.html: {len(wk)} postări în {keys[0]}…{keys[-1]} ({len(conf)} CONFIRMAT afișate)')
+
+def date_from(k):
+    from datetime import date
+    return date.fromisoformat(k)
+
 def append_batch(path):
     batch = json.load(open(path, encoding='utf-8'))
     if isinstance(batch, dict):
@@ -552,11 +717,12 @@ def main():
             json.dump(posts, f, ensure_ascii=False, indent=1)
             f.write('\n')
         print('Auto-filled published/date on some posts')
-    build_post_pages(posts)
+    index_items = build_post_pages(posts)
     build_game_pages(posts)
     build_blog()
     build_calendar()
-    print('blog.html / calendar.html / posts-index.json / calendar-events.json OK')
+    build_recap(index_items)
+    print('recap.html / blog.html / calendar.html / posts-index.json / calendar-events.json OK')
 
 if __name__ == '__main__':
     main()

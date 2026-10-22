@@ -1,10 +1,10 @@
 // VEXU HQ service worker
 // HTML + JSON: NETWORK-FIRST (online vezi mereu ultimul deploy/date), fallback la cache offline.
 // Imagini/CSS/icon-uri: CACHE-FIRST. Mărește VERSION când schimbi imagini cu același nume.
-const VERSION = 'v2-2026-10-19';
+const VERSION = 'v3-2026-10-22';
 const CACHE = 'vexu-hq-' + VERSION;
 const BASE = '/vexu-hq/';
-const CORE = ['', 'index.html', 'blog.html', 'calendar.html', 'data.json', 'extra.json', 'posts.json',
+const CORE = ['', 'index.html', 'blog.html', 'calendar.html', 'recap.html', 'data.json', 'extra.json', 'posts.json',
   'posts-index.json', 'posts-search.json', 'calendar-events.json', 'player-history.json', 'history.json',
   'manifest.webmanifest', 'icon.png', 'icon-192.png', 'icon-512.png'].map(p => BASE + p);
 

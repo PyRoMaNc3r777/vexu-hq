@@ -62,3 +62,10 @@ Hash linkabile: `blog.html#f=confirmat`, `#f=zvon`, `#f=trend-shorts`, `#f=vexu-
 ## Istoric jucători (dashboard)
 
 `fetch_data.py` (rulat de `.github/workflows/refresh-data.yml` la ~10 min) adaugă în `history.json` câte un punct real per rulare, doar când API-ul Roblox a răspuns: `{"t":"<ISO UTC>","p":<jucători>,"v":<vizite>}`. Punctele mai vechi de 48h se șterg automat; fișierul e JSON compact. Dashboard-ul desenează ultimele 24h (SVG inline, ora României); cu mai puțin de 3 puncte afișează „Se adună date…”. Fiecare măsurătoare reală e marcată cu punct; golurile de peste 5h nu se unesc cu linie. Notă: GitHub rulează cron-ul de 10 min cu întârzieri mari (de obicei la 2–4h), deci istoricul poate fi rar.
+
+## Rezumatul săptămânii (`recap.html`)
+
+Generat de `build_posts.py` (la fiecare rebuild) și recalculat în browser la fiecare deschidere (și la 5 min) din `posts-index.json`, `player-history.json` și `data.json` — fișierele pe care GitHub Action-ul le reîmprospătează, deci pagina e mereu la zi fără pas separat.
+- Știrile din ultimele 7 zile (ora României): CONFIRMAT primele (max 10), apoi ZVON (max 6), cu link la postare. Fără conținut Steal An Egg PART 2.
+- Graficul (SVG, fără librării): vârful zilnic Steal An Egg măsurat de noi; zilele fără măsurători apar „fără date”, nu se completează nimic.
+- Cardul 9:16 (1080×1920 PNG) se desenează local în canvas, cu CTA TikTok @vexu_online + YouTube VEXU Online, și se descarcă din pagină.
