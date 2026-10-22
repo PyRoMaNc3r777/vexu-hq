@@ -1,0 +1,10 @@
+{
+ "_info": "Override-uri DOAR pentru Rezumatul săptămânii (recap.html + cardul 9:16), cheie = slug-ul exact al postării. Nu schimbă postarea, slug-ul sau pagina ei. Câmpuri: allow (true = trece de filtrul SAE PART 2 / republish, doar pentru acest slug), prio (importanță în Top), title (titlul afișat în rezumat), until (ISO cu offset RO; după acest moment se afișează title_after, sau postarea dispare dacă title_after lipsește), title_after.",
+ "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct": {
+  "allow": true,
+  "prio": 90,
+  "title": "Halloween Dimension e LIVE în Steal An Egg – se termină sâmbătă ~17:00",
+  "until": "2026-10-24T17:00:00+03:00",
+  "title_after": "Halloween Dimension s-a încheiat în Steal An Egg"
+ }
+}

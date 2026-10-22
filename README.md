@@ -72,5 +72,11 @@ Hash linkabile: `blog.html#f=confirmat`, `#f=zvon`, `#f=trend-shorts`, `#f=vexu-
 Generat de `build_posts.py` (la fiecare rebuild) și recalculat în browser la fiecare deschidere (și la 5 min) din `posts-index.json`, `player-history.json` și `data.json` — fișierele pe care GitHub Action-ul le reîmprospătează, deci pagina e mereu la zi fără pas separat.
 - **Top știri** (max 10 pe pagină, primele 5 pe card): doar CONFIRMAT/ZVON, ordonate după `prio` ↓, apoi `views` reale ↓ (doar dacă există), apoi CONFIRMAT peste ZVON, apoi cele mai noi. Maxim 1 postare per `joc`. Eligibile: publicate în ultimele 7 zile (ora României) sau cu `prio` + `updated` în ultimele 7 zile. Apoi „Zvonuri de urmărit” (max 6 ZVON rămase).
 - Niciodată în rezumat: conținut Steal An Egg PART 2 și republicări SAE (`republish: true` sau Throwback).
+- **`recap-overrides.json`** — excepții DOAR pentru Rezumat (pagina + cardul 9:16), cheie = slug-ul exact al postării (nu cuvinte cheie); postarea, slug-ul și pagina ei rămân neschimbate:
+  - `allow: true` — trece de filtrul SAE PART 2 / republish, doar pentru acel slug (orice altă postare PART 2, inclusiv una nouă, rămâne filtrată)
+  - `prio` — importanța în Top (se ia maximul dintre `prio` din posts.json și cel de aici)
+  - `title` — titlul afișat în Rezumat și pe card
+  - `until` + `title_after` — după `until` (ISO cu offset RO) se afișează `title_after`, calculat în browser; fără `title_after`, postarea dispare din Rezumat
+  - Acum: „Halloween Dimension e LIVE în Steal An Egg – se termină sâmbătă ~17:00” (prio 90) → după 24 oct 2026, 17:00 RO: „Halloween Dimension s-a încheiat în Steal An Egg”
 - Graficul (SVG, fără librării): vârful zilnic Steal An Egg măsurat de noi; zilele fără măsurători apar „fără date”, nu se completează nimic.
 - Cardul 9:16 (1080×1920 PNG) se desenează local în canvas, cu CTA TikTok @vexu_online + YouTube VEXU Online, și se descarcă din pagină.
