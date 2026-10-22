@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T16:28:29+03:00",
+ "generated": "2026-10-22T16:46:42+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,27 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "you-have-to-call-dibs-regula-lumii-basm-3-75m",
+   "title": "🙋 „You Have To Call DIBS...”: o regulă a lumii povestită ca un basm, ~3,75M în 15 ore",
+   "labels": [
+    "TREND SHORTS"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T16:45:00+03:00",
+   "img": "img/yt-Txe_Pb3tgoU.jpg",
+   "excerpt": "playit are un short Roblox, „You Have To Call DIBS...”, de 144 de secunde, cu ~3,75M vizualizări în ~15 ore și ~75K pe oră (citite de…",
+   "featured": false,
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
    "updated": null,
