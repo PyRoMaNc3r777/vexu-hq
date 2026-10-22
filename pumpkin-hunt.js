@@ -41,6 +41,8 @@
     '@keyframes phw{0%,86%,100%{transform:rotate(0)}90%{transform:rotate(-14deg)}95%{transform:rotate(12deg)}}@keyframes php{to{transform:scale(2.2);opacity:0}}' +
     '.ph-bd{position:fixed;left:12px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:19;padding:5px 10px;border-radius:999px;border:1px solid #ff7a0099;background:#1a0b05e0;color:#ffb066;font:700 12px/1.2 system-ui,sans-serif;cursor:pointer;box-shadow:0 0 10px #ff7a0044;opacity:.88}' +
     '.ph-bd:hover{opacity:1}.ph-bd.all{border-color:#ff2bd6;color:#ffd1f5}' +
+    /* telefon: insigna nu mai plutește peste carduri; stă discret la finalul paginii (în flux), sub CTA, departe de butonul 🎃 „Înapoi sus” */
+    '@media(max-width:600px){.ph-bd{position:relative;left:auto;bottom:auto;display:block;width:max-content;margin:4px auto calc(72px + env(safe-area-inset-bottom));padding:4px 9px;font-size:11px;opacity:.8}.ph-pn{bottom:calc(16px + env(safe-area-inset-bottom))}}' +
     '.ph-ts{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top));z-index:40;transform:translate(-50%,-20px);opacity:0;padding:9px 16px;border-radius:12px;border:1px solid #ff7a00;background:#1a0b05f2;color:#ffd9b0;font:700 14px/1.3 system-ui,sans-serif;box-shadow:0 0 18px #ff7a0066;pointer-events:none;transition:opacity .25s,transform .25s;max-width:calc(100vw - 32px);text-align:center}' +
     '.ph-ts.on{opacity:1;transform:translate(-50%,0)}' +
     '.ph-pn{position:fixed;left:12px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:39;width:min(320px,calc(100vw - 24px));max-height:70vh;overflow:auto;padding:12px 14px;border-radius:14px;border:1px solid #ff7a00;background:#120818f5;color:#e9e2ff;font:14px/1.45 system-ui,sans-serif;box-shadow:0 0 24px #ff7a0055}' +
