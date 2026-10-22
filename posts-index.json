@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T11:28:54+03:00",
+ "generated": "2026-10-22T12:38:06+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,27 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "throwback-steal-an-egg-cu-vexu-si-ale",
+   "title": "⏪ Throwback: „Steal an egg cu vexu si ale” 🥚",
+   "labels": [
+    "VEXU LIVE"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T12:38:05+03:00",
+   "img": "img/vod-GUPp6UiLH_A.jpg",
+   "excerpt": "Throwback cu Vexu & Ale! Revezi VOD-ul „Steal an egg cu vexu si ale”, de pe canalul VEXU Online:…",
+   "featured": false,
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
    "updated": null,
