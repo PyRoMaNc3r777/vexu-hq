@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T14:21:37+03:00",
+ "generated": "2026-10-22T14:28:17+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -18,6 +18,26 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "GEAR 5",
+   "game": "Anime Ability Arena",
+   "start": "2026-10-23T20:00:00+03:00",
+   "end": "2026-10-26T19:00:00+02:00",
+   "link": "https://www.roblox.com/events/4117389665160528497",
+   "slug": "anime-ability-arena-gear-5-23-octombrie",
+   "img": "img/de072ee08693.png",
+   "post_title": "⚔️ Anime Ability Arena: GEAR 5, personaj variantă nou, din 23 oct"
+  },
+  {
+   "name": "World 9 + Admin Abuse",
+   "game": "Throw a Coin",
+   "start": "2026-10-25T17:00:00+02:00",
+   "end": "2026-11-01T17:00:00+02:00",
+   "link": "https://www.roblox.com/events/3027112947324420710",
+   "slug": "throw-a-coin-world-9-admin-abuse-25-octombrie",
+   "img": "img/c24b1e91d5e3.png",
+   "post_title": "🪙 Throw a Coin: World 9 + Admin Abuse, duminică 25 oct"
   },
   {
    "name": "Halloween Event Week 3",
@@ -468,6 +488,26 @@
    "game": "Dead Rails",
    "start": "2026-10-20T23:00:00+03:00",
    "end": "2026-11-07T23:00:00+02:00",
+   "slug": "dead-rails-dead-of-night-pe-17-octombrie",
+   "img": "game-dead-rails.png",
+   "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie"
+  },
+  {
+   "name": "Dead of Night: Act 2",
+   "game": "Dead Rails",
+   "start": "2026-10-24T19:00:00+03:00",
+   "end": "2026-10-27T18:00:00+02:00",
+   "link": "https://www.roblox.com/events/7269102869591229025",
+   "slug": "dead-rails-dead-of-night-pe-17-octombrie",
+   "img": "game-dead-rails.png",
+   "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie"
+  },
+  {
+   "name": "Dead of Night: Act 3",
+   "game": "Dead Rails",
+   "start": "2026-10-31T22:00:00+02:00",
+   "end": "2026-11-07T23:00:00+02:00",
+   "link": "https://www.roblox.com/events/4197183844253827708",
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
    "img": "game-dead-rails.png",
    "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie"
