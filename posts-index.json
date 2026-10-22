@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-22T14:08:26+03:00",
+ "generated": "2026-10-22T14:21:37+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -11,7 +11,7 @@
    "dateRo": "18 octombrie 2026",
    "published": "2026-10-18T07:14:54+03:00",
    "img": "img/steal-an-egg-halloween-part-2.png",
-   "excerpt": "⚡ UPDATE (19 oct, Terra): planul pentru PART 2 rămâne valabil. Portalul sigilat de lângă porțile Abandoned Manor se deschide sâmbătă, 24…",
+   "excerpt": "⏳ UPDATE 22 oct: Ultimele 48 de ore! Halloween Dimension se închide sâmbătă, 24 oct, pe la 17:00 (ora României), deci mai ai cam două zile…",
    "featured": true,
    "section": null,
    "joc": "Steal An Egg",
@@ -64,6 +64,48 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "vexu-isi-cere-scuze",
+   "title": "Vexu își cere scuze?! 😳",
+   "labels": [
+    "VEXU LIVE"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T14:21:36+03:00",
+   "img": "img/vexu-scuze-gjGo9g79GrM.jpg",
+   "excerpt": "Vexu are un Short pe canalul VEXU Online cu titlul „Vreau sa imi cer scuze pentru Roblox, Steal an egg” 😳 L-a publicat miercuri, 21…",
+   "featured": false,
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "stiri-roblox-meteorit-spre-pamant",
+   "title": "Știri Roblox — meteorit spre pământ ☄️",
+   "labels": [
+    "VEXU LIVE"
+   ],
+   "date": "2026-10-22",
+   "dateRo": "22 octombrie 2026",
+   "published": "2026-10-22T14:21:36+03:00",
+   "img": "img/vexu-stiri-roblox-meteorit-8ZZRQIaDizg.jpg",
+   "excerpt": "⏪ Rewind: Short-ul VEXU Online „Meteorit spre pământ, Știri Roblox 😱”, publicat vineri, 9 octombrie, pe la 18:54 (ora României). ☄️ În…",
+   "featured": false,
+   "section": null,
+   "joc": null,
+   "jocSlug": null,
    "prio": 0,
    "views": null,
    "updated": null,
