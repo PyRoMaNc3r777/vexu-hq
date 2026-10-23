@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T08:45:12+03:00",
+ "generated": "2026-10-23T09:39:48+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -18,6 +18,46 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Mourning Manor (prebuilt nou)",
+   "game": "Bloxburg",
+   "start": "2026-10-22T15:00:00+03:00",
+   "end": "2026-10-29T14:55:00+02:00",
+   "link": "https://www.roblox.com/events/1351180538450412305",
+   "slug": "bloxburg-prebuilt-mourning-manor-live-pana-pe-29-oct",
+   "img": "img/11a571009729.png",
+   "post_title": "🏚️ Bloxburg: prebuilt-ul „Mourning Manor” e LIVE până pe 29 oct"
+  },
+  {
+   "name": "LIMITED TIME ZOMBIES!",
+   "game": "Hypershot",
+   "start": "2026-10-24T03:00:00+03:00",
+   "end": "2026-11-17T05:10:00+02:00",
+   "link": "https://www.roblox.com/events/1236553009509565041",
+   "slug": "hypershot-mod-zombi-timp-limitat-din-24-oct",
+   "img": "img/3a0df600757c.png",
+   "post_title": "🧟 Hypershot: mod cu zombi pentru timp limitat, din 24 oct"
+  },
+  {
+   "name": "Halloween Pt. 2 + Update",
+   "game": "Anime Dice",
+   "start": "2026-10-25T21:00:00+02:00",
+   "end": "2026-10-28T21:00:00+02:00",
+   "link": "https://www.roblox.com/events/8107686322950505040",
+   "slug": "anime-dice-halloween-pt-2-update-25-oct",
+   "img": "img/9ba9b2778c36.png",
+   "post_title": "🎃 Anime Dice: Halloween Pt. 2 + update, duminică 25 oct"
+  },
+  {
+   "name": "HALLOWS 2026 – PART 1",
+   "game": "Criminality",
+   "start": "2026-10-23T21:30:00+03:00",
+   "end": "2026-11-03T08:00:00+02:00",
+   "link": "https://www.roblox.com/events/6148749213804135023",
+   "slug": "criminality-hallows-2026-part-1-23-oct-2130",
+   "img": "img/3f0a0d32fe51.png",
+   "post_title": "🔪 Criminality: HALLOWS 2026 – Part 1 începe azi la 21:30"
   },
   {
    "name": "GEAR 5",
