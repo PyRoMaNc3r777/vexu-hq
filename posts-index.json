@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T14:25:20+03:00",
+ "generated": "2026-10-23T17:45:03+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -18,7 +18,7 @@
    "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
-   "updated": "2026-10-23T14:35:00+03:00",
+   "updated": "2026-10-23T17:50:00+03:00",
    "republish": false,
    "recap": {
     "allow": true,
@@ -64,6 +64,48 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "hollow-horseman-bundle-oficial-roblox-31000-robux",
+   "title": "🎃 Hollow Horseman: bundle oficial Roblox de 31.000 Robux",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-23",
+   "dateRo": "23 octombrie 2026",
+   "published": "2026-10-23T17:51:00+03:00",
+   "img": "img/hollow-horseman-bundle.png",
+   "excerpt": "🎃 Contul oficial @Roblox a anunțat bundle-ul Hollow Horseman pe X, vineri, 23 oct, la ~02:00 (ora României): „head’s off. gear’s on. the…",
+   "featured": false,
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "steal-an-egg-e-oficial-side-quest-in-the-hollow",
+   "title": "🥚 Steal An Egg e oficial side quest în The Hollow",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-23",
+   "dateRo": "23 octombrie 2026",
+   "published": "2026-10-23T17:50:00+03:00",
+   "img": "img/badge-the-hollow-26.png",
+   "excerpt": "🥚 Steal An Egg are un badge oficial pentru The Hollow, eventul de Halloween al Roblox: „The Hollow 26”. ✅ Ce am verificat noi în API-ul…",
+   "featured": false,
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
    "updated": null,
@@ -2307,14 +2349,14 @@
    "dateRo": "18 octombrie 2026",
    "published": "2026-10-18T11:22:00+03:00",
    "img": "img/cd1ab0409336.jpg",
-   "excerpt": "🔄 UPDATE 23 oct (⚠️ ZVON, aproape confirmat): Steal An Egg apare și pe un poster cu logo-ul Roblox, la secțiunea THE OUTSKIRTS – Side…",
+   "excerpt": "🔄 UPDATE 23 oct (✅ CONFIRMAT): Steal An Egg e side quest în The Hollow. Jocul are badge-ul oficial „The Hollow 26”, creat pe 20 oct chiar…",
    "featured": false,
    "section": null,
    "joc": "Roblox (platformă)",
    "jocSlug": "roblox-platforma",
    "prio": 0,
    "views": null,
-   "updated": null,
+   "updated": "2026-10-23T17:50:00+03:00",
    "republish": false,
    "recap": null
   },
@@ -3806,7 +3848,7 @@
    "jocSlug": "piggy",
    "prio": 0,
    "views": null,
-   "updated": "2026-10-23T14:35:00+03:00",
+   "updated": "2026-10-23T17:50:00+03:00",
    "republish": false,
    "recap": null
   },
