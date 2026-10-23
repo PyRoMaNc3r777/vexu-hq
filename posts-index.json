@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T08:25:27+03:00",
+ "generated": "2026-10-23T08:45:12+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,27 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "3-formule-pentru-ultimele-zile-de-halloween-in-steal-an-egg",
+   "title": "🎃 3 formule pentru ultimele zile de Halloween în Steal An Egg",
+   "labels": [
+    "TREND SHORTS"
+   ],
+   "date": "2026-10-23",
+   "dateRo": "23 octombrie 2026",
+   "published": "2026-10-23T08:50:00+03:00",
+   "img": "img/yt-hsTmEiEomW4.jpg",
+   "excerpt": "⏳ Halloween Dimension din Steal An Egg se închide sâmbătă, 24 oct, pe la 17:00 (ora României). Spionul a găsit 3 shorts cu formule pe care…",
+   "featured": false,
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
    "updated": null,
