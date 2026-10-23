@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T11:07:33+03:00",
+ "generated": "2026-10-23T11:46:56+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -8,7 +8,9 @@
    "end": "2026-10-25T18:34:00+02:00",
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
    "img": "img/steal-an-egg-halloween-part-2.png",
-   "post_title": "🎃 Halloween Dimension e LIVE în Steal An Egg: 3 biomuri, Echo, Phantom Express + Part 2 pe 24 oct"
+   "post_title": "🎃 Halloween Dimension e LIVE în Steal An Egg: 3 biomuri, Echo, Phantom Express + Part 2 pe 24 oct",
+   "gameSlug": "steal-an-egg",
+   "gameLabel": "Steal An Egg"
   },
   {
    "name": "Halloween World",
@@ -17,7 +19,9 @@
    "end": "2026-10-24T21:00:00+03:00",
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
-   "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+   "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
+   "gameSlug": "1-speed-keyboard-escape",
+   "gameLabel": "+1 Speed Keyboard Escape"
   },
   {
    "name": "Halloween Part 2",
@@ -27,7 +31,9 @@
    "link": "https://www.roblox.com/events/4063660286450729554",
    "slug": "escape-tsunami-for-brainrots-halloween-part-2-24-oct",
    "img": "img/escape-tsunami-halloween-part-2.png",
-   "post_title": "🌊 Escape Tsunami For Brainrots: Halloween Part 2 vine sâmbătă, 24 oct"
+   "post_title": "🌊 Escape Tsunami For Brainrots: Halloween Part 2 vine sâmbătă, 24 oct",
+   "gameSlug": "escape-tsunami-for-brainrots",
+   "gameLabel": "Escape Tsunami For Brainrots"
   },
   {
    "name": "NEW LIMITED",
@@ -37,7 +43,9 @@
    "link": "https://www.roblox.com/events/2109418877397107262",
    "slug": "driving-empire-new-limited-23-oct-20-00",
    "img": "img/driving-empire-new-limited.png",
-   "post_title": "🚗 Driving Empire: NEW LIMITED vine diseară (vineri 23 oct) la 20:00"
+   "post_title": "🚗 Driving Empire: NEW LIMITED vine diseară (vineri 23 oct) la 20:00",
+   "gameSlug": "driving-empire",
+   "gameLabel": "Driving Empire"
   },
   {
    "name": "Mourning Manor (prebuilt nou)",
@@ -47,7 +55,9 @@
    "link": "https://www.roblox.com/events/1351180538450412305",
    "slug": "bloxburg-prebuilt-mourning-manor-live-pana-pe-29-oct",
    "img": "img/11a571009729.png",
-   "post_title": "🏚️ Bloxburg: prebuilt-ul „Mourning Manor” e LIVE până pe 29 oct"
+   "post_title": "🏚️ Bloxburg: prebuilt-ul „Mourning Manor” e LIVE până pe 29 oct",
+   "gameSlug": "bloxburg",
+   "gameLabel": "Bloxburg"
   },
   {
    "name": "LIMITED TIME ZOMBIES!",
@@ -57,7 +67,9 @@
    "link": "https://www.roblox.com/events/1236553009509565041",
    "slug": "hypershot-mod-zombi-timp-limitat-din-24-oct",
    "img": "img/3a0df600757c.png",
-   "post_title": "🧟 Hypershot: mod cu zombi pentru timp limitat, din 24 oct"
+   "post_title": "🧟 Hypershot: mod cu zombi pentru timp limitat, din 24 oct",
+   "gameSlug": "hypershot",
+   "gameLabel": "Hypershot"
   },
   {
    "name": "Halloween Pt. 2 + Update",
@@ -67,7 +79,9 @@
    "link": "https://www.roblox.com/events/8107686322950505040",
    "slug": "anime-dice-halloween-pt-2-update-25-oct",
    "img": "img/9ba9b2778c36.png",
-   "post_title": "🎃 Anime Dice: Halloween Pt. 2 + update, duminică 25 oct"
+   "post_title": "🎃 Anime Dice: Halloween Pt. 2 + update, duminică 25 oct",
+   "gameSlug": "anime-dice",
+   "gameLabel": "Anime Dice"
   },
   {
    "name": "HALLOWS 2026 – PART 1",
@@ -77,7 +91,9 @@
    "link": "https://www.roblox.com/events/6148749213804135023",
    "slug": "criminality-hallows-2026-part-1-23-oct-2130",
    "img": "img/3f0a0d32fe51.png",
-   "post_title": "🔪 Criminality: HALLOWS 2026 – Part 1 începe azi la 21:30"
+   "post_title": "🔪 Criminality: HALLOWS 2026 – Part 1 începe azi la 21:30",
+   "gameSlug": "criminality",
+   "gameLabel": "Criminality"
   },
   {
    "name": "GEAR 5",
@@ -87,7 +103,9 @@
    "link": "https://www.roblox.com/events/4117389665160528497",
    "slug": "anime-ability-arena-gear-5-23-octombrie",
    "img": "img/de072ee08693.png",
-   "post_title": "⚔️ Anime Ability Arena: GEAR 5, personaj variantă nou, din 23 oct"
+   "post_title": "⚔️ Anime Ability Arena: GEAR 5, personaj variantă nou, din 23 oct",
+   "gameSlug": "anime-ability-arena",
+   "gameLabel": "Anime Ability Arena"
   },
   {
    "name": "World 9 + Admin Abuse",
@@ -97,7 +115,9 @@
    "link": "https://www.roblox.com/events/3027112947324420710",
    "slug": "throw-a-coin-world-9-admin-abuse-25-octombrie",
    "img": "img/c24b1e91d5e3.png",
-   "post_title": "🪙 Throw a Coin: World 9 + Admin Abuse, duminică 25 oct"
+   "post_title": "🪙 Throw a Coin: World 9 + Admin Abuse, duminică 25 oct",
+   "gameSlug": "throw-a-coin",
+   "gameLabel": "Throw a Coin"
   },
   {
    "name": "Halloween Event Week 3",
@@ -106,7 +126,9 @@
    "end": "2026-10-26T14:00:00+02:00",
    "slug": "creatures-of-sonaria-halloween-week-3-clawed-spore",
    "img": "img/sonaria-halloween-week3.png",
-   "post_title": "🦖 Creatures of Sonaria: Halloween Week 3 aduce Clawed Spore și subspecia Cursed"
+   "post_title": "🦖 Creatures of Sonaria: Halloween Week 3 aduce Clawed Spore și subspecia Cursed",
+   "gameSlug": "creatures-of-sonaria",
+   "gameLabel": "Creatures of Sonaria"
   },
   {
    "name": "??? (Something creepy is coming...)",
@@ -115,7 +137,9 @@
    "end": "2026-10-26T15:00:00+02:00",
    "slug": "break-and-steal-an-egg-eveniment-misterios-25-octombrie",
    "img": "img/break-and-steal-an-egg-event-25-oct.png",
-   "post_title": "🥚 Break and Steal an Egg: eveniment „???” duminică, 25 oct, la 15:00"
+   "post_title": "🥚 Break and Steal an Egg: eveniment „???” duminică, 25 oct, la 15:00",
+   "gameSlug": "break-and-steal-an-egg",
+   "gameLabel": "Break and Steal an Egg"
   },
   {
    "name": "Solar Requiem Night III",
@@ -124,7 +148,9 @@
    "end": "2026-10-30T18:00:00+02:00",
    "slug": "tds-solar-requiem-night-iii-vine-pe-23-octombrie",
    "img": "img/tds-solar-requiem-night-iii.png",
-   "post_title": "🌙 Tower Defense Simulator: Solar Requiem Night III vine pe 23 octombrie"
+   "post_title": "🌙 Tower Defense Simulator: Solar Requiem Night III vine pe 23 octombrie",
+   "gameSlug": "tower-defense-simulator",
+   "gameLabel": "Tower Defense Simulator"
   },
   {
    "name": "Halloween Part 2.5",
@@ -133,7 +159,9 @@
    "end": "2026-10-31T20:00:00+02:00",
    "slug": "bgsi-halloween-part-2-5-bounties-dark-potion-market",
    "img": "img/bgsi-halloween-part-2-5.png",
-   "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2.5 vine pe 23 oct, la 21:00"
+   "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2.5 vine pe 23 oct, la 21:00",
+   "gameSlug": "bubble-gum-simulator-infinity",
+   "gameLabel": "Bubble Gum Simulator INFINITY"
   },
   {
    "name": "Halloween Finale (Super Halloween Egg)",
@@ -142,7 +170,9 @@
    "end": "2026-11-13T21:00:00+02:00",
    "slug": "bgsi-halloween-part-2-5-bounties-dark-potion-market",
    "img": "img/bgsi-halloween-part-2-5.png",
-   "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2.5 vine pe 23 oct, la 21:00"
+   "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2.5 vine pe 23 oct, la 21:00",
+   "gameSlug": "bubble-gum-simulator-infinity",
+   "gameLabel": "Bubble Gum Simulator INFINITY"
   },
   {
    "name": "Update 99: ușa de la spawn",
@@ -151,7 +181,9 @@
    "end": "2026-10-31T18:00:00+02:00",
    "slug": "ps99-update-99-usa-de-la-spawn-se-deschide-sambata",
    "img": "img/ps99-update-99-usa-spawn.png",
-   "post_title": "🔓 Pet Simulator 99 Update 99: ușa de la spawn se deschide sâmbătă"
+   "post_title": "🔓 Pet Simulator 99 Update 99: ușa de la spawn se deschide sâmbătă",
+   "gameSlug": "pet-simulator-99",
+   "gameLabel": "Pet Simulator 99"
   },
   {
    "name": "Street Soccer Pro: Night of Pumpkin King",
@@ -161,7 +193,9 @@
    "link": "https://www.roblox.com/events/6039972845109510911",
    "slug": "street-soccer-pro-night-of-pumpkin-king-cu-manusi-si-ghete-gratis",
    "img": "img/aa746e45f026.png",
-   "post_title": "⚽ Street Soccer Pro: Night of Pumpkin King, cu mănuși și ghete gratis"
+   "post_title": "⚽ Street Soccer Pro: Night of Pumpkin King, cu mănuși și ghete gratis",
+   "gameSlug": "street-soccer-pro",
+   "gameLabel": "Street Soccer Pro"
   },
   {
    "name": "YBA Halloween 2026",
@@ -171,7 +205,9 @@
    "link": "https://www.roblox.com/events/4670946200432804627",
    "slug": "yba-halloween-2026-a-venit-update-1-81",
    "img": "img/d46c282c1d44.png",
-   "post_title": "👻 YBA Halloween 2026: a venit Update 1.81"
+   "post_title": "👻 YBA Halloween 2026: a venit Update 1.81",
+   "gameSlug": "your-bizarre-adventure",
+   "gameLabel": "Your Bizarre Adventure"
   },
   {
    "name": "GPO Halloween Part 2",
@@ -181,7 +217,9 @@
    "link": "https://www.roblox.com/events/7982344492491604618",
    "slug": "gpo-halloween-part-2-pet-ul-verity-costume-noi-si-trick-or-treat-pe-spooksville-island",
    "img": "img/8d00f35671db.png",
-   "post_title": "🏴‍☠️ GPO Halloween Part 2: pet-ul Verity, costume noi și trick-or-treat pe Spooksville Island"
+   "post_title": "🏴‍☠️ GPO Halloween Part 2: pet-ul Verity, costume noi și trick-or-treat pe Spooksville Island",
+   "gameSlug": "grand-piece-online",
+   "gameLabel": "Grand Piece Online"
   },
   {
    "name": "Halloween + Guilds",
@@ -191,7 +229,9 @@
    "link": "https://www.roblox.com/events/8555452768813449897",
    "slug": "the-forge-halloween-guilds-a-pornit",
    "img": "img/the-forge-halloween-guilds.png",
-   "post_title": "⚒️ The Forge: update-ul de Halloween + Guilds a pornit"
+   "post_title": "⚒️ The Forge: update-ul de Halloween + Guilds a pornit",
+   "gameSlug": "the-forge",
+   "gameLabel": "The Forge"
   },
   {
    "name": "Build a Keyboard! — BIG UPDATE",
@@ -201,7 +241,9 @@
    "link": "https://www.roblox.com/events/7288765184842269328",
    "slug": "build-a-keyboard-big-update-23-oct",
    "img": "img/0a17b7deb504.jpeg",
-   "post_title": "⌨️ Build a Keyboard! anunță BIG UPDATE vineri, 23 oct"
+   "post_title": "⌨️ Build a Keyboard! anunță BIG UPDATE vineri, 23 oct",
+   "gameSlug": "build-a-keyboard",
+   "gameLabel": "Build a Keyboard!"
   },
   {
    "name": "V3.16 Community Update",
@@ -211,7 +253,9 @@
    "link": "https://www.roblox.com/events/4001130084214899282",
    "slug": "emergency-hamburg-v3-16-community-update",
    "img": "img/02cf8ecde528.jpeg",
-   "post_title": "🚨 Emergency Hamburg V3.16 Community Update"
+   "post_title": "🚨 Emergency Hamburg V3.16 Community Update",
+   "gameSlug": "emergency-hamburg",
+   "gameLabel": "Emergency Hamburg"
   },
   {
    "name": "Dark Deception: Hunted — event Halloween",
@@ -220,7 +264,9 @@
    "end": "2026-11-14T17:00:00+02:00",
    "slug": "dark-deception-hunted-a-pornit-eventul-de-halloween",
    "img": "img/3c9c04e5c470.jpg",
-   "post_title": "Dark Deception: Hunted a pornit eventul de Halloween"
+   "post_title": "Dark Deception: Hunted a pornit eventul de Halloween",
+   "gameSlug": "hunted-dark-deception",
+   "gameLabel": "HUNTED (Dark Deception)"
   },
   {
    "name": "Intră în vigoare noii Termeni Roblox",
@@ -229,7 +275,9 @@
    "date_only": true,
    "slug": "roblox-isi-schimba-termenii-pe-1-noiembrie-merchant-of-record",
    "img": "img/e949435d9972.png",
-   "post_title": "📜 Roblox își schimbă Termenii pe 1 noiembrie: cumperi de la Roblox, nu de la creator"
+   "post_title": "📜 Roblox își schimbă Termenii pe 1 noiembrie: cumperi de la Roblox, nu de la creator",
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)"
   },
   {
    "name": "Plușuri oficiale Youtooz",
@@ -238,7 +286,9 @@
    "date_only": true,
    "slug": "dead-rails-plusuri-oficiale-youtooz-pe-23-octombrie",
    "img": "img/114a302bfe33.jpg",
-   "post_title": "🧸 Dead Rails: plușuri oficiale Youtooz pe 23 octombrie"
+   "post_title": "🧸 Dead Rails: plușuri oficiale Youtooz pe 23 octombrie",
+   "gameSlug": "dead-rails",
+   "gameLabel": "Dead Rails"
   },
   {
    "name": "Halloween Part 1",
@@ -247,7 +297,9 @@
    "end": "2026-10-24T16:00:00+03:00",
    "slug": "car-dealership-tycoon-halloween-vine-in-doua-parti",
    "img": "img/a2464c11519e.png",
-   "post_title": "🎃 Car Dealership Tycoon: Halloween vine în două părți"
+   "post_title": "🎃 Car Dealership Tycoon: Halloween vine în două părți",
+   "gameSlug": "car-dealership-tycoon",
+   "gameLabel": "Car Dealership Tycoon"
   },
   {
    "name": "Halloween Part 2",
@@ -256,7 +308,9 @@
    "end": "2026-10-31T16:00:00+02:00",
    "slug": "car-dealership-tycoon-halloween-vine-in-doua-parti",
    "img": "img/a2464c11519e.png",
-   "post_title": "🎃 Car Dealership Tycoon: Halloween vine în două părți"
+   "post_title": "🎃 Car Dealership Tycoon: Halloween vine în două părți",
+   "gameSlug": "car-dealership-tycoon",
+   "gameLabel": "Car Dealership Tycoon"
   },
   {
    "name": "Stilul nou Mamori (Parry)",
@@ -265,7 +319,9 @@
    "end": "2026-10-23T23:00:00+03:00",
    "slug": "volleyball-legends-stilul-nou-mamori-cu-parry",
    "img": "img/ac285a12b10c.png",
-   "post_title": "🏐 Volleyball Legends: stilul nou Mamori, cu Parry"
+   "post_title": "🏐 Volleyball Legends: stilul nou Mamori, cu Parry",
+   "gameSlug": "volleyball-legends",
+   "gameLabel": "Volleyball Legends"
   },
   {
    "name": "Halloween 2026",
@@ -274,7 +330,9 @@
    "end": "2026-11-16T20:00:00+02:00",
    "slug": "murder-mystery-2-halloween-2026-a-inceput-aseara-la-22-00-tine-pana-pe-16-noiembrie",
    "img": "img/c15b0de55ed6.png",
-   "post_title": "🔪 Murder Mystery 2: Halloween 2026 a început aseară la 22:00, ține până pe 16 noiembrie"
+   "post_title": "🔪 Murder Mystery 2: Halloween 2026 a început aseară la 22:00, ține până pe 16 noiembrie",
+   "gameSlug": "murder-mystery-2",
+   "gameLabel": "Murder Mystery 2"
   },
   {
    "name": "Eveniment de Halloween",
@@ -283,7 +341,9 @@
    "date_only": true,
    "slug": "tales-of-tanorio-eveniment-de-halloween-pe-30-octombrie-cu-reskin-uri-si-tanorieni-noi",
    "img": "img/0f40f223edda.jpg",
-   "post_title": "🎃 Tales of Tanorio: eveniment de Halloween pe 30 octombrie, cu reskin-uri și Tanorieni noi"
+   "post_title": "🎃 Tales of Tanorio: eveniment de Halloween pe 30 octombrie, cu reskin-uri și Tanorieni noi",
+   "gameSlug": "tales-of-tanorio",
+   "gameLabel": "Tales of Tanorio"
   },
   {
    "name": "Lansare joc dodgeball (asimo3089)",
@@ -291,7 +351,9 @@
    "start": "2026-10-21T00:00:00+03:00",
    "slug": "asimo3089-jailbreak-lanseaza-un-joc-nou-de-dodgeball-marti-20-octombrie",
    "img": "img/0e6f842e620a.jpg",
-   "post_title": "🏐 asimo3089 (Jailbreak) lansează un joc nou de dodgeball marți, 20 octombrie"
+   "post_title": "🏐 asimo3089 (Jailbreak) lansează un joc nou de dodgeball marți, 20 octombrie",
+   "gameSlug": "asimo-s-dodgeball",
+   "gameLabel": "Asimo's Dodgeball"
   },
   {
    "name": "Halloween Event",
@@ -300,7 +362,9 @@
    "end": "2026-11-07T17:00:00+02:00",
    "slug": "prospecting-halloween-event-e-live-the-graveyard-returns-pana-pe-7-noiembrie",
    "img": "img/25da364b4d38.png",
-   "post_title": "💎 Prospecting: Halloween Event e live — „The Graveyard returns…”, până pe 7 noiembrie"
+   "post_title": "💎 Prospecting: Halloween Event e live — „The Graveyard returns…”, până pe 7 noiembrie",
+   "gameSlug": "prospecting",
+   "gameLabel": "Prospecting"
   },
   {
    "name": "HALLOWEEN UPDATE",
@@ -309,7 +373,9 @@
    "end": "2026-10-22T04:00:00+03:00",
    "slug": "fish-it-halloween-update-cu-insula-noua-live-pana-joi-22-octombrie",
    "img": "img/d6cb4af167e8.jpeg",
-   "post_title": "🐟 Fish It: HALLOWEEN UPDATE cu insulă nouă, live până joi 22 octombrie"
+   "post_title": "🐟 Fish It: HALLOWEEN UPDATE cu insulă nouă, live până joi 22 octombrie",
+   "gameSlug": "fish-it",
+   "gameLabel": "Fish It"
   },
   {
    "name": "Tornado Halloween",
@@ -318,7 +384,9 @@
    "end": "2026-10-25T00:45:00+03:00",
    "slug": "plants-vs-brainrots-revine-tornado-cu-eveniment-de-halloween",
    "img": "img/f6345339c477.png",
-   "post_title": "🌪️ Plants vs Brainrots: revine Tornado, cu eveniment de Halloween"
+   "post_title": "🌪️ Plants vs Brainrots: revine Tornado, cu eveniment de Halloween",
+   "gameSlug": "plants-vs-brainrots",
+   "gameLabel": "Plants vs Brainrots"
   },
   {
    "name": "Spookye Zombies Part 1",
@@ -327,7 +395,9 @@
    "end": "2026-10-19T21:00:00+03:00",
    "slug": "hunty-zombie-spookye-zombies-part-1-incepe-azi-la-21-00",
    "img": "img/9740faf2d1f0.png",
-   "post_title": "🧟 Hunty Zombie: Spookye Zombies Part 1 începe azi la 21:00"
+   "post_title": "🧟 Hunty Zombie: Spookye Zombies Part 1 începe azi la 21:00",
+   "gameSlug": "hunty-zombie",
+   "gameLabel": "Hunty Zombie"
   },
   {
    "name": "Halloween Part 2",
@@ -336,7 +406,9 @@
    "end": "2026-10-24T21:00:00+03:00",
    "slug": "bubble-gum-simulator-infinity-halloween-part-2-incepe-azi-la-19-00",
    "img": "img/e096eff00955.png",
-   "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2 începe azi la 19:00"
+   "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2 începe azi la 19:00",
+   "gameSlug": "bubble-gum-simulator-infinity",
+   "gameLabel": "Bubble Gum Simulator INFINITY"
   },
   {
    "name": "Shadow Admin Abuse",
@@ -345,7 +417,9 @@
    "end": "2026-10-17T23:45:00+03:00",
    "slug": "bubble-gum-simulator-infinity-halloween-part-2-incepe-azi-la-19-00",
    "img": "img/e096eff00955.png",
-   "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2 începe azi la 19:00"
+   "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2 începe azi la 19:00",
+   "gameSlug": "bubble-gum-simulator-infinity",
+   "gameLabel": "Bubble Gum Simulator INFINITY"
   },
   {
    "name": "Halloween Event (Free Admin Gifts + Weekend Gem Boost)",
@@ -354,7 +428,9 @@
    "end": "2026-10-18T21:00:00+03:00",
    "slug": "sell-fries-halloween-cu-free-admin-gifts",
    "img": "img/77fb34486340.png",
-   "post_title": "🍟 Sell Fries!: Halloween cu Free Admin Gifts"
+   "post_title": "🍟 Sell Fries!: Halloween cu Free Admin Gifts",
+   "gameSlug": "sell-fries",
+   "gameLabel": "Sell Fries!"
   },
   {
    "name": "Halloween Event",
@@ -363,7 +439,9 @@
    "end": "2026-11-07T20:00:00+02:00",
    "slug": "huss-valley-halloween-event-din-seara-asta",
    "img": "img/9cb5793476c5.png",
-   "post_title": "🎃 Huss Valley: Halloween Event din seara asta"
+   "post_title": "🎃 Huss Valley: Halloween Event din seara asta",
+   "gameSlug": "huss-valley",
+   "gameLabel": "Huss Valley"
   },
   {
    "name": "The Arsenal",
@@ -371,7 +449,9 @@
    "coming_soon": true,
    "slug": "the-strongest-battlegrounds-vine-the-arsenal",
    "img": "img/c32ffc9ceaa1.png",
-   "post_title": "⚔️ The Strongest Battlegrounds: vine „The Arsenal”"
+   "post_title": "⚔️ The Strongest Battlegrounds: vine „The Arsenal”",
+   "gameSlug": "the-strongest-battlegrounds",
+   "gameLabel": "The Strongest Battlegrounds"
   },
   {
    "name": "Halloween + Admin Abuse",
@@ -380,7 +460,9 @@
    "end": "2026-10-19T15:00:00+03:00",
    "slug": "break-and-steal-an-egg-halloween-admin-abuse-duminica",
    "img": "img/e463ba202c38.png",
-   "post_title": "🥚 Break and Steal an Egg: Halloween + Admin Abuse duminică"
+   "post_title": "🥚 Break and Steal an Egg: Halloween + Admin Abuse duminică",
+   "gameSlug": "break-and-steal-an-egg",
+   "gameLabel": "Break and Steal an Egg"
   },
   {
    "name": "Item Versioning + Folders și Recents în Creator Dashboard (anunț)",
@@ -389,7 +471,9 @@
    "announced": true,
    "slug": "itemele-de-avatar-stricate-pot-fi-reparate-dupa-lansare",
    "img": "img/x-bloxy-item-update.jpg",
-   "post_title": "🛠️ Itemele de avatar stricate pot fi reparate după lansare"
+   "post_title": "🛠️ Itemele de avatar stricate pot fi reparate după lansare",
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)"
   },
   {
    "name": "Halloween",
@@ -398,7 +482,9 @@
    "end": "2026-11-01T14:00:00+02:00",
    "slug": "murder-duels-halloween-incepe-diseara-la-21-00",
    "img": "img/ffb65ef3e8fa.png",
-   "post_title": "🔪 Murder Duels: Halloween începe diseară la 21:00"
+   "post_title": "🔪 Murder Duels: Halloween începe diseară la 21:00",
+   "gameSlug": "murder-duels",
+   "gameLabel": "Murder Duels"
   },
   {
    "name": "The Butcher X Halloween",
@@ -408,7 +494,9 @@
    "end_time_unknown": true,
    "slug": "violence-district-the-butcher-x-halloween-din-24-octombrie",
    "img": "img/d0f25a8958ec.png",
-   "post_title": "🩸 Violence District: The Butcher X Halloween din 24 octombrie"
+   "post_title": "🩸 Violence District: The Butcher X Halloween din 24 octombrie",
+   "gameSlug": "violence-district",
+   "gameLabel": "Violence District"
   },
   {
    "name": "Halloween Part 1 (final)",
@@ -417,7 +505,9 @@
    "end_only": true,
    "slug": "grand-piece-online-ultima-sansa-la-halloween-part-1",
    "img": "event-gpo-halloween-part1.png",
-   "post_title": "🏴‍☠️ Grand Piece Online: ultima șansă la Halloween Part 1"
+   "post_title": "🏴‍☠️ Grand Piece Online: ultima șansă la Halloween Part 1",
+   "gameSlug": "grand-piece-online",
+   "gameLabel": "Grand Piece Online"
   },
   {
    "name": "Update secret „???” (Admin Abuse, bani x2)",
@@ -425,7 +515,9 @@
    "start": "2026-10-17T16:00:00+03:00",
    "slug": "ride-a-pet-update-secret-sambata-la-16-00",
    "img": "event-ride-a-pet-secret.png",
-   "post_title": "🐾 Ride A Pet: update secret „???” sâmbătă la 16:00"
+   "post_title": "🐾 Ride A Pet: update secret „???” sâmbătă la 16:00",
+   "gameSlug": "ride-a-pet",
+   "gameLabel": "Ride A Pet"
   },
   {
    "name": "Halloween Dimension",
@@ -434,7 +526,9 @@
    "end": "2026-10-24T17:00:00+03:00",
    "slug": "azi-la-18-00-se-deschide-halloween-dimension-pe-steal-an-egg",
    "img": "img/steal-an-egg-halloween-dimension.png",
-   "post_title": "🎃 AZI la 18:00 se deschide Halloween Dimension pe Steal An Egg!"
+   "post_title": "🎃 AZI la 18:00 se deschide Halloween Dimension pe Steal An Egg!",
+   "gameSlug": "steal-an-egg",
+   "gameLabel": "Steal An Egg"
   },
   {
    "name": "HALLOWEEN UPDATE",
@@ -443,7 +537,9 @@
    "end": "2026-11-24T00:00:00+02:00",
    "slug": "jujutsu-shenanigans-halloween-update-din-24-oct",
    "img": "event-jjs-halloween.png",
-   "post_title": "🎃 Jujutsu Shenanigans: HALLOWEEN UPDATE din 24 oct"
+   "post_title": "🎃 Jujutsu Shenanigans: HALLOWEEN UPDATE din 24 oct",
+   "gameSlug": "jujutsu-shenanigans",
+   "gameLabel": "Jujutsu Shenanigans"
   },
   {
    "name": "Halloween Week 2",
@@ -452,7 +548,9 @@
    "end": "2026-10-19T23:30:00+03:00",
    "slug": "creatures-of-sonaria-halloween-week-2-din-16-oct-23-30",
    "img": "event-sonaria-halloween-week2.png",
-   "post_title": "🦖 Creatures of Sonaria: Halloween Week 2 din 16 oct, 23:30"
+   "post_title": "🦖 Creatures of Sonaria: Halloween Week 2 din 16 oct, 23:30",
+   "gameSlug": "creatures-of-sonaria",
+   "gameLabel": "Creatures of Sonaria"
   },
   {
    "name": "Halloween Part 1",
@@ -461,7 +559,9 @@
    "end": "2026-10-24T00:00:00+03:00",
    "slug": "bedwars-halloween-part-1-din-17-oct",
    "img": "event-bedwars-halloween-part1.png",
-   "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct"
+   "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct",
+   "gameSlug": "bedwars",
+   "gameLabel": "BedWars"
   },
   {
    "name": "Halloween Part 2",
@@ -470,7 +570,9 @@
    "end": "2026-10-30T23:00:00+02:00",
    "slug": "bedwars-halloween-part-1-din-17-oct",
    "img": "event-bedwars-halloween-part1.png",
-   "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct"
+   "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct",
+   "gameSlug": "bedwars",
+   "gameLabel": "BedWars"
   },
   {
    "name": "Halloween Part 3",
@@ -479,7 +581,9 @@
    "date_only": true,
    "slug": "bedwars-halloween-part-1-din-17-oct",
    "img": "event-bedwars-halloween-part1.png",
-   "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct"
+   "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct",
+   "gameSlug": "bedwars",
+   "gameLabel": "BedWars"
   },
   {
    "name": "Halloween Event",
@@ -487,7 +591,9 @@
    "start": "2026-10-17T04:00:00+03:00",
    "slug": "evade-halloween-event-din-17-oct-04-00",
    "img": "event-evade-halloween.png",
-   "post_title": "👻 Evade: Halloween Event din 17 oct, 04:00"
+   "post_title": "👻 Evade: Halloween Event din 17 oct, 04:00",
+   "gameSlug": "evade",
+   "gameLabel": "Evade"
   },
   {
    "name": "Set Glorp Cat (limitat)",
@@ -496,7 +602,9 @@
    "end_only": true,
    "slug": "evade-halloween-event-din-17-oct-04-00",
    "img": "event-evade-halloween.png",
-   "post_title": "👻 Evade: Halloween Event din 17 oct, 04:00"
+   "post_title": "👻 Evade: Halloween Event din 17 oct, 04:00",
+   "gameSlug": "evade",
+   "gameLabel": "Evade"
   },
   {
    "name": "Gothic Items",
@@ -505,7 +613,9 @@
    "end": "2026-10-22T14:55:00+03:00",
    "slug": "bloxburg-gothic-items-iteme-gotice-de-halloween",
    "img": "event-bloxburg-gothic-items.png",
-   "post_title": "🏡 Bloxburg: Gothic Items, iteme gotice de Halloween"
+   "post_title": "🏡 Bloxburg: Gothic Items, iteme gotice de Halloween",
+   "gameSlug": "bloxburg",
+   "gameLabel": "Bloxburg"
   },
   {
    "name": "FischFright 3",
@@ -514,7 +624,9 @@
    "end": "2026-11-09T19:00:00+02:00",
    "slug": "fisch-fischfright-3-editia-anuala-de-halloween",
    "img": "game-fisch.png",
-   "post_title": "🐟 Fisch: FischFright 3, ediția anuală de Halloween"
+   "post_title": "🐟 Fisch: FischFright 3, ediția anuală de Halloween",
+   "gameSlug": "fisch",
+   "gameLabel": "Fisch"
   },
   {
    "name": "Gourdy Shop",
@@ -523,7 +635,9 @@
    "end": "2026-10-23T22:00:00+03:00",
    "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
    "img": "game-dandys-world.png",
-   "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi"
+   "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
+   "gameSlug": "dandy-s-world",
+   "gameLabel": "Dandy's World"
   },
   {
    "name": "Queens of Mischief (melodie + bundle)",
@@ -532,7 +646,9 @@
    "date_only": true,
    "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
    "img": "game-dandys-world.png",
-   "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi"
+   "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
+   "gameSlug": "dandy-s-world",
+   "gameLabel": "Dandy's World"
   },
   {
    "name": "Soulvester (Calendar Reward)",
@@ -541,7 +657,9 @@
    "date_only": true,
    "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
    "img": "game-dandys-world.png",
-   "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi"
+   "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
+   "gameSlug": "dandy-s-world",
+   "gameLabel": "Dandy's World"
   },
   {
    "name": "Dead of Night",
@@ -550,7 +668,9 @@
    "end": "2026-11-07T23:00:00+02:00",
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
    "img": "game-dead-rails.png",
-   "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie"
+   "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
+   "gameSlug": "dead-rails",
+   "gameLabel": "Dead Rails"
   },
   {
    "name": "Dead of Night: Act 2",
@@ -560,7 +680,9 @@
    "link": "https://www.roblox.com/events/7269102869591229025",
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
    "img": "game-dead-rails.png",
-   "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie"
+   "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
+   "gameSlug": "dead-rails",
+   "gameLabel": "Dead Rails"
   },
   {
    "name": "Dead of Night: Act 3",
@@ -570,7 +692,9 @@
    "link": "https://www.roblox.com/events/4197183844253827708",
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
    "img": "game-dead-rails.png",
-   "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie"
+   "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
+   "gameSlug": "dead-rails",
+   "gameLabel": "Dead Rails"
   },
   {
    "name": "Helperbot în roster",
@@ -578,7 +702,9 @@
    "start_date": "2026-10-16",
    "slug": "forsaken-helperbot-pe-16-oct-event-halloween",
    "img": "game-forsaken.png",
-   "post_title": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween"
+   "post_title": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween",
+   "gameSlug": "forsaken",
+   "gameLabel": "Forsaken"
   },
   {
    "name": "Event Halloween",
@@ -587,7 +713,9 @@
    "end": "2026-10-24T02:00:00+03:00",
    "slug": "forsaken-helperbot-pe-16-oct-event-halloween",
    "img": "game-forsaken.png",
-   "post_title": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween"
+   "post_title": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween",
+   "gameSlug": "forsaken",
+   "gameLabel": "Forsaken"
   },
   {
    "name": "Creator Showdown (São Paulo)",
@@ -595,7 +723,9 @@
    "start": "2026-10-15T23:00:00+03:00",
    "slug": "creator-showdown-in-sao-paulo-lupta-pentru-coroana-e-diseara",
    "img": "generic-neon.png",
-   "post_title": "🏆 Creator Showdown în São Paulo: lupta pentru coroană e diseară!"
+   "post_title": "🏆 Creator Showdown în São Paulo: lupta pentru coroană e diseară!",
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)"
   },
   {
    "name": "Ghoul Garden",
@@ -604,7 +734,9 @@
    "end": "2026-10-24T23:00:00+03:00",
    "slug": "grow-a-garden-vine-ghoul-garden-evenimentul-de-halloween",
    "img": "game-grow-a-garden.png",
-   "post_title": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween"
+   "post_title": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween",
+   "gameSlug": "grow-a-garden",
+   "gameLabel": "Grow a Garden"
   },
   {
    "name": "Fairy Event (final)",
@@ -613,7 +745,9 @@
    "end_only": true,
    "slug": "grow-a-garden-vine-ghoul-garden-evenimentul-de-halloween",
    "img": "game-grow-a-garden.png",
-   "post_title": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween"
+   "post_title": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween",
+   "gameSlug": "grow-a-garden",
+   "gameLabel": "Grow a Garden"
   },
   {
    "name": "Welcome to the Spa",
@@ -622,7 +756,9 @@
    "end": "2026-10-22T19:44:00+03:00",
    "slug": "brookhaven-spa-nou-pe-16-oct-halloween-din-23-oct",
    "img": "game-brookhaven.png",
-   "post_title": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct"
+   "post_title": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct",
+   "gameSlug": "brookhaven",
+   "gameLabel": "Brookhaven"
   },
   {
    "name": "Halloween",
@@ -631,7 +767,9 @@
    "end": "2026-11-06T19:44:00+02:00",
    "slug": "brookhaven-spa-nou-pe-16-oct-halloween-din-23-oct",
    "img": "game-brookhaven.png",
-   "post_title": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct"
+   "post_title": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct",
+   "gameSlug": "brookhaven",
+   "gameLabel": "Brookhaven"
   },
   {
    "name": "Diamond Mountain",
@@ -640,7 +778,9 @@
    "end": "2026-10-24T19:00:00+03:00",
    "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
    "img": "game-pet-sim-99.png",
-   "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă"
+   "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă",
+   "gameSlug": "pet-simulator-99",
+   "gameLabel": "Pet Simulator 99"
   },
   {
    "name": "Hatch Wars + Season Pass (final)",
@@ -649,7 +789,9 @@
    "end_only": true,
    "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
    "img": "game-pet-sim-99.png",
-   "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă"
+   "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă",
+   "gameSlug": "pet-simulator-99",
+   "gameLabel": "Pet Simulator 99"
   },
   {
    "name": "Season Pass Week 2",
@@ -658,7 +800,9 @@
    "end": "2026-10-24T19:00:00+03:00",
    "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
    "img": "game-pet-sim-99.png",
-   "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă"
+   "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă",
+   "gameSlug": "pet-simulator-99",
+   "gameLabel": "Pet Simulator 99"
   },
   {
    "name": "Fright Night Season 9",
@@ -667,7 +811,9 @@
    "end": "2026-11-01T20:00:00+02:00",
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
    "img": "piggy.png",
-   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie"
+   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
+   "gameSlug": "piggy",
+   "gameLabel": "Piggy"
   },
   {
    "name": "Fright Night Part II",
@@ -675,7 +821,9 @@
    "start": "2026-10-17T20:00:00+03:00",
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
    "img": "piggy.png",
-   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie"
+   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
+   "gameSlug": "piggy",
+   "gameLabel": "Piggy"
   },
   {
    "name": "Forest — secret Survivor",
@@ -684,7 +832,9 @@
    "end_date": "2026-11-08",
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
    "img": "piggy.png",
-   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie"
+   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
+   "gameSlug": "piggy",
+   "gameLabel": "Piggy"
   },
   {
    "name": "Frightful Carnival",
@@ -694,7 +844,9 @@
    "link": "https://www.roblox.com/events/3418582994489836189",
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
    "img": "piggy.png",
-   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie"
+   "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
+   "gameSlug": "piggy",
+   "gameLabel": "Piggy"
   },
   {
    "name": "The Hollow",
@@ -704,7 +856,9 @@
    "link": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
    "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
    "img": "img/714817cca01f.jpg",
-   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct"
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)"
   },
   {
    "name": "The Hollow — acces mai devreme Roblox Plus",
@@ -714,7 +868,9 @@
    "link": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
    "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
    "img": "img/714817cca01f.jpg",
-   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct"
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)"
   },
   {
    "name": "The Hollow — finala live (oră neanunțată)",
@@ -724,17 +880,21 @@
    "link": "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event",
    "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
    "img": "img/714817cca01f.jpg",
-   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct"
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)"
   },
   {
    "name": "The Candy Vault",
    "game": "DOORS",
-   "start": "2026-10-22T21:00:00+03:00",
-   "end_date": "2026-11-09",
-   "end_time_unknown": true,
+   "start": "2026-10-23T01:00:00+03:00",
+   "end": "2026-11-09T07:55:00+02:00",
+   "link": "https://www.roblox.com/events/1798388131439968912",
    "slug": "doors-lanseaza-the-candy-vault-pe-22-octombrie",
    "img": "game-doors.png",
-   "post_title": "🍬 DOORS lansează The Candy Vault pe 22 octombrie"
+   "post_title": "🍬 DOORS lansează The Candy Vault pe 22 octombrie",
+   "gameSlug": "doors",
+   "gameLabel": "DOORS"
   },
   {
    "name": "Hauntlet Returns",
@@ -744,7 +904,9 @@
    "end_note": "fără dată de final anunțată",
    "slug": "adopt-me-hauntlet-returns-halloween-ghost-gallery",
    "img": "game-adopt-me.png",
-   "post_title": "👻 Adopt Me: Hauntlet Returns + Halloween Ghost Gallery"
+   "post_title": "👻 Adopt Me: Hauntlet Returns + Halloween Ghost Gallery",
+   "gameSlug": "adopt-me",
+   "gameLabel": "Adopt Me"
   },
   {
    "name": "HALLOWEEN",
@@ -753,7 +915,9 @@
    "end": "2026-11-07T18:00:00+02:00",
    "slug": "dress-to-impress-halloween-incepe-pe-17-octombrie",
    "img": "game-dress-to-impress.png",
-   "post_title": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie"
+   "post_title": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie",
+   "gameSlug": "dress-to-impress",
+   "gameLabel": "Dress to Impress"
   },
   {
    "name": "Tales of the Dark King",
@@ -762,7 +926,9 @@
    "end": "2026-11-14T06:00:00+02:00",
    "slug": "dress-to-impress-halloween-incepe-pe-17-octombrie",
    "img": "game-dress-to-impress.png",
-   "post_title": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie"
+   "post_title": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie",
+   "gameSlug": "dress-to-impress",
+   "gameLabel": "Dress to Impress"
   },
   {
    "name": "Trick or Treat",
@@ -771,7 +937,9 @@
    "end": "2026-10-24T15:00:00+03:00",
    "slug": "99-nights-in-the-forest-vine-trick-or-treat",
    "img": "game-99-nights.png",
-   "post_title": "🌲 99 Nights in the Forest: vine Trick or Treat"
+   "post_title": "🌲 99 Nights in the Forest: vine Trick or Treat",
+   "gameSlug": "99-nights-in-the-forest",
+   "gameLabel": "99 Nights in the Forest"
   },
   {
    "name": "Halloween Dimension",
@@ -780,7 +948,9 @@
    "end": "2026-10-24T17:00:00+03:00",
    "slug": "halloween-dimension-vine-in-steal-an-egg",
    "img": "icon.png",
-   "post_title": "🎃 Halloween Dimension vine în Steal An Egg!"
+   "post_title": "🎃 Halloween Dimension vine în Steal An Egg!",
+   "gameSlug": "steal-an-egg",
+   "gameLabel": "Steal An Egg"
   },
   {
    "name": "Halloween Part 2 (Reaper)",
@@ -789,7 +959,9 @@
    "end": "2026-10-31T18:00:00+02:00",
    "link": "https://www.roblox.com/events/2565547896309154387",
    "img": "generic-neon.png",
-   "standalone": true
+   "standalone": true,
+   "gameSlug": "cat-battles",
+   "gameLabel": "Cat Battles"
   },
   {
    "name": "Update 3",
@@ -798,7 +970,9 @@
    "end": "2026-10-29T20:00:00+02:00",
    "link": "https://www.roblox.com/events/7225746666601710159",
    "img": "generic-neon.png",
-   "standalone": true
+   "standalone": true,
+   "gameSlug": "anime-legacy-simulator",
+   "gameLabel": "Anime Legacy Simulator"
   },
   {
    "name": "Career Mode",
@@ -807,7 +981,9 @@
    "end": "2026-10-31T00:02:00+02:00",
    "link": "https://www.roblox.com/events/6194828847804973716",
    "img": "generic-neon.png",
-   "standalone": true
+   "standalone": true,
+   "gameSlug": "highway-patrol",
+   "gameLabel": "Highway Patrol"
   }
  ]
 }
