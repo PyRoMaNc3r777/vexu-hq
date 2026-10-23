@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T09:39:48+03:00",
+ "generated": "2026-10-23T10:23:20+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -18,6 +18,26 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween"
+  },
+  {
+   "name": "Halloween Part 2",
+   "game": "Escape Tsunami For Brainrots",
+   "start": "2026-10-24T19:00:00+03:00",
+   "end": "2026-10-27T19:00:00+02:00",
+   "link": "https://www.roblox.com/events/4063660286450729554",
+   "slug": "escape-tsunami-for-brainrots-halloween-part-2-24-oct",
+   "img": "img/escape-tsunami-halloween-part-2.png",
+   "post_title": "🌊 Escape Tsunami For Brainrots: Halloween Part 2 vine sâmbătă, 24 oct"
+  },
+  {
+   "name": "NEW LIMITED",
+   "game": "Driving Empire",
+   "start": "2026-10-23T20:00:00+03:00",
+   "end": "2026-10-30T19:00:00+02:00",
+   "link": "https://www.roblox.com/events/2109418877397107262",
+   "slug": "driving-empire-new-limited-23-oct-20-00",
+   "img": "img/driving-empire-new-limited.png",
+   "post_title": "🚗 Driving Empire: NEW LIMITED vine diseară (vineri 23 oct) la 20:00"
   },
   {
    "name": "Mourning Manor (prebuilt nou)",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T09:39:48+03:00",
+ "generated": "2026-10-23T10:23:20+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,48 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "escape-tsunami-for-brainrots-halloween-part-2-24-oct",
+   "title": "🌊 Escape Tsunami For Brainrots: Halloween Part 2 vine sâmbătă, 24 oct",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-23",
+   "dateRo": "23 octombrie 2026",
+   "published": "2026-10-23T10:26:00+03:00",
+   "img": "img/escape-tsunami-halloween-part-2.png",
+   "excerpt": "Escape Tsunami For Brainrots are un eveniment oficial pe Roblox: „Halloween Part 2!”. 🌊🎃 • ⏰ Începe sâmbătă, 24 octombrie, la 19:00 ora…",
+   "featured": false,
+   "section": null,
+   "joc": "Escape Tsunami For Brainrots",
+   "jocSlug": "escape-tsunami-for-brainrots",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "driving-empire-new-limited-23-oct-20-00",
+   "title": "🚗 Driving Empire: NEW LIMITED vine diseară (vineri 23 oct) la 20:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-23",
+   "dateRo": "23 octombrie 2026",
+   "published": "2026-10-23T10:25:00+03:00",
+   "img": "img/driving-empire-new-limited.png",
+   "excerpt": "Driving Empire are un eveniment oficial pe Roblox: „NEW LIMITED”. 🚗 • ⏰ Începe diseară, vineri 23 octombrie, la 20:00 ora României • 📅…",
+   "featured": false,
+   "section": null,
+   "joc": "Driving Empire",
+   "jocSlug": "driving-empire",
    "prio": 0,
    "views": null,
    "updated": null,
