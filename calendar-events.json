@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T11:46:56+03:00",
+ "generated": "2026-10-23T11:52:27+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -200,7 +200,7 @@
   {
    "name": "YBA Halloween 2026",
    "game": "Your Bizarre Adventure",
-   "start": "2026-10-21",
+   "start": "2026-10-16T19:00:00+03:00",
    "end": "2026-11-16T19:00:00+02:00",
    "link": "https://www.roblox.com/events/4670946200432804627",
    "slug": "yba-halloween-2026-a-venit-update-1-81",
@@ -212,8 +212,8 @@
   {
    "name": "GPO Halloween Part 2",
    "game": "Grand Piece Online",
-   "start": "2026-10-21",
-   "end": "2026-10-25T03:45:00+03:00",
+   "start": "2026-10-17T03:15:00+03:00",
+   "end": "2026-10-25T03:45:00+02:00",
    "link": "https://www.roblox.com/events/7982344492491604618",
    "slug": "gpo-halloween-part-2-pet-ul-verity-costume-noi-si-trick-or-treat-pe-spooksville-island",
    "img": "img/8d00f35671db.png",
@@ -518,17 +518,6 @@
    "post_title": "🐾 Ride A Pet: update secret „???” sâmbătă la 16:00",
    "gameSlug": "ride-a-pet",
    "gameLabel": "Ride A Pet"
-  },
-  {
-   "name": "Halloween Dimension",
-   "game": "Steal An Egg",
-   "start": "2026-10-17T18:00:00+03:00",
-   "end": "2026-10-24T17:00:00+03:00",
-   "slug": "azi-la-18-00-se-deschide-halloween-dimension-pe-steal-an-egg",
-   "img": "img/steal-an-egg-halloween-dimension.png",
-   "post_title": "🎃 AZI la 18:00 se deschide Halloween Dimension pe Steal An Egg!",
-   "gameSlug": "steal-an-egg",
-   "gameLabel": "Steal An Egg"
   },
   {
    "name": "HALLOWEEN UPDATE",
