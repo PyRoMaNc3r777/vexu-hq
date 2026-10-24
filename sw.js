@@ -1,7 +1,7 @@
 // VEXU HQ service worker
 // HTML + JSON: NETWORK-FIRST (online vezi mereu ultimul deploy/date), fallback la cache offline.
 // Imagini/CSS/icon-uri: CACHE-FIRST. Mărește VERSION când schimbi imagini cu același nume.
-const VERSION = 'v3-2026-10-22';
+const VERSION = 'v4-2026-10-24';
 const CACHE = 'vexu-hq-' + VERSION;
 const BASE = '/vexu-hq/';
 const CORE = ['', 'index.html', 'blog.html', 'calendar.html', 'recap.html', 'data.json', 'extra.json', 'posts.json',
@@ -29,7 +29,7 @@ function key(u) {
 async function networkFirst(req, u) {
   const c = await caches.open(CACHE);
   try {
-    const r = await fetch(req);
+    const r = await fetch(req, {cache: 'no-cache'});
     if (r && r.ok) c.put(key(u), r.clone()).catch(() => {});
     return r;
   } catch (err) {
