@@ -1,37 +1,40 @@
 <!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>VEXU HQ</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png"><link rel="manifest" href="/vexu-hq/manifest.webmanifest"><meta name="theme-color" content="#0b0c0f"><link rel="apple-touch-icon" href="/vexu-hq/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="VEXU HQ"><!--css--><link rel="preload" href="/vexu-hq/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/vexu-hq/style.css?v=59d03e81"><!--/css--></head><body><!--nav--><header class="top"><div class="top-in"><a class="brand" href="index.html"><img src="/vexu-hq/icon-192.png" width="28" height="28" alt=""><b>VEXU<i>HQ</i></b></a><a class="tn-s" href="blog.html#f=trend-shorts">Ce merge în Shorts</a><nav class="tn" aria-label="Navigație principală"><a href="index.html" aria-current="page">Dashboard</a><a href="blog.html">Blog</a><a href="calendar.html">Calendar</a><a href="recap.html">Rezumat</a></nav></div></header><!--/nav--><div class="w"><h1>Centrul de comandă</h1><div class="sub">VEXU Online · <span id="now"></span> (ora României)</div><div class="hwb" id="hwb"></div>
-<div class="c hero"><h2 id="evh">Halloween Dimension · Steal An Egg</h2><div class="st" id="evst">Se încarcă…</div><div class="cd" id="cd"></div><div class="nx" id="evnext"></div><div class="sm" id="evinfo"></div></div>
-<div class="es" id="endSoon" hidden aria-live="polite"></div><div class="lay"><div class="main"><div class="c"><h2>Live · Steal An Egg</h2><div class="g"><div><div class="sm"><span class="hb"></span>Jucători acum</div><div class="n" id="pl">—</div><span class="dl" id="pld"></span></div><div><div class="sm">Vizite totale</div><div class="n" id="vi">—</div></div></div><div class="pk"><div><div class="sm">Vârful de azi</div><div class="n" id="pkd">—</div><div class="sm" id="pkdi"></div></div><div><div class="sm">Maxim măsurat de noi (7 zile)</div><div class="n" id="pk7">—</div><div class="sm" id="pk7i"></div></div></div><div class="sm" id="upd"></div><div class="sm" id="pkinfo">măsurat de noi periodic</div></div>
-<div class="c"><h2>Următorul live</h2><div class="st" id="lvst">Se calculează…</div><div class="cd" id="lvcd"></div><div class="sm" id="lvinfo"></div></div>
-<div class="c full"><h2>Jucători Steal An Egg · ultimele 24h</h2><div class="hrd" id="histrd"></div><div class="hist" id="hist"><div class="hwait">Se încarcă…</div></div><div class="sm" id="histinfo"></div></div>
+<title>VEXU HQ</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png"><link rel="manifest" href="/vexu-hq/manifest.webmanifest"><meta name="theme-color" content="#08090c"><link rel="apple-touch-icon" href="/vexu-hq/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="VEXU HQ"><!--css--><link rel="preload" href="/vexu-hq/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/vexu-hq/style.css?v=94e514f6"><script>(function(){var d=document;function m(i){i.classList.add('ld')}d.addEventListener('load',function(e){var i=e.target;if(i&&i.classList&&i.classList.contains('fx'))m(i)},true);d.addEventListener('error',function(e){var i=e.target;if(i&&i.classList&&i.classList.contains('fx'))m(i)},true);function s(){var a=d.querySelectorAll('img.fx:not(.ld)');for(var k=0;k<a.length;k++)if(a[k].complete)m(a[k])}addEventListener('DOMContentLoaded',s);addEventListener('load',s);setTimeout(s,1500)})()</script><noscript><style>img.fx{opacity:1}</style></noscript><!--/css--></head><body><!--nav--><header class="top"><div class="top-in"><a class="brand" href="index.html"><img src="/vexu-hq/icon-192.png" width="28" height="28" alt=""><b>VEXU<i>HQ</i></b></a><a class="tn-s" href="blog.html#f=trend-shorts">Ce merge în Shorts</a><nav class="tn" aria-label="Navigație principală"><a href="index.html" aria-current="page">Dashboard</a><a href="blog.html">Blog</a><a href="calendar.html">Calendar</a><a href="recap.html">Rezumat</a></nav></div></header><!--/nav--><div class="w">
+<div class="pg-h"><h1>Ce contează acum</h1><div class="sub" id="now">VEXU Online</div></div>
+<section class="hero skel" id="hero" aria-live="polite"><div class="hm"></div><div class="hb"><div class="hk">Se încarcă evenimentele…</div></div></section>
+<div class="kpis" id="kpis">
+<div class="kpi"><div class="kl"><span class="hb2"></span>Jucători acum</div><b class="kv n" id="pl">—</b><div class="ks">Steal An Egg <span class="dl" id="pld"></span></div><div id="spPl"></div></div>
+<div class="kpi"><div class="kl">Vârful de azi</div><b class="kv n" id="pkd">—</b><div class="ks" id="pkdi">jucători, măsurat de noi</div><div id="spPk"></div></div>
+<div class="kpi"><div class="kl">Postări azi</div><b class="kv" id="kPosts">—</b><div class="ks" id="kPostsS">ultimele 7 zile mai jos</div><div id="spPo"></div></div>
+<div class="kpi"><div class="kl">Evenimente live</div><b class="kv" id="kLive">—</b><div class="ks" id="kLiveS">din calendar</div></div>
+</div>
+<section class="sec" id="board"><h2>Evenimente <a href="calendar.html">Calendar complet →</a></h2>
+<div class="seg" id="tabs" role="tablist" aria-label="Evenimente"></div><div class="evl two" id="evl" role="tabpanel"></div><div id="evx"></div></section>
+<section class="sec" id="newsSec"><h2>Ultimele știri <a href="blog.html">Toate știrile →</a></h2><div class="cards c3" id="news"></div></section>
+<section class="sec"><h2>Jucători și program</h2><div class="lay2"><div class="stk">
+<div class="c"><h2>Steal An Egg · ultimele 24h</h2><div class="hrd" id="histrd"></div><div class="hist" id="hist"><div class="hwait">Se încarcă…</div></div><div class="sm" id="histinfo"></div>
+<div class="kv2" style="margin-top:16px"><div><div class="sm">Vizite totale</div><b class="n" id="vi" style="font:500 22px var(--m)">—</b></div><div><div class="sm">Maxim măsurat de noi (7 zile)</div><b class="n" id="pk7" style="font:500 22px var(--m)">—</b><div class="sm" id="pk7i"></div></div></div>
+<div class="sm" id="upd" style="margin-top:12px"></div><div class="sm" id="pkinfo">măsurat de noi periodic</div></div>
+<div class="c"><h2>Ce știm / ce NU știm</h2><div class="kv2"><div class="chk"><h3>Confirmat</h3><div id="hwC"></div></div><div class="chk q"><h3>Neanunțat</h3><div id="hwN"></div></div></div></div>
+</div><div class="stk">
+<div class="c"><h2>Programul lui Andrei</h2><div id="azi"></div><div class="sm" id="azi2"></div><div class="strip" id="strip"></div>
+<h2 style="margin-top:24px">Următorul live</h2><div class="st" id="lvst" style="font-weight:600;margin-bottom:4px">Se calculează…</div><div class="cd" id="lvcd"></div><div class="sm" id="lvinfo"></div></div>
 <div class="c"><h2>Ideea de Short a zilei</h2><div class="big" id="shT">—</div><div id="shL"></div></div>
-<div class="c"><h2>Ce știm / ce NU știm · Halloween</h2><div class="kv"><div class="chk"><h3>Confirmat</h3><div id="hwC"></div></div><div class="chk q"><h3>Neanunțat</h3><div id="hwN"></div></div></div></div>
-<div class="c full"><h2>Programul lui Andrei</h2><div id="azi"></div><div class="sm" id="azi2"></div><div class="strip" id="strip"></div></div>
-</div><aside class="c side"><h2>Ultimele știri</h2><div id="news"></div><a class="more-l" href="blog.html">Toate știrile →</a></aside></div><p class="sub foot">Datele live vin de la Roblox · actualizare automată</p></div>
+</div></div></section>
+<p class="sub foot">Datele live vin de la Roblox · actualizare automată</p></div>
 <button class="totop" id="totop" type="button" aria-label="Înapoi sus" title="Înapoi sus">↑</button>
+<!--ev--><script src="/vexu-hq/events.js?v=c061be09"></script><!--/ev-->
 <script>
 const TZ='Europe/Bucharest';let D=null;
 const fmt=(d,o)=>new Intl.DateTimeFormat('ro-RO',Object.assign({timeZone:TZ},o)).format(d);
 const hm=d=>fmt(d,{hour:'2-digit',minute:'2-digit'});
 const nf=n=>n.toLocaleString('ro-RO');
-let EV={start:new Date('2026-10-17T15:00:00Z'),end:new Date('2026-10-24T14:00:00Z'),src:'fallback'};
-// PART 2 (Halloween Steal An Egg): ore aproximative, fixe; 25 oct e după trecerea la ora de iarnă (+02:00)
-const P2={start:new Date('2026-10-24T15:00:00Z'),end:new Date('2026-10-25T16:34:00Z')};
 const wd=d=>fmt(d,{weekday:'short'}).replace('.','')+' '+fmt(d,{day:'numeric'})+' '+fmt(d,{month:'short'}).replace('.','');
-const when=(d,ap)=>`${wd(d)}, ${ap?'~':''}${hm(d)}`;const dimAp=()=>EV.src!=='roblox_api';
-function phase(now){if(now<EV.start)return{h:'Halloween Dimension · Steal An Egg',st:'Halloween Dimension începe în…',tgt:EV.start,live:false,nx:`Urmează: final Dimension — ${when(EV.end,dimAp())}`};
-if(now<EV.end)return{h:'Halloween Dimension · Steal An Egg',st:'Halloween Dimension se termină în…',tgt:EV.end,live:true,nx:`Urmează: PART 2 — ${when(P2.start,1)}`};
-if(now<P2.start)return{h:'Halloween PART 2 · Steal An Egg',st:'PART 2 începe în…',tgt:P2.start,live:false,nx:`Urmează: final PART 2 — ${when(P2.end,1)}`};
-if(now<P2.end)return{h:'Halloween PART 2 · Steal An Egg',st:'PART 2 se termină în…',tgt:P2.end,live:true,nx:`Final PART 2: ${when(P2.end,1)} (ora României)`};
-return{h:'Halloween · Steal An Egg',st:'PART 2 s-a încheiat',tgt:null,live:false,nx:'Evenimentul de Halloween din Steal An Egg s-a terminat.'}}
-function tick(){const now=new Date();document.getElementById('now').textContent=fmt(now,{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',second:'2-digit'});
-const ph=phase(now),tgt=ph.tgt;document.getElementById('evh').textContent=ph.h;document.getElementById('evnext').textContent=ph.nx;
-const es_=document.getElementById('evst');es_.textContent=ph.st;es_.classList.toggle('on',ph.live);document.querySelector('.hero').classList.toggle('live',ph.live);hwDays(now);const cd=document.getElementById('cd');
-if(!tgt){cd.innerHTML='';return}let s=Math.floor((tgt-now)/1000);const p=[[Math.floor(s/86400),'zile'],[Math.floor(s%86400/3600),'ore'],[Math.floor(s%3600/60),'min'],[s%60,'sec']];
-cd.innerHTML=p.map(([v,l])=>`<div><b>${String(v).padStart(2,'0')}</b><span>${l}</span></div>`).join('')}
-function hwDays(now){const t=fmt(now,{year:'numeric',month:'2-digit',day:'2-digit'}).split('.').reverse().join('-'),y=+t.slice(0,4),d=Math.round((Date.UTC(y,9,31)-Date.UTC(y,+t.slice(5,7)-1,+t.slice(8,10)))/864e5),e=document.getElementById('hwb');if(!e)return;e.style.display=d<0?'none':'';e.textContent=d>1?`Mai sunt ${d}${d>=20?" de":""} zile până la Halloween`:d===1?'Mâine e Halloween':'Azi e Halloween'}
-function showEv(){const o={weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'};
-document.getElementById('evinfo').textContent=`Dimension: ${when(EV.start,dimAp())} – ${when(EV.end,dimAp())} (${EV.src==='roblox_api'?'ore oficiale Roblox':'ore estimate'}) · PART 2: ${when(P2.start,1)} – ${when(P2.end,1)} · ora României`}
+
+const es=x=>String(x==null?'':x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const ne=s=>String(s||'').replace(/^[\p{Extended_Pictographic}\uFE0F\u200D\s]+/u,'');
+const cls=l=>String(l).replace(/[^A-Za-z0-9]+/g,'-');
+function tick(){const now=new Date();document.getElementById('now').textContent='VEXU Online · '+fmt(now,{weekday:'long',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit',second:'2-digit'})+' (ora României)'}
 const LASTV={};function anim(id,v){const e=document.getElementById(id),p=LASTV[id];LASTV[id]=v;if(p===undefined||p===v||matchMedia('(prefers-reduced-motion:reduce)').matches){e.textContent=nf(v);return p}
 e.classList.remove('up','dn');void e.offsetWidth;e.classList.add(v>p?'up':'dn');const t0=performance.now(),D_=900;(function st(t){const k=Math.min(1,(t-t0)/D_),q=1-Math.pow(1-k,3);e.textContent=nf(Math.round(p+(v-p)*q));if(k<1)requestAnimationFrame(st)})(t0);return p}
 function showGame(g,src){if(!g)return;const pp=anim('pl',g.playing);anim('vi',g.visits);const dl=document.getElementById('pld'),ps_=LASTV.src;LASTV.src=src;if(src!=='live'||ps_!=='live'){dl.textContent=''}else if(pp!==undefined&&pp!==g.playing){const d=g.playing-pp;dl.className='dl '+(d>0?'u':'d');dl.textContent=(d>0?'+':'')+nf(d)+' într-un minut'}
@@ -40,8 +43,7 @@ let LIVEOK=false;const SRC=['https://games.roproxy.com/v1/games?universeIds=1056
 async function liveGame(){for(const u of SRC){try{const r=await fetch(u,{cache:'no-store'});if(!r.ok)continue;const g=(await r.json()).data[0];if(!g||typeof g.playing!=='number')continue;LIVEOK=true;showGame({playing:g.playing,visits:g.visits,fetched:new Date().toISOString()},'live');return}catch(e){}}
 LIVEOK=false;if(D&&D.game)showGame(D.game,'cache')}
 setInterval(liveGame,60000);
-async function load(){try{D=await (await fetch('data.json?'+Date.now())).json();
-if(D.event){EV={start:new Date(D.event.start),end:new Date(D.event.end),src:D.event.source}}showEv();if(!LIVEOK)showGame(D.game,'cache');}catch(e){showEv()}
+async function load(){try{D=await (await fetch('data.json?'+Date.now())).json();if(!LIVEOK)showGame(D.game,'cache');if(EVS)paintAll()}catch(e){}
 if(!LIVEOK)liveGame()}
 // program: ciclu 12 zile, ancoră 14 oct 2026 = Liber zi 1
 const CYC=['Liber','Liber','Liber','Noapte','Noapte','Noapte','Liber','Liber','Liber','Zi','Zi','Zi'];
@@ -60,16 +62,65 @@ function cdHtml(ms){let s=Math.max(0,Math.floor(ms/1000));return [[Math.floor(s/
 function live(){const now=new Date(),k=dayKey(now);for(let j=0;j<14;j++){const kk=k+j*864e5;if(stateFor(kk)!=='Liber')continue;const a=roAt(kk,17),b=roAt(kk,21);if(now>=b)continue;
 const on=now>=a;document.getElementById('lvst').innerHTML=on?'<span class="lv">Live acum · se termină în</span>':'Începe în';
 document.getElementById('lvcd').innerHTML=cdHtml((on?b:a)-now);document.getElementById('lvinfo').textContent=`${fmt(a,{weekday:'long',day:'numeric',month:'long'})} · ${hm(a)}–${hm(b)} (ora României)`;return}}
-let SH=null;function shTick(){if(!SH)return;const t=new Date(SH.countdown_pana),ms=t-new Date();const e=document.getElementById('shCd');if(e)e.innerHTML=ms>0?cdHtml(ms):'<b style="color:var(--ok)">Portalul e deschis!</b>'}
-fetch('extra.json?'+Date.now()).then(r=>r.json()).then(x=>{SH=x.short;document.getElementById('shT').textContent='„'+SH.titlu+'”';
-document.getElementById('shL').innerHTML=`<div class="li">Durată: <b>${SH.durata}</b></div><div class="li">${SH.countdown_text}</div><div class="cd" id="shCd"></div><div class="li">${SH.broll}</div><div class="li">${SH.regula}</div>`;shTick();
-document.getElementById('hwC').innerHTML=x.halloween.confirmat.map(i=>`<div class="li">${i}</div>`).join('');document.getElementById('hwN').innerHTML=x.halloween.neanuntat.map(i=>`<div class="li">${i}</div>`).join('')}).catch(e=>{});
-setInterval(()=>{live();shTick()},1000);live();
-fetch('posts.json?'+Date.now()).then(r=>r.json()).then(ps=>{const sl=t=>t.normalize('NFKD').replace(/[^\x00-\x7f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
-const pt=p=>p.published?new Date(p.published):p.date?new Date(p.date+'T12:00:00+03:00'):new Date(0);const o=ps.filter(p=>p.section!=='shorts').map((p,i)=>[p,i]).sort((a,b)=>(!!b[0].featured-!!a[0].featured)||(pt(b[0])-pt(a[0]))||b[1]-a[1]).slice(0,5);const now=new Date(),tk=fmt(now,{day:'numeric',month:'numeric',year:'numeric'});
-const ago=p=>{if(!p.published)return '';const d=new Date(p.published),m=Math.floor((now-d)/6e4);return m<1?'chiar acum':m<60?`acum ${m} min`:fmt(d,{day:'numeric',month:'numeric',year:'numeric'})===tk?`azi la ${hm(d)}`:`${fmt(d,{weekday:'short',day:'numeric',month:'short'})}, ${hm(d)}`};const fresh=p=>p.published&&(now-new Date(p.published))<3*36e5;
-const ne=s=>String(s||'').replace(/^[\p{Extended_Pictographic}\uFE0F\u200D\s]+/u,'');const es=x=>x.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-document.getElementById('news').innerHTML=o.map(([p])=>`<a class="nw" href="posts/${p.slug||sl(p.titlu)}.html">${fresh(p)?'<span class="nb">NOU</span>':''}${[].concat(p.eticheta).map(l=>`<span class="l ${l.replace(/[^A-Za-z0-9]+/g,'-')}">${es(l)}</span>`).join('')}<b>${es(ne(p.titlu))}</b>${ago(p)?`<i>${ago(p)}</i>`:''}</a>`).join('')}).catch(e=>{});
+
+// ───── sparkline-uri (doar din date reale) ─────
+function lineSpark(v){if(v.length<3)return '';const mn=Math.min(...v),mx=Math.max(...v),r=(mx-mn)||1,n=v.length;
+  const P=v.map((y,i)=>[(i/(n-1)*100).toFixed(2),(32-(y-mn)/r*28).toFixed(2)]);const d=P.map((p,i)=>(i?'L':'M')+p[0]+' '+p[1]).join('');
+  return `<svg class="sp" viewBox="0 0 100 36" preserveAspectRatio="none" aria-hidden="true"><path class="ar" d="${d}L100 36L0 36Z"/><path class="ln" d="${d}"/></svg>`}
+function barSpark(v){const n=v.length,mx=Math.max(1,...v),w=100/n;
+  return `<svg class="sp" viewBox="0 0 100 36" preserveAspectRatio="none" aria-hidden="true">`+v.map((y,i)=>{const h=Math.max(y?3:1.5,y/mx*34);return `<rect class="bb${i===n-1?' t':''}" x="${(i*w+w*.14).toFixed(2)}" y="${(36-h).toFixed(2)}" width="${(w*.72).toFixed(2)}" height="${h.toFixed(2)}" rx="1.5"/>`}).join('')+'</svg>'}
+// ───── evenimente: hero + panou cu taburi ─────
+let EVS=null,POSTS=null,TAB=null,OPEN=false,HK='';
+function evData(){const now=new Date();return EVS.map(ev=>({ev,st:VX.status(ev,now)}))}
+function pickHero(L){const g=((D&&D.game&&D.game.name)||'').toLowerCase();
+  const sc=x=>[(g&&((x.ev.game||'').toLowerCase()===g||(x.ev.gameLabel||'').toLowerCase()===g))?0:1,x.st.kind==='live'?0:1,x.st.target?+x.st.target:9e15];
+  const c=L.filter(x=>x.st.kind!=='done'&&x.st.target).sort((a,b)=>{const p=sc(a),q=sc(b);return p[0]-q[0]||p[1]-q[1]||p[2]-q[2]});return c[0]||null}
+function heroImg(ev){let s=ev.img;if(!s||s==='icon.png'||s==='generic-neon.png'){const p=POSTS&&POSTS.find(x=>x.slug===ev.slug);if(p&&p.img)s=p.img}return s||'generic-neon.png'}
+function paintHero(){const L=evData(),h=pickHero(L),el=document.getElementById('hero'),now=new Date();
+  if(!h){el.className='hero';el.style.removeProperty('--c');el.innerHTML='<div class="hb"><div class="hk">Ce contează acum</div><h2>Niciun eveniment activ în momentul ăsta</h2><div class="ha"><a class="btn pri" href="calendar.html">Vezi calendarul</a><a class="btn" href="blog.html">Ultimele știri</a></div></div>';HK='';return}
+  const {ev,st}=h,key=ev.name+'|'+st.kind+'|'+(+st.target);
+  if(key!==HK){HK=key;const lv=st.kind==='live',gl=ev.gameLabel||ev.game||'',hue=VX.gameHue(ev.gameSlug||gl),w=VX.span(ev);
+    const href=ev.slug?'posts/'+es(ev.slug)+'.html':(ev.link||'calendar.html');
+    const win=[w.s?fmt(w.s,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):'',w.e?fmt(w.e,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}):''].filter(Boolean).join(' → ');
+    el.className='hero';
+    el.innerHTML=`<a class="hm" href="${href}" tabindex="-1" aria-hidden="true"><img class="fx" src="${es(heroImg(ev))}" alt="" width="1280" height="720" fetchpriority="high"></a><div class="hb">
+    <div class="hk${lv?' on':''}">${lv?'<span class="live-dot"></span>Live acum · se termină în':'Începe în'}</div>
+    <div class="hg"><i class="gd" style="--h:${hue}"></i>${es(gl)}</div><h2>${es(ev.name)}</h2>
+    <div class="cd" id="hcd"></div>
+    ${lv&&w.s&&w.e?`<div class="pr"><span class="pbar"><u id="hbar"></u></span><span class="sm" id="hpct"></span></div>`:''}
+    <div class="sm">${es(win)} · ora României</div>
+    <div class="ha"><a class="btn pri" href="${href}"${!ev.slug&&ev.link?' target="_blank" rel="noopener"':''}>${ev.slug?'Vezi postarea':'Pagina oficială'}</a>${ev.gameSlug?`<a class="btn" href="calendar.html#g=${es(ev.gameSlug)}">Calendar ${es(gl)}</a>`:''}</div></div>`;
+    el.dataset.t=+st.target;el.dataset.live=lv?1:'';
+    if(lv&&w.s&&w.e){el.dataset.s=+w.s;el.dataset.e=+w.e}else{delete el.dataset.s;delete el.dataset.e}}
+  heroTick(now)}
+function heroTick(now){const el=document.getElementById('hero'),t=+el.dataset.t;if(!t)return;const ms=t-now;if(ms<=0){paintHero();paintBoard();return}
+  const c=document.getElementById('hcd');if(c)c.innerHTML=VX.cdHtml(ms);
+  if(el.dataset.s){const s=+el.dataset.s,e=+el.dataset.e,k=Math.max(0,Math.min(1,(now-s)/(e-s))),b=document.getElementById('hbar'),p=document.getElementById('hpct');if(b)b.style.width=(k*100).toFixed(1)+'%';if(p)p.textContent=Math.round(k*100)+'% din eveniment a trecut'}}
+function paintBoard(){const L=evData(),now=new Date();
+  const lv=L.filter(x=>x.st.kind==='live'),end=lv.filter(x=>x.st.target&&x.st.target-now<864e5).sort((a,b)=>a.st.target-b.st.target),
+    soon=L.filter(x=>x.st.kind==='soon'&&x.st.target&&x.st.target-now<2*864e5).sort((a,b)=>a.st.target-b.st.target),
+    all=lv.slice().sort((a,b)=>(a.st.target||9e15)-(b.st.target||9e15));
+  const T=[['end','Se termină azi',end],['soon','Începe curând',soon],['live','Live acum',all]];
+  if(!TAB||!T.some(t=>t[0]===TAB))TAB=(T.find(t=>t[2].length)||T[0])[0];
+  const cur=T.find(t=>t[0]===TAB),box=document.getElementById('tabs');
+  box.innerHTML=T.map(t=>`<button type="button" role="tab" data-t="${t[0]}" aria-selected="${t[0]===TAB}">${t[1]}<span class="n">${t[2].length}</span></button>`).join('');
+  box.querySelectorAll('button').forEach(b=>b.onclick=()=>{TAB=b.dataset.t;OPEN=false;paintBoard()});
+  const LIM=6,sh=OPEN?cur[2]:cur[2].slice(0,LIM);
+  document.getElementById('evl').innerHTML=sh.length?sh.map(x=>VX.evRow(x.ev,now)).join(''):'<div class="empty">Nimic în categoria asta acum.</div>';
+  document.getElementById('evx').innerHTML=cur[2].length>LIM?`<button type="button" class="es-x" aria-expanded="${OPEN}">${OPEN?'Arată mai puține':'Arată toate ('+cur[2].length+')'}</button>`:'';
+  const x=document.querySelector('#evx .es-x');if(x)x.onclick=()=>{OPEN=!OPEN;paintBoard()};
+  const kl=document.getElementById('kLive');if(kl){kl.textContent=lv.length;document.getElementById('kLiveS').textContent=`${end.length} se termină azi · ${L.filter(x=>x.st.kind==='soon'&&x.st.target&&x.st.target-now<864e5).length} încep în 24h`}}
+function paintAll(){paintHero();paintBoard()}
+function loadEv(){fetch('calendar-events.json?'+Date.now()).then(r=>r.json()).then(d=>{EVS=d.events||d;paintAll()}).catch(()=>{})}
+setInterval(()=>{if(!EVS)return;const now=new Date();heroTick(now);if(VX.tick(document.getElementById('evl'),now))paintBoard()},1000);setInterval(()=>{if(EVS)paintBoard()},60000);
+// ───── știri + KPI postări (din posts-index.json) ─────
+function loadNews(){fetch('posts-index.json?'+Date.now()).then(r=>r.json()).then(d=>{POSTS=d.posts||d;if(EVS)paintHero();
+  const now=new Date(),tk=k=>fmt(k,{year:'numeric',month:'2-digit',day:'2-digit'}),today=tk(now);
+  const ps=POSTS.filter(p=>p.published&&p.section!=='shorts').sort((a,b)=>Date.parse(b.published)-Date.parse(a.published));
+  const ago=p=>{const d=new Date(p.published),m=Math.floor((now-d)/6e4);return m<1?'chiar acum':m<60?`acum ${m} min`:tk(d)===today?`azi, ${hm(d)}`:`${fmt(d,{day:'numeric',month:'short'})}, ${hm(d)}`};
+  document.getElementById('news').innerHTML=ps.slice(0,3).map((p,i)=>`<a class="pc ${cls((p.labels||[''])[0])}" href="posts/${es(p.slug)}.html"><span class="im"><img class="fx" src="${es(p.img)}" alt="" width="640" height="360" loading="lazy"><span class="ribs">${(p.labels||[]).map(l=>`<span class="rib ${cls(l)}">${es(l)}</span>`).join('')}</span></span><span class="b"><span class="mt"><span class="dt">${es(ago(p))}</span>${p.joc?`<span class="gm"><i class="gd" style="--h:${VX.gameHue(p.jocSlug)}"></i>${es(p.joc)}</span>`:''}</span><h3>${es(ne(p.title))}</h3></span></a>`).join('');
+  const days=[];for(let i=6;i>=0;i--)days.push(tk(new Date(+now-i*864e5)));const cnt=days.map(k=>POSTS.filter(p=>p.published&&tk(new Date(p.published))===k).length);
+  document.getElementById('kPosts').textContent=cnt[6];document.getElementById('kPostsS').textContent=ps.length?`ultima: ${ago(ps[0])}`:'';document.getElementById('spPo').innerHTML=barSpark(cnt)}).catch(()=>{})}
 // grafic 24h din history.json (scris de GitHub Action; cron la 10 min, dar GitHub îl rulează adesea la 2–4h); doar puncte reale, fără completări
 let HI=null,HP=[];const GAP=5*36e5;
 const cmp=n=>n>=1e6?(n/1e6).toFixed(2).replace('.',',')+' mil.':n>=1e4?Math.round(n/1e3)+' mii':nf(n);
@@ -85,7 +136,7 @@ const h0=Math.ceil(t0/36e5)*36e5,step=W<500?6:3;for(let t=h0;t<=now;t+=36e5){con
 const segs=[];let cur=[];HP.forEach((x,i)=>{if(i&&x.t-HP[i-1].t>GAP){segs.push(cur);cur=[]}cur.push(x)});segs.push(cur);
 let area='',line='',dots='';const sd=HP.length<=80;segs.forEach(s=>{const d=s.map((x,i)=>(i?'L':'M')+X(x.t).toFixed(1)+' '+Y(x.p).toFixed(1)).join('');if(s.length>1){line+=d;area+=d+`L${X(s[s.length-1].t).toFixed(1)} ${T+ih}L${X(s[0].t).toFixed(1)} ${T+ih}Z`}if(sd||s.length===1)s.forEach(x=>dots+=`<circle cx="${X(x.t).toFixed(1)}" cy="${Y(x.p).toFixed(1)}" r="2.5" class="pt"/>`)});
 const last=HP[HP.length-1];
-el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Grafic jucători Steal An Egg, ultimele 24 de ore">${g}<path d="${area}" class="ar"/><path d="${line}" class="ln" stroke-linejoin="round"/>${dots}<circle cx="${X(last.t).toFixed(1)}" cy="${Y(last.p).toFixed(1)}" r="4" class="lp"/><line id="hcur" x1="0" x2="0" y1="${T}" y2="${T+ih}" class="cur" style="display:none"/><circle id="hdot" r="4" class="lp" style="display:none"/></svg>`;
+document.getElementById('spPl').innerHTML=lineSpark(HP.map(x=>x.p));el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Grafic jucători Steal An Egg, ultimele 24 de ore">${g}<path d="${area}" class="ar"/><path d="${line}" class="ln" stroke-linejoin="round"/>${dots}<circle cx="${X(last.t).toFixed(1)}" cy="${Y(last.p).toFixed(1)}" r="4" class="lp"/><line id="hcur" x1="0" x2="0" y1="${T}" y2="${T+ih}" class="cur" style="display:none"/><circle id="hdot" r="4" class="lp" style="display:none"/></svg>`;
 const sv=el.querySelector('svg'),cu=sv.querySelector('#hcur'),dt=sv.querySelector('#hdot');
 const showRd=x=>{rd.innerHTML=`${hm(new Date(x.t))} · <b>${nf(x.p)}</b> jucători`};showRd(last);
 const mv=e=>{const r=sv.getBoundingClientRect(),px=(e.clientX-r.left)*W/r.width;let b=HP[0];for(const x of HP)if(Math.abs(X(x.t)-px)<Math.abs(X(b.t)-px))b=x;const cx=X(b.t).toFixed(1);cu.setAttribute('x1',cx);cu.setAttribute('x2',cx);cu.style.display='';dt.setAttribute('cx',cx);dt.setAttribute('cy',Y(b.p).toFixed(1));dt.style.display='';showRd(b)};
@@ -102,30 +153,15 @@ const t=ds[td];document.getElementById('pkd').textContent=t?nf(t.peak):'—';doc
 const k7=new Set(last7.map(x=>x[0]));const cand=last7.map(([k,v])=>({p:v.peak,t:v.t,k,n:v.n,m:0}));
 (Array.isArray(h&&h.manual)?h.manual:[]).forEach(m=>{if(typeof m.p!=='number'||!m.t)return;const k=dk(new Date(m.t));if(k>td||k<new Date(Date.UTC(+ty,+tm-1,+tdd-6)).toISOString().slice(0,10))return;k7.add(k);cand.push({p:m.p,t:m.t,k,m:1,note:m.note||''})});
 if(cand.length){const b=cand.reduce((a,x)=>x.p>a.p?x:a);document.getElementById('pk7').textContent=nf(b.p);document.getElementById('pk7i').textContent=`${dl(b.k)}, ${hm(new Date(b.t))} · `+(b.m?`1 citire manuală (${b.note})`:`din ${b.n} ${b.n===1?'măsurătoare':'măsurători'}`)}else{document.getElementById('pk7').textContent='—';document.getElementById('pk7i').textContent='încă nu avem date'}
-document.getElementById('pkinfo').textContent=`măsurat de noi periodic`+(k7.size<7?` · din ${k7.size} ${k7.size===1?'zi':'zile'} de date`:'')}).catch(()=>{document.getElementById('pkinfo').textContent='măsurat de noi periodic · date indisponibile momentan'})}
+document.getElementById('spPk').innerHTML=barSpark(Array.from({length:7},(_,i)=>{const k=new Date(Date.UTC(+ty,+tm-1,+tdd-(6-i))).toISOString().slice(0,10);return ds[k]&&typeof ds[k].peak==='number'?ds[k].peak:0}));document.getElementById('pkinfo').textContent=`măsurat de noi periodic`+(k7.size<7?` · din ${k7.size} ${k7.size===1?'zi':'zile'} de date`:'')}).catch(()=>{document.getElementById('pkinfo').textContent='măsurat de noi periodic · date indisponibile momentan'})}
 loadPeak();setInterval(loadPeak,300000);
+
 let RZ;addEventListener('resize',()=>{clearTimeout(RZ);RZ=setTimeout(drawHist,200)});loadHist();setInterval(loadHist,300000);
+let SH=null;function shTick(){if(!SH)return;const t=new Date(SH.countdown_pana),ms=t-new Date();const e=document.getElementById('shCd');if(e)e.innerHTML=ms>0?cdHtml(ms):'<em style="font-style:normal;font:600 15px var(--f);color:var(--ok)">Portalul e deschis!</em>'}
+fetch('extra.json?'+Date.now()).then(r=>r.json()).then(x=>{SH=x.short;document.getElementById('shT').textContent='„'+SH.titlu+'”';
+document.getElementById('shL').innerHTML=`<div class="li">Durată: <b>${SH.durata}</b></div><div class="li">${SH.countdown_text}</div><div class="cd" id="shCd"></div><div class="li">${SH.broll}</div><div class="li">${SH.regula}</div>`;shTick();
+const H=x.halloween||x.ce_stim||{confirmat:[],neanuntat:[]};document.getElementById('hwC').innerHTML=H.confirmat.map(i=>`<div class="li">${i}</div>`).join('');document.getElementById('hwN').innerHTML=H.neanuntat.map(i=>`<div class="li">${i}</div>`).join('')}).catch(e=>{});
+setInterval(()=>{live();shTick()},1000);live();
+loadPeak();setInterval(loadPeak,300000);loadEv();setInterval(loadEv,600000);loadNews();setInterval(loadNews,300000);
 load();sched();tick();setInterval(tick,1000);setInterval(load,90000);setInterval(sched,60000);
-</script><script>
-// „Se termină azi”: evenimentele din calendar-events.json care se termină în <24h (aceeași regulă ca „⏰ Ultimele ore!” din calendar: LIVE acum + final în <24h)
-(function(){const TZ='Europe/Bucharest',box=document.getElementById('endSoon');if(!box)return;let EVS=null,OPEN=false;
-const es=x=>String(x).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const f=(d,o)=>new Intl.DateTimeFormat('ro-RO',Object.assign({timeZone:TZ},o)).format(d);
-const dk=d=>f(d,{year:'numeric',month:'2-digit',day:'2-digit'});
-function liveEnd(ev,now){if(ev.coming_soon||ev.announced||ev.date_only||ev.end_only||ev.no_end)return null;
-  if(ev.start_date&&ev.end_date&&!ev.start){const s=new Date(ev.start_date+'T00:00:00+03:00'),e=new Date(ev.end_date+'T23:59:59+02:00');return now>=s&&now<=e?e:null}
-  if(!ev.start||!ev.end)return null;const s=new Date(ev.start),e=new Date(ev.end);return now>=s&&now<e?e:null}
-function left(ms){const m=Math.max(0,Math.floor(ms/6e4));return m<60?`${m} min`:`${Math.floor(m/60)}h ${String(m%60).padStart(2,'0')}m`}
-function paint(){if(!EVS)return;const now=new Date();
-  const L=EVS.map(ev=>({ev,e:liveEnd(ev,now)})).filter(x=>x.e&&x.e-now<864e5).sort((a,b)=>a.e-b.e);
-  if(!L.length){box.hidden=true;box.innerHTML='';return}
-  const day=e=>dk(e)===dk(now)?'azi':'mâine';
-  const shown=OPEN?L:L.slice(0,6);
-  box.innerHTML=`<h2>Se termină azi <span class="n">${L.length}</span><a href="calendar.html">Calendar →</a></h2><div class="esl">`+shown.map(({ev,e})=>{
-    const href=ev.slug?`posts/${es(ev.slug)}.html`:(ev.gameSlug?`calendar.html#g=${es(ev.gameSlug)}`:'calendar.html');
-    return `<a class="esi" href="${href}"><img src="${es(ev.img||'generic-neon.png')}" alt="" loading="lazy"><span class="tx"><span class="gm">${es(ev.game||'')}</span><span class="nm">${es(ev.name||'')}</span></span><span class="tm"><b>${left(e-now)}</b>${day(e)} ${f(e,{hour:'2-digit',minute:'2-digit'})}</span></a>`}).join('')+'</div>'+(L.length>6?`<button type="button" class="es-x" aria-expanded="${OPEN}">${OPEN?'Arată mai puține':'Arată toate ('+L.length+')'}</button>`:'');
-  const x=box.querySelector('.es-x');if(x)x.onclick=()=>{OPEN=!OPEN;paint()};
-  box.hidden=false}
-function load(){fetch('calendar-events.json?'+Date.now()).then(r=>r.json()).then(d=>{EVS=d.events||d;paint()}).catch(()=>{})}
-load();setInterval(paint,30000);setInterval(load,600000)})();
-</script><script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/vexu-hq/sw.js',{scope:'/vexu-hq/'}).catch(()=>{}))</script><script>(function(){var b=document.getElementById('totop');if(!b)return;function u(){b.classList.toggle('on',scrollY>600)}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}})()</script><script src="/vexu-hq/pumpkin-hunt.js" defer></script></body></html>
+</script><script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/vexu-hq/sw.js',{scope:'/vexu-hq/'}).catch(()=>{}))</script><script>(function(){var b=document.getElementById('totop');if(!b)return;function u(){b.classList.toggle('on',scrollY>600)}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}})()</script></body></html>
