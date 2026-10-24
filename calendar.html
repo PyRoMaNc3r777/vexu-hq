@@ -1,119 +1,48 @@
-<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Calendar Halloween · VEXU HQ</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png"><link rel="manifest" href="/vexu-hq/manifest.webmanifest"><meta name="theme-color" content="#0b0c0f"><link rel="apple-touch-icon" href="/vexu-hq/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="VEXU HQ"><link rel="preload" href="/vexu-hq/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/vexu-hq/style.css?v=59d03e81"></head><body><header class="top"><div class="top-in"><a class="brand" href="index.html"><img src="/vexu-hq/icon-192.png" width="28" height="28" alt=""><b>VEXU<i>HQ</i></b></a><a class="tn-s" href="blog.html#f=trend-shorts">Ce merge în Shorts</a><nav class="tn" aria-label="Navigație principală"><a href="index.html">Dashboard</a><a href="blog.html">Blog</a><a href="calendar.html" aria-current="page">Calendar</a><a href="recap.html">Rezumat</a></nav></div></header><div class="w"><h1>Calendar Halloween</h1><p class="rsub">Doar ferestre CONFIRMAT din blog · ora României · countdown live</p><div class="ftitle">Jocuri</div><div class="filters" id="gfilters" role="toolbar" aria-label="Filtru după joc"></div><div class="ginfo" id="ginfo"></div><div class="cal" id="cal">Se încarcă…</div></div><button class="totop" id="totop" type="button" aria-label="Înapoi sus" title="Înapoi sus">↑</button>
+<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Calendar evenimente · VEXU HQ</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png"><link rel="manifest" href="/vexu-hq/manifest.webmanifest"><meta name="theme-color" content="#08090c"><link rel="apple-touch-icon" href="/vexu-hq/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="VEXU HQ"><link rel="preload" href="/vexu-hq/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/vexu-hq/style.css?v=94e514f6"><script>(function(){var d=document;function m(i){i.classList.add('ld')}d.addEventListener('load',function(e){var i=e.target;if(i&&i.classList&&i.classList.contains('fx'))m(i)},true);d.addEventListener('error',function(e){var i=e.target;if(i&&i.classList&&i.classList.contains('fx'))m(i)},true);function s(){var a=d.querySelectorAll('img.fx:not(.ld)');for(var k=0;k<a.length;k++)if(a[k].complete)m(a[k])}addEventListener('DOMContentLoaded',s);addEventListener('load',s);setTimeout(s,1500)})()</script><noscript><style>img.fx{opacity:1}</style></noscript></head><body><header class="top"><div class="top-in"><a class="brand" href="index.html"><img src="/vexu-hq/icon-192.png" width="28" height="28" alt=""><b>VEXU<i>HQ</i></b></a><a class="tn-s" href="blog.html#f=trend-shorts">Ce merge în Shorts</a><nav class="tn" aria-label="Navigație principală"><a href="index.html">Dashboard</a><a href="blog.html">Blog</a><a href="calendar.html" aria-current="page">Calendar</a><a href="recap.html">Rezumat</a></nav></div></header><div class="w"><h1>Calendar</h1><p class="rsub">Doar ferestre CONFIRMAT din blog · ora României · countdown live</p><div class="ftitle">Jocuri</div><div class="filters" id="gfilters" role="toolbar" aria-label="Filtru după joc"></div><div class="ginfo" id="ginfo"></div><div class="cal" id="cal">Se încarcă…</div></div><button class="totop" id="totop" type="button" aria-label="Înapoi sus" title="Înapoi sus">↑</button><script src="/vexu-hq/events.js?v=c061be09"></script>
 <script>
-const TZ='Europe/Bucharest';
-const es=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function cdHtml(ms){let s=Math.max(0,Math.floor(ms/1000));return [[Math.floor(s/86400),'zile'],[Math.floor(s%86400/3600),'ore'],[Math.floor(s%3600/60),'min'],[s%60,'sec']].map(([v,l])=>`<div><b>${String(v).padStart(2,'0')}</b><span>${l}</span></div>`).join('')}
-function fmt(iso, o){ if(!iso) return ''; const d=new Date(iso); return new Intl.DateTimeFormat('ro-RO',Object.assign({timeZone:TZ},o)).format(d)}
-function relevant(ev, now){
-  if(ev.coming_soon) return new Date('2099-01-01');
-  if(ev.announced && ev.start) return now;
-  if(ev.start){ const s=new Date(ev.start); if(ev.end){ const e=new Date(ev.end); if(now<e) return s>now?s:e; return e;} return s; }
-  if(ev.end && ev.end_only) return new Date(ev.end);
-  if(ev.start_date){ const s=new Date(ev.start_date+'T12:00:00+03:00'); if(ev.end_date){ const e=new Date(ev.end_date+'T23:59:59+02:00'); return now<e? (now<s?s:e): e;} return s; }
-  if(ev.end_date) return new Date(ev.end_date+'T12:00:00+02:00');
-  return new Date('2099-01-01');
-}
-function status(ev, now){
-  if(ev.coming_soon) return {kind:'soon', text:'Coming Soon — dată neanunțată', target:null};
-  if(ev.announced && ev.start) return {kind:'live', text:'Anunțat oficial pe '+fmt(ev.start,{weekday:'long',day:'numeric',month:'long'})+' — disponibil acum', target:null};
-  if(ev.date_only && ev.start_date){
-    const day=ev.start_date;
-    const today=new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
-    if(today<day) return {kind:'soon', text:'Începe pe '+fmt(day+'T12:00:00+03:00',{weekday:'long',day:'numeric',month:'long'})+' (doar data confirmată)'};
-    if(today===day) return {kind:'live', text:'LIVE azi (oră neconfirmată)'};
-    return {kind:'done', text:'Terminat / trecut'};
-  }
-  if(ev.end_only && ev.end){
-    const e=new Date(ev.end);
-    if(now<e) return {kind:'soon', text:'Se termină în…', target:e};
-    return {kind:'done', text:'Terminat'};
-  }
-  if(ev.no_end && ev.start_date){
-    const s=new Date(ev.start_date+'T12:00:00+03:00');
-    if(now<s) return {kind:'soon', text:'Începe în…', target:s};
-    return {kind:'live', text:'LIVE — '+ (ev.end_note||'fără dată de final anunțată'), target:null};
-  }
-  if(ev.start_date && ev.end_date && !ev.start){
-    const s=new Date(ev.start_date+'T00:00:00+03:00');
-    const e=new Date(ev.end_date+'T23:59:59+02:00');
-    if(now<s) return {kind:'soon', text:'Începe în…', target:s};
-    if(now<=e) return {kind:'live', text:'LIVE — se termină în…', target:e};
-    return {kind:'done', text:'Terminat'};
-  }
-  const s=ev.start?new Date(ev.start):null;
-  const e=ev.end?new Date(ev.end):null;
-  if(s && now<s) return {kind:'soon', text:'Începe în…', target:s};
-  if(s && (!e || now<e)) {
-    if(ev.end_time_unknown && ev.end_date){
-      return {kind:'live', text:'LIVE — final anunțat: '+fmt(ev.end_date+'T12:00:00+02:00',{day:'numeric',month:'long'}), target:null};
-    }
-    if(e) return {kind:'live', text:'LIVE — se termină în…', target:e};
-    return {kind:'live', text:'LIVE', target:null};
-  }
-  if(ev.end_time_unknown && ev.end_date && s && now>=s){
-    const endD=ev.end_date;
-    const today=new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
-    if(today<=endD) return {kind:'live', text:'LIVE — final: '+fmt(endD+'T12:00:00+02:00',{day:'numeric',month:'long'})+' (oră neanunțată)', target:null};
-  }
-  return {kind:'done', text:'Terminat'};
-}
-function windowText(ev){
-  if(ev.coming_soon) return 'Dată: Coming Soon (neanunțată oficial)';
-  if(ev.announced && ev.start) return 'Anunț oficial: '+fmt(ev.start,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
-  const bits=[];
-  if(ev.start) bits.push('Start: '+fmt(ev.start,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}));
-  else if(ev.start_date) bits.push('Start: '+fmt(ev.start_date+'T12:00:00+03:00',{weekday:'short',day:'numeric',month:'short'})+(ev.date_only?' (doar data)':''));
-  if(ev.end) bits.push('Final: '+fmt(ev.end,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}));
-  else if(ev.end_date) bits.push('Final: '+fmt(ev.end_date+'T12:00:00+02:00',{weekday:'short',day:'numeric',month:'short'})+(ev.end_time_unknown?' (oră neanunțată)':''));
-  else if(ev.no_end) bits.push(ev.end_note||'fără dată de final anunțată');
-  if(ev.end_only && ev.end) return 'Se termină: '+fmt(ev.end,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
-  return bits.join(' · ');
-}
-let EVENTS=[];let doneOpen=false;let game='toate';let GAMES=[{id:'toate',label:'Toate'}];
-// filtru după joc: aceleași slug-uri ca filtrul din blog (jocSlug), hash #g=<slug>
+(()=>{const {es,fmt,dayKey,status,evRow,tick}=VX;
+let EVENTS=[],game='toate',GAMES=[{id:'toate',label:'Toate'}];const opened=new Map();
 function parseHash(){const m=(location.hash||'').match(/(?:^#|&)g=([\w-]+)/);return m?m[1]:'toate'}
 function setHash(){const h=game!=='toate'?'#g='+game:'';if((location.hash||'')!==h) history.replaceState(null,'',h||location.pathname+location.search)}
-function gid(ev){return ev.gameSlug||''}
+const gid=ev=>ev.gameSlug||'';
 function buildGames(){const m=new Map();EVENTS.forEach(ev=>{const id=gid(ev);if(!id)return;const x=m.get(id)||{id,label:ev.gameLabel||ev.game||id,n:0};x.n++;m.set(id,x)});
   GAMES=[{id:'toate',label:'Toate',n:EVENTS.length}].concat([...m.values()].sort((a,b)=>b.n-a.n||a.label.localeCompare(b.label,'ro')))}
 function validGame(){if(!GAMES.some(g=>g.id===game)) game='toate'}
-function paintChips(){const now=new Date();const gf=document.getElementById('gfilters');
-  const act=ev=>status(ev,now).kind!=='done';
-  gf.innerHTML=GAMES.map(g=>{const evs=g.id==='toate'?EVENTS:EVENTS.filter(ev=>gid(ev)===g.id);const a=evs.filter(act).length;
-    return `<button type="button" class="chip${game===g.id?' on':''}" data-g="${es(g.id)}" aria-pressed="${game===g.id}" title="${a} active/urmează din ${evs.length}">${es(g.label)}<span class="n">${evs.length}</span></button>`}).join('');
+function paintChips(){const gf=document.getElementById('gfilters');
+  gf.innerHTML=GAMES.map(g=>{const evs=g.id==='toate'?EVENTS:EVENTS.filter(ev=>gid(ev)===g.id);
+    return `<button type="button" class="chip${game===g.id?' on':''}" data-g="${es(g.id)}" aria-pressed="${game===g.id}">${es(g.label)}<span class="n">${evs.length}</span></button>`}).join('');
   gf.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{game=b.dataset.g;setHash();paintChips();paint()});
   const on=gf.querySelector('.chip.on');if(on&&game!=='toate'&&gf.scrollWidth>gf.clientWidth) gf.scrollLeft=on.offsetLeft-gf.clientWidth/2+on.offsetWidth/2;
   const gi=document.getElementById('ginfo');const g=GAMES.find(x=>x.id===game);gi.innerHTML=game==='toate'?'':`Arăt doar: <b>${es(g?g.label:game)}</b> · <a href="#" id="gclr">vezi toate</a>`;
   const c=document.getElementById('gclr');if(c) c.onclick=e=>{e.preventDefault();game='toate';setHash();paintChips();paint()}}
+function dayName(k,today,tom){if(k===today)return'Azi';if(k===tom)return'Mâine';const [Y,M,D]=k.split('-').map(Number);return new Intl.DateTimeFormat('ro-RO',{timeZone:'UTC',weekday:'long'}).format(new Date(Date.UTC(Y,M-1,D,12)))}
+function dayFull(k){const [Y,M,D]=k.split('-').map(Number);return new Intl.DateTimeFormat('ro-RO',{timeZone:'UTC',day:'numeric',month:'long'}).format(new Date(Date.UTC(Y,M-1,D,12)))}
 function paint(){
-  const now=new Date();
-  const items=EVENTS.filter(ev=>game==='toate'||gid(ev)===game).map(ev=>({ev,st:status(ev,now),r:relevant(ev,now)}));
-  const card=({ev,st})=>{
-    const cd=st.target?`<div class="cd">${cdHtml(st.target-now)}</div>`:'';
-    const note=ev.zvon_note?`<div class="note">${es(ev.zvon_note)}</div>`:'';
-    const urg=st.kind==='live'&&st.target&&(st.target-now)<864e5;
-    const cls=st.kind==='live'?'live':st.kind==='done'?'done':'soon';
-    return `<div class="row ${cls}${urg?' urg':''}"><img class="ico" src="${es(ev.img)}" alt="" loading="lazy"><div class="card">
-      <div><span class="l CONFIRMAT">CONFIRMAT</span> <b>${es(ev.game||'')}</b> — ${es(ev.name)}</div>
-      ${urg?'<div class="urgt">Ultimele ore</div>':''}
-      <div class="st ${st.kind==='live'?'live':st.kind==='done'?'done':''}">${st.kind==='live'?'<span class="ldot"></span>':''}${es(st.text)}</div>
-      ${cd}
-      <div class="meta">${es(windowText(ev))}</div>
-      ${note}
-      <div style="margin-top:8px">${ev.slug?`<a class="golink" href="posts/${es(ev.slug)}.html">Vezi postarea →</a>`:ev.link?`<a class="golink" href="${es(ev.link)}" target="_blank" rel="noopener">Pagina oficială a eventului →</a>`:''}</div>
-    </div></div>`;
-  };
-  const by=k=>items.filter(i=>i.st.kind===k);
-  const lk=i=>i.st.target?+i.st.target:9e15;const live=by('live').sort((a,b)=>lk(a)-lk(b)||a.r-b.r), soon=by('soon').sort((a,b)=>a.r-b.r), done=by('done').sort((a,b)=>b.r-a.r);
-  const head=(c,t,n)=>`<div class="grp ${c}">${t} <span class="n">${n}</span></div>`;
-  let h='';
-  if(live.length) h+=head('g-live','Live acum',live.length)+live.map(card).join('');
-  if(soon.length) h+=head('g-soon','Urmează',soon.length)+soon.map(card).join('');
-  if(done.length) h+=`<details${doneOpen?' open':''} ontoggle="doneOpen=this.open"><summary>${head('g-done','Terminate',done.length)}</summary>${done.map(card).join('')}</details>`;
-  document.getElementById('cal').innerHTML=h||`<div class="empty">${game==='toate'?'Niciun event încă.':'Niciun event pentru jocul ăsta.'}</div>`;
+  const now=new Date(),today=dayKey(now),tom=dayKey(new Date(+now+864e5));
+  const items=EVENTS.filter(ev=>game==='toate'||gid(ev)===game).map(ev=>({ev,st:status(ev,now)}));
+  const days=new Map(),nodate=[],done=[];let nLive=0,nSoon24=0;
+  items.forEach(i=>{const k=i.st.kind;if(k==='done'){done.push(i);return}
+    if(k==='live')nLive++;else if(i.st.target&&i.st.target-now<864e5)nSoon24++;
+    if(!i.st.target){nodate.push(i);return}
+    const dk=dayKey(i.st.target);if(!days.has(dk))days.set(dk,[]);days.get(dk).push(i)});
+  const keys=[...days.keys()].sort();
+  const row=i=>evRow(i.ev,now,{meta:true,note:true});
+  const sortT=(a,b)=>(a.st.target||0)-(b.st.target||0);
+  const grp=(id,title,sub,n,list,open,cls)=>`<details class="dg" data-id="${id}"${open?' open':''}><summary class="dh ${cls||''}"><b>${title}</b><span>${sub}</span><em>${n}<s> ${n===1?'eveniment':'evenimente'}</s></em></summary><div class="evl two">${list}</div></details>`;
+  let h=`<div class="sm" style="margin:0 0 12px"><b>${nLive}</b> live acum · <b>${nSoon24}</b> încep în următoarele 24 de ore · <b>${keys.length}</b> zile cu evenimente. Zilele sunt grupate după următorul moment important (start sau final).</div>`;
+  keys.forEach(k=>{const list=days.get(k).sort(sortT);const open=opened.has(k)?opened.get(k):(k<=tom);
+    const ends=list.filter(i=>i.st.kind==='live').length,starts=list.length-ends;
+    h+=grp(k,dayName(k,today,tom),dayFull(k)+(ends&&starts?` · ${ends} final · ${starts} start`:ends?` · final`:` · start`),list.length,list.map(row).join(''),open,k===today?'today':'')});
+  if(nodate.length){const id='nodate';h+=grp(id,'Fără oră fixă','live sau încă neanunțate',nodate.length,nodate.map(row).join(''),opened.has(id)?opened.get(id):false)}
+  if(done.length){const id='done';h+=grp(id,'Terminate','istoric',done.length,done.sort((a,b)=>(+new Date(b.ev.end||b.ev.end_date||0))-(+new Date(a.ev.end||a.ev.end_date||0))).map(row).join(''),opened.has(id)?opened.get(id):false)}
+  const el=document.getElementById('cal');
+  el.innerHTML=h||`<div class="empty">${game==='toate'?'Niciun event încă.':'Niciun event pentru jocul ăsta.'}</div>`;
+  el.querySelectorAll('details.dg').forEach(d=>d.addEventListener('toggle',()=>opened.set(d.dataset.id,d.open)));
 }
 game=parseHash();
-fetch('calendar-events.json?'+Date.now()).then(r=>r.json()).then(d=>{EVENTS=d.events||d; buildGames(); validGame(); paintChips(); paint(); setInterval(paint,1000); setInterval(paintChips,60000)}).catch(()=>{document.getElementById('cal').innerHTML='<div class="empty">Nu pot încărca calendarul.</div>'});
+fetch('calendar-events.json?'+Date.now()).then(r=>r.json()).then(d=>{EVENTS=d.events||d; buildGames(); validGame(); paintChips(); paint();
+  setInterval(()=>{if(tick(document.getElementById('cal'),new Date()))paint()},1000); setInterval(paint,60000)}).catch(()=>{document.getElementById('cal').innerHTML='<div class="empty">Nu pot încărca calendarul.</div>'});
 window.addEventListener('hashchange',()=>{game=parseHash();validGame();paintChips();paint()});
+})();
 </script>
-<script>(function(){var b=document.getElementById('totop');if(!b)return;function u(){b.classList.toggle('on',scrollY>600)}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}})()</script><script src="/vexu-hq/pumpkin-hunt.js" defer></script><script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/vexu-hq/sw.js',{scope:'/vexu-hq/'}).catch(()=>{}))</script></body></html>
+<script>(function(){var b=document.getElementById('totop');if(!b)return;function u(){b.classList.toggle('on',scrollY>600)}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}})()</script><script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/vexu-hq/sw.js',{scope:'/vexu-hq/'}).catch(()=>{}))</script></body></html>
