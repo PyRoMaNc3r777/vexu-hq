@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T14:23:25+03:00",
+ "generated": "2026-10-24T14:24:39+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,48 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "mi-a-dat-cu-bata-pe-steal-an-egg-short-ul-vexu-a-trecut-de-18k-vizualizari-in-mai-putin-de-o-zi",
+   "title": "💀 „Mi-a dat cu bâta pe Steal An Egg”: Short-ul VEXU a trecut de 18K vizualizări în mai puțin de o zi",
+   "labels": [
+    "VEXU LIVE"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T14:24:39+03:00",
+   "img": "img/mi-a-dat-cu-bata-steal-an-egg-18k.jpg",
+   "excerpt": "💀 Short-ul „Mi-a dat cu bata pe steal an egg 💀” de pe canalul VEXU Online a trecut de 18K vizualizări în mai puțin de o zi. ![Mi-a dat cu…",
+   "featured": false,
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "vexu-live-pe-steal-an-egg-in-ultima-zi-de-halloween-dimension",
+   "title": "🎃 VEXU LIVE pe Steal An Egg, în ultima zi de Halloween Dimension",
+   "labels": [
+    "VEXU LIVE"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T14:24:39+03:00",
+   "img": "img/vexu-live-steal-an-egg-ultima-zi.jpg",
+   "excerpt": "🎃 Vexu a intrat LIVE pe Steal An Egg, chiar în ultima zi de Halloween Dimension. ![ULTIMA ZI Halloween…",
+   "featured": false,
+   "section": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
    "updated": null,
