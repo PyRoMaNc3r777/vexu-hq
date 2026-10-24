@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T13:12:51+03:00",
+ "generated": "2026-10-24T14:23:25+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,48 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "volleyball-legends-cursed-tournament-porneste-azi-la-18-30-iar-kijo-se-intoarce",
+   "title": "🏐 Volleyball Legends: CURSED TOURNAMENT pornește azi la 18:30, iar Kijo se întoarce",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T14:23:24+03:00",
+   "img": "img/volleyball-legends-cursed-tournament.png",
+   "excerpt": "🏐 Volleyball Legends are evenimentul CURSED TOURNAMENT! 👻 ![Volleyball Legends CURSED…",
+   "featured": false,
+   "section": null,
+   "joc": "Volleyball Legends",
+   "jocSlug": "volleyball-legends",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "blockspin-halloween-update-part-2-vine-azi-la-21-00-cu-2-arme-noi",
+   "title": "🔪 BlockSpin: Halloween Update Part 2 vine azi la 21:00, cu 2 arme noi",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T14:23:24+03:00",
+   "img": "img/blockspin-halloween-update-part-2.png",
+   "excerpt": "🔪 BlockSpin are Halloween Update Part 2! 🎃 ![BlockSpin Halloween Update Part 2](img/blockspin-halloween-update-part-2.png) ✅ Ce scrie pe…",
+   "featured": false,
+   "section": null,
+   "joc": "BlockSpin",
+   "jocSlug": "blockspin",
    "prio": 0,
    "views": null,
    "updated": null,

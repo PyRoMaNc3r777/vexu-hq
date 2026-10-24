@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T13:12:51+03:00",
+ "generated": "2026-10-24T14:23:25+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -22,6 +22,30 @@
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "CURSED TOURNAMENT",
+   "game": "Volleyball Legends",
+   "start": "2026-10-24T18:30:00+03:00",
+   "end": "2026-10-30T20:00:00+02:00",
+   "link": "https://www.roblox.com/events/2231248880031367768",
+   "img": "img/volleyball-legends-cursed-tournament.png",
+   "slug": "volleyball-legends-cursed-tournament-porneste-azi-la-18-30-iar-kijo-se-intoarce",
+   "post_title": "🏐 Volleyball Legends: CURSED TOURNAMENT pornește azi la 18:30, iar Kijo se întoarce",
+   "gameSlug": "volleyball-legends",
+   "gameLabel": "Volleyball Legends"
+  },
+  {
+   "name": "Halloween Update Part 2!",
+   "game": "BlockSpin",
+   "start": "2026-10-24T21:00:00+03:00",
+   "end": "2026-11-02T21:00:00+02:00",
+   "link": "https://www.roblox.com/events/3411904467547849332",
+   "img": "img/blockspin-halloween-update-part-2.png",
+   "slug": "blockspin-halloween-update-part-2-vine-azi-la-21-00-cu-2-arme-noi",
+   "post_title": "🔪 BlockSpin: Halloween Update Part 2 vine azi la 21:00, cu 2 arme noi",
+   "gameSlug": "blockspin",
+   "gameLabel": "BlockSpin"
   },
   {
    "name": "TRADING",
