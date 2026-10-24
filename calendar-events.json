@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T09:44:36+03:00",
+ "generated": "2026-10-24T10:40:02+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -22,6 +22,78 @@
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "Heaven Update (AA + x2 Cash)",
+   "game": "Ride A Pet",
+   "start": "2026-10-24T16:00:00+03:00",
+   "end": "2026-10-27T15:00:00+02:00",
+   "link": "https://www.roblox.com/events/1484580516891066933",
+   "img": "img/ride-a-pet-heaven-update.jpg",
+   "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
+   "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "gameSlug": "ride-a-pet",
+   "gameLabel": "Ride A Pet"
+  },
+  {
+   "name": "HALLOWEEN UPD (dimensiune + ouă exclusive)",
+   "game": "Climb For Animals Eggs",
+   "start": "2026-10-24T17:35:00+03:00",
+   "end": "2026-10-27T08:35:00+02:00",
+   "link": "https://www.roblox.com/events/8647873480399913570",
+   "img": "img/climb-animals-eggs-halloween.jpg",
+   "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
+   "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "gameSlug": "climb-for-animals-eggs",
+   "gameLabel": "Climb For Animals Eggs"
+  },
+  {
+   "name": "NEW RAID BOSS (Witch Sisters)",
+   "game": "Death Ball",
+   "start": "2026-10-24T18:30:00+03:00",
+   "end": "2026-11-07T17:30:00+02:00",
+   "link": "https://www.roblox.com/events/8597869761575125641",
+   "img": "img/death-ball-raid-boss.jpg",
+   "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
+   "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "gameSlug": "death-ball",
+   "gameLabel": "Death Ball"
+  },
+  {
+   "name": "UPDATE 2 + Halloween PT 2 (New Island)",
+   "game": "Tap Simulator REBORN",
+   "start": "2026-10-24T22:00:00+03:00",
+   "end": "2026-10-25T19:00:00+02:00",
+   "link": "https://www.roblox.com/events/7912867756482101915",
+   "img": "img/tap-sim-update2-halloween-pt2.jpg",
+   "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
+   "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "gameSlug": "tap-simulator-reborn",
+   "gameLabel": "Tap Simulator REBORN"
+  },
+  {
+   "name": "??? HALLOWEEN UPD.",
+   "game": "Chop A Forest",
+   "start": "2026-10-24T22:00:00+03:00",
+   "end": "2026-10-31T21:55:00+02:00",
+   "link": "https://www.roblox.com/events/7871286754760852034",
+   "img": "img/chop-a-forest-halloween.jpg",
+   "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
+   "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "gameSlug": "chop-a-forest",
+   "gameLabel": "Chop A Forest"
+  },
+  {
+   "name": "HALLOWEEN TRADER",
+   "game": "Plants & Brainrots",
+   "start": "2026-10-25T01:00:00+03:00",
+   "end": "2026-10-31T23:45:00+02:00",
+   "link": "https://www.roblox.com/events/7375566689850753589",
+   "img": "img/plants-brainrots-halloween-trader.jpg",
+   "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
+   "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "gameSlug": "plants-brainrots",
+   "gameLabel": "Plants & Brainrots"
   },
   {
    "name": "Sell Fries! — Chapter 2",

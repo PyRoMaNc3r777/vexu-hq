@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T09:44:36+03:00",
+ "generated": "2026-10-24T10:40:02+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,27 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
+   "title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T10:39:51+03:00",
+   "img": "img/death-ball-raid-boss.jpg",
+   "excerpt": "🎃 Sâmbăta asta, 24 octombrie, pornesc pe Roblox 6 evenimente noi în jocuri diferite, de la după-amiază până după miezul nopții. Mai jos ai…",
+   "featured": false,
+   "section": null,
+   "joc": null,
+   "jocSlug": null,
    "prio": 0,
    "views": null,
    "updated": null,
@@ -3070,7 +3091,7 @@
    "jocSlug": "ride-a-pet",
    "prio": 0,
    "views": null,
-   "updated": null,
+   "updated": "2026-10-24",
    "republish": false,
    "recap": null
   },
