@@ -23,11 +23,11 @@
      hint: '📅 Calendar Halloween', href: 'calendar.html'},
     {id: 'joc', is: function () { return dir === 'joc'; }, sel: ['.cta b'], how: 'append',
      hint: '🎮 orice pagină de joc', href: 'joc/steal-an-egg.html'},
-    {id: 'sae', is: function () { return dir === 'posts' && page.indexOf('halloween-dimension-e-live-in-steal-an-egg') === 0; }, sel: ['.hero .dt'], how: 'after',
+    {id: 'sae', is: function () { return dir === 'posts' && page.indexOf('halloween-dimension-e-live-in-steal-an-egg') === 0; }, sel: ['.art-m .dt'], how: 'after',
      hint: '🥚 postarea „Halloween Dimension e LIVE” (Steal An Egg)', href: 'posts/halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct.html'},
     {id: 'mm2', is: function () { return dir === 'posts' && page.indexOf('murder-mystery-2-halloween-2026') === 0; }, sel: ['.txt > p:last-of-type', '.txt'], how: 'append',
      hint: '🔪 postarea Murder Mystery 2 Halloween', href: 'posts/murder-mystery-2-halloween-2026-a-inceput-aseara-la-22-00-tine-pana-pe-16-noiembrie.html'},
-    {id: 'hollow', is: function () { return dir === 'posts' && page.indexOf('the-hollow-eventul-de-halloween') === 0; }, sel: ['.w > nav'], how: 'append',
+    {id: 'hollow', is: function () { return dir === 'posts' && page.indexOf('the-hollow-eventul-de-halloween') === 0; }, sel: ['.art-m', '.w > nav'], how: 'append',
      hint: '🌑 postarea despre The Hollow', href: 'posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html'}
   ];
   var N = P.length;
@@ -36,20 +36,20 @@
   function save(a) { try { localStorage.setItem(KEY, JSON.stringify(a)); } catch (e) {} }
   var found = load().filter(function (id) { return P.some(function (p) { return p.id === id; }); });
 
-  var css = '.ph-pk{display:inline-block;vertical-align:middle;margin:0 4px;padding:2px;min-width:30px;min-height:30px;border:0;background:none;font-size:17px;line-height:1;cursor:pointer;opacity:.85;filter:drop-shadow(0 0 6px #ff7a00aa);animation:phw 3.2s ease-in-out infinite;-webkit-tap-highlight-color:transparent}' +
-    '.ph-pk:hover,.ph-pk:focus-visible{opacity:1;transform:scale(1.25)}.ph-pk.got{animation:php .5s ease-out forwards;pointer-events:none}' +
-    '@keyframes phw{0%,86%,100%{transform:rotate(0)}90%{transform:rotate(-14deg)}95%{transform:rotate(12deg)}}@keyframes php{to{transform:scale(2.2);opacity:0}}' +
-    '.ph-bd{position:fixed;left:12px;bottom:calc(20px + env(safe-area-inset-bottom));z-index:19;padding:5px 10px;border-radius:999px;border:1px solid #ff7a0099;background:#1a0b05e0;color:#ffb066;font:700 12px/1.2 system-ui,sans-serif;cursor:pointer;box-shadow:0 0 10px #ff7a0044;opacity:.88}' +
-    '.ph-bd:hover{opacity:1}.ph-bd.all{border-color:#ff2bd6;color:#ffd1f5}' +
-    /* telefon: insigna nu mai plutește peste carduri; stă discret la finalul paginii (în flux), sub CTA, departe de butonul 🎃 „Înapoi sus” */
-    '@media(max-width:600px){.ph-bd{position:relative;left:auto;bottom:auto;display:block;width:max-content;margin:4px auto calc(72px + env(safe-area-inset-bottom));padding:4px 9px;font-size:11px;opacity:.8}.ph-pn{bottom:calc(16px + env(safe-area-inset-bottom))}}' +
-    '.ph-ts{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top));z-index:40;transform:translate(-50%,-20px);opacity:0;padding:9px 16px;border-radius:12px;border:1px solid #ff7a00;background:#1a0b05f2;color:#ffd9b0;font:700 14px/1.3 system-ui,sans-serif;box-shadow:0 0 18px #ff7a0066;pointer-events:none;transition:opacity .25s,transform .25s;max-width:calc(100vw - 32px);text-align:center}' +
+  var css = '.ph-pk{display:inline-block;vertical-align:middle;margin:0 2px;padding:0;min-width:28px;min-height:28px;border:0;background:none;font-size:15px;line-height:1;cursor:pointer;opacity:.7;-webkit-tap-highlight-color:transparent}' +
+    '.ph-pk:hover,.ph-pk:focus-visible{opacity:1}.ph-pk:focus-visible{outline:2px solid #ff8a1f;outline-offset:2px;border-radius:6px}.ph-pk.got{animation:php .4s ease-out forwards;pointer-events:none}' +
+    '@keyframes php{to{transform:scale(1.8);opacity:0}}' +
+    '.ph-bd{position:fixed;left:12px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:19;padding:0 12px;min-height:32px;border-radius:6px;border:1px solid #2a2c35;background:#121317;color:#a2a5b0;font:500 12px/1 "Geist Mono",ui-monospace,monospace;cursor:pointer;transition:background-color .12s,color .12s}' +
+    '.ph-bd:hover{background:#17181d;color:#ecedf0}.ph-bd:focus-visible{outline:2px solid #ff8a1f;outline-offset:2px}.ph-bd.all{border-color:#ff8a1f;color:#ff8a1f}' +
+    /* telefon: insigna stă discret la finalul paginii (în flux), nu plutește peste conținut */
+    '@media(max-width:600px){.ph-bd{position:relative;left:auto;bottom:auto;display:block;width:max-content;margin:8px 16px calc(72px + env(safe-area-inset-bottom))}.ph-pn{bottom:calc(16px + env(safe-area-inset-bottom))}}' +
+    '.ph-ts{position:fixed;left:50%;top:calc(12px + env(safe-area-inset-top));z-index:40;transform:translate(-50%,-12px);opacity:0;padding:10px 16px;border-radius:8px;border:1px solid #2a2c35;border-left:3px solid #ff8a1f;background:#17181d;color:#ecedf0;font:500 14px/1.3 "Geist",system-ui,sans-serif;pointer-events:none;transition:opacity .2s,transform .2s;max-width:calc(100vw - 32px)}' +
     '.ph-ts.on{opacity:1;transform:translate(-50%,0)}' +
-    '.ph-pn{position:fixed;left:12px;bottom:calc(58px + env(safe-area-inset-bottom));z-index:39;width:min(320px,calc(100vw - 24px));max-height:70vh;overflow:auto;padding:12px 14px;border-radius:14px;border:1px solid #ff7a00;background:#120818f5;color:#e9e2ff;font:14px/1.45 system-ui,sans-serif;box-shadow:0 0 24px #ff7a0055}' +
-    '.ph-pn h3{margin:0 0 6px;font-size:15px;color:#ffb066}.ph-pn ul{margin:6px 0;padding:0;list-style:none}.ph-pn li{margin:3px 0}.ph-pn a{color:#00f0ff}' +
-    '.ph-pn .x{float:right;border:0;background:none;color:#ffb066;font-size:18px;cursor:pointer;padding:0 4px}.ph-pn .rs{margin-top:6px;border:1px solid #ff7a0088;background:none;color:#ffb066;border-radius:8px;padding:4px 10px;cursor:pointer;font-size:12px}' +
-    '.ph-pn .ctax{display:flex;flex-direction:column;gap:6px;margin-top:8px}.ph-pn .ctax a{display:block;text-align:center;padding:8px;border-radius:10px;border:1px solid #ff2bd6;color:#fff;text-decoration:none;font-weight:700;background:#ff2bd622}.ph-pn .ctax a.yt{border-color:#ff3b3b;background:#ff3b3b22}' +
-    '@media(prefers-reduced-motion:reduce){.ph-pk,.ph-pk.got{animation:none!important}.ph-ts{transition:none}}';
+    '.ph-pn{position:fixed;left:12px;bottom:calc(56px + env(safe-area-inset-bottom));z-index:39;width:min(320px,calc(100vw - 24px));max-height:70vh;overflow:auto;padding:16px;border-radius:8px;border:1px solid #2a2c35;background:#121317;color:#a2a5b0;font:14px/1.5 "Geist",system-ui,sans-serif}' +
+    '.ph-pn h3{margin:0 0 8px;font-size:15px;color:#ecedf0;letter-spacing:-.01em}.ph-pn ul{margin:8px 0;padding:0;list-style:none}.ph-pn li{margin:4px 0}.ph-pn a{color:#ff8a1f}' +
+    '.ph-pn .x{float:right;border:0;background:none;color:#a2a5b0;font-size:18px;cursor:pointer;padding:0 4px;min-width:32px;min-height:32px}.ph-pn .rs{margin-top:8px;border:1px solid #2a2c35;background:none;color:#a2a5b0;border-radius:6px;padding:0 12px;min-height:32px;cursor:pointer;font-size:12px}' +
+    '.ph-pn .ctax{display:flex;flex-direction:column;gap:8px;margin-top:12px}.ph-pn .ctax a{display:block;text-align:center;padding:10px;border-radius:6px;border:1px solid #2a2c35;color:#ecedf0;text-decoration:none;font-weight:600;background:#17181d}.ph-pn .ctax a.yt{border-color:#ff8a1f}' +
+    '@media(prefers-reduced-motion:reduce){.ph-pk.got{animation:none!important}.ph-ts{transition:none}}';
   var st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
 
   function el(tag, cls, html) { var e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; }

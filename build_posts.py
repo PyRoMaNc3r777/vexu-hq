@@ -84,50 +84,38 @@ def joc_of(p):
 def joc_slug(j):
     return slug(j)
 
-CSS = """@media(min-width:768px){.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid .p{margin:0}a.p.feat{display:grid;grid-template-columns:1.3fr 1fr}.feat img{height:100%;min-height:320px}.feat h2{font-size:1.7em}.hero{max-width:1100px;margin:14px auto}.hero .b{max-width:760px;margin:auto;padding:24px}.hero .txt{font-size:1.15em}}@media(min-width:1200px){.grid{grid-template-columns:repeat(3,1fr)}.hero{display:grid;grid-template-columns:1fr 1fr}.hero .hi{padding:16px}.hero img{border-radius:12px}}
-*{box-sizing:border-box}body{margin:0;background:#07040f;color:#eee;font-family:system-ui,sans-serif;background-image:radial-gradient(circle at 20% 0,#3b0a5c 0,transparent 50%),radial-gradient(circle at 100% 100%,#002f3d 0,transparent 50%);min-height:100vh}
-.w{max-width:1400px;margin:auto;padding:16px}h1{font-size:2em;margin:8px 0;text-align:center;background:linear-gradient(90deg,#ff2bd6,#00f0ff);-webkit-background-clip:text;color:transparent}
-.btn{color:#00f0ff;font-weight:700;text-decoration:none}.btn{display:inline-block;margin:14px 0;padding:10px 16px;border:1px solid #00f0ff;border-radius:12px;box-shadow:0 0 12px #00f0ff55;background:#000a;cursor:pointer;font:inherit}
-.p{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;margin:14px 0;overflow:hidden;box-shadow:0 0 18px #ff2bd622}a.p{display:block;color:inherit;text-decoration:none}a.p:hover{border-color:#ff2bd6;box-shadow:0 0 24px #ff2bd666}
-.p img{width:100%;height:190px;object-fit:cover;display:block}.txt img.th{width:100%;max-width:560px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px;border:1px solid #ff2bd655;margin:12px 0 4px;display:block}.hero img{height:auto;max-height:420px}.b{padding:14px}h2{margin:6px 0;font-size:1.15em}.l{display:inline-block;padding:3px 9px;border-radius:20px;font-size:.72em;font-weight:800}
-.dt{color:#9a8fb5;font-size:.8em;margin-left:6px}.txt{font-size:1.05em;line-height:1.55;margin:10px 0}.more{color:#ff7be6;font-weight:700;font-size:.85em;margin-top:8px}
-.CONFIRMAT{background:#39ff8822;color:#39ff88;border:1px solid #39ff88}.VEXU-LIVE{background:#ff2bd622;color:#ff2bd6;border:1px solid #ff2bd6;box-shadow:0 0 10px #ff2bd6aa;text-shadow:0 0 6px #ff2bd6}.txt ul{margin:8px 0;padding-left:22px}.txt li{margin:4px 0}.txt a{color:#00f0ff;word-break:break-all}.TREND-SHORTS{background:#00f0ff22;color:#00f0ff;border:1px solid #00f0ff;box-shadow:0 0 10px #00f0ffaa;text-shadow:0 0 6px #00f0ff}.sec{margin:28px 0 6px;font-size:1.5em;color:#00f0ff;text-shadow:0 0 10px #00f0ff}.bx{border-radius:12px;padding:12px 14px;margin:12px 0}.bx h3{margin:0 0 6px;font-size:1em}.bxC{background:#39ff8814;border:1px solid #39ff88;box-shadow:0 0 12px #39ff8833}.bxC h3{color:#39ff88}.bxZ{background:#ffd40014;border:1px solid #ffd400;box-shadow:0 0 12px #ffd40033}.bxZ h3{color:#ffd400}.ZVON{background:#ffd40022;color:#ffd400;border:1px solid #ffd400}.s a{color:#ff7be6;font-size:.8em;word-break:break-all;display:block;margin-top:4px}
-.fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.fx span{position:absolute;bottom:-60px;font-size:22px;opacity:0;filter:drop-shadow(0 0 8px #ff7a00);animation:fl 18s linear infinite}.fx span:nth-child(1){left:6%;animation-delay:0s}.fx span:nth-child(2){left:22%;animation-delay:6s;font-size:16px}.fx span:nth-child(3){left:41%;animation-delay:11s}.fx span:nth-child(4){left:63%;animation-delay:3s;font-size:18px}.fx span:nth-child(5){left:80%;animation-delay:9s}.fx span:nth-child(6){left:93%;animation-delay:14s;font-size:15px}@keyframes fl{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.55}50%{transform:translate(18px,-55vh) rotate(12deg)}90%{opacity:.4}100%{transform:translate(-12px,-110vh) rotate(-10deg);opacity:0}}.w{position:relative;z-index:1}@media(prefers-reduced-motion:reduce){.fx{display:none}*{animation:none!important}}a.p{transition:transform .2s,border-color .2s,box-shadow .2s}a.p:hover{transform:translateY(-3px)}a.p:active{transform:scale(.98)}
-.nou{position:absolute;top:10px;left:10px;z-index:2;background:linear-gradient(90deg,#ff7a00,#ff2bd6);color:#fff;font-size:.72em;font-weight:900;letter-spacing:.5px;padding:4px 10px;border-radius:999px;box-shadow:0 0 12px #ff7a00aa,0 0 22px #ff2bd666;animation:nouP 1.8s ease-in-out infinite}@keyframes nouP{0%,100%{transform:scale(1);box-shadow:0 0 10px #ff7a00aa,0 0 18px #ff2bd655}50%{transform:scale(1.07);box-shadow:0 0 16px #ff7a00,0 0 30px #ff2bd699}}a.p{position:relative}a.p.feat{border-color:#ff7a00;animation:featG 3.2s ease-in-out infinite}@keyframes featG{0%,100%{border-color:#ff7a00;box-shadow:0 0 16px #ff7a0055}50%{border-color:#ff2bd6;box-shadow:0 0 30px #ff2bd688,0 0 6px #ff7a00 inset}}
-.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 6px}.chip{border:1px solid #ff2bd655;background:#120a22cc;color:#eee;border-radius:999px;padding:7px 12px;font-size:.85em;font-weight:700;cursor:pointer}.chip.on{border-color:#00f0ff;color:#00f0ff;box-shadow:0 0 12px #00f0ff55}.chip .n{opacity:.7;margin-left:4px}.srch{display:flex;max-width:560px;margin:12px auto 0;position:relative}.srch input{flex:1;width:100%;font:inherit;font-size:16px;color:#eee;background:#120a22cc;border:1px solid #ff2bd655;border-radius:999px;padding:10px 42px 10px 16px;outline:none;-webkit-appearance:none;appearance:none}.srch input:focus{border-color:#00f0ff;box-shadow:0 0 14px #00f0ff55}.srch input::placeholder{color:#9a8fb5}.srch input::-webkit-search-cancel-button{display:none}.srch button{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;color:#ff7be6;font-size:1.05em;padding:6px 10px;cursor:pointer;visibility:hidden}.qinfo{text-align:center;color:#9a8fb5;font-size:.82em;min-height:1em;margin:4px 0 0}.dayh{margin:22px 0 8px;font-size:1.25em;color:#ff7be6;text-shadow:0 0 10px #ff2bd655}.dayh:first-child{margin-top:8px}#moreWrap{text-align:center;margin:18px 0}#featSlot .p{margin-top:8px}.empty{text-align:center;color:#9a8fb5;padding:24px}
-.cal .row{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start;margin:14px 0}.cal .ico{width:72px;height:72px;border-radius:14px;object-fit:cover;border:1px solid #ff2bd655;background:#000a}.cal .card{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;padding:14px;box-shadow:0 0 18px #ff2bd622}.cal .st{font-weight:800;margin:6px 0;color:#ffd400}.cal .st.live{color:#39ff88;text-shadow:0 0 10px #39ff88}.cal .st.done{color:#9a8fb5}.cal .cd{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.cal .cd div{background:#000a;border:1px solid #00f0ff66;border-radius:10px;padding:8px 6px;min-width:58px;text-align:center}.cal .cd b{display:block;font-size:1.3em;color:#ff2bd6}.cal .cd span{font-size:.65em;color:#aaa}.cal .meta{color:#9a8fb5;font-size:.85em}.cal a.golink{color:#00f0ff;font-weight:700;text-decoration:none}.note{font-size:.8em;color:#ffd400;margin-top:6px}@media(max-width:520px){.cal .row{grid-template-columns:56px 1fr}.cal .ico{width:56px;height:56px}}
-.cal .grp{display:flex;align-items:center;gap:8px;margin:22px 0 4px;font-size:1.1em;font-weight:900;letter-spacing:.02em}.cal .grp .n{font-size:.75em;padding:2px 9px;border-radius:999px;border:1px solid currentColor;opacity:.85}.cal .grp.g-live{color:#39ff88;text-shadow:0 0 10px #39ff8877}.cal .grp.g-soon{color:#ffd400;text-shadow:0 0 10px #ffd40066}.cal .grp.g-done{color:#9a8fb5}.cal .row.live .card{border-color:#39ff8888;box-shadow:0 0 18px #39ff8833,inset 0 0 14px #39ff8812}.cal .row.urg .card{border-color:#ff3b3b;animation:urg 1.6s ease-in-out infinite}@keyframes urg{50%{box-shadow:0 0 26px #ff3b3baa,0 0 44px #ff7a0055,inset 0 0 16px #ff3b3b33}}.cal .urgt{display:inline-block;margin:2px 0 4px;padding:2px 9px;border-radius:999px;background:#ff3b3b22;border:1px solid #ff3b3b;color:#ff8080;font-weight:900;font-size:.8em}.cal .ldot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#39ff88;margin-right:6px;box-shadow:0 0 8px #39ff88;animation:ld 1.4s ease-in-out infinite}@keyframes ld{50%{opacity:.35;transform:scale(.7)}}.cal details{margin-top:6px}.cal details summary{list-style:none;cursor:pointer}.cal details summary::-webkit-details-marker{display:none}.cal details summary .grp:after{content:"▾ arată";font-size:.7em;margin-left:auto;color:#00f0ff}.cal details[open] summary .grp:after{content:"▴ ascunde"}.cal .row.done{opacity:.62;filter:saturate(.55)}@media(prefers-reduced-motion:reduce){.cal .row.urg .card,.cal .ldot{animation:none}}.ginfo{text-align:center;color:#9a8fb5;font-size:.85em;min-height:1em;margin:2px 0 0}.ginfo b{color:#ffb066}.ginfo a{color:#00f0ff;font-weight:700}
-.rp{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#ff7a00,#ff2bd6,#00f0ff);box-shadow:0 0 10px #ff2bd6,0 0 18px #ff7a0088;z-index:50;pointer-events:none}.acts{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.acts .btn{margin:14px 0}.shr{border-color:#ff7a00;color:#ffb066;box-shadow:0 0 12px #ff7a0055}.shr.ok{border-color:#39ff88;color:#39ff88;box-shadow:0 0 14px #39ff8877}.rel{margin:10px 0 24px}.rel h2{color:#ff7be6;text-shadow:0 0 10px #ff2bd655;font-size:1.25em;margin:8px 0}.rel .grid{display:grid;grid-template-columns:1fr;gap:12px}.rel a.p{margin:0;display:grid;grid-template-columns:110px 1fr}.rel a.p img{height:100%;min-height:86px}.rel .b{padding:10px 12px}.rel .dt{display:block;margin:4px 0 0}.rel h3{margin:6px 0 0;font-size:.95em;line-height:1.3}@media(min-width:768px){.rel .grid{grid-template-columns:repeat(3,1fr)}.rel a.p{display:block}.rel a.p img{height:150px}}
-.jl{display:inline-block;margin:8px 0 2px;padding:4px 11px;border-radius:999px;border:1px solid #ff7a00;color:#ffb066;background:#ff7a0018;font-weight:800;font-size:.85em;text-decoration:none;box-shadow:0 0 10px #ff7a0044}.jl:hover{background:#ff7a0033}.jg{display:block;color:#ffb066;font-size:.78em;font-weight:700;margin-top:6px}
-.ftitle{text-align:center;color:#9a8fb5;font-size:.78em;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin:12px 0 0}#gfilters{margin-top:6px}#gfilters .chip.on{border-color:#ff7a00;color:#ffb066;box-shadow:0 0 12px #ff7a0055}.gpage{text-align:center;margin:6px 0 0;min-height:1em}.gpage a{color:#ffb066;font-weight:800;text-decoration:none}
-@media(max-width:767px){#gfilters{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding:2px 16px 8px;margin-left:-16px;margin-right:-16px}#gfilters::-webkit-scrollbar{display:none}#gfilters .chip{flex:0 0 auto;white-space:nowrap}}
-.cta{text-align:center;margin:26px 0 10px;padding:16px;border-radius:16px;border:1px solid #ff2bd6;background:#120a22cc;box-shadow:0 0 18px #ff2bd644}.cta b{display:block;font-size:1.2em;margin-bottom:8px;color:#ff7be6;text-shadow:0 0 10px #ff2bd655}.cta a{display:inline-block;margin:6px;padding:10px 16px;border-radius:12px;font-weight:800;text-decoration:none;border:1px solid #00f0ff;color:#00f0ff;background:#000a;box-shadow:0 0 12px #00f0ff55}.cta a.yt{border-color:#ff3b3b;color:#ff7070;box-shadow:0 0 12px #ff3b3b55}
-.gcount{text-align:center;color:#9a8fb5;margin:4px 0 0}"""
-
-CSS_FX = 'h1{background-image:linear-gradient(90deg,#ff2bd6,#00f0ff,#ff7a00,#ff2bd6);background-size:300% auto;-webkit-background-clip:text;background-clip:text;animation:shm 8s linear infinite}h1 .em{color:#fff;-webkit-text-fill-color:#fff;filter:drop-shadow(0 0 8px #ff7a00aa)}@keyframes shm{to{background-position:300% center}}.moon{position:fixed;top:-46px;right:-46px;width:150px;height:150px;border-radius:50%;background:radial-gradient(circle at 38% 38%,#fff8de,#ffd27a 42%,#ff8a1f 70%,#ff7a0000 72%);box-shadow:0 0 70px 24px #ff7a0033;opacity:.28;pointer-events:none;z-index:0;animation:mn 6s ease-in-out infinite}@keyframes mn{50%{opacity:.45}}@media(min-width:768px){.moon{top:-30px;right:-30px;width:220px;height:220px}}@media(prefers-reduced-motion:reduce){h1,.moon{animation:none}}'
-EMO = re.compile('([\U0001F000-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\u2300-\u23FF][\uFE0F\u200D\U0001F000-\U0001FAFF\u2600-\u27BF]*)')
-def emo_h1(body):
-    # emoji din <h1> primesc span.em ca să nu fie colorate de gradient (altfel apar ca pătrate)
-    return re.sub(r'(<h1[^>]*>)(.*?)(</h1>)', lambda m: m.group(1) + EMO.sub(r'<span class="em">\1</span>', m.group(2)) + m.group(3), body, flags=re.S)
-
 # PWA: manifest + service worker (sw.js), căi absolute sub /vexu-hq/
-PWA_HEAD = ('<link rel="manifest" href="/vexu-hq/manifest.webmanifest"><meta name="theme-color" content="#07040f">'
+PWA_HEAD = ('<link rel="manifest" href="/vexu-hq/manifest.webmanifest"><meta name="theme-color" content="#0b0c0f">'
             '<link rel="apple-touch-icon" href="/vexu-hq/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes">'
             '<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="VEXU HQ">')
 PWA_JS = "<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/vexu-hq/sw.js',{scope:'/vexu-hq/'}).catch(()=>{}))</script>"
 
-CSS_TOP = '.totop{position:fixed;right:14px;bottom:calc(16px + env(safe-area-inset-bottom));z-index:20;width:46px;height:46px;border-radius:50%;border:1px solid #ff7a00;background:#1a0b05e6;color:#ffb066;font-size:20px;line-height:44px;text-align:center;cursor:pointer;box-shadow:0 0 16px #ff7a0066,inset 0 0 10px #ff7a0033;opacity:0;transform:translateY(20px) scale(.8);pointer-events:none;transition:opacity .25s,transform .25s}.totop.on{opacity:1;transform:none;pointer-events:auto;animation:tg 2.6s ease-in-out infinite}.totop:active{transform:scale(.9)}@keyframes tg{50%{box-shadow:0 0 26px #ff7a00aa,0 0 40px #ff2bd644,inset 0 0 10px #ff7a0033}}.spd{position:fixed;top:0;left:18px;z-index:0;pointer-events:none;width:2px;height:70px;background:linear-gradient(#fff0,#ffffff55);transform-origin:top center;animation:sw 5s ease-in-out infinite,dr 9s ease-in-out infinite}.spd:after{content:"🕷️";position:absolute;bottom:-18px;left:-10px;font-size:20px;filter:drop-shadow(0 0 6px #ff2bd6)}@keyframes sw{0%,100%{transform:rotate(6deg)}50%{transform:rotate(-6deg)}}@keyframes dr{0%,100%{height:60px}50%{height:120px}}.fog{position:fixed;left:0;right:0;bottom:0;height:32vh;max-height:260px;z-index:0;pointer-events:none;overflow:hidden;opacity:.9;-webkit-mask-image:linear-gradient(transparent,#000 75%);mask-image:linear-gradient(transparent,#000 75%)}.fog i{position:absolute;left:0;bottom:-10%;width:200%;height:110%;background-repeat:repeat-x;background-size:50% 100%;background-image:radial-gradient(ellipse 30% 55% at 18% 80%,#c8b4ff40,transparent 70%),radial-gradient(ellipse 34% 45% at 58% 90%,#ffffff2b,transparent 70%),radial-gradient(ellipse 26% 50% at 88% 78%,#c8b4ff38,transparent 70%);animation:fgx 46s linear infinite;will-change:transform}.fog i+i{bottom:-25%;opacity:.8;background-image:radial-gradient(ellipse 32% 50% at 30% 85%,#ff7a002e,transparent 70%),radial-gradient(ellipse 28% 45% at 75% 92%,#ff2bd626,transparent 70%);animation-duration:70s;animation-direction:reverse}@keyframes fgx{to{transform:translateX(-50%)}}@media(max-width:600px){.fog{height:24vh}.spd{left:8px;animation:sw 5s ease-in-out infinite,drm 9s ease-in-out infinite}.spd:after{font-size:17px;bottom:-15px;left:-8px}}@keyframes drm{0%,100%{height:12px}50%{height:30px}}@media(prefers-reduced-motion:reduce){.totop.on{animation:none}.spd{animation:none}.fog i{animation:none}}'
-TOP_HTML = '<div class="fog" aria-hidden="true"><i></i><i></i></div><div class="spd" aria-hidden="true"></div><button class="totop" id="totop" type="button" aria-label="Înapoi sus" title="Înapoi sus">🎃</button>'
+import hashlib
+NE = re.compile('^[\U0001F000-\U0001FAFF\u2600-\u27BF\u2B00-\u2BFF\u2300-\u23FF\uFE0F\u200D\\s]+')
+def ne(s):
+    """Titlu pentru liste/feed: fără emoji-ul de la început (în pagina articolului titlul rămâne neschimbat)."""
+    return NE.sub('', s or '')
+CSS_V = hashlib.md5(open(os.path.join(D, 'style.css'), 'rb').read()).hexdigest()[:8]  # cache-bust: se schimbă singur când se schimbă style.css
+CSS_LINK = ('<link rel="preload" href="/vexu-hq/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>'
+            f'<link rel="stylesheet" href="/vexu-hq/style.css?v={CSS_V}">')
+TOP_HTML = '<button class="totop" id="totop" type="button" aria-label="Înapoi sus" title="Înapoi sus">↑</button>'
 # Vânătoarea de dovleci (Halloween 2026): oprire din pumpkin-hunt.js (ON / END) sau golește HUNT_JS.
 HUNT_JS = '<script src="/vexu-hq/pumpkin-hunt.js" defer></script>'
 TOP_JS = "<script>(function(){var b=document.getElementById('totop');if(!b)return;function u(){b.classList.toggle('on',scrollY>600)}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}})()</script>"
-def page(title, body, extra_js=''):
-    body = emo_h1(body)
+NAV_ITEMS = [('index', 'index.html', 'Dashboard'), ('blog', 'blog.html', 'Blog'),
+             ('calendar', 'calendar.html', 'Calendar'), ('recap', 'recap.html', 'Rezumat')]
+def header(active=None, pre='', section=False):
+    """Header comun (brand + Shorts + navigație). pre = '../' pe paginile din posts/ și joc/. section=True: pagina e în secțiunea activă, nu chiar pagina ei."""
+    cur = 'true' if section else 'page'
+    nav = '<nav class="tn" aria-label="Navigație principală">' + ''.join(
+        f'<a href="{pre}{h}"' + (f' aria-current="{cur}"' if k == active else '') + f'>{t}</a>' for k, h, t in NAV_ITEMS) + '</nav>'
+    return (f'<header class="top"><div class="top-in"><a class="brand" href="{pre}index.html"><img src="/vexu-hq/icon-192.png" width="28" height="28" alt="">'
+            f'<b>VEXU<i>HQ</i></b></a><a class="tn-s" href="{pre}blog.html#f=trend-shorts">Ce merge în Shorts</a>{nav}</div></header>')
+
+def page(title, body, extra_js='', active=None, pre='', section=False):
     return (f'<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{html.escape(title)}</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png">{PWA_HEAD}<style>\n{CSS}\n{CSS_FX}{CSS_TOP}\n{NAV_CSS}\n</style></head><body>'
-            f'<div class="moon" aria-hidden="true"></div>'
-            f'<div class="fx" aria-hidden="true"><span>🎃</span><span>🦇</span><span>👻</span><span>🦇</span><span>🎃</span><span>🕸️</span></div>'
-            f'<div class="w">{body}</div>{TOP_HTML}{extra_js}{TOP_JS}{HUNT_JS}{PWA_JS}</body></html>\n')
+            f'<title>{html.escape(title)}</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png">{PWA_HEAD}{CSS_LINK}</head><body>'
+            f'{header(active, pre, section)}<div class="w">{body}</div>{TOP_HTML}{extra_js}{TOP_JS}{HUNT_JS}{PWA_JS}</body></html>\n')
 
 e = html.escape
 def cls(l): return re.sub(r'[^A-Za-z0-9]+', '-', l).strip('-')
@@ -149,52 +137,14 @@ def rich(t):
             out.append(f'<li>{link(ln[2:])}</li>')
         else:
             if ul: out.append('</ul>'); ul = False
-            out.append(f'<p style="margin:6px 0">{link(ln)}</p>')
+            out.append(f'<p>{link(ln)}</p>')
     if ul: out.append('</ul>')
     return ''.join(out)
 
 
-# ───────────── Navigație mare (pastile) — UN SINGUR loc pentru stil; se injectează în toate paginile (și în index.html) ─────────────
-NAV_CSS = (
- 'nav.tn{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:760px;margin:14px auto 10px}'
- 'nav.tn a,.shorts-entry a,.shorts-entry button{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;gap:6px;'
- 'min-height:52px;padding:10px 12px;border-radius:18px;border:1.5px solid transparent;font:inherit;font-size:16.5px;font-weight:800;line-height:1.2;letter-spacing:.01em;'
- 'color:#fff;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent;text-wrap:balance;'
- 'background:linear-gradient(#1d0b33e6,#0f0820e6) padding-box,linear-gradient(135deg,#ff2bd6,#7b2cff 50%,#00f0ff) border-box;'
- 'box-shadow:0 0 14px #ff2bd62e,0 4px 14px #0008,inset 0 0 14px #7b2cff22;text-shadow:0 0 8px #ff2bd655;'
- 'transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}'
- 'nav.tn a:hover,.shorts-entry a:hover,.shorts-entry button:hover{transform:translateY(-2px);filter:brightness(1.18);'
- 'box-shadow:0 0 22px #ff2bd699,0 0 36px #7b2cff55,0 6px 16px #000a,inset 0 0 14px #7b2cff33}'
- 'nav.tn a:active,.shorts-entry a:active,.shorts-entry button:active{transform:translateY(1px) scale(.97);filter:brightness(1.3);'
- 'box-shadow:0 0 28px #ff2bd6cc,0 0 40px #00f0ff44}'
- 'nav.tn a:focus-visible,.shorts-entry a:focus-visible,.shorts-entry button:focus-visible{outline:2px solid #00f0ff;outline-offset:3px}'
- 'nav.tn a[aria-current=page]{background:linear-gradient(135deg,#7b2cff66,#00f0ff33) padding-box,linear-gradient(135deg,#00f0ff,#7b2cff) border-box;'
- 'box-shadow:0 0 20px #00f0ff77,0 0 34px #7b2cff55,inset 0 0 16px #00f0ff22;text-shadow:0 0 10px #00f0ff}'
- '.shorts-entry{max-width:760px;margin:0 auto 12px}'
- '.shorts-entry a,.shorts-entry button{width:100%;font-size:17.5px;font-weight:900;min-height:56px;'
- 'background:linear-gradient(135deg,#ff7a00,#ff2bd6) padding-box,linear-gradient(135deg,#ffd27a,#ff2bd6) border-box;'
- 'box-shadow:0 0 20px #ff7a0077,0 0 34px #ff2bd655,0 4px 14px #0008;text-shadow:0 1px 6px #0007;animation:shg 2.8s ease-in-out infinite}'
- '@keyframes shg{50%{box-shadow:0 0 30px #ff7a00cc,0 0 50px #ff2bd699,0 4px 14px #0008}}'
- '.shorts-entry a:hover,.shorts-entry button:hover{box-shadow:0 0 34px #ff7a00,0 0 56px #ff2bd6aa,0 6px 16px #000a}'
- '@media(min-width:768px){nav.tn{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:1100px}nav.tn a{padding:12px 24px;font-size:17px}'
- '.shorts-entry{display:flex;justify-content:center}.shorts-entry a,.shorts-entry button{width:auto;min-width:300px;padding:12px 30px}}'
- '@media(prefers-reduced-motion:reduce){nav.tn a,.shorts-entry a,.shorts-entry button{animation:none!important;transition:none}'
- 'nav.tn a:hover,nav.tn a:active,.shorts-entry a:hover,.shorts-entry button:hover,.shorts-entry a:active,.shorts-entry button:active{transform:none}}'
-)
-NAV_CSS_ID = 'navcss'
-def nav(items, active=None):
-    return '<nav class="tn" aria-label="Navigație">' + ''.join(
-        f'<a href="{h}"' + (' aria-current="page"' if k == active else '') + f'>{t}</a>' for k, h, t in items) + '</nav>'
-def nav_blog(active=None, pre=''):
-    return nav([('index', pre+'index.html', '⚡ Dashboard'), ('blog', pre+'blog.html', '📰 Blog'),
-                ('calendar', pre+'calendar.html', '📅 Calendar Halloween'), ('recap', pre+'recap.html', '📊 Rezumatul săptămânii')], active)
-SHORTS_LINK = '<div class="shorts-entry"><a href="blog.html#f=trend-shorts">🔥 Ce merge în Shorts</a></div>'
-NAV_POST = nav([('blog', '../blog.html', '← Blog'), ('calendar', '../calendar.html', '📅 Calendar'),
-                ('recap', '../recap.html', '📊 Rezumat'), ('index', '../index.html', '⚡ Dashboard')])
-NAV_JOC = NAV_POST
 CTA = ('<div class="cta"><b>Follow = Au ce bile! 💥</b>'
-       '<a href="https://www.tiktok.com/@vexu_online" target="_blank" rel="noopener">🎵 TikTok @vexu_online</a>'
-       '<a class="yt" href="https://www.youtube.com/@VexuOnline" target="_blank" rel="noopener">▶️ YouTube VEXU Online</a></div>')
+       '<a href="https://www.tiktok.com/@vexu_online" target="_blank" rel="noopener">TikTok @vexu_online</a>'
+       '<a class="yt" href="https://www.youtube.com/@VexuOnline" target="_blank" rel="noopener">YouTube VEXU Online</a></div>')
 
 BLOG_JS = r"""
 <script>
@@ -233,29 +183,30 @@ function buildGames(){const m=new Map(); ALL.forEach(p=>{if(!p.joc||!p.jocSlug)r
 function validFilter(){if(!FILTERS.some(f=>f.id===filter)) filter='toate'; if(!GAMES.some(g=>g.id===game)) game='toate'}
 function gmatch(p,g){return g==='toate'||p.jocSlug===g}
 function terms(){return norm(q).split(/\s+/).filter(Boolean)}
+const ne=s=>String(s||'').replace(/^[\p{Extended_Pictographic}\uFE0F\u200D\s]+/u,'');
 function hay(p){if(p._h===undefined||(SEARCH&&!p._full)){p._full=!!SEARCH; p._h=norm(p.title+' '+(p.excerpt||'')+' '+(p.labels||[]).join(' ')+' '+(p.joc||'')+' '+((SEARCH&&SEARCH[p.slug])||''))} return p._h}
 function qmatch(p,t){return !t.length||t.every(w=>hay(p).includes(w))}
 function fmatch(p,f){return f==='toate'||(p.labels||[]).some(l=>fid(l)===f)}
 function loadSearch(){if(SEARCH||sLoading)return; sLoading=true;
   fetch('posts-search.json?'+Date.now()).then(r=>r.json()).then(d=>{SEARCH=d; if(q.trim()) paint()}).catch(()=>{sLoading=false})}
-function chipsHtml(labels,date){return labels.map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')+`<span class="dt">📅 ${es(date)}</span>`}
+function chipsHtml(labels,date){return labels.map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')+`<span class="dt">${es(date)}</span>`}
 // insignă „NOU” pentru postările publicate în ultimele 6 ore (din câmpul published, ora reală)
 function newBadge(p){const t=Date.parse(p.published||''); if(!t)return ''; const m=Math.floor((Date.now()-t)/6e4); if(m<0||m>=360)return '';
-  return `<span class="nou">🆕 NOU · ${m<1?'acum':m<60?'acum '+m+' min':'acum '+Math.floor(m/60)+' h'}</span>`}
+  return `<span class="nou">NOU · ${m<1?'acum':m<60?m+' min':Math.floor(m/60)+' h'}</span>`}
 function cardHtml(p, feat){
-  return `<a class="p${feat?' feat':''}" href="posts/${es(p.slug)}.html">${newBadge(p)}<img src="${es(p.img)}" alt="" loading="lazy"><div class="b">${chipsHtml(p.labels,p.dateRo)}<h2>${es(p.title)}</h2><div>${es(p.excerpt)}</div>${p.joc?`<span class="jg">🎮 ${es(p.joc)}</span>`:''}<div class="more">Citește tot →</div></div></a>`;
+  return `<a class="p${feat?' feat':''}" href="posts/${es(p.slug)}.html"><img src="${es(p.img)}" alt="" loading="lazy"><div class="b">${chipsHtml(p.labels,p.dateRo)}${newBadge(p)}<h2>${es(ne(p.title))}</h2><div>${es(p.excerpt)}</div>${p.joc?`<span class="jg">${es(p.joc)}</span>`:''}<div class="more">Citește tot →</div></div></a>`;
 }
 function renderFilters(t){
   const base=ALL.filter(p=>qmatch(p,t));
-  document.getElementById('filters').innerHTML=FILTERS.map(f=>`<button type="button" class="chip${filter===f.id?' on':''}" data-f="${es(f.id)}" aria-pressed="${filter===f.id}">${es(f.label)}<span class="n">(${base.filter(p=>gmatch(p,game)&&fmatch(p,f.id)).length})</span></button>`).join('');
+  document.getElementById('filters').innerHTML=FILTERS.map(f=>`<button type="button" class="chip${filter===f.id?' on':''}" data-f="${es(f.id)}" aria-pressed="${filter===f.id}">${es(f.label)}<span class="n">${base.filter(p=>gmatch(p,game)&&fmatch(p,f.id)).length}</span></button>`).join('');
   document.querySelectorAll('#filters .chip').forEach(b=>b.onclick=()=>{filter=b.dataset.f; setHash(); shown=0; paint()});
   const gb=base.filter(p=>fmatch(p,filter));
   const gf=document.getElementById('gfilters');
-  gf.innerHTML=GAMES.map(g=>`<button type="button" class="chip${game===g.id?' on':''}" data-g="${es(g.id)}" aria-pressed="${game===g.id}">${g.id==='toate'?'🎮 ':''}${es(g.label)}<span class="n">(${gb.filter(p=>gmatch(p,g.id)).length})</span></button>`).join('');
+  gf.innerHTML=GAMES.map(g=>`<button type="button" class="chip${game===g.id?' on':''}" data-g="${es(g.id)}" aria-pressed="${game===g.id}">${es(g.label)}<span class="n">${gb.filter(p=>gmatch(p,g.id)).length}</span></button>`).join('');
   gf.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{game=b.dataset.g; setHash(); shown=0; paint()});
   const on=gf.querySelector('.chip.on'); if(on&&game!=='toate'&&gf.scrollWidth>gf.clientWidth) gf.scrollLeft=on.offsetLeft-gf.clientWidth/2+on.offsetWidth/2;
   const cur=GAMES.find(g=>g.id===game);
-  document.getElementById('gpage').innerHTML=game!=='toate'&&cur?`<a href="joc/${es(cur.id)}.html">🎮 Pagina jocului ${es(cur.label)} →</a>`:'';
+  document.getElementById('gpage').innerHTML=game!=='toate'&&cur?`<a href="joc/${es(cur.id)}.html">Pagina jocului ${es(cur.label)} →</a>`:'';
 }
 function paint(){
   const t=terms();
@@ -291,7 +242,7 @@ qi.addEventListener('keydown',e=>{if(e.key==='Escape'){qi.value=q=''; setHash();
 document.getElementById('qform').onsubmit=e=>{e.preventDefault(); qi.blur()};
 document.getElementById('qx').onclick=()=>{qi.value=q=''; setHash(); shown=0; paint(); qi.focus()};
 document.getElementById('moreBtn').onclick=()=>{shown+=PAGE; paint()};
-document.getElementById('shortsBtn').onclick=()=>{filter=FILTERS.some(f=>f.id==='trend-shorts')?'trend-shorts':'toate'; setHash(); shown=0; paint(); document.getElementById('filters').scrollIntoView({behavior:'smooth'})};
+document.querySelector('.tn-s').onclick=e=>{e.preventDefault();filter=FILTERS.some(f=>f.id==='trend-shorts')?'trend-shorts':'toate'; setHash(); shown=0; paint(); document.getElementById('filters').scrollIntoView({behavior:'smooth'})};
 ({f:filter,g:game,q}=parseHash()); qi.value=q; if(q) loadSearch();
 fetch('posts-index.json?'+Date.now()).then(r=>r.json()).then(data=>{
   ALL=data.posts||data; buildFilters(); buildGames(); validFilter(); paint();
@@ -382,7 +333,7 @@ function validGame(){if(!GAMES.some(g=>g.id===game)) game='toate'}
 function paintChips(){const now=new Date();const gf=document.getElementById('gfilters');
   const act=ev=>status(ev,now).kind!=='done';
   gf.innerHTML=GAMES.map(g=>{const evs=g.id==='toate'?EVENTS:EVENTS.filter(ev=>gid(ev)===g.id);const a=evs.filter(act).length;
-    return `<button type="button" class="chip${game===g.id?' on':''}" data-g="${es(g.id)}" aria-pressed="${game===g.id}" title="${a} active/urmează din ${evs.length}">${g.id==='toate'?'🎮 ':''}${es(g.label)}<span class="n">(${evs.length})</span></button>`}).join('');
+    return `<button type="button" class="chip${game===g.id?' on':''}" data-g="${es(g.id)}" aria-pressed="${game===g.id}" title="${a} active/urmează din ${evs.length}">${es(g.label)}<span class="n">${evs.length}</span></button>`}).join('');
   gf.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{game=b.dataset.g;setHash();paintChips();paint()});
   const on=gf.querySelector('.chip.on');if(on&&game!=='toate'&&gf.scrollWidth>gf.clientWidth) gf.scrollLeft=on.offsetLeft-gf.clientWidth/2+on.offsetWidth/2;
   const gi=document.getElementById('ginfo');const g=GAMES.find(x=>x.id===game);gi.innerHTML=game==='toate'?'':`Arăt doar: <b>${es(g?g.label:game)}</b> · <a href="#" id="gclr">vezi toate</a>`;
@@ -392,12 +343,12 @@ function paint(){
   const items=EVENTS.filter(ev=>game==='toate'||gid(ev)===game).map(ev=>({ev,st:status(ev,now),r:relevant(ev,now)}));
   const card=({ev,st})=>{
     const cd=st.target?`<div class="cd">${cdHtml(st.target-now)}</div>`:'';
-    const note=ev.zvon_note?`<div class="note">⚠️ ${es(ev.zvon_note)}</div>`:'';
+    const note=ev.zvon_note?`<div class="note">${es(ev.zvon_note)}</div>`:'';
     const urg=st.kind==='live'&&st.target&&(st.target-now)<864e5;
     const cls=st.kind==='live'?'live':st.kind==='done'?'done':'soon';
     return `<div class="row ${cls}${urg?' urg':''}"><img class="ico" src="${es(ev.img)}" alt="" loading="lazy"><div class="card">
       <div><span class="l CONFIRMAT">CONFIRMAT</span> <b>${es(ev.game||'')}</b> — ${es(ev.name)}</div>
-      ${urg?'<div class="urgt">⏰ Ultimele ore!</div>':''}
+      ${urg?'<div class="urgt">Ultimele ore</div>':''}
       <div class="st ${st.kind==='live'?'live':st.kind==='done'?'done':''}">${st.kind==='live'?'<span class="ldot"></span>':''}${es(st.text)}</div>
       ${cd}
       <div class="meta">${es(windowText(ev))}</div>
@@ -409,9 +360,9 @@ function paint(){
   const lk=i=>i.st.target?+i.st.target:9e15;const live=by('live').sort((a,b)=>lk(a)-lk(b)||a.r-b.r), soon=by('soon').sort((a,b)=>a.r-b.r), done=by('done').sort((a,b)=>b.r-a.r);
   const head=(c,t,n)=>`<div class="grp ${c}">${t} <span class="n">${n}</span></div>`;
   let h='';
-  if(live.length) h+=head('g-live','🟢 LIVE acum',live.length)+live.map(card).join('');
-  if(soon.length) h+=head('g-soon','⏳ Urmează',soon.length)+soon.map(card).join('');
-  if(done.length) h+=`<details${doneOpen?' open':''} ontoggle="doneOpen=this.open"><summary>${head('g-done','✅ Terminate',done.length)}</summary>${done.map(card).join('')}</details>`;
+  if(live.length) h+=head('g-live','Live acum',live.length)+live.map(card).join('');
+  if(soon.length) h+=head('g-soon','Urmează',soon.length)+soon.map(card).join('');
+  if(done.length) h+=`<details${doneOpen?' open':''} ontoggle="doneOpen=this.open"><summary>${head('g-done','Terminate',done.length)}</summary>${done.map(card).join('')}</details>`;
   document.getElementById('cal').innerHTML=h||`<div class="empty">${game==='toate'?'Niciun event încă.':'Niciun event pentru jocul ăsta.'}</div>`;
 }
 game=parseHash();
@@ -421,7 +372,7 @@ window.addEventListener('hashchange',()=>{game=parseHash();validGame();paintChip
 """
 
 POST_JS = r"""<script>(()=>{const b=document.querySelector('.rp');if(b){let r=0;const u=()=>{r=0;const h=document.documentElement,m=h.scrollHeight-innerHeight;b.style.transform='scaleX('+(m>0?Math.min(1,scrollY/m):1)+')'};addEventListener('scroll',()=>{if(!r){r=1;requestAnimationFrame(u)}},{passive:true});addEventListener('resize',u);u()}
-const s=document.getElementById('shr');if(s)s.onclick=async()=>{const d={title:document.title,url:location.href.split('#')[0]};try{if(navigator.share){await navigator.share(d);return}await navigator.clipboard.writeText(d.url);s.textContent='✅ Link copiat!';s.classList.add('ok');setTimeout(()=>{s.textContent='🔗 Distribuie';s.classList.remove('ok')},2200)}catch(e){}}})()</script>"""
+const s=document.getElementById('shr');if(s)s.onclick=async()=>{const d={title:document.title,url:location.href.split('#')[0]};try{if(navigator.share){await navigator.share(d);return}await navigator.clipboard.writeText(d.url);s.textContent='Link copiat';s.classList.add('ok');setTimeout(()=>{s.textContent='Distribuie';s.classList.remove('ok')},2200)}catch(e){}}})()</script>"""
 
 def related(posts, i, n=3):
     """Postări apropiate în timp care au o etichetă comună (stabil între build-uri); completează cu cele mai apropiate în timp."""
@@ -442,8 +393,8 @@ def related_html(posts, i):
     for j in related(posts, i):
         q = posts[j]; qs = q.get('slug') or slug(q['titlu'])
         cards += (f'<a class="p" href="{e(qs)}.html"><img src="../{e(q["img"])}" alt="" loading="lazy"><div class="b">{chips(q)}'
-                  f'<span class="dt">📅 {ro_date(q["date"])}</span><h3>{e(q["titlu"])}</h3></div></a>')
-    return f'<section class="rel"><h2>👀 Mai citește</h2><div class="grid">{cards}</div></section>' if cards else ''
+                  f'<span class="dt">{ro_date(q["date"])}</span><h3>{e(ne(q["titlu"]))}</h3></div></a>')
+    return f'<section class="rel"><h2>Mai citește</h2><div class="grid">{cards}</div></section>' if cards else ''
 
 def set_game(ce, joc):
     # slug pentru filtrul de jocuri din calendar = același jocSlug ca în blog când eventul ține de jocul postării
@@ -464,7 +415,7 @@ def build_post_pages(posts):
     for i in order:
         p = posts[i]
         s = p.get('slug') or slug(p['titlu'])
-        lab = f'{chips(p)}<span class="dt">📅 {ro_date(p["date"])}</span>'
+        lab = f'{chips(p)}<span class="dt">{ro_date(p["date"])}</span>'
         src = ''.join(f'<a href="{e(u)}" target="_blank" rel="noopener">{e(u)}</a>' for u in p.get('surse', []))
         def sl(us):
             return '<div class="s">Sursă:' + ''.join(f'<a href="{e(u)}" target="_blank" rel="noopener">{e(u)}</a>' for u in us) + '</div>'
@@ -480,16 +431,15 @@ def build_post_pages(posts):
             open(os.path.join(D, 'posts', o + '.html'), 'w', encoding='utf-8').write(
                 f'<!doctype html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url={s}.html">'
                 f'<link rel="canonical" href="{s}.html"><a href="{s}.html">Mutat aici →</a>\n')
-        body = (NAV_POST +
-                f'<div class="p hero"><div class="hi"><img src="../{e(p["img"])}" alt=""></div><div class="b">{lab}'
-                + (f'<a class="jl" href="../joc/{e(joc_slug(joc_of(p)))}.html">🎮 {e(joc_of(p))}</a>' if joc_of(p) else '') +
-                f'<h1 style="text-align:left;font-size:1.6em">{e(p["titlu"])}</h1>'
-                f'<div class="txt">{txt}</div><div class="s">Surse:{src}</div></div></div>'
+        body = ('<div class="rp" aria-hidden="true"></div>'
+                f'<article class="art"><div class="art-m">{lab}'
+                + (f'<a class="jl" href="../joc/{e(joc_slug(joc_of(p)))}.html">{e(joc_of(p))}</a>' if joc_of(p) else '') +
+                f'</div><h1>{e(p["titlu"])}</h1><div class="hi"><img src="../{e(p["img"])}" alt=""></div>'
+                f'<div class="txt">{txt}</div><div class="s">Surse:{src}</div></article>'
                 f'<div class="acts"><a class="btn" href="../blog.html">← Înapoi la blog</a>'
-                f'<button type="button" class="btn shr" id="shr">🔗 Distribuie</button></div>'
+                f'<button type="button" class="btn shr" id="shr">Distribuie</button></div>'
                 + related_html(posts, i))
-        body = '<div class="rp" aria-hidden="true"></div>' + body
-        open(os.path.join(D, 'posts', s + '.html'), 'w', encoding='utf-8').write(page(p['titlu'] + ' · VEXU HQ', body, POST_JS))
+        open(os.path.join(D, 'posts', s + '.html'), 'w', encoding='utf-8').write(page(p['titlu'] + ' · VEXU HQ', body, POST_JS, 'blog', '../', True))
         print('posts/' + s + '.html')
         item = {
             'slug': s,
@@ -561,15 +511,15 @@ def build_game_pages(posts):
         for q in ps:
             qs = q.get('slug') or slug(q['titlu'])
             cards += (f'<a class="p" href="../posts/{e(qs)}.html"><img src="../{e(q["img"])}" alt="" loading="lazy"><div class="b">{chips(q)}'
-                      f'<span class="dt">📅 {ro_date(q["date"])}</span><h2>{e(q["titlu"])}</h2><div>{e(excerpt_of(q))}</div>'
+                      f'<span class="dt">{ro_date(q["date"])}</span><h2>{e(ne(q["titlu"]))}</h2><div>{e(excerpt_of(q))}</div>'
                       f'<div class="more">Citește tot →</div></div></a>')
         n = len(ps)
-        body = (f'<h1>🎮 {e(j)}</h1>{NAV_JOC}'
+        body = (f'<span class="kick">Joc</span><h1>{e(j)}</h1>'
                 f'<p class="gcount">{n} {"postare" if n == 1 else "postări"} · cele mai noi primele · '
-                f'<a href="../blog.html#g={e(js)}" style="color:#00f0ff">vezi în blog cu filtre</a></p>'
+                f'<a href="../blog.html#g={e(js)}">vezi în blog cu filtre</a></p>'
                 f'<div class="grid">{cards}</div>{CTA}'
-                f'<div style="text-align:center"><a class="btn" href="../blog.html">← Toate știrile</a></div>')
-        open(os.path.join(jd, js + '.html'), 'w', encoding='utf-8').write(page(f'{j} · VEXU HQ', body))
+                f'<div class="acts"><a class="btn" href="../blog.html">← Toate știrile</a></div>')
+        open(os.path.join(jd, js + '.html'), 'w', encoding='utf-8').write(page(f'{j} · VEXU HQ', body, '', 'blog', '../', True))
         made.add(js + '.html')
     for f in os.listdir(jd):
         if f.endswith('.html') and f not in made:
@@ -578,9 +528,8 @@ def build_game_pages(posts):
     return groups
 
 def build_blog():
-    noscript = '<noscript><p style="text-align:center;color:#9a8fb5">Activează JavaScript pentru feed-ul grupat pe zile. Postările individuale rămân în <code>posts/</code>.</p></noscript>'
-    body = (f'<h1>📰 VEXU HQ · Știri</h1>{nav_blog("blog")}'
-            f'<div class="shorts-entry"><button type="button" id="shortsBtn">🔥 Ce merge în Shorts</button></div>'
+    noscript = '<noscript><p class="rsub">Activează JavaScript pentru feed-ul grupat pe zile. Postările individuale rămân în <code>posts/</code>.</p></noscript>'
+    body = (f'<h1>Știri</h1>'
             f'<form class="srch" id="qform" role="search"><input type="search" id="q" placeholder="Caută în știri…" aria-label="Caută în știri" autocomplete="off" enterkeyhint="search"><button type="button" id="qx" aria-label="Șterge căutarea">✕</button></form>'
             f'<div class="qinfo" id="qinfo" aria-live="polite"></div>'
             f'<div class="filters" id="filters"></div>'
@@ -589,14 +538,14 @@ def build_blog():
             f'<div id="featSlot"></div><div id="feed"></div>'
             f'<div id="moreWrap"><button type="button" class="btn" id="moreBtn" style="display:none">Vezi mai multe</button></div>'
             f'{noscript}{CTA}')
-    open(os.path.join(D, 'blog.html'), 'w', encoding='utf-8').write(page('VEXU HQ · Știri', body, BLOG_JS))
+    open(os.path.join(D, 'blog.html'), 'w', encoding='utf-8').write(page('VEXU HQ · Știri', body, BLOG_JS, 'blog'))
 
 def build_calendar():
-    body = (f'<h1>📅 Calendar Halloween</h1>{nav_blog("calendar")}'
-            f'<p style="text-align:center;color:#9a8fb5">Doar ferestre CONFIRMAT din blog · ora României · countdown live</p>'
+    body = (f'<h1>Calendar Halloween</h1>'
+            f'<p class="rsub">Doar ferestre CONFIRMAT din blog · ora României · countdown live</p>'
             f'<div class="ftitle">Jocuri</div><div class="filters" id="gfilters" role="toolbar" aria-label="Filtru după joc"></div><div class="ginfo" id="ginfo"></div>'
             f'<div class="cal" id="cal">Se încarcă…</div>')
-    open(os.path.join(D, 'calendar.html'), 'w', encoding='utf-8').write(page('Calendar Halloween · VEXU HQ', body, CAL_JS))
+    open(os.path.join(D, 'calendar.html'), 'w', encoding='utf-8').write(page('Calendar Halloween · VEXU HQ', body, CAL_JS, 'calendar'))
 
 # ───────────── Rezumatul săptămânii (recap.html) ─────────────
 # Generat la build din posts.json (știrile din ultimele 7 zile, ora României), iar în browser se recalculează
@@ -671,17 +620,8 @@ def recap_row(x):
     d = datetime.fromisoformat(x['published']).astimezone(TZ)
     u = datetime.fromisoformat(x['updated']).astimezone(TZ) if x.get('updated') else None
     upd = f' · actualizat {u.day} {LUNI[u.month-1][:3]}' if u and u.date() != d.date() else ''
-    return (f'<a class="rn" href="posts/{e(x["slug"])}.html">{lab}<b>{e(recap_title(x) or x["title"])}</b>'
-            f'<i>{"🎮 " + e(x["joc"]) + " · " if x.get("joc") else ""}{d.day} {LUNI[d.month-1][:3]}, {d:%H:%M}{upd}</i></a>')
-
-RECAP_CSS = ('.rc{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;padding:14px;margin:14px 0;box-shadow:0 0 18px #ff2bd622}'
- '.rc h2{margin:0 0 10px;color:#ff7be6;font-size:1.15em}.rsub{text-align:center;color:#9a8fb5;font-size:.9em;margin:4px 0 10px}'
- '.rn{display:block;padding:10px 0;border-top:1px solid #ffffff12;color:inherit;text-decoration:none}.rn:first-of-type{border-top:0}.rn b{display:block;margin:5px 0 3px;line-height:1.35}'
- '.rn i{font-style:normal;color:#9a8fb5;font-size:.8em}.rn:hover b{color:#00f0ff}.rnum{display:flex;flex-wrap:wrap;gap:8px}.rnum div{flex:1 1 90px;background:#000a;border:1px solid #00f0ff55;border-radius:12px;padding:8px;text-align:center}'
- '.rnum b{display:block;font-size:1.4em;color:#00f0ff}.rnum span{font-size:.75em;color:#9a8fb5}#rchart svg{width:100%;height:auto;display:block}#rchart text{fill:#bdb3d6;font:12px system-ui,sans-serif}'
- '.rmeta{color:#9a8fb5;font-size:.82em;margin-top:8px;line-height:1.45}.rcard{display:flex;flex-direction:column;align-items:center;gap:10px}'
- '.rcard img{width:min(100%,300px);aspect-ratio:9/16;border-radius:14px;border:1px solid #ff2bd666;box-shadow:0 0 24px #ff2bd644;background:#07040f}'
- '.rcard .btn{margin:4px 0;font-weight:800}@media(min-width:900px){.rgrid{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;align-items:start}.rgrid .rc{margin:0 0 16px}}')
+    return (f'<a class="rn" href="posts/{e(x["slug"])}.html">{lab}<b>{e(ne(recap_title(x) or x["title"]))}</b>'
+            f'<i>{e(x["joc"]) + " · " if x.get("joc") else ""}{d.day} {LUNI[d.month-1][:3]}, {d:%H:%M}{upd}</i></a>')
 
 RECAP_JS = r"""<script>
 (()=>{const TZ='Europe/Bucharest',DAYS=7,MAXC=10,MAXO=6;
@@ -695,6 +635,7 @@ const LUN=['ian','feb','mar','apr','mai','iun','iul','aug','sep','oct','nov','de
 const WD=['dum','lun','mar','mie','joi','vin','sâm'];
 const kd=k=>{const[y,m,d]=k.split('-').map(Number);return{y,m,d,w:new Date(Date.UTC(y,m-1,d,12)).getUTCDay()}};
 function keys(){const t=kd(dk(new Date()));const a=[];for(let i=DAYS-1;i>=0;i--)a.push(new Date(Date.UTC(t.y,t.m-1,t.d-i,12)).toISOString().slice(0,10));return a}
+const ne=s=>String(s||'').replace(/^[\p{Extended_Pictographic}\uFE0F\u200D\s]+/u,'');
 const ttl=p=>{const r=p.recap||{};if(r.until&&Date.now()>=Date.parse(r.until))return r.title_after||null;return r.title||p.title};
 const eprio=p=>Math.max(p.prio||0,(p.recap&&p.recap.prio)||0);
 const skip=p=>(p.recap&&p.recap.allow)?!ttl(p):p.jocSlug==='steal-an-egg'&&(/part[\s-]*(2|ii)\b|throwback/i.test((p.title||'')+' '+(p.slug||'')+' '+(p.excerpt||''))||!!p.republish);
@@ -704,7 +645,7 @@ function top(c,n){const o=[],seen=new Set();for(const p of [...c].sort(sc)){cons
 const plain=s=>String(s).replace(/[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\uFE0F\u200D]/gu,'').replace(/\s+/g,' ').trim();
 let K=keys(),WK=[],CONF=[],OTH=[],PH=null,DATA=null;
 function rangeTxt(){const a=kd(K[0]),b=kd(K[K.length-1]);return a.m===b.m?`${a.d} – ${b.d} ${LUNL[b.m-1]} ${b.y}`:`${a.d} ${LUNL[a.m-1]} – ${b.d} ${LUNL[b.m-1]} ${b.y}`}
-function row(p){const d=new Date(p.published);return `<a class="rn" href="posts/${es(p.slug)}.html">${(p.labels||[]).map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')}<b>${es(ttl(p)||p.title)}</b><i>${p.joc?'🎮 '+es(p.joc)+' · ':''}${kd(dk(d)).d} ${LUN[kd(dk(d)).m-1]}, ${hm(d)}${p.updated&&dk(new Date(p.updated))!==dk(d)?` · actualizat ${kd(dk(new Date(p.updated))).d} ${LUN[kd(dk(new Date(p.updated))).m-1]}`:''}</i></a>`}
+function row(p){const d=new Date(p.published);return `<a class="rn" href="posts/${es(p.slug)}.html">${(p.labels||[]).map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')}<b>${es(ne(ttl(p)||p.title))}</b><i>${p.joc?es(p.joc)+' · ':''}${kd(dk(d)).d} ${LUN[kd(dk(d)).m-1]}, ${hm(d)}${p.updated&&dk(new Date(p.updated))!==dk(d)?` · actualizat ${kd(dk(new Date(p.updated))).d} ${LUN[kd(dk(new Date(p.updated))).m-1]}`:''}</i></a>`}
 function news(ix){K=keys();const ks=new Set(K);
   WK=(ix.posts||[]).filter(p=>p.published&&ks.has(dk(new Date(p.published)))&&!skip(p)).sort((a,b)=>new Date(b.published)-new Date(a.published));
   const EL=(ix.posts||[]).filter(p=>p.published&&!skip(p)&&lr(p)>0&&(ks.has(dk(new Date(p.published)))||(eprio(p)>0&&p.updated&&ks.has(dk(new Date(p.updated))))));
@@ -720,59 +661,59 @@ function chart(){const el=document.getElementById('rchart'),meta=document.getEle
   const P=peaks(),have=P.filter(x=>x.v);if(!have.length){el.innerHTML='<div class="rmeta">Încă nu avem măsurători în ultimele 7 zile.</div>';meta.textContent='';return}
   const W=700,H=270,L=10,R=10,T=34,B=46,bw=(W-L-R)/P.length,mx=Math.max(...have.map(x=>x.v.peak))*1.08;let g='';
   P.forEach((x,i)=>{const cx=L+bw*i+bw/2,w=bw*.62,d=kd(x.k),lab=x.k===K[K.length-1]?`azi (${d.d})`:`${WD[d.w]} ${d.d}`;
-    if(x.v){const h=(H-T-B)*x.v.peak/mx,y=H-B-h;g+=`<rect x="${(cx-w/2).toFixed(1)}" y="${y.toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="8" fill="url(#rg)"/><text x="${cx}" y="${(y-8).toFixed(1)}" text-anchor="middle" style="fill:#fff;font-weight:700">${cmp(x.v.peak)}</text>`}
-    else{g+=`<rect x="${(cx-w/2).toFixed(1)}" y="${T+40}" width="${w.toFixed(1)}" height="${H-B-T-40}" rx="8" fill="none" stroke="#ffffff33" stroke-dasharray="5 5"/><text x="${cx}" y="${(H-B-12)}" text-anchor="middle" style="fill:#9a8fb5;font-size:11px">fără date</text>`}
-    g+=`<text x="${cx}" y="${H-B+20}" text-anchor="middle">${lab}</text><text x="${cx}" y="${H-B+36}" text-anchor="middle" style="fill:#7d7399;font-size:10px">${x.v?x.v.n+' măs.':''}</text>`});
-  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Steal An Egg: vârful zilnic de jucători în ultimele 7 zile"><defs><linearGradient id="rg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00f0ff"/><stop offset="1" stop-color="#ff2bd6"/></linearGradient></defs>${g}</svg>`;
-  const best=have.reduce((a,x)=>x.v.peak>a.v.peak?x:a),m=manual();let t=`⬆️ Cel mai mare vârf măsurat: ${nf(best.v.peak)} jucători (${WD[kd(best.k).w]} ${kd(best.k).d} ${LUN[kd(best.k).m-1]}, ${hm(new Date(best.v.t))}). `;
+    if(x.v){const h=(H-T-B)*x.v.peak/mx,y=H-B-h;g+=`<rect x="${(cx-w/2).toFixed(1)}" y="${y.toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="2" class="bar"/><text x="${cx}" y="${(y-8).toFixed(1)}" text-anchor="middle" class="bv">${cmp(x.v.peak)}</text>`}
+    else{g+=`<rect x="${(cx-w/2).toFixed(1)}" y="${T+40}" width="${w.toFixed(1)}" height="${H-B-T-40}" rx="2" class="gap"/><text x="${cx}" y="${(H-B-12)}" text-anchor="middle">fără date</text>`}
+    g+=`<text x="${cx}" y="${H-B+20}" text-anchor="middle">${lab}</text><text x="${cx}" y="${H-B+36}" text-anchor="middle" class="nd">${x.v?x.v.n+' măs.':''}</text>`});
+  el.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Steal An Egg: vârful zilnic de jucători în ultimele 7 zile">${g}</svg>`;
+  const best=have.reduce((a,x)=>x.v.peak>a.v.peak?x:a),m=manual();let t=`Cel mai mare vârf măsurat: ${nf(best.v.peak)} jucători (${WD[kd(best.k).w]} ${kd(best.k).d} ${LUN[kd(best.k).m-1]}, ${hm(new Date(best.v.t))}). `;
   t+=`Date din ${have.length} din ${P.length} zile`+(have.length<P.length?' (zilele fără măsurători apar „fără date”)':'')+'. ';
-  m.forEach(x=>{t+=`📌 Citire manuală: ${nf(x.p)} pe ${kd(dk(new Date(x.t))).d} ${LUN[kd(dk(new Date(x.t))).m-1]}, ${hm(new Date(x.t))}${x.note?' ('+x.note+')':''}. `});
-  if(DATA&&DATA.game&&typeof DATA.game.playing==='number')t+=`🟢 Ultima citire: ${nf(DATA.game.playing)} jucători (${hm(new Date(DATA.game.fetched||DATA.updated))}).`;
+  m.forEach(x=>{t+=`Citire manuală: ${nf(x.p)} pe ${kd(dk(new Date(x.t))).d} ${LUN[kd(dk(new Date(x.t))).m-1]}, ${hm(new Date(x.t))}${x.note?' ('+x.note+')':''}. `});
+  if(DATA&&DATA.game&&typeof DATA.game.playing==='number')t+=`Ultima citire: ${nf(DATA.game.playing)} jucători (${hm(new Date(DATA.game.fetched||DATA.updated))}).`;
   meta.textContent=t}
 // ── card 9:16 (1080×1920), desenat local în canvas ──
 function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);c.arcTo(x+w,y+h,x,y+h,r);c.arcTo(x,y+h,x,y,r);c.arcTo(x,y,x+w,y,r);c.closePath()}
 function wrap(c,t,maxW,maxL){const w=t.split(' '),out=[];let cur='';for(const x of w){const n=cur?cur+' '+x:x;if(c.measureText(n).width>maxW&&cur){out.push(cur);cur=x}else cur=n}if(cur)out.push(cur);if(out.length>maxL){out.length=maxL;let l=out[maxL-1];while(c.measureText(l+'…').width>maxW&&l.length)l=l.slice(0,-1);out[maxL-1]=l.replace(/\s+\S*$/,'')+'…'}return out}
 const F='system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif';
 function card(){const cv=document.createElement('canvas');cv.width=1080;cv.height=1920;const c=cv.getContext('2d');
-  c.fillStyle='#07040f';c.fillRect(0,0,1080,1920);
-  let g=c.createRadialGradient(200,0,0,200,0,1100);g.addColorStop(0,'#3b0a5c');g.addColorStop(1,'#3b0a5c00');c.fillStyle=g;c.fillRect(0,0,1080,1920);
-  g=c.createRadialGradient(1080,1920,0,1080,1920,1100);g.addColorStop(0,'#002f3d');g.addColorStop(1,'#002f3d00');c.fillStyle=g;c.fillRect(0,0,1080,1920);
-  g=c.createLinearGradient(0,1700,0,1920);g.addColorStop(0,'#ff7a0000');g.addColorStop(1,'#ff7a0022');c.fillStyle=g;c.fillRect(0,1700,1080,220);
+  c.fillStyle='#0b0c0f';c.fillRect(0,0,1080,1920);
+  let g=c.createRadialGradient(200,0,0,200,0,1100);g.addColorStop(0,'#1c1209');g.addColorStop(1,'#1c120900');c.fillStyle=g;c.fillRect(0,0,1080,1920);
+  g=c.createRadialGradient(1080,1920,0,1080,1920,1100);g.addColorStop(0,'#0b0c0f');g.addColorStop(1,'#0b0c0f00');c.fillStyle=g;c.fillRect(0,0,1080,1920);
+  g=c.createLinearGradient(0,1700,0,1920);g.addColorStop(0,'#ff8a1f00');g.addColorStop(1,'#ff8a1f14');c.fillStyle=g;c.fillRect(0,1700,1080,220);
   c.textAlign='center';c.textBaseline='alphabetic';
-  g=c.createLinearGradient(240,0,840,0);g.addColorStop(0,'#ff2bd6');g.addColorStop(.5,'#00f0ff');g.addColorStop(1,'#ff7a00');
-  c.font=`900 120px ${F}`;c.fillStyle=g;c.shadowColor='#ff2bd6';c.shadowBlur=30;c.fillText('VEXU HQ',540,180);c.shadowBlur=0;
+  g=c.createLinearGradient(240,0,840,0);g.addColorStop(0,'#ecedf0');g.addColorStop(1,'#ecedf0');
+  c.font=`900 120px ${F}`;c.fillStyle=g;c.shadowBlur=0;c.fillText('VEXU HQ',540,180);c.shadowBlur=0;
   c.font=`800 64px ${F}`;c.fillStyle='#fff';c.fillText('REZUMATUL SĂPTĂMÂNII',540,280);
-  c.font=`600 40px ${F}`;c.fillStyle='#9a8fb5';c.fillText('🎃 '+rangeTxt()+' 🎃',540,345);
+  c.font=`600 40px ${F}`;c.fillStyle='#a2a5b0';c.fillText(rangeTxt(),540,345);
   // top știri
-  c.textAlign='left';c.font=`800 38px ${F}`;c.fillStyle='#39ff88';c.fillText('TOP ȘTIRILE SĂPTĂMÂNII',70,412);
+  c.textAlign='left';c.font=`800 38px ${F}`;c.fillStyle='#4dbb85';c.fillText('TOP ȘTIRILE SĂPTĂMÂNII',70,412);
   let y=436;const top=CONF.slice(0,5),LIM=1228;
-  if(!top.length){c.font=`600 36px ${F}`;c.fillStyle='#9a8fb5';c.fillText('Nicio știre săptămâna asta.',70,y+50)}
+  if(!top.length){c.font=`600 36px ${F}`;c.fillStyle='#a2a5b0';c.fillText('Nicio știre săptămâna asta.',70,y+50)}
   for(let i=0;i<top.length;i++){const p=top[i];c.font=`700 32px ${F}`;const ls=wrap(c,plain(ttl(p)||p.title),850,2),h=30+ls.length*40+(p.joc?34:0);
     if(y+h>LIM)break;
-    rr(c,60,y,960,h,24);c.fillStyle='#120a22e6';c.fill();c.strokeStyle='#ff2bd666';c.lineWidth=3;c.stroke();
-    c.fillStyle='#ff2bd6';c.font=`900 38px ${F}`;c.fillText(String(i+1),88,y+54);
+    rr(c,60,y,960,h,24);c.fillStyle='#121317';c.fill();c.strokeStyle='#2a2c35';c.lineWidth=3;c.stroke();
+    c.fillStyle='#ff8a1f';c.font=`900 38px ${F}`;c.fillText(String(i+1),88,y+54);
     c.fillStyle='#fff';c.font=`700 32px ${F}`;ls.forEach((l,j)=>c.fillText(l,135,y+50+j*40));
-    if(p.joc){c.font=`600 27px ${F}`;c.fillStyle='#ffb066';c.fillText(plain(p.joc),135,y+50+ls.length*40-2)}
+    if(p.joc){c.font=`600 27px ${F}`;c.fillStyle='#a2a5b0';c.fillText(plain(p.joc),135,y+50+ls.length*40-2)}
     y+=h+10}
   // grafic Steal An Egg (doar zilele cu măsurători reale; restul „fără date”)
   const P=peaks(),have=P.filter(x=>x.v);y=1268;
-  c.font=`800 36px ${F}`;c.fillStyle='#00f0ff';c.fillText('STEAL AN EGG · VÂRF ZILNIC DE JUCĂTORI',70,y);
-  const top0=y+24,ch=230;rr(c,60,top0,960,ch+66,24);c.fillStyle='#000a';c.fill();c.strokeStyle='#00f0ff55';c.lineWidth=3;c.stroke();
+  c.font=`800 36px ${F}`;c.fillStyle='#ff8a1f';c.fillText('STEAL AN EGG · VÂRF ZILNIC DE JUCĂTORI',70,y);
+  const top0=y+24,ch=230;rr(c,60,top0,960,ch+66,24);c.fillStyle='#000a';c.fill();c.strokeStyle='#2a2c35';c.lineWidth=3;c.stroke();
   const base=top0+ch-6;
   if(have.length){const mx=Math.max(...have.map(x=>x.v.peak)),bw=900/P.length,bh=ch-70;
-    const bg=c.createLinearGradient(0,base-bh,0,base);bg.addColorStop(0,'#00f0ff');bg.addColorStop(1,'#ff2bd6');
+    const bg=c.createLinearGradient(0,base-bh,0,base);bg.addColorStop(0,'#ff8a1f');bg.addColorStop(1,'#ff8a1f');
     P.forEach((x,i)=>{const cx=90+bw*i+bw/2,w=bw*.6,d=kd(x.k);c.textAlign='center';
       if(x.v){const h=Math.max(6,bh*x.v.peak/mx),by=base-h;rr(c,cx-w/2,by,w,h,10);c.fillStyle=bg;c.fill();c.fillStyle='#fff';c.font=`800 27px ${F}`;c.fillText(cmp(x.v.peak),cx,by-10)}
-      else{c.setLineDash([8,8]);rr(c,cx-w/2,base-bh*.55,w,bh*.55,10);c.strokeStyle='#ffffff44';c.lineWidth=2;c.stroke();c.setLineDash([]);c.fillStyle='#9a8fb5';c.font=`600 21px ${F}`;c.fillText('fără',cx,base-bh*.55+36);c.fillText('date',cx,base-bh*.55+60)}
-      c.fillStyle='#bdb3d6';c.font=`600 25px ${F}`;c.fillText(x.k===K[K.length-1]?'azi':`${WD[d.w]} ${d.d}`,cx,base+40)});c.textAlign='left'}
-  else{c.textAlign='center';c.font=`600 32px ${F}`;c.fillStyle='#9a8fb5';c.fillText('Încă nu avem măsurători săptămâna asta.',540,top0+ch/2);c.textAlign='left'}
-  c.font=`500 23px ${F}`;c.fillStyle='#7d7399';c.fillText('Vârful măsurat de VEXU HQ din API-ul Roblox (ora României).',70,top0+ch+104);
+      else{c.setLineDash([8,8]);rr(c,cx-w/2,base-bh*.55,w,bh*.55,10);c.strokeStyle='#ffffff44';c.lineWidth=2;c.stroke();c.setLineDash([]);c.fillStyle='#a2a5b0';c.font=`600 21px ${F}`;c.fillText('fără',cx,base-bh*.55+36);c.fillText('date',cx,base-bh*.55+60)}
+      c.fillStyle='#a2a5b0';c.font=`600 25px ${F}`;c.fillText(x.k===K[K.length-1]?'azi':`${WD[d.w]} ${d.d}`,cx,base+40)});c.textAlign='left'}
+  else{c.textAlign='center';c.font=`600 32px ${F}`;c.fillStyle='#a2a5b0';c.fillText('Încă nu avem măsurători săptămâna asta.',540,top0+ch/2);c.textAlign='left'}
+  c.font=`500 23px ${F}`;c.fillStyle='#6b6e7a';c.fillText('Vârful măsurat de VEXU HQ din API-ul Roblox (ora României).',70,top0+ch+104);
   // CTA
-  c.textAlign='center';c.font=`900 58px ${F}`;c.fillStyle='#ff7be6';c.shadowColor='#ff2bd6';c.shadowBlur=24;c.fillText('Follow = Au ce bile! 💥',540,1700);c.shadowBlur=0;
-  rr(c,90,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#00f0ff';c.lineWidth=4;c.stroke();
-  rr(c,560,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#ff3b3b';c.stroke();
-  c.font=`800 34px ${F}`;c.fillStyle='#00f0ff';c.fillText('TikTok @vexu_online',305,1796);c.fillStyle='#ff7070';c.fillText('YouTube VEXU Online',775,1796);
-  c.font=`600 24px ${F}`;c.fillStyle='#9a8fb5';c.fillText('pyromanc3r777.github.io/vexu-hq',540,1885);
+  c.textAlign='center';c.font=`900 58px ${F}`;c.fillStyle='#ff8a1f';c.shadowBlur=0;c.fillText('Follow = Au ce bile! 💥',540,1700);c.shadowBlur=0;
+  rr(c,90,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#ff8a1f';c.lineWidth=4;c.stroke();
+  rr(c,560,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#ff8a1f';c.stroke();
+  c.font=`800 34px ${F}`;c.fillStyle='#ecedf0';c.fillText('TikTok @vexu_online',305,1796);c.fillStyle='#ecedf0';c.fillText('YouTube VEXU Online',775,1796);
+  c.font=`600 24px ${F}`;c.fillStyle='#a2a5b0';c.fillText('pyromanc3r777.github.io/vexu-hq',540,1885);
   return cv}
 let URLC=null;
 function paintCard(){const cv=card();cv.toBlob(b=>{if(!b)return;if(URLC)URL.revokeObjectURL(URLC);URLC=URL.createObjectURL(b);const im=document.getElementById('rcimg');im.src=URLC;
@@ -795,35 +736,31 @@ def build_recap(index_items):
            else f'{a.day} {LUNI[a.month-1]} – {b.day} {LUNI[b.month-1]} {b.year}')
     cnt = lambda l: sum(1 for x in wk if l in x['labels'])
     nums = ''.join(f'<div><b>{n}</b><span>{l}</span></div>' for n, l in [(len(wk), 'postări'), (cnt('CONFIRMAT'), 'CONFIRMAT'), (cnt('ZVON'), 'ZVON'), (cnt('TREND SHORTS'), 'TREND SHORTS'), (cnt('VEXU LIVE'), 'VEXU LIVE')])
-    body = (f'<h1>📊 Rezumatul săptămânii</h1>{nav_blog("recap")}'
+    body = (f'<h1>Rezumatul săptămânii</h1>'
             f'<p class="rsub">Ultimele 7 zile · <span id="rrange">{rng}</span> · ora României · se actualizează singur</p>'
-            f'<div class="rc"><h2>📈 Săptămâna în cifre</h2><div class="rnum" id="rnum">{nums}</div></div>'
+            f'<div class="rc"><h2>Săptămâna în cifre</h2><div class="rnum" id="rnum">{nums}</div></div>'
             f'<div class="rgrid"><div>'
-            f'<div class="rc"><h2>🏆 Top știri ale săptămânii</h2><div id="rconf">{"".join(recap_row(x) for x in conf) or "<div class=rmeta>Nicio știre în ultimele 7 zile.</div>"}</div></div>'
-            f'<div class="rc"><h2>⚠️ Zvonuri de urmărit</h2><div id="roth">{"".join(recap_row(x) for x in other) or "<div class=rmeta>Niciun zvon în ultimele 7 zile.</div>"}</div></div>'
+            f'<div class="rc"><h2>Top știri ale săptămânii</h2><div id="rconf">{"".join(recap_row(x) for x in conf) or "<div class=rmeta>Nicio știre în ultimele 7 zile.</div>"}</div></div>'
+            f'<div class="rc"><h2>Zvonuri de urmărit</h2><div id="roth">{"".join(recap_row(x) for x in other) or "<div class=rmeta>Niciun zvon în ultimele 7 zile.</div>"}</div></div>'
             f'</div><div>'
-            f'<div class="rc"><h2>🥚 Steal An Egg · vârful zilnic de jucători</h2><div id="rchart"><div class="rmeta">Se încarcă graficul…</div></div>'
-            f'<div class="rmeta" id="rcmeta"></div><div class="rmeta">📏 Măsurat de noi din API-ul Roblox (GitHub Action, de obicei la câteva ore). Vârful zilei e cel mai mare număr pe care l-am prins noi, nu neapărat vârful real. Momentan urmărim doar Steal An Egg.</div></div>'
-            f'<div class="rc"><h2>📱 Card 9:16 pentru TikTok / Shorts</h2><div class="rcard"><img id="rcimg" alt="Previzualizare card 9:16 cu rezumatul săptămânii VEXU HQ" width="1080" height="1920">'
-            f'<a class="btn" id="rcdl" href="#" aria-disabled="true">⬇️ Descarcă PNG (1080×1920)</a><div class="rmeta" style="text-align:center">Cardul se generează pe telefonul tău, din datele de mai sus.</div></div></div>'
+            f'<div class="rc"><h2>Steal An Egg · vârful zilnic de jucători</h2><div id="rchart"><div class="rmeta">Se încarcă graficul…</div></div>'
+            f'<div class="rmeta" id="rcmeta"></div><div class="rmeta">Măsurat de noi din API-ul Roblox (GitHub Action, de obicei la câteva ore). Vârful zilei e cel mai mare număr pe care l-am prins noi, nu neapărat vârful real. Momentan urmărim doar Steal An Egg.</div></div>'
+            f'<div class="rc"><h2>Card 9:16 pentru TikTok / Shorts</h2><div class="rcard"><img id="rcimg" alt="Previzualizare card 9:16 cu rezumatul săptămânii VEXU HQ" width="1080" height="1920">'
+            f'<a class="btn pri" id="rcdl" href="#" aria-disabled="true">Descarcă PNG (1080×1920)</a><div class="rmeta">Cardul se generează pe telefonul tău, din datele de mai sus.</div></div></div>'
             f'</div></div>'
-            f'<div style="text-align:center"><a class="btn" href="blog.html">📰 Toate știrile</a></div>{CTA}'
-            '<noscript><p style="text-align:center;color:#9a8fb5">Activează JavaScript pentru grafic și cardul 9:16.</p></noscript>')
-    html_ = page('Rezumatul săptămânii · VEXU HQ', body, RECAP_JS).replace('</style>', RECAP_CSS + '\n</style>', 1)
+            f'<div class="acts"><a class="btn" href="blog.html">Toate știrile</a></div>{CTA}'
+            '<noscript><p class="rsub">Activează JavaScript pentru grafic și cardul 9:16.</p></noscript>')
+    html_ = page('Rezumatul săptămânii · VEXU HQ', body, RECAP_JS, 'recap')
     open(os.path.join(D, 'recap.html'), 'w', encoding='utf-8').write(html_)
     print(f'recap.html: {len(wk)} postări în {keys[0]}…{keys[-1]}; top: ' + ' | '.join(recap_title(x) or x['title'] for x in conf))
 
 def sync_index():
-    """index.html e static: îi menținem nav-ul + CSS-ul nav din aceleași surse ca restul paginilor (markere <!--nav-->…<!--/nav-->)."""
+    """index.html e static (cu JS propriu): îi sincronizăm doar <head>-ul de stil și header-ul/nav-ul, ca să fie identice cu restul paginilor.
+    Markere: <!--css-->…<!--/css--> (în <head>) și <!--nav-->…<!--/nav--> (imediat după <body>)."""
     f = os.path.join(D, 'index.html')
     t = open(f, encoding='utf-8').read()
-    css = f'<style id="{NAV_CSS_ID}">{NAV_CSS}</style>'
-    if f'id="{NAV_CSS_ID}"' in t:
-        t = re.sub(r'<style id="%s">.*?</style>' % NAV_CSS_ID, lambda m: css, t, count=1, flags=re.S)
-    else:
-        t = t.replace('</head>', css + '</head>', 1)
-    block = '<!--nav-->' + nav_blog('index') + SHORTS_LINK + '<!--/nav-->'
-    t = re.sub(r'<!--nav-->.*?<!--/nav-->', lambda m: block, t, count=1, flags=re.S)
+    t = re.sub(r'<!--css-->.*?<!--/css-->', lambda m: '<!--css-->' + CSS_LINK + '<!--/css-->', t, count=1, flags=re.S)
+    t = re.sub(r'<!--nav-->.*?<!--/nav-->', lambda m: '<!--nav-->' + header('index') + '<!--/nav-->', t, count=1, flags=re.S)
     open(f, 'w', encoding='utf-8').write(t)
 
 def date_from(k):

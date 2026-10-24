@@ -1,12 +1,12 @@
 // VEXU HQ service worker
 // HTML + JSON: NETWORK-FIRST (online vezi mereu ultimul deploy/date), fallback la cache offline.
-// Imagini/CSS/icon-uri: CACHE-FIRST. Mărește VERSION când schimbi imagini cu același nume.
-const VERSION = 'v4-2026-10-24';
+// CSS (style.css?v=hash): NETWORK-FIRST, ca designul nou să nu rămână blocat în cache. Imagini/fonturi/icon-uri: CACHE-FIRST. Mărește VERSION când schimbi imagini cu același nume.
+const VERSION = 'v5-2026-10-24';
 const CACHE = 'vexu-hq-' + VERSION;
 const BASE = '/vexu-hq/';
-const CORE = ['', 'index.html', 'blog.html', 'calendar.html', 'recap.html', 'data.json', 'extra.json', 'posts.json',
+const CORE = ['', 'index.html', 'style.css', 'blog.html', 'calendar.html', 'recap.html', 'data.json', 'extra.json', 'posts.json',
   'posts-index.json', 'posts-search.json', 'calendar-events.json', 'player-history.json', 'history.json',
-  'manifest.webmanifest', 'icon.png', 'icon-192.png', 'icon-512.png'].map(p => BASE + p);
+  'manifest.webmanifest', 'icon.png', 'icon-192.png', 'icon-512.png', 'fonts/geist-latin.woff2', 'fonts/geist-latin-ext.woff2', 'fonts/geist-mono-latin.woff2', 'fonts/geist-mono-latin-ext.woff2'].map(p => BASE + p);
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => Promise.all(CORE.map(u =>
@@ -58,9 +58,9 @@ self.addEventListener('fetch', e => {
   const u = new URL(req.url);
   if (u.origin !== location.origin || !u.pathname.startsWith(BASE)) return; // Roblox/roproxy etc. merg direct la rețea
   const p = u.pathname;
-  if (req.mode === 'navigate' || p.endsWith('/') || /\.(html|json|webmanifest)$/.test(p)) {
+  if (req.mode === 'navigate' || p.endsWith('/') || /\.(html|json|webmanifest|css|js)$/.test(p)) {
     e.respondWith(networkFirst(req, u));
-  } else if (/\.(png|jpe?g|webp|gif|svg|ico|css)$/.test(p)) {
+  } else if (/\.(png|jpe?g|webp|gif|svg|ico|woff2?)$/.test(p)) {
     e.respondWith(cacheFirst(req, u));
   }
 });
