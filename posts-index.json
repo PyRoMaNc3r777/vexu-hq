@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T17:47:07+03:00",
+ "generated": "2026-10-24T08:36:44+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,48 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "roblox-fara-thumbnail-custom-nu-mai-apari-in-recomandarile-home",
+   "title": "🖼️ Roblox: fără thumbnail custom, jocul tău nu mai apare în recomandările de pe Home",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T08:45:00+03:00",
+   "img": "devforum1.svg",
+   "excerpt": "🖼️ Roblox a anunțat pe DevForum că doar jocurile cu cel puțin un thumbnail custom mai primesc afișări din recomandările de pe Home.…",
+   "featured": false,
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "grow-a-garden-ghoul-garden-2-porneste-sambata-24-oct-2330",
+   "title": "🌱 Grow a Garden: Ghoul Garden 2 pornește în seara asta la 23:30",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T08:40:00+03:00",
+   "img": "img/gag-ghoul-garden-2.jpg",
+   "excerpt": "🎃 Ghoul Garden, evenimentul de Halloween din Grow a Garden, se închide în seara asta, sâmbătă 24 oct, la 23:00 (ora României). La 23:30…",
+   "featured": false,
+   "section": null,
+   "joc": "Grow a Garden",
+   "jocSlug": "grow-a-garden",
    "prio": 0,
    "views": null,
    "updated": null,

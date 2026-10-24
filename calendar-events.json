@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-23T17:47:07+03:00",
+ "generated": "2026-10-24T08:36:44+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -22,6 +22,30 @@
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "Ghoul Garden 2",
+   "game": "Grow a Garden",
+   "start": "2026-10-24T23:30:00+03:00",
+   "end": "2026-10-31T22:00:00+02:00",
+   "link": "https://www.roblox.com/events/8394375636784906838",
+   "slug": "grow-a-garden-ghoul-garden-2-porneste-sambata-24-oct-2330",
+   "img": "img/gag-ghoul-garden-2.jpg",
+   "post_title": "🌱 Grow a Garden: Ghoul Garden 2 pornește în seara asta la 23:30",
+   "gameSlug": "grow-a-garden",
+   "gameLabel": "Grow a Garden"
+  },
+  {
+   "name": "NEXT UPDATE ???",
+   "game": "Grow a Garden",
+   "start": "2026-10-31T22:30:00+02:00",
+   "end": "2026-11-07T22:00:00+02:00",
+   "link": "https://www.roblox.com/events/6812950150143672976",
+   "slug": "grow-a-garden-ghoul-garden-2-porneste-sambata-24-oct-2330",
+   "img": "img/gag-ghoul-garden-2.jpg",
+   "post_title": "🌱 Grow a Garden: Ghoul Garden 2 pornește în seara asta la 23:30",
+   "gameSlug": "grow-a-garden",
+   "gameLabel": "Grow a Garden"
   },
   {
    "name": "Halloween Part 2",
