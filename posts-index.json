@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T12:50:19+03:00",
+ "generated": "2026-10-24T13:12:51+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,90 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "deep-fishing-trading-duminica-25-oct-1800",
+   "title": "🎣 Deep Fishing: vine TRADING duminică la 18:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T13:23:00+03:00",
+   "img": "img/deep-fishing-trading.png",
+   "excerpt": "🎣 Deep Fishing primește TRADING! 🔁 ![Deep Fishing Trading](img/deep-fishing-trading.png) ✅ Ce scrie pe pagina oficială a evenimentului…",
+   "featured": false,
+   "section": null,
+   "joc": "Deep Fishing",
+   "jocSlug": "deep-fishing",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "slap-battles-halloween-live-pana-pe-6-nov",
+   "title": "👋 Slap Battles: HALLOWEEN! e live, timp de două săptămâni",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T13:22:00+03:00",
+   "img": "img/slap-battles-halloween.png",
+   "excerpt": "👋 Slap Battles are evenimentul HALLOWEEN! 🎃 ![Slap Battles Halloween](img/slap-battles-halloween.png) ✅ Ce scrie pe pagina oficială a…",
+   "featured": false,
+   "section": null,
+   "joc": "Slap Battles",
+   "jocSlug": "slap-battles",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "save-the-krusty-krab-halloween-event-live-pana-pe-2-nov",
+   "title": "🍔 Save the Krusty Krab: evenimentul de Halloween a început, cu skin-uri limitate",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T13:21:00+03:00",
+   "img": "img/krusty-krab-halloween-event.png",
+   "excerpt": "🍔 Save the Krusty Krab are deja evenimentul de Halloween LIVE! 🎃 ![Save the Krusty Krab Halloween](img/krusty-krab-halloween-event.png) ✅…",
+   "featured": false,
+   "section": null,
+   "joc": "Save the Krusty Krab",
+   "jocSlug": "save-the-krusty-krab",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "ride-a-dino-halloween-island-update-duminica-25-oct-1800",
+   "title": "🦖 Ride a Dino: Halloween Island Update pornește duminică la 18:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T13:20:00+03:00",
+   "img": "img/ride-a-dino-halloween-island.png",
+   "excerpt": "🦖 Ride a Dino primește un update de Halloween: Halloween Island Update 🎃 ![Ride a Dino Halloween Island…",
+   "featured": false,
+   "section": null,
+   "joc": "Ride a Dino",
+   "jocSlug": "ride-a-dino",
    "prio": 0,
    "views": null,
    "updated": null,
@@ -402,7 +486,7 @@
    "jocSlug": "adopt-me",
    "prio": 0,
    "views": null,
-   "updated": null,
+   "updated": "2026-10-24T13:25:00+03:00",
    "republish": false,
    "recap": null
   },

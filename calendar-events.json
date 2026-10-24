@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T12:50:19+03:00",
+ "generated": "2026-10-24T13:12:51+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -22,6 +22,54 @@
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "TRADING",
+   "game": "Deep Fishing",
+   "start": "2026-10-25T18:00:00+02:00",
+   "end": "2026-10-30T18:00:00+02:00",
+   "link": "https://www.roblox.com/events/3578913046418031164",
+   "img": "img/deep-fishing-trading.png",
+   "slug": "deep-fishing-trading-duminica-25-oct-1800",
+   "post_title": "🎣 Deep Fishing: vine TRADING duminică la 18:00",
+   "gameSlug": "deep-fishing",
+   "gameLabel": "Deep Fishing"
+  },
+  {
+   "name": "HALLOWEEN!",
+   "game": "Slap Battles",
+   "start": "2026-10-23T19:00:00+03:00",
+   "end": "2026-11-06T19:00:00+02:00",
+   "link": "https://www.roblox.com/events/7442931730010473049",
+   "img": "img/slap-battles-halloween.png",
+   "slug": "slap-battles-halloween-live-pana-pe-6-nov",
+   "post_title": "👋 Slap Battles: HALLOWEEN! e live, timp de două săptămâni",
+   "gameSlug": "slap-battles",
+   "gameLabel": "Slap Battles"
+  },
+  {
+   "name": "HALLOWEEN EVENT",
+   "game": "Save the Krusty Krab",
+   "start": "2026-10-23T22:30:00+03:00",
+   "end": "2026-11-02T22:30:00+02:00",
+   "link": "https://www.roblox.com/events/8797430316475220748",
+   "img": "img/krusty-krab-halloween-event.png",
+   "slug": "save-the-krusty-krab-halloween-event-live-pana-pe-2-nov",
+   "post_title": "🍔 Save the Krusty Krab: evenimentul de Halloween a început, cu skin-uri limitate",
+   "gameSlug": "save-the-krusty-krab",
+   "gameLabel": "Save the Krusty Krab"
+  },
+  {
+   "name": "Halloween Island Update",
+   "game": "Ride a Dino",
+   "start": "2026-10-25T18:00:00+02:00",
+   "end": "2026-11-01T16:00:00+02:00",
+   "link": "https://www.roblox.com/events/7928673331056869969",
+   "img": "img/ride-a-dino-halloween-island.png",
+   "slug": "ride-a-dino-halloween-island-update-duminica-25-oct-1800",
+   "post_title": "🦖 Ride a Dino: Halloween Island Update pornește duminică la 18:00",
+   "gameSlug": "ride-a-dino",
+   "gameLabel": "Ride a Dino"
   },
   {
    "name": "Heaven Update (AA + x2 Cash)",
@@ -130,6 +178,30 @@
    "post_title": "🌱 Grow a Garden: Ghoul Garden 2 pornește în seara asta la 23:30",
    "gameSlug": "grow-a-garden",
    "gameLabel": "Grow a Garden"
+  },
+  {
+   "name": "NEW UPDATE! Halloween Week 4",
+   "game": "Adopt Me",
+   "start": "2026-10-23T18:05:00+03:00",
+   "end": "2026-10-30T17:45:00+02:00",
+   "link": "https://www.roblox.com/events/3734139826459509297",
+   "slug": "adopt-me-count-slothula-99-robux-permanent",
+   "img": "game-adopt-me.png",
+   "post_title": "🦇 Adopt Me: Count Slothula ajunge vineri, 99 Robux și rămâne permanent",
+   "gameSlug": "adopt-me",
+   "gameLabel": "Adopt Me"
+  },
+  {
+   "name": "ADMIN ABUSE! Freebies & Chaos",
+   "game": "Adopt Me",
+   "start": "2026-10-24T19:00:00+03:00",
+   "end": "2026-10-24T19:30:00+03:00",
+   "link": "https://www.roblox.com/events/6607388034369454862",
+   "slug": "adopt-me-count-slothula-99-robux-permanent",
+   "img": "game-adopt-me.png",
+   "post_title": "🦇 Adopt Me: Count Slothula ajunge vineri, 99 Robux și rămâne permanent",
+   "gameSlug": "adopt-me",
+   "gameLabel": "Adopt Me"
   },
   {
    "name": "Halloween Part 2",
