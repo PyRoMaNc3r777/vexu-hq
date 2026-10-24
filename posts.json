@@ -964,7 +964,7 @@
  {
   "titlu": "🎃 Jujutsu Shenanigans: HALLOWEEN UPDATE din 24 oct",
   "img": "event-jjs-halloween.png",
-  "text": "⚡ UPDATE 21 oct: dev-ul Tze a programat premiera YouTube „The Halloween Update (Trailer)” pentru joi, 22 oct, la 00:00 (ora României); update-ul vine pe 24 oct (fără oră anunțată). CONFIRMAT.\n\nJujutsu Shenanigans are anunțat HALLOWEEN UPDATE: din 24 oct, 00:00, până pe 24 nov, 00:00 RO. Deocamdată avem doar titlul și fereastra evenimentului.",
+  "text": "⚡ UPDATE 24 oct: update-ul de Halloween vine azi (fără oră anunțată), trailerul a avut premiera joi.\n\n⚡ UPDATE 21 oct: dev-ul Tze a programat premiera YouTube „The Halloween Update (Trailer)” pentru joi, 22 oct, la 00:00 (ora României); update-ul vine pe 24 oct (fără oră anunțată). CONFIRMAT.\n\nJujutsu Shenanigans are anunțat HALLOWEEN UPDATE: din 24 oct, 00:00, până pe 24 nov, 00:00 RO. Deocamdată avem doar titlul și fereastra evenimentului.",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/events/5460822494376231562",
@@ -1352,7 +1352,7 @@
  {
   "titlu": "🎃 Huss Valley: Halloween Event din seara asta",
   "img": "img/9cb5793476c5.png",
-  "text": "Huss Valley are Halloween Event de sâmbătă, 17 octombrie, 20:00, până sâmbătă, 7 noiembrie, 20:00 (ora României). Conținutul nu e anunțat încă.",
+  "text": "Huss Valley are Halloween Event de sâmbătă, 17 octombrie, 20:00, până sâmbătă, 7 noiembrie, 20:00 (ora României). Conținutul nu e anunțat încă.\n\n🔗 Vezi și: Halloween PT. 3 (hartă nouă + cuțite noi), din 24 oct: https://pyromanc3r777.github.io/vexu-hq/posts/huss-valley-halloween-pt-3-harta-noua-cutite-noi.html",
   "eticheta": "CONFIRMAT",
   "surse": [
    "https://www.roblox.com/events/8893392042118480490"
@@ -3823,5 +3823,27 @@
   "date": "2026-10-25",
   "published": "2026-10-25T08:05:00+03:00",
   "text": "🥚 xLORSI are un short de 162 de secunde, „I Fused The BIGGEST DIVINE EGG”, cu aprox. 464K vizualizări și un ritm de aprox. 25K/oră, citite la 20 oct seara (~20:20 RO).\n\n- 📅 Urcat pe 20 oct, pe la 07:54 (ora României)\n- ▶️ https://www.youtube.com/shorts/5daqPWsvJxo\n\n🎬 Formula (dedusă din frame-uri; copiem formula, nu clipul):\n- Miză → fugă/furt → pierde/recuperează → reveal\n- Câte un cuvânt mare pe ecran la fiecare etapă: RUN!!, RECOVER, LOSING\n- În gameplay se vede Fuse Machine (0/3)\n- CLAIM: Divine Egg-ul și rezultatul fuziunii sunt afirmațiile din clip, nu confirmate de noi\n\n🪝 Hook-ul: miza mare din titlu și întrebarea „ce iese până la urmă?”.\n\n💡 Ideea VEXU: „Bag 3 ouă în Fuse Machine: ce iese?”, cu FUR / FUG / PIERD / RECUPEREZ pe ecran, fără să promitem rarități.\n\n🔗 Tot pe Divine Egg: meme-ul cu Flash, „When New Divine Egg Spawned”: https://pyromanc3r777.github.io/vexu-hq/posts/meme-ul-cu-flash-when-new-divine-egg-spawned-sare-de-1-6m.html\n\n🔎 TikTok, de căutat în aplicație: „steal an egg fuse machine”.\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥"
+ },
+ {
+  "titlu": "🔪 Huss Valley: Halloween PT. 3 cu hartă nouă și cuțite noi",
+  "slug": "huss-valley-halloween-pt-3-harta-noua-cutite-noi",
+  "joc": "Huss Valley",
+  "eticheta": "CONFIRMAT",
+  "img": "img/huss-valley-pt3.png",
+  "surse": [
+   "https://www.roblox.com/games/107535308163741"
+  ],
+  "date": "2026-10-25",
+  "published": "2026-10-25T00:05:00+03:00",
+  "text": "🔪 Huss Valley are Halloween PT. 3: „New Map + New Knives”. CONFIRMAT.\n\n- 📅 Începe sâmbătă, 24 oct, la 20:00 (ora României)\n- ⏳ Ține până sâmbătă, 31 oct, la 19:00 (ora României)\n- 🗺️ Hartă nouă și cuțite noi, după titlul anunțului\n\nDetaliile (cum arată harta, ce cuțite apar, cum le obții) nu sunt publicate încă. Nu ghicim, revenim când apar.\n\n🔗 Vezi și: Halloween Event-ul Huss Valley din 17 oct: https://pyromanc3r777.github.io/vexu-hq/posts/huss-valley-halloween-event-din-seara-asta.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "events": [
+   {
+    "name": "Halloween PT. 3 (New Map + New Knives)",
+    "game": "Huss Valley",
+    "start": "2026-10-24T20:00:00+03:00",
+    "end": "2026-10-31T19:00:00+02:00",
+    "link": "https://www.roblox.com/games/107535308163741"
+   }
+  ]
  }
 ]

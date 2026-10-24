@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T18:10:18+03:00",
+ "generated": "2026-10-24T19:35:38+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -22,6 +22,18 @@
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "Halloween PT. 3 (New Map + New Knives)",
+   "game": "Huss Valley",
+   "start": "2026-10-24T20:00:00+03:00",
+   "end": "2026-10-31T19:00:00+02:00",
+   "link": "https://www.roblox.com/games/107535308163741",
+   "slug": "huss-valley-halloween-pt-3-harta-noua-cutite-noi",
+   "img": "img/huss-valley-pt3.png",
+   "post_title": "🔪 Huss Valley: Halloween PT. 3 cu hartă nouă și cuțite noi",
+   "gameSlug": "huss-valley",
+   "gameLabel": "Huss Valley"
   },
   {
    "name": "CURSED TOURNAMENT",

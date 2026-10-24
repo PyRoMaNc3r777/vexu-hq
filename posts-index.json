@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T18:10:18+03:00",
+ "generated": "2026-10-24T19:35:38+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -106,6 +106,27 @@
    "section": "shorts",
    "joc": "Steal An Egg",
    "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "huss-valley-halloween-pt-3-harta-noua-cutite-noi",
+   "title": "🔪 Huss Valley: Halloween PT. 3 cu hartă nouă și cuțite noi",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-25",
+   "dateRo": "25 octombrie 2026",
+   "published": "2026-10-25T00:05:00+03:00",
+   "img": "img/huss-valley-pt3.png",
+   "excerpt": "🔪 Huss Valley are Halloween PT. 3: „New Map + New Knives”. CONFIRMAT. • 📅 Începe sâmbătă, 24 oct, la 20:00 (ora României) • ⏳ Ține până…",
+   "featured": false,
+   "section": null,
+   "joc": "Huss Valley",
+   "jocSlug": "huss-valley",
    "prio": 0,
    "views": null,
    "updated": null,
@@ -3630,7 +3651,7 @@
    "dateRo": "16 octombrie 2026",
    "published": "2026-10-16T09:28:00+03:00",
    "img": "event-jjs-halloween.png",
-   "excerpt": "⚡ UPDATE 21 oct: dev-ul Tze a programat premiera YouTube „The Halloween Update (Trailer)” pentru joi, 22 oct, la 00:00 (ora României);…",
+   "excerpt": "⚡ UPDATE 24 oct: update-ul de Halloween vine azi (fără oră anunțată), trailerul a avut premiera joi. ⚡ UPDATE 21 oct: dev-ul Tze a…",
    "featured": false,
    "section": null,
    "joc": "Jujutsu Shenanigans",
