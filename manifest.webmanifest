@@ -1,7 +1,7 @@
 {
  "name": "VEXU HQ",
  "short_name": "VEXU HQ",
- "description": "Centrul de comandă VEXU Online: countdown Halloween, jucători Steal An Egg, știri și calendar.",
+ "description": "Centrul de comandă VEXU Online: evenimente live, jucători Steal An Egg, știri și calendar.",
  "lang": "ro",
  "dir": "ltr",
  "start_url": "/vexu-hq/",
@@ -9,8 +9,8 @@
  "id": "/vexu-hq/",
  "display": "standalone",
  "orientation": "portrait",
- "background_color": "#0b0c0f",
- "theme_color": "#0b0c0f",
+ "background_color": "#08090c",
+ "theme_color": "#08090c",
  "icons": [
   {"src": "/vexu-hq/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
   {"src": "/vexu-hq/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"}

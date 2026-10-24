@@ -42,6 +42,7 @@ def labels_of(p):
 
 def excerpt_of(p, n=140):
     t = p.get('text') or p.get('confirmat') or ''
+    t = re.sub(r'!\[[^\]]*\]\([^)]*\)', '', t)  # fără markdown de imagine în rezumat
     flat = ' '.join(t.replace('\n- ', ' • ').split())
     return flat if len(flat) < n else flat[: n - 1].rsplit(' ', 1)[0] + '…'
 
@@ -85,7 +86,7 @@ def joc_slug(j):
     return slug(j)
 
 # PWA: manifest + service worker (sw.js), căi absolute sub /vexu-hq/
-PWA_HEAD = ('<link rel="manifest" href="/vexu-hq/manifest.webmanifest"><meta name="theme-color" content="#0b0c0f">'
+PWA_HEAD = ('<link rel="manifest" href="/vexu-hq/manifest.webmanifest"><meta name="theme-color" content="#08090c">'
             '<link rel="apple-touch-icon" href="/vexu-hq/icon-192.png"><meta name="apple-mobile-web-app-capable" content="yes">'
             '<meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="VEXU HQ">')
 PWA_JS = "<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/vexu-hq/sw.js',{scope:'/vexu-hq/'}).catch(()=>{}))</script>"
@@ -96,11 +97,18 @@ def ne(s):
     """Titlu pentru liste/feed: fără emoji-ul de la început (în pagina articolului titlul rămâne neschimbat)."""
     return NE.sub('', s or '')
 CSS_V = hashlib.md5(open(os.path.join(D, 'style.css'), 'rb').read()).hexdigest()[:8]  # cache-bust: se schimbă singur când se schimbă style.css
+# fade-in pentru imagini (img.fx → .ld la load); fără JS imaginile rămân vizibile (noscript)
+FX_HEAD = ("<script>(function(){var d=document;function m(i){i.classList.add('ld')}"
+           "d.addEventListener('load',function(e){var i=e.target;if(i&&i.classList&&i.classList.contains('fx'))m(i)},true);"
+           "d.addEventListener('error',function(e){var i=e.target;if(i&&i.classList&&i.classList.contains('fx'))m(i)},true);"
+           "function s(){var a=d.querySelectorAll('img.fx:not(.ld)');for(var k=0;k<a.length;k++)if(a[k].complete)m(a[k])}"
+           "addEventListener('DOMContentLoaded',s);addEventListener('load',s);setTimeout(s,1500)})()</script>"
+           '<noscript><style>img.fx{opacity:1}</style></noscript>')
 CSS_LINK = ('<link rel="preload" href="/vexu-hq/fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>'
-            f'<link rel="stylesheet" href="/vexu-hq/style.css?v={CSS_V}">')
+            f'<link rel="stylesheet" href="/vexu-hq/style.css?v={CSS_V}">' + FX_HEAD)
 TOP_HTML = '<button class="totop" id="totop" type="button" aria-label="Înapoi sus" title="Înapoi sus">↑</button>'
-# Vânătoarea de dovleci (Halloween 2026): oprire din pumpkin-hunt.js (ON / END) sau golește HUNT_JS.
-HUNT_JS = '<script src="/vexu-hq/pumpkin-hunt.js" defer></script>'
+# (Vânătoarea de dovleci a fost scoasă din UI în design v6; pumpkin-hunt.js rămâne în repo, neîncărcat.)
+HUNT_JS = ''
 TOP_JS = "<script>(function(){var b=document.getElementById('totop');if(!b)return;function u(){b.classList.toggle('on',scrollY>600)}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}})()</script>"
 NAV_ITEMS = [('index', 'index.html', 'Dashboard'), ('blog', 'blog.html', 'Blog'),
              ('calendar', 'calendar.html', 'Calendar'), ('recap', 'recap.html', 'Rezumat')]
@@ -121,6 +129,26 @@ e = html.escape
 def cls(l): return re.sub(r'[^A-Za-z0-9]+', '-', l).strip('-')
 def chips(p):
     return ' '.join(f'<span class="l {cls(l)}">{e(l)}</span>' for l in labels_of(p))
+def ribs(p):
+    return '<span class="ribs">' + ''.join(f'<span class="rib {cls(l)}">{e(l)}</span>' for l in labels_of(p)) + '</span>'
+def gdot(j):
+    """Pătrat colorat consecvent pentru fiecare joc (hue din slug) — același algoritm ca gameHue() din events.js."""
+    h = 0
+    for ch in (joc_slug(j) if j else ''):
+        h = (h * 31 + ord(ch)) % 360
+    return f'<i class="gd" style="--h:{h}"></i>'
+def pcard(q, pre, h='h3', big=False, ex=True):
+    """Card cu imagine 16:9 + panglică de etichetă (randat la build: pagini de joc, „Mai citește”)."""
+    qs = q.get('slug') or slug(q['titlu']); first = cls(labels_of(q)[0])
+    gm = f'<span class="gm">{gdot(joc_of(q))}{e(joc_of(q))}</span>' if joc_of(q) else ''
+    return (f'<a class="pc {first}{" big" if big else ""}" href="{pre}{e(qs)}.html"><span class="im"><img class="fx" src="{"../" if pre.startswith("../") or pre == "" else ""}{e(q["img"])}" alt="" width="640" height="360" loading="lazy">{ribs(q)}</span>'
+            f'<span class="b"><span class="mt"><span class="dt">{ro_date(q["date"])}</span>{gm}</span><{h}>{e(ne(q["titlu"]))}</{h}>'
+            + (f'<span class="ex">{e(excerpt_of(q))}</span>' if ex else '') + '</span></a>')
+def prow(q, pre='../posts/'):
+    qs = q.get('slug') or slug(q['titlu']); first = cls(labels_of(q)[0])
+    gm = f'<span class="gm">{gdot(joc_of(q))}{e(joc_of(q))}</span>' if joc_of(q) else ''
+    return (f'<a class="p {first}" href="{pre}{e(qs)}.html"><span class="im"><img class="fx" src="../{e(q["img"])}" alt="" width="296" height="185" loading="lazy"></span>'
+            f'<span class="b"><span class="mt">{chips(q)}<span class="dt">{ro_date(q["date"])}</span></span><h2>{e(ne(q["titlu"]))}</h2><span class="ex">{e(excerpt_of(q))}</span>{gm}</span></a>')
 URL = re.compile(r'https?://[^\s()<>]+[^\s()<>.,;:!?]')
 def link(t): return URL.sub(lambda m: f'<a href="{m.group(0)}" target="_blank" rel="noopener">{m.group(0)}</a>', e(t))
 THUMB = re.compile(r'^!\[([^\]]*)\]\((img/[A-Za-z0-9._-]+)\)$')  # thumbnail în text: ![alt](img/x.jpg)
@@ -193,8 +221,16 @@ function chipsHtml(labels,date){return labels.map(l=>`<span class="l ${cls(l)}">
 // insignă „NOU” pentru postările publicate în ultimele 6 ore (din câmpul published, ora reală)
 function newBadge(p){const t=Date.parse(p.published||''); if(!t)return ''; const m=Math.floor((Date.now()-t)/6e4); if(m<0||m>=360)return '';
   return `<span class="nou">NOU · ${m<1?'acum':m<60?m+' min':Math.floor(m/60)+' h'}</span>`}
-function cardHtml(p, feat){
-  return `<a class="p${feat?' feat':''}" href="posts/${es(p.slug)}.html"><img src="${es(p.img)}" alt="" loading="lazy"><div class="b">${chipsHtml(p.labels,p.dateRo)}${newBadge(p)}<h2>${es(ne(p.title))}</h2><div>${es(p.excerpt)}</div>${p.joc?`<span class="jg">${es(p.joc)}</span>`:''}<div class="more">Citește tot →</div></div></a>`;
+function gHue(k){let h=0;k=String(k||'');for(let i=0;i<k.length;i++)h=(h*31+k.charCodeAt(i))%360;return h}
+const gmHtml=p=>p.joc?`<span class="gm"><i class="gd" style="--h:${gHue(p.jocSlug)}"></i>${es(p.joc)}</span>`:'';
+const ribs=p=>`<span class="ribs">${(p.labels||[]).map(l=>`<span class="rib ${cls(l)}">${es(l)}</span>`).join('')}</span>`;
+// card mare cu imagine 16:9 (primele postări)
+function bigHtml(p, big){
+  return `<a class="pc ${cls((p.labels||[''])[0])}${big?' big':''}" href="posts/${es(p.slug)}.html"><span class="im"><img class="fx" src="${es(p.img)}" alt="" width="640" height="360"${big?' fetchpriority="high"':' loading="lazy"'}>${ribs(p)}</span><span class="b"><span class="mt"><span class="dt">${es(p.dateRo)}</span>${gmHtml(p)}${newBadge(p)}</span><h2>${es(ne(p.title))}</h2><span class="ex">${es(p.excerpt)}</span></span></a>`;
+}
+// rând dens (restul feed-ului)
+function cardHtml(p){
+  return `<a class="p ${cls((p.labels||[''])[0])}" href="posts/${es(p.slug)}.html"><span class="im"><img class="fx" src="${es(p.img)}" alt="" width="296" height="185" loading="lazy"></span><span class="b"><span class="mt">${chipsHtml(p.labels||[],p.dateRo)}${newBadge(p)}</span><h2>${es(ne(p.title))}</h2><span class="ex">${es(p.excerpt)}</span>${gmHtml(p)}</span></a>`;
 }
 function renderFilters(t){
   const base=ALL.filter(p=>qmatch(p,t));
@@ -213,25 +249,27 @@ function paint(){
   renderFilters(t);
   const ok=p=>fmatch(p,filter)&&gmatch(p,game)&&qmatch(p,t);
   // un singur post evidențiat sus; celelalte marcate featured rămân în feed (cronologic), nu dispar
-  const feat=ALL.find(p=>p.featured && ok(p));
+  const feat=ALL.find(p=>p.featured && ok(p) && (Date.now()-(Date.parse(p.published)||0))<72*36e5); // fixat sus doar cât e proaspăt (72h)
   const rest=ALL.filter(p=>p!==feat && ok(p)).sort((a,b)=>(Date.parse(b.published)||0)-(Date.parse(a.published)||0));
-  document.getElementById('featSlot').innerHTML=feat?cardHtml(feat,true):'';
-  const slice=rest.slice(0, Math.max(shown, PAGE));
+  const ordered=feat?[feat].concat(rest):rest, TOP=5;
+  const top=ordered.slice(0,TOP), list=ordered.slice(TOP);
+  document.getElementById('featSlot').innerHTML=top.length?`<div class="cards mag">${top.map((p,i)=>bigHtml(p,i===0)).join('')}</div>`:'';
+  const slice=list.slice(0, Math.max(shown, PAGE));
   shown=slice.length;
   let html='', last='', open=false;
   for(const p of slice){
     const k=dayKey(p.published||p.date);
     if(k!==last){ if(open) html+='</div>'; html+=`<h2 class="dayh">${es(dayLabel(k))}</h2><div class="grid">`; open=true; last=k; }
-    html+=cardHtml(p,false);
+    html+=cardHtml(p);
   }
   if(open) html+='</div>';
-  if(!feat && !slice.length) html=t.length?`<div class="empty">Nicio știre găsită pentru „${es(q.trim())}”${filter!=='toate'?' pe filtrele astea':''}.</div>`:'<div class="empty">Nicio postare pe filtrele astea.</div>';
+  if(!top.length) html=t.length?`<div class="empty">Nicio știre găsită pentru „${es(q.trim())}”${filter!=='toate'?' pe filtrele astea':''}.</div>`:'<div class="empty">Nicio postare pe filtrele astea.</div>';
   document.getElementById('feed').innerHTML=html;
-  const n=rest.length+(feat?1:0);
-  document.getElementById('qinfo').textContent=t.length?(n===1?'1 rezultat':`${n} rezultate`)+(SEARCH?'':' (se încarcă textul complet…)'):'';
+  const n=ordered.length;
+  document.getElementById('qinfo').textContent=t.length?(n===1?'1 rezultat':`${n} rezultate`)+(SEARCH?'':' (se încarcă textul complet…)'):(filter!=='toate'||game!=='toate'?`${n} ${n===1?'știre':'știri'}`:'');
   document.getElementById('qx').style.visibility=q?'visible':'hidden';
   const more=document.getElementById('moreBtn');
-  const left=rest.length-shown;
+  const left=list.length-shown;
   more.style.display=left>0?'inline-block':'none';
   more.textContent=left>0?`Vezi mai multe (${left})`:'';
 }
@@ -251,123 +289,54 @@ window.addEventListener('hashchange',()=>{({f:filter,g:game,q}=parseHash()); qi.
 </script>
 """
 
+EVENTS_SRC = '<script src="/vexu-hq/events.js?v=' + hashlib.md5(open(os.path.join(D, 'events.js'), 'rb').read()).hexdigest()[:8] + '"></script>'
+
 CAL_JS = r"""
 <script>
-const TZ='Europe/Bucharest';
-const es=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-function cdHtml(ms){let s=Math.max(0,Math.floor(ms/1000));return [[Math.floor(s/86400),'zile'],[Math.floor(s%86400/3600),'ore'],[Math.floor(s%3600/60),'min'],[s%60,'sec']].map(([v,l])=>`<div><b>${String(v).padStart(2,'0')}</b><span>${l}</span></div>`).join('')}
-function fmt(iso, o){ if(!iso) return ''; const d=new Date(iso); return new Intl.DateTimeFormat('ro-RO',Object.assign({timeZone:TZ},o)).format(d)}
-function relevant(ev, now){
-  if(ev.coming_soon) return new Date('2099-01-01');
-  if(ev.announced && ev.start) return now;
-  if(ev.start){ const s=new Date(ev.start); if(ev.end){ const e=new Date(ev.end); if(now<e) return s>now?s:e; return e;} return s; }
-  if(ev.end && ev.end_only) return new Date(ev.end);
-  if(ev.start_date){ const s=new Date(ev.start_date+'T12:00:00+03:00'); if(ev.end_date){ const e=new Date(ev.end_date+'T23:59:59+02:00'); return now<e? (now<s?s:e): e;} return s; }
-  if(ev.end_date) return new Date(ev.end_date+'T12:00:00+02:00');
-  return new Date('2099-01-01');
-}
-function status(ev, now){
-  if(ev.coming_soon) return {kind:'soon', text:'Coming Soon — dată neanunțată', target:null};
-  if(ev.announced && ev.start) return {kind:'live', text:'Anunțat oficial pe '+fmt(ev.start,{weekday:'long',day:'numeric',month:'long'})+' — disponibil acum', target:null};
-  if(ev.date_only && ev.start_date){
-    const day=ev.start_date;
-    const today=new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
-    if(today<day) return {kind:'soon', text:'Începe pe '+fmt(day+'T12:00:00+03:00',{weekday:'long',day:'numeric',month:'long'})+' (doar data confirmată)'};
-    if(today===day) return {kind:'live', text:'LIVE azi (oră neconfirmată)'};
-    return {kind:'done', text:'Terminat / trecut'};
-  }
-  if(ev.end_only && ev.end){
-    const e=new Date(ev.end);
-    if(now<e) return {kind:'soon', text:'Se termină în…', target:e};
-    return {kind:'done', text:'Terminat'};
-  }
-  if(ev.no_end && ev.start_date){
-    const s=new Date(ev.start_date+'T12:00:00+03:00');
-    if(now<s) return {kind:'soon', text:'Începe în…', target:s};
-    return {kind:'live', text:'LIVE — '+ (ev.end_note||'fără dată de final anunțată'), target:null};
-  }
-  if(ev.start_date && ev.end_date && !ev.start){
-    const s=new Date(ev.start_date+'T00:00:00+03:00');
-    const e=new Date(ev.end_date+'T23:59:59+02:00');
-    if(now<s) return {kind:'soon', text:'Începe în…', target:s};
-    if(now<=e) return {kind:'live', text:'LIVE — se termină în…', target:e};
-    return {kind:'done', text:'Terminat'};
-  }
-  const s=ev.start?new Date(ev.start):null;
-  const e=ev.end?new Date(ev.end):null;
-  if(s && now<s) return {kind:'soon', text:'Începe în…', target:s};
-  if(s && (!e || now<e)) {
-    if(ev.end_time_unknown && ev.end_date){
-      return {kind:'live', text:'LIVE — final anunțat: '+fmt(ev.end_date+'T12:00:00+02:00',{day:'numeric',month:'long'}), target:null};
-    }
-    if(e) return {kind:'live', text:'LIVE — se termină în…', target:e};
-    return {kind:'live', text:'LIVE', target:null};
-  }
-  if(ev.end_time_unknown && ev.end_date && s && now>=s){
-    const endD=ev.end_date;
-    const today=new Intl.DateTimeFormat('en-CA',{timeZone:TZ,year:'numeric',month:'2-digit',day:'2-digit'}).format(now);
-    if(today<=endD) return {kind:'live', text:'LIVE — final: '+fmt(endD+'T12:00:00+02:00',{day:'numeric',month:'long'})+' (oră neanunțată)', target:null};
-  }
-  return {kind:'done', text:'Terminat'};
-}
-function windowText(ev){
-  if(ev.coming_soon) return 'Dată: Coming Soon (neanunțată oficial)';
-  if(ev.announced && ev.start) return 'Anunț oficial: '+fmt(ev.start,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
-  const bits=[];
-  if(ev.start) bits.push('Start: '+fmt(ev.start,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}));
-  else if(ev.start_date) bits.push('Start: '+fmt(ev.start_date+'T12:00:00+03:00',{weekday:'short',day:'numeric',month:'short'})+(ev.date_only?' (doar data)':''));
-  if(ev.end) bits.push('Final: '+fmt(ev.end,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}));
-  else if(ev.end_date) bits.push('Final: '+fmt(ev.end_date+'T12:00:00+02:00',{weekday:'short',day:'numeric',month:'short'})+(ev.end_time_unknown?' (oră neanunțată)':''));
-  else if(ev.no_end) bits.push(ev.end_note||'fără dată de final anunțată');
-  if(ev.end_only && ev.end) return 'Se termină: '+fmt(ev.end,{weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'});
-  return bits.join(' · ');
-}
-let EVENTS=[];let doneOpen=false;let game='toate';let GAMES=[{id:'toate',label:'Toate'}];
-// filtru după joc: aceleași slug-uri ca filtrul din blog (jocSlug), hash #g=<slug>
+(()=>{const {es,fmt,dayKey,status,evRow,tick}=VX;
+let EVENTS=[],game='toate',GAMES=[{id:'toate',label:'Toate'}];const opened=new Map();
 function parseHash(){const m=(location.hash||'').match(/(?:^#|&)g=([\w-]+)/);return m?m[1]:'toate'}
 function setHash(){const h=game!=='toate'?'#g='+game:'';if((location.hash||'')!==h) history.replaceState(null,'',h||location.pathname+location.search)}
-function gid(ev){return ev.gameSlug||''}
+const gid=ev=>ev.gameSlug||'';
 function buildGames(){const m=new Map();EVENTS.forEach(ev=>{const id=gid(ev);if(!id)return;const x=m.get(id)||{id,label:ev.gameLabel||ev.game||id,n:0};x.n++;m.set(id,x)});
   GAMES=[{id:'toate',label:'Toate',n:EVENTS.length}].concat([...m.values()].sort((a,b)=>b.n-a.n||a.label.localeCompare(b.label,'ro')))}
 function validGame(){if(!GAMES.some(g=>g.id===game)) game='toate'}
-function paintChips(){const now=new Date();const gf=document.getElementById('gfilters');
-  const act=ev=>status(ev,now).kind!=='done';
-  gf.innerHTML=GAMES.map(g=>{const evs=g.id==='toate'?EVENTS:EVENTS.filter(ev=>gid(ev)===g.id);const a=evs.filter(act).length;
-    return `<button type="button" class="chip${game===g.id?' on':''}" data-g="${es(g.id)}" aria-pressed="${game===g.id}" title="${a} active/urmează din ${evs.length}">${es(g.label)}<span class="n">${evs.length}</span></button>`}).join('');
+function paintChips(){const gf=document.getElementById('gfilters');
+  gf.innerHTML=GAMES.map(g=>{const evs=g.id==='toate'?EVENTS:EVENTS.filter(ev=>gid(ev)===g.id);
+    return `<button type="button" class="chip${game===g.id?' on':''}" data-g="${es(g.id)}" aria-pressed="${game===g.id}">${es(g.label)}<span class="n">${evs.length}</span></button>`}).join('');
   gf.querySelectorAll('.chip').forEach(b=>b.onclick=()=>{game=b.dataset.g;setHash();paintChips();paint()});
   const on=gf.querySelector('.chip.on');if(on&&game!=='toate'&&gf.scrollWidth>gf.clientWidth) gf.scrollLeft=on.offsetLeft-gf.clientWidth/2+on.offsetWidth/2;
   const gi=document.getElementById('ginfo');const g=GAMES.find(x=>x.id===game);gi.innerHTML=game==='toate'?'':`Arăt doar: <b>${es(g?g.label:game)}</b> · <a href="#" id="gclr">vezi toate</a>`;
   const c=document.getElementById('gclr');if(c) c.onclick=e=>{e.preventDefault();game='toate';setHash();paintChips();paint()}}
+function dayName(k,today,tom){if(k===today)return'Azi';if(k===tom)return'Mâine';const [Y,M,D]=k.split('-').map(Number);return new Intl.DateTimeFormat('ro-RO',{timeZone:'UTC',weekday:'long'}).format(new Date(Date.UTC(Y,M-1,D,12)))}
+function dayFull(k){const [Y,M,D]=k.split('-').map(Number);return new Intl.DateTimeFormat('ro-RO',{timeZone:'UTC',day:'numeric',month:'long'}).format(new Date(Date.UTC(Y,M-1,D,12)))}
 function paint(){
-  const now=new Date();
-  const items=EVENTS.filter(ev=>game==='toate'||gid(ev)===game).map(ev=>({ev,st:status(ev,now),r:relevant(ev,now)}));
-  const card=({ev,st})=>{
-    const cd=st.target?`<div class="cd">${cdHtml(st.target-now)}</div>`:'';
-    const note=ev.zvon_note?`<div class="note">${es(ev.zvon_note)}</div>`:'';
-    const urg=st.kind==='live'&&st.target&&(st.target-now)<864e5;
-    const cls=st.kind==='live'?'live':st.kind==='done'?'done':'soon';
-    return `<div class="row ${cls}${urg?' urg':''}"><img class="ico" src="${es(ev.img)}" alt="" loading="lazy"><div class="card">
-      <div><span class="l CONFIRMAT">CONFIRMAT</span> <b>${es(ev.game||'')}</b> — ${es(ev.name)}</div>
-      ${urg?'<div class="urgt">Ultimele ore</div>':''}
-      <div class="st ${st.kind==='live'?'live':st.kind==='done'?'done':''}">${st.kind==='live'?'<span class="ldot"></span>':''}${es(st.text)}</div>
-      ${cd}
-      <div class="meta">${es(windowText(ev))}</div>
-      ${note}
-      <div style="margin-top:8px">${ev.slug?`<a class="golink" href="posts/${es(ev.slug)}.html">Vezi postarea →</a>`:ev.link?`<a class="golink" href="${es(ev.link)}" target="_blank" rel="noopener">Pagina oficială a eventului →</a>`:''}</div>
-    </div></div>`;
-  };
-  const by=k=>items.filter(i=>i.st.kind===k);
-  const lk=i=>i.st.target?+i.st.target:9e15;const live=by('live').sort((a,b)=>lk(a)-lk(b)||a.r-b.r), soon=by('soon').sort((a,b)=>a.r-b.r), done=by('done').sort((a,b)=>b.r-a.r);
-  const head=(c,t,n)=>`<div class="grp ${c}">${t} <span class="n">${n}</span></div>`;
-  let h='';
-  if(live.length) h+=head('g-live','Live acum',live.length)+live.map(card).join('');
-  if(soon.length) h+=head('g-soon','Urmează',soon.length)+soon.map(card).join('');
-  if(done.length) h+=`<details${doneOpen?' open':''} ontoggle="doneOpen=this.open"><summary>${head('g-done','Terminate',done.length)}</summary>${done.map(card).join('')}</details>`;
-  document.getElementById('cal').innerHTML=h||`<div class="empty">${game==='toate'?'Niciun event încă.':'Niciun event pentru jocul ăsta.'}</div>`;
+  const now=new Date(),today=dayKey(now),tom=dayKey(new Date(+now+864e5));
+  const items=EVENTS.filter(ev=>game==='toate'||gid(ev)===game).map(ev=>({ev,st:status(ev,now)}));
+  const days=new Map(),nodate=[],done=[];let nLive=0,nSoon24=0;
+  items.forEach(i=>{const k=i.st.kind;if(k==='done'){done.push(i);return}
+    if(k==='live')nLive++;else if(i.st.target&&i.st.target-now<864e5)nSoon24++;
+    if(!i.st.target){nodate.push(i);return}
+    const dk=dayKey(i.st.target);if(!days.has(dk))days.set(dk,[]);days.get(dk).push(i)});
+  const keys=[...days.keys()].sort();
+  const row=i=>evRow(i.ev,now,{meta:true,note:true});
+  const sortT=(a,b)=>(a.st.target||0)-(b.st.target||0);
+  const grp=(id,title,sub,n,list,open,cls)=>`<details class="dg" data-id="${id}"${open?' open':''}><summary class="dh ${cls||''}"><b>${title}</b><span>${sub}</span><em>${n}<s> ${n===1?'eveniment':'evenimente'}</s></em></summary><div class="evl two">${list}</div></details>`;
+  let h=`<div class="sm" style="margin:0 0 12px"><b>${nLive}</b> live acum · <b>${nSoon24}</b> încep în următoarele 24 de ore · <b>${keys.length}</b> zile cu evenimente. Zilele sunt grupate după următorul moment important (start sau final).</div>`;
+  keys.forEach(k=>{const list=days.get(k).sort(sortT);const open=opened.has(k)?opened.get(k):(k<=tom);
+    const ends=list.filter(i=>i.st.kind==='live').length,starts=list.length-ends;
+    h+=grp(k,dayName(k,today,tom),dayFull(k)+(ends&&starts?` · ${ends} final · ${starts} start`:ends?` · final`:` · start`),list.length,list.map(row).join(''),open,k===today?'today':'')});
+  if(nodate.length){const id='nodate';h+=grp(id,'Fără oră fixă','live sau încă neanunțate',nodate.length,nodate.map(row).join(''),opened.has(id)?opened.get(id):false)}
+  if(done.length){const id='done';h+=grp(id,'Terminate','istoric',done.length,done.sort((a,b)=>(+new Date(b.ev.end||b.ev.end_date||0))-(+new Date(a.ev.end||a.ev.end_date||0))).map(row).join(''),opened.has(id)?opened.get(id):false)}
+  const el=document.getElementById('cal');
+  el.innerHTML=h||`<div class="empty">${game==='toate'?'Niciun event încă.':'Niciun event pentru jocul ăsta.'}</div>`;
+  el.querySelectorAll('details.dg').forEach(d=>d.addEventListener('toggle',()=>opened.set(d.dataset.id,d.open)));
 }
 game=parseHash();
-fetch('calendar-events.json?'+Date.now()).then(r=>r.json()).then(d=>{EVENTS=d.events||d; buildGames(); validGame(); paintChips(); paint(); setInterval(paint,1000); setInterval(paintChips,60000)}).catch(()=>{document.getElementById('cal').innerHTML='<div class="empty">Nu pot încărca calendarul.</div>'});
+fetch('calendar-events.json?'+Date.now()).then(r=>r.json()).then(d=>{EVENTS=d.events||d; buildGames(); validGame(); paintChips(); paint();
+  setInterval(()=>{if(tick(document.getElementById('cal'),new Date()))paint()},1000); setInterval(paint,60000)}).catch(()=>{document.getElementById('cal').innerHTML='<div class="empty">Nu pot încărca calendarul.</div>'});
 window.addEventListener('hashchange',()=>{game=parseHash();validGame();paintChips();paint()});
+})();
 </script>
 """
 
@@ -389,12 +358,8 @@ def related(posts, i, n=3):
     return (same + rest)[:n]
 
 def related_html(posts, i):
-    cards = ''
-    for j in related(posts, i):
-        q = posts[j]; qs = q.get('slug') or slug(q['titlu'])
-        cards += (f'<a class="p" href="{e(qs)}.html"><img src="../{e(q["img"])}" alt="" loading="lazy"><div class="b">{chips(q)}'
-                  f'<span class="dt">{ro_date(q["date"])}</span><h3>{e(ne(q["titlu"]))}</h3></div></a>')
-    return f'<section class="rel"><h2>Mai citește</h2><div class="grid">{cards}</div></section>' if cards else ''
+    cards = ''.join(pcard(posts[j], '', 'h3', ex=False) for j in related(posts, i))
+    return f'<section class="rel"><h2>Mai citește</h2><div class="cards c3">{cards}</div></section>' if cards else ''
 
 def set_game(ce, joc):
     # slug pentru filtrul de jocuri din calendar = același jocSlug ca în blog când eventul ține de jocul postării
@@ -434,7 +399,7 @@ def build_post_pages(posts):
         body = ('<div class="rp" aria-hidden="true"></div>'
                 f'<article class="art"><div class="art-m">{lab}'
                 + (f'<a class="jl" href="../joc/{e(joc_slug(joc_of(p)))}.html">{e(joc_of(p))}</a>' if joc_of(p) else '') +
-                f'</div><h1>{e(p["titlu"])}</h1><div class="hi"><img src="../{e(p["img"])}" alt=""></div>'
+                f'</div><h1>{e(p["titlu"])}</h1><div class="hi"><img src="../{e(p["img"])}" alt="" width="1280" height="720" fetchpriority="high"></div>'
                 f'<div class="txt">{txt}</div><div class="s">Surse:{src}</div></article>'
                 f'<div class="acts"><a class="btn" href="../blog.html">← Înapoi la blog</a>'
                 f'<button type="button" class="btn shr" id="shr">Distribuie</button></div>'
@@ -507,17 +472,14 @@ def build_game_pages(posts):
     made = set()
     for js, (j, ps) in sorted(groups.items()):
         ps = sorted(ps, key=pub_key, reverse=True)
-        cards = ''
-        for q in ps:
-            qs = q.get('slug') or slug(q['titlu'])
-            cards += (f'<a class="p" href="../posts/{e(qs)}.html"><img src="../{e(q["img"])}" alt="" loading="lazy"><div class="b">{chips(q)}'
-                      f'<span class="dt">{ro_date(q["date"])}</span><h2>{e(ne(q["titlu"]))}</h2><div>{e(excerpt_of(q))}</div>'
-                      f'<div class="more">Citește tot →</div></div></a>')
+        top = ''.join(pcard(q, '../posts/', 'h2', big=(k == 0)) for k, q in enumerate(ps[:5]))
+        rows = ''.join(prow(q) for q in ps[5:])
+        cards = f'<div class="cards mag">{top}</div>' + (f'<h2 class="dayh">Mai vechi</h2><div class="grid">{rows}</div>' if rows else '')
         n = len(ps)
         body = (f'<span class="kick">Joc</span><h1>{e(j)}</h1>'
                 f'<p class="gcount">{n} {"postare" if n == 1 else "postări"} · cele mai noi primele · '
                 f'<a href="../blog.html#g={e(js)}">vezi în blog cu filtre</a></p>'
-                f'<div class="grid">{cards}</div>{CTA}'
+                f'{cards}{CTA}'
                 f'<div class="acts"><a class="btn" href="../blog.html">← Toate știrile</a></div>')
         open(os.path.join(jd, js + '.html'), 'w', encoding='utf-8').write(page(f'{j} · VEXU HQ', body, '', 'blog', '../', True))
         made.add(js + '.html')
@@ -541,11 +503,11 @@ def build_blog():
     open(os.path.join(D, 'blog.html'), 'w', encoding='utf-8').write(page('VEXU HQ · Știri', body, BLOG_JS, 'blog'))
 
 def build_calendar():
-    body = (f'<h1>Calendar Halloween</h1>'
+    body = (f'<h1>Calendar</h1>'
             f'<p class="rsub">Doar ferestre CONFIRMAT din blog · ora României · countdown live</p>'
             f'<div class="ftitle">Jocuri</div><div class="filters" id="gfilters" role="toolbar" aria-label="Filtru după joc"></div><div class="ginfo" id="ginfo"></div>'
             f'<div class="cal" id="cal">Se încarcă…</div>')
-    open(os.path.join(D, 'calendar.html'), 'w', encoding='utf-8').write(page('Calendar Halloween · VEXU HQ', body, CAL_JS, 'calendar'))
+    open(os.path.join(D, 'calendar.html'), 'w', encoding='utf-8').write(page('Calendar evenimente · VEXU HQ', body, EVENTS_SRC + CAL_JS, 'calendar'))
 
 # ───────────── Rezumatul săptămânii (recap.html) ─────────────
 # Generat la build din posts.json (știrile din ultimele 7 zile, ora României), iar în browser se recalculează
@@ -615,13 +577,30 @@ def recap_pick(items, keys):
     other = [x for x in wk if x['slug'] not in ids and 'CONFIRMAT' not in x['labels'] and 'ZVON' in x['labels']][:RECAP_MAX_OTHER]
     return wk, top, other
 
-def recap_row(x):
+def recap_row(x, rk=None):
     lab = ' '.join(f'<span class="l {cls(l)}">{e(l)}</span>' for l in x['labels'])
     d = datetime.fromisoformat(x['published']).astimezone(TZ)
     u = datetime.fromisoformat(x['updated']).astimezone(TZ) if x.get('updated') else None
     upd = f' · actualizat {u.day} {LUNI[u.month-1][:3]}' if u and u.date() != d.date() else ''
-    return (f'<a class="rn" href="posts/{e(x["slug"])}.html">{lab}<b>{e(ne(recap_title(x) or x["title"]))}</b>'
+    r = f'<span class="rk">{rk:02d}</span>' if rk else ''
+    return (f'<a class="rn {cls(x["labels"][0])}{"" if rk else " nr"}" href="posts/{e(x["slug"])}.html">{r}<span class="rl">{lab}</span><b>{e(ne(recap_title(x) or x["title"]))}</b>'
             f'<i>{e(x["joc"]) + " · " if x.get("joc") else ""}{d.day} {LUNI[d.month-1][:3]}, {d:%H:%M}{upd}</i></a>')
+
+def recap_games(wk, n=8):
+    cnt = {}
+    for x in wk:
+        if x.get('jocSlug') and x.get('joc'):
+            c = cnt.setdefault(x['jocSlug'], [x['joc'], 0]); c[1] += 1
+    top = sorted(cnt.items(), key=lambda kv: (-kv[1][1], kv[1][0]))[:n]
+    mx = max([c[1] for _, c in top] or [1])
+    out = ''
+    for js, (j, c) in top:
+        h = 0
+        for ch in js:
+            h = (h * 31 + ord(ch)) % 360
+        out += (f'<a class="hbar" href="joc/{e(js)}.html" style="--h:{h}"><span class="gm"><i class="gd" style="--h:{h}"></i>{e(j)}</span><span class="v">{c}</span>'
+                f'<span class="pbar"><u style="width:{c / mx * 100:.1f}%"></u></span></a>')
+    return out or '<div class="rmeta">Nicio postare cu joc în ultimele 7 zile.</div>'
 
 RECAP_JS = r"""<script>
 (()=>{const TZ='Europe/Bucharest',DAYS=7,MAXC=10,MAXO=6;
@@ -645,16 +624,20 @@ function top(c,n){const o=[],seen=new Set();for(const p of [...c].sort(sc)){cons
 const plain=s=>String(s).replace(/[\p{Extended_Pictographic}\u{1F1E6}-\u{1F1FF}\uFE0F\u200D]/gu,'').replace(/\s+/g,' ').trim();
 let K=keys(),WK=[],CONF=[],OTH=[],PH=null,DATA=null;
 function rangeTxt(){const a=kd(K[0]),b=kd(K[K.length-1]);return a.m===b.m?`${a.d} – ${b.d} ${LUNL[b.m-1]} ${b.y}`:`${a.d} ${LUNL[a.m-1]} – ${b.d} ${LUNL[b.m-1]} ${b.y}`}
-function row(p){const d=new Date(p.published);return `<a class="rn" href="posts/${es(p.slug)}.html">${(p.labels||[]).map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')}<b>${es(ne(ttl(p)||p.title))}</b><i>${p.joc?es(p.joc)+' · ':''}${kd(dk(d)).d} ${LUN[kd(dk(d)).m-1]}, ${hm(d)}${p.updated&&dk(new Date(p.updated))!==dk(d)?` · actualizat ${kd(dk(new Date(p.updated))).d} ${LUN[kd(dk(new Date(p.updated))).m-1]}`:''}</i></a>`}
+function gh(k){let h=0;k=String(k||'');for(let i=0;i<k.length;i++)h=(h*31+k.charCodeAt(i))%360;return h}
+function row(p,rk){const d=new Date(p.published);return `<a class="rn ${cls((p.labels||[''])[0])}${rk?'':' nr'}" href="posts/${es(p.slug)}.html">${rk?`<span class="rk">${String(rk).padStart(2,'0')}</span>`:''}<span class="rl">${(p.labels||[]).map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')}</span><b>${es(ne(ttl(p)||p.title))}</b><i>${p.joc?es(p.joc)+' · ':''}${kd(dk(d)).d} ${LUN[kd(dk(d)).m-1]}, ${hm(d)}${p.updated&&dk(new Date(p.updated))!==dk(d)?` · actualizat ${kd(dk(new Date(p.updated))).d} ${LUN[kd(dk(new Date(p.updated))).m-1]}`:''}</i></a>`}
+function games(){const m=new Map();WK.forEach(p=>{if(!p.joc||!p.jocSlug)return;const x=m.get(p.jocSlug)||{s:p.jocSlug,j:p.joc,n:0};x.n++;m.set(p.jocSlug,x)});
+  const L=[...m.values()].sort((a,b)=>b.n-a.n||a.j.localeCompare(b.j,'ro')).slice(0,8),mx=Math.max(1,...L.map(x=>x.n));
+  document.getElementById('rgames').innerHTML=L.length?L.map(x=>`<a class="hbar" href="joc/${es(x.s)}.html" style="--h:${gh(x.s)}"><span class="gm"><i class="gd" style="--h:${gh(x.s)}"></i>${es(x.j)}</span><span class="v">${x.n}</span><span class="pbar"><u style="width:${(x.n/mx*100).toFixed(1)}%"></u></span></a>`).join(''):'<div class="rmeta">Nicio postare cu joc în ultimele 7 zile.</div>'}
 function news(ix){K=keys();const ks=new Set(K);
   WK=(ix.posts||[]).filter(p=>p.published&&ks.has(dk(new Date(p.published)))&&!skip(p)).sort((a,b)=>new Date(b.published)-new Date(a.published));
   const EL=(ix.posts||[]).filter(p=>p.published&&!skip(p)&&lr(p)>0&&(ks.has(dk(new Date(p.published)))||(eprio(p)>0&&p.updated&&ks.has(dk(new Date(p.updated))))));
   CONF=top(EL,MAXC);const ids=new Set(CONF.map(p=>p.slug));OTH=WK.filter(p=>!ids.has(p.slug)&&lr(p)===1).slice(0,MAXO);
   document.getElementById('rrange').textContent=rangeTxt();
-  document.getElementById('rconf').innerHTML=CONF.length?CONF.map(row).join(''):'<div class="rmeta">Nicio știre în ultimele 7 zile.</div>';
-  document.getElementById('roth').innerHTML=OTH.length?OTH.map(row).join(''):'<div class="rmeta">Niciun zvon în ultimele 7 zile.</div>';
+  document.getElementById('rconf').innerHTML=CONF.length?CONF.map((p,i)=>row(p,i+1)).join(''):'<div class="rmeta">Nicio știre în ultimele 7 zile.</div>';
+  document.getElementById('roth').innerHTML=OTH.length?OTH.map(p=>row(p)).join(''):'<div class="rmeta">Niciun zvon în ultimele 7 zile.</div>';
   const c=l=>WK.filter(p=>(p.labels||[]).includes(l)).length;
-  document.getElementById('rnum').innerHTML=[[WK.length,'postări'],[c('CONFIRMAT'),'CONFIRMAT'],[c('ZVON'),'ZVON'],[c('TREND SHORTS'),'TREND SHORTS'],[c('VEXU LIVE'),'VEXU LIVE']].map(([n,t])=>`<div><b>${n}</b><span>${t}</span></div>`).join('')}
+  document.getElementById('rnum').innerHTML=[[WK.length,'postări','all'],[c('CONFIRMAT'),'CONFIRMAT','CONFIRMAT'],[c('ZVON'),'ZVON','ZVON'],[c('TREND SHORTS'),'TREND SHORTS','TREND-SHORTS'],[c('VEXU LIVE'),'VEXU LIVE','VEXU-LIVE']].map(([n,t,k])=>`<div class="${k}"><b>${n}</b><span>${t}</span></div>`).join('');games()}
 function peaks(){const ds=(PH&&PH.days)||{};return K.map(k=>({k,v:ds[k]&&typeof ds[k].peak==='number'?ds[k]:null}))}
 function manual(){const ks=new Set(K);return ((PH&&PH.manual)||[]).filter(m=>typeof m.p==='number'&&m.t&&ks.has(dk(new Date(m.t))))}
 function chart(){const el=document.getElementById('rchart'),meta=document.getElementById('rcmeta');if(!PH){el.innerHTML='<div class="rmeta">Nu pot încărca istoricul de jucători acum.</div>';return}
@@ -675,33 +658,33 @@ function rr(c,x,y,w,h,r){c.beginPath();c.moveTo(x+r,y);c.arcTo(x+w,y,x+w,y+h,r);
 function wrap(c,t,maxW,maxL){const w=t.split(' '),out=[];let cur='';for(const x of w){const n=cur?cur+' '+x:x;if(c.measureText(n).width>maxW&&cur){out.push(cur);cur=x}else cur=n}if(cur)out.push(cur);if(out.length>maxL){out.length=maxL;let l=out[maxL-1];while(c.measureText(l+'…').width>maxW&&l.length)l=l.slice(0,-1);out[maxL-1]=l.replace(/\s+\S*$/,'')+'…'}return out}
 const F='system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif';
 function card(){const cv=document.createElement('canvas');cv.width=1080;cv.height=1920;const c=cv.getContext('2d');
-  c.fillStyle='#0b0c0f';c.fillRect(0,0,1080,1920);
-  let g=c.createRadialGradient(200,0,0,200,0,1100);g.addColorStop(0,'#1c1209');g.addColorStop(1,'#1c120900');c.fillStyle=g;c.fillRect(0,0,1080,1920);
-  g=c.createRadialGradient(1080,1920,0,1080,1920,1100);g.addColorStop(0,'#0b0c0f');g.addColorStop(1,'#0b0c0f00');c.fillStyle=g;c.fillRect(0,0,1080,1920);
-  g=c.createLinearGradient(0,1700,0,1920);g.addColorStop(0,'#ff8a1f00');g.addColorStop(1,'#ff8a1f14');c.fillStyle=g;c.fillRect(0,1700,1080,220);
+  c.fillStyle='#08090c';c.fillRect(0,0,1080,1920);
+  let g=c.createRadialGradient(200,0,0,200,0,1100);g.addColorStop(0,'#12170a');g.addColorStop(1,'#12170a00');c.fillStyle=g;c.fillRect(0,0,1080,1920);
+  g=c.createRadialGradient(1080,1920,0,1080,1920,1100);g.addColorStop(0,'#08090c');g.addColorStop(1,'#08090c00');c.fillStyle=g;c.fillRect(0,0,1080,1920);
+  g=c.createLinearGradient(0,1700,0,1920);g.addColorStop(0,'#c6f13500');g.addColorStop(1,'#c6f13514');c.fillStyle=g;c.fillRect(0,1700,1080,220);
   c.textAlign='center';c.textBaseline='alphabetic';
-  g=c.createLinearGradient(240,0,840,0);g.addColorStop(0,'#ecedf0');g.addColorStop(1,'#ecedf0');
+  g=c.createLinearGradient(240,0,840,0);g.addColorStop(0,'#eef0f3');g.addColorStop(1,'#eef0f3');
   c.font=`900 120px ${F}`;c.fillStyle=g;c.shadowBlur=0;c.fillText('VEXU HQ',540,180);c.shadowBlur=0;
   c.font=`800 64px ${F}`;c.fillStyle='#fff';c.fillText('REZUMATUL SĂPTĂMÂNII',540,280);
   c.font=`600 40px ${F}`;c.fillStyle='#a2a5b0';c.fillText(rangeTxt(),540,345);
   // top știri
-  c.textAlign='left';c.font=`800 38px ${F}`;c.fillStyle='#4dbb85';c.fillText('TOP ȘTIRILE SĂPTĂMÂNII',70,412);
+  c.textAlign='left';c.font=`800 38px ${F}`;c.fillStyle='#3ecf8e';c.fillText('TOP ȘTIRILE SĂPTĂMÂNII',70,412);
   let y=436;const top=CONF.slice(0,5),LIM=1228;
   if(!top.length){c.font=`600 36px ${F}`;c.fillStyle='#a2a5b0';c.fillText('Nicio știre săptămâna asta.',70,y+50)}
   for(let i=0;i<top.length;i++){const p=top[i];c.font=`700 32px ${F}`;const ls=wrap(c,plain(ttl(p)||p.title),850,2),h=30+ls.length*40+(p.joc?34:0);
     if(y+h>LIM)break;
     rr(c,60,y,960,h,24);c.fillStyle='#121317';c.fill();c.strokeStyle='#2a2c35';c.lineWidth=3;c.stroke();
-    c.fillStyle='#ff8a1f';c.font=`900 38px ${F}`;c.fillText(String(i+1),88,y+54);
+    c.fillStyle='#c6f135';c.font=`900 38px ${F}`;c.fillText(String(i+1),88,y+54);
     c.fillStyle='#fff';c.font=`700 32px ${F}`;ls.forEach((l,j)=>c.fillText(l,135,y+50+j*40));
     if(p.joc){c.font=`600 27px ${F}`;c.fillStyle='#a2a5b0';c.fillText(plain(p.joc),135,y+50+ls.length*40-2)}
     y+=h+10}
   // grafic Steal An Egg (doar zilele cu măsurători reale; restul „fără date”)
   const P=peaks(),have=P.filter(x=>x.v);y=1268;
-  c.font=`800 36px ${F}`;c.fillStyle='#ff8a1f';c.fillText('STEAL AN EGG · VÂRF ZILNIC DE JUCĂTORI',70,y);
+  c.font=`800 36px ${F}`;c.fillStyle='#c6f135';c.fillText('STEAL AN EGG · VÂRF ZILNIC DE JUCĂTORI',70,y);
   const top0=y+24,ch=230;rr(c,60,top0,960,ch+66,24);c.fillStyle='#000a';c.fill();c.strokeStyle='#2a2c35';c.lineWidth=3;c.stroke();
   const base=top0+ch-6;
   if(have.length){const mx=Math.max(...have.map(x=>x.v.peak)),bw=900/P.length,bh=ch-70;
-    const bg=c.createLinearGradient(0,base-bh,0,base);bg.addColorStop(0,'#ff8a1f');bg.addColorStop(1,'#ff8a1f');
+    const bg=c.createLinearGradient(0,base-bh,0,base);bg.addColorStop(0,'#c6f135');bg.addColorStop(1,'#c6f135');
     P.forEach((x,i)=>{const cx=90+bw*i+bw/2,w=bw*.6,d=kd(x.k);c.textAlign='center';
       if(x.v){const h=Math.max(6,bh*x.v.peak/mx),by=base-h;rr(c,cx-w/2,by,w,h,10);c.fillStyle=bg;c.fill();c.fillStyle='#fff';c.font=`800 27px ${F}`;c.fillText(cmp(x.v.peak),cx,by-10)}
       else{c.setLineDash([8,8]);rr(c,cx-w/2,base-bh*.55,w,bh*.55,10);c.strokeStyle='#ffffff44';c.lineWidth=2;c.stroke();c.setLineDash([]);c.fillStyle='#a2a5b0';c.font=`600 21px ${F}`;c.fillText('fără',cx,base-bh*.55+36);c.fillText('date',cx,base-bh*.55+60)}
@@ -709,10 +692,10 @@ function card(){const cv=document.createElement('canvas');cv.width=1080;cv.heigh
   else{c.textAlign='center';c.font=`600 32px ${F}`;c.fillStyle='#a2a5b0';c.fillText('Încă nu avem măsurători săptămâna asta.',540,top0+ch/2);c.textAlign='left'}
   c.font=`500 23px ${F}`;c.fillStyle='#6b6e7a';c.fillText('Vârful măsurat de VEXU HQ din API-ul Roblox (ora României).',70,top0+ch+104);
   // CTA
-  c.textAlign='center';c.font=`900 58px ${F}`;c.fillStyle='#ff8a1f';c.shadowBlur=0;c.fillText('Follow = Au ce bile! 💥',540,1700);c.shadowBlur=0;
-  rr(c,90,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#ff8a1f';c.lineWidth=4;c.stroke();
-  rr(c,560,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#ff8a1f';c.stroke();
-  c.font=`800 34px ${F}`;c.fillStyle='#ecedf0';c.fillText('TikTok @vexu_online',305,1796);c.fillStyle='#ecedf0';c.fillText('YouTube VEXU Online',775,1796);
+  c.textAlign='center';c.font=`900 58px ${F}`;c.fillStyle='#c6f135';c.shadowBlur=0;c.fillText('Follow = Au ce bile! 💥',540,1700);c.shadowBlur=0;
+  rr(c,90,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#c6f135';c.lineWidth=4;c.stroke();
+  rr(c,560,1735,430,96,28);c.fillStyle='#000c';c.fill();c.strokeStyle='#c6f135';c.stroke();
+  c.font=`800 34px ${F}`;c.fillStyle='#eef0f3';c.fillText('TikTok @vexu_online',305,1796);c.fillStyle='#eef0f3';c.fillText('YouTube VEXU Online',775,1796);
   c.font=`600 24px ${F}`;c.fillStyle='#a2a5b0';c.fillText('pyromanc3r777.github.io/vexu-hq',540,1885);
   return cv}
 let URLC=null;
@@ -735,14 +718,15 @@ def build_recap(index_items):
     rng = (f'{a.day} – {b.day} {LUNI[b.month-1]} {b.year}' if a.month == b.month
            else f'{a.day} {LUNI[a.month-1]} – {b.day} {LUNI[b.month-1]} {b.year}')
     cnt = lambda l: sum(1 for x in wk if l in x['labels'])
-    nums = ''.join(f'<div><b>{n}</b><span>{l}</span></div>' for n, l in [(len(wk), 'postări'), (cnt('CONFIRMAT'), 'CONFIRMAT'), (cnt('ZVON'), 'ZVON'), (cnt('TREND SHORTS'), 'TREND SHORTS'), (cnt('VEXU LIVE'), 'VEXU LIVE')])
+    nums = ''.join(f'<div class="{c}"><b>{n}</b><span>{l}</span></div>' for n, l, c in [(len(wk), 'postări', 'all'), (cnt('CONFIRMAT'), 'CONFIRMAT', 'CONFIRMAT'), (cnt('ZVON'), 'ZVON', 'ZVON'), (cnt('TREND SHORTS'), 'TREND SHORTS', 'TREND-SHORTS'), (cnt('VEXU LIVE'), 'VEXU LIVE', 'VEXU-LIVE')])
     body = (f'<h1>Rezumatul săptămânii</h1>'
             f'<p class="rsub">Ultimele 7 zile · <span id="rrange">{rng}</span> · ora României · se actualizează singur</p>'
-            f'<div class="rc"><h2>Săptămâna în cifre</h2><div class="rnum" id="rnum">{nums}</div></div>'
+            f'<div class="sec" style="margin-top:12px"><h2 style="margin-bottom:12px">Săptămâna în cifre</h2><div class="rnum" id="rnum">{nums}</div></div>'
             f'<div class="rgrid"><div>'
-            f'<div class="rc"><h2>Top știri ale săptămânii</h2><div id="rconf">{"".join(recap_row(x) for x in conf) or "<div class=rmeta>Nicio știre în ultimele 7 zile.</div>"}</div></div>'
+            f'<div class="rc"><h2>Top știri ale săptămânii</h2><div id="rconf">{"".join(recap_row(x, k + 1) for k, x in enumerate(conf)) or "<div class=rmeta>Nicio știre în ultimele 7 zile.</div>"}</div></div>'
             f'<div class="rc"><h2>Zvonuri de urmărit</h2><div id="roth">{"".join(recap_row(x) for x in other) or "<div class=rmeta>Niciun zvon în ultimele 7 zile.</div>"}</div></div>'
             f'</div><div>'
+            f'<div class="rc"><h2>Jocurile săptămânii · postări</h2><div class="hbars" id="rgames">{recap_games(wk)}</div></div>'
             f'<div class="rc"><h2>Steal An Egg · vârful zilnic de jucători</h2><div id="rchart"><div class="rmeta">Se încarcă graficul…</div></div>'
             f'<div class="rmeta" id="rcmeta"></div><div class="rmeta">Măsurat de noi din API-ul Roblox (GitHub Action, de obicei la câteva ore). Vârful zilei e cel mai mare număr pe care l-am prins noi, nu neapărat vârful real. Momentan urmărim doar Steal An Egg.</div></div>'
             f'<div class="rc"><h2>Card 9:16 pentru TikTok / Shorts</h2><div class="rcard"><img id="rcimg" alt="Previzualizare card 9:16 cu rezumatul săptămânii VEXU HQ" width="1080" height="1920">'
@@ -760,6 +744,7 @@ def sync_index():
     f = os.path.join(D, 'index.html')
     t = open(f, encoding='utf-8').read()
     t = re.sub(r'<!--css-->.*?<!--/css-->', lambda m: '<!--css-->' + CSS_LINK + '<!--/css-->', t, count=1, flags=re.S)
+    t = re.sub(r'<!--ev-->.*?<!--/ev-->', lambda m: '<!--ev-->' + EVENTS_SRC + '<!--/ev-->', t, count=1, flags=re.S)
     t = re.sub(r'<!--nav-->.*?<!--/nav-->', lambda m: '<!--nav-->' + header('index') + '<!--/nav-->', t, count=1, flags=re.S)
     open(f, 'w', encoding='utf-8').write(t)
 
