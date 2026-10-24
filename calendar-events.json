@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T08:36:44+03:00",
+ "generated": "2026-10-24T09:44:36+03:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -22,6 +22,18 @@
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "Sell Fries! — Chapter 2",
+   "game": "Sell Fries!",
+   "start": "2026-10-31T21:00:00+02:00",
+   "end": "2026-11-01T21:00:00+02:00",
+   "link": "https://www.roblox.com/events/1598195694726939280",
+   "slug": "sell-fries-chapter-2-mutat-pe-31-oct-la-2100",
+   "img": "img/sell-fries-chapter-2.jpg",
+   "post_title": "🍟 Sell Fries! mută Chapter 2 pe sâmbăta viitoare, 31 oct, la 21:00",
+   "gameSlug": "sell-fries",
+   "gameLabel": "Sell Fries!"
   },
   {
    "name": "Ghoul Garden 2",

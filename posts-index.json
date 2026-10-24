@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T08:36:44+03:00",
+ "generated": "2026-10-24T09:44:36+03:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,27 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "sell-fries-chapter-2-mutat-pe-31-oct-la-2100",
+   "title": "🍟 Sell Fries! mută Chapter 2 pe sâmbăta viitoare, 31 oct, la 21:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-24",
+   "dateRo": "24 octombrie 2026",
+   "published": "2026-10-24T09:50:00+03:00",
+   "img": "img/sell-fries-chapter-2.jpg",
+   "excerpt": "🍟 Chapter 2 din Sell Fries! NU mai e în seara asta. Pe pagina oficială a evenimentului, dezvoltatorii au mutat data: Chapter 2 pornește…",
+   "featured": false,
+   "section": null,
+   "joc": "Sell Fries!",
+   "jocSlug": "sell-fries",
    "prio": 0,
    "views": null,
    "updated": null,
@@ -2685,7 +2706,7 @@
    "dateRo": "17 octombrie 2026",
    "published": "2026-10-17T15:47:00+03:00",
    "img": "img/77fb34486340.png",
-   "excerpt": "🔄 UPDATE 22 oct: Halloween Event Update a ajuns în Sell Fries! (lansat pe 18 oct, după Sportskeeda, care citează changelog-ul…",
+   "excerpt": "🍟 UPDATE 24 oct: Chapter 2 a fost mutat pe sâmbătă, 31 oct, 21:00 RO (detalii:…",
    "featured": false,
    "section": null,
    "joc": "Sell Fries!",
