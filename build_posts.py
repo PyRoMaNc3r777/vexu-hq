@@ -87,14 +87,14 @@ def joc_slug(j):
 CSS = """@media(min-width:768px){.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.grid .p{margin:0}a.p.feat{display:grid;grid-template-columns:1.3fr 1fr}.feat img{height:100%;min-height:320px}.feat h2{font-size:1.7em}.hero{max-width:1100px;margin:14px auto}.hero .b{max-width:760px;margin:auto;padding:24px}.hero .txt{font-size:1.15em}}@media(min-width:1200px){.grid{grid-template-columns:repeat(3,1fr)}.hero{display:grid;grid-template-columns:1fr 1fr}.hero .hi{padding:16px}.hero img{border-radius:12px}}
 *{box-sizing:border-box}body{margin:0;background:#07040f;color:#eee;font-family:system-ui,sans-serif;background-image:radial-gradient(circle at 20% 0,#3b0a5c 0,transparent 50%),radial-gradient(circle at 100% 100%,#002f3d 0,transparent 50%);min-height:100vh}
 .w{max-width:1400px;margin:auto;padding:16px}h1{font-size:2em;margin:8px 0;text-align:center;background:linear-gradient(90deg,#ff2bd6,#00f0ff);-webkit-background-clip:text;color:transparent}
-nav{text-align:center;margin:8px 0;display:flex;flex-wrap:wrap;gap:8px;justify-content:center;align-items:center}nav a,.btn{color:#00f0ff;margin:0 4px;font-weight:700;text-decoration:none}.btn{display:inline-block;margin:14px 0;padding:10px 16px;border:1px solid #00f0ff;border-radius:12px;box-shadow:0 0 12px #00f0ff55;background:#000a;cursor:pointer;font:inherit}
+.btn{color:#00f0ff;font-weight:700;text-decoration:none}.btn{display:inline-block;margin:14px 0;padding:10px 16px;border:1px solid #00f0ff;border-radius:12px;box-shadow:0 0 12px #00f0ff55;background:#000a;cursor:pointer;font:inherit}
 .p{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;margin:14px 0;overflow:hidden;box-shadow:0 0 18px #ff2bd622}a.p{display:block;color:inherit;text-decoration:none}a.p:hover{border-color:#ff2bd6;box-shadow:0 0 24px #ff2bd666}
 .p img{width:100%;height:190px;object-fit:cover;display:block}.txt img.th{width:100%;max-width:560px;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px;border:1px solid #ff2bd655;margin:12px 0 4px;display:block}.hero img{height:auto;max-height:420px}.b{padding:14px}h2{margin:6px 0;font-size:1.15em}.l{display:inline-block;padding:3px 9px;border-radius:20px;font-size:.72em;font-weight:800}
 .dt{color:#9a8fb5;font-size:.8em;margin-left:6px}.txt{font-size:1.05em;line-height:1.55;margin:10px 0}.more{color:#ff7be6;font-weight:700;font-size:.85em;margin-top:8px}
 .CONFIRMAT{background:#39ff8822;color:#39ff88;border:1px solid #39ff88}.VEXU-LIVE{background:#ff2bd622;color:#ff2bd6;border:1px solid #ff2bd6;box-shadow:0 0 10px #ff2bd6aa;text-shadow:0 0 6px #ff2bd6}.txt ul{margin:8px 0;padding-left:22px}.txt li{margin:4px 0}.txt a{color:#00f0ff;word-break:break-all}.TREND-SHORTS{background:#00f0ff22;color:#00f0ff;border:1px solid #00f0ff;box-shadow:0 0 10px #00f0ffaa;text-shadow:0 0 6px #00f0ff}.sec{margin:28px 0 6px;font-size:1.5em;color:#00f0ff;text-shadow:0 0 10px #00f0ff}.bx{border-radius:12px;padding:12px 14px;margin:12px 0}.bx h3{margin:0 0 6px;font-size:1em}.bxC{background:#39ff8814;border:1px solid #39ff88;box-shadow:0 0 12px #39ff8833}.bxC h3{color:#39ff88}.bxZ{background:#ffd40014;border:1px solid #ffd400;box-shadow:0 0 12px #ffd40033}.bxZ h3{color:#ffd400}.ZVON{background:#ffd40022;color:#ffd400;border:1px solid #ffd400}.s a{color:#ff7be6;font-size:.8em;word-break:break-all;display:block;margin-top:4px}
 .fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}.fx span{position:absolute;bottom:-60px;font-size:22px;opacity:0;filter:drop-shadow(0 0 8px #ff7a00);animation:fl 18s linear infinite}.fx span:nth-child(1){left:6%;animation-delay:0s}.fx span:nth-child(2){left:22%;animation-delay:6s;font-size:16px}.fx span:nth-child(3){left:41%;animation-delay:11s}.fx span:nth-child(4){left:63%;animation-delay:3s;font-size:18px}.fx span:nth-child(5){left:80%;animation-delay:9s}.fx span:nth-child(6){left:93%;animation-delay:14s;font-size:15px}@keyframes fl{0%{transform:translateY(0) rotate(0);opacity:0}10%{opacity:.55}50%{transform:translate(18px,-55vh) rotate(12deg)}90%{opacity:.4}100%{transform:translate(-12px,-110vh) rotate(-10deg);opacity:0}}.w{position:relative;z-index:1}@media(prefers-reduced-motion:reduce){.fx{display:none}*{animation:none!important}}a.p{transition:transform .2s,border-color .2s,box-shadow .2s}a.p:hover{transform:translateY(-3px)}a.p:active{transform:scale(.98)}
 .nou{position:absolute;top:10px;left:10px;z-index:2;background:linear-gradient(90deg,#ff7a00,#ff2bd6);color:#fff;font-size:.72em;font-weight:900;letter-spacing:.5px;padding:4px 10px;border-radius:999px;box-shadow:0 0 12px #ff7a00aa,0 0 22px #ff2bd666;animation:nouP 1.8s ease-in-out infinite}@keyframes nouP{0%,100%{transform:scale(1);box-shadow:0 0 10px #ff7a00aa,0 0 18px #ff2bd655}50%{transform:scale(1.07);box-shadow:0 0 16px #ff7a00,0 0 30px #ff2bd699}}a.p{position:relative}a.p.feat{border-color:#ff7a00;animation:featG 3.2s ease-in-out infinite}@keyframes featG{0%,100%{border-color:#ff7a00;box-shadow:0 0 16px #ff7a0055}50%{border-color:#ff2bd6;box-shadow:0 0 30px #ff2bd688,0 0 6px #ff7a00 inset}}
-.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 6px}.chip{border:1px solid #ff2bd655;background:#120a22cc;color:#eee;border-radius:999px;padding:7px 12px;font-size:.85em;font-weight:700;cursor:pointer}.chip.on{border-color:#00f0ff;color:#00f0ff;box-shadow:0 0 12px #00f0ff55}.chip .n{opacity:.7;margin-left:4px}.srch{display:flex;max-width:560px;margin:12px auto 0;position:relative}.srch input{flex:1;width:100%;font:inherit;font-size:16px;color:#eee;background:#120a22cc;border:1px solid #ff2bd655;border-radius:999px;padding:10px 42px 10px 16px;outline:none;-webkit-appearance:none;appearance:none}.srch input:focus{border-color:#00f0ff;box-shadow:0 0 14px #00f0ff55}.srch input::placeholder{color:#9a8fb5}.srch input::-webkit-search-cancel-button{display:none}.srch button{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;color:#ff7be6;font-size:1.05em;padding:6px 10px;cursor:pointer;visibility:hidden}.qinfo{text-align:center;color:#9a8fb5;font-size:.82em;min-height:1em;margin:4px 0 0}.dayh{margin:22px 0 8px;font-size:1.25em;color:#ff7be6;text-shadow:0 0 10px #ff2bd655}.dayh:first-child{margin-top:8px}#moreWrap{text-align:center;margin:18px 0}#featSlot .p{margin-top:8px}.empty{text-align:center;color:#9a8fb5;padding:24px}.shorts-entry{text-align:center;margin:10px 0 4px}.shorts-entry button{border:1px solid #00f0ff;background:#00f0ff18;color:#00f0ff;border-radius:12px;padding:10px 14px;font-weight:800;cursor:pointer;box-shadow:0 0 12px #00f0ff44}
+.filters{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:12px 0 6px}.chip{border:1px solid #ff2bd655;background:#120a22cc;color:#eee;border-radius:999px;padding:7px 12px;font-size:.85em;font-weight:700;cursor:pointer}.chip.on{border-color:#00f0ff;color:#00f0ff;box-shadow:0 0 12px #00f0ff55}.chip .n{opacity:.7;margin-left:4px}.srch{display:flex;max-width:560px;margin:12px auto 0;position:relative}.srch input{flex:1;width:100%;font:inherit;font-size:16px;color:#eee;background:#120a22cc;border:1px solid #ff2bd655;border-radius:999px;padding:10px 42px 10px 16px;outline:none;-webkit-appearance:none;appearance:none}.srch input:focus{border-color:#00f0ff;box-shadow:0 0 14px #00f0ff55}.srch input::placeholder{color:#9a8fb5}.srch input::-webkit-search-cancel-button{display:none}.srch button{position:absolute;right:6px;top:50%;transform:translateY(-50%);border:0;background:none;color:#ff7be6;font-size:1.05em;padding:6px 10px;cursor:pointer;visibility:hidden}.qinfo{text-align:center;color:#9a8fb5;font-size:.82em;min-height:1em;margin:4px 0 0}.dayh{margin:22px 0 8px;font-size:1.25em;color:#ff7be6;text-shadow:0 0 10px #ff2bd655}.dayh:first-child{margin-top:8px}#moreWrap{text-align:center;margin:18px 0}#featSlot .p{margin-top:8px}.empty{text-align:center;color:#9a8fb5;padding:24px}
 .cal .row{display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:start;margin:14px 0}.cal .ico{width:72px;height:72px;border-radius:14px;object-fit:cover;border:1px solid #ff2bd655;background:#000a}.cal .card{background:#120a22cc;border:1px solid #ff2bd655;border-radius:16px;padding:14px;box-shadow:0 0 18px #ff2bd622}.cal .st{font-weight:800;margin:6px 0;color:#ffd400}.cal .st.live{color:#39ff88;text-shadow:0 0 10px #39ff88}.cal .st.done{color:#9a8fb5}.cal .cd{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}.cal .cd div{background:#000a;border:1px solid #00f0ff66;border-radius:10px;padding:8px 6px;min-width:58px;text-align:center}.cal .cd b{display:block;font-size:1.3em;color:#ff2bd6}.cal .cd span{font-size:.65em;color:#aaa}.cal .meta{color:#9a8fb5;font-size:.85em}.cal a.golink{color:#00f0ff;font-weight:700;text-decoration:none}.note{font-size:.8em;color:#ffd400;margin-top:6px}@media(max-width:520px){.cal .row{grid-template-columns:56px 1fr}.cal .ico{width:56px;height:56px}}
 .cal .grp{display:flex;align-items:center;gap:8px;margin:22px 0 4px;font-size:1.1em;font-weight:900;letter-spacing:.02em}.cal .grp .n{font-size:.75em;padding:2px 9px;border-radius:999px;border:1px solid currentColor;opacity:.85}.cal .grp.g-live{color:#39ff88;text-shadow:0 0 10px #39ff8877}.cal .grp.g-soon{color:#ffd400;text-shadow:0 0 10px #ffd40066}.cal .grp.g-done{color:#9a8fb5}.cal .row.live .card{border-color:#39ff8888;box-shadow:0 0 18px #39ff8833,inset 0 0 14px #39ff8812}.cal .row.urg .card{border-color:#ff3b3b;animation:urg 1.6s ease-in-out infinite}@keyframes urg{50%{box-shadow:0 0 26px #ff3b3baa,0 0 44px #ff7a0055,inset 0 0 16px #ff3b3b33}}.cal .urgt{display:inline-block;margin:2px 0 4px;padding:2px 9px;border-radius:999px;background:#ff3b3b22;border:1px solid #ff3b3b;color:#ff8080;font-weight:900;font-size:.8em}.cal .ldot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#39ff88;margin-right:6px;box-shadow:0 0 8px #39ff88;animation:ld 1.4s ease-in-out infinite}@keyframes ld{50%{opacity:.35;transform:scale(.7)}}.cal details{margin-top:6px}.cal details summary{list-style:none;cursor:pointer}.cal details summary::-webkit-details-marker{display:none}.cal details summary .grp:after{content:"▾ arată";font-size:.7em;margin-left:auto;color:#00f0ff}.cal details[open] summary .grp:after{content:"▴ ascunde"}.cal .row.done{opacity:.62;filter:saturate(.55)}@media(prefers-reduced-motion:reduce){.cal .row.urg .card,.cal .ldot{animation:none}}.ginfo{text-align:center;color:#9a8fb5;font-size:.85em;min-height:1em;margin:2px 0 0}.ginfo b{color:#ffb066}.ginfo a{color:#00f0ff;font-weight:700}
 .rp{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#ff7a00,#ff2bd6,#00f0ff);box-shadow:0 0 10px #ff2bd6,0 0 18px #ff7a0088;z-index:50;pointer-events:none}.acts{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.acts .btn{margin:14px 0}.shr{border-color:#ff7a00;color:#ffb066;box-shadow:0 0 12px #ff7a0055}.shr.ok{border-color:#39ff88;color:#39ff88;box-shadow:0 0 14px #39ff8877}.rel{margin:10px 0 24px}.rel h2{color:#ff7be6;text-shadow:0 0 10px #ff2bd655;font-size:1.25em;margin:8px 0}.rel .grid{display:grid;grid-template-columns:1fr;gap:12px}.rel a.p{margin:0;display:grid;grid-template-columns:110px 1fr}.rel a.p img{height:100%;min-height:86px}.rel .b{padding:10px 12px}.rel .dt{display:block;margin:4px 0 0}.rel h3{margin:6px 0 0;font-size:.95em;line-height:1.3}@media(min-width:768px){.rel .grid{grid-template-columns:repeat(3,1fr)}.rel a.p{display:block}.rel a.p img{height:150px}}
@@ -124,7 +124,7 @@ TOP_JS = "<script>(function(){var b=document.getElementById('totop');if(!b)retur
 def page(title, body, extra_js=''):
     body = emo_h1(body)
     return (f'<!doctype html><html lang="ro"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
-            f'<title>{html.escape(title)}</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png">{PWA_HEAD}<style>\n{CSS}\n{CSS_FX}{CSS_TOP}\n</style></head><body>'
+            f'<title>{html.escape(title)}</title><link rel="icon" type="image/png" href="/vexu-hq/icon.png">{PWA_HEAD}<style>\n{CSS}\n{CSS_FX}{CSS_TOP}\n{NAV_CSS}\n</style></head><body>'
             f'<div class="moon" aria-hidden="true"></div>'
             f'<div class="fx" aria-hidden="true"><span>🎃</span><span>🦇</span><span>👻</span><span>🦇</span><span>🎃</span><span>🕸️</span></div>'
             f'<div class="w">{body}</div>{TOP_HTML}{extra_js}{TOP_JS}{HUNT_JS}{PWA_JS}</body></html>\n')
@@ -153,13 +153,45 @@ def rich(t):
     if ul: out.append('</ul>')
     return ''.join(out)
 
-NAV_BLOG = ('<nav><a href="index.html">⚡ Dashboard</a><a href="blog.html">📰 Blog</a>'
-            '<a href="calendar.html">📅 Calendar Halloween</a><a href="recap.html">📊 Rezumatul săptămânii</a></nav>')
-NAV_POST = ('<nav><a href="../blog.html">← Blog</a><a href="../calendar.html">📅 Calendar</a>'
-            '<a href="../recap.html">📊 Rezumat</a><a href="../index.html">⚡ Dashboard</a></nav>')
 
-NAV_JOC = ('<nav><a href="../blog.html">← Blog</a><a href="../calendar.html">📅 Calendar</a>'
-           '<a href="../recap.html">📊 Rezumat</a><a href="../index.html">⚡ Dashboard</a></nav>')
+# ───────────── Navigație mare (pastile) — UN SINGUR loc pentru stil; se injectează în toate paginile (și în index.html) ─────────────
+NAV_CSS = (
+ 'nav.tn{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:760px;margin:14px auto 10px}'
+ 'nav.tn a,.shorts-entry a,.shorts-entry button{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;gap:6px;'
+ 'min-height:52px;padding:10px 12px;border-radius:18px;border:1.5px solid transparent;font:inherit;font-size:16.5px;font-weight:800;line-height:1.2;letter-spacing:.01em;'
+ 'color:#fff;text-decoration:none;cursor:pointer;-webkit-tap-highlight-color:transparent;text-wrap:balance;'
+ 'background:linear-gradient(#1d0b33e6,#0f0820e6) padding-box,linear-gradient(135deg,#ff2bd6,#7b2cff 50%,#00f0ff) border-box;'
+ 'box-shadow:0 0 14px #ff2bd62e,0 4px 14px #0008,inset 0 0 14px #7b2cff22;text-shadow:0 0 8px #ff2bd655;'
+ 'transition:transform .18s ease,box-shadow .18s ease,filter .18s ease}'
+ 'nav.tn a:hover,.shorts-entry a:hover,.shorts-entry button:hover{transform:translateY(-2px);filter:brightness(1.18);'
+ 'box-shadow:0 0 22px #ff2bd699,0 0 36px #7b2cff55,0 6px 16px #000a,inset 0 0 14px #7b2cff33}'
+ 'nav.tn a:active,.shorts-entry a:active,.shorts-entry button:active{transform:translateY(1px) scale(.97);filter:brightness(1.3);'
+ 'box-shadow:0 0 28px #ff2bd6cc,0 0 40px #00f0ff44}'
+ 'nav.tn a:focus-visible,.shorts-entry a:focus-visible,.shorts-entry button:focus-visible{outline:2px solid #00f0ff;outline-offset:3px}'
+ 'nav.tn a[aria-current=page]{background:linear-gradient(135deg,#7b2cff66,#00f0ff33) padding-box,linear-gradient(135deg,#00f0ff,#7b2cff) border-box;'
+ 'box-shadow:0 0 20px #00f0ff77,0 0 34px #7b2cff55,inset 0 0 16px #00f0ff22;text-shadow:0 0 10px #00f0ff}'
+ '.shorts-entry{max-width:760px;margin:0 auto 12px}'
+ '.shorts-entry a,.shorts-entry button{width:100%;font-size:17.5px;font-weight:900;min-height:56px;'
+ 'background:linear-gradient(135deg,#ff7a00,#ff2bd6) padding-box,linear-gradient(135deg,#ffd27a,#ff2bd6) border-box;'
+ 'box-shadow:0 0 20px #ff7a0077,0 0 34px #ff2bd655,0 4px 14px #0008;text-shadow:0 1px 6px #0007;animation:shg 2.8s ease-in-out infinite}'
+ '@keyframes shg{50%{box-shadow:0 0 30px #ff7a00cc,0 0 50px #ff2bd699,0 4px 14px #0008}}'
+ '.shorts-entry a:hover,.shorts-entry button:hover{box-shadow:0 0 34px #ff7a00,0 0 56px #ff2bd6aa,0 6px 16px #000a}'
+ '@media(min-width:768px){nav.tn{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;max-width:1100px}nav.tn a{padding:12px 24px;font-size:17px}'
+ '.shorts-entry{display:flex;justify-content:center}.shorts-entry a,.shorts-entry button{width:auto;min-width:300px;padding:12px 30px}}'
+ '@media(prefers-reduced-motion:reduce){nav.tn a,.shorts-entry a,.shorts-entry button{animation:none!important;transition:none}'
+ 'nav.tn a:hover,nav.tn a:active,.shorts-entry a:hover,.shorts-entry button:hover,.shorts-entry a:active,.shorts-entry button:active{transform:none}}'
+)
+NAV_CSS_ID = 'navcss'
+def nav(items, active=None):
+    return '<nav class="tn" aria-label="Navigație">' + ''.join(
+        f'<a href="{h}"' + (' aria-current="page"' if k == active else '') + f'>{t}</a>' for k, h, t in items) + '</nav>'
+def nav_blog(active=None, pre=''):
+    return nav([('index', pre+'index.html', '⚡ Dashboard'), ('blog', pre+'blog.html', '📰 Blog'),
+                ('calendar', pre+'calendar.html', '📅 Calendar Halloween'), ('recap', pre+'recap.html', '📊 Rezumatul săptămânii')], active)
+SHORTS_LINK = '<div class="shorts-entry"><a href="blog.html#f=trend-shorts">🔥 Ce merge în Shorts</a></div>'
+NAV_POST = nav([('blog', '../blog.html', '← Blog'), ('calendar', '../calendar.html', '📅 Calendar'),
+                ('recap', '../recap.html', '📊 Rezumat'), ('index', '../index.html', '⚡ Dashboard')])
+NAV_JOC = NAV_POST
 CTA = ('<div class="cta"><b>Follow = Au ce bile! 💥</b>'
        '<a href="https://www.tiktok.com/@vexu_online" target="_blank" rel="noopener">🎵 TikTok @vexu_online</a>'
        '<a class="yt" href="https://www.youtube.com/@VexuOnline" target="_blank" rel="noopener">▶️ YouTube VEXU Online</a></div>')
@@ -547,7 +579,7 @@ def build_game_pages(posts):
 
 def build_blog():
     noscript = '<noscript><p style="text-align:center;color:#9a8fb5">Activează JavaScript pentru feed-ul grupat pe zile. Postările individuale rămân în <code>posts/</code>.</p></noscript>'
-    body = (f'<h1>📰 VEXU HQ · Știri</h1>{NAV_BLOG}'
+    body = (f'<h1>📰 VEXU HQ · Știri</h1>{nav_blog("blog")}'
             f'<div class="shorts-entry"><button type="button" id="shortsBtn">🔥 Ce merge în Shorts</button></div>'
             f'<form class="srch" id="qform" role="search"><input type="search" id="q" placeholder="Caută în știri…" aria-label="Caută în știri" autocomplete="off" enterkeyhint="search"><button type="button" id="qx" aria-label="Șterge căutarea">✕</button></form>'
             f'<div class="qinfo" id="qinfo" aria-live="polite"></div>'
@@ -560,7 +592,7 @@ def build_blog():
     open(os.path.join(D, 'blog.html'), 'w', encoding='utf-8').write(page('VEXU HQ · Știri', body, BLOG_JS))
 
 def build_calendar():
-    body = (f'<h1>📅 Calendar Halloween</h1>{NAV_BLOG}'
+    body = (f'<h1>📅 Calendar Halloween</h1>{nav_blog("calendar")}'
             f'<p style="text-align:center;color:#9a8fb5">Doar ferestre CONFIRMAT din blog · ora României · countdown live</p>'
             f'<div class="ftitle">Jocuri</div><div class="filters" id="gfilters" role="toolbar" aria-label="Filtru după joc"></div><div class="ginfo" id="ginfo"></div>'
             f'<div class="cal" id="cal">Se încarcă…</div>')
@@ -763,7 +795,7 @@ def build_recap(index_items):
            else f'{a.day} {LUNI[a.month-1]} – {b.day} {LUNI[b.month-1]} {b.year}')
     cnt = lambda l: sum(1 for x in wk if l in x['labels'])
     nums = ''.join(f'<div><b>{n}</b><span>{l}</span></div>' for n, l in [(len(wk), 'postări'), (cnt('CONFIRMAT'), 'CONFIRMAT'), (cnt('ZVON'), 'ZVON'), (cnt('TREND SHORTS'), 'TREND SHORTS'), (cnt('VEXU LIVE'), 'VEXU LIVE')])
-    body = (f'<h1>📊 Rezumatul săptămânii</h1>{NAV_BLOG}'
+    body = (f'<h1>📊 Rezumatul săptămânii</h1>{nav_blog("recap")}'
             f'<p class="rsub">Ultimele 7 zile · <span id="rrange">{rng}</span> · ora României · se actualizează singur</p>'
             f'<div class="rc"><h2>📈 Săptămâna în cifre</h2><div class="rnum" id="rnum">{nums}</div></div>'
             f'<div class="rgrid"><div>'
@@ -780,6 +812,19 @@ def build_recap(index_items):
     html_ = page('Rezumatul săptămânii · VEXU HQ', body, RECAP_JS).replace('</style>', RECAP_CSS + '\n</style>', 1)
     open(os.path.join(D, 'recap.html'), 'w', encoding='utf-8').write(html_)
     print(f'recap.html: {len(wk)} postări în {keys[0]}…{keys[-1]}; top: ' + ' | '.join(recap_title(x) or x['title'] for x in conf))
+
+def sync_index():
+    """index.html e static: îi menținem nav-ul + CSS-ul nav din aceleași surse ca restul paginilor (markere <!--nav-->…<!--/nav-->)."""
+    f = os.path.join(D, 'index.html')
+    t = open(f, encoding='utf-8').read()
+    css = f'<style id="{NAV_CSS_ID}">{NAV_CSS}</style>'
+    if f'id="{NAV_CSS_ID}"' in t:
+        t = re.sub(r'<style id="%s">.*?</style>' % NAV_CSS_ID, lambda m: css, t, count=1, flags=re.S)
+    else:
+        t = t.replace('</head>', css + '</head>', 1)
+    block = '<!--nav-->' + nav_blog('index') + SHORTS_LINK + '<!--/nav-->'
+    t = re.sub(r'<!--nav-->.*?<!--/nav-->', lambda m: block, t, count=1, flags=re.S)
+    open(f, 'w', encoding='utf-8').write(t)
 
 def date_from(k):
     from datetime import date
@@ -839,6 +884,7 @@ def main():
     build_blog()
     build_calendar()
     build_recap(index_items)
+    sync_index()
     print('recap.html / blog.html / calendar.html / posts-index.json / calendar-events.json OK')
 
 if __name__ == '__main__':
