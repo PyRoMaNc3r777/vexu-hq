@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T08:06:30+02:00",
+ "generated": "2026-10-25T10:03:21+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -22,6 +22,74 @@
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "Halloween (biciclete limitate)",
+   "game": "Bike Universe",
+   "start": "2026-10-22T02:00:00+03:00",
+   "end": "2026-11-08T01:00:00+02:00",
+   "link": "https://www.roblox.com/games/98628861455414",
+   "slug": "bike-universe-halloween-motoare-limitate-pana-pe-8-nov",
+   "img": "img/407f2936ede8.png",
+   "post_title": "🏍️ Bike Universe Halloween: motoare limitate până pe 8 nov",
+   "gameSlug": "bike-universe",
+   "gameLabel": "Bike Universe"
+  },
+  {
+   "name": "Halloween Tier 7",
+   "game": "Evade",
+   "start_date": "2026-10-21",
+   "date_only": true,
+   "slug": "evade-halloween-8-tier-uri-70-cosmetice-pana-pe-20-nov",
+   "img": "img/d0d0ef748ff9.png",
+   "post_title": "👻 Evade Halloween: 8 tier-uri, 70+ cosmetice pe Wisps, până pe 20 nov",
+   "gameSlug": "evade",
+   "gameLabel": "Evade"
+  },
+  {
+   "name": "Halloween Tier 8",
+   "game": "Evade",
+   "start_date": "2026-10-24",
+   "date_only": true,
+   "slug": "evade-halloween-8-tier-uri-70-cosmetice-pana-pe-20-nov",
+   "img": "img/d0d0ef748ff9.png",
+   "post_title": "👻 Evade Halloween: 8 tier-uri, 70+ cosmetice pe Wisps, până pe 20 nov",
+   "gameSlug": "evade",
+   "gameLabel": "Evade"
+  },
+  {
+   "name": "Halloween Event, ultima zi (oră neanunțată)",
+   "game": "Evade",
+   "start_date": "2026-11-20",
+   "date_only": true,
+   "slug": "evade-halloween-8-tier-uri-70-cosmetice-pana-pe-20-nov",
+   "img": "img/d0d0ef748ff9.png",
+   "post_title": "👻 Evade Halloween: 8 tier-uri, 70+ cosmetice pe Wisps, până pe 20 nov",
+   "gameSlug": "evade",
+   "gameLabel": "Evade"
+  },
+  {
+   "name": "Update + turneu orar (mănuși exclusive)",
+   "game": "Backseat Rally",
+   "start": "2026-10-23T23:00:00+03:00",
+   "end": "2026-10-26T09:00:00+02:00",
+   "link": "https://www.roblox.com/games/94278659624110",
+   "slug": "backseat-rally-harta-noua-group-b-turneu-orar",
+   "img": "img/982149f0b956.png",
+   "post_title": "🏎️ Backseat Rally: hartă nouă, mașină Group B și turneu în fiecare oră",
+   "gameSlug": "backseat-rally",
+   "gameLabel": "Backseat Rally"
+  },
+  {
+   "name": "Drifters (playtest, lansare neanunțată)",
+   "game": "Drifters",
+   "coming_soon": true,
+   "link": "https://x.com/Roblox/status/2112589956812083513",
+   "slug": "drifters-shooter-extraction-vine-curand",
+   "img": "img/ef09f33a1054.jpg",
+   "post_title": "🔫 Drifters: shooter-ul extraction de la Look North World vine curând",
+   "gameSlug": "drifters",
+   "gameLabel": "Drifters"
   },
   {
    "name": "CG5 CONCERT",
