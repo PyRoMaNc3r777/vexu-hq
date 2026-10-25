@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T07:35:39+02:00",
+ "generated": "2026-10-25T08:06:30+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -22,6 +22,42 @@
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "CG5 CONCERT",
+   "game": "+1 Speed Keyboard Escape",
+   "start": "2026-10-24T21:00:00+03:00",
+   "end": "2026-10-31T21:00:00+02:00",
+   "link": "https://www.roblox.com/events/6868324446936105521",
+   "slug": "keyboard-escape-cg5-concert-o-saptamana",
+   "img": "img/8be12a105e98.png",
+   "post_title": "🎤 +1 Speed Keyboard Escape: CG5 CONCERT e live o săptămână întreagă",
+   "gameSlug": "1-speed-keyboard-escape",
+   "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "Spooky Pt. 2! (Spooky House)",
+   "game": "Kick a Lucky Block",
+   "start": "2026-10-24T20:00:00+03:00",
+   "end": "2026-10-31T20:00:00+02:00",
+   "link": "https://www.roblox.com/events/5745097671903937103",
+   "slug": "kick-a-lucky-block-spooky-pt-2-casa-bantuita",
+   "img": "img/24e599c39f3b.png",
+   "post_title": "🎃 Kick a Lucky Block: Spooky Pt. 2 a început, construiești casa bântuită",
+   "gameSlug": "kick-a-lucky-block",
+   "gameLabel": "Kick a Lucky Block"
+  },
+  {
+   "name": "Spooky Pt. 3! (Trick or Treat)",
+   "game": "Kick a Lucky Block",
+   "start": "2026-10-31T20:00:00+02:00",
+   "end": "2026-11-07T20:00:00+02:00",
+   "link": "https://www.roblox.com/events/8076304553139634796",
+   "slug": "kick-a-lucky-block-spooky-pt-2-casa-bantuita",
+   "img": "img/24e599c39f3b.png",
+   "post_title": "🎃 Kick a Lucky Block: Spooky Pt. 2 a început, construiești casa bântuită",
+   "gameSlug": "kick-a-lucky-block",
+   "gameLabel": "Kick a Lucky Block"
   },
   {
    "name": "CONCERT REVEAL (data neclară: descrierea zice mie 28 oct 17:00, cardul zice sâm 31 oct)",

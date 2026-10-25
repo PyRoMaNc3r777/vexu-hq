@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T07:35:39+02:00",
+ "generated": "2026-10-25T08:06:30+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,48 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "keyboard-escape-cg5-concert-o-saptamana",
+   "title": "🎤 +1 Speed Keyboard Escape: CG5 CONCERT e live o săptămână întreagă",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-25",
+   "dateRo": "25 octombrie 2026",
+   "published": "2026-10-25T08:06:30+02:00",
+   "img": "img/8be12a105e98.png",
+   "excerpt": "🎤 +1 Speed Keyboard Escape are un eveniment oficial nou: „CG5 CONCERT”, cu mesajul „JOIN US”. CONFIRMAT. • 📅 Început: sâmbătă, 24 oct, ora…",
+   "featured": false,
+   "section": null,
+   "joc": "+1 Speed Keyboard Escape",
+   "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "kick-a-lucky-block-spooky-pt-2-casa-bantuita",
+   "title": "🎃 Kick a Lucky Block: Spooky Pt. 2 a început, construiești casa bântuită",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-25",
+   "dateRo": "25 octombrie 2026",
+   "published": "2026-10-25T08:06:30+02:00",
+   "img": "img/24e599c39f3b.png",
+   "excerpt": "🎃 Kick a Lucky Block a pornit „Spooky Pt. 2!” (Spooky House). CONFIRMAT. 📅 Sâmbătă, 24 oct, 20:00 → sâmbătă, 31 oct, 20:00 (ora României)…",
+   "featured": false,
+   "section": null,
+   "joc": "Kick a Lucky Block",
+   "jocSlug": "kick-a-lucky-block",
    "prio": 0,
    "views": null,
    "updated": null,
