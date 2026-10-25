@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T17:05:39+02:00",
+ "generated": "2026-10-25T17:36:05+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -70,6 +70,52 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "playit-sunt-cel-mai-lent-om-poveste-5-9-milioane",
+   "title": "🐢 „Sunt cel mai lent om”: povestea playit care a trecut de 5,9 milioane în două zile",
+   "labels": [
+    "TREND SHORTS"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T11:55:00+02:00",
+   "img": "img/yt-7jpJRw9rYuM.jpg",
+   "cimg": "img/yt-7jpJRw9rYuM.jpg",
+   "fit": "cover",
+   "excerpt": "playit are un short Roblox, „Im The Slowest PERSON...”, de 144 de secunde, urcat pe 23 oct pe la 21:00 (ora României). 📊 Aprox. 5,96…",
+   "featured": false,
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "mashles-pov-gunoiul-noaptea-32-secunde-5-milioane",
+   "title": "🗑️ Nu-i nevoie de 12 ore de editare: un POV de 32 de secunde a ajuns la 5,3 milioane",
+   "labels": [
+    "TREND SHORTS"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T11:45:00+02:00",
+   "img": "img/yt-fitv60yXdpU.jpg",
+   "cimg": "img/yt-fitv60yXdpU.jpg",
+   "fit": "cover",
+   "excerpt": "Mashles are un short de 32 de secunde, „When you need to take out the trash at night 😭”, urcat pe 23 oct pe la 02:00 (ora României). 📊…",
+   "featured": false,
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
    "updated": null,
