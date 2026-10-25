@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T10:48:10+02:00",
+ "generated": "2026-10-25T11:40:50+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,27 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "secret-ascuns-pe-roblox-l-ai-gasit",
+   "title": "🔍 Secret ascuns pe Roblox 😱: l-ai găsit?",
+   "labels": [
+    "VEXU LIVE"
+   ],
+   "date": "2026-10-25",
+   "dateRo": "25 octombrie 2026",
+   "published": "2026-10-25T11:45:00+02:00",
+   "img": "img/secret-ascuns-EEwKOgBK618.jpg",
+   "excerpt": "Short-ul VEXU Online „Secret ascuns pe Roblox 😱” a trecut de 3,6K vizualizări (citit pe 21 oct, ~14:20 RO). Ce e secretul? Uită-te până la…",
+   "featured": false,
+   "section": null,
+   "joc": null,
+   "jocSlug": null,
    "prio": 0,
    "views": null,
    "updated": null,
@@ -4665,11 +4686,11 @@
    "excerpt": "Update 8 a adus Mounts în Steal An Egg, iar jocul a bătut recordul all-time, cu aproape 12 milioane de jucători în același timp. Pe…",
    "featured": false,
    "section": null,
-   "joc": null,
-   "jocSlug": null,
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
-   "updated": null,
+   "updated": "2026-10-25T11:45:00+02:00",
    "republish": false,
    "recap": null
   },
