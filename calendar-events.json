@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T17:36:05+02:00",
+ "generated": "2026-10-25T21:07:25+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -41,6 +41,31 @@
    ],
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "MASSIVE UPDATE",
+   "game": "Kukirin Life",
+   "start": "2026-10-30T21:00:00+02:00",
+   "end": "2026-10-30T22:00:00+02:00",
+   "link": "https://www.roblox.com/events/3942920349838082831",
+   "slug": "kukirin-life-massive-update-30-octombrie",
+   "img": "img/kukirin-life-massive-update.png",
+   "post_title": "🛴 Kukirin Life: MASSIVE UPDATE vineri, 30 oct, la 21:00, cu gang-uri refăcute, G4 Pro, G4 Max și Kukirin X1",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3942920349838082831"
+   ],
+   "gameSlug": "kukirin-life",
+   "gameLabel": "Kukirin Life",
+   "know": {
+    "known": [
+     "Oficial: gang-uri refăcute, mai multă personalizare, trotinete noi G4 Pro și G4 Max, e-bike-ul Kukirin X1 și curse"
+    ],
+    "unknown": [
+     "Prețuri și cum obții vehiculele noi: neanunțat",
+     "Ce mai vine („AND WAY MORE!”): neanunțat"
+    ]
+   }
   },
   {
    "name": "Route 9 (oră neanunțată)",
@@ -86,6 +111,31 @@
    ],
    "gameSlug": "cat-battles",
    "gameLabel": "Cat Battles"
+  },
+  {
+   "name": "Halloween Event",
+   "game": "Feed A Mosquito",
+   "start": "2026-10-26T04:00:00+02:00",
+   "end": "2026-11-09T04:00:00+02:00",
+   "link": "https://www.roblox.com/events/8761208986944013072",
+   "slug": "feed-a-mosquito-halloween-event-spinuri-gratis-tantari-limited",
+   "img": "img/feed-a-mosquito-halloween-event.png",
+   "post_title": "🦟 Feed A Mosquito: eventul de Halloween e LIVE până pe 9 nov, cu spin-uri gratis și țânțari Limited",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8761208986944013072"
+   ],
+   "gameSlug": "feed-a-mosquito",
+   "gameLabel": "Feed A Mosquito",
+   "know": {
+    "known": [
+     "Oficial: joci mai mult și primești spin-uri gratis la roată, iar pe roată sunt țânțari Limited („Play longer to earn free spins!”)"
+    ],
+    "unknown": [
+     "Cât trebuie să joci pentru un spin: neanunțat",
+     "Ce țânțari Limited sunt și cât de rari: neanunțat"
+    ]
+   }
   },
   {
    "name": "The Gateway Opens...",
@@ -139,10 +189,165 @@
    "post_title": "🔦 99 Nights in the Forest: mini-eventul The Hollow începe azi la 17:00",
    "label": "CONFIRMAT",
    "rids": [
-    "646550818396439186"
+    "646550818396439186",
+    "7446141309762536016",
+    "3495073213384360621",
+    "1046719890754503256",
+    "5480805094482117272",
+    "9185919240002208323"
    ],
    "gameSlug": "99-nights-in-the-forest",
    "gameLabel": "99 Nights in the Forest"
+  },
+  {
+   "name": "The Hollow — The Deer x Bundun (live)",
+   "game": "Roblox (platformă)",
+   "start": "2026-10-27T00:00:00+02:00",
+   "end": "2026-10-27T00:30:00+02:00",
+   "link": "https://www.roblox.com/events/7446141309762536016",
+   "slug": "99-nights-in-the-forest-mini-eventul-the-hollow-25-octombrie",
+   "img": "img/99-nights-the-hollow-mini-event.png",
+   "post_title": "🔦 99 Nights in the Forest: mini-eventul The Hollow începe azi la 17:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7446141309762536016",
+    "646550818396439186",
+    "3495073213384360621",
+    "1046719890754503256",
+    "5480805094482117272",
+    "9185919240002208323"
+   ],
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)",
+   "know": {
+    "title": "The Hollow: The Deer x Bundun",
+    "known": [
+     "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+    ],
+    "unknown": [
+     "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+    ]
+   }
+  },
+  {
+   "name": "The Hollow — Mimic Anomaly x Kat (live)",
+   "game": "Roblox (platformă)",
+   "start": "2026-10-28T21:00:00+02:00",
+   "end": "2026-10-28T21:30:00+02:00",
+   "link": "https://www.roblox.com/events/3495073213384360621",
+   "slug": "99-nights-in-the-forest-mini-eventul-the-hollow-25-octombrie",
+   "img": "img/99-nights-the-hollow-mini-event.png",
+   "post_title": "🔦 99 Nights in the Forest: mini-eventul The Hollow începe azi la 17:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3495073213384360621",
+    "646550818396439186",
+    "7446141309762536016",
+    "1046719890754503256",
+    "5480805094482117272",
+    "9185919240002208323"
+   ],
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)",
+   "know": {
+    "title": "The Hollow: Mimic Anomaly x Kat",
+    "known": [
+     "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+    ],
+    "unknown": [
+     "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+    ]
+   }
+  },
+  {
+   "name": "The Hollow — The Overseer x SirDapper (live)",
+   "game": "Roblox (platformă)",
+   "start": "2026-10-31T02:00:00+02:00",
+   "end": "2026-10-31T02:30:00+02:00",
+   "link": "https://www.roblox.com/events/1046719890754503256",
+   "slug": "99-nights-in-the-forest-mini-eventul-the-hollow-25-octombrie",
+   "img": "img/99-nights-the-hollow-mini-event.png",
+   "post_title": "🔦 99 Nights in the Forest: mini-eventul The Hollow începe azi la 17:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1046719890754503256",
+    "646550818396439186",
+    "7446141309762536016",
+    "3495073213384360621",
+    "5480805094482117272",
+    "9185919240002208323"
+   ],
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)",
+   "know": {
+    "title": "The Hollow: The Overseer x SirDapper",
+    "known": [
+     "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+    ],
+    "unknown": [
+     "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+    ]
+   }
+  },
+  {
+   "name": "The Hollow — Piggy x KreekCraft (live)",
+   "game": "Roblox (platformă)",
+   "start": "2026-10-31T18:30:00+02:00",
+   "end": "2026-10-31T19:00:00+02:00",
+   "link": "https://www.roblox.com/events/5480805094482117272",
+   "slug": "99-nights-in-the-forest-mini-eventul-the-hollow-25-octombrie",
+   "img": "img/99-nights-the-hollow-mini-event.png",
+   "post_title": "🔦 99 Nights in the Forest: mini-eventul The Hollow începe azi la 17:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5480805094482117272",
+    "646550818396439186",
+    "7446141309762536016",
+    "3495073213384360621",
+    "1046719890754503256",
+    "9185919240002208323"
+   ],
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)",
+   "know": {
+    "title": "The Hollow: Piggy x KreekCraft",
+    "known": [
+     "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+    ],
+    "unknown": [
+     "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+    ]
+   }
+  },
+  {
+   "name": "The Hollow — ????????? (live)",
+   "game": "Roblox (platformă)",
+   "start": "2026-10-31T19:30:00+02:00",
+   "end": "2026-10-31T20:00:00+02:00",
+   "link": "https://www.roblox.com/events/9185919240002208323",
+   "slug": "99-nights-in-the-forest-mini-eventul-the-hollow-25-octombrie",
+   "img": "img/99-nights-the-hollow-mini-event.png",
+   "post_title": "🔦 99 Nights in the Forest: mini-eventul The Hollow începe azi la 17:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "9185919240002208323",
+    "646550818396439186",
+    "7446141309762536016",
+    "3495073213384360621",
+    "1046719890754503256",
+    "5480805094482117272"
+   ],
+   "gameSlug": "roblox-platforma",
+   "gameLabel": "Roblox (platformă)",
+   "know": {
+    "title": "The Hollow: ?????????",
+    "known": [
+     "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+    ],
+    "unknown": [
+     "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+    ]
+   }
   },
   {
    "name": "Halloween (biciclete limitate)",
@@ -956,6 +1161,31 @@
    "gameLabel": "HUNTED (Dark Deception)"
   },
   {
+   "name": "Halloween - Part 2",
+   "game": "Animal Hospital",
+   "start": "2026-10-31T21:00:00+02:00",
+   "end": "2026-10-31T22:09:00+02:00",
+   "link": "https://www.roblox.com/events/2313857275611185804",
+   "slug": "animal-hospital-anomaly-eventul-de-halloween-skin-uri-limitate",
+   "img": "img/a5a93b3e5178.jpg",
+   "post_title": "Animal Hospital (Anomaly) a intrat în eventul de Halloween, cu skin-uri limitate",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2313857275611185804"
+   ],
+   "gameSlug": "animal-hospital",
+   "gameLabel": "Animal Hospital",
+   "know": {
+    "known": [
+     "Oficial: „We are expanding our halloween update with more content and new frights!”"
+    ],
+    "unknown": [
+     "Ce conținut nou vine: nu există detalii, descrierea e goală",
+     "Recompense sau skin-uri noi: neanunțate"
+    ]
+   }
+  },
+  {
    "name": "Intră în vigoare noii Termeni Roblox",
    "game": "Roblox",
    "start_date": "2026-11-01",
@@ -1412,6 +1642,7 @@
    "game": "Fisch",
    "start": "2026-10-17T19:00:00+03:00",
    "end": "2026-11-09T19:00:00+02:00",
+   "link": "https://www.roblox.com/events/2306862479306785401",
    "slug": "fisch-fischfright-3-editia-anuala-de-halloween",
    "img": "game-fisch.png",
    "post_title": "🐟 Fisch: FischFright 3, ediția anuală de Halloween",

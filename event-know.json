@@ -48,6 +48,94 @@
     "Ce anume vine în joc: secret",
     "Ce ai de făcut și ce recompense sunt: neanunțat"
    ]
+  },
+  {
+   "game": "Feed A Mosquito",
+   "name": "Halloween Event",
+   "known": [
+    "Oficial: joci mai mult și primești spin-uri gratis la roată, iar pe roată sunt țânțari Limited („Play longer to earn free spins!”)"
+   ],
+   "unknown": [
+    "Cât trebuie să joci pentru un spin: neanunțat",
+    "Ce țânțari Limited sunt și cât de rari: neanunțat"
+   ]
+  },
+  {
+   "game": "Kukirin Life",
+   "name": "MASSIVE UPDATE",
+   "known": [
+    "Oficial: gang-uri refăcute, mai multă personalizare, trotinete noi G4 Pro și G4 Max, e-bike-ul Kukirin X1 și curse"
+   ],
+   "unknown": [
+    "Prețuri și cum obții vehiculele noi: neanunțat",
+    "Ce mai vine („AND WAY MORE!”): neanunțat"
+   ]
+  },
+  {
+   "game": "Animal Hospital",
+   "name": "Halloween - Part 2",
+   "known": [
+    "Oficial: „We are expanding our halloween update with more content and new frights!”"
+   ],
+   "unknown": [
+    "Ce conținut nou vine: nu există detalii, descrierea e goală",
+    "Recompense sau skin-uri noi: neanunțate"
+   ]
+  },
+  {
+   "game": "Roblox (platformă)",
+   "name": "The Hollow — The Deer x Bundun (live)",
+   "title": "The Hollow: The Deer x Bundun",
+   "known": [
+    "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+   ],
+   "unknown": [
+    "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+   ]
+  },
+  {
+   "game": "Roblox (platformă)",
+   "name": "The Hollow — Mimic Anomaly x Kat (live)",
+   "title": "The Hollow: Mimic Anomaly x Kat",
+   "known": [
+    "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+   ],
+   "unknown": [
+    "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+   ]
+  },
+  {
+   "game": "Roblox (platformă)",
+   "name": "The Hollow — The Overseer x SirDapper (live)",
+   "title": "The Hollow: The Overseer x SirDapper",
+   "known": [
+    "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+   ],
+   "unknown": [
+    "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+   ]
+  },
+  {
+   "game": "Roblox (platformă)",
+   "name": "The Hollow — Piggy x KreekCraft (live)",
+   "title": "The Hollow: Piggy x KreekCraft",
+   "known": [
+    "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+   ],
+   "unknown": [
+    "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+   ]
+  },
+  {
+   "game": "Roblox (platformă)",
+   "name": "The Hollow — ????????? (live)",
+   "title": "The Hollow: ?????????",
+   "known": [
+    "Livestream Event oficial de 30 de minute în jocul The Hollow (Roblox Presents)"
+   ],
+   "unknown": [
+    "Ce se întâmplă în live și dacă primești ceva: descrierea oficială e goală"
+   ]
   }
  ]
 }
