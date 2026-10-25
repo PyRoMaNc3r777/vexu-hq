@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T12:33:53+02:00",
+ "generated": "2026-10-25T13:38:03+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -22,6 +22,18 @@
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "Turbo Soccer — TURBOWEEN Part 1",
+   "game": "Turbo Soccer",
+   "start": "2026-10-25T19:00:00+02:00",
+   "end": "2026-11-01T19:00:00+02:00",
+   "link": "https://www.roblox.com/events/8084980884387791461",
+   "slug": "turbo-soccer-al-3-lea-joc-de-sport-peste-blue-lock-rivals",
+   "img": "img/turbo-soccer-turboween-part1.png",
+   "post_title": "⚽ Turbo Soccer: la 4 săptămâni, al 3-lea joc de sport pe Roblox, peste Blue Lock: Rivals + TURBOWEEN",
+   "gameSlug": "turbo-soccer",
+   "gameLabel": "Turbo Soccer"
   },
   {
    "name": "The Hollow — mini challenge",
