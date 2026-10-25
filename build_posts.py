@@ -139,18 +139,52 @@ def gdot(j):
     return f'<i class="gd" style="--h:{h}"></i>'
 YT_RE = re.compile(r'(?:youtube\.com/(?:shorts/|watch\?v=)|youtu\.be/)([\w-]{11})')
 SHORTS = []  # umplut de build_post_pages: Short-urile din postările TREND SHORTS (id YouTube + postarea care le acoperă)
+# miniaturi de joc (pătrate/16:9) folosite ca imagine de rezervă când postarea n-are una proprie (icon.png, generic-neon, SVG)
+GAME_THUMB = {'99-nights-in-the-forest': 'game-99-nights.png', 'adopt-me': 'game-adopt-me.png', 'blox-fruits': 'game-blox-fruits.png',
+              'brookhaven': 'game-brookhaven.png', 'dandy-s-world': 'game-dandys-world.png', 'dead-rails': 'game-dead-rails.png',
+              'doors': 'game-doors.png', 'dress-to-impress': 'game-dress-to-impress.png', 'fisch': 'game-fisch.png', 'forsaken': 'game-forsaken.png',
+              'grow-a-garden': 'game-grow-a-garden.png', '1-speed-keyboard-escape': 'game-keyboard-escape.png', 'pet-simulator-99': 'game-pet-sim-99.png',
+              'rivals': 'game-rivals.png', 'steal-an-egg': 'game-steal-an-egg.png', 'tower-defense-simulator': 'game-tds.png'}
+NO_IMG = {'icon.png', 'generic-neon.png'}
+def _dims(path):
+    try:
+        from PIL import Image
+        return Image.open(os.path.join(D, path)).size
+    except Exception:
+        return None
+def card_img(img, jslug):
+    """(cale imagine, mod): 'cover' = foto 16:9 tăiată; 'icon' = imagine pătrată/portret, încadrată întreagă pe fundal plat;
+    'none' = fără imagine utilizabilă → bloc plat cu culoarea și numele jocului."""
+    b = os.path.basename(img or '')
+    if (not img) or img.endswith('.svg') or b in NO_IMG:
+        t = GAME_THUMB.get(jslug or '')
+        if not (t and os.path.exists(os.path.join(D, t))):
+            return '', 'none'
+        img = t
+    d = _dims(img)
+    return img, ('icon' if d and d[0] / d[1] < 1.2 else 'cover')
+def ghue(jslug):
+    h = 0
+    for ch in (jslug or ''):
+        h = (h * 31 + ord(ch)) % 360
+    return h
+def card_html(slug_, title, labels, date_ro, img, fit, joc, jslug, excerpt, pre='posts/', ip='', first=False, h='h2', ex=True, views=None, attrs='', tip=''):
+    """Cardul unic pentru toate listele (același markup ca VF.cardHtml din feed.js). pre = prefix link, ip = prefix imagine."""
+    gm = f'<span class="gm">{gdot(joc)}{e(joc)}</span>' if joc else ''
+    rib = '<span class="ribs">' + ''.join(f'<span class="rib {cls(l)}">{e(l)}</span>' for l in labels) + '</span>'
+    media = (f'<img class="fx" src="{ip}{e(img)}" alt="" width="640" height="360"{" fetchpriority=\"high\"" if first else " loading=\"lazy\""}>' if fit != 'none'
+             else f'<span class="fb">{e(joc or "VEXU HQ")}</span>')
+    sv = f'<span class="sv">{fmt_views(views)}</span>' if views is not None else ''
+    return (f'<a class="pc {cls(labels[0])}" href="{pre}{e(slug_)}.html"{attrs}{tip}><span class="im f-{fit}" style="--h:{ghue(jslug)}">{media}{rib}{sv}</span>'
+            f'<span class="b"><span class="mt"><span class="dt">{e(date_ro)}</span>{gm}</span><{h}>{e(ne(title))}</{h}>'
+            + (f'<span class="ex">{e(excerpt)}</span>' if ex else '') + '</span></a>')
 def pcard(q, pre, h='h3', big=False, ex=True):
-    """Card cu imagine 16:9 + panglică de etichetă (randat la build: pagini de joc, „Mai citește”)."""
-    qs = q.get('slug') or slug(q['titlu']); first = cls(labels_of(q)[0])
-    gm = f'<span class="gm">{gdot(joc_of(q))}{e(joc_of(q))}</span>' if joc_of(q) else ''
-    return (f'<a class="pc {first}{" big" if big else ""}" href="{pre}{e(qs)}.html"><span class="im"><img class="fx" src="{"../" if pre.startswith("../") or pre == "" else ""}{e(q["img"])}" alt="" width="640" height="360" loading="lazy">{ribs(q)}</span>'
-            f'<span class="b"><span class="mt"><span class="dt">{ro_date(q["date"])}</span>{gm}</span><{h}>{e(ne(q["titlu"]))}</{h}>'
-            + (f'<span class="ex">{e(excerpt_of(q))}</span>' if ex else '') + '</span></a>')
+    """Card pentru pagini de joc și „Mai citește” (randat la build)."""
+    qs = q.get('slug') or slug(q['titlu']); j = joc_of(q); js_ = joc_slug(j) if j else None
+    img, fit = card_img(q['img'], js_)
+    return card_html(qs, q['titlu'], labels_of(q), ro_date(q['date']), img, fit, j, js_, excerpt_of(q), pre, '../' if (pre.startswith('../') or pre == '') else '', first=big, h=h, ex=ex)
 def prow(q, pre='../posts/'):
-    qs = q.get('slug') or slug(q['titlu']); first = cls(labels_of(q)[0])
-    gm = f'<span class="gm">{gdot(joc_of(q))}{e(joc_of(q))}</span>' if joc_of(q) else ''
-    return (f'<a class="p {first}" href="{pre}{e(qs)}.html"><span class="im"><img class="fx" src="../{e(q["img"])}" alt="" width="296" height="185" loading="lazy"></span>'
-            f'<span class="b"><span class="mt">{chips(q)}<span class="dt">{ro_date(q["date"])}</span></span><h2>{e(ne(q["titlu"]))}</h2><span class="ex">{e(excerpt_of(q))}</span>{gm}</span></a>')
+    return pcard(q, pre, 'h2')
 URL = re.compile(r'https?://[^\s()<>]+[^\s()<>.,;:!?]')
 def link(t): return URL.sub(lambda m: f'<a href="{m.group(0)}" target="_blank" rel="noopener">{m.group(0)}</a>', e(t))
 THUMB = re.compile(r'^!\[([^\]]*)\]\((img/[A-Za-z0-9._-]+)\)$')  # thumbnail în text: ![alt](img/x.jpg)
@@ -178,7 +212,7 @@ CTA = ('<div class="cta"><b>Follow = Au ce bile! 💥</b>'
 
 BLOG_JS = r"""
 <script>
-const TZ='Europe/Bucharest', PAGE=10, TOP=5;
+const TZ='Europe/Bucharest', PAGE=12;
 const es=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const cls=l=>l.replace(/[^A-Za-z0-9]+/g,'-');
 const fid=l=>l.toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'');
@@ -219,21 +253,7 @@ function qmatch(p,t){return !t.length||t.every(w=>hay(p).includes(w))}
 function fmatch(p,f){return f==='toate'||(p.labels||[]).some(l=>fid(l)===f)}
 function loadSearch(){if(SEARCH||sLoading)return; sLoading=true;
   fetch('posts-search.json?'+Date.now()).then(r=>r.json()).then(d=>{SEARCH=d; if(q.trim()) paint()}).catch(()=>{sLoading=false})}
-function chipsHtml(labels,date){return labels.map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')+`<span class="dt">${es(date)}</span>`}
-// insignă „NOU” pentru postările publicate în ultimele 6 ore (din câmpul published, ora reală)
-function newBadge(p){const t=Date.parse(p.published||''); if(!t)return ''; const m=Math.floor((Date.now()-t)/6e4); if(m<0||m>=360)return '';
-  return `<span class="nou">NOU · ${m<1?'acum':m<60?m+' min':Math.floor(m/60)+' h'}</span>`}
-function gHue(k){let h=0;k=String(k||'');for(let i=0;i<k.length;i++)h=(h*31+k.charCodeAt(i))%360;return h}
-const gmHtml=p=>p.joc?`<span class="gm"><i class="gd" style="--h:${gHue(p.jocSlug)}"></i>${es(p.joc)}</span>`:'';
-const ribs=p=>`<span class="ribs">${(p.labels||[]).map(l=>`<span class="rib ${cls(l)}">${es(l)}</span>`).join('')}</span>`;
-// card mare cu imagine 16:9 (primele postări)
-function bigHtml(p, big){
-  return `<a class="pc ${cls((p.labels||[''])[0])}${big?' big':''}" href="posts/${es(p.slug)}.html"><span class="im"><img class="fx" src="${es(p.img)}" alt="" width="640" height="360"${big?' fetchpriority="high"':' loading="lazy"'}>${ribs(p)}</span><span class="b"><span class="mt"><span class="dt">${es(p.dateRo)}</span>${gmHtml(p)}${newBadge(p)}</span><h2>${es(ne(p.title))}</h2><span class="ex">${es(p.excerpt)}</span></span></a>`;
-}
-// rând dens (restul feed-ului)
-function cardHtml(p){
-  return `<a class="p ${cls((p.labels||[''])[0])}" href="posts/${es(p.slug)}.html"><span class="im"><img class="fx" src="${es(p.img)}" alt="" width="296" height="185" loading="lazy"></span><span class="b"><span class="mt">${chipsHtml(p.labels||[],p.dateRo)}${newBadge(p)}</span><h2>${es(ne(p.title))}</h2><span class="ex">${es(p.excerpt)}</span>${gmHtml(p)}</span></a>`;
-}
+const cardHtml=(p,first)=>VF.cardHtml(p,{first});
 function renderFilters(t){
   const base=ALL.filter(p=>qmatch(p,t));
   document.getElementById('filters').innerHTML=FILTERS.map(f=>`<button type="button" class="chip${filter===f.id?' on':''}" data-f="${es(f.id)}" aria-pressed="${filter===f.id}">${es(f.label)}<span class="n">${base.filter(p=>gmatch(p,game)&&fmatch(p,f.id)).length}</span></button>`).join('');
@@ -250,51 +270,45 @@ function paint(){
   const t=terms();
   renderFilters(t);
   const ok=p=>fmatch(p,filter)&&gmatch(p,game)&&qmatch(p,t);
-  // un singur post evidențiat sus; celelalte marcate featured rămân în feed (cronologic), nu dispar
-  const feat=ALL.find(p=>p.featured && ok(p) && (Date.now()-(Date.parse(p.published)||0))<72*36e5); // fixat sus doar cât e proaspăt (72h)
-  const rest=ALL.filter(p=>p!==feat && ok(p)).sort((a,b)=>(Date.parse(b.published)||0)-(Date.parse(a.published)||0));
-  const ordered=feat?[feat].concat(rest):rest;
-  const top=ordered.slice(0,TOP); LIST=ordered.slice(TOP);
-  const want=shown,same=SSR&&!t.length&&filter==='toate'&&game==='toate'&&hydrate(top,LIST);
+  LIST=ALL.filter(ok).sort((a,b)=>(Date.parse(b.published)||0)-(Date.parse(a.published)||0)); // cronologic, toate la fel
+  const want=shown,same=SSR&&!t.length&&filter==='toate'&&game==='toate'&&hydrate(LIST);
   SSR=false;
   if(same)while(shown<Math.min(LIST.length,want))appendMore();
   if(!same){
-    document.getElementById('featSlot').innerHTML=top.length?`<div class="cards mag">${top.map((p,i)=>bigHtml(p,i===0)).join('')}</div>`:'';
     shown=Math.min(LIST.length,Math.max(shown,PAGE));
-    let html=feedChunk(0,shown,true);
-    if(!top.length) html=t.length?`<div class="empty">Nicio știre găsită pentru „${es(q.trim())}”${filter!=='toate'?' pe filtrele astea':''}.</div>`:'<div class="empty">Nicio postare pe filtrele astea.</div>';
-    document.getElementById('feed').innerHTML=html;
+    document.getElementById('feed').innerHTML=LIST.length?feedChunk(0,shown):(t.length?`<div class="empty">Nicio știre găsită pentru „${es(q.trim())}”${filter!=='toate'?' pe filtrele astea':''}.</div>`:'<div class="empty">Nicio postare pe filtrele astea.</div>');
   }
-  const n=ordered.length;
+  const n=LIST.length;
   document.getElementById('qinfo').textContent=t.length?(n===1?'1 rezultat':`${n} rezultate`)+(SEARCH?'':' (se încarcă textul complet…)'):(filter!=='toate'||game!=='toate'?`${n} ${n===1?'știre':'știri'}`:'');
   document.getElementById('qx').style.visibility=q?'visible':'hidden';
-  document.getElementById('sent').style.display=top.length?'':'none';
+  document.getElementById('sent').style.display=n?'':'none';
   if(ES)ES.refresh();
 }
 // HTML-ul generat la build (primele carduri, pentru SEO / fără JS) e păstrat dacă e identic cu ce am randa acum; doar corectăm etichetele de zi și insignele NOU
 let SSR=true,LIST=[],ES=null;
-function hydrate(top,list){
-  const fs=document.getElementById('featSlot'),fd=document.getElementById('feed');if(!fs||!fd||!fd.dataset.ssr)return false;
-  const hs=[...fs.querySelectorAll('a.pc')].concat([...fd.querySelectorAll('a.p')]).map(a=>a.getAttribute('href').replace(/^posts\//,'').replace(/\.html$/,''));
-  const want=top.map(p=>p.slug).concat(list.slice(0,hs.length-top.length).map(p=>p.slug));
-  if(hs.length!==want.length||hs.some((x,i)=>x!==want[i])||hs.length<top.length)return false;
-  const by=new Map(ALL.map(p=>[p.slug,p]));
+const slugOf=a=>a.getAttribute('href').replace(/^posts\//,'').replace(/\.html$/,'');
+function hydrate(list){
+  const fd=document.getElementById('feed');if(!fd||!fd.dataset.ssr)return false;
+  const cs=[...fd.querySelectorAll('a.pc')],hs=cs.map(slugOf);
+  if(!hs.length||hs.length>list.length||hs.some((x,i)=>x!==list[i].slug))return false;
   fd.querySelectorAll('.dayh').forEach(h=>h.textContent=dayLabel(h.dataset.k));
-  document.querySelectorAll('#featSlot a.pc,#feed a.p').forEach(a=>{const p=by.get(a.getAttribute('href').replace(/^posts\//,'').replace(/\.html$/,''));const b=p&&newBadge(p);if(b){const m=a.querySelector('.mt');if(m)m.insertAdjacentHTML('beforeend',b)}});
-  shown=Math.max(0,hs.length-top.length);return true}
-// randează list[a..b) cu antete de zi; continuă grupul de zi deja deschis când e cazul
-function feedChunk(a,b,fresh){let html='',last=a>0?dayKey(LIST[a-1].published||LIST[a-1].date):'',open=!fresh&&a>0;
+  cs.forEach((a,i)=>{const b=VF.nouHtml(list[i]);if(b)a.querySelector('.im').insertAdjacentHTML('beforeend',b)});
+  shown=hs.length;return true}
+// randează LIST[a..b) cu antete de zi; când e vorba de continuarea ultimei zile, nu se mai pune antet
+function feedChunk(a,b){let html='',last=a>0?dayKey(LIST[a-1].published||LIST[a-1].date):'',open=false;
   for(let i=a;i<b;i++){const p=LIST[i],k=dayKey(p.published||p.date);
-    if(k!==last){if(open&&(i>a||fresh))html+='</div>';html+=`<h2 class="dayh" data-k="${k}">${es(dayLabel(k))}</h2><div class="grid">`;open=true;last=k}
-    html+=cardHtml(p)}
-  if(open&&fresh)html+='</div>';return html}
+    if(k!==last){if(open)html+='</div>';html+=`<h2 class="dayh" data-k="${k}">${es(dayLabel(k))}</h2><div class="cards">`;open=true;last=k}
+    html+=cardHtml(p,i===0)}
+  if(open)html+='</div>';return html}
 function appendMore(){const a=shown,b=Math.min(LIST.length,shown+PAGE);if(a>=b)return;const fd=document.getElementById('feed');
-  const k0=dayKey(LIST[a].published||LIST[a].date),k1=a>0?dayKey(LIST[a-1].published||LIST[a-1].date):'';let html='',last=k1;
-  for(let i=a;i<b;i++){const p=LIST[i],k=dayKey(p.published||p.date);if(k!==last){html+=`</div><h2 class="dayh" data-k="${k}">${es(dayLabel(k))}</h2><div class="grid">`;last=k}html+=cardHtml(p)}
-  // primul grup continuă ultimul .grid existent; restul deschid grupuri noi
-  const grids=fd.querySelectorAll('.grid'),lg=grids[grids.length-1];
-  if(!lg){fd.insertAdjacentHTML('beforeend',feedChunk(0,b,true))}
-  else{const parts=html.split('</div><h2');lg.insertAdjacentHTML('beforeend',parts[0]);if(parts.length>1)fd.insertAdjacentHTML('beforeend','<h2'+parts.slice(1).join('</div><h2')+'</div>')}
+  const k1=a>0?dayKey(LIST[a-1].published||LIST[a-1].date):'';let html='',last=k1,cont='',open=false;
+  for(let i=a;i<b;i++){const p=LIST[i],k=dayKey(p.published||p.date);
+    if(k!==last){if(open)html+='</div>';html+=`<h2 class="dayh" data-k="${k}">${es(dayLabel(k))}</h2><div class="cards">`;open=true;last=k}
+    (open?html+=cardHtml(p):cont+=cardHtml(p))}
+  if(open)html+='</div>';
+  const grids=fd.querySelectorAll('.cards'),lg=grids[grids.length-1];
+  if(cont&&lg)lg.insertAdjacentHTML('beforeend',cont);
+  fd.insertAdjacentHTML('beforeend',html);
   shown=b;saveState()}
 // poziția + câte postări sunt încărcate (revenirea din postare: Back)
 const SK='vexu-blog';let sv=0;
@@ -454,6 +468,8 @@ def build_post_pages(posts):
             'dateRo': ro_date(p['date']),
             'published': pub_key(p),
             'img': p['img'],
+            'cimg': card_img(p['img'], joc_slug(joc_of(p)) if joc_of(p) else None)[0],
+            'fit': card_img(p['img'], joc_slug(joc_of(p)) if joc_of(p) else None)[1],
             'excerpt': excerpt_of(p),
             'featured': bool(p.get('featured')),
             'section': p.get('section'),
@@ -469,7 +485,7 @@ def build_post_pages(posts):
         ym = next((YT_RE.search(u) for u in p.get('surse', []) if YT_RE.search(u)), None)
         if ym and 'TREND SHORTS' in item['labels']:
             SHORTS.append({'id': ym.group(1), 'slug': s, 'title': ne(p['titlu']), 'joc': item['joc'], 'jocSlug': item['jocSlug'],
-                           'published': item['published'], 'img': p['img']})
+                           'published': item['published'], 'img': item['cimg'], 'fit': item['fit'], 'labels': item['labels'], 'excerpt': item['excerpt']})
         search[s] = search_text(p)
         for ev in p.get('events', []):
             ce = dict(ev)
@@ -542,11 +558,10 @@ def build_game_pages(posts):
     made = set()
     for js, (j, ps) in sorted(groups.items()):
         ps = sorted(ps, key=pub_key, reverse=True)
-        top = ''.join(pcard(q, '../posts/', 'h2', big=(k == 0)) for k, q in enumerate(ps[:5]))
-        JOC_PAGE = 11  # 5 carduri mari + 11 rânduri = 16 în HTML; restul vin prin derulare infinită din posts-index.json
-        rows = ''.join(prow(q) for q in ps[5:5 + JOC_PAGE])
-        rest = ps[5 + JOC_PAGE:]
-        cards = f'<div class="cards mag">{top}</div>' + (f'<h2 class="dayh">Mai vechi</h2><div class="grid" id="jgrid" data-js="{e(js)}" data-rest="{len(rest)}">{rows}</div>' if rows else '')
+        JOC_PAGE = 16  # primele 16 carduri sunt în HTML; restul vin prin derulare infinită din posts-index.json
+        rows = ''.join(prow(q) for q in ps[:JOC_PAGE])
+        rest = ps[JOC_PAGE:]
+        cards = f'<div class="cards" id="jgrid" data-js="{e(js)}" data-rest="{len(rest)}">{rows}</div>'
         if rest:
             cards += ('<div class="sent" id="sent"></div><div id="moreWrap"><button type="button" class="btn" id="moreBtn" style="display:none">Vezi mai multe</button></div>'
                       '<noscript><ul class="arch">' + ''.join(f'<li><a href="../posts/{e(q.get("slug") or slug(q["titlu"]))}.html">{e(ne(q["titlu"]))}</a> <span class="dt">{ro_date(q["date"])}</span></li>' for q in rest) + '</ul></noscript>')
@@ -565,19 +580,13 @@ def build_game_pages(posts):
     return groups
 
 ZILE = ['luni', 'marți', 'miercuri', 'joi', 'vineri', 'sâmbătă', 'duminică']
-BLOG_TOP, BLOG_PAGE = 5, 10  # la fel ca TOP/PAGE din BLOG_JS: primele 15 carduri sunt în HTML
+BLOG_PAGE = 12  # la fel ca PAGE din BLOG_JS: primele 12 carduri sunt în HTML
 def _gm(it):
     return f'<span class="gm">{gdot(it["joc"])}{e(it["joc"])}</span>' if it.get('joc') else ''
 def _ribs(it):
     return '<span class="ribs">' + ''.join(f'<span class="rib {cls(l)}">{e(l)}</span>' for l in it['labels']) + '</span>'
-def ssr_big(it, big, pre='posts/', ip=''):
-    return (f'<a class="pc {cls(it["labels"][0])}{" big" if big else ""}" href="{pre}{e(it["slug"])}.html"><span class="im"><img class="fx" src="{ip}{e(it["img"])}" alt="" width="640" height="360"'
-            f'{" fetchpriority=\"high\"" if big else " loading=\"lazy\""}>{_ribs(it)}</span><span class="b"><span class="mt"><span class="dt">{e(it["dateRo"])}</span>{_gm(it)}</span>'
-            f'<h2>{e(ne(it["title"]))}</h2><span class="ex">{e(it["excerpt"])}</span></span></a>')
-def ssr_row(it, pre='posts/', ip=''):
-    chips_ = ' '.join(f'<span class="l {cls(l)}">{e(l)}</span>' for l in it['labels']) + f'<span class="dt">{e(it["dateRo"])}</span>'
-    return (f'<a class="p {cls(it["labels"][0])}" href="{pre}{e(it["slug"])}.html"><span class="im"><img class="fx" src="{ip}{e(it["img"])}" alt="" width="296" height="185" loading="lazy"></span>'
-            f'<span class="b"><span class="mt">{chips_}</span><h2>{e(ne(it["title"]))}</h2><span class="ex">{e(it["excerpt"])}</span>{_gm(it)}</span></a>')
+def ssr_card(it, pre='posts/', ip='', first=False):
+    return card_html(it['slug'], it['title'], it['labels'], it['dateRo'], it['cimg'], it['fit'], it.get('joc'), it.get('jocSlug'), it['excerpt'], pre, ip, first=first)
 def day_label(k):
     from datetime import date, timedelta
     d = date.fromisoformat(k); t = now_ro().date()
@@ -585,24 +594,19 @@ def day_label(k):
     if d == t - timedelta(days=1): return 'Ieri'
     return f'{ZILE[d.weekday()]}, {d.day} {LUNI[d.month-1]}'
 def blog_order(items):
-    """Aceeași ordine ca în BLOG_JS: o postare featured proaspătă (<72h) sus, restul cronologic."""
-    now = now_ro()
-    feat = next((x for x in items if x['featured'] and (now - datetime.fromisoformat(x['published'])).total_seconds() < 72 * 3600), None)
-    rest = sorted([x for x in items if x is not feat], key=lambda x: datetime.fromisoformat(x['published']), reverse=True)
-    return ([feat] if feat else []) + rest
+    """Cronologic (cele mai noi primele), la fel ca în BLOG_JS."""
+    return sorted(items, key=lambda x: datetime.fromisoformat(x['published']), reverse=True)
 
 def build_blog(items):
     order = blog_order(items)
-    top, lst = order[:BLOG_TOP], order[BLOG_TOP:]
-    first, arch = lst[:BLOG_PAGE], lst[BLOG_PAGE:]
-    feat_html = '<div class="cards mag">' + ''.join(ssr_big(x, i == 0) for i, x in enumerate(top)) + '</div>'
+    first, arch = order[:BLOG_PAGE], order[BLOG_PAGE:]
     rows, last = '', ''
-    for x in first:
+    for n_, x in enumerate(first):
         k = x['published'][:10]
         if k != last:
             if last: rows += '</div>'
-            rows += f'<h2 class="dayh" data-k="{k}">{e(day_label(k))}</h2><div class="grid">'; last = k
-        rows += ssr_row(x)
+            rows += f'<h2 class="dayh" data-k="{k}">{e(day_label(k))}</h2><div class="cards">'; last = k
+        rows += ssr_card(x, first=(n_ == 0))
     rows += '</div>'
     archive = ''.join(f'<li><a href="posts/{e(x["slug"])}.html">{e(ne(x["title"]))}</a> <span class="dt">{e(x["dateRo"])}</span></li>' for x in arch)
     noscript = ('<noscript><p class="rsub">Activează JavaScript pentru filtre, căutare și derularea infinită. Fără JavaScript, restul postărilor sunt aici:</p>'
@@ -613,7 +617,7 @@ def build_blog(items):
             f'<div class="filters" id="filters"></div>'
             f'<div class="ftitle">Jocuri</div><div class="filters" id="gfilters" role="toolbar" aria-label="Filtru după joc"></div>'
             f'<div class="gpage" id="gpage"></div>'
-            f'<div id="featSlot">{feat_html}</div><div id="feed" data-ssr="1">{rows}</div>'
+            f'<div id="feed" data-ssr="1">{rows}</div>'
             f'<div class="sent" id="sent"></div><div id="moreWrap"><button type="button" class="btn" id="moreBtn" style="display:none">Vezi mai multe</button></div>'
             f'{noscript}{CTA}')
     open(os.path.join(D, 'blog.html'), 'w', encoding='utf-8').write(page('VEXU HQ · Știri', body, FEED_SRC + BLOG_JS, 'blog'))
@@ -654,7 +658,7 @@ const byT=(a,b)=>Date.parse(b.published)-Date.parse(a.published);
 function build(){LIST=ALL.filter(s=>game==='toate'||s.jocSlug===game).sort(sort==='views'?(a,b)=>((b.views==null?-1:b.views)-(a.views==null?-1:a.views))||byT(a,b):byT)}
 function hydrate(){if(!ssr||sort!=='new'||game!=='toate')return false;const ids=[...grid.children].map(c=>c.dataset.id);
   if(!ids.length||ids.some((x,i)=>!LIST[i]||LIST[i].id!==x))return false;shown=ids.length;
-  [...grid.children].forEach(c=>{const s=LIST.find(x=>x.id===c.dataset.id);if(!s||typeof s.views!=='number')return;c.dataset.v=s.views;let b=c.querySelector('.sv');if(!b){b=document.createElement('span');b.className='sv';c.querySelector('.sim').appendChild(b)}b.textContent=nv(s.views);if(s.views_t)c.title=s.views.toLocaleString('ro-RO')+' vizionări, citite pe YouTube '+dtRo(s.views_t)});return true}
+  [...grid.children].forEach(c=>{const s=LIST.find(x=>x.id===c.dataset.id);if(!s||typeof s.views!=='number')return;c.dataset.v=s.views;let b=c.querySelector('.sv');if(!b){b=document.createElement('span');b.className='sv';c.querySelector('.im').appendChild(b)}b.textContent=nv(s.views);if(s.views_t)c.title=s.views.toLocaleString('ro-RO')+' vizionări, citite pe YouTube '+dtRo(s.views_t)});return true}
 function paint(reset){build();if(reset)shown=PAGE;shown=Math.min(shown,LIST.length);
   if(!(hydrate())){grid.innerHTML=LIST.slice(0,shown).map(s=>shortHtml(s,'')).join('')}
   ssr=false;
@@ -680,12 +684,9 @@ def short_cards(shorts, pre=''):
     for x in shorts:
         v = x.get('views')
         t = int(datetime.fromisoformat(x['published']).timestamp() * 1000)
-        gm = f'<span class="gm">{gdot(x["joc"])}{e(x["joc"])}</span>' if x.get('joc') else ''
-        out.append(
-            f'<a class="sc" href="{pre}posts/{e(x["slug"])}.html" data-id="{e(x["id"])}" data-g="{e(x.get("jocSlug") or "")}" data-t="{t}" data-v="{v if v is not None else ""}">'
-            f'<span class="sim"><img class="fx" src="{pre}{e(x["img"])}" alt="" width="405" height="720" loading="lazy">'
-            + (f'<span class="sv">{fmt_views(v)}</span>' if v is not None else '') +
-            f'</span><span class="sb">{gm}<b class="st">{e(x["title"])}</b><span class="sd">{ro_date(x["published"][:10])}</span></span></a>')
+        out.append(card_html(x['slug'], x['title'], x.get('labels') or ['TREND SHORTS'], ro_date(x['published'][:10]), x['img'], x.get('fit', 'cover'), x.get('joc'), x.get('jocSlug'),
+                             x.get('excerpt', ''), pre + 'posts/', pre, views=v,
+                             attrs=f' data-id="{e(x["id"])}" data-g="{e(x.get("jocSlug") or "")}" data-t="{t}" data-v="{v if v is not None else ""}"'))
     return ''.join(out)
 
 SHORTS_PAGE = 16
@@ -712,7 +713,7 @@ def build_shorts():
             '<div class="stool"><div class="seg" id="sSort" role="tablist" aria-label="Sortare"><button type="button" role="tab" data-s="new" aria-selected="true">Cele mai noi</button>'
             '<button type="button" role="tab" data-s="views" aria-selected="false">Cele mai văzute</button></div><span class="sct" id="scount"></span></div>'
             f'<div class="filters" id="sgames" role="toolbar" aria-label="Filtru după joc">{chips_}</div>'
-            f'<div class="sgrid" id="sgrid">{short_cards(items[:SHORTS_PAGE])}</div><div class="sent" id="sent"></div>'
+            f'<div class="cards" id="sgrid">{short_cards(items[:SHORTS_PAGE])}</div><div class="sent" id="sent"></div>'
             '<div id="moreWrap"><button type="button" class="btn" id="moreBtn" style="display:none">Vezi mai multe</button></div>'
             + '<noscript><p class="rsub">Fără JavaScript, restul Short-urilor sunt aici:</p><ul class="arch">' + ''.join(f'<li><a href="posts/{e(x["slug"])}.html">{e(x["title"])}</a> <span class="dt">{ro_date(x["published"][:10])}</span></li>' for x in items[SHORTS_PAGE:]) + '</ul></noscript>'
             '<p class="snote" id="snote">' + ('Vizionările sunt citite de pe YouTube; ultima citire: ' + (lambda d: f'{d.day} {LUNI[d.month-1]}, {d:%H:%M}')(datetime.fromisoformat(upd.replace('Z', '+00:00')).astimezone(TZ)) + ' (ora României). Cifre din momentul citirii, nu contor live.' if upd else 'Vizionările încă nu au fost citite.') + '</p>'

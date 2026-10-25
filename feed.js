@@ -6,16 +6,25 @@ const cls=l=>String(l).replace(/[^A-Za-z0-9]+/g,'-').replace(/^-+|-+$/g,'');
 const ne=s=>String(s||'').replace(/^[\p{Extended_Pictographic}\uFE0F\u200D\s]+/u,'');
 function gHue(k){let h=0;k=String(k||'');for(let i=0;i<k.length;i++)h=(h*31+k.charCodeAt(i))%360;return h}
 const gm=p=>p.joc?`<span class="gm"><i class="gd" style="--h:${gHue(p.jocSlug)}"></i>${es(p.joc)}</span>`:'';
-// rând dens de postare (același markup ca prow() din build_posts.py). hp = prefix link (ex. „../posts/”), ip = prefix imagine (ex. „../”)
-function rowHtml(p,hp,ip){
-  const chips=(p.labels||[]).map(l=>`<span class="l ${cls(l)}">${es(l)}</span>`).join(' ')+`<span class="dt">${es(p.dateRo)}</span>`;
-  return `<a class="p ${cls((p.labels||[''])[0])}" href="${hp}${es(p.slug)}.html"><span class="im"><img class="fx" src="${ip}${es(p.img)}" alt="" width="296" height="185" loading="lazy"></span><span class="b"><span class="mt">${chips}</span><h2>${es(ne(p.title))}</h2><span class="ex">${es(p.excerpt)}</span>${gm(p)}</span></a>`}
 const nv=n=>n>=1e6?((n/1e6).toFixed(n>=1e7?1:2)).replace(/\.?0+$/,'').replace('.',',')+'M':n>=1e4?Math.round(n/1e3)+'K':n>=1e3?((n/1e3).toFixed(1)).replace(/\.0$/,'').replace('.',',')+'K':String(n);
 function dtRo(t){return new Intl.DateTimeFormat('ro-RO',{timeZone:'Europe/Bucharest',day:'numeric',month:'long',hour:'2-digit',minute:'2-digit'}).format(new Date(t))}
-// card de Short (același markup ca short_cards() din build_posts.py)
+// insignă „NOU · 4 h”: postări publicate în ultimele 6 ore (din câmpul published, ora reală)
+function nouHtml(p){const t=Date.parse(p.published||'');if(!t)return '';const m=Math.floor((Date.now()-t)/6e4);if(m<0||m>=360)return '';return `<span class="nou">NOU · ${m<1?'acum':m<60?m+' min':Math.floor(m/60)+' h'}</span>`}
+/* Cardul UNIC al site-ului (blog, joc, Shorts, dashboard): imagine mare sus, insigne pe imagine, dată · joc, titlu mare, extras.
+   p: {slug,title,labels,dateRo,published,cimg|img,fit,joc,jocSlug,excerpt}; o: {hp:prefix link, ip:prefix imagine, first, nou:false, views, attrs, tip}
+   Același markup ca card_html() din build_posts.py (HTML-ul de la build trebuie să coincidă ca să-l păstrăm la hidratare). */
+function cardHtml(p,o){o=o||{};const fit=p.fit||'cover',img=p.cimg===undefined?p.img:p.cimg,lb=(p.labels&&p.labels.length)?p.labels:[''];
+  const media=fit==='none'||!img?`<span class="fb">${es(p.joc||'VEXU HQ')}</span>`:`<img class="fx" src="${o.ip||''}${es(img)}" alt="" width="640" height="360"${o.first?' fetchpriority="high"':' loading="lazy"'}>`;
+  const rib='<span class="ribs">'+lb.map(l=>`<span class="rib ${cls(l)}">${es(l)}</span>`).join('')+'</span>';
+  const sv=typeof o.views==='number'?`<span class="sv">${nv(o.views)}</span>`:'';
+  return `<a class="pc ${cls(lb[0])}" href="${o.hp===undefined?'posts/':o.hp}${es(p.slug)}.html"${o.attrs||''}${o.tip||''}><span class="im f-${fit==='none'||!img?'none':fit}" style="--h:${gHue(p.jocSlug)}">${media}${rib}${o.nou===false?'':nouHtml(p)}${sv}</span><span class="b"><span class="mt"><span class="dt">${es(p.dateRo||'')}</span>${gm(p)}</span><h2>${es(ne(p.title))}</h2><span class="ex">${es(p.excerpt||'')}</span></span></a>`}
+const rowHtml=(p,hp,ip)=>cardHtml(p,{hp,ip});
+// card de Short din shorts.json (+ vizionări); pre = prefix pagină ('' sau '../')
 function shortHtml(s,pre){
   const v=typeof s.views==='number'?s.views:null,t=Date.parse(s.published);
-  return `<a class="sc" href="${pre}posts/${es(s.slug)}.html" data-id="${es(s.id)}" data-g="${es(s.jocSlug||'')}" data-t="${t}" data-v="${v===null?'':v}"${v!==null&&s.views_t?` title="${es(v.toLocaleString('ro-RO'))} vizionări, citite pe YouTube ${es(dtRo(s.views_t))}"`:''}><span class="sim"><img class="fx" src="${pre}${es(s.img)}" alt="" width="405" height="720" loading="lazy">${v!==null?`<span class="sv">${nv(v)}</span>`:''}</span><span class="sb">${gm(s)}<b class="st">${es(s.title)}</b><span class="sd">${es(s.dateRo||'')}</span></span></a>`}
+  return cardHtml({slug:s.slug,title:s.title,labels:s.labels||['TREND SHORTS'],dateRo:s.dateRo,published:s.published,cimg:s.img,fit:s.fit,joc:s.joc,jocSlug:s.jocSlug,excerpt:s.excerpt},
+    {hp:pre+'posts/',ip:pre,nou:false,views:v===null?undefined:v,attrs:` data-id="${es(s.id)}" data-g="${es(s.jocSlug||'')}" data-t="${t}" data-v="${v===null?'':v}"`,
+     tip:v!==null&&s.views_t?` title="${es(v.toLocaleString('ro-RO'))} vizionări, citite pe YouTube ${es(dtRo(s.views_t))}"`:''})}
 /* endless({el, left(), more(), total(), btn})
    el = santinela (div.sent). left() = câte elemente mai sunt; more() = adaugă o bucată (poate întoarce Promise). btn = buton de rezervă fără IntersectionObserver. */
 function endless(o){
@@ -30,5 +39,5 @@ function endless(o){
   state();watch();
   return {refresh(){state();watch()},step};
 }
-window.VF={es,cls,ne,gHue,gm,rowHtml,shortHtml,nv,dtRo,endless};
+window.VF={es,cls,ne,gHue,gm,cardHtml,rowHtml,shortHtml,nouHtml,nv,dtRo,endless};
 })();
