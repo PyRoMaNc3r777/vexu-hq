@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-24T19:35:38+03:00",
+ "generated": "2026-10-25T07:35:39+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -104,6 +104,27 @@
    "excerpt": "➕ USA_Blox_Legends are un short de 34 de secunde, „W Admin For Everything”, cu aprox. 222K vizualizări și un ritm de aprox. 80K/oră,…",
    "featured": false,
    "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "steal-an-egg-concert-reveal-cel-mai-mare-concert",
+   "title": "🎤 Steal An Egg anunță „CEL MAI MARE CONCERT DIN LUME”",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-25",
+   "dateRo": "25 octombrie 2026",
+   "published": "2026-10-25T07:35:39+02:00",
+   "img": "img/steal-an-egg-concert-reveal.png",
+   "excerpt": "🎤 Steal An Egg are un eveniment oficial nou: „CONCERT REVEAL”. CONFIRMAT. Anunțul spune: „The WORLD’S BIGGEST CONCERT is coming!” Adică…",
+   "featured": false,
+   "section": null,
    "joc": "Steal An Egg",
    "jocSlug": "steal-an-egg",
    "prio": 0,
