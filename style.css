@@ -432,3 +432,69 @@ details.dg>summary:hover{background:var(--s1)}
 #shC.old{background:var(--s1);border-style:dashed}
 #shC.old .big{color:var(--tx2);font-size:var(--t-m,18px)}
 .oldn{margin:var(--sp2) 0 0;font:400 12px/1.45 var(--m);color:var(--tx3)}
+
+/* ── Ce știm / ce NU știm ── */
+.know{margin:var(--sp4) 0 0}
+.know[hidden]{display:none}
+.know>h2{margin-bottom:var(--sp3);display:flex;flex-wrap:wrap;align-items:baseline;gap:4px var(--sp3)}
+.know>h2 .kt{font:500 var(--t-xs)/1.3 var(--m);letter-spacing:.04em;text-transform:none;color:var(--tx2)}
+.kn-in{display:grid;grid-template-columns:1fr;gap:var(--sp3)}
+.kc{background:var(--s1);border:1px solid var(--ln);border-top:2px solid var(--c);border-radius:var(--r);padding:var(--sp4);min-width:0}
+.kc.ok{--c:var(--ok)}.kc.no{--c:var(--warn)}
+.kc h3{margin:0 0 var(--sp3);font:600 var(--t-xs)/1 var(--m);letter-spacing:.1em;text-transform:uppercase;color:var(--c)}
+.kc ul{list-style:none;margin:0;padding:0;display:grid;gap:var(--sp3)}
+.kc li{display:flex;flex-direction:column;gap:2px;font-size:var(--t-s);line-height:1.45;color:var(--tx2);min-width:0;overflow-wrap:anywhere}
+.kc li b{font:500 var(--t-xs)/1.3 var(--m);letter-spacing:.06em;text-transform:uppercase;color:var(--tx3)}
+.kc li span{color:var(--tx)}
+.ks2{grid-column:1/-1;font:400 var(--t-xs)/1.5 var(--m);color:var(--tx3)}
+.ks2 a{color:var(--tx2)}
+.ks2 a:hover{color:var(--ac)}
+@media(min-width:700px){.kn-in{grid-template-columns:1fr 1fr}}
+.hero .unc{display:inline-block;margin-left:var(--sp2);padding:2px 6px;border:1px solid var(--warn);border-radius:4px;color:var(--warn);font:500 var(--t-xs)/1.3 var(--m);letter-spacing:.04em;text-transform:none}
+/* calendar: panou deschis la cerere */
+.evw{display:flex;flex-direction:column;gap:var(--sp2);min-width:0}
+.kb{align-self:flex-start;display:inline-flex;align-items:center;gap:8px;min-height:36px;padding:0 12px;border:1px solid var(--ln2);border-radius:var(--r-s);background:var(--s1);color:var(--tx2);font:500 var(--t-s)/1 var(--f);cursor:pointer;transition:background-color .12s,color .12s,border-color .12s}
+.kb::after{content:"";width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translate(-2px,-2px);transition:transform .15s}
+.kb[aria-expanded=true]{color:var(--tx);border-color:var(--ln3);background:var(--s3)}
+.kb[aria-expanded=true]::after{transform:rotate(-135deg) translate(-2px,-2px)}
+.kb:hover{color:var(--tx);border-color:var(--ln3)}
+.kn[hidden]{display:none}
+.kn{min-width:0}
+
+/* ── Shorts VEXU ── */
+.stool{display:flex;flex-wrap:wrap;align-items:center;gap:var(--sp3);margin:var(--sp4) 0 var(--sp3)}
+.sct{font:500 var(--t-s)/1 var(--m);color:var(--tx3);margin-left:auto}
+.sgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--sp3)}
+@media(min-width:700px){.sgrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:var(--sp4)}}
+@media(min-width:1000px){.sgrid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+a.sc{display:flex;flex-direction:column;min-width:0;background:var(--s1);border:1px solid var(--ln);border-radius:var(--r);overflow:hidden;color:inherit;text-decoration:none;transition:transform .16s ease,border-color .16s ease;content-visibility:auto;contain-intrinsic-size:auto 330px}
+a.sc:hover{transform:translateY(-2px);border-color:var(--ac)}
+a.sc .sim{position:relative;display:block;aspect-ratio:9/16;background:var(--s2);overflow:hidden}
+a.sc .sim img{display:block;width:100%;height:100%;object-fit:cover}
+a.sc .sv{position:absolute;left:8px;bottom:8px;display:inline-flex;align-items:center;gap:6px;padding:4px 8px 4px 7px;background:#08090cdd;border:1px solid var(--ln2);border-radius:6px;font:600 12px/1 var(--m);color:var(--tx)}
+a.sc .sv::before{content:"";border-left:6px solid var(--ac);border-top:4px solid transparent;border-bottom:4px solid transparent}
+a.sc .sb{display:flex;flex-direction:column;gap:6px;padding:var(--sp3);min-width:0}
+a.sc .st{font:600 var(--t-s)/1.3 var(--f);color:var(--tx);display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+a.sc .sd{font:400 var(--t-xs)/1 var(--m);color:var(--tx3)}
+.snote{margin:var(--sp4) 0 0;font:400 var(--t-xs)/1.5 var(--m);color:var(--tx3)}
+/* bandă pe dashboard */
+.sstrip{display:flex;gap:var(--sp3);overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:var(--sp2);margin-right:calc(var(--sp4)*-1);padding-right:var(--sp4);-webkit-overflow-scrolling:touch}
+.sstrip a.sc{flex:0 0 42%;scroll-snap-align:start}
+@media(min-width:700px){.sstrip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));overflow:visible;margin-right:0;padding-right:0}.sstrip a.sc{flex:none}.sstrip a.sc:nth-child(n+5){display:none}}
+@media(min-width:1000px){.sstrip{grid-template-columns:repeat(6,minmax(0,1fr))}.sstrip a.sc:nth-child(n+5){display:flex}.sstrip a.sc:nth-child(n+7){display:none}}
+
+/* ── Derulare infinită ── */
+.sent{display:flex;align-items:center;justify-content:center;min-height:72px;margin:var(--sp4) 0;font:400 var(--t-s)/1 var(--m);color:var(--tx3)}
+.sent .sl,.sent .se{display:none}
+.sent.ld .sl{display:inline-flex;gap:6px;align-items:center}
+.sent.end .se{display:inline}
+.sent .sl i{width:6px;height:6px;border-radius:50%;background:var(--tx3);animation:sdot 1s ease-in-out infinite}
+.sent .sl i:nth-child(2){animation-delay:.15s}.sent .sl i:nth-child(3){animation-delay:.3s}
+@keyframes sdot{0%,100%{opacity:.25}50%{opacity:1}}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.arch{list-style:none;margin:0 0 var(--sp5);padding:0;display:grid;gap:var(--sp2);font-size:var(--t-s)}
+.arch a{color:var(--tx)}
+.arch .dt{color:var(--tx3);font-size:var(--t-xs)}
+a.p,a.pc{content-visibility:auto;contain-intrinsic-size:auto 150px}
+a.pc.big{content-visibility:visible}
+@media(prefers-reduced-motion:reduce){.sent .sl i{animation:none;opacity:.6}}

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T14:31:36+02:00",
+ "generated": "2026-10-25T14:39:50+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -9,8 +9,23 @@
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
    "img": "img/steal-an-egg-halloween-part-2.png",
    "post_title": "🎃 Halloween Dimension e LIVE în Steal An Egg: 3 biomuri, Echo, Phantom Express + Part 2 pe 24 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2469722483213861487",
+    "3079544932537598621"
+   ],
    "gameSlug": "steal-an-egg",
-   "gameLabel": "Steal An Egg"
+   "gameLabel": "Steal An Egg",
+   "know": {
+    "minimal": true,
+    "known": [
+     "Următorul eveniment oficial în Steal An Egg: CONCERT REVEAL („The WORLD’S BIGGEST CONCERT is coming!”)"
+    ],
+    "unknown": [
+     "Cine cântă la concert: artist secret",
+     "Data concertului: descrierea zice miercuri 28 oct, 17:00 (ora României), cardul zice sâmbătă 31 oct, 17:00–18:00"
+    ]
+   }
   },
   {
    "name": "Halloween World",
@@ -20,6 +35,10 @@
    "slug": "1-speed-keyboard-escape-primeste-o-lume-noua-de-halloween",
    "img": "game-keyboard-escape.png",
    "post_title": "⌨️ +1 Speed Keyboard Escape primește o lume nouă de Halloween",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3409681533051732591"
+   ],
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
   },
@@ -32,6 +51,10 @@
    "slug": "turbo-soccer-al-3-lea-joc-de-sport-peste-blue-lock-rivals",
    "img": "img/turbo-soccer-turboween-part1.png",
    "post_title": "⚽ Turbo Soccer: la 4 săptămâni, al 3-lea joc de sport pe Roblox, peste Blue Lock: Rivals + TURBOWEEN",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8084980884387791461"
+   ],
    "gameSlug": "turbo-soccer",
    "gameLabel": "Turbo Soccer"
   },
@@ -44,6 +67,10 @@
    "slug": "99-nights-in-the-forest-mini-eventul-the-hollow-25-octombrie",
    "img": "img/99-nights-the-hollow-mini-event.png",
    "post_title": "🔦 99 Nights in the Forest: mini-eventul The Hollow începe azi la 17:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "646550818396439186"
+   ],
    "gameSlug": "99-nights-in-the-forest",
    "gameLabel": "99 Nights in the Forest"
   },
@@ -56,6 +83,7 @@
    "slug": "bike-universe-halloween-motoare-limitate-pana-pe-8-nov",
    "img": "img/407f2936ede8.png",
    "post_title": "🏍️ Bike Universe Halloween: motoare limitate până pe 8 nov",
+   "label": "CONFIRMAT",
    "gameSlug": "bike-universe",
    "gameLabel": "Bike Universe"
   },
@@ -67,6 +95,7 @@
    "slug": "evade-halloween-8-tier-uri-70-cosmetice-pana-pe-20-nov",
    "img": "img/d0d0ef748ff9.png",
    "post_title": "👻 Evade Halloween: 8 tier-uri, 70+ cosmetice pe Wisps, până pe 20 nov",
+   "label": "CONFIRMAT",
    "gameSlug": "evade",
    "gameLabel": "Evade"
   },
@@ -78,6 +107,7 @@
    "slug": "evade-halloween-8-tier-uri-70-cosmetice-pana-pe-20-nov",
    "img": "img/d0d0ef748ff9.png",
    "post_title": "👻 Evade Halloween: 8 tier-uri, 70+ cosmetice pe Wisps, până pe 20 nov",
+   "label": "CONFIRMAT",
    "gameSlug": "evade",
    "gameLabel": "Evade"
   },
@@ -89,6 +119,7 @@
    "slug": "evade-halloween-8-tier-uri-70-cosmetice-pana-pe-20-nov",
    "img": "img/d0d0ef748ff9.png",
    "post_title": "👻 Evade Halloween: 8 tier-uri, 70+ cosmetice pe Wisps, până pe 20 nov",
+   "label": "CONFIRMAT",
    "gameSlug": "evade",
    "gameLabel": "Evade"
   },
@@ -101,6 +132,7 @@
    "slug": "backseat-rally-harta-noua-group-b-turneu-orar",
    "img": "img/982149f0b956.png",
    "post_title": "🏎️ Backseat Rally: hartă nouă, mașină Group B și turneu în fiecare oră",
+   "label": "CONFIRMAT",
    "gameSlug": "backseat-rally",
    "gameLabel": "Backseat Rally"
   },
@@ -112,6 +144,7 @@
    "slug": "drifters-shooter-extraction-vine-curand",
    "img": "img/ef09f33a1054.jpg",
    "post_title": "🔫 Drifters: shooter-ul extraction de la Look North World vine curând",
+   "label": "CONFIRMAT",
    "gameSlug": "drifters",
    "gameLabel": "Drifters"
   },
@@ -124,8 +157,22 @@
    "slug": "keyboard-escape-cg5-concert-o-saptamana",
    "img": "img/8be12a105e98.png",
    "post_title": "🎤 +1 Speed Keyboard Escape: CG5 CONCERT e live o săptămână întreagă",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6868324446936105521"
+   ],
    "gameSlug": "1-speed-keyboard-escape",
-   "gameLabel": "+1 Speed Keyboard Escape"
+   "gameLabel": "+1 Speed Keyboard Escape",
+   "know": {
+    "known": [
+     "Mesaj oficial pe card: „JOIN US”"
+    ],
+    "unknown": [
+     "Setlist-ul (ce melodii cântă CG5): nepublicat",
+     "Recompensele: nepublicate",
+     "Descrierea: pagina oficială nu are descriere"
+    ]
+   }
   },
   {
    "name": "Spooky Pt. 2! (Spooky House)",
@@ -136,6 +183,11 @@
    "slug": "kick-a-lucky-block-spooky-pt-2-casa-bantuita",
    "img": "img/24e599c39f3b.png",
    "post_title": "🎃 Kick a Lucky Block: Spooky Pt. 2 a început, construiești casa bântuită",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5745097671903937103",
+    "8076304553139634796"
+   ],
    "gameSlug": "kick-a-lucky-block",
    "gameLabel": "Kick a Lucky Block"
   },
@@ -148,6 +200,11 @@
    "slug": "kick-a-lucky-block-spooky-pt-2-casa-bantuita",
    "img": "img/24e599c39f3b.png",
    "post_title": "🎃 Kick a Lucky Block: Spooky Pt. 2 a început, construiești casa bântuită",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8076304553139634796",
+    "5745097671903937103"
+   ],
    "gameSlug": "kick-a-lucky-block",
    "gameLabel": "Kick a Lucky Block"
   },
@@ -160,8 +217,23 @@
    "slug": "steal-an-egg-concert-reveal-cel-mai-mare-concert",
    "img": "img/steal-an-egg-concert-reveal.png",
    "post_title": "🎤 Steal An Egg anunță „CEL MAI MARE CONCERT DIN LUME”",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3914977301300904532"
+   ],
    "gameSlug": "steal-an-egg",
-   "gameLabel": "Steal An Egg"
+   "gameLabel": "Steal An Egg",
+   "know": {
+    "title": "CONCERT REVEAL",
+    "unclear": "Data de pe card, neclară",
+    "known": [
+     "Anunț oficial: „The WORLD’S BIGGEST CONCERT is coming!”, adică cel mai mare concert din lume vine în Steal An Egg"
+    ],
+    "unknown": [
+     "Cine cântă: artistul e secret, încă neanunțat",
+     "Care dată contează: descrierea zice miercuri 28 oct, 17:00 (ora României), cardul zice sâmbătă 31 oct, 17:00–18:00"
+    ]
+   }
   },
   {
    "name": "Halloween PT. 3 (New Map + New Knives)",
@@ -172,6 +244,7 @@
    "slug": "huss-valley-halloween-pt-3-harta-noua-cutite-noi",
    "img": "img/huss-valley-pt3.png",
    "post_title": "🔪 Huss Valley: Halloween PT. 3 cu hartă nouă și cuțite noi",
+   "label": "CONFIRMAT",
    "gameSlug": "huss-valley",
    "gameLabel": "Huss Valley"
   },
@@ -184,6 +257,10 @@
    "img": "img/volleyball-legends-cursed-tournament.png",
    "slug": "volleyball-legends-cursed-tournament-porneste-azi-la-18-30-iar-kijo-se-intoarce",
    "post_title": "🏐 Volleyball Legends: CURSED TOURNAMENT pornește azi la 18:30, iar Kijo se întoarce",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2231248880031367768"
+   ],
    "gameSlug": "volleyball-legends",
    "gameLabel": "Volleyball Legends"
   },
@@ -196,6 +273,10 @@
    "img": "img/blockspin-halloween-update-part-2.png",
    "slug": "blockspin-halloween-update-part-2-vine-azi-la-21-00-cu-2-arme-noi",
    "post_title": "🔪 BlockSpin: Halloween Update Part 2 vine azi la 21:00, cu 2 arme noi",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3411904467547849332"
+   ],
    "gameSlug": "blockspin",
    "gameLabel": "BlockSpin"
   },
@@ -208,6 +289,10 @@
    "img": "img/deep-fishing-trading.png",
    "slug": "deep-fishing-trading-duminica-25-oct-1800",
    "post_title": "🎣 Deep Fishing: vine TRADING duminică la 18:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3578913046418031164"
+   ],
    "gameSlug": "deep-fishing",
    "gameLabel": "Deep Fishing"
   },
@@ -220,6 +305,10 @@
    "img": "img/slap-battles-halloween.png",
    "slug": "slap-battles-halloween-live-pana-pe-6-nov",
    "post_title": "👋 Slap Battles: HALLOWEEN! e live, timp de două săptămâni",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7442931730010473049"
+   ],
    "gameSlug": "slap-battles",
    "gameLabel": "Slap Battles"
   },
@@ -232,6 +321,10 @@
    "img": "img/krusty-krab-halloween-event.png",
    "slug": "save-the-krusty-krab-halloween-event-live-pana-pe-2-nov",
    "post_title": "🍔 Save the Krusty Krab: evenimentul de Halloween a început, cu skin-uri limitate",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8797430316475220748"
+   ],
    "gameSlug": "save-the-krusty-krab",
    "gameLabel": "Save the Krusty Krab"
   },
@@ -244,6 +337,10 @@
    "img": "img/ride-a-dino-halloween-island.png",
    "slug": "ride-a-dino-halloween-island-update-duminica-25-oct-1800",
    "post_title": "🦖 Ride a Dino: Halloween Island Update pornește duminică la 18:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7928673331056869969"
+   ],
    "gameSlug": "ride-a-dino",
    "gameLabel": "Ride a Dino"
   },
@@ -256,6 +353,15 @@
    "img": "img/ride-a-pet-heaven-update.jpg",
    "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
    "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1484580516891066933",
+    "8647873480399913570",
+    "8597869761575125641",
+    "7912867756482101915",
+    "7871286754760852034",
+    "7375566689850753589"
+   ],
    "gameSlug": "ride-a-pet",
    "gameLabel": "Ride A Pet"
   },
@@ -268,6 +374,15 @@
    "img": "img/climb-animals-eggs-halloween.jpg",
    "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
    "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8647873480399913570",
+    "1484580516891066933",
+    "8597869761575125641",
+    "7912867756482101915",
+    "7871286754760852034",
+    "7375566689850753589"
+   ],
    "gameSlug": "climb-for-animals-eggs",
    "gameLabel": "Climb For Animals Eggs"
   },
@@ -280,6 +395,15 @@
    "img": "img/death-ball-raid-boss.jpg",
    "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
    "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8597869761575125641",
+    "1484580516891066933",
+    "8647873480399913570",
+    "7912867756482101915",
+    "7871286754760852034",
+    "7375566689850753589"
+   ],
    "gameSlug": "death-ball",
    "gameLabel": "Death Ball"
   },
@@ -292,6 +416,15 @@
    "img": "img/tap-sim-update2-halloween-pt2.jpg",
    "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
    "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7912867756482101915",
+    "1484580516891066933",
+    "8647873480399913570",
+    "8597869761575125641",
+    "7871286754760852034",
+    "7375566689850753589"
+   ],
    "gameSlug": "tap-simulator-reborn",
    "gameLabel": "Tap Simulator REBORN"
   },
@@ -304,6 +437,15 @@
    "img": "img/chop-a-forest-halloween.jpg",
    "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
    "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7871286754760852034",
+    "1484580516891066933",
+    "8647873480399913570",
+    "8597869761575125641",
+    "7912867756482101915",
+    "7375566689850753589"
+   ],
    "gameSlug": "chop-a-forest",
    "gameLabel": "Chop A Forest"
   },
@@ -316,6 +458,15 @@
    "img": "img/plants-brainrots-halloween-trader.jpg",
    "slug": "sambata-e-nebunie-pe-roblox-6-update-uri-in-weekend-24-oct",
    "post_title": "🎃 Sâmbătă e nebunie pe Roblox: 6 update-uri care pornesc în weekend",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7375566689850753589",
+    "1484580516891066933",
+    "8647873480399913570",
+    "8597869761575125641",
+    "7912867756482101915",
+    "7871286754760852034"
+   ],
    "gameSlug": "plants-brainrots",
    "gameLabel": "Plants & Brainrots"
   },
@@ -328,6 +479,10 @@
    "slug": "sell-fries-chapter-2-mutat-pe-31-oct-la-2100",
    "img": "img/sell-fries-chapter-2.jpg",
    "post_title": "🍟 Sell Fries! mută Chapter 2 pe sâmbăta viitoare, 31 oct, la 21:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1598195694726939280"
+   ],
    "gameSlug": "sell-fries",
    "gameLabel": "Sell Fries!"
   },
@@ -340,6 +495,11 @@
    "slug": "grow-a-garden-ghoul-garden-2-porneste-sambata-24-oct-2330",
    "img": "img/gag-ghoul-garden-2.jpg",
    "post_title": "🌱 Grow a Garden: Ghoul Garden 2 pornește în seara asta la 23:30",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8394375636784906838",
+    "6812950150143672976"
+   ],
    "gameSlug": "grow-a-garden",
    "gameLabel": "Grow a Garden"
   },
@@ -352,6 +512,11 @@
    "slug": "grow-a-garden-ghoul-garden-2-porneste-sambata-24-oct-2330",
    "img": "img/gag-ghoul-garden-2.jpg",
    "post_title": "🌱 Grow a Garden: Ghoul Garden 2 pornește în seara asta la 23:30",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6812950150143672976",
+    "8394375636784906838"
+   ],
    "gameSlug": "grow-a-garden",
    "gameLabel": "Grow a Garden"
   },
@@ -364,6 +529,11 @@
    "slug": "adopt-me-count-slothula-99-robux-permanent",
    "img": "game-adopt-me.png",
    "post_title": "🦇 Adopt Me: Count Slothula ajunge vineri, 99 Robux și rămâne permanent",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3734139826459509297",
+    "6607388034369454862"
+   ],
    "gameSlug": "adopt-me",
    "gameLabel": "Adopt Me"
   },
@@ -376,6 +546,11 @@
    "slug": "adopt-me-count-slothula-99-robux-permanent",
    "img": "game-adopt-me.png",
    "post_title": "🦇 Adopt Me: Count Slothula ajunge vineri, 99 Robux și rămâne permanent",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6607388034369454862",
+    "3734139826459509297"
+   ],
    "gameSlug": "adopt-me",
    "gameLabel": "Adopt Me"
   },
@@ -388,6 +563,10 @@
    "slug": "escape-tsunami-for-brainrots-halloween-part-2-24-oct",
    "img": "img/escape-tsunami-halloween-part-2.png",
    "post_title": "🌊 Escape Tsunami For Brainrots: Halloween Part 2 vine sâmbătă, 24 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4063660286450729554"
+   ],
    "gameSlug": "escape-tsunami-for-brainrots",
    "gameLabel": "Escape Tsunami For Brainrots"
   },
@@ -400,6 +579,10 @@
    "slug": "driving-empire-new-limited-23-oct-20-00",
    "img": "img/driving-empire-new-limited.png",
    "post_title": "🚗 Driving Empire: NEW LIMITED vine diseară (vineri 23 oct) la 20:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2109418877397107262"
+   ],
    "gameSlug": "driving-empire",
    "gameLabel": "Driving Empire"
   },
@@ -412,6 +595,10 @@
    "slug": "bloxburg-prebuilt-mourning-manor-live-pana-pe-29-oct",
    "img": "img/11a571009729.png",
    "post_title": "🏚️ Bloxburg: prebuilt-ul „Mourning Manor” e LIVE până pe 29 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1351180538450412305"
+   ],
    "gameSlug": "bloxburg",
    "gameLabel": "Bloxburg"
   },
@@ -424,6 +611,10 @@
    "slug": "hypershot-mod-zombi-timp-limitat-din-24-oct",
    "img": "img/3a0df600757c.png",
    "post_title": "🧟 Hypershot: mod cu zombi pentru timp limitat, din 24 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1236553009509565041"
+   ],
    "gameSlug": "hypershot",
    "gameLabel": "Hypershot"
   },
@@ -436,6 +627,10 @@
    "slug": "anime-dice-halloween-pt-2-update-25-oct",
    "img": "img/9ba9b2778c36.png",
    "post_title": "🎃 Anime Dice: Halloween Pt. 2 + update, duminică 25 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8107686322950505040"
+   ],
    "gameSlug": "anime-dice",
    "gameLabel": "Anime Dice"
   },
@@ -448,6 +643,10 @@
    "slug": "criminality-hallows-2026-part-1-23-oct-2130",
    "img": "img/3f0a0d32fe51.png",
    "post_title": "🔪 Criminality: HALLOWS 2026 – Part 1 începe azi la 21:30",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6148749213804135023"
+   ],
    "gameSlug": "criminality",
    "gameLabel": "Criminality"
   },
@@ -460,6 +659,10 @@
    "slug": "anime-ability-arena-gear-5-23-octombrie",
    "img": "img/de072ee08693.png",
    "post_title": "⚔️ Anime Ability Arena: GEAR 5, personaj variantă nou, din 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4117389665160528497"
+   ],
    "gameSlug": "anime-ability-arena",
    "gameLabel": "Anime Ability Arena"
   },
@@ -472,6 +675,10 @@
    "slug": "throw-a-coin-world-9-admin-abuse-25-octombrie",
    "img": "img/c24b1e91d5e3.png",
    "post_title": "🪙 Throw a Coin: World 9 + Admin Abuse, duminică 25 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3027112947324420710"
+   ],
    "gameSlug": "throw-a-coin",
    "gameLabel": "Throw a Coin"
   },
@@ -483,6 +690,10 @@
    "slug": "creatures-of-sonaria-halloween-week-3-clawed-spore",
    "img": "img/sonaria-halloween-week3.png",
    "post_title": "🦖 Creatures of Sonaria: Halloween Week 3 aduce Clawed Spore și subspecia Cursed",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7927753451146838634"
+   ],
    "gameSlug": "creatures-of-sonaria",
    "gameLabel": "Creatures of Sonaria"
   },
@@ -494,6 +705,10 @@
    "slug": "break-and-steal-an-egg-eveniment-misterios-25-octombrie",
    "img": "img/break-and-steal-an-egg-event-25-oct.png",
    "post_title": "🥚 Break and Steal an Egg: eveniment „???” duminică, 25 oct, la 15:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4096128969374564913"
+   ],
    "gameSlug": "break-and-steal-an-egg",
    "gameLabel": "Break and Steal an Egg"
   },
@@ -505,6 +720,10 @@
    "slug": "tds-solar-requiem-night-iii-vine-pe-23-octombrie",
    "img": "img/tds-solar-requiem-night-iii.png",
    "post_title": "🌙 Tower Defense Simulator: Solar Requiem Night III vine pe 23 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2060476532870218323"
+   ],
    "gameSlug": "tower-defense-simulator",
    "gameLabel": "Tower Defense Simulator"
   },
@@ -516,6 +735,11 @@
    "slug": "bgsi-halloween-part-2-5-bounties-dark-potion-market",
    "img": "img/bgsi-halloween-part-2-5.png",
    "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2.5 vine pe 23 oct, la 21:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6801611064866898700",
+    "8773079119056470676"
+   ],
    "gameSlug": "bubble-gum-simulator-infinity",
    "gameLabel": "Bubble Gum Simulator INFINITY"
   },
@@ -527,6 +751,11 @@
    "slug": "bgsi-halloween-part-2-5-bounties-dark-potion-market",
    "img": "img/bgsi-halloween-part-2-5.png",
    "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2.5 vine pe 23 oct, la 21:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6801611064866898700",
+    "8773079119056470676"
+   ],
    "gameSlug": "bubble-gum-simulator-infinity",
    "gameLabel": "Bubble Gum Simulator INFINITY"
   },
@@ -538,6 +767,10 @@
    "slug": "ps99-update-99-usa-de-la-spawn-se-deschide-sambata",
    "img": "img/ps99-update-99-usa-spawn.png",
    "post_title": "🔓 Pet Simulator 99 Update 99: ușa de la spawn se deschide sâmbătă",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5104958143453069886"
+   ],
    "gameSlug": "pet-simulator-99",
    "gameLabel": "Pet Simulator 99"
   },
@@ -550,6 +783,10 @@
    "slug": "street-soccer-pro-night-of-pumpkin-king-cu-manusi-si-ghete-gratis",
    "img": "img/aa746e45f026.png",
    "post_title": "⚽ Street Soccer Pro: Night of Pumpkin King, cu mănuși și ghete gratis",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6039972845109510911"
+   ],
    "gameSlug": "street-soccer-pro",
    "gameLabel": "Street Soccer Pro"
   },
@@ -562,6 +799,10 @@
    "slug": "yba-halloween-2026-a-venit-update-1-81",
    "img": "img/d46c282c1d44.png",
    "post_title": "👻 YBA Halloween 2026: a venit Update 1.81",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4670946200432804627"
+   ],
    "gameSlug": "your-bizarre-adventure",
    "gameLabel": "Your Bizarre Adventure"
   },
@@ -574,6 +815,10 @@
    "slug": "gpo-halloween-part-2-pet-ul-verity-costume-noi-si-trick-or-treat-pe-spooksville-island",
    "img": "img/8d00f35671db.png",
    "post_title": "🏴‍☠️ GPO Halloween Part 2: pet-ul Verity, costume noi și trick-or-treat pe Spooksville Island",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7982344492491604618"
+   ],
    "gameSlug": "grand-piece-online",
    "gameLabel": "Grand Piece Online"
   },
@@ -586,6 +831,10 @@
    "slug": "the-forge-halloween-guilds-a-pornit",
    "img": "img/the-forge-halloween-guilds.png",
    "post_title": "⚒️ The Forge: update-ul de Halloween + Guilds a pornit",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8555452768813449897"
+   ],
    "gameSlug": "the-forge",
    "gameLabel": "The Forge"
   },
@@ -598,6 +847,10 @@
    "slug": "build-a-keyboard-big-update-23-oct",
    "img": "img/0a17b7deb504.jpeg",
    "post_title": "⌨️ Build a Keyboard! anunță BIG UPDATE vineri, 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7288765184842269328"
+   ],
    "gameSlug": "build-a-keyboard",
    "gameLabel": "Build a Keyboard!"
   },
@@ -610,6 +863,10 @@
    "slug": "emergency-hamburg-v3-16-community-update",
    "img": "img/02cf8ecde528.jpeg",
    "post_title": "🚨 Emergency Hamburg V3.16 Community Update",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4001130084214899282"
+   ],
    "gameSlug": "emergency-hamburg",
    "gameLabel": "Emergency Hamburg"
   },
@@ -621,6 +878,10 @@
    "slug": "dark-deception-hunted-a-pornit-eventul-de-halloween",
    "img": "img/3c9c04e5c470.jpg",
    "post_title": "Dark Deception: Hunted a pornit eventul de Halloween",
+   "label": "CONFIRMAT",
+   "rids": [
+    "932198954563666583"
+   ],
    "gameSlug": "hunted-dark-deception",
    "gameLabel": "HUNTED (Dark Deception)"
   },
@@ -632,6 +893,7 @@
    "slug": "roblox-isi-schimba-termenii-pe-1-noiembrie-merchant-of-record",
    "img": "img/e949435d9972.png",
    "post_title": "📜 Roblox își schimbă Termenii pe 1 noiembrie: cumperi de la Roblox, nu de la creator",
+   "label": "CONFIRMAT",
    "gameSlug": "roblox-platforma",
    "gameLabel": "Roblox (platformă)"
   },
@@ -643,6 +905,7 @@
    "slug": "dead-rails-plusuri-oficiale-youtooz-pe-23-octombrie",
    "img": "img/114a302bfe33.jpg",
    "post_title": "🧸 Dead Rails: plușuri oficiale Youtooz pe 23 octombrie",
+   "label": "CONFIRMAT",
    "gameSlug": "dead-rails",
    "gameLabel": "Dead Rails"
   },
@@ -654,6 +917,11 @@
    "slug": "car-dealership-tycoon-halloween-vine-in-doua-parti",
    "img": "img/a2464c11519e.png",
    "post_title": "🎃 Car Dealership Tycoon: Halloween vine în două părți",
+   "label": "CONFIRMAT",
+   "rids": [
+    "200140055573037617",
+    "6998302480647979600"
+   ],
    "gameSlug": "car-dealership-tycoon",
    "gameLabel": "Car Dealership Tycoon"
   },
@@ -665,6 +933,11 @@
    "slug": "car-dealership-tycoon-halloween-vine-in-doua-parti",
    "img": "img/a2464c11519e.png",
    "post_title": "🎃 Car Dealership Tycoon: Halloween vine în două părți",
+   "label": "CONFIRMAT",
+   "rids": [
+    "200140055573037617",
+    "6998302480647979600"
+   ],
    "gameSlug": "car-dealership-tycoon",
    "gameLabel": "Car Dealership Tycoon"
   },
@@ -676,6 +949,10 @@
    "slug": "volleyball-legends-stilul-nou-mamori-cu-parry",
    "img": "img/ac285a12b10c.png",
    "post_title": "🏐 Volleyball Legends: stilul nou Mamori, cu Parry",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1340276927860179601"
+   ],
    "gameSlug": "volleyball-legends",
    "gameLabel": "Volleyball Legends"
   },
@@ -687,6 +964,10 @@
    "slug": "murder-mystery-2-halloween-2026-a-inceput-aseara-la-22-00-tine-pana-pe-16-noiembrie",
    "img": "img/c15b0de55ed6.png",
    "post_title": "🔪 Murder Mystery 2: Halloween 2026 a început aseară la 22:00, ține până pe 16 noiembrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7505344944098378506"
+   ],
    "gameSlug": "murder-mystery-2",
    "gameLabel": "Murder Mystery 2"
   },
@@ -698,6 +979,7 @@
    "slug": "tales-of-tanorio-eveniment-de-halloween-pe-30-octombrie-cu-reskin-uri-si-tanorieni-noi",
    "img": "img/0f40f223edda.jpg",
    "post_title": "🎃 Tales of Tanorio: eveniment de Halloween pe 30 octombrie, cu reskin-uri și Tanorieni noi",
+   "label": "CONFIRMAT",
    "gameSlug": "tales-of-tanorio",
    "gameLabel": "Tales of Tanorio"
   },
@@ -708,6 +990,7 @@
    "slug": "asimo3089-jailbreak-lanseaza-un-joc-nou-de-dodgeball-marti-20-octombrie",
    "img": "img/0e6f842e620a.jpg",
    "post_title": "🏐 asimo3089 (Jailbreak) lansează un joc nou de dodgeball marți, 20 octombrie",
+   "label": "CONFIRMAT",
    "gameSlug": "asimo-s-dodgeball",
    "gameLabel": "Asimo's Dodgeball"
   },
@@ -719,6 +1002,10 @@
    "slug": "prospecting-halloween-event-e-live-the-graveyard-returns-pana-pe-7-noiembrie",
    "img": "img/25da364b4d38.png",
    "post_title": "💎 Prospecting: Halloween Event e live — „The Graveyard returns…”, până pe 7 noiembrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7841439992185488145"
+   ],
    "gameSlug": "prospecting",
    "gameLabel": "Prospecting"
   },
@@ -730,6 +1017,10 @@
    "slug": "fish-it-halloween-update-cu-insula-noua-live-pana-joi-22-octombrie",
    "img": "img/d6cb4af167e8.jpeg",
    "post_title": "🐟 Fish It: HALLOWEEN UPDATE cu insulă nouă, live până joi 22 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8174015307124048435"
+   ],
    "gameSlug": "fish-it",
    "gameLabel": "Fish It"
   },
@@ -741,6 +1032,10 @@
    "slug": "plants-vs-brainrots-revine-tornado-cu-eveniment-de-halloween",
    "img": "img/f6345339c477.png",
    "post_title": "🌪️ Plants vs Brainrots: revine Tornado, cu eveniment de Halloween",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7939789730969944689"
+   ],
    "gameSlug": "plants-vs-brainrots",
    "gameLabel": "Plants vs Brainrots"
   },
@@ -752,6 +1047,10 @@
    "slug": "hunty-zombie-spookye-zombies-part-1-incepe-azi-la-21-00",
    "img": "img/9740faf2d1f0.png",
    "post_title": "🧟 Hunty Zombie: Spookye Zombies Part 1 începe azi la 21:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5085883460812407569"
+   ],
    "gameSlug": "hunty-zombie",
    "gameLabel": "Hunty Zombie"
   },
@@ -763,6 +1062,10 @@
    "slug": "bubble-gum-simulator-infinity-halloween-part-2-incepe-azi-la-19-00",
    "img": "img/e096eff00955.png",
    "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2 începe azi la 19:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4496096908883919533"
+   ],
    "gameSlug": "bubble-gum-simulator-infinity",
    "gameLabel": "Bubble Gum Simulator INFINITY"
   },
@@ -774,6 +1077,10 @@
    "slug": "bubble-gum-simulator-infinity-halloween-part-2-incepe-azi-la-19-00",
    "img": "img/e096eff00955.png",
    "post_title": "🫧 Bubble Gum Simulator INFINITY: Halloween Part 2 începe azi la 19:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4496096908883919533"
+   ],
    "gameSlug": "bubble-gum-simulator-infinity",
    "gameLabel": "Bubble Gum Simulator INFINITY"
   },
@@ -785,6 +1092,10 @@
    "slug": "sell-fries-halloween-cu-free-admin-gifts",
    "img": "img/77fb34486340.png",
    "post_title": "🍟 Sell Fries!: Halloween cu Free Admin Gifts",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1598195694726939280"
+   ],
    "gameSlug": "sell-fries",
    "gameLabel": "Sell Fries!"
   },
@@ -796,6 +1107,10 @@
    "slug": "huss-valley-halloween-event-din-seara-asta",
    "img": "img/9cb5793476c5.png",
    "post_title": "🎃 Huss Valley: Halloween Event din seara asta",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8893392042118480490"
+   ],
    "gameSlug": "huss-valley",
    "gameLabel": "Huss Valley"
   },
@@ -806,6 +1121,10 @@
    "slug": "the-strongest-battlegrounds-vine-the-arsenal",
    "img": "img/c32ffc9ceaa1.png",
    "post_title": "⚔️ The Strongest Battlegrounds: vine „The Arsenal”",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5816701325882294922"
+   ],
    "gameSlug": "the-strongest-battlegrounds",
    "gameLabel": "The Strongest Battlegrounds"
   },
@@ -817,6 +1136,10 @@
    "slug": "break-and-steal-an-egg-halloween-admin-abuse-duminica",
    "img": "img/e463ba202c38.png",
    "post_title": "🥚 Break and Steal an Egg: Halloween + Admin Abuse duminică",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8851788773407719989"
+   ],
    "gameSlug": "break-and-steal-an-egg",
    "gameLabel": "Break and Steal an Egg"
   },
@@ -828,6 +1151,7 @@
    "slug": "itemele-de-avatar-stricate-pot-fi-reparate-dupa-lansare",
    "img": "img/x-bloxy-item-update.jpg",
    "post_title": "🛠️ Itemele de avatar stricate pot fi reparate după lansare",
+   "label": "CONFIRMAT",
    "gameSlug": "roblox-platforma",
    "gameLabel": "Roblox (platformă)"
   },
@@ -839,6 +1163,10 @@
    "slug": "murder-duels-halloween-incepe-diseara-la-21-00",
    "img": "img/ffb65ef3e8fa.png",
    "post_title": "🔪 Murder Duels: Halloween începe diseară la 21:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8432112593786765976"
+   ],
    "gameSlug": "murder-duels",
    "gameLabel": "Murder Duels"
   },
@@ -851,6 +1179,10 @@
    "slug": "violence-district-the-butcher-x-halloween-din-24-octombrie",
    "img": "img/d0f25a8958ec.png",
    "post_title": "🩸 Violence District: The Butcher X Halloween din 24 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8461601818890338985"
+   ],
    "gameSlug": "violence-district",
    "gameLabel": "Violence District"
   },
@@ -862,6 +1194,10 @@
    "slug": "grand-piece-online-ultima-sansa-la-halloween-part-1",
    "img": "event-gpo-halloween-part1.png",
    "post_title": "🏴‍☠️ Grand Piece Online: ultima șansă la Halloween Part 1",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3506801387348558497"
+   ],
    "gameSlug": "grand-piece-online",
    "gameLabel": "Grand Piece Online"
   },
@@ -872,6 +1208,10 @@
    "slug": "ride-a-pet-update-secret-sambata-la-16-00",
    "img": "event-ride-a-pet-secret.png",
    "post_title": "🐾 Ride A Pet: update secret „???” sâmbătă la 16:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7884269315262907017"
+   ],
    "gameSlug": "ride-a-pet",
    "gameLabel": "Ride A Pet"
   },
@@ -883,6 +1223,10 @@
    "slug": "jujutsu-shenanigans-halloween-update-din-24-oct",
    "img": "event-jjs-halloween.png",
    "post_title": "🎃 Jujutsu Shenanigans: HALLOWEEN UPDATE din 24 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5460822494376231562"
+   ],
    "gameSlug": "jujutsu-shenanigans",
    "gameLabel": "Jujutsu Shenanigans"
   },
@@ -894,6 +1238,10 @@
    "slug": "creatures-of-sonaria-halloween-week-2-din-16-oct-23-30",
    "img": "event-sonaria-halloween-week2.png",
    "post_title": "🦖 Creatures of Sonaria: Halloween Week 2 din 16 oct, 23:30",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5572318619653374572"
+   ],
    "gameSlug": "creatures-of-sonaria",
    "gameLabel": "Creatures of Sonaria"
   },
@@ -905,6 +1253,11 @@
    "slug": "bedwars-halloween-part-1-din-17-oct",
    "img": "event-bedwars-halloween-part1.png",
    "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1859514229527282442",
+    "1991075056398238314"
+   ],
    "gameSlug": "bedwars",
    "gameLabel": "BedWars"
   },
@@ -916,6 +1269,11 @@
    "slug": "bedwars-halloween-part-1-din-17-oct",
    "img": "event-bedwars-halloween-part1.png",
    "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1859514229527282442",
+    "1991075056398238314"
+   ],
    "gameSlug": "bedwars",
    "gameLabel": "BedWars"
   },
@@ -927,6 +1285,11 @@
    "slug": "bedwars-halloween-part-1-din-17-oct",
    "img": "event-bedwars-halloween-part1.png",
    "post_title": "⚔️ BedWars Halloween Part 1 din 17 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1859514229527282442",
+    "1991075056398238314"
+   ],
    "gameSlug": "bedwars",
    "gameLabel": "BedWars"
   },
@@ -937,6 +1300,10 @@
    "slug": "evade-halloween-event-din-17-oct-04-00",
    "img": "event-evade-halloween.png",
    "post_title": "👻 Evade: Halloween Event din 17 oct, 04:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5447495051187978812"
+   ],
    "gameSlug": "evade",
    "gameLabel": "Evade"
   },
@@ -948,6 +1315,10 @@
    "slug": "evade-halloween-event-din-17-oct-04-00",
    "img": "event-evade-halloween.png",
    "post_title": "👻 Evade: Halloween Event din 17 oct, 04:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5447495051187978812"
+   ],
    "gameSlug": "evade",
    "gameLabel": "Evade"
   },
@@ -959,6 +1330,10 @@
    "slug": "bloxburg-gothic-items-iteme-gotice-de-halloween",
    "img": "event-bloxburg-gothic-items.png",
    "post_title": "🏡 Bloxburg: Gothic Items, iteme gotice de Halloween",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2023913712099918423"
+   ],
    "gameSlug": "bloxburg",
    "gameLabel": "Bloxburg"
   },
@@ -970,6 +1345,10 @@
    "slug": "fisch-fischfright-3-editia-anuala-de-halloween",
    "img": "game-fisch.png",
    "post_title": "🐟 Fisch: FischFright 3, ediția anuală de Halloween",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2306862479306785401"
+   ],
    "gameSlug": "fisch",
    "gameLabel": "Fisch"
   },
@@ -981,6 +1360,10 @@
    "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
    "img": "game-dandys-world.png",
    "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1672892735373312668"
+   ],
    "gameSlug": "dandy-s-world",
    "gameLabel": "Dandy's World"
   },
@@ -992,6 +1375,10 @@
    "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
    "img": "game-dandys-world.png",
    "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1672892735373312668"
+   ],
    "gameSlug": "dandy-s-world",
    "gameLabel": "Dandy's World"
   },
@@ -1003,6 +1390,10 @@
    "slug": "dandy-s-world-gourdy-shop-cu-skin-uri-noi",
    "img": "game-dandys-world.png",
    "post_title": "🎃 Dandy's World: Gourdy Shop cu skin-uri noi",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1672892735373312668"
+   ],
    "gameSlug": "dandy-s-world",
    "gameLabel": "Dandy's World"
   },
@@ -1014,6 +1405,12 @@
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
    "img": "game-dead-rails.png",
    "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1797162836242334297",
+    "7269102869591229025",
+    "4197183844253827708"
+   ],
    "gameSlug": "dead-rails",
    "gameLabel": "Dead Rails"
   },
@@ -1026,6 +1423,12 @@
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
    "img": "game-dead-rails.png",
    "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7269102869591229025",
+    "1797162836242334297",
+    "4197183844253827708"
+   ],
    "gameSlug": "dead-rails",
    "gameLabel": "Dead Rails"
   },
@@ -1038,6 +1441,12 @@
    "slug": "dead-rails-dead-of-night-pe-17-octombrie",
    "img": "game-dead-rails.png",
    "post_title": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4197183844253827708",
+    "1797162836242334297",
+    "7269102869591229025"
+   ],
    "gameSlug": "dead-rails",
    "gameLabel": "Dead Rails"
   },
@@ -1048,6 +1457,10 @@
    "slug": "forsaken-helperbot-pe-16-oct-event-halloween",
    "img": "game-forsaken.png",
    "post_title": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4152352047032828538"
+   ],
    "gameSlug": "forsaken",
    "gameLabel": "Forsaken"
   },
@@ -1059,6 +1472,10 @@
    "slug": "forsaken-helperbot-pe-16-oct-event-halloween",
    "img": "game-forsaken.png",
    "post_title": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4152352047032828538"
+   ],
    "gameSlug": "forsaken",
    "gameLabel": "Forsaken"
   },
@@ -1069,6 +1486,7 @@
    "slug": "creator-showdown-in-sao-paulo-lupta-pentru-coroana-e-diseara",
    "img": "generic-neon.png",
    "post_title": "🏆 Creator Showdown în São Paulo: lupta pentru coroană e diseară!",
+   "label": "CONFIRMAT",
    "gameSlug": "roblox-platforma",
    "gameLabel": "Roblox (platformă)"
   },
@@ -1080,6 +1498,10 @@
    "slug": "grow-a-garden-vine-ghoul-garden-evenimentul-de-halloween",
    "img": "game-grow-a-garden.png",
    "post_title": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7142378063286895261"
+   ],
    "gameSlug": "grow-a-garden",
    "gameLabel": "Grow a Garden"
   },
@@ -1091,6 +1513,10 @@
    "slug": "grow-a-garden-vine-ghoul-garden-evenimentul-de-halloween",
    "img": "game-grow-a-garden.png",
    "post_title": "🎃 Grow a Garden: vine Ghoul Garden, evenimentul de Halloween",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7142378063286895261"
+   ],
    "gameSlug": "grow-a-garden",
    "gameLabel": "Grow a Garden"
   },
@@ -1102,6 +1528,10 @@
    "slug": "brookhaven-spa-nou-pe-16-oct-halloween-din-23-oct",
    "img": "game-brookhaven.png",
    "post_title": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7455882052353786528"
+   ],
    "gameSlug": "brookhaven",
    "gameLabel": "Brookhaven"
   },
@@ -1113,6 +1543,10 @@
    "slug": "brookhaven-spa-nou-pe-16-oct-halloween-din-23-oct",
    "img": "game-brookhaven.png",
    "post_title": "🏡 Brookhaven: Spa nou pe 16 oct, Halloween din 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7455882052353786528"
+   ],
    "gameSlug": "brookhaven",
    "gameLabel": "Brookhaven"
   },
@@ -1124,6 +1558,11 @@
    "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
    "img": "game-pet-sim-99.png",
    "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8645848830534877834",
+    "7915528625254957692"
+   ],
    "gameSlug": "pet-simulator-99",
    "gameLabel": "Pet Simulator 99"
   },
@@ -1135,6 +1574,11 @@
    "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
    "img": "game-pet-sim-99.png",
    "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8645848830534877834",
+    "7915528625254957692"
+   ],
    "gameSlug": "pet-simulator-99",
    "gameLabel": "Pet Simulator 99"
   },
@@ -1146,6 +1590,11 @@
    "slug": "pet-simulator-99-blood-moon-diamond-mountain-vine-sambata",
    "img": "game-pet-sim-99.png",
    "post_title": "💎 Pet Simulator 99 [BLOOD MOON]: Diamond Mountain vine sâmbătă",
+   "label": "CONFIRMAT",
+   "rids": [
+    "8645848830534877834",
+    "7915528625254957692"
+   ],
    "gameSlug": "pet-simulator-99",
    "gameLabel": "Pet Simulator 99"
   },
@@ -1157,6 +1606,13 @@
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
    "img": "piggy.png",
    "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6880194658371240570",
+    "731438655679365701",
+    "4226380795390067313",
+    "3418582994489836189"
+   ],
    "gameSlug": "piggy",
    "gameLabel": "Piggy"
   },
@@ -1167,6 +1623,13 @@
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
    "img": "piggy.png",
    "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6880194658371240570",
+    "731438655679365701",
+    "4226380795390067313",
+    "3418582994489836189"
+   ],
    "gameSlug": "piggy",
    "gameLabel": "Piggy"
   },
@@ -1178,6 +1641,13 @@
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
    "img": "piggy.png",
    "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6880194658371240570",
+    "731438655679365701",
+    "4226380795390067313",
+    "3418582994489836189"
+   ],
    "gameSlug": "piggy",
    "gameLabel": "Piggy"
   },
@@ -1190,6 +1660,13 @@
    "slug": "piggy-fright-night-part-ii-vine-pe-17-octombrie",
    "img": "piggy.png",
    "post_title": "🐷 Piggy: Fright Night Part II vine pe 17 octombrie",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3418582994489836189",
+    "6880194658371240570",
+    "731438655679365701",
+    "4226380795390067313"
+   ],
    "gameSlug": "piggy",
    "gameLabel": "Piggy"
   },
@@ -1202,6 +1679,7 @@
    "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
    "img": "img/714817cca01f.jpg",
    "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "label": "CONFIRMAT",
    "gameSlug": "roblox-platforma",
    "gameLabel": "Roblox (platformă)"
   },
@@ -1214,6 +1692,7 @@
    "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
    "img": "img/714817cca01f.jpg",
    "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "label": "CONFIRMAT",
    "gameSlug": "roblox-platforma",
    "gameLabel": "Roblox (platformă)"
   },
@@ -1226,6 +1705,7 @@
    "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
    "img": "img/714817cca01f.jpg",
    "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "label": "CONFIRMAT",
    "gameSlug": "roblox-platforma",
    "gameLabel": "Roblox (platformă)"
   },
@@ -1238,6 +1718,15 @@
    "slug": "doors-lanseaza-the-candy-vault-pe-22-octombrie",
    "img": "game-doors.png",
    "post_title": "🍬 DOORS lansează The Candy Vault pe 22 octombrie",
+   "label": [
+    "CONFIRMAT",
+    "ZVON"
+   ],
+   "rids": [
+    "1798388131439968912",
+    "2158475119163474563",
+    "382911937220051536"
+   ],
    "gameSlug": "doors",
    "gameLabel": "DOORS"
   },
@@ -1250,6 +1739,7 @@
    "slug": "adopt-me-hauntlet-returns-halloween-ghost-gallery",
    "img": "game-adopt-me.png",
    "post_title": "👻 Adopt Me: Hauntlet Returns + Halloween Ghost Gallery",
+   "label": "CONFIRMAT",
    "gameSlug": "adopt-me",
    "gameLabel": "Adopt Me"
   },
@@ -1261,6 +1751,14 @@
    "slug": "dress-to-impress-halloween-incepe-pe-17-octombrie",
    "img": "game-dress-to-impress.png",
    "post_title": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie",
+   "label": [
+    "CONFIRMAT",
+    "ZVON"
+   ],
+   "rids": [
+    "1473396042098672211",
+    "5802987007558943505"
+   ],
    "gameSlug": "dress-to-impress",
    "gameLabel": "Dress to Impress"
   },
@@ -1272,6 +1770,14 @@
    "slug": "dress-to-impress-halloween-incepe-pe-17-octombrie",
    "img": "game-dress-to-impress.png",
    "post_title": "🔮 Dress to Impress: HALLOWEEN🔮 începe pe 17 octombrie",
+   "label": [
+    "CONFIRMAT",
+    "ZVON"
+   ],
+   "rids": [
+    "1473396042098672211",
+    "5802987007558943505"
+   ],
    "gameSlug": "dress-to-impress",
    "gameLabel": "Dress to Impress"
   },
@@ -1283,6 +1789,10 @@
    "slug": "99-nights-in-the-forest-vine-trick-or-treat",
    "img": "game-99-nights.png",
    "post_title": "🌲 99 Nights in the Forest: vine Trick or Treat",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6179710618371752545"
+   ],
    "gameSlug": "99-nights-in-the-forest",
    "gameLabel": "99 Nights in the Forest"
   },
@@ -1294,6 +1804,10 @@
    "slug": "halloween-dimension-vine-in-steal-an-egg",
    "img": "icon.png",
    "post_title": "🎃 Halloween Dimension vine în Steal An Egg!",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2469722483213861487"
+   ],
    "gameSlug": "steal-an-egg",
    "gameLabel": "Steal An Egg"
   },
@@ -1305,6 +1819,9 @@
    "link": "https://www.roblox.com/events/2565547896309154387",
    "img": "generic-neon.png",
    "standalone": true,
+   "rids": [
+    "2565547896309154387"
+   ],
    "gameSlug": "cat-battles",
    "gameLabel": "Cat Battles"
   },
@@ -1316,6 +1833,9 @@
    "link": "https://www.roblox.com/events/7225746666601710159",
    "img": "generic-neon.png",
    "standalone": true,
+   "rids": [
+    "7225746666601710159"
+   ],
    "gameSlug": "anime-legacy-simulator",
    "gameLabel": "Anime Legacy Simulator"
   },
@@ -1327,6 +1847,9 @@
    "link": "https://www.roblox.com/events/6194828847804973716",
    "img": "generic-neon.png",
    "standalone": true,
+   "rids": [
+    "6194828847804973716"
+   ],
    "gameSlug": "highway-patrol",
    "gameLabel": "Highway Patrol"
   }

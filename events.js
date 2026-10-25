@@ -105,7 +105,7 @@ function evRow(ev,now,opt){
   const dat=(tg?` data-t="${+tg}"`:'')+(pr!==null?` data-s="${+w.s}" data-e="${+w.e}"`:'');
   return `<${tag} class="${cl}"${href?` href="${href}"${ext}`:''} style="--h:${h}"${dat}>`+
     `<img class="th fx" src="${es(ev.img||'generic-neon.png')}" alt="" width="56" height="56" loading="lazy">`+
-    `<span class="tx"><span class="gm"><i class="gd" style="--h:${h}"></i>${es(gl)}</span><b class="nm">${es(ev.name)}</b>${opt.meta?`<span class="mt2">${es(opt.meta===true?winCompact(ev,now):opt.meta)}</span>`:''}</span>`+
+    `<span class="tx"><span class="gm"><i class="gd" style="--h:${h}"></i>${es(gl)}</span><b class="nm">${es(dispName(ev))}</b>${opt.meta?`<span class="mt2">${es(opt.meta===true?winCompact(ev,now):opt.meta)}</span>`:''}</span>`+
     `<span class="tmr"><b>${es(big)}</b><span>${es(sub)}</span></span>`+
     (pr!==null?`<span class="pbar"><u style="width:${(pr*100).toFixed(1)}%"></u></span>`:'')+
     (opt.note&&ev.zvon_note?`<span class="nt">${es(ev.zvon_note)}</span>`:'')+
@@ -118,5 +118,59 @@ function tick(root,now){let flip=false;const n=+now;
   root.querySelectorAll('.ev[data-s]').forEach(el=>{const s=+el.dataset.s,e=+el.dataset.e,u=el.querySelector('.pbar u');if(u)u.style.width=Math.max(0,Math.min(100,(n-s)/(e-s)*100)).toFixed(1)+'%'});
   return flip}
 
-window.VX={evRow,tick,TZ,es,fmt,dayKey,relevant,status,windowText,span,progress,left,cdHtml,gameHue};
+
+// ───── „Ce știm / ce NU știm” per eveniment ─────
+// Fapte: doar din API-ul oficial Roblox (virtual-events.json, scris de GitHub Action) și din postarea CONFIRMAT; completări manuale în event-know.json.
+// „Ce NU știm”: doar ce sursa spune explicit că lipsește (flag-uri din calendar, câmpuri goale în API, completări manuale). Nimic ghicit.
+let VE=null,VEP=null;
+function loadVE(){if(!VEP)VEP=fetch('virtual-events.json?'+Date.now(),{cache:'no-store'}).then(r=>r.ok?r.json():null).then(d=>{VE=d;return d}).catch(()=>null);return VEP}
+function dispName(ev){return (ev.know&&ev.know.title)||ev.name}
+function apiFor(ev){
+  if(!VE||!VE.events||!ev.rids||!ev.rids.length) return null;
+  const c=ev.rids.map(id=>VE.events.find(x=>x.id===id)).filter(Boolean);if(!c.length) return null;
+  const w=span(ev),near=(a,b)=>a&&b&&Math.abs(new Date(a)-b)<10*6e4;
+  const m=c.find(x=>near(x.start,w.s)||near(x.end,w.e));
+  return m||(c.length===1&&!w.s&&!w.e?c[0]:null);
+}
+const CAT={newContent:'Conținut nou'};
+const noEmoji=t=>String(t||'').replace(/[\p{Extended_Pictographic}\uFE0F\u200D]/gu,'').replace(/\s*\n+\s*/g,' ').replace(/\s{2,}/g,' ').trim();
+const SPOIL=/portal|manor|abandoned/i;   // descrierea oficială a părții 2 din SAE: nu o afișăm
+const REW=/reward|recompens|prize|skin|\bpets?\b|loot|exclusive|\bitems?\b|\bboss|unlock|\beggs?\b|cosmetic|badge/i;
+function knowFor(ev,o){
+  o=o||{};const K=ev.know||{},ap=apiFor(ev),w=span(ev),T={weekday:'short',day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'};
+  const kn=[],un=[],mini=!!K.minimal;
+  const put=(a,l,v)=>a.push({l,v});
+  const st=ap?new Date(ap.start):w.s,en=ap?new Date(ap.end):w.e;
+  if(st&&!isNaN(st)) put(kn,'Start',fmt(st,T)+(ev.date_only?' (doar data)':'')); else if(ev.start_date) put(kn,'Start',fmt(ev.start_date+'T12:00:00+03:00',{weekday:'short',day:'numeric',month:'short'})+' (doar data)');
+  if(en&&!isNaN(en)&&!ev.end_time_unknown) put(kn,'Final',fmt(en,T)); else if(ev.end_date) put(kn,'Final',fmt(ev.end_date+'T12:00:00+02:00',{weekday:'short',day:'numeric',month:'short'}));
+  if(!mini){
+    if(ap&&ap.host) put(kn,'Organizator',ap.host+(ap.verified?' · cont verificat':''));
+    if(ap&&ap.categories&&ap.categories.length) put(kn,'Categorie',ap.categories.map(c=>CAT[c]||c).join(', '));
+    if(K.desc!==false&&ap){
+      const sub=noEmoji(ap.subtitle),ds=noEmoji(ap.description);
+      if(sub&&!SPOIL.test(sub)) put(kn,'Subtitlu oficial','„'+sub+'”');
+      if(ds&&!SPOIL.test(ds)) put(kn,'Descriere oficială','„'+(ds.length>300?ds.slice(0,297)+'…':ds)+'”');
+      if(ds&&!SPOIL.test(ds)&&!REW.test(ds)) put(un,'Recompense / provocări','descrierea oficială nu spune nimic despre ele');
+    }
+  }
+  (K.known||[]).forEach(x=>put(kn,'',x));
+  if(ev.coming_soon) put(un,'Data','Coming Soon, neanunțată oficial');
+  if(ev.date_only) put(un,'Ora exactă','neanunțată (avem doar data)');
+  if(ev.end_time_unknown) put(un,'Ora de final','neanunțată'+(ev.end_date?' (final anunțat: '+fmt(ev.end_date+'T12:00:00+02:00',{day:'numeric',month:'long'})+')':''));
+  if(ev.no_end) put(un,'Final',ev.end_note||'fără dată de final anunțată');
+  if(ev.end_only&&!st) put(un,'Start','neanunțat (avem doar finalul)');
+  if(ap&&w.s&&Math.abs(new Date(ap.start)-w.s)>=10*6e4) put(un,'Ora','postarea noastră și API-ul Roblox nu se potrivesc, verifică pagina oficială');
+  (K.unknown||[]).forEach(x=>put(un,'',x));
+  const src=[];if(ap&&VE&&VE.updated) src.push('API Roblox, citit '+fmt(VE.updated,{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}));
+  if(ev.label) src.push('postare '+ev.label);
+  return {kn,un,src:src.join(' · '),link:ev.link||(ap?'https://www.roblox.com/events/'+ap.id:'')};
+}
+function knowHtml(ev,o){
+  o=o||{};const k=knowFor(ev,o),li=a=>a.map(x=>`<li>${x.l?`<b>${es(x.l)}</b>`:''}<span>${es(x.v)}</span></li>`).join('');
+  return `<div class="kn-in"><div class="kc ok"><h3>Ce știm</h3><ul>${li(k.kn)||'<li><span>Nimic confirmat în afara orarului.</span></li>'}</ul></div>`+
+    `<div class="kc no"><h3>Ce NU știm încă</h3><ul>${li(k.un)||'<li><span>Nimic marcat ca neanunțat în sursă. Detalii în postare.</span></li>'}</ul></div>`+
+    `<div class="ks2">${k.src?'Sursă: '+es(k.src):''}${k.link?`${k.src?' · ':''}<a href="${es(k.link)}" target="_blank" rel="noopener">pagina oficială Roblox</a>`:''}</div></div>`;
+}
+
+window.VX={loadVE,knowHtml,knowFor,dispName,evRow,tick,TZ,es,fmt,dayKey,relevant,status,windowText,span,progress,left,cdHtml,gameHue};
 })();
