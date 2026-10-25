@@ -1,0 +1,27 @@
+name: Refresh Shorts views
+on:
+  schedule:
+    - cron: "41 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: refresh-shorts
+  cancel-in-progress: false
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 fetch_shorts.py
+      - run: |
+          git config user.name "vexu-hq-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add shorts-views.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Refresh Shorts views"
+          for i in 1 2 3 4 5; do
+            git pull --rebase && git push && exit 0
+            echo "push respins, reîncerc ($i)"; sleep $((i*5))
+          done
+          exit 1

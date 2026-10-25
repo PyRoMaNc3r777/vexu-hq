@@ -18,6 +18,25 @@ try:
 except Exception as e:
     if old.get("event"): ev=old["event"]
 d["event"]=ev
+
+# virtual-events.json: evenimentele oficiale Roblox (API public) ale jocului Steal An Egg, pentru panoul „Ce știm / ce NU știm”.
+# Se scrie DOAR dacă API-ul a răspuns acum; altfel rămâne fișierul vechi. Păstrăm doar evenimentele terminate acum cel mult 3 zile sau viitoare.
+try:
+    _now=datetime.datetime.now(datetime.timezone.utc)
+    _lim=(_now-datetime.timedelta(days=3)).isoformat()
+    _ve=[]
+    for e in get(f"https://apis.roblox.com/virtual-events/v1/universes/{U}/virtual-events?limit=100")["data"]:
+        et=e.get("eventTime") or {}
+        if not et.get("endUtc") or et["endUtc"]<_lim: continue
+        h=e.get("host") or {}
+        _ve.append({"id":e["id"],"title":e.get("title"),"subtitle":e.get("subtitle"),"description":e.get("description"),
+                    "host":h.get("hostName"),"verified":bool(h.get("hasVerifiedBadge")),
+                    "categories":[c.get("category") for c in (e.get("eventCategories") or []) if c.get("category")],
+                    "start":et.get("startUtc"),"end":et.get("endUtc"),"status":e.get("eventStatus"),"updated":e.get("updatedUtc")})
+    json.dump({"v":1,"universeId":U,"updated":d["updated"],"events":_ve},open("virtual-events.json.tmp","w"),ensure_ascii=False,indent=1)
+    os.replace("virtual-events.json.tmp","virtual-events.json")
+except Exception as e:
+    print("virtual-events.json: păstrez fișierul vechi:",e)
 d["team"]=json.load(open("team.json")) if os.path.exists("team.json") else []
 json.dump(d,open("data.json.tmp","w"),ensure_ascii=False,indent=1);os.replace("data.json.tmp","data.json")
 

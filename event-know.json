@@ -1,0 +1,42 @@
+{
+ "_info": "Completări manuale pentru panoul „Ce știm / ce NU știm” (calendar + dashboard). Se potrivește după game + name din events[] al postării. Câmpuri: title (nume scurt afișat), unclear (text scurt când data e neclară), minimal (true = doar orar + liniile de aici), desc (false = nu afișa descrierea oficială din API), known[] și unknown[] (propoziții scurte, DOAR fapte din surse oficiale sau postări CONFIRMAT; nimic ghicit). Orele, organizatorul, categoria și descrierea vin automat din API-ul Roblox (virtual-events.json) sau din postare.",
+ "events": [
+  {
+   "game": "Steal An Egg",
+   "name": "SAE Halloween Part 2",
+   "minimal": true,
+   "known": [
+    "Următorul eveniment oficial în Steal An Egg: CONCERT REVEAL („The WORLD’S BIGGEST CONCERT is coming!”)"
+   ],
+   "unknown": [
+    "Cine cântă la concert: artist secret",
+    "Data concertului: descrierea zice miercuri 28 oct, 17:00 (ora României), cardul zice sâmbătă 31 oct, 17:00–18:00"
+   ]
+  },
+  {
+   "game": "Steal An Egg",
+   "name": "CONCERT REVEAL (data neclară: descrierea zice mie 28 oct 17:00, cardul zice sâm 31 oct)",
+   "title": "CONCERT REVEAL",
+   "unclear": "Data de pe card, neclară",
+   "known": [
+    "Anunț oficial: „The WORLD’S BIGGEST CONCERT is coming!”, adică cel mai mare concert din lume vine în Steal An Egg"
+   ],
+   "unknown": [
+    "Cine cântă: artistul e secret, încă neanunțat",
+    "Care dată contează: descrierea zice miercuri 28 oct, 17:00 (ora României), cardul zice sâmbătă 31 oct, 17:00–18:00"
+   ]
+  },
+  {
+   "game": "+1 Speed Keyboard Escape",
+   "name": "CG5 CONCERT",
+   "known": [
+    "Mesaj oficial pe card: „JOIN US”"
+   ],
+   "unknown": [
+    "Setlist-ul (ce melodii cântă CG5): nepublicat",
+    "Recompensele: nepublicate",
+    "Descrierea: pagina oficială nu are descriere"
+   ]
+  }
+ ]
+}
