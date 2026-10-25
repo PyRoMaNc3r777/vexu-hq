@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T15:35:39+02:00",
+ "generated": "2026-10-25T16:09:45+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -41,6 +41,38 @@
    ],
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "Update 3",
+   "game": "Anime Legacy Simulator",
+   "start": "2026-10-23T21:00:00+03:00",
+   "end": "2026-10-29T20:00:00+02:00",
+   "link": "https://www.roblox.com/events/7225746666601710159",
+   "slug": "anime-legacy-simulator-update-3",
+   "img": "img/a342fba3490e.png",
+   "post_title": "⚔️ Anime Legacy Simulator: Update 3 e live, cu hartă nouă, sistem nou și mod nou",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7225746666601710159"
+   ],
+   "gameSlug": "anime-legacy-simulator",
+   "gameLabel": "Anime Legacy Simulator"
+  },
+  {
+   "name": "Halloween Part 2 (Reaper)",
+   "game": "Cat Battles",
+   "start": "2026-10-24T19:00:00+03:00",
+   "end": "2026-10-31T18:00:00+02:00",
+   "link": "https://www.roblox.com/events/2565547896309154387",
+   "slug": "cat-battles-halloween-part-2-reaper",
+   "img": "img/f814bfef1384.png",
+   "post_title": "💀 Cat Battles: a venit Reaper-ul! Halloween Part 2 cu hărți noi, ține până sâmbătă",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2565547896309154387"
+   ],
+   "gameSlug": "cat-battles",
+   "gameLabel": "Cat Battles"
   },
   {
    "name": "The Gateway Opens...",
@@ -1835,34 +1867,6 @@
    ],
    "gameSlug": "steal-an-egg",
    "gameLabel": "Steal An Egg"
-  },
-  {
-   "name": "Halloween Part 2 (Reaper)",
-   "game": "Cat Battles",
-   "start": "2026-10-24T19:00:00+03:00",
-   "end": "2026-10-31T18:00:00+02:00",
-   "link": "https://www.roblox.com/events/2565547896309154387",
-   "img": "generic-neon.png",
-   "standalone": true,
-   "rids": [
-    "2565547896309154387"
-   ],
-   "gameSlug": "cat-battles",
-   "gameLabel": "Cat Battles"
-  },
-  {
-   "name": "Update 3",
-   "game": "Anime Legacy Simulator",
-   "start": "2026-10-23T21:00:00+03:00",
-   "end": "2026-10-29T20:00:00+02:00",
-   "link": "https://www.roblox.com/events/7225746666601710159",
-   "img": "generic-neon.png",
-   "standalone": true,
-   "rids": [
-    "7225746666601710159"
-   ],
-   "gameSlug": "anime-legacy-simulator",
-   "gameLabel": "Anime Legacy Simulator"
   },
   {
    "name": "Career Mode",

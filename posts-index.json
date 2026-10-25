@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T15:35:39+02:00",
+ "generated": "2026-10-25T16:09:45+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,48 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "anime-legacy-simulator-update-3",
+   "title": "⚔️ Anime Legacy Simulator: Update 3 e live, cu hartă nouă, sistem nou și mod nou",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T10:45:00+02:00",
+   "img": "img/a342fba3490e.png",
+   "excerpt": "⚔️ Anime Legacy Simulator are un event oficial pentru Update 3, deja activ în joc. 📅 Când (ora României): • ▶️ A început: vineri, 23 oct,…",
+   "featured": false,
+   "section": null,
+   "joc": "Anime Legacy Simulator",
+   "jocSlug": "anime-legacy-simulator",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "cat-battles-halloween-part-2-reaper",
+   "title": "💀 Cat Battles: a venit Reaper-ul! Halloween Part 2 cu hărți noi, ține până sâmbătă",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T10:30:00+02:00",
+   "img": "img/f814bfef1384.png",
+   "excerpt": "💀 Cat Battles are partea a doua de Halloween: „THE REAPER IS HERE”. Eventul oficial e deja activ în joc. 📅 Când (ora României): • ▶️ A…",
+   "featured": false,
+   "section": null,
+   "joc": "Cat Battles",
+   "jocSlug": "cat-battles",
    "prio": 0,
    "views": null,
    "updated": null,
