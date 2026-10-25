@@ -427,3 +427,8 @@ details.dg>summary:hover{background:var(--s1)}
 .dh em{white-space:nowrap;flex:none}
 .dh em s{display:none;text-decoration:none}
 @media(min-width:560px){.dh em s{display:inline}}
+
+/* idee de short expirată: afișată ca arhivă, nu ca ideea zilei */
+#shC.old{background:var(--s1);border-style:dashed}
+#shC.old .big{color:var(--tx2);font-size:var(--t-m,18px)}
+.oldn{margin:var(--sp2) 0 0;font:400 12px/1.45 var(--m);color:var(--tx3)}

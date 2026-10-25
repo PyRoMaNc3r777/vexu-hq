@@ -109,7 +109,7 @@ CSS_LINK = ('<link rel="preload" href="/vexu-hq/fonts/geist-latin.woff2" as="fon
 TOP_HTML = '<button class="totop" id="totop" type="button" aria-label="Înapoi sus" title="Înapoi sus">↑</button>'
 # (Vânătoarea de dovleci a fost scoasă din UI în design v6; pumpkin-hunt.js rămâne în repo, neîncărcat.)
 HUNT_JS = ''
-TOP_JS = "<script>(function(){var b=document.getElementById('totop');if(!b)return;function u(){b.classList.toggle('on',scrollY>600)}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}})()</script>"
+TOP_JS = "<script>(function(){var b=document.getElementById('totop');if(!b)return;var ly=scrollY;function u(){var y=scrollY;b.classList.toggle('on',y>600&&(y<ly-4||innerHeight+y>=document.documentElement.scrollHeight-8));if(Math.abs(y-ly)>4)ly=y}addEventListener('scroll',u,{passive:true});u();b.onclick=function(){scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion:reduce)').matches?'auto':'smooth'})}})()</script>"
 NAV_ITEMS = [('index', 'index.html', 'Dashboard'), ('blog', 'blog.html', 'Blog'),
              ('calendar', 'calendar.html', 'Calendar'), ('recap', 'recap.html', 'Rezumat')]
 def header(active=None, pre='', section=False):
