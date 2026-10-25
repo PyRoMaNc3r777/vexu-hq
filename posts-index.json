@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T16:33:16+02:00",
+ "generated": "2026-10-25T17:05:39+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -70,6 +70,75 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "steel-fighters-de-la-221-la-36k-jucatori",
+   "title": "🤖 Steel Fighters: de la 221 la peste 36.000 de jucători într-o săptămână",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T11:30:00+02:00",
+   "img": "img/d55c30fb6f15.png",
+   "cimg": "img/d55c30fb6f15.png",
+   "fit": "cover",
+   "excerpt": "🤖 Steel Fighters, jocul cu roboți de la WeShowProjects, a explodat în ultima săptămână. 📈 Potrivit RoTerminal (sâmbătă, 24 oct, 07:00 ora…",
+   "featured": false,
+   "section": null,
+   "joc": "Steel Fighters",
+   "jocSlug": "steel-fighters",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "loomian-legacy-route-9-30-octombrie-teaser",
+   "title": "🌲 Loomian Legacy: Route 9 vine pe 30 octombrie, iar teaserul animat e aici",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T11:15:00+02:00",
+   "img": "img/fde67a7e583c.jpg",
+   "cimg": "img/fde67a7e583c.jpg",
+   "fit": "cover",
+   "excerpt": "🌲 Llama Train Studio, echipa din spatele Loomian Legacy, a publicat un teaser animat pentru Route 9. 📅 Data oficială: vineri, 30 octombrie…",
+   "featured": false,
+   "section": null,
+   "joc": "Loomian Legacy",
+   "jocSlug": "loomian-legacy",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "bite-by-night-imagini-noi-zone-industriale",
+   "title": "🌑 Bite By Night: dezvoltatorii au postat imagini noi și un clip cu zone industriale întunecate",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T11:00:00+02:00",
+   "img": "img/20595cc97a76.jpg",
+   "cimg": "img/20595cc97a76.jpg",
+   "fit": "cover",
+   "excerpt": "🌑 Contul oficial Bite By Night (@bitebynightdev) a postat ceva nou pe X: două imagini și un clip de aproximativ 10 secunde. 📅 Când:…",
+   "featured": false,
+   "section": null,
+   "joc": "Bite By Night",
+   "jocSlug": "bite-by-night",
    "prio": 0,
    "views": null,
    "updated": null,

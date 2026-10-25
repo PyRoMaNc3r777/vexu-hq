@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T16:33:16+02:00",
+ "generated": "2026-10-25T17:05:39+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -41,6 +41,19 @@
    ],
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "Route 9 (oră neanunțată)",
+   "game": "Loomian Legacy",
+   "start_date": "2026-10-30",
+   "date_only": true,
+   "link": "https://x.com/Llama_Train_S/status/2111200669092712697",
+   "slug": "loomian-legacy-route-9-30-octombrie-teaser",
+   "img": "img/fde67a7e583c.jpg",
+   "post_title": "🌲 Loomian Legacy: Route 9 vine pe 30 octombrie, iar teaserul animat e aici",
+   "label": "CONFIRMAT",
+   "gameSlug": "loomian-legacy",
+   "gameLabel": "Loomian Legacy"
   },
   {
    "name": "Update 3",
