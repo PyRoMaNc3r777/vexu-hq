@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T14:39:50+02:00",
+ "generated": "2026-10-25T14:43:54+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -41,6 +41,31 @@
    ],
    "gameSlug": "1-speed-keyboard-escape",
    "gameLabel": "+1 Speed Keyboard Escape"
+  },
+  {
+   "name": "The Gateway Opens...",
+   "game": "Oaklands",
+   "start": "2026-10-25T20:00:00+02:00",
+   "end": "2026-11-05T06:55:00+02:00",
+   "link": "https://www.roblox.com/events/3500698821946639001",
+   "slug": "oaklands-the-gateway-opens-25-octombrie",
+   "img": "img/oaklands-the-gateway-opens.png",
+   "post_title": "🎃 Oaklands: „The Gateway Opens...” începe diseară la 20:00 și ceva vine PERMANENT în joc",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3500698821946639001"
+   ],
+   "gameSlug": "oaklands",
+   "gameLabel": "Oaklands",
+   "know": {
+    "known": [
+     "Anunț oficial: ceva vine PERMANENT în Oaklands, iar dezvoltatorii cer ajutorul jucătorilor („find out more soon”)"
+    ],
+    "unknown": [
+     "Ce anume vine în joc: secret",
+     "Ce ai de făcut și ce recompense sunt: neanunțat"
+    ]
+   }
   },
   {
    "name": "Turbo Soccer — TURBOWEEN Part 1",

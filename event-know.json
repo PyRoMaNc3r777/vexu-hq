@@ -37,6 +37,17 @@
     "Recompensele: nepublicate",
     "Descrierea: pagina oficială nu are descriere"
    ]
+  },
+  {
+   "game": "Oaklands",
+   "name": "The Gateway Opens...",
+   "known": [
+    "Anunț oficial: ceva vine PERMANENT în Oaklands, iar dezvoltatorii cer ajutorul jucătorilor („find out more soon”)"
+   ],
+   "unknown": [
+    "Ce anume vine în joc: secret",
+    "Ce ai de făcut și ce recompense sunt: neanunțat"
+   ]
   }
  ]
 }
