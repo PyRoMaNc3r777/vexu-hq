@@ -4051,5 +4051,28 @@
    "https://www.youtube.com/shorts/EEwKOgBK618",
    "https://www.tiktok.com/@vexu_online"
   ]
+ },
+ {
+  "date": "2026-10-25",
+  "published": "2026-10-25T12:00:00+02:00",
+  "eticheta": "CONFIRMAT",
+  "joc": "99 Nights in the Forest",
+  "titlu": "🔦 99 Nights in the Forest: mini-eventul The Hollow începe azi la 17:00",
+  "slug": "99-nights-in-the-forest-mini-eventul-the-hollow-25-octombrie",
+  "img": "img/99-nights-the-hollow-mini-event.png",
+  "surse": [
+   "https://www.roblox.com/events/646550818396439186",
+   "https://about.roblox.com/newsroom/2026/10/the-hollow-halloween-survival-event"
+  ],
+  "text": "🔦 99 Nights in the Forest are un mini-event oficial pentru The Hollow, eventul de Halloween al Roblox. Pe pagina oficială se numește „The Hollow Event”, cu subtitlul „mini challenge”.\n\n📅 Când (ora României):\n- ▶️ Începe: duminică, 25 oct, la 17:00\n- ⏹️ Se termină: sâmbătă, 31 oct, la 12:45\n\n✅ Ce am verificat în API-ul public Roblox (25 oct, ~12:00 RO): eventul e publicat de Grandma's Favourite Games (grupul care face jocul), e public și e pus la categoria „quest”. Descrierea oficială spune doar: „Get ready for the 99 Nights in the Forest Hollow mini-event”.\n\n⚠️ Recompensele și provocările NU sunt anunțate încă. Nu știm ce trebuie făcut și ce primești — revenim când apar detalii oficiale.\n\n🔗 Pagina oficială a eventului: https://www.roblox.com/events/646550818396439186\n🎃 Tot despre The Hollow: https://pyromanc3r777.github.io/vexu-hq/posts/the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie.html\n🌲 Eventul anterior din joc, Trick or Treat: https://pyromanc3r777.github.io/vexu-hq/posts/99-nights-in-the-forest-vine-trick-or-treat.html\n🎮 Toate știrile 99 Nights in the Forest: https://pyromanc3r777.github.io/vexu-hq/joc/99-nights-in-the-forest.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "events": [
+   {
+    "name": "The Hollow — mini challenge",
+    "game": "99 Nights in the Forest",
+    "start": "2026-10-25T17:00:00+02:00",
+    "end": "2026-10-31T12:45:00+02:00",
+    "link": "https://www.roblox.com/events/646550818396439186"
+   }
+  ]
  }
 ]

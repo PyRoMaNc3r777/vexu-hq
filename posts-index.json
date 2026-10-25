@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T11:40:50+02:00",
+ "generated": "2026-10-25T12:02:16+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,27 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "99-nights-in-the-forest-mini-eventul-the-hollow-25-octombrie",
+   "title": "🔦 99 Nights in the Forest: mini-eventul The Hollow începe azi la 17:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-25",
+   "dateRo": "25 octombrie 2026",
+   "published": "2026-10-25T12:00:00+02:00",
+   "img": "img/99-nights-the-hollow-mini-event.png",
+   "excerpt": "🔦 99 Nights in the Forest are un mini-event oficial pentru The Hollow, eventul de Halloween al Roblox. Pe pagina oficială se numește „The…",
+   "featured": false,
+   "section": null,
+   "joc": "99 Nights in the Forest",
+   "jocSlug": "99-nights-in-the-forest",
    "prio": 0,
    "views": null,
    "updated": null,
