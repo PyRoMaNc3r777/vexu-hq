@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T12:02:16+02:00",
+ "generated": "2026-10-25T12:33:53+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -64,6 +64,48 @@
    "section": null,
    "joc": "+1 Speed Keyboard Escape",
    "jocSlug": "1-speed-keyboard-escape",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "punpkin-blx-a-furat-toate-ouale-de-halloween",
+   "title": "🎃 PUNPKIN BLX a furat toate ouăle de Halloween din server",
+   "labels": [
+    "TREND SHORTS"
+   ],
+   "date": "2026-10-25",
+   "dateRo": "25 octombrie 2026",
+   "published": "2026-10-25T12:36:00+02:00",
+   "img": "img/yt-OTmYVVYMv_Q.jpg",
+   "excerpt": "PUNPKIN BLX are un short din Steal an Egg, „I stole all the Halloween eggs and got the rarest pet”, de 142 de secunde, postat pe 20 oct pe…",
+   "featured": false,
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "noobified-o-cutie-neagra-pica-din-cer",
+   "title": "⬛ Noobified trece de 2M cu „O cutie neagră pică din cer”",
+   "labels": [
+    "TREND SHORTS"
+   ],
+   "date": "2026-10-25",
+   "dateRo": "25 octombrie 2026",
+   "published": "2026-10-25T12:35:00+02:00",
+   "img": "img/yt-eZsi7QJqJ3M.jpg",
+   "excerpt": "Noobified are un short nou, „A Black MYSTERY Box Falls From The SKY”, de 173 de secunde, postat pe 21 oct pe la 01:00 (ora României). Avea…",
+   "featured": false,
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
    "updated": null,
