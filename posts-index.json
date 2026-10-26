@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T11:33:02+02:00",
+ "generated": "2026-10-26T12:09:56+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -530,6 +530,52 @@
    "section": null,
    "joc": "Feed A Mosquito",
    "jocSlug": "feed-a-mosquito",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "top-cresteri-roblox-21-octombrie",
+   "title": "📈 Top creșteri pe Roblox din 21 oct: Fix My Phone! +106%, Bike Universe +36%",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-26",
+   "dateRo": "26 octombrie 2026",
+   "published": "2026-10-26T12:12:00+02:00",
+   "img": "generic-neon.png",
+   "cimg": "",
+   "fit": "none",
+   "excerpt": "📈 Jocurile care au crescut cel mai mult pe Roblox, după trackerul @RobloxGameStats, la 21 oct. • 🥇 Fix My Phone!: +106% (7,6K jucători) •…",
+   "featured": false,
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "zvon-blox-fruits-halloween-31-octombrie",
+   "title": "⚠️ ZVON: update-ul de Halloween din Blox Fruits ar veni sâmbătă, 31 oct",
+   "labels": [
+    "ZVON"
+   ],
+   "date": "2026-10-26",
+   "dateRo": "26 octombrie 2026",
+   "published": "2026-10-26T12:10:00+02:00",
+   "img": "img/czubix-blox-fruits-31-oct.jpg",
+   "cimg": "img/czubix-blox-fruits-31-oct.jpg",
+   "fit": "cover",
+   "excerpt": "🍈 ⚠️ ZVON, neconfirmat oficial. Contul @czub2ix1 (Czubix) a scris pe 21 oct că update-ul de Halloween din Blox Fruits ar trebui să vină…",
+   "featured": false,
+   "section": null,
+   "joc": "Blox Fruits",
+   "jocSlug": "blox-fruits",
    "prio": 0,
    "views": null,
    "updated": null,

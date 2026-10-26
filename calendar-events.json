@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T11:33:02+02:00",
+ "generated": "2026-10-26T12:09:56+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -136,6 +136,19 @@
      "Ce țânțari Limited sunt și cât de rari: neanunțat"
     ]
    }
+  },
+  {
+   "name": "Halloween Update (ZVON, oră neanunțată)",
+   "game": "Blox Fruits",
+   "start_date": "2026-10-31",
+   "date_only": true,
+   "link": "https://x.com/czub2ix1/status/2112693978004947401",
+   "slug": "zvon-blox-fruits-halloween-31-octombrie",
+   "img": "img/czubix-blox-fruits-31-oct.jpg",
+   "post_title": "⚠️ ZVON: update-ul de Halloween din Blox Fruits ar veni sâmbătă, 31 oct",
+   "label": "ZVON",
+   "gameSlug": "blox-fruits",
+   "gameLabel": "Blox Fruits"
   },
   {
    "name": "NIGHTMARE CIRCUS RETURNS",
