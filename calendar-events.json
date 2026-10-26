@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T00:50:31+02:00",
+ "generated": "2026-10-27T00:53:15+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -136,6 +136,54 @@
      "Ce țânțari Limited sunt și cât de rari: neanunțat"
     ]
    }
+  },
+  {
+   "name": "Abilities Update",
+   "game": "Stick Wars",
+   "start": "2026-10-26T21:00:52+02:00",
+   "end": "2026-11-02T00:46:52+02:00",
+   "link": "https://www.roblox.com/events/861682607677637265",
+   "slug": "stick-wars-abilities-update-abilities-trophy-road-powerpoints",
+   "img": "img/stick-wars-abilities-update.png",
+   "post_title": "⚔️ Stick Wars: ABILITIES UPDATE e live, cu Abilities, Trophy Road, Stickmen Levels și Powerpoints",
+   "label": "CONFIRMAT",
+   "rids": [
+    "861682607677637265"
+   ],
+   "gameSlug": "stick-wars",
+   "gameLabel": "Stick Wars"
+  },
+  {
+   "name": "UPD 3 + Halloween + Admin Abuse",
+   "game": "Build a PC",
+   "start": "2026-11-01T05:00:27+02:00",
+   "end": "2026-11-01T17:30:27+02:00",
+   "link": "https://www.roblox.com/events/2639105325776634541",
+   "slug": "build-a-pc-upd-3-halloween-admin-abuse-1-noiembrie",
+   "img": "img/build-a-pc-upd-3-halloween.png",
+   "post_title": "🖥️ Build a PC: UPD 3 + Halloween + Admin Abuse duminică, 1 nov, de la 05:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "2639105325776634541"
+   ],
+   "gameSlug": "build-a-pc",
+   "gameLabel": "Build a PC"
+  },
+  {
+   "name": "Halloween Pt. 2",
+   "game": "Airport Security",
+   "start": "2026-10-31T22:00:35+02:00",
+   "end": "2026-11-06T04:00:35+02:00",
+   "link": "https://www.roblox.com/events/5731687937863713401",
+   "slug": "airport-security-anomaly-halloween-pt-2-31-octombrie",
+   "img": "img/airport-security-halloween-pt2.png",
+   "post_title": "✈️ Airport Security (Anomaly): Halloween PT. 2 sâmbătă, 31 oct, la 22:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5731687937863713401"
+   ],
+   "gameSlug": "airport-security",
+   "gameLabel": "Airport Security"
   },
   {
    "name": "Admin Abuse",
