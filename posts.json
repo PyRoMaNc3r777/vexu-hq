@@ -4603,5 +4603,41 @@
    }
   ],
   "published": "2026-10-26T09:38:27+02:00"
+ },
+ {
+  "titlu": "🚓 Highway Patrol: Career Mode e live — o autostradă fără sfârșit, până vineri 30 oct",
+  "slug": "highway-patrol-career-mode-26-octombrie",
+  "date": "2026-10-26",
+  "eticheta": "CONFIRMAT",
+  "joc": "Highway Patrol",
+  "img": "img/highway-patrol-career-mode-26oct.png",
+  "text": "Highway Patrol [Alpha] a primit UPDATE 4: CAREER MODE! Evenimentul oficial „CAREER MODE + ???” e deja live de vineri, 23 oct, la 23:30 (ora României) și ține până sâmbătă, 31 oct, la 00:02 — practic toată ziua de vineri 30 oct.\n\nCe spune pagina oficială:\n- Career Mode: o autostradă fără sfârșit.\n- La fiecare poartă îți alegi cărțile.\n- Cărțile Heat fac drumul mai greu, dar dau mai mulți coins.\n- Cărțile Perk te întăresc pe tine și pe echipa ta.\n- Dificultăți noi: Easy, Normal și Hard (până la 1.65x coins).\n- Cameră de roleplay: Body Cam și Dash Cam.\n- Clasament MOST WINS în lobby.\n- Suport complet pentru controller în meniurile din lobby.\n- Codul PATROL pentru coins gratis.\n- Bug fixes.\n\nȘi „???” din titlu? E un mister. Pagina oficială nu spune ce ascunde, așa că nici noi nu ghicim. 👀\n\nIntră pe Highway Patrol, bagă codul PATROL și spune-ne în comentarii pe ce dificultate ai rezistat cel mai mult!\n\nFollow = Au ce bile! 💥 TikTok @vexu_online + YouTube VEXU Online.",
+  "confirmat": "„CAREER MODE + ???” (Highway Patrol [Alpha], pagina oficială de eveniment Roblox): vineri 23 oct, 23:30 → sâmbătă 31 oct, 00:02 (ora României). UPDATE 4: Career Mode fără sfârșit, cărți Heat și Perk, dificultăți Easy/Normal/Hard (până la 1.65x coins), Body Cam și Dash Cam, clasament MOST WINS, suport controller, cod PATROL. Ce înseamnă „???” nu e spus nicăieri.",
+  "confirmat_surse": [
+   "https://www.roblox.com/events/6194828847804973716"
+  ],
+  "surse": [
+   "https://www.roblox.com/events/6194828847804973716"
+  ],
+  "published": "2026-10-26T10:15:00+02:00"
+ },
+ {
+  "titlu": "💬 Roblox face TextChatService obligatoriu: chat-ul devine nativ, migrarea e obligatorie până în mai 2027",
+  "slug": "roblox-textchatservice-obligatoriu-mai-2027",
+  "date": "2026-10-26",
+  "eticheta": "CONFIRMAT",
+  "joc": "Roblox (platformă)",
+  "img": "devforum1.svg",
+  "text": "Roblox schimbă cum merge chat-ul în toate jocurile. Pe DevForum, Roblox a anunțat (21 oct) că chat-ul devine mai „nativ”, cum e deja voice chat-ul: Roblox controlează cum e livrat și afișat fiecare mesaj, iar codul jocului nu mai are acces la textul mesajelor.\n\nCe e obligatoriu ACUM:\n- Orice chat între jucători trebuie să treacă prin TextChatService. Chat-ul în afara lui e împotriva regulilor Roblox.\n- Semne, panouri, nume de pet-uri, plăcuțe de înmatriculare, trade, anunțuri, admin tools, comentarii — dacă jucătorii pot vorbi prin ele, trebuie schimbate, scoase sau limitate la 1 update pe minut.\n- Jocurile care nu respectă regula primesc notificare de la Roblox în săptămânile următoare. Încălcările repetate pot duce la suspendarea sau scoaterea jocului de pe Roblox.\n\nCalendarul oficial:\n- Acum → feb 2027: developerii pot testa noul TextChatService și dau feedback.\n- Feb 2027: toate jocurile, noi și vechi, sunt trecute automat pe noul sistem, cu opțiune de opt-out.\n- Mai 2027: noul TextChatService devine singura cale de a avea chat custom. Chat UI-uri custom, comenzi, preseturi și prefixe trebuie mutate pe sistemele native (TextChannelWindow, TextChatCommands, Quick Words, iar pentru prefixe vine o soluție nativă la începutul lui 2027).\n\nDacă jocul folosește chat-ul default Roblox fără modificări, nu trebuie făcut nimic.\n\nUPDATE / ce urmează: Bloxy News rezumă că în anul următor Roblox adaugă unelte cu care developerii își pot personaliza chat-ul: meniu de emoji, voice typing, avatare în chat, culori custom pentru nume și indicator „scrie...” (cine tastează), plus altele. Pe DevForum, Roblox zice că emoji și voice typing în noua fereastră vin din noiembrie, avatarele și culoarea numelui mai târziu anul ăsta, iar indicatorul de tastare în 2027.\n\nTu ce zici, e mai bine chat-ul nativ sau îți plăceau chat-urile custom? Scrie-ne în comentarii!\n\nFollow = Au ce bile! 💥 TikTok @vexu_online + YouTube VEXU Online.",
+  "confirmat": "DevForum Roblox, „Important TextChatService Updates: How to Test and What’s Next” (21 oct 2026): orice chat între useri trebuie să treacă prin TextChatService; jocurile neconforme primesc notificare, iar încălcările continue pot duce la suspendare sau eliminare. Faze: acum–feb 2027 testare, feb 2027 opt-in automat cu opt-out, mai 2027 noul TCS e singura cale pentru chat custom. Roadmap: Emojis și Voice Typing (noiembrie), Avatars și Display Name Color (mai târziu anul ăsta), Typing Indicators (2027). Bloxy News (21 oct) confirmă lista: emoji menu, voice typing, avatars in chat, name colors, typing indicators.",
+  "confirmat_surse": [
+   "https://devforum.roblox.com/t/important-textchatservice-updates-how-to-test-and-whats-next/4948433",
+   "https://x.com/Bloxy_News/status/2112956772189442107"
+  ],
+  "surse": [
+   "https://devforum.roblox.com/t/important-textchatservice-updates-how-to-test-and-whats-next/4948433",
+   "https://x.com/Bloxy_News/status/2112956772189442107"
+  ],
+  "published": "2026-10-26T10:20:00+02:00"
  }
 ]
