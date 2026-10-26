@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T00:45:11+02:00",
+ "generated": "2026-10-27T00:50:31+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -11,8 +11,8 @@
    "post_title": "🎃 Halloween Dimension e LIVE în Steal An Egg: 3 biomuri, Echo, Phantom Express + Part 2 pe 24 oct",
    "label": "CONFIRMAT",
    "rids": [
-    "2469722483213861487",
-    "3079544932537598621"
+    "3079544932537598621",
+    "2469722483213861487"
    ],
    "gameSlug": "steal-an-egg",
    "gameLabel": "Steal An Egg",
@@ -2344,6 +2344,10 @@
    "img": "img/714817cca01f.jpg",
    "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
    "label": "CONFIRMAT",
+   "rids": [
+    "3785745055105548899",
+    "1602106990883111546"
+   ],
    "gameSlug": "roblox-platforma",
    "gameLabel": "Roblox (platformă)"
   },
@@ -2357,6 +2361,10 @@
    "img": "img/714817cca01f.jpg",
    "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
    "label": "CONFIRMAT",
+   "rids": [
+    "3785745055105548899",
+    "1602106990883111546"
+   ],
    "gameSlug": "roblox-platforma",
    "gameLabel": "Roblox (platformă)"
   },
@@ -2370,8 +2378,118 @@
    "img": "img/714817cca01f.jpg",
    "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
    "label": "CONFIRMAT",
+   "rids": [
+    "3785745055105548899",
+    "1602106990883111546"
+   ],
    "gameSlug": "roblox-platforma",
    "gameLabel": "Roblox (platformă)"
+  },
+  {
+   "name": "Live Roblox Presents: Hiachi x Kim Left Arm",
+   "game": "The Hollow",
+   "start": "2026-10-27T14:00:59+02:00",
+   "end": "2026-10-27T14:30:59+02:00",
+   "link": "https://www.roblox.com/events/3785745055105548899",
+   "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+   "img": "img/714817cca01f.jpg",
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3785745055105548899",
+    "1602106990883111546"
+   ],
+   "gameSlug": "the-hollow",
+   "gameLabel": "The Hollow"
+  },
+  {
+   "name": "Live Roblox Presents: Mimic Anomaly x Kat",
+   "game": "The Hollow",
+   "start": "2026-10-28T21:00:59+02:00",
+   "end": "2026-10-28T21:30:59+02:00",
+   "link": "https://www.roblox.com/events/3495073213384360621",
+   "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+   "img": "img/714817cca01f.jpg",
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3495073213384360621",
+    "3785745055105548899",
+    "1602106990883111546"
+   ],
+   "gameSlug": "the-hollow",
+   "gameLabel": "The Hollow"
+  },
+  {
+   "name": "Live Roblox Presents: Insp. x Itsjustnicholas",
+   "game": "The Hollow",
+   "start": "2026-10-29T21:00:59+02:00",
+   "end": "2026-10-29T21:30:59+02:00",
+   "link": "https://www.roblox.com/events/1602106990883111546",
+   "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+   "img": "img/714817cca01f.jpg",
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1602106990883111546",
+    "3785745055105548899"
+   ],
+   "gameSlug": "the-hollow",
+   "gameLabel": "The Hollow"
+  },
+  {
+   "name": "Live Roblox Presents: The Overseer x SirDapper",
+   "game": "The Hollow",
+   "start": "2026-10-31T02:00:59+02:00",
+   "end": "2026-10-31T02:30:59+02:00",
+   "link": "https://www.roblox.com/events/1046719890754503256",
+   "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+   "img": "img/714817cca01f.jpg",
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "1046719890754503256",
+    "3785745055105548899",
+    "1602106990883111546"
+   ],
+   "gameSlug": "the-hollow",
+   "gameLabel": "The Hollow"
+  },
+  {
+   "name": "Live Roblox Presents: Piggy x KreekCraft",
+   "game": "The Hollow",
+   "start": "2026-10-31T18:30:59+02:00",
+   "end": "2026-10-31T19:00:59+02:00",
+   "link": "https://www.roblox.com/events/5480805094482117272",
+   "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+   "img": "img/714817cca01f.jpg",
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5480805094482117272",
+    "3785745055105548899",
+    "1602106990883111546"
+   ],
+   "gameSlug": "the-hollow",
+   "gameLabel": "The Hollow"
+  },
+  {
+   "name": "Live Roblox Presents: ?????????",
+   "game": "The Hollow",
+   "start": "2026-10-31T19:30:07+02:00",
+   "end": "2026-10-31T20:00:07+02:00",
+   "link": "https://www.roblox.com/events/9185919240002208323",
+   "slug": "the-hollow-eventul-de-halloween-al-roblox-vine-pe-22-octombrie",
+   "img": "img/714817cca01f.jpg",
+   "post_title": "✅ OFICIAL: The Hollow, eventul de Halloween al Roblox — 9 monștri în 9 nopți, de vineri 23 oct",
+   "label": "CONFIRMAT",
+   "rids": [
+    "9185919240002208323",
+    "3785745055105548899",
+    "1602106990883111546"
+   ],
+   "gameSlug": "the-hollow",
+   "gameLabel": "The Hollow"
   },
   {
    "name": "The Candy Vault",
