@@ -53,6 +53,10 @@ nav.tn a:first-child{border-left:0}
 nav.tn a:hover{background:var(--s2);color:var(--tx)}
 nav.tn a[aria-current]{color:var(--tx);background:var(--s3);font-weight:600}
 nav.tn a[aria-current]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:var(--ac)}
+/* Telefon îngust: tab-urile își iau lățimea după text, ca „Calendar”/„Rezumat” să nu mai atingă marginile */
+@media(max-width:480px){
+  nav.tn a{flex:1 1 auto;padding:0 6px;font-size:13px;white-space:nowrap;letter-spacing:-.01em}
+}
 @media(min-width:820px){
   .top{position:sticky;top:0;z-index:30;height:var(--hh)}
   .top-in{flex-wrap:nowrap;gap:var(--sp5);height:100%}
