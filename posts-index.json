@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T10:49:12+02:00",
+ "generated": "2026-10-26T11:03:14+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -530,6 +530,29 @@
    "section": null,
    "joc": "Feed A Mosquito",
    "jocSlug": "feed-a-mosquito",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "zorbexrb-mimic-m-a-ajutat-intoarcere-de-situatie",
+   "title": "🎭 „La început a vrut să mă omoare, dar...”: ZorbexRB și Mimic-ul care l-a ajutat, la ~2,65M",
+   "labels": [
+    "TREND SHORTS"
+   ],
+   "date": "2026-10-26",
+   "dateRo": "26 octombrie 2026",
+   "published": "2026-10-26T11:00:00+02:00",
+   "img": "img/yt-UTd7I-Afzdg.jpg",
+   "cimg": "img/yt-UTd7I-Afzdg.jpg",
+   "fit": "cover",
+   "excerpt": "🎭 ZorbexRB are un short de 29 de secunde, „I Did Not Expect The Mimic To Help Me...”, cu aprox. 2,65M vizualizări (citite pe 21 oct) și un…",
+   "featured": false,
+   "section": "shorts",
+   "joc": "Steal An Egg",
+   "jocSlug": "steal-an-egg",
    "prio": 0,
    "views": null,
    "updated": null,
