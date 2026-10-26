@@ -35,9 +35,10 @@
  {
   "titlu": "🚂 Dead Rails: Dead of Night s-a amânat pe 20 octombrie",
   "img": "game-dead-rails.png",
-  "text": "🔄 UPDATE 22 oct: Dead of Night continuă cu două acte noi, ambele pe pagina oficială a jocului:\n- Act 2 („Invasions”): de sâmbătă, 24 oct, 19:00, până marți, 27 oct, 18:00 (ora României)\n- Act 3 („Class Mastery”): de sâmbătă, 31 oct (noaptea de Halloween), 22:00, până sâmbătă, 7 nov, 23:00 (ora României)\nLa ambele, descrierea oficială e încă „Coming soon”, deci nu se știe ce aduc.\n\nACTUALIZARE: s-a amânat pe 20 oct.\n\nEvenimentul „Dead of Night” în Dead Rails nu mai pornește pe 17 octombrie. Noua fereastră: de marți, 20 octombrie, la 23:00, până sâmbătă, 7 noiembrie, la 23:00 (ora României).\n\nPe pagina oficială a evenimentului descrierea e încă „Coming soon”, deci detaliile despre ce aduce nu sunt anunțate.\n\nUpdate 19 oct: Dead Rails primește și plușuri oficiale Youtooz pe 23 octombrie — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/dead-rails-plusuri-oficiale-youtooz-pe-23-octombrie.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "text": "🔄 UPDATE 27 oct (✅ CONFIRMAT): Dead of Night Act 2 e live, împreună cu quest-ul pentru The Hollow. Contul oficial @DeadRailsRBLX a scris pe X pe 26 oct (06:58, ora României): „This weekend, we released Dead of Night Act 2 AND our quest for Roblox's event - The Hollow 🎃!” Adică: „În weekend am scos Dead of Night Act 2 ȘI quest-ul nostru pentru eventul Roblox The Hollow 🎃!” Au pus și un video cu „o rundă rapidă prin toate noutățile”. Am citit doar textul postării, nu detaliem ce arată videoul.\n\n📅 Pagina oficială a jocului are acum și eventul „The Hollow: Phantom Train” (subtitlu „All aboard!”): duminică, 25 oct, la 02:00 → duminică, 1 nov, la 05:55 (ora României).\n\n📅 Act 2 („Invasions”) apare acum pe pagina eventului cu startul sâmbătă, 24 oct, la 23:15 (ora României), nu la 19:00 cum scria mai jos pe 22 oct. Se termină marți, 27 oct, la 18:00 (ora României). Act 3 („Class Mastery”) rămâne sâmbătă, 31 oct, 22:00 → 7 nov, 23:00.\n\n✅ Am citit în API-ul public Roblox (27 oct, ~00:45 RO): 20.796 de jucători online și 6.624.621.677 de vizite pe „Dead Rails”.\n\n❓ Ce NU știm:\n- Ce recompense dă quest-ul The Hollow\n- Ce aduce Act 2 în afară de subtitlul „Invasions”\n- Ce se vede exact în video\n\n🔗 Postarea oficială: https://x.com/DeadRailsRBLX/status/2114582436851937635\n\n🔄 UPDATE 22 oct: Dead of Night continuă cu două acte noi, ambele pe pagina oficială a jocului:\n- Act 2 („Invasions”): de sâmbătă, 24 oct, 19:00, până marți, 27 oct, 18:00 (ora României)\n- Act 3 („Class Mastery”): de sâmbătă, 31 oct (noaptea de Halloween), 22:00, până sâmbătă, 7 nov, 23:00 (ora României)\nLa ambele, descrierea oficială e încă „Coming soon”, deci nu se știe ce aduc.\n\nACTUALIZARE: s-a amânat pe 20 oct.\n\nEvenimentul „Dead of Night” în Dead Rails nu mai pornește pe 17 octombrie. Noua fereastră: de marți, 20 octombrie, la 23:00, până sâmbătă, 7 noiembrie, la 23:00 (ora României).\n\nPe pagina oficială a evenimentului descrierea e încă „Coming soon”, deci detaliile despre ce aduce nu sunt anunțate.\n\nUpdate 19 oct: Dead Rails primește și plușuri oficiale Youtooz pe 23 octombrie — detalii aici: https://pyromanc3r777.github.io/vexu-hq/posts/dead-rails-plusuri-oficiale-youtooz-pe-23-octombrie.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
   "eticheta": "CONFIRMAT",
   "surse": [
+   "https://x.com/DeadRailsRBLX/status/2114582436851937635",
    "https://www.roblox.com/events/1797162836242334297",
    "https://www.roblox.com/games/116495829188952/Dead-Rails",
    "https://www.roblox.com/events/7269102869591229025",
@@ -55,7 +56,7 @@
    {
     "name": "Dead of Night: Act 2",
     "game": "Dead Rails",
-    "start": "2026-10-24T19:00:00+03:00",
+    "start": "2026-10-24T23:15:12+03:00",
     "end": "2026-10-27T18:00:00+02:00",
     "link": "https://www.roblox.com/events/7269102869591229025"
    },
@@ -65,10 +66,18 @@
     "start": "2026-10-31T22:00:00+02:00",
     "end": "2026-11-07T23:00:00+02:00",
     "link": "https://www.roblox.com/events/4197183844253827708"
+   },
+   {
+    "name": "The Hollow: Phantom Train (quest)",
+    "game": "Dead Rails",
+    "start": "2026-10-25T02:00:40+03:00",
+    "end": "2026-11-01T05:55:40+02:00",
+    "link": "https://www.roblox.com/events/7075336898071364252"
    }
   ],
   "slug": "dead-rails-dead-of-night-pe-17-octombrie",
-  "joc": "Dead Rails"
+  "joc": "Dead Rails",
+  "updated": "2026-10-27T00:45:08+02:00"
  },
  {
   "titlu": "🤖 Forsaken: Helperbot pe 16 oct + event Halloween",
@@ -4692,24 +4701,26 @@
  {
   "date": "2026-10-26",
   "published": "2026-10-26T12:10:00+02:00",
-  "eticheta": "ZVON",
+  "eticheta": "CONFIRMAT",
   "joc": "Blox Fruits",
-  "titlu": "⚠️ ZVON: update-ul de Halloween din Blox Fruits ar veni sâmbătă, 31 oct",
+  "titlu": "✅ OFICIAL: update-ul de Halloween din Blox Fruits vine sâmbătă, 31 oct, la 16:00",
   "slug": "zvon-blox-fruits-halloween-31-octombrie",
-  "img": "img/czubix-blox-fruits-31-oct.jpg",
+  "img": "img/blox-fruits-halloween-event-oficial.png",
   "surse": [
+   "https://www.roblox.com/events/5531114895191442089",
    "https://x.com/czub2ix1/status/2112693978004947401"
   ],
-  "text": "🍈 ⚠️ ZVON, neconfirmat oficial.\n\nContul @czub2ix1 (Czubix) a scris pe 21 oct că update-ul de Halloween din Blox Fruits ar trebui să vină sâmbătă, 31 octombrie, și că trailerul ar urma să apară foarte curând.\n\n- 📅 Data din zvon: sâmbătă, 31 oct (ora nu e dată)\n- 🎬 Trailer: „foarte curând”, fără dată\n\n❌ Czubix spune că Uzoth (dev-ul Blox Fruits) a confirmat data, dar postarea lui Uzoth N-A FOST GĂSITĂ. Până nu apare ceva de la Uzoth sau de la contul oficial, rămâne zvon.\n\nCe scrie oficial despre conținut găsești în Blox Bulletin #25: https://pyromanc3r777.github.io/vexu-hq/posts/blox-fruits-blox-bulletin-25-halloween.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "text": "🔄 UPDATE 27 oct (✅ CONFIRMAT): zvonul s-a confirmat. Pe pagina oficială Roblox a apărut eventul „🎃 HALLOWEEN!”, cu subtitlul „Trick-Or-Treat Event”. Îl publică Gamer Robot Inc, grupul verificat care face Blox Fruits.\n\n📅 Când (ora României):\n- ▶️ Începe: sâmbătă, 31 oct, la 16:00\n- ⏹️ Se termină: duminică, 15 nov, la 03:00\nData de 31 oct, sâmbătă, e aceeași cu cea din zvonul lui Czubix din 21 oct. Ora de 16:00 o dă pagina oficială.\n\n✅ Pe pagina eventului descrierea e goală. Subtitlul („Trick-Or-Treat Event”) arată că e un event de tip trick-or-treat, dar nu spune ce se primește.\n\n✅ Am citit în API-ul public Roblox (27 oct, ~00:45 RO): 124.242 de jucători online și 65.113.290.607 de vizite pe „Blox Fruits”.\n\n❓ Ce NU știm:\n- Ce conține update-ul de Halloween (fructe, iteme, boss, hartă) și dacă apare un trailer\n- Cum funcționează trick-or-treat în joc și ce recompense sunt\n- Dacă update-ul și eventul se leagă de Blox Bulletin #25\n\n🔗 Pagina oficială a eventului: https://www.roblox.com/events/5531114895191442089\n\n🕰️ Cum a început: pe 21 oct, contul @czub2ix1 (Czubix) scrisese că update-ul de Halloween ar veni sâmbătă, 31 oct. Czubix a spus atunci că Uzoth (dev-ul Blox Fruits) a confirmat data, dar postarea lui Uzoth n-a fost găsită, deci a rămas zvon până acum. Ce scrie oficial despre conținut găsești în Blox Bulletin #25: https://pyromanc3r777.github.io/vexu-hq/posts/blox-fruits-blox-bulletin-25-halloween.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
   "events": [
    {
-    "name": "Halloween Update (ZVON, oră neanunțată)",
+    "name": "Halloween (Trick-Or-Treat Event)",
     "game": "Blox Fruits",
-    "start_date": "2026-10-31",
-    "date_only": true,
-    "link": "https://x.com/czub2ix1/status/2112693978004947401"
+    "start": "2026-10-31T16:00:12+02:00",
+    "end": "2026-11-15T03:00:12+02:00",
+    "link": "https://www.roblox.com/events/5531114895191442089"
    }
-  ]
+  ],
+  "updated": "2026-10-27T00:45:08+02:00"
  },
  {
   "date": "2026-10-26",
@@ -5053,6 +5064,147 @@
     "start": "2026-11-01T17:00:50+02:00",
     "end": "2026-11-08T17:00:50+02:00",
     "link": "https://www.roblox.com/events/3406971518427726385"
+   }
+  ]
+ },
+ {
+  "titlu": "🏴‍☠️ GPO Halloween Part 3 e LIVE: Transylvania se întoarce, Ba’al, Haunts la fiecare 25 de minute și 2 hărți noi de Battle Royale",
+  "slug": "gpo-halloween-part-3-transylvania-baal-haunts-battle-royale",
+  "img": "img/gpo-halloween-part-3.png",
+  "eticheta": "CONFIRMAT",
+  "joc": "Grand Piece Online",
+  "date": "2026-10-27",
+  "published": "2026-10-27T01:10:00+02:00",
+  "text": "🏴‍☠️ Grand Piece Online a scos „HALLOWEEN PART 3”, un MINI UPDATE, după cum scrie pe pagina oficială a eventului. Îl publică Grand Quest Games, studioul jocului. Numele jocului pe Roblox e acum „[🎃HALLOWEEN PT 3] Grand Piece Online”.\n\n✅ Lista oficială din descrierea eventului („GPO • Halloween Part 3 — October 25, 2026”):\n- 🦇 Transylvania se întoarce, la vest de Shells Town. Îl învingi pe Ba’al pentru echipament nou, printre care Moonreaver, Prestige Eclipse Moonreaver și Blood Chains\n- 🎃 „Spooksville Haunts” noi, la fiecare 25 de minute: primești Candy, 2x Drops și o șansă la Haunted Seeking Pumpkin. Dacă învingi 25, primești titlul „Monster Hunter”\n- 🗺️ 2 hărți noi de Battle Royale, una dintre ele cu temă de Halloween\n- 🧙 Witch’s Hat nou și skin-ul All Seeing Nightfall, plus costume care se întorc și arme în magazin\n- 🧵 Suport extins pentru Custom Tailor și previzualizări mai clare pentru accesorii și costume\n- 🥊 Un indicator nou pentru combo-ul M1\n- 🔁 Cereri de trade trimise direct de la Trading Signs\n- ❤️ În Battle Royale privat, pad-urile de viață/stamină reumplu și bara de ultimate\n\n📅 Când (ora României): eventul de pe pagina oficială a început luni, 26 oct, la 06:00.\n\n⚠️ Ora de final nu o dăm. API-ul Roblox arată pentru event un final foarte îndepărtat, sâmbătă, 19 dec, la 08:16, adică după aproape două luni, ceea ce nu pare o dată reală de final pentru un MINI UPDATE. De aceea am pus în calendar doar startul, fără final.\n\n✅ Am citit în API-ul public Roblox (27 oct, ~00:44 RO): 21.230 de jucători online și 1.337.658.549 de vizite. Jocul a fost actualizat ultima oară pe 26 oct, la 22:58 (ora României).\n\n❓ Ce NU știm:\n- Când se termină oficial Halloween Part 3 și dacă Haunts, Ba’al și iteme de Halloween dispar la sfârșitul lunii\n- Cât de greu e Ba’al și ce statistici au Moonreaver și Blood Chains\n- Cum arată cele 2 hărți noi de Battle Royale\n\n🔗 Pagina oficială a eventului: https://www.roblox.com/events/3488417469129949971\n🏴‍☠️ Vezi și: GPO Halloween Part 2: https://pyromanc3r777.github.io/vexu-hq/posts/gpo-halloween-part-2-pet-ul-verity-costume-noi-si-trick-or-treat-pe-spooksville-island.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "surse": [
+   "https://www.roblox.com/events/3488417469129949971"
+  ],
+  "events": [
+   {
+    "name": "Halloween Part 3 (mini update, final neanunțat)",
+    "game": "Grand Piece Online",
+    "start": "2026-10-26T06:00:27+02:00",
+    "link": "https://www.roblox.com/events/3488417469129949971"
+   }
+  ]
+ },
+ {
+  "titlu": "🎪 The Strongest Battlegrounds: HALLOWEEN EVENT cu tema circ, „The circus is in town”, fără dată anunțată",
+  "slug": "the-strongest-battlegrounds-halloween-event-circ-fara-data",
+  "img": "img/tsb-halloween-event-circus.png",
+  "eticheta": "CONFIRMAT",
+  "joc": "The Strongest Battlegrounds",
+  "date": "2026-10-27",
+  "published": "2026-10-27T01:15:00+02:00",
+  "text": "🎪 The Strongest Battlegrounds are un event oficial nou pe pagina jocului: „HALLOWEEN EVENT”, cu subtitlul „Get ready for the show.” („Pregătește-te de spectacol”). Îl publică Yielding Arts, grupul care face jocul.\n\n✅ Descrierea oficială are o singură propoziție: „Step right up. The circus is in town.” Adică: „Vino încoace. Circul a ajuns în oraș.” În imaginea eventului se vede un personaj în costum de clovn, pe o scenă de circ.\n\n✅ Am citit în API-ul public Roblox (27 oct, ~00:44 RO): 57.457 de jucători online și 19.503.156.300 de vizite pe „The Strongest Battlegrounds”. Eventul e public și e trecut la categoria „conținut nou”. A fost creat pe 26 oct, ~17:30 (ora României).\n\n⚠️ Dată: API-ul nu arată nicio dată de start sau final pentru acest event. De aceea nu l-am pus în calendar.\n\n❓ Ce NU știm:\n- Când începe și cât ține eventul\n- Ce aduce: personaj nou, hartă, mod, iteme sau doar decor de Halloween\n- Dacă „circul” are legătură cu update-ul „The Arsenal” anunțat mai demult\n\n🔗 Pagina oficială a eventului: https://www.roblox.com/events/8436758246655656562\n⚔️ Vezi și: The Strongest Battlegrounds, „The Arsenal”: https://pyromanc3r777.github.io/vexu-hq/posts/the-strongest-battlegrounds-vine-the-arsenal.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "surse": [
+   "https://www.roblox.com/events/8436758246655656562"
+  ]
+ },
+ {
+  "titlu": "🎣 Deep Fishing: Halloween Admin Abuse sâmbătă, 31 oct, la 17:00, și lumea nouă „The Verdant Crown” pe 1 noiembrie",
+  "slug": "deep-fishing-halloween-admin-abuse-31-octombrie-the-verdant-crown",
+  "img": "img/deep-fishing-halloween-admin-abuse.png",
+  "eticheta": "CONFIRMAT",
+  "joc": "Deep Fishing",
+  "date": "2026-10-27",
+  "published": "2026-10-27T01:20:00+02:00",
+  "text": "🎣 Deep Fishing are două evenimente oficiale noi, publicate de LazyGames., studioul jocului.\n\n📅 Când (ora României):\n- 🎃 „Halloween Admin Abuse 🎃” (subtitlu: „Its getting spooky...”): sâmbătă, 31 oct, la 17:00 → 17:45, adică 45 de minute\n- 🌱 „NEW WORLD IS COMING” (subtitlu: „The Verdant Crown🌱”): duminică, 1 nov, la 18:00 → vineri, 6 nov, la 18:00\n\n✅ Despre lumea nouă, textul oficial de pe pagina eventului spune: „Our new world 5 with many new fish new quests and more! Also Start of Season 2 the Snow Season and much more to come!” Pe scurt: lumea 5 cu pești și quest-uri noi, plus startul Sezonului 2, „Snow Season”.\n\n✅ Mai e un event activ acum, „TRADING is here!” („Trade Fish.Skins and more”), de duminică, 25 oct, la 18:00 până vineri, 30 oct, la 18:00.\n\n✅ Am citit în API-ul public Roblox (27 oct, ~00:44 RO): 9.493 de jucători online și 21.762.816 de vizite pe „[UPD] Deep Fishing🎣”.\n\n❓ Ce NU știm:\n- Ce se întâmplă la Admin Abuse (descrierea cere doar să activezi notificările)\n- Ce pești și quest-uri noi aduce The Verdant Crown și cum se deblochează lumea\n- Dacă Sezonul 2 începe tot pe 1 nov sau mai târziu\n\n🔗 Admin Abuse: https://www.roblox.com/events/7550505290916037257\n🔗 The Verdant Crown: https://www.roblox.com/events/4168683853482951288\n🎣 Vezi și: Deep Fishing cu trading: https://pyromanc3r777.github.io/vexu-hq/posts/deep-fishing-trading-duminica-25-oct-1800.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "surse": [
+   "https://www.roblox.com/events/7550505290916037257",
+   "https://www.roblox.com/events/4168683853482951288",
+   "https://www.roblox.com/events/3578913046418031164"
+  ],
+  "events": [
+   {
+    "name": "Halloween Admin Abuse",
+    "game": "Deep Fishing",
+    "start": "2026-10-31T17:00:01+02:00",
+    "end": "2026-10-31T17:45:01+02:00",
+    "link": "https://www.roblox.com/events/7550505290916037257"
+   },
+   {
+    "name": "The Verdant Crown (world 5)",
+    "game": "Deep Fishing",
+    "start": "2026-11-01T18:00:03+02:00",
+    "end": "2026-11-06T18:00:03+02:00",
+    "link": "https://www.roblox.com/events/4168683853482951288"
+   }
+  ]
+ },
+ {
+  "titlu": "🎯 Sniper Arena: „New Secret Skin!” vine vineri, 30 oct, la 16:30, dar skin-ul nu e arătat",
+  "slug": "sniper-arena-new-secret-skin-30-octombrie",
+  "img": "img/sniper-arena-new-secret-skin.png",
+  "eticheta": "CONFIRMAT",
+  "joc": "Sniper Arena",
+  "date": "2026-10-27",
+  "published": "2026-10-27T01:25:00+02:00",
+  "text": "🎯 Sniper Arena are un event oficial nou: „New Secret Skin!”, cu subtitlul „Stay Tuned!”. Îl publică 9D GAME CLUB, grupul care face jocul.\n\n📅 Când (ora României):\n- ▶️ Începe: vineri, 30 oct, la 16:30\n- ⏹️ Se termină: vineri, 13 nov, la 12:00\n\n✅ Descrierea oficială: „The New SCRT is coming soon!” Adică: „Noul SCRT vine în curând.” SCRT pare prescurtarea de la „secret”, dar asta e doar interpretarea noastră.\n\n✅ Mai e activ acum și „🎃 Halloween Event!”, de vineri, 23 oct, la 17:15 până joi, 5 nov, la 17:55. Descrierea lui: „Join the event to earn FREE Halloween knife & sniper skins, Dream Cases, Secret Cases, and Cash!” Adică skin-uri gratis de Halloween pentru cuțit și sniper, Dream Cases, Secret Cases și bani din joc.\n\n✅ Am citit în API-ul public Roblox (27 oct, ~00:44 RO): 9.916 de jucători online și 343.319.889 de vizite pe „[🎃Event] Sniper Arena”.\n\n❓ Ce NU știm:\n- Cum arată skin-ul secret și pentru ce armă e\n- Cum îl obții (cutie, quest sau cumpărat) și dacă e gratis\n- Dacă „SCRT” înseamnă într-adevăr un skin „secret” cum apare în nume\n\n🔗 Pagina oficială a eventului: https://www.roblox.com/events/4254061373224518284\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "surse": [
+   "https://www.roblox.com/events/4254061373224518284",
+   "https://www.roblox.com/events/6960330041142149721"
+  ],
+  "events": [
+   {
+    "name": "New Secret Skin!",
+    "game": "Sniper Arena",
+    "start": "2026-10-30T16:30:32+02:00",
+    "end": "2026-11-13T12:00:32+02:00",
+    "link": "https://www.roblox.com/events/4254061373224518284"
+   }
+  ]
+ },
+ {
+  "titlu": "🐾 Steal A Pet And Ride It: Halloween PART 2 sâmbătă, 31 oct, la 17:00, cu ADMIN ABUSE",
+  "slug": "steal-a-pet-and-ride-it-halloween-part-2-31-octombrie",
+  "img": "img/steal-a-pet-and-ride-it-halloween-part-2.png",
+  "eticheta": "CONFIRMAT",
+  "joc": "Steal A Pet And Ride It",
+  "date": "2026-10-27",
+  "published": "2026-10-27T01:30:00+02:00",
+  "text": "🐾 Steal A Pet And Ride It! (jocul în care furi un pet și te urci pe el) are pe pagina oficială eventul „Halloween PART 2 🎃”, cu subtitlul „🌀 A PORTAL HAS OPENED...”. Îl publică grupul Snail Riders.\n\n⚠️ Nu e același joc cu Steal An Egg. Aici nu e vorba de ouă, ci de pets pe care îi călărești.\n\n📅 Când (ora României): sâmbătă, 31 oct, la 17:00 → duminică, 8 nov, la 17:00\n\n✅ Din descrierea oficială: un portal s-a deschis în hub, o gheară uriașă trece prin el, din portal ies „creepy riders”, pământul se cutremură, iar ce e în spatele lor e aproape liber. Urmează „un ADMIN ABUSE mare” la startul lui Halloween Part 2. Textul oficial: „Only the bravest servers will stop it before Halloween ends...” („doar cele mai curajoase servere îl vor opri până se termină Halloween”).\n\n✅ Partea 1 e deja activă: „Halloween Update 🎃” (subtitlu „+ ADMIN ABUSE”), de duminică, 25 oct, la 17:00 până duminică, 8 nov, la 17:00. Textul ei vorbește de cuștile care strălucesc portocaliu noaptea, pets care se schimbă, o umbră uriașă care se trezește și un magazin misterios.\n\n✅ Am citit în API-ul public Roblox (27 oct, ~00:44 RO): 10.642 de jucători online și 2.675.702 de vizite pe „[🎃] Steal A Pet And Ride It!”. Jocul a fost actualizat ultima oară pe 26 oct, la 22:39 (ora României).\n\n❓ Ce NU știm:\n- Ce primesc jucătorii dacă serverele opresc ce iese din portal\n- Ce face Admin Abuse-ul (nu e scris)\n- Ce pets sau iteme noi aduce Part 2\n\n🔗 Pagina oficială a eventului: https://www.roblox.com/events/2390420822885008011\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "surse": [
+   "https://www.roblox.com/events/2390420822885008011",
+   "https://www.roblox.com/events/2624686213017240207"
+  ],
+  "events": [
+   {
+    "name": "Halloween PART 2 + Admin Abuse",
+    "game": "Steal A Pet And Ride It",
+    "start": "2026-10-31T17:00:04+02:00",
+    "end": "2026-11-08T17:00:04+02:00",
+    "link": "https://www.roblox.com/events/2390420822885008011"
+   }
+  ]
+ },
+ {
+  "titlu": "🥚 Break and Steal an Egg: ADMIN ABUSE joi, 29 oct, la 17:00, și Update + Admin Abuse duminică, 1 nov, la 17:00",
+  "slug": "break-and-steal-an-egg-admin-abuse-29-octombrie-update-1-noiembrie",
+  "img": "img/break-and-steal-an-egg-admin-abuse-29-oct.png",
+  "eticheta": "CONFIRMAT",
+  "joc": "Break and Steal an Egg",
+  "date": "2026-10-27",
+  "published": "2026-10-27T01:35:00+02:00",
+  "text": "🥚 Break and Steal an Egg (alt joc decât Steal An Egg) are două evenimente oficiale noi. Le publică ILGames x Eggs, grupul care face jocul.\n\n📅 Când (ora României):\n- 👑 „ADMIN ABUSE” (subtitlu: „HUGE ADMIN ABUSE”): joi, 29 oct, la 17:00 → 17:40, adică 40 de minute\n- 🆕 „???” (subtitlu: „UPDATE + ADMIN ABUSE”): duminică, 1 nov, la 17:00 → luni, 2 nov, la 17:00, adică 24 de ore\n\n✅ Descrierea oficială a celui de-al doilea: „Update + Admin abuse And a ton more content!” Adică un update, un Admin Abuse și „o grămadă de conținut în plus”. La Admin Abuse-ul de joi descrierea e goală.\n\n✅ Am citit în API-ul public Roblox (27 oct, ~00:44 RO): 82.598 de jucători online și 262.286.151 de vizite pe „Break and Steal an Egg”. Ultima actualizare a jocului: 25 oct, la 21:18 (ora României).\n\n❓ Ce NU știm:\n- Ce conține update-ul de pe 1 nov\n- Ce se întâmplă la Admin Abuse și ce primesc jucătorii\n- Ce înseamnă „???” din titlu\n\n🔗 Admin Abuse (29 oct): https://www.roblox.com/events/70410835591299695\n🔗 Update + Admin Abuse (1 nov): https://www.roblox.com/events/1438844316360507990\n🥚 Vezi și: evenimentul „???” de pe 25 oct: https://pyromanc3r777.github.io/vexu-hq/posts/break-and-steal-an-egg-eveniment-misterios-25-octombrie.html\n📈 Vezi și: jocul a atins ~1,3 milioane de jucători: https://pyromanc3r777.github.io/vexu-hq/posts/break-and-steal-an-egg-a-atins-1-3-milioane-de-jucatori.html\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "surse": [
+   "https://www.roblox.com/events/70410835591299695",
+   "https://www.roblox.com/events/1438844316360507990"
+  ],
+  "events": [
+   {
+    "name": "Admin Abuse",
+    "game": "Break and Steal an Egg",
+    "start": "2026-10-29T17:00:49+02:00",
+    "end": "2026-10-29T17:40:49+02:00",
+    "link": "https://www.roblox.com/events/70410835591299695"
+   },
+   {
+    "name": "Update + Admin Abuse",
+    "game": "Break and Steal an Egg",
+    "start": "2026-11-01T17:00:29+02:00",
+    "end": "2026-11-02T17:00:29+02:00",
+    "link": "https://www.roblox.com/events/1438844316360507990"
    }
   ]
  }
