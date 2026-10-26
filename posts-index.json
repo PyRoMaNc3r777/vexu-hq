@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T22:39:30+02:00",
+ "generated": "2026-10-26T09:38:28+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -530,6 +530,29 @@
    "section": null,
    "joc": "Feed A Mosquito",
    "jocSlug": "feed-a-mosquito",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "the-mimic-nightmare-circus-returns-26-octombrie",
+   "title": "🎪 The Mimic: Nightmare Circus a revenit azi, refăcut de la zero — ține până duminică, 1 nov",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-26",
+   "dateRo": "26 octombrie 2026",
+   "published": "2026-10-26T09:38:27+02:00",
+   "img": "img/mimic-nightmare-circus-returns-26oct.png",
+   "cimg": "img/mimic-nightmare-circus-returns-26oct.png",
+   "fit": "cover",
+   "excerpt": "Nightmare Circus s-a întors în The Mimic! Evenimentul oficial „NIGHTMARE CIRCUS RETURNS” de la CTStudio a revenit azi, luni 26 oct, la…",
+   "featured": false,
+   "section": null,
+   "joc": "The Mimic",
+   "jocSlug": "the-mimic",
    "prio": 0,
    "views": null,
    "updated": null,

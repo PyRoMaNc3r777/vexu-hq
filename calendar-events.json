@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-25T22:39:30+02:00",
+ "generated": "2026-10-26T09:38:28+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -136,6 +136,23 @@
      "Ce țânțari Limited sunt și cât de rari: neanunțat"
     ]
    }
+  },
+  {
+   "name": "NIGHTMARE CIRCUS RETURNS",
+   "game": "The Mimic",
+   "start": "2026-10-26T05:00:06+02:00",
+   "end": "2026-11-01T08:22:06+02:00",
+   "link": "https://www.roblox.com/events/5905384888915329634",
+   "slug": "the-mimic-nightmare-circus-returns-26-octombrie",
+   "img": "img/mimic-nightmare-circus-returns-26oct.png",
+   "post_title": "🎪 The Mimic: Nightmare Circus a revenit azi, refăcut de la zero — ține până duminică, 1 nov",
+   "label": "CONFIRMAT",
+   "rids": [
+    "5905384888915329634",
+    "7565891985618371211"
+   ],
+   "gameSlug": "the-mimic",
+   "gameLabel": "The Mimic"
   },
   {
    "name": "The Gateway Opens...",
