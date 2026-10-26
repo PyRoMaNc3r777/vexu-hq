@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T11:03:14+02:00",
+ "generated": "2026-10-26T11:33:02+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -530,6 +530,52 @@
    "section": null,
    "joc": "Feed A Mosquito",
    "jocSlug": "feed-a-mosquito",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "best-noob-ce-ar-fi-daca-intri-in-castelul-de-halloween",
+   "title": "🏰 „Ce-ar fi dacă intri în castelul de Halloween?”: Best Noob la ~733K",
+   "labels": [
+    "TREND SHORTS"
+   ],
+   "date": "2026-10-26",
+   "dateRo": "26 octombrie 2026",
+   "published": "2026-10-26T11:35:00+02:00",
+   "img": "img/yt-GY7SMSVoxCY.jpg",
+   "cimg": "img/yt-GY7SMSVoxCY.jpg",
+   "fit": "cover",
+   "excerpt": "🏰 Best Noob are un short de 75 de secunde, „Ce-ar fi dacă intri în castelul de Halloween?”, cu aprox. 733K vizualizări (citite pe la 20…",
+   "featured": false,
+   "section": "shorts",
+   "joc": null,
+   "jocSlug": null,
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "bruhname-am-reparat-liftul-din-forsaken-fixed-old-new",
+   "title": "🛗 „Am reparat liftul din Forsaken”: brUHname, FIXED și before/after la ~1,42M",
+   "labels": [
+    "TREND SHORTS"
+   ],
+   "date": "2026-10-26",
+   "dateRo": "26 octombrie 2026",
+   "published": "2026-10-26T11:30:00+02:00",
+   "img": "img/yt-aIxx1HM0-nE.jpg",
+   "cimg": "img/yt-aIxx1HM0-nE.jpg",
+   "fit": "cover",
+   "excerpt": "🛗 brUHname are un short de 15 secunde în Forsaken, în care „repară” liftul, cu aprox. 1,42M vizualizări (citite pe la 20 oct) și un ritm…",
+   "featured": false,
+   "section": "shorts",
+   "joc": "Forsaken",
+   "jocSlug": "forsaken",
    "prio": 0,
    "views": null,
    "updated": null,
