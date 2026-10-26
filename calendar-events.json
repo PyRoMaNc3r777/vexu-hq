@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T17:39:23+02:00",
+ "generated": "2026-10-27T00:42:09+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -136,6 +136,91 @@
      "Ce țânțari Limited sunt și cât de rari: neanunțat"
     ]
    }
+  },
+  {
+   "name": "Halloween Admin Abuse",
+   "game": "Venom Evolution",
+   "start": "2026-10-29T16:00:50+02:00",
+   "end": "2026-10-29T17:00:50+02:00",
+   "link": "https://www.roblox.com/events/6779358123892277873",
+   "slug": "venom-evolution-halloween-admin-abuse-29-octombrie-update-3-1-noiembrie",
+   "img": "img/venom-evolution-halloween-admin-abuse.png",
+   "post_title": "🧪 Venom Evolution: Halloween Admin Abuse joi, 29 oct, la 16:00, și Update 3 duminică, 1 nov, la 17:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6779358123892277873",
+    "3406971518427726385",
+    "8253036935015170701"
+   ],
+   "gameSlug": "venom-evolution",
+   "gameLabel": "Venom Evolution"
+  },
+  {
+   "name": "Update 3 (World 3 & more)",
+   "game": "Venom Evolution",
+   "start": "2026-11-01T17:00:50+02:00",
+   "end": "2026-11-08T17:00:50+02:00",
+   "link": "https://www.roblox.com/events/3406971518427726385",
+   "slug": "venom-evolution-halloween-admin-abuse-29-octombrie-update-3-1-noiembrie",
+   "img": "img/venom-evolution-halloween-admin-abuse.png",
+   "post_title": "🧪 Venom Evolution: Halloween Admin Abuse joi, 29 oct, la 16:00, și Update 3 duminică, 1 nov, la 17:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3406971518427726385",
+    "6779358123892277873",
+    "8253036935015170701"
+   ],
+   "gameSlug": "venom-evolution",
+   "gameLabel": "Venom Evolution"
+  },
+  {
+   "name": "Realistic Ragdoll Engine: Halloween Update",
+   "game": "Realistic Ragdoll Engine",
+   "start": "2026-10-29T02:30:20+02:00",
+   "end": "2026-11-03T00:30:20+02:00",
+   "link": "https://www.roblox.com/events/3545880451300327987",
+   "slug": "realistic-ragdoll-engine-halloween-update-29-octombrie",
+   "img": "img/realistic-ragdoll-engine-halloween-update.png",
+   "post_title": "🎃 Realistic Ragdoll Engine: update de Halloween joi, 29 oct, la 02:30, cu hartă nouă și iteme de eveniment",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3545880451300327987"
+   ],
+   "gameSlug": "realistic-ragdoll-engine",
+   "gameLabel": "Realistic Ragdoll Engine"
+  },
+  {
+   "name": "Civil War Gamemode",
+   "game": "Hide From The Hulk",
+   "start": "2026-10-28T23:39:28+02:00",
+   "end": "2026-11-16T05:00:28+02:00",
+   "link": "https://www.roblox.com/events/6122867964451619427",
+   "slug": "hide-from-the-hulk-civil-war-gamemode-28-octombrie",
+   "img": "img/hide-from-the-hulk-civil-war.png",
+   "post_title": "🦸 Hide From The Hulk: modul CIVIL WAR vine miercuri, 28 oct, la 23:39, cu Bucky, Falcon și alții",
+   "label": "CONFIRMAT",
+   "rids": [
+    "6122867964451619427"
+   ],
+   "gameSlug": "hide-from-the-hulk",
+   "gameLabel": "Hide From The Hulk"
+  },
+  {
+   "name": "Clone Baby Care: 4-PLAYER MODE",
+   "game": "Clone Baby Care",
+   "start": "2026-10-26T14:00:12+02:00",
+   "end": "2026-10-31T15:00:12+02:00",
+   "link": "https://www.roblox.com/events/3159562838792602382",
+   "slug": "clone-baby-care-update-4-player-mode-pana-pe-31-octombrie",
+   "img": "img/clone-baby-care-4-player-mode.png",
+   "post_title": "🍼 Clone Baby Care: update-ul „4-PLAYER MODE” e LIVE până sâmbătă, 31 oct, la 15:00",
+   "label": "CONFIRMAT",
+   "rids": [
+    "3159562838792602382",
+    "8781091648814842639"
+   ],
+   "gameSlug": "clone-baby-care",
+   "gameLabel": "Clone Baby Care"
   },
   {
    "name": "Adventure Time RPG: Update 2, Halloween Quests",

@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T17:39:23+02:00",
+ "generated": "2026-10-27T00:42:09+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -530,6 +530,98 @@
    "section": null,
    "joc": "Feed A Mosquito",
    "jocSlug": "feed-a-mosquito",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "venom-evolution-halloween-admin-abuse-29-octombrie-update-3-1-noiembrie",
+   "title": "🧪 Venom Evolution: Halloween Admin Abuse joi, 29 oct, la 16:00, și Update 3 duminică, 1 nov, la 17:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-27",
+   "dateRo": "27 octombrie 2026",
+   "published": "2026-10-27T01:05:00+02:00",
+   "img": "img/venom-evolution-halloween-admin-abuse.png",
+   "cimg": "img/venom-evolution-halloween-admin-abuse.png",
+   "fit": "cover",
+   "excerpt": "🧪 Venom Evolution are două evenimente oficiale noi pe pagina jocului. Le publică grupul Bottled Potential, cel care face jocul. 📅 Când…",
+   "featured": false,
+   "section": null,
+   "joc": "Venom Evolution",
+   "jocSlug": "venom-evolution",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "realistic-ragdoll-engine-halloween-update-29-octombrie",
+   "title": "🎃 Realistic Ragdoll Engine: update de Halloween joi, 29 oct, la 02:30, cu hartă nouă și iteme de eveniment",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-27",
+   "dateRo": "27 octombrie 2026",
+   "published": "2026-10-27T01:00:00+02:00",
+   "img": "img/realistic-ragdoll-engine-halloween-update.png",
+   "cimg": "img/realistic-ragdoll-engine-halloween-update.png",
+   "fit": "cover",
+   "excerpt": "🎃 Realistic Ragdoll Engine are un event oficial nou: „🎃HALLOWEEN UPDATE”, cu subtitlul „Get Notified!”. Îl publică grupul No Knees!, care…",
+   "featured": false,
+   "section": null,
+   "joc": "Realistic Ragdoll Engine",
+   "jocSlug": "realistic-ragdoll-engine",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "hide-from-the-hulk-civil-war-gamemode-28-octombrie",
+   "title": "🦸 Hide From The Hulk: modul CIVIL WAR vine miercuri, 28 oct, la 23:39, cu Bucky, Falcon și alții",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-27",
+   "dateRo": "27 octombrie 2026",
+   "published": "2026-10-27T00:55:00+02:00",
+   "img": "img/hide-from-the-hulk-civil-war.png",
+   "cimg": "img/hide-from-the-hulk-civil-war.png",
+   "fit": "cover",
+   "excerpt": "🦸 Hide From The Hulk are un event oficial nou: „CIVIL WAR GAMEMODE”, cu subtitlul „new content”. Îl publică grupul jocului, Hide From The…",
+   "featured": false,
+   "section": null,
+   "joc": "Hide From The Hulk",
+   "jocSlug": "hide-from-the-hulk",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "clone-baby-care-update-4-player-mode-pana-pe-31-octombrie",
+   "title": "🍼 Clone Baby Care: update-ul „4-PLAYER MODE” e LIVE până sâmbătă, 31 oct, la 15:00",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-27",
+   "dateRo": "27 octombrie 2026",
+   "published": "2026-10-27T00:50:00+02:00",
+   "img": "img/clone-baby-care-4-player-mode.png",
+   "cimg": "img/clone-baby-care-4-player-mode.png",
+   "fit": "cover",
+   "excerpt": "🍼 Clone Baby Care (Anomaly) are un event oficial nou: „[UPDATE] 4-PLAYER MODE”, cu subtitlul „Now up to 4 players!”. Îl publică Oddbaby…",
+   "featured": false,
+   "section": null,
+   "joc": "Clone Baby Care",
+   "jocSlug": "clone-baby-care",
    "prio": 0,
    "views": null,
    "updated": null,
