@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T12:09:56+02:00",
+ "generated": "2026-10-26T13:02:28+02:00",
  "events": [
   {
    "name": "SAE Halloween Part 2",
@@ -138,6 +138,42 @@
    }
   },
   {
+   "name": "Ken Carson @ The Block (The Hollow artist series)",
+   "game": "The Hollow",
+   "start": "2026-10-31T00:50:14+02:00",
+   "end": "2026-11-01T08:55:14+02:00",
+   "link": "https://www.roblox.com/events/4829379659798020739",
+   "slug": "ken-carson-in-the-hollow-concert-the-block-31-octombrie",
+   "img": "img/hollow-ken-carson-the-block.jpg",
+   "post_title": "✅ Ken Carson vine în The Hollow: concert LIVE în The Block, de sâmbătă 31 oct, 00:50",
+   "label": "CONFIRMAT",
+   "rids": [
+    "4829379659798020739",
+    "7565891985618371211",
+    "7969429940665975418"
+   ],
+   "gameSlug": "the-hollow",
+   "gameLabel": "The Hollow"
+  },
+  {
+   "name": "Malcriada @ The Block (The Hollow artist series)",
+   "game": "The Hollow",
+   "start": "2026-11-02T02:50:14+02:00",
+   "end": "2026-11-03T04:00:14+02:00",
+   "link": "https://www.roblox.com/events/7969429940665975418",
+   "slug": "ken-carson-in-the-hollow-concert-the-block-31-octombrie",
+   "img": "img/hollow-ken-carson-the-block.jpg",
+   "post_title": "✅ Ken Carson vine în The Hollow: concert LIVE în The Block, de sâmbătă 31 oct, 00:50",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7969429940665975418",
+    "4829379659798020739",
+    "7565891985618371211"
+   ],
+   "gameSlug": "the-hollow",
+   "gameLabel": "The Hollow"
+  },
+  {
    "name": "Halloween Update (ZVON, oră neanunțată)",
    "game": "Blox Fruits",
    "start_date": "2026-10-31",
@@ -163,6 +199,23 @@
    "rids": [
     "5905384888915329634",
     "7565891985618371211"
+   ],
+   "gameSlug": "the-mimic",
+   "gameLabel": "The Mimic"
+  },
+  {
+   "name": "THE MIMIC X KEN CARSON",
+   "game": "The Mimic",
+   "start": "2026-10-26T19:00:55+02:00",
+   "end": "2026-11-01T08:55:55+02:00",
+   "link": "https://www.roblox.com/events/7565891985618371211",
+   "slug": "the-mimic-nightmare-circus-returns-26-octombrie",
+   "img": "img/mimic-nightmare-circus-returns-26oct.png",
+   "post_title": "🎪 The Mimic: Nightmare Circus a revenit azi, refăcut de la zero — ține până duminică, 1 nov",
+   "label": "CONFIRMAT",
+   "rids": [
+    "7565891985618371211",
+    "5905384888915329634"
    ],
    "gameSlug": "the-mimic",
    "gameLabel": "The Mimic"

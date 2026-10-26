@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-26T12:09:56+02:00",
+ "generated": "2026-10-26T13:02:28+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -530,6 +530,29 @@
    "section": null,
    "joc": "Feed A Mosquito",
    "jocSlug": "feed-a-mosquito",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "ken-carson-in-the-hollow-concert-the-block-31-octombrie",
+   "title": "✅ Ken Carson vine în The Hollow: concert LIVE în The Block, de sâmbătă 31 oct, 00:50",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-26",
+   "dateRo": "26 octombrie 2026",
+   "published": "2026-10-26T13:02:27+02:00",
+   "img": "img/hollow-ken-carson-the-block.jpg",
+   "cimg": "img/hollow-ken-carson-the-block.jpg",
+   "fit": "cover",
+   "excerpt": "Ken Carson intră în The Hollow! E confirmat pe pagina oficială de eveniment Roblox, publicată de contul verificat „Live on Roblox” în…",
+   "featured": false,
+   "section": null,
+   "joc": "The Hollow",
+   "jocSlug": "the-hollow",
    "prio": 0,
    "views": null,
    "updated": null,
