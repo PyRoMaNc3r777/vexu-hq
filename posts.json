@@ -5469,5 +5469,18 @@
   "surse": [
    "https://www.youtube.com/shorts/zxTtZ2RJLh4"
   ]
+ },
+ {
+  "titlu": "🏔️ Roblox Studio: 62 de materiale custom pentru teren, acum live pentru toți",
+  "slug": "roblox-studio-62-materiale-custom-teren-live",
+  "img": "img/devforum-custom-terrain-materials-menu.png",
+  "eticheta": "CONFIRMAT",
+  "joc": "Roblox (platformă)",
+  "date": "2026-10-28",
+  "published": "2026-10-28T09:30:00+02:00",
+  "text": "Roblox a scos din Early Access materialele custom pentru teren (Custom Terrain Materials). E lansare completă, nu beta: poți publica jocuri care le folosesc și oricine de pe Roblox le poate juca. Anunțul e pe DevForum, joi, 22 oct. 🏔️\n\nCe aduce:\n- Până la 62 de materiale custom pe care le „pictezi” pe teren\n- Zone diferite în același place sau mai multă varietate pe un teren existent, cu culori și nuanțe noi\n- Teren mai ușor: fișierul place-ului e mai mic, iar streamingul și încărcarea merg mai repede\n- Într-un test al Roblox: cu 90% mai puțină memorie CPU și cu 45% mai puțină latență la generarea mesh-ului\n\nCum le pornești în Studio:\n- Actualizezi și repornești Studio, apoi deschizi place-ul\n- Selectezi Workspace în Explorer\n- În Properties, schimbi Expanded Terrain din Default în Enabled\n- Salvezi, închizi place-ul și îl redeschizi\n\nCe s-a schimbat față de Early Access:\n- Sortare în meniul de materiale (după nume, folosite recent sau număr de slot), ca în poză\n- Terrain Materials Manager e acum în Window > 3D. Îl deschizi și cu click dreapta pe un material din editorul de teren\n\n⚠️ De știut:\n- Roblox a găsit un crash pe iOS la streamingul terenului în jocurile publicate. Spune că l-a reparat, iar fix-ul vine într-un update viitor\n- Pe Team Create, după ce schimbi setarea, ieși din place și aștepți cam 15 secunde înainte să-l redeschizi\n- Terenul mai subțire de 16 voxeli poate dispărea la jucători când raza de streaming e mică\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "surse": [
+   "https://devforum.roblox.com/t/4950620"
+  ]
  }
 ]

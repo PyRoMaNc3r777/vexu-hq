@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T08:38:07+02:00",
+ "generated": "2026-10-27T09:32:01+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -508,6 +508,29 @@
    "section": "shorts",
    "joc": "Steal An Egg",
    "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "roblox-studio-62-materiale-custom-teren-live",
+   "title": "🏔️ Roblox Studio: 62 de materiale custom pentru teren, acum live pentru toți",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T09:30:00+02:00",
+   "img": "img/devforum-custom-terrain-materials-menu.png",
+   "cimg": "img/devforum-custom-terrain-materials-menu.png",
+   "fit": "cover",
+   "excerpt": "Roblox a scos din Early Access materialele custom pentru teren (Custom Terrain Materials). E lansare completă, nu beta: poți publica…",
+   "featured": false,
+   "section": null,
+   "joc": "Roblox (platformă)",
+   "jocSlug": "roblox-platforma",
    "prio": 0,
    "views": null,
    "updated": null,
