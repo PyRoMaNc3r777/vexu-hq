@@ -2485,9 +2485,10 @@
   "eticheta": "CONFIRMAT",
   "date": "2026-10-21",
   "joc": "The Forge",
-  "text": "Update-ul de Halloween din The Forge a pornit marți seara, 20 octombrie, la 21:00 (ora României), și vine la pachet cu sistemul nou de Guilds.\n\nCe aduce, conform paginii oficiale a evenimentului:\n• ⚔️ Guilds: îți faci echipa cu prietenii și creșteți împreună.\n• 🎃 Event de Halloween care se joacă pe toate insulele.\n• 🍬 Candy de strâns pe fiecare insulă, plus un shop de Halloween cu recompense doar pentru event.\n• 🕸️ Și alte surprize pe care dezvoltatorii nu le-au arătat încă.\n\nDetaliile complete sunt în Mailbox-ul din joc.\n\nEventul ține până sâmbătă, 7 noiembrie, la 22:55 (ora României).\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
+  "text": "🔄 UPDATE 27 oct (✅ CONFIRMAT): Halloween Week 2 („Halloween Second Week”) pornește în seara asta, marți, 27 oct, la 20:00 (ora României), și ține până duminică, 1 nov, la 02:00 (ora României), conform paginii oficiale a eventului.\n\n![The Forge: Halloween Second Week](img/the-forge-halloween-week2.png)\n\nCe scrie pe pagina oficială:\n• 🎃 Quest-uri noi de event, Haunted Nights în fiecare oră, Witch's Cauldron și Pumpkin King.\n• 🪨 Golemites: îți forjezi un Golemite din minereuri. Te urmează, minează și se luptă cu tine. Îl hrănești zilnic cu un Golem Snack ca să crească.\n• 📜 Quest-uri: pe Island 2 duci lăzile Supplier-ului și ai un Quick Errand zilnic; pe Island 4 ai Shogun's Trial și questline-ul lui Hayato. NPC-urile au acum semne „!” și „?” deasupra.\n• 🗺️ Minimap și hartă nouă, plus Waypoints noi pe Island 2 și 3.\n• ⚔️ Raid-urile dau acum Suryafal, Wolfarite și Supermassive Black Hole. Darkryte, Gargantuan, Takiseki, Vooite, Vanegos, Fichilliumorite, Kitsunite și Asura's Kyubite pică mai des. Aurul din raid a fost redus.\n• 🔨 Matrițe noi: pentru arme Reaper și Asura's Incarnate, pentru armuri Deathaxe Skeleton, Prismarine Spider și Golem.\n• 🖥️ Interfață refăcută: Quests, Index, Stash, Vault, fereastra de Party, Emote wheel, layout de HUD și preseturi grafice. Dash-uri noi pentru Dryad, Demon și Orc Lord.\n• 👀 Anunțat pentru săptămâna viitoare: The Abyss și Medallions pentru enhancing. Data exactă nu e anunțată încă.\n\nEventul mare de Halloween + Guilds rămâne până pe 7 noiembrie, ca mai jos.\n\n──────────\n\nUpdate-ul de Halloween din The Forge a pornit marți seara, 20 octombrie, la 21:00 (ora României), și vine la pachet cu sistemul nou de Guilds.\n\nCe aduce, conform paginii oficiale a evenimentului:\n• ⚔️ Guilds: îți faci echipa cu prietenii și creșteți împreună.\n• 🎃 Event de Halloween care se joacă pe toate insulele.\n• 🍬 Candy de strâns pe fiecare insulă, plus un shop de Halloween cu recompense doar pentru event.\n• 🕸️ Și alte surprize pe care dezvoltatorii nu le-au arătat încă.\n\nDetaliile complete sunt în Mailbox-ul din joc.\n\nEventul ține până sâmbătă, 7 noiembrie, la 22:55 (ora României).\n\nFollow pe TikTok @vexu_online și abonare pe YouTube la VEXU Online. Follow = Au ce bile! 💥",
   "surse": [
-   "https://www.roblox.com/events/8555452768813449897"
+   "https://www.roblox.com/events/8555452768813449897",
+   "https://www.roblox.com/events/7437074110351540815"
   ],
   "events": [
    {
@@ -2496,9 +2497,17 @@
     "start": "2026-10-20T21:00:00+03:00",
     "end": "2026-11-07T22:55:00+02:00",
     "link": "https://www.roblox.com/events/8555452768813449897"
+   },
+   {
+    "name": "Halloween Week 2",
+    "game": "The Forge",
+    "start": "2026-10-27T20:00:25+02:00",
+    "end": "2026-11-01T02:00:25+02:00",
+    "link": "https://www.roblox.com/events/7437074110351540815"
    }
   ],
-  "published": "2026-10-21T07:07:00+03:00"
+  "published": "2026-10-21T07:07:00+03:00",
+  "updated": "2026-10-27T08:40:00+02:00"
  },
  {
   "titlu": "🌕 Blood Moon x2? Am cronometrat",
