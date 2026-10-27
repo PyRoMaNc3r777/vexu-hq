@@ -204,7 +204,7 @@ a.pc .ex{font-size:15px;line-height:1.5;color:var(--tx2);display:-webkit-box;-we
 .sm b{color:var(--tx2);font-weight:500}
 .sec{margin:var(--sp6) 0 0}
 .sec>h2{margin-bottom:var(--sp3)}
-.sec>h2 a{margin-left:auto;color:var(--ac);text-decoration:none;font-size:var(--t-xs);letter-spacing:.06em;min-height:28px;display:inline-flex;align-items:center}
+.sec>h2 a{margin:-8px -8px -8px auto;padding:0 8px;color:var(--ac);text-decoration:none;font-size:var(--t-xs);letter-spacing:.06em;min-height:44px;display:inline-flex;align-items:center;border-radius:var(--r-s)} /* zonă de atingere 44px fără să crească rândul */
 .sec>h2 a:hover{text-decoration:underline}
 .sec>h2 .n{color:var(--tx2);font-weight:400;letter-spacing:.04em}
 
@@ -269,6 +269,7 @@ a.ev,div.ev{--c:var(--ok);position:relative;display:grid;grid-template-columns:5
 .ev::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--c)}
 a.ev:hover{transform:translateY(-2px);border-color:var(--ac);background:var(--s2)}
 .ev .th{width:56px;height:56px;border-radius:8px;object-fit:cover;display:block;background:var(--s3);border:1px solid hsl(var(--h,200) 35% 28%)}
+.ev img.th.fx{opacity:1} /* miniatura evenimentului: pătratul plat se vede imediat, nu rămâne gol până se încarcă imaginea */
 .ev .tx{min-width:0;display:block}
 .ev .gm{display:flex;align-items:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .ev .nm{display:block;margin-top:2px;font-size:15px;line-height:1.3;font-weight:650;letter-spacing:-.015em;color:var(--tx);overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
@@ -428,7 +429,7 @@ details.dg>summary:hover{background:var(--s1)}
 .kc li b{font:500 var(--t-xs)/1.3 var(--m);letter-spacing:.06em;text-transform:uppercase;color:var(--tx3)}
 .kc li span{color:var(--tx)}
 .ks2{grid-column:1/-1;font:400 var(--t-xs)/1.5 var(--m);color:var(--tx3)}
-.ks2 a{color:var(--tx2)}
+.ks2 a{color:var(--tx2);display:inline-block;padding:12px 4px;margin:-12px -4px} /* link mic în text: zonă de atingere mai mare, fără layout shift */
 .ks2 a:hover{color:var(--ac)}
 @media(min-width:700px){.kn-in{grid-template-columns:1fr 1fr}}
 .hero .unc{display:inline-block;margin-left:var(--sp2);padding:2px 6px;border:1px solid var(--warn);border-radius:4px;color:var(--warn);font:500 var(--t-xs)/1.3 var(--m);letter-spacing:.04em;text-transform:none}
