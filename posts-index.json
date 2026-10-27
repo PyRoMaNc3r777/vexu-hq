@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-27T11:12:44+02:00",
+ "generated": "2026-10-27T12:34:05+02:00",
  "posts": [
   {
    "slug": "halloween-dimension-e-live-in-steal-an-egg-3-biomuri-echo-phantom-express-part-2-pe-24-oct",
@@ -347,6 +347,52 @@
    "section": "shorts",
    "joc": "Steal An Egg",
    "jocSlug": "steal-an-egg",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "superhero-ability-arena-crestere-51103-la-suta-jucatori",
+   "title": "🦸 Superhero Ability Arena a crescut cu +51.103% jucători într-o săptămână",
+   "labels": [
+    "CONFIRMAT"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T13:10:00+02:00",
+   "img": "img/superhero-ability-arena-thumb.jpg",
+   "cimg": "img/superhero-ability-arena-thumb.jpg",
+   "fit": "cover",
+   "excerpt": "📈 Superhero Ability Arena explodează: contul @RobloxGameStats a postat pe X, pe 23 oct (01:00, ora României), că jucătorii jocului au…",
+   "featured": false,
+   "section": null,
+   "joc": "Superhero Ability Arena",
+   "jocSlug": "superhero-ability-arena",
+   "prio": 0,
+   "views": null,
+   "updated": null,
+   "republish": false,
+   "recap": null
+  },
+  {
+   "slug": "zvon-forsaken-lobby-overhaul-hollow-trick-presence-halloween",
+   "title": "🎃 ZVON: Forsaken, Hollow, Trick și Presence revin în lobby și par să anunțe un update de Halloween",
+   "labels": [
+    "ZVON"
+   ],
+   "date": "2026-10-28",
+   "dateRo": "28 octombrie 2026",
+   "published": "2026-10-28T13:00:00+02:00",
+   "img": "img/zvon-forsaken-lobby-hollow-trick-presence.jpg",
+   "cimg": "img/zvon-forsaken-lobby-hollow-trick-presence.jpg",
+   "fit": "cover",
+   "excerpt": "🚨 Contul de fani @Forsaken_News a postat pe X, pe 23 oct (02:42, ora României): odată cu Lobby Overhaul, trei NPC-uri au revenit în lobby:…",
+   "featured": false,
+   "section": null,
+   "joc": "Forsaken",
+   "jocSlug": "forsaken",
    "prio": 0,
    "views": null,
    "updated": null,
