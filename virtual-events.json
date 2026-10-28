@@ -1,28 +1,13 @@
 {
  "v": 1,
  "universeId": 10563114921,
- "updated": "2026-10-28T14:03:01.965610+00:00",
+ "updated": "2026-10-28T19:26:24.899713+00:00",
  "events": [
   {
-   "id": "3079544932537598621",
-   "title": "Halloween PART 2",
-   "subtitle": "New Expansion",
-   "description": "A mysterious portal has appeared beyond the gates of the Abandoned Manor... but for now, it remains sealed. 🔒\n\nWhat lies on the other side? And could it finally reveal who opened the Halloween Dimension... and why? \n\n🎃 HALLOWEEN PART 2 - NEXT SATURDAY",
-   "host": "and Collect Rare Pets",
-   "verified": true,
-   "categories": [
-    "newContent"
-   ],
-   "start": "2026-10-24T15:00:39.999+00:00",
-   "end": "2026-10-25T16:34:39.999+00:00",
-   "status": "active",
-   "updated": "2026-10-17T16:38:51.363+00:00"
-  },
-  {
    "id": "3914977301300904532",
-   "title": "CONCERT REVEAL",
-   "subtitle": "[Wed 28th Oct] 11 AM ET",
-   "description": "Artist Reveal - Wednesday 28th October - 11am ET\n\nThe WORLD’S BIGGEST CONCERT is coming! 🎤🔥 Get ready for something HUGE… 👀  \n\nAny guesses who’s performing? 🎶",
+   "title": "SAE: Jonas Brothers LIVE!",
+   "subtitle": "Jonas Brothers Take Over!",
+   "description": "THE JONAS BROTHERS ARE TAKING OVER STEAL AN EGG! 🥚🔥\n\nGet ready for an EPIC concert! The Jonas Brothers are bringing their Burning Up Tour All Over Again to Steal an Egg for a one-time-only concert you won’t want to miss!\n\n👀 Stick around for a BIG surprise!\n\n📅 Saturday, October 31\n⏰ 11 AM ET / 8 AM PT / 3 PM GMT / 4 PM CET\n\n🥚 See you in Steal an Egg!",
    "host": "and Collect Rare Pets",
    "verified": true,
    "categories": [
@@ -31,7 +16,7 @@
    "start": "2026-10-31T15:00:55.609+00:00",
    "end": "2026-10-31T16:00:55.609+00:00",
    "status": "active",
-   "updated": "2026-10-24T15:47:33.393+00:00"
+   "updated": "2026-10-28T17:02:16.61+00:00"
   }
  ]
 }
