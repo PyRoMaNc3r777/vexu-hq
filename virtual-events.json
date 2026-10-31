@@ -1,7 +1,7 @@
 {
  "v": 1,
  "universeId": 10563114921,
- "updated": "2026-10-31T13:08:03.445083+00:00",
+ "updated": "2026-10-31T17:41:35.929476+00:00",
  "events": [
   {
    "id": "3914977301300904532",
@@ -17,6 +17,21 @@
    "end": "2026-10-31T16:00:55.609+00:00",
    "status": "active",
    "updated": "2026-10-28T17:02:16.61+00:00"
+  },
+  {
+   "id": "4549553723768177202",
+   "title": "🛸NEW ALIEN BIOME",
+   "subtitle": "THE NEWEST BIOME IS HERE!",
+   "description": "Paranoid Pete tried to warn us, but nobody believed him. Now, his radar is picking up stronger signals of extraterrestrial activity, and strange UFO sightings are becoming more frequent.\n\nIt looks like the aliens have set their sights on Steal an Egg, and they're getting closer.\n\n🛸 A NEW ALIEN BIOME ARRIVES NEXT WEEK!",
+   "host": "and Collect Rare Pets",
+   "verified": true,
+   "categories": [
+    "newContent"
+   ],
+   "start": "2026-11-07T16:00:24.162+00:00",
+   "end": "2026-11-14T19:00:24.162+00:00",
+   "status": "active",
+   "updated": "2026-10-31T16:29:43.247+00:00"
   }
  ]
 }
