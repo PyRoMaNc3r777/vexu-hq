@@ -1,7 +1,7 @@
 {
  "v": 1,
  "universeId": 10563114921,
- "updated": "2026-11-09T09:33:16.100010+00:00",
+ "updated": "2026-11-09T19:58:43.713016+00:00",
  "events": [
   {
    "id": "4549553723768177202",
@@ -17,6 +17,21 @@
    "end": "2026-11-14T19:00:24.162+00:00",
    "status": "active",
    "updated": "2026-10-31T16:29:43.247+00:00"
+  },
+  {
+   "id": "4694194470221120266",
+   "title": "Black Market Dealer!",
+   "subtitle": "🕵️ SLICK RICK IS COMING",
+   "description": "🕵️ SLICK RICK IS COMING TO TOWN! 💼\n\nA mysterious Black Market Dealer is making his way into Steal an Egg.\n\n💼 Meet Slick Rick! Nobody knows where he came from, what he's selling, or what he's really up to...\n\n⏳ But there's a catch... Slick Rick comes and goes whenever he pleases. You never know when he'll show up, or how long he'll stick around.\n\n👀 Keep your eyes peeled... Slick Rick is arriving soon!",
+   "host": "and Collect Rare Pets",
+   "verified": true,
+   "categories": [
+    "newContent"
+   ],
+   "start": "2026-11-14T15:00:58.12+00:00",
+   "end": "2026-11-16T17:00:58.12+00:00",
+   "status": "active",
+   "updated": "2026-11-09T18:11:08.576+00:00"
   }
  ]
 }
