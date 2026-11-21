@@ -1,7 +1,7 @@
 {
  "v": 1,
  "universeId": 10563114921,
- "updated": "2026-11-21T08:46:43.395057+00:00",
+ "updated": "2026-11-21T16:23:44.145471+00:00",
  "events": [
   {
    "id": "5497198185256452756",
@@ -17,6 +17,21 @@
    "end": "2026-11-27T18:00:07.207+00:00",
    "status": "active",
    "updated": "2026-11-14T17:21:10.826+00:00"
+  },
+  {
+   "id": "2681290392827200143",
+   "title": "Frozen Awakening",
+   "subtitle": "Ancient beast awakens ❄️",
+   "description": "❄️ SOMETHING FROZEN IS AWAKENING... 🥶\n\nAn ancient beast has awakened from its icy slumber... and it's bringing a whole new world with it. 👀\n\n🏔️ LIMITED-TIME BIOME - COMING NEXT WEEKEND!\n\n❄️ The ice is spreading... and something terrifying is waking up beneath it 👀",
+   "host": "and Collect Rare Pets",
+   "verified": true,
+   "categories": [
+    "newContent"
+   ],
+   "start": "2026-11-28T15:00:16.854+00:00",
+   "end": "2026-12-02T17:00:16.854+00:00",
+   "status": "active",
+   "updated": "2026-11-21T15:57:14.05+00:00"
   }
  ]
 }
